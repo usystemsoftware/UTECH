@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Navbar from "./components/header/Navbar";
 import { Home } from "./components/main/Home";
+import Chat from "./components/chatbot/Chat";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
     <>
       <Navbar />
       <Home />
+      <Chat />
     </>
   );
 }
