@@ -11,7 +11,7 @@ export const Home = () => {
     <>
       <HeroHighlight
         containerClassName="bg-blue-100"
-        className="flex flex-col-reverse lg:flex-row items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 lg:pt-0 pb-12 gap-10"
+        className="flex md:flex-col md:h-4/5 lg:flex-row items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-0 pb-12 gap-10"
       >
         {/* Left Content */}
         <motion.div
@@ -36,7 +36,7 @@ export const Home = () => {
           </div>
 
           {/* Typewriter */}
-          <TypographyH4 className="min-h-[2.5rem] sm:min-h-[3rem] text-base sm:text-lg lg:text-xl font-semibold text-gray-800 dark:text-gray-300">
+          <TypographyH4 className="min-h-[3rem] sm:min-h-[4rem] text-base sm:text-lg lg:text-xl font-semibold text-gray-800 dark:text-gray-300">
             <Typewriter
               options={{
                 strings: [
@@ -81,13 +81,13 @@ export const Home = () => {
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="w-full lg:w-1/2 flex justify-center items-center"
+          className="w-full lg:w-1/2 lg:flex justify-center items-center  hidden"
         >
-          <div className="overflow-hidden rounded-xl w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+          <div className=" lg:overflow-hidden rounded-xl w-full flex items-center justify-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
             <motion.img
               src="/Homepage/utechlogo.png"
               alt="Hero"
-              className="w-full object-contain"
+              className="w-full  sm:object-contain"
               initial={{ clipPath: "inset(100% 0% 0% 0%)" }}
               animate={{ clipPath: "inset(0% 0% 0% 0%)" }}
               transition={{ duration: 1.5, ease: "easeInOut" }}

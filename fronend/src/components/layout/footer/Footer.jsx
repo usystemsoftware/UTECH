@@ -15,7 +15,6 @@ export const Footer = () => {
                         <p><strong>Company:</strong> Umbarkar Technology India Private Limited</p>
                         <p><strong>CIN/LLPIN:</strong> U72900PN2020PTC193410</p>
                         <p><strong>Registration Number:</strong> 193410</p>
-                        <p><strong>Company Age:</strong> 4 years 11 months</p>
                         <p><strong>ROC Name:</strong> ROC Pune</p>
                         <p><strong>Contact:</strong> +91 7709222331</p>
                         <p><strong>Email:</strong> <a href="mailto:info@usystem.solutions" className="text-blue-600 hover:underline">info@usystem.solutions</a></p>

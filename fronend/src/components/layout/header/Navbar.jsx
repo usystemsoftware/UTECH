@@ -5,18 +5,22 @@ import { Button } from "@/components/ui/button";
 import { Navlinks } from "./Navlinks";
 import { Link } from "react-router-dom";
 import { TypographyH4 } from "../../../custom/Typography";
-import { Menu, X, Plus, Minus } from "lucide-react";
+import { RxHamburgerMenu } from "react-icons/rx";
+
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 
 const Navbar = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [expandedMobileIndex, setExpandedMobileIndex] = useState(null);
+  const [openMenus, setOpenMenus] = useState({});
 
-  const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
-  const handleMobileExpand = (index) => {
-    setExpandedMobileIndex((prev) => (prev === index ? null : index));
-  };
 
   return (
     <motion.div
@@ -25,11 +29,83 @@ const Navbar = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.9, ease: "easeOut" }}
     >
-      {/* LOGO */}
-      <div className="font-bold text-xl text-blue-600">U-Technology</div>
+      <div className="lg:hidden">
+        <Sheet>
+          <SheetTrigger><RxHamburgerMenu />
+          </SheetTrigger>
+          <SheetContent>
+            <SheetHeader className="mt-6 max-h-[calc(100vh-5rem)] overflow-y-auto pr-2">
+              {Navlinks.length > 0 &&
+                Navlinks.map((options, index) => {
+                  const isOpen = openMenus[index];
 
-      {/* Desktop Nav */}
-      <nav className="hidden md:flex items-center gap-6 relative z-50">
+                  return (
+                    <div key={index} className="w-full px-1 mb-2">
+                      {/* Main Nav Title with Toggle */}
+                      <SheetTitle
+                        onClick={() =>
+                          setOpenMenus({ [index]: !isOpen }) // Close others
+                        }
+                        className="mt-1 flex justify-between items-center cursor-pointer text-base font-semibold text-gray-800 border-b pb-1"
+                      >
+                        {options?.title}
+                        <span className="text-lg">{isOpen ? "−" : "+"}</span>
+                      </SheetTitle>
+
+                      {/* Dropdown Content */}
+                      <AnimatePresence>
+                        {isOpen && (
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: "auto" }}
+                            exit={{ opacity: 0, height: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="pl-3 pt-2 space-y-3 text-sm text-gray-700"
+                          >
+                            {/* Simple Links */}
+                            {options.items?.map((item, idx) => (
+                              <Link
+                                to={item.href}
+                                key={idx}
+                                className="block hover:text-blue-600"
+                              >
+                                {item.label}
+                              </Link>
+                            ))}
+
+                            {/* Grouped Links like Strategic Partners */}
+                            {options.groups?.map((group, gIdx) => (
+                              <div key={gIdx} className="space-y-1">
+                                <div className="mt-2 font-semibold text-gray-800 text-sm">
+                                  {group.group}
+                                </div>
+                                {group.links?.map((link, lIdx) => (
+                                  <Link
+                                    to={link.href}
+                                    key={lIdx}
+                                    className="block pl-3 text-gray-600 hover:text-blue-600"
+                                  >
+                                    {link.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  );
+                })}
+            </SheetHeader>
+
+
+          </SheetContent>
+        </Sheet>
+      </div>
+      {/* LOGO */}
+      <div className="font-bold text-xl text-blue-600 hidden lg:block">U-Technology</div>
+
+      <nav className="hidden lg:flex items-center gap-6 relative z-50">
         {Navlinks.map((item, index) => (
           <div
             key={index}
@@ -44,106 +120,13 @@ const Navbar = () => {
         ))}
       </nav>
 
+
+
       {/* Sign Up button - Desktop only */}
-      <div className="hidden md:flex items-center gap-2">
+      <div className="flex items-center gap-2">
         <Button className="bg-blue-400 hover:bg-blue-500">Sign Up</Button>
       </div>
 
-      {/* Mobile Menu Toggle */}
-      <div className="md:hidden flex items-center">
-        <button onClick={toggleMobileMenu}>
-          {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </div>
-
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {mobileMenuOpen && (
-          <motion.div
-            key="mobile-menu"
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="absolute top-16 left-0 w-full bg-white shadow-md z-40 px-6 pb-6"
-          >
-            {Navlinks.map((item, index) => (
-              <div key={index} className="mb-4">
-                <div
-                  className="flex justify-between items-center font-semibold text-gray-900 cursor-pointer"
-                  onClick={() => handleMobileExpand(index)}
-                >
-                  {item.title}
-                  {expandedMobileIndex === index ? (
-                    <Minus size={18} />
-                  ) : (
-                    <Plus size={18} />
-                  )}
-                </div>
-
-                <AnimatePresence>
-                  {expandedMobileIndex === index && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.3 }}
-                    >
-                      {/* Flat items */}
-                      {item.items && (
-                        <ul className="pl-4 mt-2 space-y-2">
-                          {item.items.map((option, i) => (
-                            <li key={i}>
-                              <Link
-                                to={option.href}
-                                onClick={() => setMobileMenuOpen(false)}
-                                className="text-sm text-gray-700 hover:text-blue-600 block"
-                              >
-                                {option.label}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-
-                      {/* Grouped items */}
-                      {item.groups && (
-                        <ul className="pl-4 mt-2 space-y-2">
-                          {item.groups.map((group, gIdx) => (
-                            <div key={gIdx} className="mt-2">
-                              <div className="text-gray-700 font-medium text-sm">
-                                {group.group}
-                              </div>
-                              <ul className="space-y-1">
-                                {group.links.map((link, lIdx) => (
-                                  <li key={lIdx}>
-                                    <Link
-                                      to={link.href}
-                                      onClick={() => setMobileMenuOpen(false)}
-                                      className="text-sm text-gray-700 hover:text-blue-600 block"
-                                    >
-                                      {link.label}
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          ))}
-                        </ul>
-                      )}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            ))}
-
-            {/* Sign Up button in mobile */}
-            <Button className="mt-4 w-full bg-blue-400 hover:bg-blue-500">
-              Sign Up
-            </Button>
-          </motion.div>
-        )}
-      </AnimatePresence>
 
       {/* Desktop Dropdown */}
       <AnimatePresence>
