@@ -3,11 +3,14 @@ import Navbar from "./components/layout/header/Navbar";
 import { Home } from "./components/layout/main/Home";
 import { Footer } from "./components/layout/footer/Footer";
 
+import Chat from "./components/chatbot/Chat";
+
 function App() {
   return (
     <>
       <Navbar />
       <Home />
+      <Chat />
       <Footer />
 
       {/* <Router>

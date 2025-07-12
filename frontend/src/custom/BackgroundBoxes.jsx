@@ -182,6 +182,7 @@ export function BackgroundBoxes() {
           ))}
         </div>
       </div>
+
     </div>
   );
 }

@@ -7,14 +7,15 @@ import { Link } from "react-router-dom";
 import { TypographyH4 } from "../../../custom/Typography";
 import { RxHamburgerMenu } from "react-icons/rx";
 
+
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { HelpButton } from "../../../custom/HelpButton";
 
 const Navbar = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -120,12 +121,7 @@ const Navbar = () => {
         ))}
       </nav>
 
-
-
-      {/* Sign Up button - Desktop only */}
-      <div className="flex items-center gap-2">
-        <Button className="bg-blue-400 hover:bg-blue-500">Sign Up</Button>
-      </div>
+      <HelpButton />
 
 
       {/* Desktop Dropdown */}

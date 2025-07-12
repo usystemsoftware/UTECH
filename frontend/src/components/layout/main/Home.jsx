@@ -98,6 +98,7 @@ export const Home = () => {
       </HeroHighlight>
 
       <BackgroundBoxes />
+
     </>
   );
 };

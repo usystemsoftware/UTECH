@@ -112,14 +112,26 @@ export const Navlinks = [
         ]
     }
     ,
-    {
-        title: "Portfolio",
-        items: []
-    },
+    // {
+    //     title: "Portfolio",
+    //     items: []
+    // },
     {
         title: "Company",
-        items: []
-    },
+        items: [
+            { label: "About Us", href: "/company/about-us" },
+            { label: "Awards", href: "/company/awards" },
+            { label: "Careers", href: "/company/careers" },
+            { label: "Events", href: "/company/events" },
+            { label: "History", href: "/company/history" },
+            { label: "Locations", href: "/company/locations" },
+            { label: "Newsroom", href: "/company/newsroom" },
+            { label: "Partners & Affiliations", href: "/company/partners-affiliations" },
+            { label: "People And Culture", href: "/company/people-and-culture" },
+            { label: "Reviews", href: "/company/reviews" },
+        ]
+    }
+    ,
     {
         title: "Blog",
         items: []
