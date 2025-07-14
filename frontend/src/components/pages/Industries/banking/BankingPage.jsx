@@ -897,15 +897,15 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 // import BankingHeader from "../../../public/assets/Banking/BankingHeader.webp";
 // import BankingHeader from "../../../../public/assets/Banking/BankingHeader.webp";
-import BankingHeader from "../../../../public/assets/Industries/Banking/BankingHeader.webp"
-import FeatureImage from "../../../../public/assets/Industries/Banking/contentBanking.png";
-import MobileAnalytics from "../../../../public/assets/Industries/Banking/BankingPhone.png";
-import softwareSolutions from "../../../../public/assets/Industries/Banking/softwareSolutions.png";
-import Phone from "../../../../public/assets/Industries/Banking/Phone.png";
-import ATMImage from "../../../../public/assets/Industries/Banking/customatm.png";
-import customcore from "../../../../public/assets/Industries/Banking/customcore.png";
-import EMVImage from "../../../../public/assets/Industries/Banking/mobilebrowser.png";
-import payment from "../../../../public/assets/Industries/Banking/payment.png";
+import BankingHeader from "../../../../../public/assets/Industries/Banking/BankingHeader.webp"
+import FeatureImage from "../../../../../public/assets/Industries/Banking/contentBanking.png";
+import MobileAnalytics from "../../../../../public/assets/Industries/Banking/BankingPhone.png";
+import softwareSolutions from "../../../../../public/assets/Industries/Banking/softwareSolutions.png";
+import Phone from "../../../../../public/assets/Industries/Banking/Phone.png";
+import ATMImage from "../../../../../public/assets/Industries/Banking/customatm.png";
+import customcore from "../../../../../public/assets/Industries/Banking/customcore.png";
+import EMVImage from "../../../../../public/assets/Industries/Banking/mobilebrowser.png";
+import payment from "../../../../../public/assets/Industries/Banking/payment.png";
 
 import {
   FaUniversity,

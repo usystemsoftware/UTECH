@@ -278,18 +278,18 @@
 // export default Finance;
 
 import React, { useState } from "react";
-import FinanceBanner from "../../../../public/assets/Industries/Finance/finance-banner.jpg";
-import Combofinance from "../../../../public/assets/Industries/Finance/combo-finance.png";
-import Sage from "../../../../public/assets/Industries/Finance/Finance-Logos/sage.png";
-import Freshbooks from "../../../../public/assets/Industries/Finance/Finance-Logos/freshbooks.png";
-import OracleNetsuite from "../../../../public/assets/Industries/Finance/Finance-Logos/oracle-netsuite.png";
-import QuickBooks from "../../../../public/assets/Industries/Finance/Finance-Logos/quickbooks.png";
-import AccountingDevelop from "../../../../public/assets/Industries/Finance/accounting-development.png";
-import PortfolioDevlop from "../../../../public/assets/Industries/Finance/portfolio-development.png";
-import PlanningDevelopment from "../../../../public/assets/Industries/Finance/planning-development.png";
-import InsuranceDevelopment from "../../../../public/assets/Industries/Finance/insurance-development.png";
-import PreparationDevelopment from "../../../../public/assets/Industries/Finance/preparation-development.png";
-import TradingDevelopment from "../../../../public/assets/Industries/Finance/trading-development.png";
+import FinanceBanner from "../../../../../public/assets/Industries/Finance/finance-banner.jpg";
+import Combofinance from "../../../../../public/assets/Industries/Finance/combo-finance.png";
+import Sage from "../../../../../public/assets/Industries/Finance/Finance-Logos/sage.png";
+import Freshbooks from "../../../../../public/assets/Industries/Finance/Finance-Logos/freshbooks.png";
+import OracleNetsuite from "../../../../../public/assets/Industries/Finance/Finance-Logos/oracle-netsuite.png";
+import QuickBooks from "../../../../../public/assets/Industries/Finance/Finance-Logos/quickbooks.png";
+import AccountingDevelop from "../../../../../public/assets/Industries/Finance/accounting-development.png";
+import PortfolioDevlop from "../../../../../public/assets/Industries/Finance/portfolio-development.png";
+import PlanningDevelopment from "../../../../../public/assets/Industries/Finance/planning-development.png";
+import InsuranceDevelopment from "../../../../../public/assets/Industries/Finance/insurance-development.png";
+import PreparationDevelopment from "../../../../../public/assets/Industries/Finance/preparation-development.png";
+import TradingDevelopment from "../../../../../public/assets/Industries/Finance/trading-development.png";
 import { motion } from "framer-motion";
 import { MdOutlineLocalAtm } from "react-icons/md";
 import {
