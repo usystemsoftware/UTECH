@@ -85,7 +85,7 @@ export const Home = () => {
         >
           <div className=" lg:overflow-hidden rounded-xl w-full flex items-center justify-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
             <motion.img
-              src="/Homepage/utechlogo.png"
+              src="/Homepage/heroimg.gif"
               alt="Hero"
               className="w-full  sm:object-contain"
               initial={{ clipPath: "inset(100% 0% 0% 0%)" }}

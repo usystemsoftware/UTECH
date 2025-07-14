@@ -147,6 +147,7 @@ const Navbar = () => {
                     transition={{ delay: idx * 0.03, duration: 0.2 }}
                   >
                     <Link
+                      onClick={() => setHoveredIndex(null)}
                       to={option.href}
                       className="flex items-center gap-3 hover:text-blue-600 transition w-60"
                     >
@@ -175,6 +176,8 @@ const Navbar = () => {
                           transition={{ delay: 0.05 * lIdx, duration: 0.5 }}
                         >
                           <Link
+                            onClick={() => setHoveredIndex(null)}
+
                             to={link.href}
                             className="flex items-center gap-2 text-sm hover:text-blue-600 transition"
                           >
