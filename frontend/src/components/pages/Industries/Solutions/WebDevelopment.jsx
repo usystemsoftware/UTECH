@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import HeroBanner from "../../../../public/assets/Solutions/hero-banner.jpg";
+import HeroBanner from "../../../../../public/assets/Solutions/hero-banner.jpg";
 import { motion } from "framer-motion";
 import { MdOutlineLocalAtm } from "react-icons/md";
-import Javascript from "../../../../public/assets/Solutions/Web-Development/Javascript.png";
-import HTMl from "../../../../public/assets/Solutions/Web-Development/html.png";
+import Javascript from "../../../../../public/assets/Solutions/Web-Development/Javascript.png";
+import HTMl from "../../../../../public/assets/Solutions/Web-Development/html.png";
 import {
   FaUniversity,
   FaCreditCard,

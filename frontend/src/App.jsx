@@ -4,15 +4,16 @@ import { Home } from "./components/layout/main/Home";
 import { Footer } from "./components/layout/footer/Footer";
 
 import Chat from "./components/chatbot/Chat";
+import WebDevelopment from "./components/pages/Industries/Solutions/WebDevelopment";
 
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Home />
       <Chat />
-      <Footer />
-
+      <Footer /> */}
+      <WebDevelopment />
       {/* <Router>
       <Routes>
         <Route/>
