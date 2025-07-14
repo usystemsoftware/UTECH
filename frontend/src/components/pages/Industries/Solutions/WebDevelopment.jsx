@@ -47,37 +47,37 @@ const fadeUp = {
 const frontendTech = [
   {
     name: "JavaScript",
-    img: "../../../../public/assets/Solutions/Web-Development/Javascript.png", // ✅ Add correct image paths
+    img: "/assets/Solutions/Web-Development/javascript.png", // ✅ Add correct image paths
     desc: "Our software engineers use JavaScript to calculate, manipulate, and validate different data to create dynamic and interactive user experiences.",
     highlight: "JavaScript",
   },
   {
     name: "HTML",
-    img: "../../../../public/assets/Solutions/Web-Development/html.png",
+    img: "/assets/Solutions/Web-Development/html.png",
     desc: "Our Software Development Team has many years of collective experience working with HTML programming language for developing best-in-class custom websites and applications.",
     highlight: "HTML",
   },
   {
     name: "JSON",
-    img: "../../../../public/assets/Solutions/Web-Development/json.png",
+    img: "/assets/Solutions/Web-Development/json.png",
     desc: "We use JSON for transmitting web application data in a much quicker and more efficient fashion to optimize the process of building your web application.",
     highlight: "JSON",
   },
   {
     name: "ELM",
-    img: "../../../../public/assets/Solutions/Web-Development/elm.png",
+    img: "/assets/Solutions/Web-Development/elm.png",
     desc: "Our Software Development Team utilizes ELM’s functionality, user-friendliness, fast compilation, and safe refactoring benefits to build, integrate, and customize your website or application.",
     highlight: "",
   },
   {
     name: "AngularJS",
-    img: "../../../../public/assets/Solutions/Web-Development/angularjs.png",
+    img: "/assets/Solutions/Web-Development/angularjs.png",
     desc: "We use AngularJS when creating dynamic web applications, appropriating its data binding, and dependency injection to eliminate the need to write an extensive amount of code.",
     highlight: "AngularJS",
   },
   {
     name: "jQuery",
-    img: "../../../../public/assets/Solutions/Web-Development/jquery.png",
+    img: "/assets/Solutions/Web-Development/jquery.png",
     desc: "We utilize jQuery to easily navigate a document, create animations, develop AJAX applications, select DOM elements, handle events, and create plug-ins on top of the JavaScript library.",
     highlight: "jQuery",
   },
@@ -86,37 +86,37 @@ const frontendTech = [
 const backendTechDetails = [
   {
     name: "PHP",
-    img: "../../../../public/assets/Solutions/Web-Development/php.png",
+    img: "/assets/Solutions/Web-Development/php.png",
     highlight: "PHP frameworks",
     desc: "Our Software Development Team uses PHP frameworks to provide a basic structure for streamlining and speeding up the development process of building personalized web websites and apps.",
   },
   {
     name: "Express.js",
-    img: "../../../../public/assets/Solutions/Web-Development/expressjs.png",
+    img: "/assets/Solutions/Web-Development/expressjs.png",
     highlight: "web application development",
     desc: "Our experts utilize Express.js to simplify the web application development process, making it easier to write fast, secure, and modular applications.",
   },
   {
     name: "Node.js",
-    img: "../../../../public/assets/Solutions/Web-Development/node-js.png",
+    img: "/assets/Solutions/Web-Development/node-js.png",
     highlight: "Node.js",
     desc: "We use Node.js to create traditional websites, back-end API services, and data-intensive real-time applications that run across distributed devices.",
   },
   {
     name: "Java",
-    img: "../../../../public/assets/Solutions/Web-Development/java.png",
+    img: "/assets/Solutions/Web-Development/java.png",
     highlight: "Java",
     desc: "We use Java as a general-purpose programming language to develop custom mobile and web applications, embedded systems, and big data processing.",
   },
   {
     name: "Python",
-    img: "../../../../public/assets/Solutions/Web-Development/python.png",
+    img: "/assets/Solutions/Web-Development/python.png",
     highlight: "Python",
     desc: "We use Python as one of our primary programming languages for mobile and custom web development, video games, operating systems, machine learning, AI, and more.",
   },
   {
     name: "MongoDB",
-    img: "../../../../public/assets/Solutions/Web-Development/mongo-db.png",
+    img: "/assets/Solutions/Web-Development/mongo-db.png",
     highlight: "MongoDB",
     desc: "Our Website Developers use MongoDB for optimizing the performance of transactional stores and for high volume data storage purposes.",
   },

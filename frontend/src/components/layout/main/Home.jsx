@@ -10,9 +10,10 @@ export const Home = () => {
   return (
     <>
       <HeroHighlight
-        containerClassName="bg-blue-100"
+        containerClassName="bg-gradient-to-r from-black/70 via-black/60 to-transparent backdrop-black border border-white/20 shadow-xl"
         className="flex md:flex-col md:h-4/5 lg:flex-row items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-0 pb-12 gap-10"
       >
+
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -36,7 +37,7 @@ export const Home = () => {
           </div>
 
           {/* Typewriter */}
-          <TypographyH4 className="min-h-[3rem] sm:min-h-[4rem] text-base sm:text-lg lg:text-xl font-semibold text-gray-800 dark:text-gray-300">
+          <TypographyH4 className="min-h-[3rem] sm:min-h-[4rem] text-base sm:text-lg lg:text-xl font-semibold text-white dark:text-gray-300">
             <Typewriter
               options={{
                 strings: [
@@ -53,7 +54,7 @@ export const Home = () => {
           </TypographyH4>
 
           {/* Description */}
-          <p className="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+          <p className="text-sm sm:text-base lg:text-lg text-white dark:text-gray-300 mt-4 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
             We build smart, scalable, and user-first solutions that shape the digital world. Whether it's AI, automation, or cutting-edge web tech — we bring your vision to life.
           </p>
 
@@ -69,7 +70,7 @@ export const Home = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg border border-gray-400 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              className="px-5 sm:px-6 py-2.5 sm:py-3 rounded-lg border border-gray-400 text-white dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
             >
               Learn More
             </motion.button>
