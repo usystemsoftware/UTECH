@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-full h-16 z-50 bg-white shadow-xl flex items-center justify-between px-6"
+      className="fixed top-0 left-0 w-full h-16 z-50 bg-gradient-to-r from-black/60 via-black/30 to-transparent backdrop-blur-md border-b border-white/10 shadow-lg flex items-center justify-between px-6"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.9, ease: "easeOut" }}
@@ -104,7 +104,7 @@ const Navbar = () => {
         </Sheet>
       </div>
       {/* LOGO */}
-      <div className="font-bold text-xl text-blue-600 hidden lg:block">U-Technology</div>
+      <div className="font-bold text-xl text-blue-300 hidden lg:block"> <Link to='/'>U-Technology</Link></div>
 
       <nav className="hidden lg:flex items-center gap-6 relative z-50">
         {Navlinks.map((item, index) => (
@@ -114,7 +114,7 @@ const Navbar = () => {
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <button className="text-base text-gray-900 py-5 group-hover:text-blue-600 transition">
+            <button className="text-base text-white py-5 group-hover:text-slate-300 transition">
               {item.title}
             </button>
           </div>
