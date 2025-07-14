@@ -79,7 +79,7 @@ export const Navlinks = [
                     { label: "IOT & M2M", href: "/iot", image: "/images/solutions/iot.png" },
                     { label: "Kiosk", href: "/kiosk", image: "/images/solutions/kiosk.png" },
                     { label: "UI / UX", href: "/ui-ux", image: "/images/solutions/uiux.png" },
-                    { label: "Web Development", href: "/web-development", image: "/images/solutions/webdev.png" }
+                    { label: "Web Development", href: "/solutions/web-development", image: "/images/solutions/webdev.png" }
                 ]
             },
         ]

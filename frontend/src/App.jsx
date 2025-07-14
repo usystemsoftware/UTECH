@@ -1,24 +1,21 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/header/Navbar";
 import { Home } from "./components/layout/main/Home";
 import { Footer } from "./components/layout/footer/Footer";
-
 import Chat from "./components/chatbot/Chat";
-import WebDevelopment from "./components/pages/Industries/Solutions/WebDevelopment";
+import WebDevelopment from "./components/pages/Industries/Solutions/WebDevelopment"; // Adjust the path if needed
 
 function App() {
   return (
     <>
-      {/* <Navbar />
-      <Home />
-      <Chat />
-      <Footer /> */}
-      <WebDevelopment />
-      {/* <Router>
+      <Navbar />
       <Routes>
-        <Route/>
+        <Route path="/" element={<Home />} />
+        <Route path="/solutions/web-development" element={<WebDevelopment />} />
+        {/* Add more routes as needed */}
       </Routes>
-      </Router> */}
+      <Chat />
+      <Footer />
     </>
   );
 }
