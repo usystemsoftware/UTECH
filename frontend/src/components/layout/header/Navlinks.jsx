@@ -311,7 +311,7 @@ export const Navlinks = [
       { label: "DevOps", href: "/services/devops" },
       {
         label: "Digital Transformation",
-        href: "/services/digital-transformation",
+        href: "/Services/DigitalTransformation",
       },
       { label: "FinOps Services", href: "/services/finops" },
       {

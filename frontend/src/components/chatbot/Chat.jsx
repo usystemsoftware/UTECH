@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { sendChatMessage, api } from "../../machine/api";
-import { FaRobot } from "react-icons/fa";
+import { BotIcon } from "lucide-react";
 
 const Bot = (props) => (
   <svg {...props} viewBox="0 0 24 24">
@@ -285,7 +285,7 @@ export default function Chat() {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1, transition: { delay: 0.3, type: "spring", stiffness: 200 } }}
         >
-          <FaRobot />
+          <BotIcon size={29} />
         </motion.button>
       )}
     </>

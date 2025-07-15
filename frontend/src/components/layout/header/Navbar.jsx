@@ -25,14 +25,14 @@ const Navbar = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-full h-16 z-50 bg-gradient-to-r from-black/60 via-black/30 to-transparent backdrop-blur-md border-b border-white/10 shadow-lg flex items-center justify-between px-6"
+      className="fixed top-0 left-0 w-full h-16 z-50 bg-gradient-to-r from-black/60 via-black/30 to-transparent backdrop-blur-md border-b border-white/10 shadow-lg flex items-center justify-between px-6 md:px-12"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.9, ease: "easeOut" }}
     >
       <div className="lg:hidden">
         <Sheet>
-          <SheetTrigger><RxHamburgerMenu className="text-white" />
+          <SheetTrigger><RxHamburgerMenu size={22} className="text-white" />
           </SheetTrigger>
           <SheetContent>
             <SheetHeader className="mt-6 max-h-[calc(100vh-5rem)] overflow-y-auto pr-2">
