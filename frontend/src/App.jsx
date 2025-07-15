@@ -7,6 +7,8 @@ import WebDevelopment from "./components/pages/Industries/Solutions/WebDevelopme
 import CRM from "./components/pages/Industries/Solutions/CRM";
 import BankingPage from "./components/pages/Industries/banking/BankingPage";
 import Finance from "./components/pages/Industries/banking/Finance";
+import DigitalTransformation from "./components/pages/Services/DigitalTransformation";
+// import DigitalTransformation from "./components/pages//services/digital-transformation";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/solutions/crm" element={<CRM />} />
         <Route path="/Industries/BankingPage" element={<BankingPage />} />
         <Route path="/Industries/Finance" element={<Finance />} />
+        <Route path="/Services/DigitalTransformation" element={<DigitalTransformation/>} />
+        {/* <Route path="/services/digital-transformation" element={<DigitalTransformation/>} /> */}
       </Routes>
       <Chat />
       <Footer />
