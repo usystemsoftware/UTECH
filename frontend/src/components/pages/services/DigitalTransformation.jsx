@@ -1,12 +1,12 @@
 import React from "react";
-import DigitalBanner from "../../../../public/assets/Services/transformation-banner.jpg";
-import DigitalServices from "../../../../public/assets/Services/digital-services.jpg";
-import Vector from "../../../../public/assets/Services/vector.jpg";
-import image from "../../../../public/assets/Services/images.png";
-import Newsroom from "../../../../public/assets/Services/newsroom.png";
-import Work from "../../../../public/assets/Services/work.jpg";
-import Benefit from "../../../../public/assets/Services/benefits.jpg";
-import Services from "../../../../public/assets/Services/digital-transformation.jpg";
+import DigitalBanner from "/assets/Services/transformation-banner.jpg";
+import DigitalServices from "/assets/Services/digital-services.jpg";
+import Vector from "/assets/Services/vector.jpg";
+import image from "/assets/Services/images.png";
+import Newsroom from "/assets/Services/newsroom.png";
+import Work from "/assets/Services/work.jpg";
+import Benefit from "/assets/Services/benefits.jpg";
+import Services from "/assets/Services/digital-transformation.jpg";
 import { motion } from "framer-motion";
 import { MdOutlineLocalAtm } from "react-icons/md";
 
@@ -138,17 +138,17 @@ const DigitalTransformation = () => {
     {
       title:
         "Leveraging Digital Transformation to Boost Efficiency and Profits",
-      image: "../../../../public/assets/Services/work.jpg", // Replace with your actual path
+      image: "/assets/Services/work.jpg", // Replace with your actual path
       link: "#",
     },
     {
       title: "New Tech: The Benefits of Digital Transformation",
-      image: "../../../../public/assets/Services/benefits.jpg",
+      image: "/assets/Services/benefits.jpg",
       link: "#",
     },
     {
       title: "Work Smarter with the Power of Virtual Office Technologies",
-      image: "../../../../public/assets/Services/digital-transformation.jpg",
+      image: "/assets/Services/digital-transformation.jpg",
       link: "#",
     },
   ];
@@ -869,7 +869,7 @@ const DigitalTransformation = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-10">
             {/* AICPA Image */}
             <motion.img
-              src="../../../../public/assets/Services/newsroom.png"
+              src="/assets/Services/newsroom.png"
               alt="AICPA SOC"
               className="w-48 sm:w-56 md:w-60"
               initial={{ scale: 0.8, opacity: 0 }}

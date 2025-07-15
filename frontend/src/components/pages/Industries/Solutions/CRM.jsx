@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { MdOutlineLocalAtm } from "react-icons/md";
-import Employment from "../../../../../public/assets/Solutions/CRM/Employment.webp";
-import Marketing from "../../../../../public/assets/Solutions/CRM/marketing.png";
-import FreshBooks from "../../../../../public/assets/Solutions/CRM/Finance-Logos/freshbooks.png";
-import OracleNetsuite from "../../../../../public/assets/Solutions/CRM/Finance-Logos/oracle-netsuite.png";
-import QuickBooks from "../../../../../public/assets/Solutions/CRM/Finance-Logos/quickbooks.png";
-import Saga from "../../../../../public/assets/Solutions/CRM/Finance-Logos/sage.png";
-import Integrations from "../../../../../public/assets/Solutions/CRM/integrations.png";
+import Employment from "/assets/Solutions/CRM/Employment.webp";
+import Marketing from "/assets/Solutions/CRM/marketing.png";
+import FreshBooks from "/assets/Solutions/CRM/Finance-Logos/freshbooks.png";
+import OracleNetsuite from "/assets/Solutions/CRM/Finance-Logos/oracle-netsuite.png";
+import QuickBooks from "/assets/Solutions/CRM/Finance-Logos/quickbooks.png";
+import Saga from "/assets/Solutions/CRM/Finance-Logos/sage.png";
+import Integrations from "/assets/Solutions/CRM/integrations.png";
 
 import {
   FaUniversity,

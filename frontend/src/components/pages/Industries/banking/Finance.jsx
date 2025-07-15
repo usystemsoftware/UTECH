@@ -1,295 +1,16 @@
-// import React from "react";
-// import FinanceBanner from "../../../../public/assets/Industries/Finance/finance-banner.jpg";
-// import Combofinance from "../../../../public/assets/Industries/Finance/combo-finance.png";
-// import { motion } from "framer-motion";
-// import { MdOutlineLocalAtm } from "react-icons/md";
-// import {
-//   FaUniversity,
-//   FaCreditCard,
-//   FaMobileAlt,
-//   FaMoneyCheckAlt,
-//   FaHandHoldingUsd,
-//   FaChartLine,
-//   FaSearchDollar,
-//   FaBalanceScale,
-//   FaLaptop,
-//   FaFileAlt,
-//   FaCheckCircle,
-//   FaDesktop,
-//   FaEye,
-//   FaCog,
-//   FaNetworkWired,
-
-//   //   FaNetworkWired,
-//   // FaUniversity,
-//   FaLaptopCode,
-//   FaDollarSign,
-//   FaFileInvoiceDollar,
-//   FaBell,
-//   FaCheckDouble,
-//   FaWallet,
-//   FaChevronDown,
-//   FaChevronUp,
-// } from "react-icons/fa";
-
-// const Finance = () => {
-//   const fadeUp = {
-//     hidden: { opacity: 0, y: 40 },
-//     visible: (i = 1) => ({
-//       opacity: 1,
-//       y: 0,
-//       transition: {
-//         delay: i * 0.2,
-//         duration: 0.6,
-//         ease: "easeOut",
-//       },
-//     }),
-//   };
-//   const leftFeatures = [
-//     {
-//       label: "Accounting",
-//       icon: <FaMoneyCheckAlt size={36} className="text-cyan-600" />,
-//     },
-//     {
-//       label: "PortFolio Management",
-//       icon: <MdOutlineLocalAtm size={36} className="text-cyan-600" />,
-//     },
-//     {
-//       label: "Financial Planning",
-//       icon: <FaUniversity size={36} className="text-cyan-600" />,
-//     },
-//   ];
-//   const rightFeatures = [
-//     {
-//       label: "Insurance",
-//       icon: <FaCreditCard size={36} className="text-cyan-600" />,
-//     },
-//     {
-//       label: "Taxes",
-//       icon: <FaMobileAlt size={36} className="text-cyan-600" />,
-//     },
-//     {
-//       label: "Capital Markets",
-//       icon: <FaHandHoldingUsd size={36} className="text-cyan-600" />,
-//     },
-//   ];
-//   return (
-//     <div>
-//       <motion.section
-//         className="relative bg-cover bg-center text-white h-[600px] md:h-[500px] flex items-center"
-//         style={{ backgroundImage: `url(${FinanceBanner})` }}
-//         initial="hidden"
-//         whileInView="visible"
-//         viewport={{ once: true, amount: 0.2 }}
-//         variants={fadeUp}
-//       >
-//         <div className="container mx-auto text-center px-4">
-//           <motion.h1 className="text-4xl md:text-5xl font-bold mb-6">
-//             FINANCIAL SOFTWARE DEVELOPMENT SERVICES
-//           </motion.h1>
-
-//           <motion.a
-//             href="#"
-//             className="inline-block border-2 border-cyan-400 text-white px-6 py-3 rounded-full text-lg hover:bg-cyan-400 hover:text-black transition duration-300"
-//             whileHover={{ scale: 1.05 }}
-//           >
-//             GET FINTECH DEVELOPERS
-//           </motion.a>
-//         </div>
-//       </motion.section>
-//       {/* Breadcrumb */}
-//       <div className="bg-white px-4 py-4 text-sm text-gray-500">
-//         <div className="container mx-auto">
-//           Home <span className="mx-2">›</span>{" "}
-//           <span className="text-cyan-600 font-medium">Banking</span>
-//         </div>
-//       </div>
-
-//       {/* Features Grid */}
-//       <section className="py-16 bg-white">
-//         <div className="container mx-auto text-center px-4">
-//           <motion.h2
-//             className="text-1xl md:text-3xl font-bold text-cyan-700 mb-4"
-//             variants={fadeUp}
-//             initial="hidden"
-//             whileInView="visible"
-//             viewport={{ once: true, amount: 0.2 }}
-//           >
-//             Chetu’s Financial Software Development Services
-//           </motion.h2>
-//           <p className="text-sm text-primary mb-10 max-w-2xl mx-auto">
-//             Chetu’s custom financial software development services cater to the
-//             finance industry, providing custom-tailored solutions for
-//             accounting, portfolio management, financial planning, insurance, and
-//             taxes.
-//           </p>
-
-//           <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
-//             <div className="flex flex-col gap-8 items-end text-right">
-//               {leftFeatures.map((item, index) => (
-//                 <motion.div
-//                   key={index}
-//                   className="flex items-center gap-3"
-//                   custom={index}
-//                   variants={fadeUp}
-//                   initial="hidden"
-//                   whileInView="visible"
-//                   viewport={{ once: true, amount: 0.2 }}
-//                 >
-//                   {item.icon}
-//                   <span className="text-md font-medium text-gray-700">
-//                     {item.label}
-//                   </span>
-//                 </motion.div>
-//               ))}
-//             </div>
-
-//             <motion.div
-//               className="w-full max-w-md my-10"
-//               variants={fadeUp}
-//               initial="hidden"
-//               whileInView="visible"
-//               viewport={{ once: true, amount: 0.2 }}
-//               custom={3}
-//             >
-//               <img
-//                 src={Combofinance}
-//                 alt="Banking dashboard UI"
-//                 className="rounded-xl  mx-auto w-[90%] md:w-[100%]"
-//               />
-//             </motion.div>
-
-//             <div className="flex flex-col gap-8 items-start text-left">
-//               {rightFeatures.map((item, index) => (
-//                 <motion.div
-//                   key={index}
-//                   className="flex items-center gap-3"
-//                   custom={index}
-//                   variants={fadeUp}
-//                   initial="hidden"
-//                   whileInView="visible"
-//                   viewport={{ once: true, amount: 0.2 }}
-//                 >
-//                   {item.icon}
-//                   <span className="text-md font-medium text-gray-700">
-//                     {item.label}
-//                   </span>
-//                 </motion.div>
-//               ))}
-//             </div>
-//           </div>
-
-//           <motion.a
-//             href="#"
-//             className="mt-10 inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold text-lg px-8 py-4 rounded-full transition duration-300 hover:scale-105"
-//             whileHover={{ scale: 1.05 }}
-//           >
-//             CUSTOMIZE YOUR BANKING SOLUTION NOW
-//           </motion.a>
-//         </div>
-//       </section>
-//       {/* AI Finance Benefits Section */}
-//       <section className="py-16 bg-gray-50">
-//         <div className="container mx-auto px-4 text-center">
-//           <motion.h2
-//             className="text-2xl md:text-3xl font-bold text-cyan-700 mb-4"
-//             variants={fadeUp}
-//             initial="hidden"
-//             whileInView="visible"
-//             viewport={{ once: true, amount: 0.2 }}
-//           >
-//             Optimizing Finance with Artificial Intelligence
-//           </motion.h2>
-//           <p className="text-sm text-gray-600 mb-12 max-w-3xl mx-auto">
-//             With the ever-evolving landscape of financial services becoming
-//             increasingly complex and digital, AI is a game-changer. Chetu’s
-//             Financial Software Development Services are here to help you
-//             transform your operations, improve your customer experiences, and
-//             aid in strategic decision-making.
-//           </p>
-
-//           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-left">
-//             {[
-//               {
-//                 icon: <FaCog size={36} className="text-cyan-600 mb-4" />,
-//                 title: "Improving Efficiency",
-//                 subtitle: "with AI-Powered Financial Services",
-//                 desc: "Harness AI to streamline financial processes through automation, robo-advisors, and predictive modeling.",
-//               },
-//               {
-//                 icon: <FaComments size={36} className="text-cyan-600 mb-4" />,
-//                 title: "Leveling Up Customer",
-//                 subtitle: "Engagement with Chatbots",
-//                 desc: "Use AI chatbots for real-time updates, historical insights, and seamless customer interactions.",
-//               },
-//               {
-//                 icon: (
-//                   <FaBalanceScale size={36} className="text-cyan-600 mb-4" />
-//                 ),
-//                 title: "Balance",
-//                 subtitle: "Responsibility and Innovation",
-//                 desc: "Implement AI responsibly with high standards, protecting sensitive data and maintaining compliance.",
-//               },
-//               {
-//                 icon: <FaChartLine size={36} className="text-cyan-600 mb-4" />,
-//                 title: "Shifting Wealth",
-//                 subtitle: "with AI-Driven Investment",
-//                 desc: "Curate investment strategies using AI to align with market trends, goals, and risk profiles.",
-//               },
-//               {
-//                 icon: (
-//                   <FaSearchDollar size={36} className="text-cyan-600 mb-4" />
-//                 ),
-//                 title: "Navigating",
-//                 subtitle: "Complexity of Financial Decision",
-//                 desc: "Strengthen decision-making with AI’s predictive capabilities and proactive risk management.",
-//               },
-//               {
-//                 icon: (
-//                   <FaCheckCircle size={36} className="text-cyan-600 mb-4" />
-//                 ),
-//                 title: "Unlock",
-//                 subtitle: "Efficiency and Compliance",
-//                 desc: "Automate financial reporting with AI for greater accuracy, speed, and regulatory compliance.",
-//               },
-//             ].map((item, index) => (
-//               <motion.div
-//                 key={index}
-//                 className="bg-white p-6 rounded-lg shadow hover:shadow-md transition"
-//                 variants={fadeUp}
-//                 custom={index}
-//                 initial="hidden"
-//                 whileInView="visible"
-//                 viewport={{ once: true, amount: 0.2 }}
-//               >
-//                 {item.icon}
-//                 <h3 className="text-lg font-semibold mb-1">{item.title}</h3>
-//                 <h4 className="text-md font-medium mb-2">{item.subtitle}</h4>
-//                 <p className="text-sm text-gray-600">{item.desc}</p>
-//               </motion.div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default Finance;
-
 import React, { useState } from "react";
-import FinanceBanner from "../../../../../public/assets/Industries/Finance/finance-banner.jpg";
-import Combofinance from "../../../../../public/assets/Industries/Finance/combo-finance.png";
-import Sage from "../../../../../public/assets/Industries/Finance/Finance-Logos/sage.png";
-import Freshbooks from "../../../../../public/assets/Industries/Finance/Finance-Logos/freshbooks.png";
-import OracleNetsuite from "../../../../../public/assets/Industries/Finance/Finance-Logos/oracle-netsuite.png";
-import QuickBooks from "../../../../../public/assets/Industries/Finance/Finance-Logos/quickbooks.png";
-import AccountingDevelop from "../../../../../public/assets/Industries/Finance/accounting-development.png";
-import PortfolioDevlop from "../../../../../public/assets/Industries/Finance/portfolio-development.png";
-import PlanningDevelopment from "../../../../../public/assets/Industries/Finance/planning-development.png";
-import InsuranceDevelopment from "../../../../../public/assets/Industries/Finance/insurance-development.png";
-import PreparationDevelopment from "../../../../../public/assets/Industries/Finance/preparation-development.png";
-import TradingDevelopment from "../../../../../public/assets/Industries/Finance/trading-development.png";
+import FinanceBanner from "/assets/Industries/Finance/finance-banner.jpg";
+import Combofinance from "/assets/Industries/Finance/combo-finance.png";
+import Sage from "/assets/Industries/Finance/Finance-Logos/sage.png";
+import Freshbooks from "/assets/Industries/Finance/Finance-Logos/freshbooks.png";
+import OracleNetsuite from "/assets/Industries/Finance/Finance-Logos/oracle-netsuite.png";
+import QuickBooks from "/assets/Industries/Finance/Finance-Logos/quickbooks.png";
+import AccountingDevelop from "/assets/Industries/Finance/accounting-development.png";
+import PortfolioDevlop from "/assets/Industries/Finance/portfolio-development.png";
+import PlanningDevelopment from "/assets/Industries/Finance/planning-development.png";
+import InsuranceDevelopment from "/assets/Industries/Finance/insurance-development.png";
+import PreparationDevelopment from "/assets/Industries/Finance/preparation-development.png";
+import TradingDevelopment from "/assets/Industries/Finance/trading-development.png";
 import { motion } from "framer-motion";
 import { MdOutlineLocalAtm } from "react-icons/md";
 import {
@@ -316,7 +37,7 @@ import {
   FaWallet,
   FaChevronDown,
   FaChevronUp,
-  FaComments, // ✅ ✅ ✅ added to fix the error
+  FaComments,
 } from "react-icons/fa";
 
 const Finance = () => {
@@ -405,7 +126,7 @@ const Finance = () => {
         "Before implementation, assistance means assessing needs and selecting suitable software aligned with your business needs. There should be support during implementation that includes training and system integration. Ongoing help with troubleshooting, updates, and optimization is crucial for smooth operation during post-implementation.",
     },
   ];
-  const [openIndex, setOpenIndex] = useState(0); // ✅ Only ONE index
+  const [openIndex, setOpenIndex] = useState(0); // Only ONE index
 
   const toggleFAQ = (index) => {
     if (openIndex === index) {
@@ -751,13 +472,12 @@ const Finance = () => {
                 custom={i + 1}
               >
                 <div
-                  className={`text-cyan-500 text-5xl ${
-                    i === 0
-                      ? "animate-bounce"
-                      : i === 1
+                  className={`text-cyan-500 text-5xl ${i === 0
+                    ? "animate-bounce"
+                    : i === 1
                       ? "animate-pulse"
                       : "animate-spin"
-                  }`}
+                    }`}
                 >
                   {i === 0 ? (
                     <FaMobileAlt />
@@ -772,15 +492,15 @@ const Finance = () => {
                     {i === 0
                       ? "Portfolio Management Dashboards"
                       : i === 1
-                      ? "Investment Data Integrations"
-                      : "Risk Management & Analysis"}
+                        ? "Investment Data Integrations"
+                        : "Risk Management & Analysis"}
                   </h2>
                   <p className="text-gray-600">
                     {i === 0
                       ? "Develop PM dashboards with built-in asset management modules and integrated ticker symbol databases, trade algorithms, historical data analysis tools, and more."
                       : i === 1
-                      ? "Program data entry forms and tools for standard investment files QIF, OFX, QFX, and CSV, plus accounts from TD Ameritrade, E*Trade, Vanguard, and other major brokerages."
-                      : "Offer third-party risk mitigation solutions that include multi-factor risk modeling and stress scenario testing to identify and assess high-risk financial investments and contingencies."}
+                        ? "Program data entry forms and tools for standard investment files QIF, OFX, QFX, and CSV, plus accounts from TD Ameritrade, E*Trade, Vanguard, and other major brokerages."
+                        : "Offer third-party risk mitigation solutions that include multi-factor risk modeling and stress scenario testing to identify and assess high-risk financial investments and contingencies."}
                   </p>
                 </div>
               </motion.div>
@@ -1086,13 +806,12 @@ const Finance = () => {
                 custom={i + 1}
               >
                 <div
-                  className={`text-cyan-500 text-5xl ${
-                    i === 0
-                      ? "animate-bounce"
-                      : i === 1
+                  className={`text-cyan-500 text-5xl ${i === 0
+                    ? "animate-bounce"
+                    : i === 1
                       ? "animate-pulse"
                       : "animate-spin"
-                  }`}
+                    }`}
                 >
                   {i === 0 ? (
                     <FaMobileAlt />
@@ -1107,15 +826,15 @@ const Finance = () => {
                     {i === 0
                       ? "Tax Calculator Applications"
                       : i === 1
-                      ? "Tax Forms Software Integration"
-                      : "Small Business Tax Software"}
+                        ? "Tax Forms Software Integration"
+                        : "Small Business Tax Software"}
                   </h2>
                   <p className="text-gray-600">
                     {i === 0
                       ? "Engineer tax calculator apps equipped with the ability to estimate refunds in any jurisdiction, validate tax credits and exemptions, and more."
                       : i === 1
-                      ? "Build entry income tax forms for 1040, 1040A, 1040EZ, 1041, 1099, 1065, 1120, and many more, integrated to communicate data to servers, enabling real-time information validation."
-                      : "Designed for freelancers, independent contractors, and small business owners, built with e-commerce software, expense log importation, state-by-state tax guidelines, and more."}
+                        ? "Build entry income tax forms for 1040, 1040A, 1040EZ, 1041, 1099, 1065, 1120, and many more, integrated to communicate data to servers, enabling real-time information validation."
+                        : "Designed for freelancers, independent contractors, and small business owners, built with e-commerce software, expense log importation, state-by-state tax guidelines, and more."}
                   </p>
                 </div>
               </motion.div>

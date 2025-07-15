@@ -1,19 +1,15 @@
-
-// import React, { useState } from "react";
 import React, { useState } from "react";
 
 import { motion } from "framer-motion";
-// import BankingHeader from "../../../public/assets/Banking/BankingHeader.webp";
-// import BankingHeader from "../../../../public/assets/Banking/BankingHeader.webp";
-import BankingHeader from "../../../../../public/assets/Industries/Banking/BankingHeader.webp"
-import FeatureImage from "../../../../../public/assets/Industries/Banking/contentBanking.png";
-import MobileAnalytics from "../../../../../public/assets/Industries/Banking/BankingPhone.png";
-import softwareSolutions from "../../../../../public/assets/Industries/Banking/softwareSolutions.png";
-import Phone from "../../../../../public/assets/Industries/Banking/Phone.png";
-import ATMImage from "../../../../../public/assets/Industries/Banking/customatm.png";
-import customcore from "../../../../../public/assets/Industries/Banking/customcore.png";
-import EMVImage from "../../../../../public/assets/Industries/Banking/mobilebrowser.png";
-import payment from "../../../../../public/assets/Industries/Banking/payment.png";
+import BankingHeader from "/assets/Industries/Banking/BankingHeader.webp"
+import FeatureImage from "/assets/Industries/Banking/contentBanking.png";
+import MobileAnalytics from "/assets/Industries/Banking/BankingPhone.png";
+import softwareSolutions from "/assets/Industries/Banking/softwareSolutions.png";
+import Phone from "/assets/Industries/Banking/Phone.png";
+import ATMImage from "/assets/Industries/Banking/customatm.png";
+import customcore from "/assets/Industries/Banking/customcore.png";
+import EMVImage from "/assets/Industries/Banking/mobilebrowser.png";
+import payment from "/assets/Industries/Banking/payment.png";
 
 import {
   FaUniversity,
@@ -428,10 +424,10 @@ const BankingPage = () => {
                 >
                   <div
                     className={`text-cyan-500 text-4xl ${i === 0
-                        ? "animate-bounce"
-                        : i === 1
-                          ? "animate-pulse"
-                          : "animate-spin"
+                      ? "animate-bounce"
+                      : i === 1
+                        ? "animate-pulse"
+                        : "animate-spin"
                       }`}
                   >
                     {i === 0 ? (
@@ -510,10 +506,10 @@ const BankingPage = () => {
               >
                 <div
                   className={`text-cyan-500 text-5xl ${i === 0
-                      ? "animate-bounce"
-                      : i === 1
-                        ? "animate-pulse"
-                        : "animate-spin"
+                    ? "animate-bounce"
+                    : i === 1
+                      ? "animate-pulse"
+                      : "animate-spin"
                     }`}
                 >
                   {i === 0 ? (
@@ -630,10 +626,10 @@ const BankingPage = () => {
                 >
                   <div
                     className={`text-cyan-500 text-4xl ${i === 0
-                        ? "animate-bounce"
-                        : i === 1
-                          ? "animate-pulse"
-                          : "animate-spin"
+                      ? "animate-bounce"
+                      : i === 1
+                        ? "animate-pulse"
+                        : "animate-spin"
                       }`}
                   >
                     {i === 0 ? (
@@ -934,10 +930,10 @@ const BankingPage = () => {
                 >
                   <div
                     className={`text-cyan-500 text-4xl ${i === 0
-                        ? "animate-bounce"
-                        : i === 1
-                          ? "animate-pulse"
-                          : "animate-spin"
+                      ? "animate-bounce"
+                      : i === 1
+                        ? "animate-pulse"
+                        : "animate-spin"
                       }`}
                   >
                     {i === 0 ? (
@@ -1193,10 +1189,10 @@ const BankingPage = () => {
               >
                 <div
                   className={`text-cyan-500 text-5xl ${i === 0
-                      ? "animate-bounce"
-                      : i === 1
-                        ? "animate-pulse"
-                        : "animate-spin"
+                    ? "animate-bounce"
+                    : i === 1
+                      ? "animate-pulse"
+                      : "animate-spin"
                     }`}
                 >
                   {i === 0 ? (

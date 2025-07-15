@@ -3,9 +3,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-import BankingHeader from "../../../../../public/assets/Industries/Banking/BankingHeader.webp"
-import CellphoneAnimation from "../../../../../public/assets/services/Api-development/cellphone-animation.gif";
-
+import BankingHeader from "/assets/Industries/Banking/BankingHeader.webp"
+import CellphoneAnimation from "/assets/Services/Api-development/cellphone-animation.gif";
 
 import {
     FaUniversity,
