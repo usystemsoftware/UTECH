@@ -7,6 +7,7 @@ import WebDevelopment from "./components/pages/Industries/Solutions/WebDevelopme
 import CRM from "./components/pages/Industries/Solutions/CRM";
 import BankingPage from "./components/pages/Industries/banking/BankingPage";
 import Finance from "./components/pages/Industries/banking/Finance";
+import ApiDevelopment from "./components/pages/Industries/services/ApiDevelopment";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/solutions/web-development" element={<WebDevelopment />} />
         <Route path="/solutions/crm" element={<CRM />} />
+        <Route path="/solutions/api-development" element={<ApiDevelopment />} />
+
         <Route path="/Industries/BankingPage" element={<BankingPage />} />
         <Route path="/Industries/Finance" element={<Finance />} />
       </Routes>

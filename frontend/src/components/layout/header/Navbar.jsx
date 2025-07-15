@@ -32,7 +32,7 @@ const Navbar = () => {
     >
       <div className="lg:hidden">
         <Sheet>
-          <SheetTrigger><RxHamburgerMenu />
+          <SheetTrigger><RxHamburgerMenu className="text-white" />
           </SheetTrigger>
           <SheetContent>
             <SheetHeader className="mt-6 max-h-[calc(100vh-5rem)] overflow-y-auto pr-2">

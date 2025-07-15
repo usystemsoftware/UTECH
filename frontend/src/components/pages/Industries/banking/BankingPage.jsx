@@ -1,895 +1,3 @@
-// import React from "react";
-// import BankingHeader from "../../../public/assets/Banking/BankingHeader.webp";
-// import FeatureImage from "../../../public/assets/Banking/contentBanking.png";
-
-// import {
-//   FaUniversity,
-//   FaCreditCard,
-//   FaMobileAlt,
-//   FaMoneyCheckAlt,
-//   FaHandHoldingUsd,
-// } from "react-icons/fa";
-// import { MdAtm } from "react-icons/md";
-
-// const leftFeatures = [
-//   {
-//     label: "ACH & Check 21",
-//     icon: <FaMoneyCheckAlt size={36} className="text-cyan-600" />,
-//   },
-//   { label: "ATM", icon: <MdAtm size={36} className="text-cyan-600" /> },
-//   {
-//     label: "Core Banking Systems",
-//     icon: <FaUniversity size={36} className="text-cyan-600" />,
-//   },
-// ];
-
-// const rightFeatures = [
-//   { label: "EMV", icon: <FaCreditCard size={36} className="text-cyan-600" /> },
-//   {
-//     label: "Mobile Banking App",
-//     icon: <FaMobileAlt size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     label: "Loan Servicing & Origination",
-//     icon: <FaHandHoldingUsd size={36} className="text-cyan-600" />,
-//   },
-// ];
-
-// const BankingPage = () => {
-//   return (
-//     <div>
-//       {/* Hero Section */}
-//       <section
-//         className="relative bg-cover bg-center text-white py-36"
-//         style={{
-//           backgroundImage: `url(${BankingHeader})`,
-//           backgroundSize: "cover",
-//           backgroundPosition: "center",
-//           backgroundRepeat: "no-repeat",
-//         }}
-//       >
-//         <div className="container mx-auto text-center px-4">
-//           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-//             BANKING SOFTWARE DEVELOPMENT
-//           </h1>
-//           <p className="text-lg md:text-xl mb-8">
-//             Transforming banking with AI, powering fraud detection, wealth
-//             management, KYC automation, and predictive analytics.
-//           </p>
-//           <a
-//             href="#"
-//             className="inline-block border-2 border-cyan-400 text-white px-6 py-3 rounded-full text-lg hover:bg-cyan-400 hover:text-black transition"
-//           >
-//             HIRE BANKING SOFTWARE DEVELOPERS
-//           </a>
-//         </div>
-//       </section>
-
-//       {/* Icon Feature Section */}
-//       <section className="py-20 bg-white text-center px-4">
-//         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
-//           {/* Left Features */}
-//           <div className="flex flex-col gap-12 items-end text-right">
-//             {leftFeatures.map((item, index) => (
-//               <div key={index} className="flex flex-col items-end">
-//                 <span className="text-md font-medium mb-1 text-gray-700">
-//                   {item.label}
-//                 </span>
-//                 <div className="w-12 h-[1px] bg-gray-300 mb-2" />
-//                 {item.icon}
-//               </div>
-//             ))}
-//           </div>
-
-//           {/* Center Devices/Mockup Image */}
-//           <div className="w-full max-w-md">
-//             <img
-//               src={FeatureImage}
-//               alt="Banking dashboard UI"
-//               className="rounded-xl shadow-lg mx-auto w-[90%] md:w-[100%]"
-//             />
-//           </div>
-
-//           {/* Right Features */}
-//           <div className="flex flex-col gap-12 items-start text-left">
-//             {rightFeatures.map((item, index) => (
-//               <div key={index} className="flex flex-col items-start">
-//                 <span className="text-md font-medium mb-1 text-gray-700">
-//                   {item.label}
-//                 </span>
-//                 <div className="w-12 h-[1px] bg-gray-300 mb-2" />
-//                 {item.icon}
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default BankingPage;
-
-// import React from "react";
-// import BankingHeader from "../../../public/assets/Banking/BankingHeader.webp";
-// import FeatureImage from "../../../public/assets/Banking/contentBanking.png"; // or Screenshot image
-
-// import {
-//   FaUniversity,
-//   FaCreditCard,
-//   FaMobileAlt,
-//   FaMoneyCheckAlt,
-//   FaHandHoldingUsd,
-// } from "react-icons/fa";
-// import { MdOutlineLocalAtm } from "react-icons/md";
-
-// // Left and right feature lists with icons
-// const leftFeatures = [
-//   {
-//     label: "ACH & Check 21",
-//     icon: <FaMoneyCheckAlt size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     label: "ATM",
-//     icon: <MdOutlineLocalAtm size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     label: "Core Banking Systems",
-//     icon: <FaUniversity size={36} className="text-cyan-600" />,
-//   },
-// ];
-// const rightFeatures = [
-//   { label: "EMV", icon: <FaCreditCard size={36} className="text-cyan-600" /> },
-//   {
-//     label: "Mobile Banking App",
-//     icon: <FaMobileAlt size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     label: "Loan Servicing & Origination",
-//     icon: <FaHandHoldingUsd size={36} className="text-cyan-600" />,
-//   },
-// ];
-
-// const BankingPage = () => {
-//   return (
-//     <div>
-//       {/* Hero Section */}
-//       <section
-//         className="relative bg-cover bg-center text-white py-36"
-//         style={{
-//           backgroundImage: `url(${BankingHeader})`,
-//           backgroundSize: "cover",
-//           backgroundPosition: "center",
-//           backgroundRepeat: "no-repeat",
-//         }}
-//       >
-//         <div className="container mx-auto text-center px-4">
-//           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-//             BANKING SOFTWARE DEVELOPMENT
-//           </h1>
-//           <p className="text-lg md:text-xl mb-8">
-//             Transforming banking with AI, powering fraud detection, wealth
-//             management, KYC automation, and predictive analytics.
-//           </p>
-//           <a
-//             href="#"
-//             className="inline-block border-2 border-cyan-400 text-white px-6 py-3 rounded-full text-lg hover:bg-cyan-400 hover:text-black transition"
-//           >
-//             HIRE BANKING SOFTWARE DEVELOPERS
-//           </a>
-//         </div>
-//       </section>
-//       <section className="bg-gray-50 py-4 px-6 text-sm text-gray-700">
-//         <div className="container mx-auto flex items-center gap-2">
-//           <a href="/" className="hover:text-cyan-700 font-medium">
-//             Home
-//           </a>
-//           <span className="text-gray-500">/</span>
-//           <span className="font-semibold text-cyan-700">Banking</span>
-//         </div>
-//       </section>
-//       {/* Main Content Section with Image */}
-//       <section className="py-16 bg-white">
-//         <div className="container mx-auto text-center px-4">
-//           <h2 className="text-1xl md:text-3xl font-bold text-cyan-700 mb-4">
-//             Custom Banking Software Development Company
-//           </h2>
-
-//           <p className="text-sm text-primary mb-10 max-w-1xl mx-auto">
-//             Chetu’s team of expert developers cater to the technical needs of
-//             the ever-evolving banking sector by offering high quality software
-//             solutions that transform your core <br /> environment to streamline
-//             banking & financial workflows.
-//           </p>
-
-//           <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
-//             {/* Left Features */}
-//             {/* Left Features */}
-//             <div className="flex flex-col gap-8 items-end text-right">
-//               {leftFeatures.map((item, index) => (
-//                 <div
-//                   key={index}
-//                   className="flex items-center gap-2 text-right mb-2"
-//                 >
-//                   {item.icon}
-//                   <span className="text-md font-medium text-gray-700">
-//                     {item.label}
-//                   </span>
-//                 </div>
-//               ))}
-//             </div>
-
-//             {/* Center Image */}
-//             <div className="w-full max-w-md my-10">
-//               <img
-//                 src={FeatureImage}
-//                 alt="Banking dashboard UI"
-//                 className="rounded-xl shadow-lg mx-auto w-[90%] md:w-[100%]"
-//               />
-//             </div>
-//             {/* Right Features */}
-//             <div className="flex flex-col gap-12 items-start text-left">
-//               {rightFeatures.map((item, index) => (
-//                 <div key={index} className="flex items-center gap-2 mb-4">
-//                   {item.icon}
-//                   <span className="text-md font-medium text-gray-700">
-//                     {item.label}
-//                   </span>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-
-//           <a
-//             href="#"
-//             className="mt-10 inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold text-lg px-8 py-4 rounded-full transition"
-//           >
-//             CUSTOMIZE YOUR BANKING SOLUTION NOW
-//           </a>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default BankingPage;
-
-// import React from "react";
-// import BankingHeader from "../../../public/assets/Banking/BankingHeader.webp";
-// import FeatureImage from "../../../public/assets/Banking/contentBanking.png";
-// import MobileAnalytics from "../../../public/assets/Banking/BankingPhone.png";
-
-// import {
-//   FaUniversity,
-//   FaCreditCard,
-//   FaMobileAlt,
-//   FaMoneyCheckAlt,
-//   FaHandHoldingUsd,
-//   FaChartLine,
-//   FaSearchDollar,
-//   FaBalanceScale,
-// } from "react-icons/fa";
-// import { MdOutlineLocalAtm } from "react-icons/md";
-
-// const leftFeatures = [
-//   {
-//     label: "ACH & Check 21",
-//     icon: <FaMoneyCheckAlt size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     label: "ATM",
-//     icon: <MdOutlineLocalAtm size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     label: "Core Banking Systems",
-//     icon: <FaUniversity size={36} className="text-cyan-600" />,
-//   },
-// ];
-
-// const rightFeatures = [
-//   {
-//     label: "EMV",
-//     icon: <FaCreditCard size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     label: "Mobile Banking App",
-//     icon: <FaMobileAlt size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     label: "Loan Servicing & Origination",
-//     icon: <FaHandHoldingUsd size={36} className="text-cyan-600" />,
-//   },
-// ];
-
-// const AIFeatures = [
-//   {
-//     title: "Banking Fraud Detection",
-//     description:
-//       "We provide advanced fraud analytics in banking, which can help detect fraud and safeguard data from unusual conduct in real time. Our solutions enable financial organizations to improve safety and help protect customer trust.",
-//     icon: <FaSearchDollar size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     title: "Predictive Analytics in the Banking Industry",
-//     description:
-//       "We deliver cutting-edge predictive analytics for banking and financial services, empowering smarter decisions. From investment banking to retail banking, our solutions use predictive analysis to improve risk management and provide efficient client insights in operations.",
-//     icon: <FaChartLine size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     title: "Banking and Risk Management",
-//     description:
-//       "We provide customized banking risk management software solutions, supporting financial organizations in improving performance, managing risks, and optimizing compliance. Our tools support risk management services in banking and the broader banking industry with security.",
-//     icon: <FaBalanceScale size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     title: "Wealth Management Banking Services",
-//     description:
-//       "We deliver cutting-edge banking and wealth management solutions, streamlining operations across retail and wealth management sectors. Our custom platforms empower more intelligent financial planning, investment methods, and client involvement in the banking sector.",
-//     icon: <FaUniversity size={36} className="text-cyan-600" />,
-//   },
-// ];
-
-// const BankingPage = () => {
-//   return (
-//     <div>
-//       {/* Hero Section */}
-//       <section
-//         className="relative bg-cover bg-center text-white py-36"
-//         style={{
-//           backgroundImage: `url(${BankingHeader})`,
-//         }}
-//       >
-//         <div className="container mx-auto text-center px-4">
-//           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-//             BANKING SOFTWARE DEVELOPMENT
-//           </h1>
-//           <p className="text-lg md:text-xl mb-8">
-//             Transforming banking with AI, powering fraud detection, wealth
-//             management, KYC automation, and predictive analytics.
-//           </p>
-//           <a
-//             href="#"
-//             className="inline-block border-2 border-cyan-400 text-white px-6 py-3 rounded-full text-lg hover:bg-cyan-400 hover:text-black transition"
-//           >
-//             HIRE BANKING SOFTWARE DEVELOPERS
-//           </a>
-//         </div>
-//       </section>
-
-//       {/* Breadcrumbs */}
-//       <div className="bg-white px-4 py-4 text-sm text-gray-500">
-//         <div className="container mx-auto">
-//           Home <span className="mx-2">›</span>{" "}
-//           <span className="text-cyan-600 font-medium">Banking</span>
-//         </div>
-//       </div>
-
-//       {/* Custom Banking Company Section */}
-//       <section className="py-5 bg-white">
-//         <div className="container mx-auto text-center px-4">
-//           <h2 className="text-1xl md:text-3xl font-bold text-cyan-700 mb-4">
-//             Custom Banking Software Development Company
-//           </h2>
-
-//           <p className="text-sm text-primary mb-10 max-w-2xl mx-auto">
-//             Chetu’s team of expert developers cater to the technical needs of
-//             the ever-evolving banking sector by offering high quality software
-//             solutions that transform your core environment to streamline banking
-//             & financial workflows.
-//           </p>
-
-//           <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
-//             {/* Left Features */}
-//             <div className="flex flex-col gap-8 items-end text-right">
-//               {leftFeatures.map((item, index) => (
-//                 <div key={index} className="flex items-center gap-3">
-//                   {item.icon}
-//                   <span className="text-md font-medium text-gray-700">
-//                     {item.label}
-//                   </span>
-//                 </div>
-//               ))}
-//             </div>
-
-//             {/* Center Image */}
-//             <div className="w-full max-w-md my-10">
-//               <img
-//                 src={FeatureImage}
-//                 alt="Banking dashboard UI"
-//                 className="rounded-xl shadow-lg mx-auto w-[90%] md:w-[100%]"
-//               />
-//             </div>
-
-//             {/* Right Features */}
-//             <div className="flex flex-col gap-8 items-start text-left">
-//               {rightFeatures.map((item, index) => (
-//                 <div key={index} className="flex items-center gap-3">
-//                   {item.icon}
-//                   <span className="text-md font-medium text-gray-700">
-//                     {item.label}
-//                   </span>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-
-//           <a
-//             href="#"
-//             className="mt-10 inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold text-lg px-8 py-4 rounded-full transition"
-//           >
-//             CUSTOMIZE YOUR BANKING SOLUTION NOW
-//           </a>
-//         </div>
-//       </section>
-
-//       {/* AI Section */}
-//       <section className="py-16 bg-gray-100">
-//         <div className="container mx-auto text-center px-4">
-//           <h2 className="text-2xl  font-bold mb-8">
-//             Transforming the Banking Industry with AI-Powered Solutions
-//           </h2>
-//           <p className="text-gray-600 max-w-3xl mx-auto mb-12">
-//             Following best practices, we harness the power of{" "}
-//             <span className="text-cyan-600 font-medium">
-//               Artificial Intelligence
-//             </span>{" "}
-//             (AI) in our financial software development process to build transformative solutions for the Banking industry. Our AI-driven
-//             software solution experts develop cutting-edge capabilities such as
-//             advanced fraud detection, AI-enhanced credit assessment, and
-//             AI-enhanced financial forecasting.
-//           </p>
-
-//           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-//             {/* Left Text Features */}
-//             <div className="flex flex-col gap-12">
-//               {AIFeatures.slice(0, 2).map((item, index) => (
-//                 <div key={index} className="text-left">
-//                   <div className="flex items-center gap-2 mb-2">
-//                     {item.icon}
-//                     <h3 className="text-lg font-bold text-black">
-//                       {item.title}
-//                     </h3>
-//                   </div>
-//                   <p className="text-sm text-gray-700 leading-relaxed">
-//                     {item.description}
-//                   </p>
-//                 </div>
-//               ))}
-//             </div>
-
-//             {/* Center Image */}
-//             <div className="w-full">
-//               <img
-//                 src={MobileAnalytics}
-//                 alt="AI-powered banking analytics"
-//                 className="mx-auto w-[45%]"
-//               />
-//             </div>
-
-//             {/* Right Text Features */}
-//             <div className="flex flex-col gap-12">
-//               {AIFeatures.slice(2).map((item, index) => (
-//                 <div key={index} className="text-left">
-//                   <div className="flex items-center gap-2 mb-2">
-//                     {item.icon}
-//                     <h3 className="text-lg font-bold text-black">
-//                       {item.title}
-//                     </h3>
-//                   </div>
-//                   <p className="text-sm text-gray-700 leading-relaxed">
-//                     {item.description}
-//                   </p>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-
-//           <a
-//             href="#"
-//             className="mt-16 inline-block border-2 border-orange-500 text-black font-semibold text-lg px-8 py-4 rounded-full hover:bg-orange-500 hover:text-white transition"
-//           >
-//             GET AI-POWERED BANKING SOFTWARE SOLUTIONS
-//           </a>
-//         </div>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default BankingPage;
-
-// import React from "react";
-// import { motion } from "framer-motion";
-// import BankingHeader from "../../../public/assets/Banking/BankingHeader.webp";
-// import FeatureImage from "../../../public/assets/Banking/contentBanking.png";
-// import MobileAnalytics from "../../../public/assets/Banking/BankingPhone.png";
-// import softwareSolutions from "../../../public/assets/Banking/softwareSolutions.png";
-
-// import {
-//   FaUniversity,
-//   FaCreditCard,
-//   FaMobileAlt,
-//   FaMoneyCheckAlt,
-//   FaHandHoldingUsd,
-//   FaChartLine,
-//   FaSearchDollar,
-//   FaBalanceScale,
-//   FaLaptop,
-//   FaFileAlt,
-//   FaCheckCircle,
-// } from "react-icons/fa";
-// import { MdOutlineLocalAtm } from "react-icons/md";
-
-// const leftFeatures = [
-//   {
-//     label: "ACH & Check 21",
-//     icon: <FaMoneyCheckAlt size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     label: "ATM",
-//     icon: <MdOutlineLocalAtm size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     label: "Core Banking Systems",
-//     icon: <FaUniversity size={36} className="text-cyan-600" />,
-//   },
-// ];
-
-// const rightFeatures = [
-//   {
-//     label: "EMV",
-//     icon: <FaCreditCard size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     label: "Mobile Banking App",
-//     icon: <FaMobileAlt size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     label: "Loan Servicing & Origination",
-//     icon: <FaHandHoldingUsd size={36} className="text-cyan-600" />,
-//   },
-// ];
-
-// const AIFeatures = [
-//   {
-//     title: "Banking Fraud Detection",
-//     description:
-//       "We provide advanced fraud analytics in banking, which can help detect fraud and safeguard data from unusual conduct in real time.",
-//     icon: <FaSearchDollar size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     title: "Predictive Analytics in the Banking Industry",
-//     description:
-//       "We deliver cutting-edge predictive analytics for banking and financial services, empowering smarter decisions.",
-//     icon: <FaChartLine size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     title: "Banking and Risk Management",
-//     description:
-//       "We provide customized banking risk management software solutions, supporting financial organizations in improving performance.",
-//     icon: <FaBalanceScale size={36} className="text-cyan-600" />,
-//   },
-//   {
-//     title: "Wealth Management Banking Services",
-//     description:
-//       "We deliver cutting-edge banking and wealth management solutions, streamlining operations across retail and wealth management sectors.",
-//     icon: <FaUniversity size={36} className="text-cyan-600" />,
-//   },
-// ];
-
-// const fadeUp = {
-//   hidden: { opacity: 0, y: 20 },
-//   visible: (i = 1) => ({
-//     opacity: 1,
-//     y: 0,
-//     transition: {
-//       delay: i * 0.2,
-//       duration: 0.6,
-//     },
-//   }),
-// };
-
-// const BankingPage = () => {
-//   return (
-//     <div>
-//       <motion.section
-//         className="relative bg-cover bg-center text-white py-36"
-//         style={{ backgroundImage: `url(${BankingHeader})` }}
-//         initial="hidden"
-//         whileInView="visible"
-//         viewport={{ once: true, amount: 0.2 }}
-//         variants={fadeUp}
-//       >
-//         <div className="container mx-auto text-center px-4">
-//           <motion.h1 className="text-4xl md:text-5xl font-bold mb-6">
-//             BANKING SOFTWARE DEVELOPMENT
-//           </motion.h1>
-//           <motion.p className="text-lg md:text-xl mb-8">
-//             Transforming banking with AI, powering fraud detection, wealth
-//             management, KYC automation, and predictive analytics.
-//           </motion.p>
-//           <motion.a
-//             href="#"
-//             className="inline-block border-2 border-cyan-400 text-white px-6 py-3 rounded-full text-lg hover:bg-cyan-400 hover:text-black transition duration-300"
-//             whileHover={{ scale: 1.05 }}
-//           >
-//             HIRE BANKING SOFTWARE DEVELOPERS
-//           </motion.a>
-//         </div>
-//       </motion.section>
-
-//       <div className="bg-white px-4 py-4 text-sm text-gray-500">
-//         <div className="container mx-auto">
-//           Home <span className="mx-2">›</span>{" "}
-//           <span className="text-cyan-600 font-medium">Banking</span>
-//         </div>
-//       </div>
-
-//       <section className="py-16 bg-white">
-//         <div className="container mx-auto text-center px-4">
-//           <motion.h2
-//             className="text-1xl md:text-3xl font-bold text-cyan-700 mb-4"
-//             variants={fadeUp}
-//             initial="hidden"
-//             whileInView="visible"
-//             viewport={{ once: true, amount: 0.2 }}
-//           >
-//             Custom Banking Software Development Company
-//           </motion.h2>
-//           <p className="text-sm text-primary mb-10 max-w-2xl mx-auto">
-//             Chetu’s expert developers offer high-quality software solutions that
-//             transform banking environments.
-//           </p>
-
-//           <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
-//             <div className="flex flex-col gap-8 items-end text-right">
-//               {leftFeatures.map((item, index) => (
-//                 <motion.div
-//                   key={index}
-//                   className="flex items-center gap-3"
-//                   custom={index}
-//                   variants={fadeUp}
-//                   initial="hidden"
-//                   whileInView="visible"
-//                   viewport={{ once: true, amount: 0.2 }}
-//                 >
-//                   {item.icon}
-//                   <span className="text-md font-medium text-gray-700">
-//                     {item.label}
-//                   </span>
-//                 </motion.div>
-//               ))}
-//             </div>
-
-//             <motion.div
-//               className="w-full max-w-md my-10"
-//               variants={fadeUp}
-//               initial="hidden"
-//               whileInView="visible"
-//               viewport={{ once: true, amount: 0.2 }}
-//               custom={3}
-//             >
-//               <img
-//                 src={FeatureImage}
-//                 alt="Banking dashboard UI"
-//                 className="rounded-xl shadow-lg mx-auto w-[90%] md:w-[100%]"
-//               />
-//             </motion.div>
-
-//             <div className="flex flex-col gap-8 items-start text-left">
-//               {rightFeatures.map((item, index) => (
-//                 <motion.div
-//                   key={index}
-//                   className="flex items-center gap-3"
-//                   custom={index}
-//                   variants={fadeUp}
-//                   initial="hidden"
-//                   whileInView="visible"
-//                   viewport={{ once: true, amount: 0.2 }}
-//                 >
-//                   {item.icon}
-//                   <span className="text-md font-medium text-gray-700">
-//                     {item.label}
-//                   </span>
-//                 </motion.div>
-//               ))}
-//             </div>
-//           </div>
-
-//           <motion.a
-//             href="#"
-//             className="mt-10 inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold text-lg px-8 py-4 rounded-full transition duration-300 hover:scale-105"
-//             whileHover={{ scale: 1.05 }}
-//           >
-//             CUSTOMIZE YOUR BANKING SOLUTION NOW
-//           </motion.a>
-//         </div>
-//       </section>
-
-//       <section className="py-16 bg-gray-100">
-//         <div className="container mx-auto text-center px-4">
-//           <h2 className="text-2xl font-bold mb-8">
-//             Transforming the Banking Industry with AI-Powered Solutions
-//           </h2>
-//           <p className="text-gray-600 max-w-3xl mx-auto mb-12">
-//             Following best practices, we harness the power of{" "}
-//             <span className="text-cyan-600 font-medium">
-//               {" "}
-//               Artificial Intelligence (AI)
-//             </span>{" "}
-//             in our financial software development process to build
-//             transformative solutions for the Banking industry. Our AI-driven
-//             software solution experts develop cutting-edge capabilities such as
-//             advanced fraud detection, AI-enhanced credit assessment, and
-//             AI-enhanced financial forecasting. to build transformative solutions
-//             in the banking industry.
-//           </p>
-
-//           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-//             <div className="flex flex-col gap-12">
-//               {AIFeatures.slice(0, 2).map((item, index) => (
-//                 <motion.div
-//                   key={index}
-//                   className="text-left"
-//                   variants={fadeUp}
-//                   initial="hidden"
-//                   whileInView="visible"
-//                   viewport={{ once: true, amount: 0.2 }}
-//                   custom={index}
-//                 >
-//                   <div className="flex items-center gap-2 mb-2">
-//                     {item.icon}
-//                     <h3 className="text-lg font-bold text-black">
-//                       {item.title}
-//                     </h3>
-//                   </div>
-//                   <p className="text-sm text-gray-700 leading-relaxed">
-//                     {item.description}
-//                   </p>
-//                 </motion.div>
-//               ))}
-//             </div>
-
-//             <motion.div
-//               className="w-full"
-//               variants={fadeUp}
-//               initial="hidden"
-//               whileInView="visible"
-//               viewport={{ once: true, amount: 0.2 }}
-//               custom={2}
-//             >
-//               <img
-//                 src={MobileAnalytics}
-//                 alt="AI-powered banking analytics"
-//                 className="mx-auto w-[45%]"
-//               />
-//             </motion.div>
-
-//             <div className="flex flex-col gap-12">
-//               {AIFeatures.slice(2).map((item, index) => (
-//                 <motion.div
-//                   key={index}
-//                   className="text-left"
-//                   variants={fadeUp}
-//                   initial="hidden"
-//                   whileInView="visible"
-//                   viewport={{ once: true, amount: 0.2 }}
-//                   custom={index + 2}
-//                 >
-//                   <div className="flex items-center gap-2 mb-2">
-//                     {item.icon}
-//                     <h3 className="text-lg font-bold text-black">
-//                       {item.title}
-//                     </h3>
-//                   </div>
-//                   <p className="text-sm text-gray-700 leading-relaxed">
-//                     {item.description}
-//                   </p>
-//                 </motion.div>
-//               ))}
-//             </div>
-//           </div>
-
-//           <motion.a
-//             href="#"
-//             className="mt-16 inline-block border-2 border-orange-500 text-black font-semibold text-lg px-8 py-4 rounded-full hover:bg-orange-500 hover:text-white transition duration-300"
-//             whileHover={{ scale: 1.05 }}
-//           >
-//             GET AI-POWERED BANKING SOFTWARE SOLUTIONS
-//           </motion.a>
-//         </div>
-//       </section>
-
-//       <div className="px-8 py-16 bg-white text-center">
-//         <h1 className="text-3xl font-bold mb-4">
-//           Custom Loan Servicing & Origination Solutions
-//         </h1>
-//         <p className="max-w-3xl mx-auto text-gray-600 mb-12">
-//           Chetu’s custom loan servicing and origination personalized solutions
-//           handle underwriting, origination, disbursement, servicing,
-//           amortization, processing, and so much more for financial services and
-//           institutions.
-//         </p>
-
-//         <div className="flex flex-col lg:flex-row items-center justify-center gap-16">
-//           {/* Image Section */}
-//           <div className="flex-shrink-0">
-//             <img
-//               src={softwareSolutions}
-//               alt="Loan Software"
-//               className="w-[500px] rounded-lg shadow-lg"
-//             />
-//           </div>
-
-//           {/* Content Section */}
-//           <div className="text-left max-w-lg space-y-10">
-//             {/* Item 1 */}
-//             <div className="flex items-start gap-4">
-//               <div className="text-cyan-500 text-4xl animate-bounce">
-//                 <FaLaptop />
-//               </div>
-//               <div>
-//                 <h2 className="text-xl font-semibold">
-//                   Loan Servicing & Management Systems
-//                 </h2>
-//                 <p className="text-gray-600">
-//                   Our product development teams create custom loan servicing
-//                   systems and Loan Management Systems (LMS) for banks, credit
-//                   unions, and financial institutions, designed to track various
-//                   loan types, including personal, business, student, mortgage,
-//                   car, cash advance, and more.
-//                 </p>
-//               </div>
-//             </div>
-
-//             {/* Item 2 */}
-//             <div className="flex items-start gap-4">
-//               <div className="text-cyan-500 text-4xl animate-pulse">
-//                 <FaFileAlt />
-//               </div>
-//               <div>
-//                 <h2 className="text-xl font-semibold">
-//                   Loan Origination Systems
-//                 </h2>
-//                 <p className="text-gray-600">
-//                   We program Loan Origination Systems (LOS), including modules
-//                   for online loan applications, underwriting, credit pull,
-//                   decision support, conditions tracking, and more, built with
-//                   upload, parsing, data extraction, and document management
-//                   capabilities.
-//                 </p>
-//               </div>
-//             </div>
-
-//             {/* Item 3 */}
-//             <div className="flex items-start gap-4">
-//               <div className="text-cyan-500 text-4xl animate-spin">
-//                 <FaCheckCircle />
-//               </div>
-//               <div>
-//                 <h2 className="text-xl font-semibold">
-//                   Loan Settlement Software Platforms
-//                 </h2>
-//                 <p className="text-gray-600">
-//                   Chetu's expert programmers create loan debt payment and
-//                   settlement platforms that feature automated billing and
-//                   payments, supporting Automated Clearing House (ACH) and
-//                   Electronic Funds Transfer (EFT) payments for all payment
-//                   types.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-
-//         <button className="mt-12 px-6 py-3 border-2 border-cyan-500 text-cyan-500 font-semibold rounded-full hover:bg-cyan-500 hover:text-white transition">
-//           GET LOAN MANAGEMENT SOFTWARE SOLUTIONS
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default BankingPage;
 
 // import React, { useState } from "react";
 import React, { useState } from "react";
@@ -1319,13 +427,12 @@ const BankingPage = () => {
                   custom={i + 3}
                 >
                   <div
-                    className={`text-cyan-500 text-4xl ${
-                      i === 0
+                    className={`text-cyan-500 text-4xl ${i === 0
                         ? "animate-bounce"
                         : i === 1
-                        ? "animate-pulse"
-                        : "animate-spin"
-                    }`}
+                          ? "animate-pulse"
+                          : "animate-spin"
+                      }`}
                   >
                     {i === 0 ? (
                       <FaLaptop />
@@ -1340,15 +447,15 @@ const BankingPage = () => {
                       {i === 0
                         ? "Loan Servicing & Management Systems"
                         : i === 1
-                        ? "Loan Origination Systems"
-                        : "Loan Settlement Software Platforms"}
+                          ? "Loan Origination Systems"
+                          : "Loan Settlement Software Platforms"}
                     </h2>
                     <p className="text-gray-600">
                       {i === 0
                         ? "Our product development teams create custom loan servicing systems and Loan Management Systems (LMS) for banks, credit unions, and financial institutions."
                         : i === 1
-                        ? "We program Loan Origination Systems (LOS), with modules for underwriting, credit pull, decision support, and more."
-                        : "Chetu's programmers create payment and settlement platforms supporting ACH and EFT for all payment types."}
+                          ? "We program Loan Origination Systems (LOS), with modules for underwriting, credit pull, decision support, and more."
+                          : "Chetu's programmers create payment and settlement platforms supporting ACH and EFT for all payment types."}
                     </p>
                   </div>
                 </motion.div>
@@ -1402,13 +509,12 @@ const BankingPage = () => {
                 custom={i + 1}
               >
                 <div
-                  className={`text-cyan-500 text-5xl ${
-                    i === 0
+                  className={`text-cyan-500 text-5xl ${i === 0
                       ? "animate-bounce"
                       : i === 1
-                      ? "animate-pulse"
-                      : "animate-spin"
-                  }`}
+                        ? "animate-pulse"
+                        : "animate-spin"
+                    }`}
                 >
                   {i === 0 ? (
                     <FaMobileAlt />
@@ -1423,15 +529,15 @@ const BankingPage = () => {
                     {i === 0
                       ? "Custom Mobile Banking App Development"
                       : i === 1
-                      ? "Core Banking System Integrations"
-                      : "Check Remote Deposit Capture"}
+                        ? "Core Banking System Integrations"
+                        : "Check Remote Deposit Capture"}
                   </h2>
                   <p className="text-gray-600">
                     {i === 0
                       ? "We develop native mobile apps for banking services on iOS & Android, utilizing cross-platform development tools such as Xamarin & Apache Cordova to feature easily navigable and speedy UI/UX that’s responsive on smartphones, tablets, and wearable devices."
                       : i === 1
-                      ? "We integrate mobile banking apps with a financial institution’s existing back-end CORE banking system, using RESTful APIs, which allow seamless cross-channel interactions and the ability to transfer funds between various accounts in real-time."
-                      : "Our developers implement Remote Deposit Capture (RDC) modules integrated with your device’s camera function to allow for check truncation and conversion of checks into ACH transactions in compliance with Check 21 mandates."}
+                        ? "We integrate mobile banking apps with a financial institution’s existing back-end CORE banking system, using RESTful APIs, which allow seamless cross-channel interactions and the ability to transfer funds between various accounts in real-time."
+                        : "Our developers implement Remote Deposit Capture (RDC) modules integrated with your device’s camera function to allow for check truncation and conversion of checks into ACH transactions in compliance with Check 21 mandates."}
                   </p>
                 </div>
               </motion.div>
@@ -1523,13 +629,12 @@ const BankingPage = () => {
                   custom={i + 3}
                 >
                   <div
-                    className={`text-cyan-500 text-4xl ${
-                      i === 0
+                    className={`text-cyan-500 text-4xl ${i === 0
                         ? "animate-bounce"
                         : i === 1
-                        ? "animate-pulse"
-                        : "animate-spin"
-                    }`}
+                          ? "animate-pulse"
+                          : "animate-spin"
+                      }`}
                   >
                     {i === 0 ? (
                       <FaLaptop />
@@ -1544,15 +649,15 @@ const BankingPage = () => {
                       {i === 0
                         ? "Custom Online Banking Platforms"
                         : i === 1
-                        ? "Custom Online Banking Apps"
-                        : "Custom Online Banking Security"}
+                          ? "Custom Online Banking Apps"
+                          : "Custom Online Banking Security"}
                     </h2>
                     <p className="text-gray-600">
                       {i === 0
                         ? "Our advanced platforms are highly secure, allowing encrypted bi-lateral transactions and providing innovative solutions for crowdfunding, multi-currency e-wallets, cryptocurrency trading, and direct money transfers via social platforms."
                         : i === 1
-                        ? "Our custom mobile app development services make it easy for your customers to bank on the go with hybrid mobile banking apps that utilize tools like Apache Cordova (formerly PhoneGap) to create uniform user experiences across all digital channels, including web, iOS, and Android."
-                        : "Chetu’s banking solutions experts implement risk management tools & network security features, such as TCI/IP, SSL/TLS, Multi-Factor Authentication (MFA), One-Time Passwords (OTP), Single Sign-On (SSO), and SSH File Transfer Protocol (SFTP)."}
+                          ? "Our custom mobile app development services make it easy for your customers to bank on the go with hybrid mobile banking apps that utilize tools like Apache Cordova (formerly PhoneGap) to create uniform user experiences across all digital channels, including web, iOS, and Android."
+                          : "Chetu’s banking solutions experts implement risk management tools & network security features, such as TCI/IP, SSL/TLS, Multi-Factor Authentication (MFA), One-Time Passwords (OTP), Single Sign-On (SSO), and SSH File Transfer Protocol (SFTP)."}
                     </p>
                   </div>
                 </motion.div>
@@ -1828,13 +933,12 @@ const BankingPage = () => {
                   custom={i + 3}
                 >
                   <div
-                    className={`text-cyan-500 text-4xl ${
-                      i === 0
+                    className={`text-cyan-500 text-4xl ${i === 0
                         ? "animate-bounce"
                         : i === 1
-                        ? "animate-pulse"
-                        : "animate-spin"
-                    }`}
+                          ? "animate-pulse"
+                          : "animate-spin"
+                      }`}
                   >
                     {i === 0 ? (
                       <FaLaptop />
@@ -1849,15 +953,15 @@ const BankingPage = () => {
                       {i === 0
                         ? "CORE Banking Software Solutions"
                         : i === 1
-                        ? "CORE Security & Compliance"
-                        : "CORE API Integrations"}
+                          ? "CORE Security & Compliance"
+                          : "CORE API Integrations"}
                     </h2>
                     <p className="text-gray-600">
                       {i === 0
                         ? "Our programmers fully automate all banking system operations with customizable CORE system platforms that utilize Java-based architectures and Service-Oriented Architectures (SOA) compatible with existing software and external networks."
                         : i === 1
-                        ? "We develop secure, modular CORE banking systems to protect customers, meet government & industry standards, aid in security auditing, and avoid data breaches with recovery capabilities compliant with Anti-Money Laundering (AML) regulations."
-                        : "We develop secure API components that integrate with online, mobile, SMS, ATM, and other banking distribution channels, as well as integrating user-friendly interfaces with third-party APIs to adopt real-time processing and remote capture capabilities."}
+                          ? "We develop secure, modular CORE banking systems to protect customers, meet government & industry standards, aid in security auditing, and avoid data breaches with recovery capabilities compliant with Anti-Money Laundering (AML) regulations."
+                          : "We develop secure API components that integrate with online, mobile, SMS, ATM, and other banking distribution channels, as well as integrating user-friendly interfaces with third-party APIs to adopt real-time processing and remote capture capabilities."}
                     </p>
                   </div>
                 </motion.div>
@@ -2088,13 +1192,12 @@ const BankingPage = () => {
                 custom={i + 1}
               >
                 <div
-                  className={`text-cyan-500 text-5xl ${
-                    i === 0
+                  className={`text-cyan-500 text-5xl ${i === 0
                       ? "animate-bounce"
                       : i === 1
-                      ? "animate-pulse"
-                      : "animate-spin"
-                  }`}
+                        ? "animate-pulse"
+                        : "animate-spin"
+                    }`}
                 >
                   {i === 0 ? (
                     <FaMobileAlt />
@@ -2109,15 +1212,15 @@ const BankingPage = () => {
                     {i === 0
                       ? "ACH eCheck Solutions"
                       : i === 1
-                      ? "Check 21 & Electronic Check Processing Services"
-                      : "ACH Payment System Integration"}
+                        ? "Check 21 & Electronic Check Processing Services"
+                        : "ACH Payment System Integration"}
                   </h2>
                   <p className="text-gray-600">
                     {i === 0
                       ? "We build custom programming platforms for processing ACH payments with modules to automate ACH file creation, check verification and transmissions to various financial institutions, and create Remotely Created Check (RCC) images for deposits."
                       : i === 1
-                      ? "Our developers customize Check 21 truncation solutions to integrate with MICR check scanner hardware, such as RDM, Panini, Canon, Epson, and Burroughs, and develop custom check imaging platforms for e-payment processing integrations."
-                      : "We offer secure ACH database development integrated with CRM platforms to store accounts, routing numbers, check imaging remittance, automated clearing, and all other essential customer information via the cloud and/or mobile devices."}
+                        ? "Our developers customize Check 21 truncation solutions to integrate with MICR check scanner hardware, such as RDM, Panini, Canon, Epson, and Burroughs, and develop custom check imaging platforms for e-payment processing integrations."
+                        : "We offer secure ACH database development integrated with CRM platforms to store accounts, routing numbers, check imaging remittance, automated clearing, and all other essential customer information via the cloud and/or mobile devices."}
                   </p>
                 </div>
               </motion.div>

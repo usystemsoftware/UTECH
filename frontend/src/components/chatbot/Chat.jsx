@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { sendChatMessage, api } from "../../machine/api";
+import { FaRobot } from "react-icons/fa";
 
 const Bot = (props) => (
   <svg {...props} viewBox="0 0 24 24">
@@ -279,12 +280,12 @@ export default function Chat() {
           onClick={toggleChat}
           aria-label="Open chat"
           className="fixed bottom-5 right-5 bg-blue-600 rounded-full w-14 h-14 text-white text-4xl flex items-center justify-center shadow-lg hover:bg-blue-700 focus:outline-none z-50"
-          whileHover={{ scale: 1.1, rotate: 90 }}
+          // whileHover={{ scale: 1.1, rotate: 90 }}
           whileTap={{ scale: 0.9 }}
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1, transition: { delay: 0.3, type: "spring", stiffness: 200 } }}
         >
-          +
+          <FaRobot />
         </motion.button>
       )}
     </>

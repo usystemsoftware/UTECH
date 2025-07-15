@@ -291,7 +291,7 @@ export const Navlinks = [
   {
     title: "Services",
     items: [
-      { label: "API Development", href: "/services/api-development" },
+      { label: "API Development", href: "/solutions/api-development" },
       {
         label: "Application Development",
         href: "/services/application-development",
