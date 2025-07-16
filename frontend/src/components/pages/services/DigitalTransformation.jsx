@@ -86,7 +86,7 @@ const DigitalTransformation = () => {
       title: "DX Specialized Teams",
       icon: <FaUserCheck className="text-cyan-600 text-4xl mb-4" />,
       description:
-        "Chetu’s industry-specific support teams are comprised of dedicated experts, having decades of specialized experience. Our teams keep up with trends, regulations, and processes to stay ahead and produce optimal solutions.",
+        "U Technology’s industry-specific support teams are comprised of dedicated experts, having decades of specialized experience. Our teams keep up with trends, regulations, and processes to stay ahead and produce optimal solutions.",
     },
     {
       title: "All-Encompassing Support",
@@ -113,7 +113,7 @@ const DigitalTransformation = () => {
       title: "DX Specialized Teams",
       icon: <FaClipboardList className="text-cyan-600 text-4xl mb-4" />,
       description:
-        "Chetu’s industry-specific support teams are comprised of dedicated experts, having decades of specialized experience. Our teams keep up with trends, regulations, and processes to stay ahead and produce optimal solutions.",
+        "U Technology’s industry-specific support teams are comprised of dedicated experts, having decades of specialized experience. Our teams keep up with trends, regulations, and processes to stay ahead and produce optimal solutions.",
     },
     {
       title: "All-Encompassing Support",
@@ -213,7 +213,7 @@ const DigitalTransformation = () => {
             variants={fadeUp}
             custom={1}
           >
-            Chetu’s digital transformation consulting experts will help your
+            U Technology’s digital transformation consulting experts will help your
             business reach optimal performance through innovative strategies and
             implementation of digital transformation initiatives. Our DevOps
             specialists are available to provide workflow automation, deploy,
@@ -354,7 +354,7 @@ const DigitalTransformation = () => {
                 {
                   icon: <FaChartLine size={36} className="text-cyan-600" />,
                   title: "Systems Integration",
-                  desc: "OChetu’s digital transformation services can help you build a seamless technology environment by connecting systems, applications, and data sources. This will enable your organization to streamline operations while improving data management and enhancing key areas such as customer engagement.",
+                  desc: "OU Technology’s digital transformation services can help you build a seamless technology environment by connecting systems, applications, and data sources. This will enable your organization to streamline operations while improving data management and enhancing key areas such as customer engagement.",
                 },
                 {
                   icon: <FaMobileAlt size={36} className="text-cyan-600" />,
@@ -447,7 +447,7 @@ const DigitalTransformation = () => {
             variants={fadeUp}
             custom={1}
           >
-            Chetu provides customized digital transformation solutions to meet
+            U Technology provides customized digital transformation solutions to meet
             the specific needs of businesses across different industries,
             including finance, healthcare, and retail.
           </motion.p>
@@ -581,7 +581,7 @@ const DigitalTransformation = () => {
                   Digital Transformation in Healthcare
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Chetu’s digital transformation services can help healthcare
+                  U Technology’s digital transformation services can help healthcare
                   companies reduce administrative workload, enhance patient
                   care, and ensure regulatory compliance. Custom software and
                   mobile application development, systems integration, and
@@ -627,7 +627,7 @@ const DigitalTransformation = () => {
                   Tech Enabled Hospitality & Travel
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Chetu’s digital transformation experts can develop and
+                  U Technology’s digital transformation experts can develop and
                   implement digital transformation strategies tailored to
                   hospitality & travel. We use innovative strategies and
                   technologies to help companies enhance online booking,
@@ -724,7 +724,7 @@ const DigitalTransformation = () => {
                 {
                   icon: <FaMobileAlt size={36} className="text-cyan-600" />,
                   title: "Reliability",
-                  desc: "Chetu’s facilities have fast, reliable Internet connections with a 24/7 admin team. We also have backup generators to withstand outages and keep our operations going at full strength and efficiency. We offer real-time communication along with both proactive support and troubleshooting to resolve issues.",
+                  desc: "U Technology’s facilities have fast, reliable Internet connections with a 24/7 admin team. We also have backup generators to withstand outages and keep our operations going at full strength and efficiency. We offer real-time communication along with both proactive support and troubleshooting to resolve issues.",
                 },
               ].map((item, index) => (
                 <motion.div
@@ -771,7 +771,7 @@ const DigitalTransformation = () => {
             Top Talent & Industry Expertise
           </h2>
           <p className="text-sm sm:text-base max-w-3xl mx-auto mb-12">
-            Chetu recruits top talent that goes through a rigorous hiring
+            U Technology recruits top talent that goes through a rigorous hiring
             process followed by thorough training and development to provide
             optimal service.
           </p>

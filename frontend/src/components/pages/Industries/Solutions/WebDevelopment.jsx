@@ -133,7 +133,7 @@ const faqs = [
     question:
       "What kind of Support do You Provide after a Website is Launched?",
     answer:
-      "Chetu provides complete post-launch services and support, including maintenance, security updates, new implementations, and technical assistance. Our team operates on a 24/7 basis to minimize any downtime, keeping your website and data secure.",
+      "U Technology provides complete post-launch services and support, including maintenance, security updates, new implementations, and technical assistance. Our team operates on a 24/7 basis to minimize any downtime, keeping your website and data secure.",
   },
   {
     question: "What is a progressive web app?",
@@ -150,7 +150,7 @@ const faqs = [
     question:
       "Can you Develop or Migrate My Website to be a Progressive Web App (PWA)?",
     answer:
-      "Chetu’s engineers are experienced in PWA (Progressive Web Apps), using our web development experience. Our solutions include creating web applications that are responsive, function offline, have push notifications, and background data syncing.",
+      "U Technology’s engineers are experienced in PWA (Progressive Web Apps), using our web development experience. Our solutions include creating web applications that are responsive, function offline, have push notifications, and background data syncing.",
   },
   {
     question:
@@ -755,7 +755,7 @@ const WebDevelopment = () => {
                 icon: <FaChartLine size={36} className="text-cyan-600 mb-4" />,
                 title: "Version Control with Git Repositories",
                 subtitle: "with AI-Driven Investment",
-                desc: "At Chetu, our front-end design & development support services thrive from understanding the significance of fostering clear and organized workflows. Our team of developers will leverage their expertise within version control, specifically with the task of managing Git repositories.",
+                desc: "At U Technology, our front-end design & development support services thrive from understanding the significance of fostering clear and organized workflows. Our team of developers will leverage their expertise within version control, specifically with the task of managing Git repositories.",
               },
               {
                 icon: (

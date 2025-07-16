@@ -1,3 +1,282 @@
+// import React from "react";
+// import FinanceBanner from "../../../../public/assets/Industries/Finance/finance-banner.jpg";
+// import Combofinance from "../../../../public/assets/Industries/Finance/combo-finance.png";
+// import { motion } from "framer-motion";
+// import { MdOutlineLocalAtm } from "react-icons/md";
+// import {
+//   FaUniversity,
+//   FaCreditCard,
+//   FaMobileAlt,
+//   FaMoneyCheckAlt,
+//   FaHandHoldingUsd,
+//   FaChartLine,
+//   FaSearchDollar,
+//   FaBalanceScale,
+//   FaLaptop,
+//   FaFileAlt,
+//   FaCheckCircle,
+//   FaDesktop,
+//   FaEye,
+//   FaCog,
+//   FaNetworkWired,
+
+//   //   FaNetworkWired,
+//   // FaUniversity,
+//   FaLaptopCode,
+//   FaDollarSign,
+//   FaFileInvoiceDollar,
+//   FaBell,
+//   FaCheckDouble,
+//   FaWallet,
+//   FaChevronDown,
+//   FaChevronUp,
+// } from "react-icons/fa";
+
+// const Finance = () => {
+//   const fadeUp = {
+//     hidden: { opacity: 0, y: 40 },
+//     visible: (i = 1) => ({
+//       opacity: 1,
+//       y: 0,
+//       transition: {
+//         delay: i * 0.2,
+//         duration: 0.6,
+//         ease: "easeOut",
+//       },
+//     }),
+//   };
+//   const leftFeatures = [
+//     {
+//       label: "Accounting",
+//       icon: <FaMoneyCheckAlt size={36} className="text-cyan-600" />,
+//     },
+//     {
+//       label: "PortFolio Management",
+//       icon: <MdOutlineLocalAtm size={36} className="text-cyan-600" />,
+//     },
+//     {
+//       label: "Financial Planning",
+//       icon: <FaUniversity size={36} className="text-cyan-600" />,
+//     },
+//   ];
+//   const rightFeatures = [
+//     {
+//       label: "Insurance",
+//       icon: <FaCreditCard size={36} className="text-cyan-600" />,
+//     },
+//     {
+//       label: "Taxes",
+//       icon: <FaMobileAlt size={36} className="text-cyan-600" />,
+//     },
+//     {
+//       label: "Capital Markets",
+//       icon: <FaHandHoldingUsd size={36} className="text-cyan-600" />,
+//     },
+//   ];
+//   return (
+//     <div>
+//       <motion.section
+//         className="relative bg-cover bg-center text-white h-[600px] md:h-[500px] flex items-center"
+//         style={{ backgroundImage: `url(${FinanceBanner})` }}
+//         initial="hidden"
+//         whileInView="visible"
+//         viewport={{ once: true, amount: 0.2 }}
+//         variants={fadeUp}
+//       >
+//         <div className="container mx-auto text-center px-4">
+//           <motion.h1 className="text-4xl md:text-5xl font-bold mb-6">
+//             FINANCIAL SOFTWARE DEVELOPMENT SERVICES
+//           </motion.h1>
+
+//           <motion.a
+//             href="#"
+//             className="inline-block border-2 border-cyan-400 text-white px-6 py-3 rounded-full text-lg hover:bg-cyan-400 hover:text-black transition duration-300"
+//             whileHover={{ scale: 1.05 }}
+//           >
+//             GET FINTECH DEVELOPERS
+//           </motion.a>
+//         </div>
+//       </motion.section>
+//       {/* Breadcrumb */}
+//       <div className="bg-white px-4 py-4 text-sm text-gray-500">
+//         <div className="container mx-auto">
+//           Home <span className="mx-2">›</span>{" "}
+//           <span className="text-cyan-600 font-medium">Banking</span>
+//         </div>
+//       </div>
+
+//       {/* Features Grid */}
+//       <section className="py-16 bg-white">
+//         <div className="container mx-auto text-center px-4">
+//           <motion.h2
+//             className="text-1xl md:text-3xl font-bold text-cyan-700 mb-4"
+//             variants={fadeUp}
+//             initial="hidden"
+//             whileInView="visible"
+//             viewport={{ once: true, amount: 0.2 }}
+//           >
+//             U Technology’s Financial Software Development Services
+//           </motion.h2>
+//           <p className="text-sm text-primary mb-10 max-w-2xl mx-auto">
+//             U Technology’s custom financial software development services cater to the
+//             finance industry, providing custom-tailored solutions for
+//             accounting, portfolio management, financial planning, insurance, and
+//             taxes.
+//           </p>
+
+//           <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
+//             <div className="flex flex-col gap-8 items-end text-right">
+//               {leftFeatures.map((item, index) => (
+//                 <motion.div
+//                   key={index}
+//                   className="flex items-center gap-3"
+//                   custom={index}
+//                   variants={fadeUp}
+//                   initial="hidden"
+//                   whileInView="visible"
+//                   viewport={{ once: true, amount: 0.2 }}
+//                 >
+//                   {item.icon}
+//                   <span className="text-md font-medium text-gray-700">
+//                     {item.label}
+//                   </span>
+//                 </motion.div>
+//               ))}
+//             </div>
+
+//             <motion.div
+//               className="w-full max-w-md my-10"
+//               variants={fadeUp}
+//               initial="hidden"
+//               whileInView="visible"
+//               viewport={{ once: true, amount: 0.2 }}
+//               custom={3}
+//             >
+//               <img
+//                 src={Combofinance}
+//                 alt="Banking dashboard UI"
+//                 className="rounded-xl  mx-auto w-[90%] md:w-[100%]"
+//               />
+//             </motion.div>
+
+//             <div className="flex flex-col gap-8 items-start text-left">
+//               {rightFeatures.map((item, index) => (
+//                 <motion.div
+//                   key={index}
+//                   className="flex items-center gap-3"
+//                   custom={index}
+//                   variants={fadeUp}
+//                   initial="hidden"
+//                   whileInView="visible"
+//                   viewport={{ once: true, amount: 0.2 }}
+//                 >
+//                   {item.icon}
+//                   <span className="text-md font-medium text-gray-700">
+//                     {item.label}
+//                   </span>
+//                 </motion.div>
+//               ))}
+//             </div>
+//           </div>
+
+//           <motion.a
+//             href="#"
+//             className="mt-10 inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold text-lg px-8 py-4 rounded-full transition duration-300 hover:scale-105"
+//             whileHover={{ scale: 1.05 }}
+//           >
+//             CUSTOMIZE YOUR BANKING SOLUTION NOW
+//           </motion.a>
+//         </div>
+//       </section>
+//       {/* AI Finance Benefits Section */}
+//       <section className="py-16 bg-gray-50">
+//         <div className="container mx-auto px-4 text-center">
+//           <motion.h2
+//             className="text-2xl md:text-3xl font-bold text-cyan-700 mb-4"
+//             variants={fadeUp}
+//             initial="hidden"
+//             whileInView="visible"
+//             viewport={{ once: true, amount: 0.2 }}
+//           >
+//             Optimizing Finance with Artificial Intelligence
+//           </motion.h2>
+//           <p className="text-sm text-gray-600 mb-12 max-w-3xl mx-auto">
+//             With the ever-evolving landscape of financial services becoming
+//             increasingly complex and digital, AI is a game-changer. U Technology’s
+//             Financial Software Development Services are here to help you
+//             transform your operations, improve your customer experiences, and
+//             aid in strategic decision-making.
+//           </p>
+
+//           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-left">
+//             {[
+//               {
+//                 icon: <FaCog size={36} className="text-cyan-600 mb-4" />,
+//                 title: "Improving Efficiency",
+//                 subtitle: "with AI-Powered Financial Services",
+//                 desc: "Harness AI to streamline financial processes through automation, robo-advisors, and predictive modeling.",
+//               },
+//               {
+//                 icon: <FaComments size={36} className="text-cyan-600 mb-4" />,
+//                 title: "Leveling Up Customer",
+//                 subtitle: "Engagement with Chatbots",
+//                 desc: "Use AI chatbots for real-time updates, historical insights, and seamless customer interactions.",
+//               },
+//               {
+//                 icon: (
+//                   <FaBalanceScale size={36} className="text-cyan-600 mb-4" />
+//                 ),
+//                 title: "Balance",
+//                 subtitle: "Responsibility and Innovation",
+//                 desc: "Implement AI responsibly with high standards, protecting sensitive data and maintaining compliance.",
+//               },
+//               {
+//                 icon: <FaChartLine size={36} className="text-cyan-600 mb-4" />,
+//                 title: "Shifting Wealth",
+//                 subtitle: "with AI-Driven Investment",
+//                 desc: "Curate investment strategies using AI to align with market trends, goals, and risk profiles.",
+//               },
+//               {
+//                 icon: (
+//                   <FaSearchDollar size={36} className="text-cyan-600 mb-4" />
+//                 ),
+//                 title: "Navigating",
+//                 subtitle: "Complexity of Financial Decision",
+//                 desc: "Strengthen decision-making with AI’s predictive capabilities and proactive risk management.",
+//               },
+//               {
+//                 icon: (
+//                   <FaCheckCircle size={36} className="text-cyan-600 mb-4" />
+//                 ),
+//                 title: "Unlock",
+//                 subtitle: "Efficiency and Compliance",
+//                 desc: "Automate financial reporting with AI for greater accuracy, speed, and regulatory compliance.",
+//               },
+//             ].map((item, index) => (
+//               <motion.div
+//                 key={index}
+//                 className="bg-white p-6 rounded-lg shadow hover:shadow-md transition"
+//                 variants={fadeUp}
+//                 custom={index}
+//                 initial="hidden"
+//                 whileInView="visible"
+//                 viewport={{ once: true, amount: 0.2 }}
+//               >
+//                 {item.icon}
+//                 <h3 className="text-lg font-semibold mb-1">{item.title}</h3>
+//                 <h4 className="text-md font-medium mb-2">{item.subtitle}</h4>
+//                 <p className="text-sm text-gray-600">{item.desc}</p>
+//               </motion.div>
+//             ))}
+//           </div>
+//         </div>
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default Finance;
+
 import React, { useState } from "react";
 import FinanceBanner from "/assets/Industries/Finance/finance-banner.jpg";
 import Combofinance from "/assets/Industries/Finance/combo-finance.png";
@@ -177,11 +456,11 @@ const Finance = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
           >
-            Chetu’s Financial Software Development Services
+            U Technology’s Financial Software Development Services
           </motion.h2>
           <p className="text-sm text-primary mb-10 max-w-2xl mx-auto">
-            Chetu’s custom financial software development services cater to the
-            finance industry, providing custom-tailored solutions for
+            U Technology’s custom financial software development services cater
+            to the finance industry, providing custom-tailored solutions for
             accounting, portfolio management, financial planning, insurance, and
             taxes.
           </p>
@@ -265,10 +544,10 @@ const Finance = () => {
           </motion.h2>
           <p className="text-sm text-gray-600 mb-12 max-w-3xl mx-auto">
             With the ever-evolving landscape of financial services becoming
-            increasingly complex and digital, AI is a game-changer. Chetu’s
-            Financial Software Development Services are here to help you
-            transform your operations, improve your customer experiences, and
-            aid in strategic decision-making.
+            increasingly complex and digital, AI is a game-changer. U
+            Technology’s Financial Software Development Services are here to
+            help you transform your operations, improve your customer
+            experiences, and aid in strategic decision-making.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-left">
@@ -283,7 +562,7 @@ const Finance = () => {
                 icon: <FaComments size={36} className="text-cyan-600 mb-4" />,
                 title: "Leveling Up Customer",
                 subtitle: "Engagement with Chatbots",
-                desc: "With technology advancing to provide more sophisticated functions, chatbots have evolved from dependence on basic customer interactions. While our chatbots can still answer queries and provide account updates, we’ve also empowered them to engage with customers with real-time information and even assist in making financial decisions using historical and actualized data. Chetu can help you create a seamless user experience alongside receiving accurate and quick assistance.",
+                desc: "With technology advancing to provide more sophisticated functions, chatbots have evolved from dependence on basic customer interactions. While our chatbots can still answer queries and provide account updates, we’ve also empowered them to engage with customers with real-time information and even assist in making financial decisions using historical and actualized data. U Technology can help you create a seamless user experience alongside receiving accurate and quick assistance.",
               },
               {
                 icon: (
@@ -291,13 +570,13 @@ const Finance = () => {
                 ),
                 title: "Balance",
                 subtitle: "Responsibility and Innovation",
-                desc: "Artificial Intelligence and its implementation represent an ethical dilemma. However, Chetu is committed to delivering and maintaining the highest standards of ethical AI usage. With our AI implementation for Financial Data Analysis capable of processing large amounts of data precisely and swiftly, your business can make informed decisions, all while protecting sensitive data and maintaining regulatory compliance.",
+                desc: "Artificial Intelligence and its implementation represent an ethical dilemma. However, U Technology is committed to delivering and maintaining the highest standards of ethical AI usage. With our AI implementation for Financial Data Analysis capable of processing large amounts of data precisely and swiftly, your business can make informed decisions, all while protecting sensitive data and maintaining regulatory compliance.",
               },
               {
                 icon: <FaChartLine size={36} className="text-cyan-600 mb-4" />,
                 title: "Shifting Wealth",
                 subtitle: "with AI-Driven Investment",
-                desc: "Investment strategies can experience a paradigm shift with the integration of AI and result in improved wealth management. With Chetu’s AI-enhanced customer personalization, financial institutions can easily create tailor-made investment portfolios. Our solutions enable this curated approach to investment strategies by analyzing market trends, financial goals, and the client’s risk profile, aligning with the individual’s objectives and preferences.",
+                desc: "Investment strategies can experience a paradigm shift with the integration of AI and result in improved wealth management. With U Technology’s AI-enhanced customer personalization, financial institutions can easily create tailor-made investment portfolios. Our solutions enable this curated approach to investment strategies by analyzing market trends, financial goals, and the client’s risk profile, aligning with the individual’s objectives and preferences.",
               },
               {
                 icon: (
@@ -305,7 +584,7 @@ const Finance = () => {
                 ),
                 title: "Navigating",
                 subtitle: "Complexity of Financial Decision",
-                desc: "Financial decision-making demands intricate solutions. Luckily, Chetu’s AI-driven investment tools offer impressive depth, like quantitative financial models that can improve decision support systems. By leveraging the predictive capabilities of AI, you can be given insights into potential risks and rewards through the assessment of multiple scenarios and stress-testing portfolios. With comprehensive data at the ready, our solutions strengthen proactive risk management and strategic planning.",
+                desc: "Financial decision-making demands intricate solutions. Luckily, U Technology’s AI-driven investment tools offer impressive depth, like quantitative financial models that can improve decision support systems. By leveraging the predictive capabilities of AI, you can be given insights into potential risks and rewards through the assessment of multiple scenarios and stress-testing portfolios. With comprehensive data at the ready, our solutions strengthen proactive risk management and strategic planning.",
               },
               {
                 icon: (
@@ -313,7 +592,7 @@ const Finance = () => {
                 ),
                 title: "Unlock",
                 subtitle: "Efficiency and Compliance",
-                desc: "We’re aiming to revolutionize financial reporting with AI-driven automation! With Chetu’s Automated Financial Reporting solutions, your organization can create complex financial reports with unrivaled accuracy and speed. Save time and resources; plus, you can ensure industrial regulations are being complied with.",
+                desc: "We’re aiming to revolutionize financial reporting with AI-driven automation! With U Technology’s Automated Financial Reporting solutions, your organization can create complex financial reports with unrivaled accuracy and speed. Save time and resources; plus, you can ensure industrial regulations are being complied with.",
               },
             ].map((item, index) => (
               <motion.div
@@ -359,7 +638,7 @@ const Finance = () => {
             Custom Accounting Software Development
           </motion.h2>
           <p className="text-sm text-cyan-700 mb-12 max-w-3xl mx-auto">
-            Chetu’s{" "}
+            U Technology’s{" "}
             <a href="#" className="text-cyan-600 underline">
               custom accounting software development services
             </a>{" "}
@@ -418,8 +697,8 @@ const Finance = () => {
           </div>
 
           <p className="text-sm text-gray-600 mt-12">
-            Chetu integrates your current accounting management system with
-            industry-leading ERP and bookkeeping solutions, including:
+            U Technology integrates your current accounting management system
+            with industry-leading ERP and bookkeeping solutions, including:
           </p>
 
           {/* Brand Logos */}
@@ -452,9 +731,9 @@ const Finance = () => {
             Custom Portfolio Management Software Development
           </h1>
           <p className="max-w-4xl mx-auto text-gray-600">
-            Chetu’s custom portfolio management software solutions encompass
-            everything from risk analysis and investments to stock trading apps
-            and fund management in a centralized platform.
+            U Technology’s custom portfolio management software solutions
+            encompass everything from risk analysis and investments to stock
+            trading apps and fund management in a centralized platform.
           </p>
         </motion.div>
 
@@ -551,7 +830,7 @@ const Finance = () => {
             Custom Financial Planning Software Development
           </motion.h2>
           <p className="text-sm text-cyan-700 mb-12 max-w-3xl mx-auto">
-            Chetu’s{" "}
+            U Technology’s{" "}
             <a href="#" className="text-cyan-600 underline">
               custom financial planning software solutions
             </a>{" "}
@@ -631,7 +910,7 @@ const Finance = () => {
               WE ENSURE YOU A 100% COMPLIANCE WITH THE IRS & FASB!
             </h2>
             <p className="text-gray-700">
-              Chetu's finance software development experts comply with
+              U Technology's finance software development experts comply with
               regulatory standards including anti-money laundering and consumer
               protection standards such as Financial Accounting Standards Boards
               (FASB), SOX, Dodd-Frank, the Securities Act of 1933, and Payment
@@ -689,7 +968,7 @@ const Finance = () => {
             Custom Insurance Software Development
           </motion.h2>
           <p className="text-sm text-cyan-700 mb-12 max-w-3xl mx-auto">
-            Chetu’s{" "}
+            U Technology’s{" "}
             <a href="#" className="text-cyan-600 underline">
               custom insurance software solutions
             </a>{" "}
@@ -772,8 +1051,9 @@ const Finance = () => {
             Custom Tax Preparation Software Development
           </h1>
           <p className="max-w-4xl mx-auto text-gray-600">
-            Chetu’s custom tax prep software solutions support the preparation,
-            calculation, and reporting of personal and business taxes.
+            U Technology’s custom tax prep software solutions support the
+            preparation, calculation, and reporting of personal and business
+            taxes.
           </p>
         </motion.div>
 
@@ -868,7 +1148,7 @@ const Finance = () => {
             Capital & Stock Trading Software Development
           </motion.h2>
           <p className="text-sm text-cyan-700 mb-12 max-w-3xl mx-auto">
-            Chetu’s creates
+            U Technology’s creates
             <a href="#" className="text-cyan-600 underline">
               custom trading software solutions
             </a>{" "}
@@ -958,10 +1238,11 @@ const Finance = () => {
             variants={fadeUp}
             custom={1}
           >
-            Leverage Chetu's profound financial software development expertise
-            to drive your business forward with advanced factoring solutions.
-            Our innovative services are meticulously designed to streamline your
-            financial processes and set you apart in the competitive landscape.
+            Leverage U Technology's profound financial software development
+            expertise to drive your business forward with advanced factoring
+            solutions. Our innovative services are meticulously designed to
+            streamline your financial processes and set you apart in the
+            competitive landscape.
           </motion.p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left">
@@ -1002,11 +1283,11 @@ const Finance = () => {
                   General Ledger Precision
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Rely on Chetu's expertise to code online accounting software
-                  integrated seamlessly with CRM, ERP, and factoring management
-                  programs. Our solutions encompass asset tracking, auditing
-                  features, general ledgers, and comprehensive cash flow and
-                  credit management.
+                  Rely on U Technology's expertise to code online accounting
+                  software integrated seamlessly with CRM, ERP, and factoring
+                  management programs. Our solutions encompass asset tracking,
+                  auditing features, general ledgers, and comprehensive cash
+                  flow and credit management.
                 </p>
               </div>
               <FaCheckDouble className="text-cyan-600 w-14 h-14 flex-shrink-0" />
@@ -1026,10 +1307,10 @@ const Finance = () => {
                   Custom Settlement Engines
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Personalize factoring contract lifecycles effortlessly. Chetu
-                  develops customizable business logic to monitor invoice
-                  settlements and financial performance. Gain visibility into
-                  delinquent accounts and integrate follow-up workflows
+                  Personalize factoring contract lifecycles effortlessly. U
+                  Technology develops customizable business logic to monitor
+                  invoice settlements and financial performance. Gain visibility
+                  into delinquent accounts and integrate follow-up workflows
                   seamlessly with CRMs.
                 </p>
               </div>
@@ -1189,9 +1470,10 @@ const Finance = () => {
             custom={1}
           >
             Finance software support services are vital for ensuring financial
-            systems' accuracy, compliance, and efficiency. Chetu is dedicated to
-            delivering comprehensive support for finance software, ensuring
-            organizations receive tailored solutions for their finance software.
+            systems' accuracy, compliance, and efficiency. U Technology is
+            dedicated to delivering comprehensive support for finance software,
+            ensuring organizations receive tailored solutions for their finance
+            software.
           </motion.p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left">
@@ -1240,9 +1522,9 @@ const Finance = () => {
                   reliability and security. It prevents critical issues,
                   reducing downtime. Similarly, a well-maintained help desk
                   ensures smooth interactions and efficient workflows through
-                  regular updates, aligning with business needs. Chetu excels in
-                  system auditing and server administration, fortifying IT
-                  infrastructures.
+                  regular updates, aligning with business needs. U Technology
+                  excels in system auditing and server administration,
+                  fortifying IT infrastructures.
                 </p>
               </div>
               <FaCheckDouble className="text-cyan-600 w-14 h-14 flex-shrink-0" />
@@ -1288,13 +1570,13 @@ const Finance = () => {
                 <p className="text-gray-600 text-sm">
                   Exceptional customer support is imperative in finance
                   application support, ensuring users receive prompt assistance,
-                  fostering trust, and enhancing overall user experience. Chetu
-                  stands out with a commitment to delivering top-notch customer
-                  service. Our dedicated support teams prioritize user
-                  satisfaction, offering timely and effective solutions,
-                  personalized assistance, and ongoing communication. We ensure
-                  the client receives reliable finance applications and a
-                  supportive experience in their use and maintenance.
+                  fostering trust, and enhancing overall user experience. U
+                  Technology stands out with a commitment to delivering
+                  top-notch customer service. Our dedicated support teams
+                  prioritize user satisfaction, offering timely and effective
+                  solutions, personalized assistance, and ongoing communication.
+                  We ensure the client receives reliable finance applications
+                  and a supportive experience in their use and maintenance.
                 </p>
               </div>
               <FaWallet className="text-cyan-600 w-14 h-14 flex-shrink-0" />
@@ -1377,7 +1659,7 @@ const Finance = () => {
                   work, dedication, and effort you have put into our company.
                   Your commitment to delivering high-quality work,
                   problem-solving skills, and teamwork has been truly
-                  commendable. Chetu’s team has played a crucial role in
+                  commendable. U Technology’s team has played a crucial role in
                   ensuring the success of this project, and we are grateful for
                   the attention to detail and proactive approach. Looking
                   forward to more success together!
