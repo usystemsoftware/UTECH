@@ -53,11 +53,11 @@ const CRM = () => {
   };
   const testimonials = [
     {
-      quote: `We wanted to take the time to say how pleased we are with the work that has been done so far on our CRM project by Pankaj and his teams at Chetu. We are incredibly impressed with the level of organization, communication, speed, skill and understanding that this company has shown in regards to our requests and needs for the CRM. We are looking forward to moving into the next phase of the project and have full confidence that Pankaj and his teams will continue to deliver.`,
+      quote: `We wanted to take the time to say how pleased we are with the work that has been done so far on our CRM project by Pankaj and his teams at U Technology. We are incredibly impressed with the level of organization, communication, speed, skill and understanding that this company has shown in regards to our requests and needs for the CRM. We are looking forward to moving into the next phase of the project and have full confidence that Pankaj and his teams will continue to deliver.`,
       author: "Director of Engineering, Environmental Management",
     },
     {
-      quote: `We have been working with Chetu for at least four years now. They have been an excellent supplement to our IT team. We have been able to give them big and small projects that we simply just do not have the time to tackle. Working with Chetu has given us the chance to focus more on our customers. They have a great team leader in Ganesh and all the different departments are very helpful. Ganesh is able to help us get our ideas across to the team with ease. We have really been able to grow our business since we started working with Chetu.`,
+      quote: `We have been working with U Technology for at least four years now. They have been an excellent supplement to our IT team. We have been able to give them big and small projects that we simply just do not have the time to tackle. Working with U Technology has given us the chance to focus more on our customers. They have a great team leader in Ganesh and all the different departments are very helpful. Ganesh is able to help us get our ideas across to the team with ease. We have really been able to grow our business since we started working with U Technology.`,
       author: "Vice President of IT, Banking Implementation",
     },
   ];
@@ -77,7 +77,7 @@ const CRM = () => {
       question:
         "What kind of Support do You Provide after a Website is Launched?",
       answer:
-        "Chetu provides complete post-launch services and support, including maintenance, security updates, new implementations, and technical assistance. Our team operates on a 24/7 basis to minimize any downtime, keeping your website and data secure.",
+        "U Technology provides complete post-launch services and support, including maintenance, security updates, new implementations, and technical assistance. Our team operates on a 24/7 basis to minimize any downtime, keeping your website and data secure.",
     },
     {
       question: "What is a progressive web app??",
@@ -94,7 +94,7 @@ const CRM = () => {
       question:
         "Can you Develop or Migrate My Website to be a Progressive Web App (PWA)?",
       answer:
-        "Chetu’s engineers are experienced in PWA (Progressive Web Apps), using our web development experience. Our solutions include creating web applications that are responsive, function offline, have push notifications, and background data syncing.",
+        "U Technology’s engineers are experienced in PWA (Progressive Web Apps), using our web development experience. Our solutions include creating web applications that are responsive, function offline, have push notifications, and background data syncing.",
     },
     {
       question:
@@ -176,9 +176,9 @@ const CRM = () => {
             viewport={{ once: true, amount: 0.2 }}
             variants={fadeUp}
           >
-            Chetu develops custom-tailored CRM systems, implementing application
-            development software features & functionalities that drive
-            businesses forward.
+            U Technology develops custom-tailored CRM systems, implementing
+            application development software features & functionalities that
+            drive businesses forward.
           </motion.p>
 
           {/* ✅ SERVICES GRID */}
@@ -613,7 +613,7 @@ const CRM = () => {
             CRM Software Services
           </motion.h2>
           <p className="text-sm text-cyan-700 mb-12 max-w-3xl mx-auto">
-            Chetu provides
+            U Technology provides
             <a href="#" className="text-cyan-600 underline">
               custom CRM software services
             </a>{" "}
@@ -733,13 +733,13 @@ const CRM = () => {
                   CRM System Support
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  At Chetu, we recognize the indispensable role that seamless
-                  CRM operation plays in the success of your business. Our
-                  expert team excels in troubleshooting and resolving issues,
-                  leaving no room for uncertainties that could disrupt your
-                  daily operations. Our dedicated team is committed to providing
-                  unparalleled support 24/7, ensuring your CRM system operates
-                  optimally to drive your success.
+                  At U Technology, we recognize the indispensable role that
+                  seamless CRM operation plays in the success of your business.
+                  Our expert team excels in troubleshooting and resolving
+                  issues, leaving no room for uncertainties that could disrupt
+                  your daily operations. Our dedicated team is committed to
+                  providing unparalleled support 24/7, ensuring your CRM system
+                  operates optimally to drive your success.
                 </p>
               </div>
             </motion.div>
@@ -757,12 +757,13 @@ const CRM = () => {
                   CRM Integration & Migration
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Chetu specializes in CRM implementation, data migration,
-                  system auditing and server administration, making sure your
-                  CRM software stays up-to-date and seamlessly integrated with
-                  your other business systems. We provide support for Zoho CRM,
-                  Salesforce CRM Integration, Microsoft Dynamics CRM, and SAP
-                  CRM, ensuring your CRM portal is always at its peak.
+                  U Technology specializes in CRM implementation, data
+                  migration, system auditing and server administration, making
+                  sure your CRM software stays up-to-date and seamlessly
+                  integrated with your other business systems. We provide
+                  support for Zoho CRM, Salesforce CRM Integration, Microsoft
+                  Dynamics CRM, and SAP CRM, ensuring your CRM portal is always
+                  at its peak.
                 </p>
               </div>
               <FaCheckDouble className="text-cyan-600 w-14 h-14 flex-shrink-0" />
@@ -866,12 +867,12 @@ const CRM = () => {
                 {
                   icon: <FaNetworkWired size={80} className="text-cyan-600" />,
                   title: "Salesforce",
-                  desc: "Chetu is a certified partner with Salesforce, providing custom Salesforce CRM solutions, integrations, installations, implementations, customizations, and Salesforce IT support.",
+                  desc: "U Technology is a certified partner with Salesforce, providing custom Salesforce CRM solutions, integrations, installations, implementations, customizations, and Salesforce IT support.",
                 },
                 {
                   icon: <FaComments size={80} className="text-cyan-600" />,
                   title: "Microsoft Dynamics",
-                  desc: "Chetu is a certified Gold Partner, providing custom CRM software development services for Microsoft Dynamics for businesses of all sizes and professional industries.",
+                  desc: "U Technology is a certified Gold Partner, providing custom CRM software development services for Microsoft Dynamics for businesses of all sizes and professional industries.",
                 },
                 {
                   icon: <FaChartLine size={80} className="text-cyan-600" />,

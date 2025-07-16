@@ -196,7 +196,7 @@
 //           </h2>
 
 //           <p className="text-sm text-primary mb-10 max-w-1xl mx-auto">
-//             Chetu’s team of expert developers cater to the technical needs of
+//             U Technology’s team of expert developers cater to the technical needs of
 //             the ever-evolving banking sector by offering high quality software
 //             solutions that transform your core <br /> environment to streamline
 //             banking & financial workflows.
@@ -371,7 +371,7 @@
 //           </h2>
 
 //           <p className="text-sm text-primary mb-10 max-w-2xl mx-auto">
-//             Chetu’s team of expert developers cater to the technical needs of
+//             U Technology’s team of expert developers cater to the technical needs of
 //             the ever-evolving banking sector by offering high quality software
 //             solutions that transform your core environment to streamline banking
 //             & financial workflows.
@@ -636,7 +636,7 @@
 //             Custom Banking Software Development Company
 //           </motion.h2>
 //           <p className="text-sm text-primary mb-10 max-w-2xl mx-auto">
-//             Chetu’s expert developers offer high-quality software solutions that
+//             U Technology’s expert developers offer high-quality software solutions that
 //             transform banking environments.
 //           </p>
 
@@ -804,7 +804,7 @@
 //           Custom Loan Servicing & Origination Solutions
 //         </h1>
 //         <p className="max-w-3xl mx-auto text-gray-600 mb-12">
-//           Chetu’s custom loan servicing and origination personalized solutions
+//           U Technology’s custom loan servicing and origination personalized solutions
 //           handle underwriting, origination, disbursement, servicing,
 //           amortization, processing, and so much more for financial services and
 //           institutions.
@@ -870,7 +870,7 @@
 //                   Loan Settlement Software Platforms
 //                 </h2>
 //                 <p className="text-gray-600">
-//                   Chetu's expert programmers create loan debt payment and
+//                   U Technology's expert programmers create loan debt payment and
 //                   settlement platforms that feature automated billing and
 //                   payments, supporting Automated Clearing House (ACH) and
 //                   Electronic Funds Transfer (EFT) payments for all payment
@@ -897,7 +897,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 // import BankingHeader from "../../../public/assets/Banking/BankingHeader.webp";
 // import BankingHeader from "../../../../public/assets/Banking/BankingHeader.webp";
-import BankingHeader from "../../../../../public/assets/Industries/Banking/BankingHeader.webp"
+import BankingHeader from "../../../../../public/assets/Industries/Banking/BankingHeader.webp";
 import FeatureImage from "../../../../../public/assets/Industries/Banking/contentBanking.png";
 import MobileAnalytics from "../../../../../public/assets/Industries/Banking/BankingPhone.png";
 import softwareSolutions from "../../../../../public/assets/Industries/Banking/softwareSolutions.png";
@@ -1024,13 +1024,13 @@ const BankingPage = () => {
       question:
         "Can you migrate our existing construction software to a cloud-based solution?",
       answer:
-        "Definitely! Chetu provides cloud migration services for your current construction software to a safe and scalable cloud environment with minimal disruption and optimal performance.",
+        "Definitely! U Technology provides cloud migration services for your current construction software to a safe and scalable cloud environment with minimal disruption and optimal performance.",
     },
     {
       question:
         "Do you offer support and maintenance after construction software development?",
       answer:
-        "Yes! Your software will run smoothly, remain up to date, and secure, as experts at Chetu provide ongoing support and maintenance so you can build with confidence.",
+        "Yes! Your software will run smoothly, remain up to date, and secure, as experts at U Technology provide ongoing support and maintenance so you can build with confidence.",
     },
     {
       question: "Can AI automate repetitive tasks in construction software?",
@@ -1099,10 +1099,10 @@ const BankingPage = () => {
             Custom Banking Software Development Company
           </motion.h2>
           <p className="text-sm text-primary mb-10 max-w-2xl mx-auto">
-            Chetu’s team of expert developers cater to the technical needs of
-            the ever-evolving banking sector by offering high quality software
-            solutions that transform your core environment to streamline banking
-            & financial workflows.
+            U Technology’s team of expert developers cater to the technical
+            needs of the ever-evolving banking sector by offering high quality
+            software solutions that transform your core environment to
+            streamline banking & financial workflows.
           </p>
 
           <div className="flex flex-col lg:flex-row items-center justify-center gap-12 max-w-7xl mx-auto">
@@ -1285,8 +1285,8 @@ const BankingPage = () => {
             variants={fadeUp}
             custom={1}
           >
-            Chetu’s custom loan servicing and origination personalized solutions
-            handle underwriting, origination, disbursement, servicing,
+            U Technology’s custom loan servicing and origination personalized
+            solutions handle underwriting, origination, disbursement, servicing,
             amortization, processing, and so much more for financial services
             and institutions.
           </motion.p>
@@ -1348,7 +1348,7 @@ const BankingPage = () => {
                         ? "Our product development teams create custom loan servicing systems and Loan Management Systems (LMS) for banks, credit unions, and financial institutions."
                         : i === 1
                         ? "We program Loan Origination Systems (LOS), with modules for underwriting, credit pull, decision support, and more."
-                        : "Chetu's programmers create payment and settlement platforms supporting ACH and EFT for all payment types."}
+                        : "U Technology's programmers create payment and settlement platforms supporting ACH and EFT for all payment types."}
                     </p>
                   </div>
                 </motion.div>
@@ -1381,9 +1381,9 @@ const BankingPage = () => {
             Custom Mobile Banking Software Solutions
           </h1>
           <p className="max-w-4xl mx-auto text-gray-600">
-            Chetu makes it possible for mobile banking software providers to
-            customize features, such as electronic bill payments, remote check
-            deposits, P2P payments, fund transfers between accounts, text
+            U Technology makes it possible for mobile banking software providers
+            to customize features, such as electronic bill payments, remote
+            check deposits, P2P payments, fund transfers between accounts, text
             messaging, and statement downloading & printing.
           </p>
         </motion.div>
@@ -1489,8 +1489,8 @@ const BankingPage = () => {
             variants={fadeUp}
             custom={1}
           >
-            Chetu’s financial software development services create robust,
-            straightforward customizations to online banking systems for
+            U Technology’s financial software development services create
+            robust, straightforward customizations to online banking systems for
             brick-and-mortar and FinTech companies of any size, built with
             incorporated branding for enhanced consistency & visibility.
           </motion.p>
@@ -1552,7 +1552,7 @@ const BankingPage = () => {
                         ? "Our advanced platforms are highly secure, allowing encrypted bi-lateral transactions and providing innovative solutions for crowdfunding, multi-currency e-wallets, cryptocurrency trading, and direct money transfers via social platforms."
                         : i === 1
                         ? "Our custom mobile app development services make it easy for your customers to bank on the go with hybrid mobile banking apps that utilize tools like Apache Cordova (formerly PhoneGap) to create uniform user experiences across all digital channels, including web, iOS, and Android."
-                        : "Chetu’s banking solutions experts implement risk management tools & network security features, such as TCI/IP, SSL/TLS, Multi-Factor Authentication (MFA), One-Time Passwords (OTP), Single Sign-On (SSO), and SSH File Transfer Protocol (SFTP)."}
+                        : "U Technology’s banking solutions experts implement risk management tools & network security features, such as TCI/IP, SSL/TLS, Multi-Factor Authentication (MFA), One-Time Passwords (OTP), Single Sign-On (SSO), and SSH File Transfer Protocol (SFTP)."}
                     </p>
                   </div>
                 </motion.div>
@@ -1578,15 +1578,15 @@ const BankingPage = () => {
           {/* Left content */}
           <div className="flex-1">
             <h2 className="text-2xl font-bold mb-4 border-l-2 border-black pl-3">
-              CHETU ENSURES 100% PCI-DSS COMPLIANCE
+              U Technology ENSURES 100% PCI-DSS COMPLIANCE
             </h2>
             <p className="text-gray-700">
-              Chetu’s banking software developers ensure your software complies
-              with the strict regulatory standards on anti-money laundering and
-              consumer protection standards. This includes the Payment Card
-              Industry Security Standards Council (PCI SSC), Payment Card
-              Industry Data Security Standard (PCI-DSS), and Payment Application
-              Data Security Standard (PA-DSS). Also, Payment
+              U Technology’s banking software developers ensure your software
+              complies with the strict regulatory standards on anti-money
+              laundering and consumer protection standards. This includes the
+              Payment Card Industry Security Standards Council (PCI SSC),
+              Payment Card Industry Data Security Standard (PCI-DSS), and
+              Payment Application Data Security Standard (PA-DSS). Also, Payment
               Application-Qualified Security Accessors (PA-QSA), SOX,
               Dodd-Frank, Check 21, and the Securities Act of 1933.
             </p>
@@ -1656,9 +1656,9 @@ const BankingPage = () => {
             variants={fadeUp}
             custom={1}
           >
-            Chetu's banking software developers are at the forefront of the
-            industry, configuring and customizing existing ATM software, as well
-            as providing end-to-end ATM software development services for
+            U Technology's banking software developers are at the forefront of
+            the industry, configuring and customizing existing ATM software, as
+            well as providing end-to-end ATM software development services for
             national and international financial institutions.
           </motion.p>
 
@@ -1808,11 +1808,11 @@ const BankingPage = () => {
             variants={fadeUp}
             custom={1}
           >
-            Chetu’s developers provide Centralized Online Real-Time Exchange
-            (CORE) banking software services that effortlessly support all of a
-            bank’s most common transactions, including making and servicing
-            loans, opening new accounts, and processing cash deposits &
-            withdrawals.
+            U Technology’s developers provide Centralized Online Real-Time
+            Exchange (CORE) banking software services that effortlessly support
+            all of a bank’s most common transactions, including making and
+            servicing loans, opening new accounts, and processing cash deposits
+            & withdrawals.
           </motion.p>
 
           <div className="flex flex-col lg:flex-row items-center justify-center gap-16">
@@ -1912,7 +1912,7 @@ const BankingPage = () => {
             variants={fadeUp}
             custom={1}
           >
-            Chetu provides a comprehensive, broad range of EMV software
+            U Technology provides a comprehensive, broad range of EMV software
             solutions from custom-coded programming to advanced feature
             implementation, enabling institutions to deliver secure data in
             sensitive environments.
@@ -1935,9 +1935,10 @@ const BankingPage = () => {
                     EMV Software Development
                   </h3>
                   <p className="text-gray-600 text-sm">
-                    Chetu offers professional end-to-end EMV migration services
-                    including EMV compliant software programming, testing, and
-                    validation for full and semi-integrated solutions.
+                    U Technology offers professional end-to-end EMV migration
+                    services including EMV compliant software programming,
+                    testing, and validation for full and semi-integrated
+                    solutions.
                   </p>
                 </div>
               </motion.div>
@@ -2052,8 +2053,8 @@ const BankingPage = () => {
             Check 21 Software & ACH Processing Solutions
           </h1>
           <p className="max-w-4xl mx-auto text-gray-600">
-            At Chetu, we customize your ACH payment processing and Check 21
-            capabilities to seamlessly integrate e-check processing
+            At U Technology, we customize your ACH payment processing and Check
+            21 capabilities to seamlessly integrate e-check processing
             functionality and credit card processing with secure verification
             systems and enhanced UX designs.
           </p>
@@ -2161,9 +2162,10 @@ const BankingPage = () => {
             custom={1}
           >
             Banking and fiscal services have seen a significant transformation
-            because of the use of new software solutions and apps. Chetu’s
-            banking software support enhances efficiency, reliability, and
-            regulatory compliance while improving the customer experience.
+            because of the use of new software solutions and apps. U
+            Technology’s banking software support enhances efficiency,
+            reliability, and regulatory compliance while improving the customer
+            experience.
           </motion.p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left">
@@ -2183,9 +2185,10 @@ const BankingPage = () => {
                 </h3>
                 <p className="text-gray-600 text-sm">
                   Currency Exchange Support enables real-time currency
-                  conversion. Chetu’s engineers can enable your software or app
-                  to integrate and maintain data exchanges with international
-                  banking systems while monitoring and updating exchange rates.
+                  conversion. U Technology’s engineers can enable your software
+                  or app to integrate and maintain data exchanges with
+                  international banking systems while monitoring and updating
+                  exchange rates.
                 </p>
               </div>
             </motion.div>
@@ -2203,9 +2206,9 @@ const BankingPage = () => {
                   Check Processing Assistance
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Chetu’s software developers can include check processing
-                  assistance in your software to help users automate the
-                  verification, capture, and clearance of checks with check
+                  U Technology’s software developers can include check
+                  processing assistance in your software to help users automate
+                  the verification, capture, and clearance of checks with check
                   processing, OCR, and digital imaging.
                 </p>
               </div>
@@ -2361,10 +2364,10 @@ const BankingPage = () => {
                   Online Account Opening Support
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Chetu’s online account opening support guides your software
-                  users through a streamlined, secure process to open new
-                  accounts, including compliance checks, ID verification, and
-                  document submission.
+                  U Technology’s online account opening support guides your
+                  software users through a streamlined, secure process to open
+                  new accounts, including compliance checks, ID verification,
+                  and document submission.
                 </p>
               </div>
             </motion.div>

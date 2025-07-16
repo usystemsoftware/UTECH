@@ -76,7 +76,7 @@ export const Navlinks = [
       { label: "Legal", href: "/legal", image: "/images/industries/legal.png" },
       {
         label: "Real Estate",
-        href: "/real-estate",
+        href: "/realestate/RealEstate",
         image: "/images/industries/real-estate.png",
       },
       {
