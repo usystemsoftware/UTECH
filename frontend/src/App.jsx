@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/header/Navbar";
-import { Footer } from "./components/layout/footer/Footer";
+import { Footer } from "./components/layout/Footer";
 import Chat from "./components/chatbot/Chat";
 import WebDevelopment from "./components/pages/Industries/Solutions/WebDevelopment";
 import CRM from "./components/pages/Industries/Solutions/CRM";
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="px-4 sm:px-8 max-w-7xl mx-auto">
+      <div className="px-4 sm:px-8 w-full sm:max-w-7xl mx-auto">
         <Routes>
           <Route path="/" element={<HeroSection />} />
           <Route path="/solutions/web-development" element={<WebDevelopment />} />

@@ -158,7 +158,6 @@ export const Navlinks = [
     title: "Solutions",
     groups: [
       {
-        group: "Strategic Partners",
         links: [
           {
             label: "Autodesk",
@@ -229,7 +228,6 @@ export const Navlinks = [
         ],
       },
       {
-        group: "Solutions List",
         links: [
           {
             label: "Animation & Graphic Design",
@@ -300,7 +298,6 @@ export const Navlinks = [
         ],
       },
       {
-        group: "",
         links: [
           {
             label: "Digital Asset Management",
@@ -515,9 +512,5 @@ export const Navlinks = [
       },
       { label: "Reviews", href: "/company/reviews", icon: "Star" },
     ],
-  },
-  {
-    title: "Blog",
-    items: [],
   },
 ]

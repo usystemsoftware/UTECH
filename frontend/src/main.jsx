@@ -6,15 +6,13 @@ import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from "@/components/theme-provider"
 
 createRoot(document.getElementById('root')).render(
-  // <ThemeProvider defaultTheme="dark" storageKey="u-tech-theme">
-
-  <BrowserRouter>
-
-    <StrictMode>
-      <App />
-    </StrictMode>
-  </BrowserRouter>
-  // </ThemeProvider>
+  <StrictMode>
+    <BrowserRouter>
+      <ThemeProvider defaultTheme="dark" storageKey="u-tech-theme">
+        <App />
+      </ThemeProvider>
+    </BrowserRouter>
+  </StrictMode>
 
 
 )
