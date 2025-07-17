@@ -3,10 +3,10 @@ import NavbarMobile from "./NavbarMobile";
 
 const Navbar = () => (
   <>
-    <div className="block lg:hidden">
+    <div className="block md:hidden">
       <NavbarMobile />
     </div>
-    <div className="hidden lg:block">
+    <div className="hidden md:block">
       <NavbarDesktop />
     </div>
   </>

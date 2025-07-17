@@ -1,8 +1,7 @@
-"use client";
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import * as LucideIcons from "lucide-react";
+import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import { Navlinks } from "@/data/Navlinks";
 import { motion, AnimatePresence } from "framer-motion";
@@ -42,6 +41,8 @@ const NavbarMobile = () => {
           <img loading="lazy" src="/logo.png" alt="Logo" className="h-10" />
         </Link>
         <div className="flex items-center space-x-4">
+          {/* theme Button */}
+          <ModeToggle />
           <Button size="sm">
             <LucideIcons.HelpCircle /> Help
           </Button>

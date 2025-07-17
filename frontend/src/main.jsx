@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <ThemeProvider defaultTheme="dark" storageKey="u-tech-theme">
+      <ThemeProvider defaultTheme="default" storageKey="u-tech-theme">
         <App />
       </ThemeProvider>
     </BrowserRouter>
