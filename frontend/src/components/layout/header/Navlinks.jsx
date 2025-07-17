@@ -249,7 +249,7 @@ export const Navlinks = [
           },
           {
             label: "Embedded Software",
-            href: "/embedded-software",
+            href: "/solutions/EmbeddedSoftware",
             image: "/images/solutions/embedded.png",
           },
           { label: "ERP", href: "/erp", image: "/images/solutions/erp.png" },
@@ -276,7 +276,7 @@ export const Navlinks = [
           },
           {
             label: "UI / UX",
-            href: "/ui-ux",
+            href: "/solutions/UiUx",
             image: "/images/solutions/uiux.png",
           },
           {

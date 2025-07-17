@@ -10,6 +10,8 @@ import Finance from "./components/pages/Industries/banking/Finance";
 import ApiDevelopment from "./components/pages/Industries/services/ApiDevelopment";
 import DigitalTransformation from "./components/pages/services/DigitalTransformation";
 import RealEstate from "./components/pages/Industries/realestate/RealEstate";
+import UiUx from "./components/pages/Industries/solutions/UiUx";
+import EmbeddedSoftware from "./components/pages/Industries/Solutions/EmbeddedSoftware";
 // import DigitalTransformation from "./components/pages//services/digital-transformation";
 
 function App() {
@@ -24,8 +26,18 @@ function App() {
 
         <Route path="/Industries/BankingPage" element={<BankingPage />} />
         <Route path="/Industries/Finance" element={<Finance />} />
-        <Route path="/Services/DigitalTransformation" element={<DigitalTransformation/>} />
-        <Route path="/realestate/RealEstate" element={<RealEstate/>} />
+        <Route
+          path="/Services/DigitalTransformation"
+          element={<DigitalTransformation />}
+        />
+        <Route path="/realestate/RealEstate" element={<RealEstate />} />
+        <Route path="/solutions/UiUx" element={<UiUx />} />
+        {/* <Route path="/solutions/EmbeddedSoftware" element={EmbeddedSoftware} /> */}
+        <Route
+          path="/solutions/EmbeddedSoftware"
+          element={<EmbeddedSoftware />}
+        />
+
         {/* <Route path="/services/digital-transformation" element={<DigitalTransformation/>} /> */}
       </Routes>
       <Chat />
