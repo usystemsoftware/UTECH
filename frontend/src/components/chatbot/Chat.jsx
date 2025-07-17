@@ -266,29 +266,27 @@ export default function Chat() {
                       {awaitingEmail
                         ? "Please provide your email so we can continue assisting you."
                         : awaitingOTP
-                        ? "Please enter the OTP sent to your email."
-                        : "Welcome! How can we help you today?"}
+                          ? "Please enter the OTP sent to your email."
+                          : "Welcome! How can we help you today?"}
                     </p>
                   </motion.div>
                 ) : (
                   messages.map((message) => (
                     <motion.div
                       key={message.id}
-                      className={`flex items-start space-x-3 ${
-                        message.type === "user"
-                          ? "flex-row-reverse space-x-reverse"
-                          : ""
-                      }`}
+                      className={`flex items-start space-x-3 ${message.type === "user"
+                        ? "flex-row-reverse space-x-reverse"
+                        : ""
+                        }`}
                       initial="hidden"
                       animate="visible"
                       variants={messageVariants}
                     >
                       <div
-                        className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
-                          message.type === "bot"
-                            ? "bg-blue-500 text-white"
-                            : "bg-gray-600 text-white"
-                        }`}
+                        className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${message.type === "bot"
+                          ? "bg-blue-500 text-white"
+                          : "bg-gray-600 text-white"
+                          }`}
                       >
                         {message.type === "bot" ? (
                           <Bot className="w-4 h-4" />
@@ -297,11 +295,10 @@ export default function Chat() {
                         )}
                       </div>
                       <div
-                        className={`max-w-[75%] px-4 py-2 rounded-lg text-sm ${
-                          message.type === "bot"
-                            ? "bg-white text-gray-800 shadow-sm border border-gray-200"
-                            : "bg-blue-500 text-white"
-                        }`}
+                        className={`max-w-[75%] px-4 py-2 rounded-lg text-sm ${message.type === "bot"
+                          ? "bg-white text-gray-800 shadow-sm border border-gray-200"
+                          : "bg-blue-500 text-white"
+                          }`}
                       >
                         <p>{message.text}</p>
                       </div>
@@ -337,8 +334,8 @@ export default function Chat() {
                       awaitingEmail
                         ? "Please enter your email"
                         : awaitingOTP
-                        ? "Please enter the OTP"
-                        : "Enter your response"
+                          ? "Please enter the OTP"
+                          : "Enter your response"
                     }
                     className="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out"
                   />
@@ -360,10 +357,9 @@ export default function Chat() {
       {!isOpen && (
         <div
           onClick={toggleChat}
-          className="fixed bottom-6 md:bottom-16 rounded-full text-sm bg-blue-500 hover:bg-blue-600 py-4 px-4 sm:px-6 text-white cursor-pointer right-5  z-50 flex items-center gap-2"
+          className="fixed bottom-6 md:bottom-16 hover:scale-105 hover:shadow-2xl shadow-black hover:translate-y-5 rounded-full text-sm bg-blue-500 hover:bg-blue-600 p-4 text-white cursor-pointer right-5 z-50 flex items-center gap-2"
         >
-          <MessageCircle size={22} />
-          <span className="hidden md:block">How may I Help You....?</span>
+          <Bot size={32} />
         </div>
       )}
     </>

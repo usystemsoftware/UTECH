@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const IconRenderer = ({ name }) => {
   const LucideIcon = LucideIcons[name];
-  return LucideIcon ? <LucideIcon className="w-4 h-4 mr-2" /> : null;
+  return LucideIcon ? <LucideIcon className="w-4 h-4" /> : null;
 };
 
 const menuVariants = {
@@ -35,11 +35,11 @@ const NavbarMobile = () => {
   const [openMenus, setOpenMenus] = useState({});
 
   return (
-    <div className="lg:hidden w-full fixed top-0 left-0 z-50 bg-card shadow-md">
+    <div className="lg:hidden w-full fixed top-0 left-0 z-50 bg-card shadow-md overflow-x-hidden">
       {/* Top bar */}
       <div className="flex items-center justify-between px-4 py-3 border-b">
         <Link to="/" onClick={() => setOpen(false)}>
-          <img src="/logo.png" alt="Logo" className="h-10" />
+          <img loading="lazy" src="/logo.png" alt="Logo" className="h-10" />
         </Link>
         <div className="flex items-center space-x-4">
           <Button size="sm">

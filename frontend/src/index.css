@@ -119,7 +119,6 @@
   body {
     font-family: "Poppins", sans-serif;
     /* font-family: "Noto Sans", sans-serif; */
-
     @apply bg-background text-foreground;
   }
 }
