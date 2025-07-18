@@ -8,7 +8,6 @@ export default function HeadingSection({
   highlight,
   description,
   className,
-  pClassName,
 }) {
   return (
     <motion.div
@@ -25,7 +24,11 @@ export default function HeadingSection({
       </TypographyH1>
 
       {description && (
-        <TypographyMuted className={clsx("text-base sm:text-lg w-full sm:max-w-xl mx-auto leading-relaxed", pClassName)}>
+        <TypographyMuted
+          className={clsx(
+            "text-base sm:text-lg w-full sm:max-w-xl mx-auto leading-relaxed"
+          )}
+        >
           {description}
         </TypographyMuted>
       )}

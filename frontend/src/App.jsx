@@ -8,6 +8,7 @@ import MainLayout from "@/components/layout/MainLayout";
 import { SolutionRoutes } from "@/routes/SolutionRoutes";
 import { IndustryRoutes } from "@/routes/IndustryRoutes";
 import { ServiceRoutes } from "@/routes/ServiceRoutes";
+import { DefaultRoutes } from "@/routes/DefaultRoutes";
 
 export default function App() {
   return (
@@ -16,6 +17,11 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<MainLayout />} />
+
+         {/* default routes */}
+        {DefaultRoutes.map(({ path, element }) => (
+          <Route key={path} path={path} element={element} />
+        ))}
 
         {/* solution routes */}
         {SolutionRoutes.map(({ path, element }) => (
