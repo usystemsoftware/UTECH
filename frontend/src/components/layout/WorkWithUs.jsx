@@ -26,7 +26,6 @@ export default function WorkWithUs() {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            // Title animation with 3D flip effect
             gsap.fromTo(
                 titleRef.current,
                 {
@@ -48,7 +47,6 @@ export default function WorkWithUs() {
                 }
             );
 
-            // Stats cards entrance animation
             if (cardsRef.current) {
                 const cards = cardsRef.current.children;
 
@@ -77,20 +75,16 @@ export default function WorkWithUs() {
                     }
                 );
 
-                // Animate numbers and hover effects
-                Array.from(cards).forEach((card, index) => {
-                    const cardElement = card;
-                    const numberElement = cardElement.querySelector('.stat-number');
+                Array.from(cards).forEach((card) => {
+                    const numberElement = card.querySelector('.stat-number');
+                    const finalNumber = numberElement?.textContent || '0';
+                    const numericValue = parseFloat(finalNumber.replace(/[^\d.]/g, '') || '0');
+                    const isPlus = finalNumber.includes('+');
+                    const isPercent = finalNumber.includes('%');
+                    const isSlash = finalNumber.includes('/');
+                    const isDecimal = finalNumber.includes('.');
 
-                    // Number counting animation
                     if (numberElement) {
-                        const finalNumber = numberElement.textContent;
-                        const numericValue = parseFloat(finalNumber?.replace(/[^\d.]/g, '') || '0');
-                        const isPlus = finalNumber?.includes('+');
-                        const isPercent = finalNumber?.includes('%');
-                        const isSlash = finalNumber?.includes('/');
-                        const isDecimal = finalNumber?.includes('.');
-
                         gsap.fromTo(
                             numberElement,
                             { textContent: 0 },
@@ -100,34 +94,24 @@ export default function WorkWithUs() {
                                 ease: 'power2.out',
                                 snap: { textContent: isDecimal ? 0.1 : 1 },
                                 scrollTrigger: {
-                                    trigger: cardElement,
+                                    trigger: card,
                                     start: 'top 80%',
                                     toggleActions: 'play none none reverse',
                                 },
                                 onUpdate: function () {
                                     let current = this.targets()[0].textContent;
-                                    if (isDecimal) {
-                                        current = parseFloat(current).toFixed(1);
-                                    } else {
-                                        current = Math.round(current);
-                                    }
-                                    if (isPlus) {
-                                        numberElement.textContent = current + '+';
-                                    } else if (isPercent) {
-                                        numberElement.textContent = current + '%';
-                                    } else if (isSlash) {
-                                        numberElement.textContent = current + '/5';
-                                    } else {
-                                        numberElement.textContent = current.toString();
-                                    }
+                                    current = isDecimal ? parseFloat(current).toFixed(1) : Math.round(current);
+                                    if (isPlus) numberElement.textContent = current + '+';
+                                    else if (isPercent) numberElement.textContent = current + '%';
+                                    else if (isSlash) numberElement.textContent = current + '/5';
+                                    else numberElement.textContent = current;
                                 },
                             }
                         );
                     }
 
-                    // Hover-only transform without any background or shadow
-                    cardElement.addEventListener('mouseenter', () => {
-                        gsap.to(cardElement, {
+                    card.addEventListener('mouseenter', () => {
+                        gsap.to(card, {
                             y: -10,
                             rotationY: 8,
                             rotationX: 4,
@@ -137,8 +121,8 @@ export default function WorkWithUs() {
                         });
                     });
 
-                    cardElement.addEventListener('mouseleave', () => {
-                        gsap.to(cardElement, {
+                    card.addEventListener('mouseleave', () => {
+                        gsap.to(card, {
                             y: 0,
                             rotationY: 0,
                             rotationX: 0,
@@ -155,36 +139,35 @@ export default function WorkWithUs() {
     }, []);
 
     return (
-        <section ref={statsRef} className="bg-secondary py-16 overflow-x-hidden">
-            {/* Background Bubbles */}
-            <BubblesBackground />
-
-            <PageLayout>
+        <div className="relative bg-secondary py-16 overflow-x-hidden">
+            <PageLayout ref={statsRef}>
+                <BubblesBackground />
                 <HeadingSection
                     title="Our"
                     highlight="Impact"
                     description="Numbers that demonstrate our commitment to excellence and digital transformation leadership"
                 />
 
-                {/* Horizontally scrollable on mobile, no y-scrollbar */}
-                <div className="overflow-x-auto overflow-y-hidden md:overflow-visible">
-                    <div ref={cardsRef} className="flex gap-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-8 scroll-smooth pb-4 pr-4 md:pr-0">
+                {/* Fixed scroll issue here */}
+                <div className="overflow-hidden w-full">
+                    <div
+                        ref={cardsRef}
+                        className="grid gap-6 md:grid-cols-2 lg:grid-cols-4"
+                    >
                         {readyWithUSstats?.map((stat, index) => (
                             <motion.div
                                 key={stat.label}
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                                className="min-w-[280px] md:min-w-0 flex-shrink-0"
                             >
                                 <Card
                                     className="bg-foreground/80 dark:bg-card h-fit rounded-xl backdrop-blur-md border-none transition-all duration-300 relative overflow-hidden transform-3d"
                                     style={{ transformStyle: 'preserve-3d' }}
                                 >
-                                    {/* Glow background */}
                                     <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-full blur-2xl"></div>
 
-                                    <div className='flex items-center gap-4'>
+                                    <div className="flex items-center gap-4">
                                         <div
                                             className={`w-11 h-11 rounded-2xl bg-gradient-to-r ${stat.color} flex items-center justify-center relative z-10 transform-3d`}
                                         >
@@ -195,7 +178,7 @@ export default function WorkWithUs() {
                                         </TypographyH2>
                                     </div>
 
-                                    <div className="mb-4 relative z-10">
+                                    <div className="relative z-10">
                                         <TypographyLead className="text-gray-200">
                                             {stat.label}
                                         </TypographyLead>
@@ -248,6 +231,6 @@ export default function WorkWithUs() {
                     </div>
                 </div>
             </PageLayout>
-        </section>
+        </div>
     );
 }

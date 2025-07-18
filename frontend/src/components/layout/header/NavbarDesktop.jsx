@@ -8,15 +8,8 @@ import {
   TypographySmall,
 } from "@/custom/Typography";
 import { Button } from "@/components/ui/button";
-import * as LucideIcons from "lucide-react";
 import { Navlinks } from "@/data/Navlinks";
-
-const IconRenderer = ({ name }) => {
-  const LucideIcon = LucideIcons[name];
-  return LucideIcon ? (
-    <LucideIcon className="w-4 h-4 hover:text-primary" />
-  ) : null;
-};
+import { IconRenderer } from "@/custom/IconRenderer";
 
 const NavbarDesktop = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -72,7 +65,8 @@ const NavbarDesktop = () => {
           <ModeToggle />
           {/* theme Button */}
           <Button size="sm">
-            <LucideIcons.HelpCircle /> Help
+            <IconRenderer name="HelpCircle" />
+            Help
           </Button>
         </div>
       </div>

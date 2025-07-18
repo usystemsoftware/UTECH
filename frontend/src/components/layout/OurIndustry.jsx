@@ -9,13 +9,13 @@ import BubblesBackground from "@/components/BubblesBackground";
 export default function OurIndustry() {
     // Entry animation directions based on index (repeatable)
     const directions = [
-        { x: 100, opacity: 0 },   // from right
-        { x: -100, opacity: 0 },  // from left
-        { y: -100, opacity: 0 },  // from top
+        { x: 100, opacity: 0 },
+        { x: -100, opacity: 0 },
+        { y: -100, opacity: 0 },
     ];
 
     return (
-        <PageLayout>
+        <PageLayout className="relative overflow-x-hidden">
             {/* Background Bubbles */}
             <BubblesBackground />
             <HeadingSection
@@ -38,7 +38,7 @@ export default function OurIndustry() {
                             className={`${industry.color} group overflow-hidden relative aspect-[4/3] flex transition-transform`}
                         >
                             <div className="flex">
-                                <TypographyH4 className="px-4 bottom-8 absolute text-white z-10">
+                                <TypographyH4 className="bottom-8 absolute text-white z-10">
                                     {industry.name}
                                 </TypographyH4>
                                 <motion.img

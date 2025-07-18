@@ -1,4 +1,3 @@
-import { WorldMap } from "@/components/ui/world-map";
 import { motion } from "framer-motion";
 import { Zap, Globe, Users, Award, Phone, Video } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,6 +8,7 @@ import {
   TypographySmall,
 } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
+import BubblesBackground from "@/components/BubblesBackground";
 
 export const HeroSection = () => {
 
@@ -21,44 +21,15 @@ export const HeroSection = () => {
 
   return (
     <PageLayout
-      className="relative flex items-center justify-center overflow-hidden mt-18"
+      className="relative flex items-center justify-center overflow-hidden mt-24"
     >
-      {/* WorldMap as background */}
-      <div className="absolute inset-0 w-full h-full z-0 pointer-events-none flex items-center justify-center">
-        <WorldMap
-          dots={[
-            {
-              start: { lat: 64.2008, lng: -149.4937 },
-              end: { lat: 34.0522, lng: -118.2437 },
-            },
-            {
-              start: { lat: 64.2008, lng: -149.4937 },
-              end: { lat: -15.7975, lng: -47.8919 },
-            },
-            {
-              start: { lat: -15.7975, lng: -47.8919 },
-              end: { lat: 38.7223, lng: -9.1393 },
-            },
-            {
-              start: { lat: 51.5074, lng: -0.1278 },
-              end: { lat: 28.6139, lng: 77.209 },
-            },
-            {
-              start: { lat: 28.6139, lng: 77.209 },
-              end: { lat: 43.1332, lng: 131.9113 },
-            },
-            {
-              start: { lat: 28.6139, lng: 77.209 },
-              end: { lat: -1.2921, lng: 36.8219 },
-            },
-          ]}
-        />
-      </div>
+      {/* Background Bubbles */}
+      <BubblesBackground />
       {/* Main Content */}
       <div className="md:container mx-auto relative z-10">
         <div className="grid lg:grid-cols-12 items-center">
           <motion.div className="space-y-8 lg:col-span-8">
-            <div className="flex justify-center mt-3 items-center w-full text-center">
+            <div className="flex justify-center mt-3 items-center w-full">
               <TypographySmall className="p-3 bg-gradient-to-r from-orange-100 to-red-100 text-orange-700 rounded-full text-sm border border-orange-200">
                 🚀 Digital Engineering & Enterprise Modernization
               </TypographySmall>
