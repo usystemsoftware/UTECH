@@ -1,4 +1,4 @@
-import Banking from "@/pages/industries/Banking";
+import Banking from "@/pages/industries/banking/Banking";
 import Finance from "@/pages/industries/Finance";
 import RealEstate from "@/pages/industries/RealEstate";
 

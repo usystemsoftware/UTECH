@@ -85,6 +85,19 @@ export function TypographyP({ children, className }) {
     return <p className={cn("leading-7", className)}>{children}</p>;
 }
 
+export function Headline({ title, description, className }) {
+    return (
+        <div className={cn("space-y-4 sm:max-w-2xl mx-auto text-center", className)}>
+            <h1 className="sm:text-3xl text-2xl font-bold tracking-tight text-primary">
+                {title}
+            </h1>
+            <p className="text-muted-foreground text-sm">
+                {description}
+            </p>
+        </div>
+    )
+}
+
 export function TypographyBlockquote({ children, className }) {
     return (
         <blockquote className={cn("mt-6 border-l-2 pl-6 italic", className)}>
@@ -215,13 +228,5 @@ export function HighLighter({ rightText, leftText, className, highLighter }) {
             </h3>
             <div className="w-14 h-0.5 bg-accent"></div>
         </div>
-    )
-}
-
-export function Headline({ children, className }) {
-    return (
-        <h3 className={cn("uppercase text-xl sm:text-3xl font-bold tracking-normal text-primary", className)}>
-            {children}
-        </h3>
     )
 }
