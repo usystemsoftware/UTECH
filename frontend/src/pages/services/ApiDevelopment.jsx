@@ -1,6 +1,5 @@
 
 import { motion } from "framer-motion";
-import BankingHeader from "/assets/industries/banking/BankingHeader.webp"
 import CellphoneAnimation from "/assets/services/api-development/cellphone-animation.gif";
 
 import {
@@ -243,7 +242,7 @@ const ApiDevelopment = () => {
             {/* Hero Section */}
             <motion.section
                 className="relative bg-cover bg-center text-white py-36"
-                style={{ backgroundImage: `url(${BankingHeader})` }}
+                style={{ backgroundImage: `url('/assets/industries/banking/banking-header.avif')` }}
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}

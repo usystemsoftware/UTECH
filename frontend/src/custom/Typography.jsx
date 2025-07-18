@@ -199,7 +199,7 @@ export function BoldList({ items, className }) {
 export function HeadSkipper({ children, className }) {
     return (
         <div className="flex items-center gap-2 sm:gap-4 mb-6">
-            <h2 className={cn("text-primary font-bold sm:tracking-wide sm:text-sm text-[10px] uppercase", className)}>
+            <h2 className={cn("text-primary sm:text-2xl text-lg font-semibold tracking-tight uppercase", className)}>
                 {children}
             </h2>
             <div className="sm:w-22 w-10 h-px bg-blue-700"></div>

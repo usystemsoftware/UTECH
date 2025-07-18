@@ -1,42 +1,41 @@
-import React, { useState } from 'react'
 import {
-    FaChevronUp,
-    FaChevronDown
-} from "react-icons/fa"
-const FaqSection = ({ faqs }) => {
-    const [openIndex, setOpenIndex] = useState(0); // ✅ Only ONE index
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+} from "@/components/ui/accordion";
+import { TypographyH2 } from './Typography';
+import PageLayout from "@/custom/PageLayout";
 
-    const toggleFAQ = (index) => {
-        if (openIndex === index) {
-            setOpenIndex(null); // Close if clicking same
-        } else {
-            setOpenIndex(index); // Open new one
-        }
-    };
+export default function FaqSection({ faqs = [], title, hightlight }) {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {faqs.length > 0 && faqs.map((faq, index) => (
-                <div key={index} className="border-b-2 border-cyan-700 pb-4">
-                    <div
-                        onClick={() => toggleFAQ(index)}
-                        className="flex justify-between items-center cursor-pointer"
-                    >
-                        <h3 className="text-base md:text-lg font-semibold text-black">
+        <PageLayout className="space-y-8">
+            <div className='flex justify-center gap-2 items-center'>
+                <TypographyH2 className="text-primary">
+                    {title}
+                </TypographyH2>
+                <TypographyH2>
+                    {hightlight}
+                </TypographyH2>
+            </div>
+
+            <Accordion
+                type="single"
+                collapsible
+                className="w-full grid grid-cols-1 md:grid-cols-2 gap-6"
+            >
+                {faqs.map((faq, index) => (
+                    <AccordionItem key={index} value={`item-${index}`}>
+                        <AccordionTrigger>
                             {faq.question}
-                        </h3>
-                        {openIndex === index ? (
-                            <FaChevronUp className="w-4 h-4" />
-                        ) : (
-                            <FaChevronDown className="w-4 h-4" />
-                        )}
-                    </div>
-                    {openIndex === index && faq.answer && (
-                        <p className="mt-2 text-gray-700 text-sm">{faq.answer}</p>
-                    )}
-                </div>
-            ))}
-        </div>
+                        </AccordionTrigger>
+                        <AccordionContent>
+                            {faq.answer}
+                        </AccordionContent>
+                    </AccordionItem>
+                ))}
+            </Accordion>
+        </PageLayout>
     )
 }
 
-export default FaqSection

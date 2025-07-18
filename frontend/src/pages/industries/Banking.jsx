@@ -1,7 +1,4 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
-import BankingHeader from "/assets/industries/banking/BankingHeader.webp";
-import FeatureImage from "/assets/industries/banking/contentBanking.png";
 import MobileAnalytics from "/assets/industries/banking/BankingPhone.png";
 import softwareSolutions from "/assets/industries/banking/softwareSolutions.png";
 import Phone from "/assets/industries/banking/Phone.png";
@@ -9,6 +6,7 @@ import ATMImage from "/assets/industries/banking/customatm.png";
 import customcore from "/assets/industries/banking/customcore.png";
 import EMVImage from "/assets/industries/banking/mobilebrowser.png";
 import payment from "/assets/industries/banking/payment.png";
+import HeroSection from "@/components/HeroSection";
 
 import {
   FaUniversity,
@@ -32,10 +30,9 @@ import {
   FaBell,
   FaCheckDouble,
   FaWallet,
-  FaChevronDown,
-  FaChevronUp,
 } from "react-icons/fa";
 import { MdOutlineLocalAtm } from "react-icons/md";
+import FaqSection from "@/custom/FaqSection";
 
 const BankingPage = () => {
   const leftFeatures = [
@@ -139,52 +136,18 @@ const BankingPage = () => {
     },
   ];
 
-  const [openIndex, setOpenIndex] = useState(0); // ✅ Only ONE index
-
-  const toggleFAQ = (index) => {
-    if (openIndex === index) {
-      setOpenIndex(null); // Close if clicking same
-    } else {
-      setOpenIndex(index); // Open new one
-    }
-  };
-
   return (
     <div>
       {/* Hero Section */}
-      <motion.section
-        className="relative bg-cover bg-center text-white py-36"
-        style={{ backgroundImage: `url(${BankingHeader})` }}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeUp}
-      >
-        <div className="container mx-auto text-center px-4">
-          <motion.h1 className="text-4xl md:text-5xl font-bold mb-6">
-            BANKING SOFTWARE DEVELOPMENT
-          </motion.h1>
-          <motion.p className="text-lg md:text-xl mb-8">
-            Transforming banking with AI, powering fraud detection, wealth
-            management, KYC automation, and predictive analytics.
-          </motion.p>
-          <motion.a
-            href="#"
-            className="inline-block border-2 border-cyan-400 text-white px-6 py-3 rounded-full text-lg hover:bg-cyan-400 hover:text-black transition duration-300"
-            whileHover={{ scale: 1.05 }}
-          >
-            HIRE BANKING SOFTWARE DEVELOPERS
-          </motion.a>
-        </div>
-      </motion.section>
-
-      {/* Breadcrumb */}
-      <div className="bg-white px-4 py-4 text-sm text-gray-500">
-        <div className="container mx-auto">
-          Home <span className="mx-2">›</span>{" "}
-          <span className="text-cyan-600 font-medium">Banking</span>
-        </div>
-      </div>
+      <HeroSection
+        backgroundImage='/assets/industries/banking/banking-header.avif'
+        title="BANKING SOFTWARE DEVELOPMENT"
+        description="Transforming banking with AI, fraud detection, wealth management & more."
+        buttonText="Hire Banking Software Developers"
+        buttonLink="/contact"
+        imageFit="cover"
+        overlayOpacity={0.6}
+      />
 
       {/* Features Grid */}
       <section className="py-16 bg-white">
@@ -234,7 +197,7 @@ const BankingPage = () => {
               custom={3}
             >
               <img
-                src={FeatureImage}
+                src="/assets/industries/banking/contentBanking.png"
                 alt="Banking dashboard UI"
                 className="rounded-xl shadow-lg mx-auto w-[90%] md:w-[100%]"
               />
@@ -1505,35 +1468,13 @@ const BankingPage = () => {
           </button>
         </motion.div>
       </section>
-      <section className="px-6 py-16 max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
-          Frequently Asked Questions about{" "}
-          <span className="text-cyan-700">Construction Software</span>
-        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border-b-2 border-cyan-700 pb-4">
-              <div
-                onClick={() => toggleFAQ(index)}
-                className="flex justify-between items-center cursor-pointer"
-              >
-                <h3 className="text-base md:text-lg font-semibold text-black">
-                  {faq.question}
-                </h3>
-                {openIndex === index ? (
-                  <FaChevronUp className="w-4 h-4" />
-                ) : (
-                  <FaChevronDown className="w-4 h-4" />
-                )}
-              </div>
-              {openIndex === index && faq.answer && (
-                <p className="mt-2 text-gray-700 text-sm">{faq.answer}</p>
-              )}
-            </div>
-          ))}
-        </div>
-      </section>
+      <FaqSection
+        faqs={faqs}
+        title="FAQ's"
+        hightlight="Construction Software"
+      />
+
     </div>
   );
 };

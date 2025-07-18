@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { TypographyH1, TypographyMuted } from "@/custom/Typography";
 import clsx from "clsx";
