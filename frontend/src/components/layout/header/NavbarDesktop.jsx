@@ -24,7 +24,12 @@ const NavbarDesktop = () => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
         {/* Logo */}
         <Link to="/">
-          <img loading="lazy" src="/logo.png" alt="Logo" className="h-10 w-38" />
+          <img
+            loading="lazy"
+            src="/logo.png"
+            alt="Logo"
+            className="h-10 w-38"
+          />
         </Link>
         {/* Navigation */}
         <nav className="flex items-center gap-8 relative z-40">
@@ -40,7 +45,8 @@ const NavbarDesktop = () => {
               </TypographySmall>
             </div>
           ))}
-          <div
+          <Link
+            to="book-call"
             className="group"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
@@ -48,8 +54,9 @@ const NavbarDesktop = () => {
             <TypographySmall className="cursor-pointer hover:text-primary">
               Book Call
             </TypographySmall>
-          </div>
-          <div
+          </Link>
+          <Link
+            to="contact-us"
             className="group"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
@@ -57,7 +64,7 @@ const NavbarDesktop = () => {
             <TypographySmall className="cursor-pointer hover:text-primary">
               Contact Us
             </TypographySmall>
-          </div>
+          </Link>
         </nav>
 
         <div className="flex items-center gap-6">

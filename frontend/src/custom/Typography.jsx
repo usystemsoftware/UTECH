@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion"
 
 export function TypographyH1({ children, className }) {
     return (
@@ -87,14 +88,20 @@ export function TypographyP({ children, className }) {
 
 export function Headline({ title, description, className }) {
     return (
-        <div className={cn("space-y-4 sm:max-w-2xl mx-auto text-center", className)}>
+        <motion.div
+            className={cn("space-y-4 w-full sm:max-w-2xl mx-auto text-center", className)}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+        >
             <h1 className="sm:text-3xl text-2xl font-bold tracking-tight text-primary">
                 {title}
             </h1>
             <p className="text-muted-foreground text-sm">
                 {description}
             </p>
-        </div>
+        </motion.div>
     )
 }
 

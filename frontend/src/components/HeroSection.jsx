@@ -62,7 +62,7 @@ export default function HeroSection({
                     </Link>
                 </div>
             </motion.section>
-            <PageLayout className="mt-4">
+            <PageLayout className="mt-4 dark:border-t-2 pt-4">
                 <Breadcrumbs />
             </PageLayout>
         </>

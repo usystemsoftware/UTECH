@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { Card } from '@/components/ui/card';
 import { TypographyH4, TypographyMuted } from '@/custom/Typography';
 import { Link } from 'react-router-dom';
-import { DefaultIcon } from '../data/LandingData';
+import { IconRenderer } from "@/custom/IconRenderer";
 
 export default function CaseStudyCard({
     icon,
@@ -11,7 +11,7 @@ export default function CaseStudyCard({
     year,
     features,
     link,
-    color = "from-blue-500 to-purple-500",
+    color = "from-primary to-foreground/40",
     index = 0,
 }) {
     return (
@@ -20,7 +20,7 @@ export default function CaseStudyCard({
                 whileHover={{ scale: 1.1, rotate: 5, z: 20 }}
                 className={`w-11 h-11 rounded-2xl bg-gradient-to-r ${color} flex items-center justify-center relative z-10 transform-3d`}
             >
-                <DefaultIcon Icon={icon} />
+                <IconRenderer name={icon} size={20} className="text-white" />
             </motion.div>
 
             <TypographyH4>{title}</TypographyH4>

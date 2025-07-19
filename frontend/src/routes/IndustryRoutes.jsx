@@ -1,5 +1,5 @@
 import Banking from "@/pages/industries/banking/Banking";
-import Finance from "@/pages/industries/Finance";
+import Finance from "@/pages/industries/finance/Finance";
 import RealEstate from "@/pages/industries/RealEstate";
 
 export const IndustryRoutes = [

@@ -1,37 +1,8 @@
-import {
-    Code,
-    Cloud,
-    Database,
-    Brain,
-    Smartphone,
-    Globe,
-    Shield,
-    Zap,
-    Settings,
-    TrendingUp,
-    Users,
-    Star,
-    Clock,
-    Award,
-    Grid3X3,
-    Factory,
-    Home,
-    Building2,
-    BadgeDollarSign,
-    LayoutGrid,
-    Building,
-} from 'lucide-react';
-
-//  Reusable icon renderer for dynamic icons
-export function DefaultIcon({ Icon, className = "" }) {
-    if (!Icon) return null;
-    return <Icon className={`w-5 h-5 text-white ${className}`} />;
-}
 
 //  Projects (Correct icon as per title meaning)
 export const projects = [
     {
-        icon: LayoutGrid,
+        icon: "LayoutGrid",
         color: "from-green-500 to-emerald-500",
         title: "All-in-One Super App",
         description:
@@ -41,7 +12,7 @@ export const projects = [
         features: ["CRM", "Task Management", "Attendance Tracking"],
     },
     {
-        icon: BadgeDollarSign,
+        icon: "BadgeDollarSign",
         color: "from-blue-500 to-cyan-500",
         title: "Finances Bazar",
         description:
@@ -51,7 +22,7 @@ export const projects = [
         features: ["Loan Aggregation", "Credit Score Monitoring", "Financial Planning"],
     },
     {
-        icon: Building2,
+        icon: "Building2",
         color: "from-purple-500 to-pink-500",
         title: "Spaceswala",
         description:
@@ -117,63 +88,63 @@ export const industries = [
 //  Services
 export const services = [
     {
-        icon: Code,
+        icon: "Code",
         title: 'Digital Engineering',
         description: 'Modern software development practices with DevOps, microservices, and cloud-native architectures.',
         color: 'from-orange-500 to-red-500',
         features: ['Cloud-Native Development', 'DevOps & CI/CD', 'Microservices Architecture']
     },
     {
-        icon: Cloud,
+        icon: "Cloud",
         title: 'Enterprise Modernization',
         description: 'Transform legacy systems into modern, scalable, and maintainable applications.',
         color: 'from-blue-500 to-cyan-500',
         features: ['Legacy Migration', 'Application Modernization', 'Platform Engineering']
     },
     {
-        icon: Database,
+        icon: "Database",
         title: 'Data & Analytics',
         description: 'Unlock the power of your data with advanced analytics, AI, and machine learning solutions.',
         color: 'from-purple-500 to-pink-500',
         features: ['Big Data Solutions', 'AI/ML Implementation', 'Business Intelligence']
     },
     {
-        icon: Brain,
+        icon: "Brain",
         title: 'Artificial Intelligence',
         description: 'Intelligent automation and AI-powered solutions to drive business innovation.',
         color: 'from-green-500 to-emerald-500',
         features: ['Machine Learning', 'Natural Language Processing', 'Computer Vision']
     },
     {
-        icon: Smartphone,
+        icon: "Smartphone",
         title: 'Digital Experience',
         description: 'Create engaging digital experiences across web, mobile, and emerging platforms.',
         color: 'from-indigo-500 to-purple-500',
         features: ['Mobile Applications', 'Web Platforms', 'User Experience Design']
     },
     {
-        icon: Shield,
+        icon: "Shield",
         title: 'Cybersecurity',
         description: 'Comprehensive security solutions to protect your digital assets and infrastructure.',
         color: 'from-red-500 to-pink-500',
         features: ['Security Assessment', 'Threat Detection', 'Compliance Management']
     },
     {
-        icon: Globe,
+        icon: "Globe",
         title: 'Cloud Infrastructure',
         description: 'Scalable cloud solutions and infrastructure management for modern enterprises.',
         color: 'from-cyan-500 to-blue-500',
         features: ['Cloud Migration', 'Infrastructure as Code', 'Multi-Cloud Strategy']
     },
     {
-        icon: Settings,
+        icon: "Settings",
         title: 'Quality Engineering',
         description: 'Comprehensive testing and quality assurance services for reliable software delivery.',
         color: 'from-yellow-500 to-orange-500',
         features: ['Test Automation', 'Performance Testing', 'Quality Assurance']
     },
     {
-        icon: Zap,
+        icon: "Zap",
         title: 'Innovation Labs',
         description: 'Explore emerging technologies and build proof-of-concepts for future solutions.',
         color: 'from-teal-500 to-green-500',
@@ -184,56 +155,56 @@ export const services = [
 //  Stats Section
 export const readyWithUSstats = [
     {
-        icon: TrendingUp,
+        icon: "TrendingUp",
         number: '98%',
         label: 'Client Satisfaction',
         description: 'Customer satisfaction rate',
         color: 'from-orange-500 to-red-500'
     },
     {
-        icon: Users,
+        icon: "Users",
         number: '11000+',
         label: 'Global Employees',
         description: 'Skilled professionals worldwide',
         color: 'from-blue-500 to-cyan-500'
     },
     {
-        icon: Star,
+        icon: "Star",
         number: '4.8/5',
         label: 'Industry Rating',
         description: 'Average industry recognition score',
         color: 'from-green-500 to-emerald-500'
     },
     {
-        icon: Clock,
+        icon: "Clock",
         number: '30+',
         label: 'Years Experience',
         description: 'Decades of technology expertise',
         color: 'from-purple-500 to-pink-500'
     },
     {
-        icon: Code,
+        icon: "Code",
         number: '1000+',
         label: 'Projects Delivered',
         description: 'Successfully completed projects',
         color: 'from-indigo-500 to-purple-500'
     },
     {
-        icon: Globe,
+        icon: "Globe",
         number: '40+',
         label: 'Countries Served',
         description: 'Global market presence',
         color: 'from-teal-500 to-cyan-500'
     },
     {
-        icon: Building,
+        icon: "Building",
         number: '200+',
         label: 'Enterprise Clients',
         description: 'Fortune 500 companies served',
         color: 'from-yellow-500 to-orange-500'
     },
     {
-        icon: Award,
+        icon: "Award",
         number: '50+',
         label: 'Industry Awards',
         description: 'Recognition and certifications',
