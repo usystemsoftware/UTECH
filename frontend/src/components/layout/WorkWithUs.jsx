@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import PageLayout from "@/custom/PageLayout";
+import { IconRenderer } from "@/custom/IconRenderer";
 import {
     TypographyH1,
     TypographyH2,
@@ -149,10 +150,10 @@ export default function WorkWithUs() {
                 />
 
                 {/* Fixed scroll issue here */}
-                <div className="overflow-hidden w-full">
+                <div className="overflow-hidden w-full p-8">
                     <div
                         ref={cardsRef}
-                        className="grid gap-6 md:grid-cols-2 lg:grid-cols-4"
+                        className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 cursor-pointer"
                     >
                         {readyWithUSstats?.map((stat, index) => (
                             <motion.div
@@ -171,7 +172,7 @@ export default function WorkWithUs() {
                                         <div
                                             className={`w-11 h-11 rounded-2xl bg-gradient-to-r ${stat.color} flex items-center justify-center relative z-10 transform-3d`}
                                         >
-                                            <stat.icon className="w-6 h-6 text-white" />
+                                            <IconRenderer name={stat?.icon} size={20} className="text-white" />
                                         </div>
                                         <TypographyH2 className='stat-number text-secondary dark:text-foreground'>
                                             {stat.number}
@@ -216,15 +217,15 @@ export default function WorkWithUs() {
                     <div className="space-y-4 md:col-span-5">
                         <Card className="border-none">
                             <TypographyH4>
-                                Times Square, Neharu Nagar, Pimpri
+                                M/s U Tech (India) PVT LTD
                             </TypographyH4>
                             <TypographyMuted>
-                                Office no.02,15, Zeroboyz Chowk, above HDFC Bank, Nehru Nagar, Pimpri Colony, Pune, Pimpri-Chinchwad, Maharashtra 411018
+                                Office no.02,15, Zeroboyz Chowk, Nehru Nagar, Pune, Pimpri-Chinchwad, Pune, Maharashtra - 411018
                             </TypographyMuted>
                             <div className="flex items-center space-x-2 text-blue-600 font-medium mt-2">
                                 <PhoneCall size={18} />
-                                <a href="tel:+9511248001" className="hover:underline">
-                                    +91 9511248001
+                                <a href="tel:+9270033002" className="hover:underline">
+                                    +91 9270033002
                                 </a>
                             </div>
                         </Card>

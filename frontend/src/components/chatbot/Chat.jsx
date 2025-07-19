@@ -198,7 +198,7 @@ export default function Chat() {
           >
             <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
               {/* Chat Header */}
-              <div className="bg-gradient-to-r from-blue-400 to-blue-600 text-white p-4 flex items-center justify-between flex-shrink-0">
+              <div className="bg-gradient-to-r from-primary/60 to-primary text-white p-4 flex items-center justify-between flex-shrink-0">
                 <div className="flex items-center space-x-3">
                   <div className="w-11 h-11 rounded-full bg-white/10 text-white flex justify-center items-center">
                     <Bot />
@@ -284,7 +284,7 @@ export default function Chat() {
                     >
                       <div
                         className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${message.type === "bot"
-                          ? "bg-blue-500 text-white"
+                          ? "bg-primary text-white"
                           : "bg-gray-600 text-white"
                           }`}
                       >
@@ -296,8 +296,8 @@ export default function Chat() {
                       </div>
                       <div
                         className={`max-w-[75%] px-4 py-2 rounded-lg text-sm ${message.type === "bot"
-                          ? "bg-white text-gray-800 shadow-sm border border-gray-200"
-                          : "bg-blue-500 text-white"
+                          ? "bg-gray-100 text-gray-800 shadow-sm border"
+                          : "bg-primary text-foreground"
                           }`}
                       >
                         <p>{message.text}</p>
@@ -309,7 +309,7 @@ export default function Chat() {
               </div>
 
               {/* Input */}
-              <div className="p-4 border-t bg-white flex-shrink-0">
+              <div className="p-4 border-t bg-white border-gray-200 shadow flex-shrink-0">
                 <div className="flex items-center space-x-2">
                   <input
                     type="text"
@@ -337,11 +337,11 @@ export default function Chat() {
                           ? "Please enter the OTP"
                           : "Enter your response"
                     }
-                    className="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 ease-in-out"
+                    className="flex-1 px-4 py-2 border-2 border-primary placeholder:text-black  rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200 ease-in-out"
                   />
                   <Button
                     onClick={handleSendMessage}
-                    className="bg-blue-500 hover:bg-blue-600 text-white rounded-full p-2 w-10 h-10 flex items-center justify-center shadow-md"
+                    className="bg-primary hover:bg-primary/80 text-white rounded-full p-2 w-10 h-10 flex items-center justify-center shadow-md"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                   >

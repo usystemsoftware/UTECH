@@ -23,9 +23,9 @@ export default function CaseStudyCard({
                 <IconRenderer name={icon} size={20} className="text-white" />
             </motion.div>
 
-            <TypographyH4>{title}</TypographyH4>
+            <TypographyH4 className="sm:line-clamp-1">{title}</TypographyH4>
 
-            <TypographyMuted>{description}</TypographyMuted>
+            <TypographyMuted className="sm:line-clamp-3">{description}</TypographyMuted>
 
             {year && (
                 <p className="text-sm text-gray-500 italic">Year: {year}</p>
@@ -46,7 +46,7 @@ export default function CaseStudyCard({
                             <div
                                 className={`w-2 h-2 rounded-full bg-gradient-to-r ${color}`}
                             ></div>
-                            <span className="text-sm text-gray-600 font-medium">
+                            <span className="text-sm text-gray-600 font-medium sm:line-clamp-1">
                                 {feature}
                             </span>
                         </motion.div>
