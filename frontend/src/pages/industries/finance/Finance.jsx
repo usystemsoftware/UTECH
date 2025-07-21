@@ -16,7 +16,6 @@ import {
   rightFeatures,
   aiBenefits,
   accountingFeatures,
-  accountingLogos,
   portfolioFeatures,
   planningFeatures,
   insuranceFeatures,
@@ -27,6 +26,7 @@ import {
   testimonials,
 } from "./Data";
 import CaseStudyCard from "@/components/CaseStudyCard";
+import IntigrateWith from "@/custom/IntigrateWith";
 
 const Finance = () => {
   return (
@@ -37,9 +37,9 @@ const Finance = () => {
         title="FINANCIAL SOFTWARE DEVELOPMENT SERVICES"
         description="Transforming banking with AI, fraud detection, wealth management & more."
         buttonText="GET FINTECH DEVELOPERS"
-        buttonLink="/contact-us"
+        buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
+        overlayOpacity={0.2}
       />
 
       {/* Features Grid */}
@@ -110,11 +110,10 @@ const Finance = () => {
         <TypographyMuted>
           U Technology integrates your current accounting management system with industry-leading ERP and bookkeeping solutions, including:
         </TypographyMuted>
-        <div className="flex flex-wrap justify-center gap-8 items-center mt-8">
-          {accountingLogos.map((logo, idx) => (
-            <img key={idx} loading="lazy" src={logo.src} alt={logo.alt} className="h-12" />
-          ))}
-        </div>
+        <IntigrateWith
+          title="Integrate with Leading Accounting Platforms"
+          description="Sync your financial data with top financial tools for better efficiency and accuracy."
+        />
         <FadeInWhenVisible>
           <Button variant="hover">
             GET ACCOUNTING SOFTWARE SOLUTIONS

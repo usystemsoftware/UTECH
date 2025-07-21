@@ -1,7 +1,7 @@
 import WebDevelopment from "@/pages/solutions/WebDevelopment";
-import CRM from "@/pages/solutions/CRM";
-import UiUx from "@/pages/solutions/UiUx";
-import EmbeddedSoftware from "@/pages/solutions/EmbeddedSoftware";
+import CRM from "@/pages/solutions/crm/CRM";
+import UiUx from "@/pages/solutions/ui-ux/UiUx";
+import EmbeddedSoftware from "@/pages/solutions/embedded-software/EmbeddedSoftware";
 
 export const SolutionRoutes = [
     { path: "/solutions/web-development", element: <WebDevelopment /> },

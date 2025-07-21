@@ -156,25 +156,25 @@ const ApiDevelopment = () => {
             icon: <FaCloud className="text-primary text-4xl" />,
             title: "REST API Assistance",
             description:
-                "Chetu leverages this fast and versatile resource to seamlessly enable XML, JSON, and HTML formatting, creating responsive performance on all IoT platforms and custom mobile app development projects. Chetu’s REST experts provide prompt assistance and troubleshooting for all your REST-powered API projects.",
+                "U Tech leverages this fast and versatile resource to seamlessly enable XML, JSON, and HTML formatting, creating responsive performance on all IoT platforms and custom mobile app development projects. U Tech’s REST experts provide prompt assistance and troubleshooting for all your REST-powered API projects.",
         },
         {
             icon: <FaCogs className="text-primary text-4xl" />,
             title: "SOAP API Guidance",
             description:
-                "Our support services team offers expert troubleshooting and prompt resolution of all WSDL and XML-based issues. Chetu strives to provide reliable and secure communication between distributed systems, efficiently performing all SOAP-powered resources.",
+                "Our support services team offers expert troubleshooting and prompt resolution of all WSDL and XML-based issues. U Tech strives to provide reliable and secure communication between distributed systems, efficiently performing all SOAP-powered resources.",
         },
         {
             icon: <FaCode className="text-primary text-4xl" />,
             title: "XML API Support System",
             description:
-                "Chetu creates a robust XML support system to provide expertise with accurate data validation, prompt schema error corrections, and efficient data exchange within all applications and systems. Our dedicated support services team is available to proactively monitor all XML API performance, ensuring consistency and accuracy.",
+                "U Tech creates a robust XML support system to provide expertise with accurate data validation, prompt schema error corrections, and efficient data exchange within all applications and systems. Our dedicated support services team is available to proactively monitor all XML API performance, ensuring consistency and accuracy.",
         },
         {
             icon: <FaProjectDiagram className="text-primary text-4xl" />,
             title: "RPC API Implementation",
             description:
-                "Chetu’s expertise and support are readily available to businesses working in remote environments. We optimize network communication for all remote and hybrid business structures and promptly resolve issues related to serialization and deserialization of RPC payloads.",
+                "U Tech’s expertise and support are readily available to businesses working in remote environments. We optimize network communication for all remote and hybrid business structures and promptly resolve issues related to serialization and deserialization of RPC payloads.",
         },
     ];
 
@@ -194,13 +194,13 @@ const ApiDevelopment = () => {
             question:
                 "Can you migrate our existing construction software to a cloud-based solution?",
             answer:
-                "Definitely! Chetu provides cloud migration services for your current construction software to a safe and scalable cloud environment with minimal disruption and optimal performance.",
+                "Definitely! U Tech provides cloud migration services for your current construction software to a safe and scalable cloud environment with minimal disruption and optimal performance.",
         },
         {
             question:
                 "Do you offer support and maintenance after construction software development?",
             answer:
-                "Yes! Your software will run smoothly, remain up to date, and secure, as experts at Chetu provide ongoing support and maintenance so you can build with confidence.",
+                "Yes! Your software will run smoothly, remain up to date, and secure, as experts at U Tech provide ongoing support and maintenance so you can build with confidence.",
         },
         {
             question: "Can AI automate repetitive tasks in construction software?",
@@ -289,7 +289,7 @@ const ApiDevelopment = () => {
                             Hire Experienced and Dedicated API Developers
                         </motion.h2>
                         <p className="text-sm text-primary mb-10 max-w-2xl mx-auto">
-                            Chetu's custom API solutions support a range of integration protocols, including REST, SOAP, XML, and RPC API. Our developers have extensive experience creating custom application programming interfaces using these protocols to ensure seamless integration between your systems.
+                            U Tech's custom API solutions support a range of integration protocols, including REST, SOAP, XML, and RPC API. Our developers have extensive experience creating custom application programming interfaces using these protocols to ensure seamless integration between your systems.
 
 
                         </p>
@@ -361,7 +361,7 @@ const ApiDevelopment = () => {
                         Artificial Intelligence API Features & Services
                     </h2>
                     <p className="max-w-3xl mx-auto text-gray-600 mb-16">
-                        Chetu leverages Artificial Intelligence APIs to provide a clean and clearly defined
+                        U Tech leverages Artificial Intelligence APIs to provide a clean and clearly defined
                         interface for your analytics, giving you controlled access to your data and allowing
                         you to accurately analyze large datasets and extract valuable insights.
                     </p>
@@ -410,7 +410,7 @@ const ApiDevelopment = () => {
                             viewport={{ once: true, amount: 0.2 }}
                             variants={fadeUp}
                         >
-                            Chetu’s API-as-a-Service (APIaaS) Solutions
+                            U Tech’s API-as-a-Service (APIaaS) Solutions
                         </motion.h1>
 
                         <motion.p
@@ -421,7 +421,7 @@ const ApiDevelopment = () => {
                             variants={fadeUp}
                             custom={1}
                         >
-                            Chetu's API-as-a-Service (APIaaS) solutions utilize a range of protocols, including cloud natural language APIs and Java, JSON, AJAX, SOAP, HTTP/HTTPS, XML, XHTML, TCP/IP, and EDI development services. Our experienced developers can create secure and efficient web APIs using these protocols to ensure seamless integration with your existing systems.
+                            U Tech's API-as-a-Service (APIaaS) solutions utilize a range of protocols, including cloud natural language APIs and Java, JSON, AJAX, SOAP, HTTP/HTTPS, XML, XHTML, TCP/IP, and EDI development services. Our experienced developers can create secure and efficient web APIs using these protocols to ensure seamless integration with your existing systems.
 
 
                         </motion.p>
@@ -480,7 +480,7 @@ const ApiDevelopment = () => {
                         Extend Your API Functionality with New & Existing Third-Party Systems
                     </h2>
                     <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-sm">
-                        Chetu’s been delivering highly secure, scalable, and flexible application programming interface development services to our clients over the last 22 years and have become leading experts in the software development and integration of public APIs, including:
+                        U Tech’s been delivering highly secure, scalable, and flexible application programming interface development services to our clients over the last 22 years and have become leading experts in the software development and integration of public APIs, including:
                     </p>
 
                     {/* First Row */}
@@ -490,7 +490,7 @@ const ApiDevelopment = () => {
                                 Payment Gateways APIs
                             </h3>
                             <p className="text-sm text-gray-600 text-center">
-                                Chetu integrates leading{" "}
+                                U Tech integrates leading{" "}
                                 <span className="text-blue-500 underline cursor-pointer">
                                     payment gateway APIs
                                 </span>
@@ -509,7 +509,7 @@ const ApiDevelopment = () => {
                                 Shipping Carriers APIs
                             </h3>
                             <p className="text-sm text-gray-600 text-center">
-                                Chetu offers seamless API integrations with shipping carriers like FedEx, UPS, and USPS.
+                                U Tech offers seamless API integrations with shipping carriers like FedEx, UPS, and USPS.
                             </p>
                             <div className="flex justify-center gap-6 mt-4">
                                 {/* <SiFedex size={36} className="text-purple-600" /> */}

@@ -69,13 +69,6 @@ export const accountingFeatures = [
     },
 ];
 
-export const accountingLogos = [
-    { src: "/assets/industries/finance/Finance-Logos/quickbooks.png", alt: "QuickBooks" },
-    { src: "/assets/industries/finance/Finance-Logos/freshbooks.png", alt: "FreshBooks" },
-    { src: "/assets/industries/finance/Finance-Logos/sage.png", alt: "Sage" },
-    { src: "/assets/industries/finance/Finance-Logos/oracle-netsuite.png", alt: "Oracle NetSuite" },
-];
-
 export const portfolioFeatures = [
     {
         icon: "HandCoins",

@@ -1,6 +1,6 @@
 import Banking from "@/pages/industries/banking/Banking";
 import Finance from "@/pages/industries/finance/Finance";
-import RealEstate from "@/pages/industries/RealEstate";
+import RealEstate from "@/pages/industries/real-estate/RealEstate";
 
 export const IndustryRoutes = [
     { path: "/industries/banking", element: <Banking /> },

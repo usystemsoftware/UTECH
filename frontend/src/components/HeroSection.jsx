@@ -3,15 +3,7 @@ import { Link } from "react-router-dom";
 import { TypographyH1, TypographyP } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import Breadcrumbs from "./Breadcrumbs";
-
-const defaultFadeUp = {
-    hidden: { opacity: 0, y: 40 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.6, ease: "easeOut" },
-    },
-};
+import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 
 export default function HeroSection({
     backgroundImage,
@@ -19,19 +11,13 @@ export default function HeroSection({
     description,
     buttonText,
     buttonLink = "#",
-    animationVariants = defaultFadeUp,
+    animationVariants = fadeUp,
     imageFit = "cover",
-    overlayOpacity = 0.4,
+    overlayOpacity = 100,
 }) {
     return (
         <>
-            <motion.section
-                className="relative w-full min-h-[80vh] flex items-center justify-center overflow-hidden"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-                variants={animationVariants}
-            >
+            <section className="relative w-full min-h-[80vh] flex items-center justify-center overflow-hidden">
                 {/* Background Image */}
                 <div
                     className="absolute inset-0 z-0"
@@ -45,23 +31,25 @@ export default function HeroSection({
 
                 {/* Dark Overlay */}
                 <div
-                    className="absolute inset-0 bg-black z-10"
+                    className={`absolute inset-0 bg-black z-10`}
                     style={{ opacity: overlayOpacity }}
                 ></div>
 
                 {/* Foreground Content */}
-                <div className="relative z-20 max-w-3xl mx-auto text-center px-4 space-y-6 text-white">
+                <FadeInWhenVisible
+                    className="relative z-20 max-w-3xl mx-auto text-center px-4 space-y-6 text-white"
+                    variants={fadeUp}
+                >
                     <TypographyH1>{title}</TypographyH1>
-                    <TypographyP >{description}</TypographyP>
-
+                    <TypographyP>{description}</TypographyP>
                     <Link
                         to={buttonLink}
-                        className="inline-block border-2 border-primary hover:bg-primary hover:text-secondary transition-colors duration-300 p-3 rounded-full"
+                        className="inline-block border-2 border-primary text-sm hover:bg-primary hover:text-secondary transition-colors duration-300 py-2 px-6 rounded-full"
                     >
                         {buttonText}
                     </Link>
-                </div>
-            </motion.section>
+                </FadeInWhenVisible>
+            </section>
             <PageLayout className="mt-4 dark:border-t-2 pt-4">
                 <Breadcrumbs />
             </PageLayout>
