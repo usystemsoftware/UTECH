@@ -1,5 +1,5 @@
 // src/components/FeaturesList.jsx
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { TypographyH5, TypographyMuted } from "@/custom/Typography";
 import { IconRenderer } from "@/custom/IconRenderer";
 
@@ -13,7 +13,7 @@ export const FeaturesList = ({
     reverse = false,
 }) => (
     <div
-        className={`flex px-4 md:px-8 flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+        className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"
             } items-center justify-center gap-10`}
     >
         <div

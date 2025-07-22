@@ -35,11 +35,13 @@ const NavbarMobile = () => {
         <Link to="/" onClick={() => setOpen(false)}>
           <img loading="lazy" src="/logo.png" alt="Logo" className="h-10" />
         </Link>
+
         <div className="flex items-center space-x-6">
+          <IconRenderer name="Search" size={22} className="cursor-pointer" />
           {/* Theme Toggle */}
           <ModeToggle />
           <button onClick={() => setOpen((prev) => !prev)}>
-            <IconRenderer name={open ? "X" : "AlignRight"} size={24} />
+            <IconRenderer name={open ? "X" : "AlignJustify"} size={24} />
           </button>
         </div>
       </div>

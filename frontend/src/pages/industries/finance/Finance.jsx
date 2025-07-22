@@ -165,7 +165,7 @@ const Finance = () => {
                 className="w-135"
               />
             </FadeInWhenVisible>
-            <FeaturesList features={planningFeatures} fadeUp={fadeUp} grid />
+            <FeaturesList features={planningFeatures} fadeUp={fadeUp} />
           </div>
           <FadeInWhenVisible>
             <Button variant="hover" >

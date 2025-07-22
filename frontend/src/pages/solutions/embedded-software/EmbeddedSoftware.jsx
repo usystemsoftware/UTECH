@@ -1,15 +1,10 @@
-import React from "react";
-import { Card } from "@/components/ui/card";
-import {
-  TypographyMuted,
-  TypographyH3,
-  Headline
-} from "@/custom/Typography";
+import { Headline } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesList } from "@/components/FeaturesList";
 import { Button } from '@/components/ui/button';
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
+import TechnologyStatCard from "@/components/TechnologyStatCard";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import {
   aiEmbeddedSolutions,
@@ -46,7 +41,7 @@ const EmbeddedSoftware = () => {
         />
         <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-10">
           {/* Left-side image */}
-          <FadeInWhenVisible>
+          <FadeInWhenVisible delay={0.2}>
             <img
               loading="lazy"
               src="/assets/solutions/embedded-software/solution.png"
@@ -80,7 +75,7 @@ const EmbeddedSoftware = () => {
           <FeaturesList features={hmiSolutions} fadeUp={fadeUp} />
 
           {/* Right-side image */}
-          <FadeInWhenVisible>
+          <FadeInWhenVisible delay={0.2}>
             <img
               loading="lazy"
               src="/assets/solutions/embedded-software/development.png"
@@ -125,7 +120,7 @@ const EmbeddedSoftware = () => {
         />
         <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-10">
           {/* Left-side image */}
-          <FadeInWhenVisible>
+          <FadeInWhenVisible delay={0.2}>
             <img
               loading="lazy"
               src="/assets/solutions/embedded-software/package.png"
@@ -182,7 +177,7 @@ const EmbeddedSoftware = () => {
           <FeaturesList features={industrySolutions} fadeUp={fadeUp} />
 
           {/* Right-side image */}
-          <FadeInWhenVisible>
+          <FadeInWhenVisible delay={0.2}>
             <img
               loading="lazy"
               src="/assets/solutions/embedded-software/services.png"
@@ -208,46 +203,14 @@ const EmbeddedSoftware = () => {
             description="Our expert embedded software engineers have many years of combined
             experience with popular embedded software developer tools."
           />
+
           {/* Grid of tech cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mt-10">
             {frontendTech.map((tech, index) => (
-              <Card
-                key={index}
-                className="bg-card shadow-none border-none transition duration-300"
-              >
-                {/* Logo */}
-                <img
-                  loading="lazy"
-                  src={tech.img}
-                  alt={tech.name}
-                  className="sm:h-16 h-12 mx-auto mb-4"
-                />
-
-                {/* Highlight title */}
-                <FadeInWhenVisible>
-                  <TypographyH3>{tech?.highlight}</TypographyH3>
-                </FadeInWhenVisible>
-
-                {/* Description with highlighted term */}
-                <FadeInWhenVisible>
-                  <TypographyMuted className="mt-2 text-center">
-                    {tech.description.split(tech.highlight).map((part, i, arr) =>
-                      i < arr.length - 1 ? (
-                        <React.Fragment key={i}>
-                          {part}
-                          <span className="text-cyan-600 font-medium">
-                            {tech.highlight}
-                          </span>
-                        </React.Fragment>
-                      ) : (
-                        part
-                      )
-                    )}
-                  </TypographyMuted>
-                </FadeInWhenVisible>
-              </Card>
+              <TechnologyStatCard key={index} tech={tech} />
             ))}
           </div>
+
         </PageLayout>
       </section>
 

@@ -67,13 +67,13 @@ const NavbarDesktop = () => {
           </Link>
         </nav>
 
+        {/* Right Actions */}
         <div className="flex items-center gap-6">
-          {/* theme Button */}
           <ModeToggle />
-          {/* theme Button */}
+          <IconRenderer name="Search" size={22} className="cursor-pointer" />
           <Button size="sm">
             <IconRenderer name="HelpCircle" />
-            Help
+            Let's Talk !
           </Button>
         </div>
       </div>
