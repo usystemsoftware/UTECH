@@ -13,7 +13,7 @@ const footerLinks = [
     title: "Services",
     links: [
       { label: "API Development", to: "/services/api-development" },
-      { label: "DevOps", to: "/services/devops" },
+      { label: "Aplication Development", to: "/services/application-development" },
       { label: "QA Testing", to: "/services/qa-testing" },
       {
         label: "Digital Transformation",
@@ -25,21 +25,21 @@ const footerLinks = [
   {
     title: "Industries",
     links: [
-      { label: "Construction", to: "/construction" },
-      { label: "Healthcare", to: "/healthcare" },
-      { label: "Finance", to: "/finance" },
-      { label: "Retail", to: "/retail" },
-      { label: "Education", to: "/e-learning-education" },
+      { label: "Construction", to: "/industries/construction" },
+      { label: "Healthcare", to: "/industries/healthcare" },
+      { label: "Finance", to: "/industries/finance" },
+      { label: "Retail", to: "/industries/retail" },
+      { label: "Banking", to: "/industries/banking" },
     ],
   },
   {
     title: "Solutions",
     links: [
-      { label: "Artificial Intelligence", to: "/ai" },
-      { label: "Cloud Solutions", to: "/cloud" },
-      { label: "Blockchain", to: "/blockchain" },
-      { label: "UI/UX", to: "/ui-ux" },
-      { label: "Web Development", to: "/web-development" },
+      { label: "CRM", to: "/solutions/crm" },
+      { label: "Embedded Software", to: "/solutions/cloud" },
+      { label: "Digital Marketing", to: "/solutions/digital-marketing" },
+      { label: "UI/UX", to: "/solutions/ui-ux" },
+      { label: "Web Development", to: "/solutions/web-development" },
     ],
   },
 ];

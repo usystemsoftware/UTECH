@@ -38,7 +38,7 @@ export default function OurIndustry() {
                             className={`${industry.color} group overflow-hidden relative aspect-[4/3] flex transition-transform`}
                         >
                             <div className="flex">
-                                <TypographyH4 className="bottom-8 absolute text-white z-10">
+                                <TypographyH4 className="bottom-8 absolute p-4 text-white z-10">
                                     {industry.name}
                                 </TypographyH4>
                                 <motion.img

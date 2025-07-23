@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Zap, Globe, Users, Award, Phone, Video } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from 'react-router-dom'
 import { Card } from "@/components/ui/card";
 import {
   TypographyH3,
@@ -50,14 +51,18 @@ export const HeroSection = () => {
             <motion.div
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button>
-                Contact US
-                <Phone />
-              </Button>
-              <Button className="bg-[#111111] hover:bg-[#111111]">
-                Book Call
-                <Video />
-              </Button>
+              <Link to='/contact-us'>
+                <Button className='w-full'>
+                  Contact US
+                  <Phone />
+                </Button>
+              </Link>
+              <Link to='/book-call'>
+                <Button className="bg-[#111111] w-full hover:bg-[#111111]">
+                  Book Call
+                  <Video />
+                </Button>
+              </Link>
             </motion.div>
             {/* Stats */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
