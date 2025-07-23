@@ -66,8 +66,8 @@ const ApiDevelopment = () => {
       {/* ===== AI API FEATURES SECTION ===== */}
       <PageLayout className="text-center space-y-14">
         <Headline
-          title="Artificial Intelligence API Features & Services"
-          description="U Tech leverages Artificial Intelligence APIs to provide a clean and clearly defined interface for your analytics, giving you controlled access to your data and allowing you to accurately analyze large datasets and extract valuable insights."
+          title="Software QA Web & Mobile App Testing"
+          description="Chetu’s seasoned test architects and engineers provide world-class QA testing services for web and mobile applications, ensuring full compliance and high-quality software every time. We harness the power of innovative AI, IoT, and RPA technologies to perform advanced QA web & mobile app testing.."
         />
 
         {/* Feature Cards Grid */}

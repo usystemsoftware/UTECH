@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-
-// Layout and shared components
 import PageLayout from "@/custom/PageLayout";
 import HeroSection from "@/components/HeroSection";
 import { IconRenderer } from "@/custom/IconRenderer";
@@ -41,7 +39,8 @@ import {
 // Main component
 const ApplicationDevelopment = () => {
   // Destructure compliance section content
-  const { title, description, videoPath, complianceTags } = pciDssComplianceContent;
+  const { title, description, videoPath, complianceTags } =
+    pciDssComplianceContent;
 
   return (
     <>
@@ -60,13 +59,19 @@ const ApplicationDevelopment = () => {
       <PageLayout className="py-16">
         {/* Intro headline */}
         <FadeInWhenVisible>
-          <Headline title={introText.title} description={introText.description} />
+          <Headline
+            title={introText.title}
+            description={introText.description}
+          />
         </FadeInWhenVisible>
 
         {/* Cross-platform features and image */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 space-y-12 items-center">
           <FadeInWhenVisible className="space-y-8">
-            <Headline title={crossPlatformText.title} description={crossPlatformText.description} />
+            <Headline
+              title={crossPlatformText.title}
+              description={crossPlatformText.description}
+            />
             <FeaturesList features={mobileAppPlatforms} />
           </FadeInWhenVisible>
 
@@ -84,7 +89,10 @@ const ApplicationDevelopment = () => {
       {/* === AI-POWERED CUSTOM APP DEVELOPMENT SECTION === */}
       <section className="bg-secondary">
         <PageLayout className="py-20 text-center space-y-10 ">
-          <Headline title={aiHeadline.title} description={aiHeadline.description} />
+          <Headline
+            title={aiHeadline.title}
+            description={aiHeadline.description}
+          />
 
           {/* Features split into 2 columns */}
           <FadeInWhenVisible className="space-y-8 grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -94,7 +102,9 @@ const ApplicationDevelopment = () => {
 
           {/* CTA button */}
           <FadeInWhenVisible>
-            <Button variant="hover">GET AI-POWERED CUSTOM APP DEVELOPMENT</Button>
+            <Button variant="hover">
+              GET AI-POWERED CUSTOM APP DEVELOPMENT
+            </Button>
           </FadeInWhenVisible>
         </PageLayout>
       </section>
@@ -116,7 +126,9 @@ const ApplicationDevelopment = () => {
 
         {/* CTA button */}
         <FadeInWhenVisible>
-          <Button variant="hover">GET LOAN MANAGEMENT SOFTWARE SOLUTIONS</Button>
+          <Button variant="hover">
+            GET LOAN MANAGEMENT SOFTWARE SOLUTIONS
+          </Button>
         </FadeInWhenVisible>
       </PageLayout>
 
@@ -126,7 +138,7 @@ const ApplicationDevelopment = () => {
           {/* Overview headline */}
           <Headline
             title="Build Amazing Apps with Our App Development Solutions"
-            description="At U Technology, we provide exceptional app development..."
+            description="At TechnologU y, we provide exceptional app development..."
           />
 
           {/* Content with image + features */}
@@ -174,8 +186,12 @@ const ApplicationDevelopment = () => {
             {/* Left text section */}
             <FadeInWhenVisible>
               <div>
-                <TypographyH4 className="text-black font-bold mb-4">{title}</TypographyH4>
-                <TypographyP className="text-muted-foreground">{description}</TypographyP>
+                <TypographyH4 className="text-black font-bold mb-4">
+                  {title}
+                </TypographyH4>
+                <TypographyP className="text-muted-foreground">
+                  {description}
+                </TypographyP>
               </div>
             </FadeInWhenVisible>
 
@@ -183,7 +199,12 @@ const ApplicationDevelopment = () => {
             <FadeInWhenVisible>
               <div className="relative flex justify-center">
                 <div className="relative z-10">
-                  <video width="300" height="200" controls className="rounded-xl shadow-lg">
+                  <video
+                    width="300"
+                    height="200"
+                    controls
+                    className="rounded-xl shadow-lg"
+                  >
                     <source src={videoPath} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
