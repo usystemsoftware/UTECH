@@ -1,4 +1,3 @@
-import { IconRenderer } from "@/custom/IconRenderer";
 
 export const BankingSoftwareLeftFeatures = [
     {

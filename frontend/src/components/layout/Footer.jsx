@@ -19,7 +19,7 @@ const footerLinks = [
         label: "Digital Transformation",
         to: "/services/digital-transformation",
       },
-      { label: "PLM", to: "/services/plm" },
+      { label: "Application Maintenance", to: "/services/application-maintenance" },
     ],
   },
   {
@@ -28,7 +28,7 @@ const footerLinks = [
       { label: "Construction", to: "/industries/construction" },
       { label: "Healthcare", to: "/industries/healthcare" },
       { label: "Finance", to: "/industries/finance" },
-      { label: "Retail", to: "/industries/retail" },
+      { label: "Real Estate", to: "/industries/real-estate" },
       { label: "Banking", to: "/industries/banking" },
     ],
   },
