@@ -28,7 +28,7 @@ import {
 } from "@/custom/Typography";
 import { Link } from "react-router-dom";
 
-import { Locations, steps, socialPlatforms } from "./data";
+import { Locations, steps, socialPlatforms } from "./Data";
 
 const slideVariants = {
   initial: { x: 100, opacity: 0 },

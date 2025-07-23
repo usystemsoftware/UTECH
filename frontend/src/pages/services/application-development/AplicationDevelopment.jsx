@@ -242,7 +242,7 @@ const ApplicationDevelopment = () => {
                   <img
                     key={index}
                     loading="lazy"
-                    src={`/assets/services/application-development/Logos/${logo}.png`}
+                    src={`/assets/services/application-development/logos/${logo}.png`}
                     className="h-8 cursor-pointer hover:scale-105 transition-transform"
                     alt={logo}
                   />
