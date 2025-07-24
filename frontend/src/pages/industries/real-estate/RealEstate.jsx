@@ -3,7 +3,7 @@ import FaqSection from "@/custom/FaqSection";
 import { IconRenderer } from "@/custom/IconRenderer";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { FeaturesGrid } from "@/components/FeaturesGridCard";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";

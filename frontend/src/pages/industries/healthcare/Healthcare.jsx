@@ -10,7 +10,18 @@ import {
 import FaqSection from "@/custom/FaqSection";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { TestimonialSection } from "@/components/TestimonialSection";
-import { dicomFeatures, digitalHelthSolutions, healthcareAIFeatures, healthcareExtraFeatures, healthcareSoftwareFeatures, hieFeatures, limsFeatures, telemedicineFeatures } from "./Data";
+import {
+    dicomFeatures,
+    digitalHelthSolutions,
+    eRxFeatures,
+    healthcareAIFeatures,
+    healthcareExtraFeatures,
+    healthcareSoftwareFeatures,
+    hieFeatures,
+    limsFeatures,
+    pharmacyFeatures,
+    telemedicineFeatures
+} from "./Data";
 
 export default function Healthcare() {
     return (
@@ -60,7 +71,7 @@ export default function Healthcare() {
                     description='With Digital Health Platforms, medical professionals can take a different approach to their research, health management, and patient care, leading to significant improvements in efficiency and patient outcomes.'
                 />
 
-                <div className="flex flex-col md:flex-row justify-baseline gap-4">
+                <div className="flex flex-col md:flex-row justify-baseline gap-8 md:gap-26">
                     {/* Left Features List */}
                     <FeaturesList features={digitalHelthSolutions.slice(0, 2)} fadeUp={fadeUp} />
 
@@ -70,7 +81,7 @@ export default function Healthcare() {
                             loading="lazy"
                             src="/assets/industries/healthcare/industry-leadin-telehealth.png"
                             alt="Mobile Analytics App"
-                            className="w-48"
+                            className="w-64"
                         />
                     </FadeInWhenVisible>
 
@@ -112,7 +123,7 @@ export default function Healthcare() {
                     description='We build custom telehealth apps to deliver remote health services, education, and training for improved efficiency and quality of care.'
                 />
 
-                <div className="flex flex-col md:flex-row justify-baseline gap-4">
+                <div className="flex flex-col md:flex-row justify-baseline gap-8 md:gap-26">
                     {/* Left Features List */}
                     <FeaturesList features={telemedicineFeatures.slice(0, 2)} fadeUp={fadeUp} />
 
@@ -122,7 +133,7 @@ export default function Healthcare() {
                             loading="lazy"
                             src="/assets/industries/healthcare/cellphone.png"
                             alt="Mobile Analytics App"
-                            className="w-48"
+                            className="w-64"
                         />
                     </FadeInWhenVisible>
 
@@ -201,9 +212,65 @@ export default function Healthcare() {
                             />
                         </FadeInWhenVisible>
                     </div>
+                    <FadeInWhenVisible>
+                        <Button variant='hover'>
+                            DEVELOP LIMS PLATFORM SOLUTIONS
+                        </Button>
+                    </FadeInWhenVisible>
                 </PageLayout>
             </section>
 
+            <PageLayout className="py-16 space-y-10 text-center">
+                <Headline
+                    title='Pharmacy Management System'
+                    description="We enhance existing pharmacy management systems with features that promote workflow automation, fully integrated payment processing, and real-time communication."
+                />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <FeaturesList fadeUp={fadeUp} features={pharmacyFeatures.slice(0, 2)} />
+                        <FeaturesList fadeUp={fadeUp} features={pharmacyFeatures.slice(2, 4)} />
+                    </div>
+                    <FadeInWhenVisible delay={0.5}>
+                        <img
+                            loading="lazy"
+                            src="/assets/industries/healthcare/cell-phone-animation.gif"
+                            alt="Portfolio"
+                            className="w-48 mx-auto"
+                        />
+                    </FadeInWhenVisible>6
+                </div>
+                <FadeInWhenVisible>
+                    <Button variant='hover'>
+                        GET PHARMACY POS SOLUTIONS
+                    </Button>
+                </FadeInWhenVisible>
+            </PageLayout>
+
+            <section className="bg-secondary py-12">
+                <PageLayout className='space-y-10 text-center'>
+                    <Headline
+                        title='Electronic Prescription (eRx) Software Solutions'
+                        description='We engineer advanced eRx application solutions to automate clinical decision support, optimize visibility, and streamline prescription processes.'
+                    />
+
+                    <div className="grid grid-cols-1 md:grid-cols-2">
+                        <FadeInWhenVisible delay={0.5}>
+                            <img
+                                loading="lazy"
+                                src="/assets/industries/healthcare/laptop.png"
+                                alt="Portfolio"
+                                className="w-110 mx-auto"
+                            />
+                        </FadeInWhenVisible>
+                        <FeaturesList features={eRxFeatures} fadeUp={fadeUp} />
+                    </div>
+                    <FadeInWhenVisible>
+                        <Button variant='hover'>
+                            GET ERX SOFTWARE SOLUTIONS
+                        </Button>
+                    </FadeInWhenVisible>
+                </PageLayout>
+            </section>
         </>
     )
 }

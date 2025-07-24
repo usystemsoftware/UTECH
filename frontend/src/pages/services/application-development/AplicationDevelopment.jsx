@@ -1,10 +1,5 @@
-"use client";
-import React from "react";
-
-// Layout and shared components
 import PageLayout from "@/custom/PageLayout";
 import HeroSection from "@/components/HeroSection";
-import { IconRenderer } from "@/custom/IconRenderer";
 
 // Typography components
 import {

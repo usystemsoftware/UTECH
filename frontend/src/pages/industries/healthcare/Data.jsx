@@ -236,3 +236,51 @@ export const limsFeatures = [
         icon: "ShieldCheck",
     },
 ];
+
+export const pharmacyFeatures = [
+    {
+        title: "Pharmacy Software Development",
+        description:
+            "Develop custom pharmacy software with built-in medication synchronization modules, POS integration, MTM features, automated refill processing, and more.",
+        icon: "Gamepad2",
+    },
+    {
+        title: "Pharmacy Automation System",
+        description:
+            "Program robotic process automation (RPA) features to facilitate automated pharmacy operations, including prescription refills and formula compounding.",
+        icon: "FileText",
+    },
+    {
+        title: "Pharmacy Inventory Management",
+        description:
+            "Automate pharmacy inventory processes using database management systems (DMS), integrated barcode scanners, and National Drug Code (NDC) manifests.",
+        icon: "PackageCheck",
+    },
+    {
+        title: "Pharmacy POS Software Integration",
+        description:
+            "Integrate comprehensive POS software systems with role-based access control modules for POS users, plus e-signature capture to perform specific operations.",
+        icon: "Settings2",
+    },
+];
+
+export const eRxFeatures = [
+    {
+        title: "eRx Clinical Decision Support (CDS)",
+        description:
+            "Integrate with CDS software to evaluate patient medication history and ensure patient safety, alerting care providers of potentially conflicting drug interactions.",
+        icon: "Headphones",
+    },
+    {
+        title: "eRx Mobile App Development",
+        description:
+            "Develop eRx mobile applications to facilitate EMR, EHR, and PHR visibility and enhanced communication between patients, doctors, and pharmacists.",
+        icon: "Smartphone",
+    },
+    {
+        title: "eRx Third-Party Integration",
+        description:
+            "Integrate with third-party vendors, including prescription drug monitoring programs (PDMS), CDS software, drug information databases, and more.",
+        icon: "LockKeyhole",
+    },
+];
