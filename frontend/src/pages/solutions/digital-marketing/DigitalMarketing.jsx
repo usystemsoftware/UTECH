@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
@@ -11,17 +10,11 @@ import {
   TestSolution,
 } from "./Data";
 import { Button } from "@/components/ui/button";
-import {
-  Headline,
-  TypographyH4,
-  TypographyP,
-  TypographyH3,
-  TypographyMuted,
-} from "@/custom/Typography";
+import { Headline } from "@/custom/Typography";
 
 const DigitalMarketing = () => {
   return (
-    <div>
+    <>
       {/* === HERO SECTION === */}
       <HeroSection
         title="Digital Marketing Software Development"
@@ -33,37 +26,37 @@ const DigitalMarketing = () => {
         overlayOpacity={0.6}
       />
 
-      <PageLayout className="py-10 text-center space-y-10 ">
+      {/* === DRIVE MORE REVENUE SECTION === */}
+      <PageLayout className="py-16 text-center space-y-10">
         <Headline
           title="Drive More Revenue with Digital Marketing Software Development"
           description="Whether you require digital marketing software developers-for-hire to augment your existing in-house development team, or a newly developed digital marketing software solution to help your business drive more revenue, U Technology’s got you covered."
         />
 
-        {/* Features split into 2 columns */}
-        <FadeInWhenVisible className="space-y-8 grid grid-cols-1 md:grid-cols-3 items-- gap-10">
+        {/* === Features Grid: DriveMore Items === */}
+        <FadeInWhenVisible className="space-y-8 grid grid-cols-1 md:grid-cols-3 gap-10">
           <FeaturesList features={DriveMore.slice(0, 2)} />
           <FeaturesList features={DriveMore.slice(2, 4)} />
           <FeaturesList features={DriveMore.slice(4, 6)} />
         </FadeInWhenVisible>
 
-        {/* CTA button */}
+        {/* === CTA Button: Marketing Experts === */}
         <FadeInWhenVisible>
           <Button variant="hover">SPEAK TO MARKETING EXPERTS</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
-      <section className="bg-secondary">
-        <PageLayout className="py-16">
-          {/* Intro headline */}
-          <FadeInWhenVisible className="mb-10">
-            <Headline
-              title="Custom Digital Marketing Software Solutions"
-              description="We develop full-scale digital marketing software solutions built with workflow automation modules, reporting & analysis tools, CRM & marketing automation software, competitor analysis, ERP integration, and more for startups, SMBs, and enterprise-level businesses."
-            />
-          </FadeInWhenVisible>
+      {/* === CUSTOM DIGITAL MARKETING SOFTWARE SECTION === */}
+      <section className="bg-secondary py-16">
+        <PageLayout className="space-y-10">
+          <Headline
+            title="Custom Digital Marketing Software Solutions"
+            description="We develop full-scale digital marketing software solutions built with workflow automation modules, reporting & analysis tools, CRM & marketing automation software, competitor analysis, ERP integration, and more for startups, SMBs, and enterprise-level businesses."
+          />
 
-          {/* Cross-platform features and image */}
+          {/* === Features + Image Grid: CustomDigitalMarketing === */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 space-y-12 items-center">
+            {/* Left: Image */}
             <FadeInWhenVisible>
               <img
                 loading="lazy"
@@ -72,52 +65,56 @@ const DigitalMarketing = () => {
                 className="w-110 mx-auto"
               />
             </FadeInWhenVisible>
-            <FadeInWhenVisible>
-              <FeaturesList features={CustomDigitalMarketing} />
-            </FadeInWhenVisible>
+
+            {/* Right: Feature List */}
+            <FeaturesList features={CustomDigitalMarketing} />
           </div>
         </PageLayout>
       </section>
 
-      <PageLayout className="py-16">
-        {/* Intro headline */}
-        <FadeInWhenVisible className="mb-10">
-          <Headline
-            title="Custom Digital Marketing Applications"
-            description="We develop custom mobile & web applications that automate data gathering from your Google ads, social media ads, email campaigns, CRM, and other channels to ultimately determine your marketing successes and failures."
-          />
-        </FadeInWhenVisible>
+      {/* === CUSTOM APPLICATIONS SECTION === */}
+      <PageLayout className="py-16 space-y-10 text-center">
+        <Headline
+          title="Custom Digital Marketing Applications"
+          description="We develop custom mobile & web applications that automate data gathering from your Google ads, social media ads, email campaigns, CRM, and other channels to ultimately determine your marketing successes and failures."
+        />
 
-        {/* Cross-platform features and image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 space-y-12 items-center">
-          <FadeInWhenVisible>
-            <FeaturesList features={WebApps} />
-          </FadeInWhenVisible>
+        {/* === Features + Image Grid: WebApps === */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-12 space-y-12 items-center">
+          {/* Left: Feature List */}
+          <FeaturesList features={WebApps} />
+
+          {/* Right: Image */}
           <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/solutions/digital-marketing/application.png"
               alt="Mobile App Devices"
-              className="w-55 mx-auto"
+              className="md:w-55 w-32 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible className="text-center">
+
+        {/* === CTA Button: Manage Marketing === */}
+        <FadeInWhenVisible>
           <Button variant="hover">Manage Your Marketing Needs</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
-      <section  className="bg-secondary">
-        <PageLayout className="py-12 space-y-10 text-center">
+      {/* === SOFTWARE FEATURES & FUNCTIONS SECTION === */}
+      <section className="bg-secondary py-12">
+        <PageLayout className="space-y-10 text-center">
           <Headline
             title="Custom Marketing Software Features & Functions"
             description="Our custom-tailored marketing software systems are jam-packed with every kind of feature, functionality, and integration that you could ever want in an all-in-one marketing automation platform, built to enable users to track all marketing performance metrics across their entire workspace in seconds.."
           />
-          <div className="mt-16 flex flex-col lg:flex-row  items-center justify-between gap-10">
-            <FeaturesList
-              features={TestingSolutions.slice(0, 6)}
-              fadeUp={fadeUp}
-            />
+
+          {/* === Features + Image + Features Split Grid === */}
+          <div className="mt-16 flex flex-col lg:flex-row justify-between gap-10">
+            {/* Left Features List: TestingSolutions */}
+            <FeaturesList features={TestingSolutions.slice(0, 6)} fadeUp={fadeUp} />
+
+            {/* Center Image */}
             <FadeInWhenVisible>
               <img
                 loading="lazy"
@@ -126,14 +123,18 @@ const DigitalMarketing = () => {
                 className="md:w-250 w-68"
               />
             </FadeInWhenVisible>
+
+            {/* Right Features List: TestSolution */}
             <FeaturesList features={TestSolution.slice(0, 6)} fadeUp={fadeUp} />
           </div>
+
+          {/* === CTA Button: Maximize Marketing === */}
           <FadeInWhenVisible>
             <Button variant="hover">MAXIMIZE YOUR MARKETING EFFORTS</Button>
           </FadeInWhenVisible>
         </PageLayout>
       </section>
-    </div>
+    </>
   );
 };
 

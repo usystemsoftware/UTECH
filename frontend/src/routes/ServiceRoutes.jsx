@@ -3,6 +3,7 @@ import DigitalTransformation from "@/pages/services/digital-transformation/Digit
 import ApplicationDevelopment from "@/pages/services/application-development/AplicationDevelopment";
 import QualityAssurance from "@/pages/services/quality-assurance/QualityAssurance";
 import BPO from "@/pages/services/bpo/BPO";
+import ApplicationMaintenance from "@/pages/services/application-maintenance/ApplicationMaintenance";
 
 export const ServiceRoutes = [
   { path: "/services/api-development", element: <ApiDevelopment /> },

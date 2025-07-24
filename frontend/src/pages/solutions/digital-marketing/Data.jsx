@@ -57,6 +57,7 @@ export const CustomDigitalMarketing = [
       "We develop portfolio-worthy, conversion-focused landing pages perfectly aligned with showcasing your marketing campaign or exciting new product launch in a way that brings users through a customer journey designed to drive traffic & increase sales.",
   },
 ];
+
 export const WebApps = [
   {
     icon: "MonitorSmartphone", // Represents mobile + web app development
@@ -77,6 +78,7 @@ export const WebApps = [
       "Our custom enterprise mobility applications are specifically designed for digital marketing companies to manage their daily operational workflows with the help of marketing automation.",
   },
 ];
+
 export const TestingSolutions = [
   {
     icon: "Network",
@@ -97,16 +99,16 @@ export const TestingSolutions = [
       "Since your social media presence is just as important as your website presence, it’s crucial to implement popular social channels like Facebook, LinkedIn, Instagram, Twitter, and more.",
   },
   {
-    icon: "BadgeIndianRupee",
+    icon: "FileText",
     title: "Content Marketing Tools",
     description:
       "We can help you bring your content to market much faster with a unified content marketing platform, custom-tailored to bring your teams and workflows together at scale.",
   },
   {
-    icon: "BadgeIndianRupee",
+    icon: "Globe",
     title: "Content Management Systems",
     description:
-      "ntegrating content management systems (CMS) like WordPress, Drupal, or Joomla is an integral part of your maintaining, updating, and enhancing your content marketing efforts.",
+      "Integrating content management systems (CMS) like WordPress, Drupal, or Joomla is an integral part of your maintaining, updating, and enhancing your content marketing efforts.",
   },
   {
     icon: "BadgeIndianRupee",
@@ -115,41 +117,43 @@ export const TestingSolutions = [
       "Integrating Semrush or Ahrefs are excellent tools to use when optimizing your SEO, and with U Technology on your side, we can integrate these tools seamlessly with your workflows.",
   },
 ];
+
 export const TestSolution = [
   {
-    icon: "Pay-Per-Click (PPC) Ads Management",
+    icon: "SearchCode",
     title: "SEO Marketing Tools",
     description:
       "Whether you wish to utilize Google Ads, Bing Ads, or even Facebook Ads, U Technology developers can seamlessly conjoin your systems together, so you have full control over your ad spend.",
   },
   {
-    icon: "BadgeIndianRupee",
+    icon: "Star",
     title: "Brand Builder Tools",
     description:
       "To build your brand with a one-stop-shop solution, integrating Frontify with your business systems allows you to build your brand just the way you envisioned it.",
   },
   {
-    icon: "BadgeIndianRupee",
+    icon: "Users",
     title: "Customer Acquisition",
     description:
-      "Acquire more customers by integrating robust customer acquisition tools, including Drift, GetResponse, Unbounce, and others, driving successful outcomes and growing revenues..",
+      "Acquire more customers by integrating robust customer acquisition tools, including Drift, GetResponse, Unbounce, and others, driving successful outcomes and growing revenues.",
   },
   {
-    icon: "BadgeIndianRupee",
+    icon: "BarChart2",
     title: "Competitor Analysis",
     description:
-      "To get a clear look at the competition, integration SpyFu is an excellent way to see every keyword that your competitors have ever bought on Google, along with every ad they’ve run..",
+      "To get a clear look at the competition, integration SpyFu is an excellent way to see every keyword that your competitors have ever bought on Google, along with every ad they’ve run.",
   },
   {
-    icon: "BadgeIndianRupee",
+    icon: "ShieldCheck",
     title: "Reputation Management",
     description:
       "Maintaining a stellar reputation in your field is of the utmost importance. So, integrating Sprinklr or GatherUp, is a great way to maintain the ideal image to your customers.",
   },
   {
-    icon: "BadgeIndianRupee",
+    icon: "CalendarClock",
     title: "Calendar Modules",
     description:
-      "Schedule social media & email campaigns, ads, press releases, and other content marketing projects with an automated scheduling system build within a custom calendar module.",
+      "Schedule social media & email campaigns, ads, press releases, and other content marketing projects with an automated scheduling system built within a custom calendar module.",
   },
 ];
+

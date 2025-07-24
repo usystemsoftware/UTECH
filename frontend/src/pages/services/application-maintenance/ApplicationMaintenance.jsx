@@ -18,15 +18,13 @@ import FaqSection from "@/custom/FaqSection";
 import {
   Headline,
   TypographyH4,
-  TypographyH2,
-  TypographyP,
   TypographyH3,
   TypographyMuted,
 } from "@/custom/Typography";
 
 const ApplicationMaintenance = () => {
   return (
-    <div>
+    <>
       {/* === HERO SECTION === */}
       <HeroSection
         backgroundImage="/assets/services/application-maintenanc/banner.jpg"
@@ -36,8 +34,9 @@ const ApplicationMaintenance = () => {
         imageFit="cover"
         overlayOpacity={0.6}
       />
+
+      {/* === INTRODUCTION SECTION === */}
       <PageLayout className="py-16">
-        {/* Intro headline */}
         <FadeInWhenVisible>
           <Headline
             title="U Technology: Your Comprehensive Solutions Provider"
@@ -45,102 +44,92 @@ const ApplicationMaintenance = () => {
           />
         </FadeInWhenVisible>
 
-        {/* Cross-platform features and image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 space-y-12 items-center">
-          <FadeInWhenVisible className="space-y-8">
+        {/* === APPLICATION MAINTENANCE FEATURES SECTION === */}
+        <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 mt-8 items-center gap-12 space-y-12">
+          <div className="space-y-8">
             <Headline title="Application Maintenance Services" />
-            <FeaturesList features={Application} />
-          </FadeInWhenVisible>
+            <FeaturesList features={Application.slice(0, 3)} />
+          </div>
 
           <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/services/application-maintenanc/experts.jpg"
               alt="Mobile App Devices"
-              className="h-auto mx-auto"
-              width={440}
-              height={340} // or any estimated height you want
+              className="h-96 mx-auto"
             />
           </FadeInWhenVisible>
+
+          <FeaturesList features={Application.slice(3, 6)} />
         </div>
+
+        {/* === CTA BUTTON: APP SUPPORT === */}
         <FadeInWhenVisible className="text-center">
           <Button variant="hover">EXPERT APP SUPPORT</Button>
         </FadeInWhenVisible>
       </PageLayout>
-      <PageLayout className="py-16 space-y-8 text-center">
+
+      {/* === APPLICATION SUPPORT SERVICES SECTION === */}
+      <PageLayout className="py-16 space-y-10 text-center">
         <Headline
           title="Application Support Servicest"
           description="Applications are long-term investments, and U Technology's Application Support Services encompass technical expertise, software maintenance, extended support, and exceptional customer service, all aimed at keeping your applications running optimally."
         />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left">
-          {ApplicationSupport?.map((item, index) => (
-            <FadeInWhenVisible key={index} delay={index * 0.2}>
-              <div
-                className={`flex items-start gap-4 ${
-                  item.reverse
-                    ? "lg:justify-end lg:text-right flex-row-reverse"
-                    : ""
-                }`}
-              >
-                <IconRenderer
-                  name={item.icon}
-                  size={36}
-                  className="text-primary flex-shrink-0"
-                />
-                <div>
-                  <TypographyH4>{item.title}</TypographyH4>
-                  <TypographyMuted>{item.description}</TypographyMuted>
-                </div>
-              </div>
-            </FadeInWhenVisible>
-          ))}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <FeaturesList features={ApplicationSupport.slice(0, 3)} />
+          <FeaturesList features={ApplicationSupport.slice(3, 6)} />
         </div>
+
+        {/* === CTA BUTTON: SUPPORT === */}
         <FadeInWhenVisible delay={0.4}>
           <Button variant="hover">GET APPLICATION SUPPORT</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
-      <PageLayout className="py-10 text-center space-y-10 ">
+      {/* === AI-POWERED INTELLIGENT SOLUTIONS SECTION === */}
+      <PageLayout className="py-10 text-center space-y-10">
         <Headline
           title="Elevate Your Applications with Intelligent Solution"
           description="Revolutionize your applications with our AI-powered solutions. Experience the future of application support services, where innovation meets intelligence for unparalleled performance and user satisfaction."
         />
 
-        {/* Features split into 2 columns */}
-        <FadeInWhenVisible className="space-y-8 grid grid-cols-1 md:grid-cols-3 items-- gap-10">
+        <FadeInWhenVisible className="space-y-8 grid grid-cols-1 md:grid-cols-3 gap-10">
           <FeaturesList features={IntelligentSolutions.slice(0, 2)} />
           <FeaturesList features={IntelligentSolutions.slice(2, 4)} />
           <FeaturesList features={IntelligentSolutions.slice(4, 6)} />
         </FadeInWhenVisible>
 
-        {/* CTA button */}
+        {/* === CTA BUTTON: AI SUPPORT === */}
         <FadeInWhenVisible>
           <Button variant="hover">GET AI APP SUPPORT</Button>
         </FadeInWhenVisible>
       </PageLayout>
+
+      {/* === BLOCK OF HOURS SUPPORT SECTION === */}
       <PageLayout className="py-16">
-        <Headline
-          className="mb-10"
-          title="Block of Hours Support Services"
-          description="U Technology's team comprises over 2,800 industry-experienced developers with comprehensive domain expertise and technical proficiency. Our commitment to excellence is reflected in the delivery of superior support through flexible and cost-effective Block of Hours support services tailored for various applications.."
-        />
-        {/* Headline from data */}
-        <FadeInWhenVisible className="text-center space-y-6">
+        <div className="flex justify-between gap-8 md:flex-row flex-col">
+          <Headline
+            title="Block of Hours Support Services"
+            description="U Technology's team comprises over 2,800 industry-experienced developers with comprehensive domain expertise and technical proficiency. Our commitment to excellence is reflected in the delivery of superior support through flexible and cost-effective Block of Hours support services tailored for various applications.."
+            className="text-start"
+          />
+
           <Headline
             title="Technical & Non-Technical Support"
             description="U Technology’s Block of Hours program is a cost-effective alternative to our standard flat-rate support offered to new, current, and past customers. We offer technical and non-technical support services for all software applications. Services are sold per 100 Block of Hours with reduced rates contingent on hours purchased.."
+            className="text-start"
           />
-        </FadeInWhenVisible>
+        </div>
 
-        {/* Image + List */}
+        {/* === IMAGE + SUPPORT LIST === */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-12">
           <FadeInWhenVisible>
             <img
+              loading="lazy"
               src="/assets/services/application-maintenanc/support.png"
               alt="Support Dashboard"
-              className="mx-auto"
-              width={540}
-              height={380}
+              className="mx-auto w-135"
             />
           </FadeInWhenVisible>
 
@@ -157,18 +146,20 @@ const ApplicationMaintenance = () => {
           </FadeInWhenVisible>
         </div>
       </PageLayout>
+
+      {/* === TECHNOLOGY LOGO SECTION === */}
       <PageLayout className="py-16 text-center space-y-10">
         <Headline
           title="We’ve Got Custom App Developers With On-Demand Experience"
           description="Our programmers, developers, and engineers are highly proficient..."
         />
 
-        {/* Features with tech logos */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-left mt-16">
           {apiLogs.map((feature, index) => (
             <div key={index}>
               <TypographyH3>{feature?.title}</TypographyH3>
               <TypographyMuted>{feature?.description}</TypographyMuted>
+
               <div
                 key={index}
                 className="flex items-center sm:gap-12 gap-8 mt-8 flex-wrap"
@@ -177,7 +168,7 @@ const ApplicationMaintenance = () => {
                   <img
                     key={index}
                     loading="lazy"
-                    src={`/assets/services/application-development/Logos/${logo}.png`}
+                    src={`/assets/services/application-development/logos/${logo}.png`}
                     className="h-8 cursor-pointer hover:scale-105 transition-transform"
                     alt={logo}
                   />
@@ -187,11 +178,12 @@ const ApplicationMaintenance = () => {
           ))}
         </div>
       </PageLayout>
+
       {/* === FAQ SECTION === */}
       <div className="mb-8">
         <FaqSection faqs={faqs} title="FAQ's" />
       </div>
-    </div>
+    </>
   );
 };
 
