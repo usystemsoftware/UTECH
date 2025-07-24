@@ -45,10 +45,3 @@ export const Locations = [
             "https://www.google.com/maps?q=Zeroboyz+Chowk,+HDFC+Bank,+Nehru+Nagar,+Pimpri,+Pune",
     },
 ];
-
-export const socialPlatforms = [
-    { name: "Facebook", url: "https://facebook.com" },
-    { name: "Instagram", url: "https://instagram.com" },
-    { name: "Twitter", url: "https://twitter.com" },
-    { name: "Linkedin", url: "https://linkedin.com" },
-];

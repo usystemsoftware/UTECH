@@ -10,7 +10,6 @@ import {
 } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { TestimonialSection } from "@/components/TestimonialSection";
 import {
     dicomFeatures,
     digitalHelthSolutions,

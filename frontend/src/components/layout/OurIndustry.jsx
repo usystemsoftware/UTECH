@@ -7,7 +7,6 @@ import { TypographyH4 } from '@/custom/Typography';
 import BubblesBackground from "@/components/BubblesBackground";
 
 export default function OurIndustry() {
-    // Entry animation directions based on index (repeatable)
     const directions = [
         { x: 100, opacity: 0 },
         { x: -100, opacity: 0 },
@@ -43,7 +42,7 @@ export default function OurIndustry() {
                                 </TypographyH4>
                                 <motion.img
                                     loading="lazy"
-                                    src={industry.image}
+                                    src={`/assets/landing-page/${industry.image}.png`}
                                     alt={industry.name}
                                     initial={{ scale: 1, opacity: 0.8 }}
                                     whileHover={{ opacity: 0.9 }}

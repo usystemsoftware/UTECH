@@ -1,12 +1,10 @@
-"use client";
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { TypographyH3, TypographyH4 } from "../../custom/Typography";
+import { TypographyH3, TypographyH4 } from "@/custom/Typography";
+import { version } from "../../../package.json";
 
 const footerLinks = [
   {
@@ -15,10 +13,7 @@ const footerLinks = [
       { label: "API Development", to: "/services/api-development" },
       { label: "Aplication Development", to: "/services/application-development" },
       { label: "QA Testing", to: "/services/qa-testing" },
-      {
-        label: "Digital Transformation",
-        to: "/services/digital-transformation",
-      },
+      { label: "Digital Transformation", to: "/services/digital-transformation" },
       { label: "Application Maintenance", to: "/services/application-maintenance" },
     ],
   },
@@ -36,7 +31,7 @@ const footerLinks = [
     title: "Solutions",
     links: [
       { label: "CRM", to: "/solutions/crm" },
-      { label: "Embedded Software", to: "/solutions/cloud" },
+      { label: "Embedded Software", to: "/solutions/embedded-software" },
       { label: "Digital Marketing", to: "/solutions/digital-marketing" },
       { label: "UI/UX", to: "/solutions/ui-ux" },
       { label: "Web Development", to: "/solutions/web-development" },
@@ -45,10 +40,10 @@ const footerLinks = [
 ];
 
 const socialIcons = [
-  { icon: Facebook, url: "#", label: "Facebook" },
-  { icon: Instagram, url: "#", label: "Instagram" },
-  { icon: Twitter, url: "#", label: "Twitter" },
-  { icon: Linkedin, url: "#", label: "LinkedIn" },
+  { icon: "facebook", url: "https://www.facebook.com/AryaSoft1", label: "Facebook" },
+  { icon: "instagram", url: "https://www.instagram.com/usystem_software", label: "Instagram" },
+  { icon: "twitter", url: "#", label: "Twitter" },
+  { icon: "linkedin", url: "https://in.linkedin.com/company/umbarkar-technology-india-pvt-ltd", label: "LinkedIn" },
 ];
 
 export const Footer = () => {
@@ -60,16 +55,10 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-b from-[#0d101f] to-[#071427] text-white px-6 py-12">
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-        className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10"
-      >
+    <footer className="bg-gradient-to-b relative from-[#0d101f] to-[#071427] text-white px-6 py-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
         {/* Brand and Subscribe */}
-        <div className="sm:col-span-2 space-y-4">
+        <FadeInWhenVisible className="sm:col-span-2 space-y-4">
           <TypographyH3>U Technology</TypographyH3>
           <p className="text-sm mb-4 text-gray-300">
             Subscribe to get the latest updates, articles, and inspiration.
@@ -82,60 +71,58 @@ export const Footer = () => {
             <Button type="submit">Subscribe</Button>
           </form>
           {subscribed && (
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="mt-2 text-green-400 text-sm"
-            >
+            <p className="mt-2 text-green-400 text-sm transition-opacity duration-300">
               Thank you for subscribing! 🎉
-            </motion.p>
+            </p>
           )}
-          {/* Social Icons */}
           <div className="flex gap-4 mt-6 text-xl">
             {socialIcons.map((item, i) => (
-              <motion.a
-                key={i}
-                href={item.url}
-                aria-label={item.label}
-                whileHover={{ scale: 1.2 }}
-                className="w-10 h-10 rounded-full bg-primary flex justify-center items-center transition-colors"
-              >
-                <item.icon size={18} />
-              </motion.a>
+              <FadeInWhenVisible key={i}>
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={item.label}
+                >
+                  <img
+                    src={`/assets/social-icon/${item.icon}.png`}
+                    alt={item.label}
+                    loading="lazy"
+                    className="w-8 h-8 cursor-pointer hover:scale-120 transition-transform"
+                  />
+                </a>
+              </FadeInWhenVisible>
             ))}
           </div>
-        </div>
+        </FadeInWhenVisible>
 
-        {/* Dynamic Link Columns */}
+        {/* Footer Links */}
         {footerLinks.map((section, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 * i, duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <TypographyH4>{section?.title}</TypographyH4>
-            <ul className="space-y-3 mt-3 text-sm text-gray-300">
-              {section.links.map((link, j) => (
-                <li key={j}>
-                  <Link
-                    to={link.to}
-                    className="hover:text-primary transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+          <FadeInWhenVisible key={i}>
+            <div>
+              <TypographyH4>{section.title}</TypographyH4>
+              <ul className="space-y-3 mt-3 text-sm text-gray-300">
+                {section.links.map((link, j) => (
+                  <li key={j}>
+                    <Link
+                      to={link.to}
+                      className="hover:text-primary transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </FadeInWhenVisible>
         ))}
-      </motion.div>
+      </div>
 
-      {/* Bottom Text */}
       <div className="mt-10 text-center border-t border-white/10 pt-6 text-sm text-gray-400">
-        © {new Date().getFullYear()} Umbarkar Technology India Pvt Ltd . All
-        rights reserved.
+        © {new Date().getFullYear()} Umbarkar Technology India Pvt Ltd. All rights reserved.<br />
+        <span>
+          Version:{version}
+        </span>
       </div>
     </footer>
   );

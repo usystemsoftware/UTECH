@@ -36,7 +36,7 @@ export const FeaturesList = ({
                         />
                     </span>
                     <div>
-                        <TypographyH5>{feature.title}</TypographyH5>
+                        <TypographyH5 className="text-base md:text-base">{feature.title}</TypographyH5>
                         <TypographyMuted>{feature.description}</TypographyMuted>
                     </div>
                 </FadeInWhenVisible>

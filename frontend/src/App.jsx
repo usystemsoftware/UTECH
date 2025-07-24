@@ -18,7 +18,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<MainLayout />} />
 
-         {/* default routes */}
+        {/* default routes */}
         {DefaultRoutes.map(({ path, element }) => (
           <Route key={path} path={path} element={element} />
         ))}

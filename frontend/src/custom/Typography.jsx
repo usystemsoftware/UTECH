@@ -90,7 +90,7 @@ export function Headline({ title, description, className }) {
     return (
         <FadeInWhenVisible>
             <div className={cn("space-y-4 w-full sm:max-w-2xl mx-auto text-center", className)}>
-                <h1 className="sm:text-3xl text-2xl font-bold tracking-tight text-primary">
+                <h1 className="sm:text-2xl text-xl font-bold tracking-tight text-primary">
                     {title}
                 </h1>
                 <p className="text-muted-foreground text-sm">

@@ -44,7 +44,7 @@ export const HeroSection = () => {
               </span>
             </motion.h1>
             <TypographyMuted>
-              Persistent Systems is a global services and solutions company
+              U Tech Systems is a global services and solutions company
               delivering Digital Engineering and Enterprise Modernization to
               help enterprises accelerate their digital transformation journey.
             </TypographyMuted>
