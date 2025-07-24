@@ -10,4 +10,5 @@ export const ServiceRoutes = [
   { path: "/services/application-development", element: <ApplicationDevelopment /> },
   { path: "/services/qa-testing", element: <QualityAssurance /> },
   { path: "/services/bpo", element: <BPO /> },
-];
+  { path: "/services/application-maintenance", element: <ApplicationMaintenance />, },
+]
