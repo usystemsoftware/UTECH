@@ -138,7 +138,7 @@ const ApplicationDevelopment = () => {
           {/* Overview headline */}
           <Headline
             title="Build Amazing Apps with Our App Development Solutions"
-            description="At TechnologU y, we provide exceptional app development..."
+            description="At Technolog y, we provide exceptional app development..."
           />
 
           {/* Content with image + features */}
