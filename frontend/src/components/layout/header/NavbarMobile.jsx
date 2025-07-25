@@ -1,138 +1,189 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ModeToggle } from "@/components/mode-toggle";
-import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { TypographyH4 } from "@/custom/Typography";
 import { Navlinks } from "@/data/Navlinks";
-import { motion, AnimatePresence } from "framer-motion";
 import { IconRenderer } from "@/custom/IconRenderer";
+import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 
-const menuVariants = {
-  hidden: {
-    height: 0,
-    opacity: 0,
-    transition: { duration: 0.3, ease: "easeOut" },
-  },
-  visible: {
-    height: "auto",
-    opacity: 1,
-    transition: { duration: 0.4, ease: "easeInOut", staggerChildren: 0.05 },
-  },
-};
+const highlightMatch = (text, query) => {
+  if (!query) return text;
 
-const itemVariants = {
-  hidden: { opacity: 0, y: -10 },
-  visible: { opacity: 1, y: 0 },
+  const parts = text.split(new RegExp(`(${query})`, "gi"));
+
+  return parts.map((part, i) => (
+    <span
+      key={i}
+      className={
+        part.toLowerCase() === query.toLowerCase()
+          ? "text-red-500 font-semibold"
+          : undefined
+      }
+      style={{ display: "inline" }}
+    >
+      {part}
+    </span>
+  ));
 };
 
 const NavbarMobile = () => {
   const [open, setOpen] = useState(false);
-  const [openMenus, setOpenMenus] = useState({});
+  const [openMenuIndex, setOpenMenuIndex] = useState(0); // Only one section open
+  const [selectedLink, setSelectedLink] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  const filterNavlinks = (section) => {
+    if (!searchTerm) return true;
+    const lower = searchTerm.toLowerCase();
+    return (
+      section.title.toLowerCase().includes(lower) ||
+      section.items?.some((item) => item.label.toLowerCase().includes(lower)) ||
+      section.groups?.some((group) =>
+        group.links?.some((link) => link.label.toLowerCase().includes(lower))
+      )
+    );
+  };
 
   return (
-    <div className="md:hidden w-full fixed top-0 left-0 z-50 bg-card shadow-md overflow-x-hidden">
-      {/* Top bar */}
-      <div className="flex items-center justify-between px-4 py-3 border-b">
-        <Link to="/" onClick={() => setOpen(false)}>
-          <img loading="lazy" src="/logo.png" alt="Logo" className="h-10" />
+    <div className="md:hidden fixed top-0 left-0 z-50 w-full bg-background shadow-md overflow-hidden">
+      {/* Top Bar */}
+      <div className="flex items-center justify-between px-4 py-4 border-b">
+        <Link to="/" className="flex items-end relative">
+          <img src="/logo-2.png" alt="Logo" className="h-7" />
+          <TypographyH4 className="absolute left-7 text-lg bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent">
+            Technology
+          </TypographyH4>
         </Link>
 
-        <div className="flex items-center space-x-6">
-          <IconRenderer name="Search" size={22} className="cursor-pointer" />
-          {/* Theme Toggle */}
-          <ModeToggle />
+        <div className="flex items-center space-x-4">
+          <IconRenderer name="Search" size={18} className="cursor-pointer" />
           <button onClick={() => setOpen((prev) => !prev)}>
-            <IconRenderer name={open ? "X" : "AlignJustify"} size={24} />
+            <IconRenderer name={open ? "X" : "AlignJustify"} size={22} />
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            key="mobile-nav"
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            className="bg-card border-t border-b shadow-md max-h-[80vh] overflow-y-auto"
-          >
-            {Navlinks.map((section, idx) => {
-              const isOpen = openMenus[idx];
+      {/* Panel */}
+      {open && (
+        <div className="fixed top-[60px] left-0 w-full h-[calc(100vh-60px)] px-2 bg-card flex flex-col">
+          {/* Search & List Scrollable */}
+          <div className="flex-1 overflow-y-auto px-3 pt-3 pb-24">
+            <Input
+              className="border-none bg-muted mb-3 text-sm outline-none px-2"
+              placeholder="Search docs"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+
+            {Navlinks.filter(filterNavlinks).map((section, idx) => {
+              const isOpen = openMenuIndex === idx || searchTerm.length > 0;
+              const sectionMatch = section.title
+                .toLowerCase()
+                .includes(searchTerm.toLowerCase());
 
               return (
-                <div key={idx} className="p-3 mt-3 border-b">
+                <div key={idx} className="mb-2">
                   <button
                     onClick={() =>
-                      setOpenMenus((prev) => ({ ...prev, [idx]: !prev[idx] }))
+                      setOpenMenuIndex((prev) => (prev === idx ? null : idx))
                     }
-                    className="w-full flex justify-between items-center text-sm font-medium"
+                    className={`flex w-full items-center justify-between px-3 py-2 text-sm font-medium rounded-md ${sectionMatch || isOpen
+                      ? "bg-blue-100 text-blue-800"
+                      : "text-muted-foreground"
+                      }`}
                   >
-                    {section.title}
+                    <span>{highlightMatch(section.title, searchTerm)}</span>
                     <IconRenderer
-                      name={isOpen ? "Minus" : "Plus"}
+                      name={isOpen ? "ChevronDown" : "ChevronRight"}
                       size={16}
                     />
                   </button>
 
-                  {/* Submenu */}
-                  <AnimatePresence>
-                    {isOpen && (
-                      <motion.div
-                        variants={menuVariants}
-                        initial="hidden"
-                        animate="visible"
-                        exit="hidden"
-                        className="pl-2"
-                      >
-                        {/* Items */}
-                        {section.items?.map((item, i) => (
-                          <motion.div key={i} variants={itemVariants}>
+                  {isOpen && (
+                    <div className="transition-all duration-300">
+                      {/* Items */}
+                      {section.items
+                        ?.filter((item) =>
+                          item.label
+                            .toLowerCase()
+                            .includes(searchTerm.toLowerCase())
+                        )
+                        .map((item, i) => (
+                          <FadeInWhenVisible key={i}>
                             <Link
                               to={item.href}
-                              className="flex items-center gap-2 py-2 text-muted-foreground text-sm hover:text-primary"
-                              onClick={() => setOpen(false)}
+                              onClick={() => {
+                                setOpen(false);
+                                setSelectedLink(item.href);
+                              }}
+                              className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${selectedLink === item.href
+                                ? "bg-blue-100 text-blue-800 font-medium"
+                                : "text-muted-foreground hover:text-primary"
+                                }`}
                             >
-                              {item.icon && (
-                                <IconRenderer name={item.icon} size={18} />
-                              )}
-                              {item.label}
+                              <IconRenderer name={item?.icon} size={16} />
+                              {highlightMatch(item.label, searchTerm)}
                             </Link>
-                          </motion.div>
+                          </FadeInWhenVisible>
                         ))}
 
-                        {/* Groups */}
-                        {section.groups?.map((group, gIdx) => (
+                      {/* Groups */}
+                      {section.groups?.map((group, gIdx) => {
+                        const matchingLinks = group.links?.filter((link) =>
+                          link.label
+                            .toLowerCase()
+                            .includes(searchTerm.toLowerCase())
+                        );
+                        if (!matchingLinks?.length) return null;
+
+                        return (
                           <div key={gIdx}>
                             {group.group && (
-                              <div className="font-medium text-sm mt-4 mb-2">
-                                {group.group}
+                              <div className="font-medium text-sm mt-3 mb-1 text-muted-foreground px-3">
+                                {highlightMatch(group.group, searchTerm)}
                               </div>
                             )}
-                            {group.links?.map((link, lIdx) => (
-                              <motion.div key={lIdx} variants={itemVariants}>
+                            {matchingLinks.map((link, lIdx) => (
+                              <FadeInWhenVisible key={lIdx}>
                                 <Link
                                   to={link.href}
-                                  className="flex items-center gap-2 py-2 pl-3 text-muted-foreground text-sm hover:text-primary"
-                                  onClick={() => setOpen(false)}
+                                  onClick={() => {
+                                    setOpen(false);
+                                    setSelectedLink(link.href);
+                                  }}
+                                  className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${selectedLink === link.href
+                                    ? "bg-blue-100 text-blue-800 font-medium"
+                                    : "text-muted-foreground hover:text-primary"
+                                    }`}
                                 >
-                                  {link.icon && (
-                                    <IconRenderer name={link.icon} size={18} />
-                                  )}
-                                  {link.label}
+                                  {highlightMatch(link.label, searchTerm)}
                                 </Link>
-                              </motion.div>
+                              </FadeInWhenVisible>
                             ))}
                           </div>
-                        ))}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               );
             })}
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+
+          {/* Footer (Fixed Bottom) */}
+          <div className="absolute bottom-0 left-0 pl-14 w-full border-t px-4 py-1 bg-card text-xs text-muted-foreground flex items-center gap-2">
+            <ModeToggle />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

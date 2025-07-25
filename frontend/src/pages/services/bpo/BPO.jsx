@@ -7,8 +7,18 @@ import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
 import { Headline } from "@/custom/Typography";
-import { bpoServices, facilityFeatures, industriesData, servicesData } from "./Data";
-import { TypographyH6, TypographyMuted } from "../../../custom/Typography";
+import {
+    TypographyH6,
+    TypographyMuted
+} from "@/custom/Typography";
+import {
+    bpoServices,
+    companyHighlights,
+    facilityFeatures,
+    industriesData,
+    servicesData,
+    technicalSolutions
+} from "./Data";
 
 const services = [
     "Customer Service",
@@ -51,7 +61,7 @@ export default function BPO() {
                     description='Chetu provides front-office and back-office support services to ensure your business runs smoothly as you focus on the core aspects of your company.'
                 />
 
-                <div className="flex flex-col md:flex-row justify-center gap-10">
+                <div className="flex flex-col sm:flex-row justify-center gap-10">
                     {/* Services Box */}
                     <Card className="bg-secondary border-none w-full md:w-1/2">
                         <TypographyH6 className="bg-teal-600 text-white px-4 py-2 rounded-t-xl -mt-6 w-fit mb-4">
@@ -91,7 +101,7 @@ export default function BPO() {
                     description='Our specialized industry-specific teams provide skill, intelligence, and efficiency to drive value and growth. With our innovative resources, we will help you increase operational flexibility.'
                 />
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
                     <FadeInWhenVisible delay={0.5}>
                         <img
                             loading="lazy"
@@ -116,7 +126,7 @@ export default function BPO() {
                         title='BPO Services'
                         description='We offer a wide variety of BPO services to support your non-core processes and facilitate growth and scalability.'
                     />
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                         <FeaturesList features={servicesData.slice(0, 4)} fadeUp={fadeUp} />
                         <FeaturesList features={servicesData.slice(4, 8)} fadeUp={fadeUp} />
                     </div>
@@ -133,7 +143,7 @@ export default function BPO() {
                     title='Industries'
                     description='Our BPO services fulfill the needs of companies across various industries, covering key processes to enable your business to have a competitive advantage.'
                 />
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                     <FeaturesList features={industriesData.slice(0, 4)} fadeUp={fadeUp} />
                     <FeaturesList features={industriesData.slice(4, 8)} fadeUp={fadeUp} />
                 </div>
@@ -151,7 +161,7 @@ export default function BPO() {
                         description='We have the infrastructure and bandwidth to provide streamlined support as we take on your business processes. Our facilities and resources are secure and reliable.'
                     />
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 items-center sm:grid-cols-2 gap-8">
                         <FadeInWhenVisible delay={0.5}>
                             <img
                                 loading="lazy"
@@ -163,7 +173,7 @@ export default function BPO() {
                         <FeaturesList features={facilityFeatures.slice(0, 2)} fadeUp={fadeUp} />
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 items-center sm:grid-cols-2 gap-8">
                         <FeaturesList features={facilityFeatures.slice(2, 4)} fadeUp={fadeUp} />
                         <FadeInWhenVisible delay={0.5}>
                             <img
@@ -175,8 +185,48 @@ export default function BPO() {
                         </FadeInWhenVisible>
                     </div>
                 </PageLayout>
-
             </section>
+
+            <PageLayout className="space-y-10 py-16 text-center">
+                <Headline
+                    title='Top Talent'
+                    description='Chetu recruits top talent that goes through a rigorous hiring process followed by thorough training and development to provide optimal service.'
+                />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <FeaturesList features={companyHighlights.slice(0, 2)} fadeUp={fadeUp} />
+                    <FeaturesList features={companyHighlights.slice(2, 4)} fadeUp={fadeUp} />
+                </div>
+                <FadeInWhenVisible>
+                    <Button variant="hover">
+                        WORK WITH TOP TALENT
+                    </Button>
+                </FadeInWhenVisible>
+            </PageLayout>
+
+            <PageLayout className='space-y-10 py-10 text-center'>
+                <Headline
+                    title='DevOps Support'
+                    description='Our DevOps experts will help your business processes reach optimal efficiency through automation and digital transformation.'
+                />
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
+                    <FadeInWhenVisible delay={0.5}>
+                        <img
+                            loading="lazy"
+                            src="/assets/services/bpo/devops-support.png"
+                            alt="Portfolio"
+                            className="w-135"
+                        />
+                    </FadeInWhenVisible>
+                    <FeaturesList features={technicalSolutions} fadeUp={fadeUp} />
+                </div>
+
+                <FadeInWhenVisible>
+                    <Button variant='hover'>
+                        GET DEVOP'S SUPPORT
+                    </Button>
+                </FadeInWhenVisible>
+            </PageLayout>
 
         </>
     )

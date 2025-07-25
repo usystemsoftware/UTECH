@@ -357,7 +357,7 @@ export default function Chat() {
       {!isOpen && (
         <div
           onClick={toggleChat}
-          className="fixed bottom-6 md:bottom-16 hover:scale-105 hover:shadow-2xl shadow-black rounded-full text-sm bg-primary  p-4 text-white cursor-pointer right-5 z-50 flex items-center gap-2"
+          className="fixed bottom-6 md:bottom-16 hover:scale-105 hover:shadow-2xl shadow-black rounded-full text-sm bg-primary  p-4 text-white cursor-pointer right-5 z-40 flex items-center gap-2"
         >
           <Bot size={32} />
         </div>

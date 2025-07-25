@@ -54,10 +54,10 @@ export const industries = [
         path: "/industries/healthcare",
     },
     {
-        name: "Life Sciences",
+        name: "Hospitality",
         color: "bg-cyan-600",
         image: "life-science",
-        path: "/industries/life-sciences",
+        path: "/industries/hospitality-travel",
     },
     {
         name: "Industrial",
@@ -66,22 +66,22 @@ export const industries = [
         path: "/industries/industrial",
     },
     {
-        name: "Software & Hi-Tech",
+        name: "Application Development",
         color: "bg-rose-400",
         image: "telecom",
-        path: "/industries/software",
+        path: "/services/application-development",
     },
     {
         name: "Telecom & Media",
         color: "bg-lime-300",
         image: "media",
-        path: "/industries/telecom",
+        path: "/services/bpo",
     },
     {
-        name: "Consumer Tech",
+        name: "Digital Marketing",
         color: "bg-indigo-400",
         image: "leadspace-consumer-tech",
-        path: "/industries/consumer",
+        path: "/solutions/digital-marketing",
     },
 ];
 

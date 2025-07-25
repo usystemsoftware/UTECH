@@ -38,7 +38,7 @@ export default function Construction() {
 
             {/* Hero Section */}
             <HeroSection
-                backgroundImage='/assets/industries/construction/hero.jpeg'
+                backgroundImage='/assets/industries/construction/hero.avif'
                 title="Construction Software Development"
                 description="Empowering Excellence in Construction With Custom AI-Powered Solutions"
                 buttonText="Get Constructions Software Developers"

@@ -16,6 +16,7 @@ import HeadingSection from '@/custom/HeadingSection';
 import { readyWithUSstats } from '@/data/LandingData';
 import BubblesBackground from '@/components/BubblesBackground';
 import { gsap } from 'gsap';
+import { Link } from 'react-router-dom'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -150,10 +151,10 @@ export default function WorkWithUs() {
                 />
 
                 {/* Fixed scroll issue here */}
-                <div className="overflow-hidden w-full p-8">
+                <div className="overflow-hidden w-full p-3 md:p-8">
                     <div
                         ref={cardsRef}
-                        className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 cursor-pointer"
+                        className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 cursor-pointer"
                     >
                         {readyWithUSstats?.map((stat, index) => (
                             <motion.div
@@ -209,9 +210,11 @@ export default function WorkWithUs() {
                         <TypographyLead>
                             We’re here to help you solve your problems!
                         </TypographyLead>
-                        <Button className="w-fit">
-                            Let’s connect!
-                        </Button>
+                        <Link to='/contact-us'>
+                            <Button className="w-fit">
+                                Let’s connect!
+                            </Button>
+                        </Link>
                     </div>
 
                     <div className="space-y-4 md:col-span-5">

@@ -148,3 +148,83 @@ export const facilityFeatures = [
     },
 ];
 
+export const companyHighlights = [
+    {
+        title: "Multi-Round Hiring Process",
+        description:
+            "We have a five-round hiring process that includes a thorough assessment of candidates’ service acumen and logical knowledge. This is followed by three rounds of face-to-face interviews. The hiring process concludes with a final HR round and a rigorous background and verification check.",
+        icon: "UserCheck",
+    },
+    {
+        title: "100% In-House Staff",
+        description:
+            "Our employees are all in-house. No subcontractors. No hassle of managing multiple vendors, as you are working with a unified team with operational control and organizational standards. This allows us to maintain strong work continuity and high efficiency.",
+        icon: "Users",
+    },
+    {
+        title: "Soft-Skills Training",
+        description:
+            "We have in-house soft skills training to ensure that our talent has top-notch interpersonal skills to complement their technical abilities. This training ensures greater teamwork and productivity while also instilling leadership qualities in team members. Chetu’s employee retention rate is higher than the industry average.",
+        icon: "MessageSquareHeart",
+    },
+    {
+        title: "Accountability",
+        description:
+            "Keeping open communication is a high priority for us. We provide real-time collaborative communication via platforms like Skype, Slack, and Confluence. We work closely and maintain transparent interactions to ensure reliability and accuracy in our work. Accountability is an integral part of our company culture.",
+        icon: "ShieldCheck",
+    },
+];
+
+export const companyHighlights2 = [
+    {
+        title: "Multi-Round Hiring Process",
+        description:
+            "We have a five-round hiring process that includes a thorough assessment of candidates’ service acumen and logical knowledge. This is followed by three rounds of face-to-face interviews. The hiring process concludes with a final HR round and a rigorous background and verification check.",
+        icon: "UserCheck",
+    },
+    {
+        title: "100% In-House Staff",
+        description:
+            "Our employees are all in-house. No subcontractors. No hassle of managing multiple vendors, as you are working with a unified team with operational control and organizational standards. This allows us to maintain strong work continuity and high efficiency.",
+        icon: "Users",
+    },
+    {
+        title: "Soft-Skills Training",
+        description:
+            "We have in-house soft skills training to ensure that our talent has top-notch interpersonal skills to complement their technical abilities. This training ensures greater teamwork and productivity while also instilling leadership qualities in team members. Chetu’s employee retention rate is higher than the industry average.",
+        icon: "MessageSquareHeart",
+    },
+    {
+        title: "Accountability",
+        description:
+            "Keeping open communication is a high priority for us. We provide real-time collaborative communication via platforms like Skype, Slack, and Confluence. We work closely and maintain transparent interactions to ensure reliability and accuracy in our work. Accountability is an integral part of our company culture.",
+        icon: "ShieldCheck",
+    },
+];
+
+export const technicalSolutions = [
+    {
+        title: "Process Automation",
+        description:
+            "We automate repetitive business processes with intelligent technologies such as robotic process automation (RPA). Our custom-developed RPA tools are capable of intelligent document recognition, data extraction, excel automation, and image processing.",
+        icon: "Bot",
+    },
+    {
+        title: "Development & Implementation",
+        description:
+            "Our experts can develop and implement custom technical solutions to fit your business needs. We provide continuous integration and delivery as well as monitoring, alerting, and incident response to maintain the health of your IT system.",
+        icon: "Code2",
+    },
+    {
+        title: "DevOps Success Teams",
+        description:
+            "Our DevOps specialists provide not only tangible technical solutions but consulting services that include planning and assessment, QA testing, and onboarding. We have the personnel and resources to ensure success in meeting your IT infrastructure needs.",
+        icon: "ServerCog",
+    },
+    {
+        title: "IT Infrastructure Support",
+        description:
+            "We provide outsourced infrastructure support services for enhanced scalability. This includes cross-platform support for both cloud-based and on-premises databases, using machine learning technologies to enhance database management systems. We streamline day-to-day user management, access & security protocols, and much more.",
+        icon: "Network",
+    },
+];

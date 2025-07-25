@@ -1,38 +1,56 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Link } from "react-router-dom";
 import {
   TypographyH5,
+  TypographyH4,
   TypographyMuted,
   TypographySmall,
 } from "@/custom/Typography";
 import { Button } from "@/components/ui/button";
 import { Navlinks } from "@/data/Navlinks";
 import { IconRenderer } from "@/custom/IconRenderer";
+import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 
-const NavbarDesktop = () => {
+// Responsive NavbarDesktop with adaptive dropdown grid
+const NavbarDesktop = ({ setIsCommandOpen }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
+  // Helper: chunk array for grid columns
+  const chunkArray = (arr, size) => {
+    const res = [];
+    for (let i = 0; i < arr.length; i += size) {
+      res.push(arr.slice(i, i + size));
+    }
+    return res;
+  };
+
+  // Responsive columns for dropdowns
+  const getDropdownColumns = (itemsLength) => {
+    if (itemsLength >= 18) return 4;
+    if (itemsLength >= 10) return 3;
+    if (itemsLength >= 5) return 2;
+    return 1;
+  };
+
   return (
-    <motion.div
-      className="w-full fixed top-0 z-40 h-20 bg-card"
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.9, ease: "easeOut" }}
-    >
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
+    <div className="w-full fixed top-0 z-40 h-20 bg-card shadow">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center h-20">
         {/* Logo */}
-        <Link to="/">
+        <Link to="/" className="flex items-center relative">
           <img
             loading="lazy"
-            src="/logo.png"
+            src="/logo-2.png"
             alt="Logo"
-            className="h-10 w-38"
+            className="h-8"
           />
+          <TypographyH4 className="absolute left-8 bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent">
+            Technology
+          </TypographyH4>
         </Link>
+
         {/* Navigation */}
-        <nav className="flex items-center gap-8 relative z-40">
+        <nav className="flex items-center gap-4 sm:gap-8 relative lg:ml-20 z-40">
           {Navlinks.map((item, index) => (
             <div
               key={index}
@@ -40,7 +58,12 @@ const NavbarDesktop = () => {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <TypographySmall className="cursor-pointer hover:text-primary">
+              <TypographySmall
+                className={`cursor-pointer hover:text-primary pb-1 uppercase text-md font-semibold transition-all duration-200 ${hoveredIndex === index
+                  ? "border-b-2 border-primary text-primary"
+                  : ""
+                  }`}
+              >
                 {item.title}
               </TypographySmall>
             </div>
@@ -48,110 +71,127 @@ const NavbarDesktop = () => {
           <Link
             to="book-call"
             className="group"
-            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseEnter={() => setHoveredIndex(null)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <TypographySmall className="cursor-pointer hover:text-primary">
+            <TypographySmall className="cursor-pointer uppercase text-md font-semibold hover:text-primary">
               Book Call
             </TypographySmall>
           </Link>
           <Link
             to="contact-us"
             className="group"
-            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseEnter={() => setHoveredIndex(null)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
-            <TypographySmall className="cursor-pointer hover:text-primary">
+            <TypographySmall className="cursor-pointer uppercase text-md font-semibold hover:text-primary">
               Contact Us
             </TypographySmall>
           </Link>
         </nav>
 
         {/* Right Actions */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-2 sm:gap-3">
+          <div
+            className="h-8.5 flex items-center gap-2 rounded-md px-2 bg-accent relative"
+            onClick={() => setIsCommandOpen(true)}
+          >
+            <IconRenderer name="Search" size={16} className="cursor-pointer text-muted-foreground" />
+            <input
+              placeholder="Search documentation"
+              className="outline-none text-sm bg-transparent w-28 sm:w-44 cursor-pointer"
+              readOnly
+            />
+          </div>
           <ModeToggle />
-          <IconRenderer name="Search" size={22} className="cursor-pointer" />
-          <Button size="sm">
+          <Button size="xs" className="py-1 px-2">
             <IconRenderer name="HelpCircle" />
-            Let's Talk !
+            <span className="hidden sm:inline">&nbsp;Let's Talk !</span>
           </Button>
         </div>
       </div>
+
       {/* Dropdown */}
-      <AnimatePresence>
-        {hoveredIndex !== null &&
-          (Navlinks[hoveredIndex].items || Navlinks[hoveredIndex].groups) && (
-            <motion.div
-              key="dropdown"
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.25, ease: "easeInOut" }}
-              onMouseEnter={() => setHoveredIndex(hoveredIndex)}
-              onMouseLeave={() => setHoveredIndex(null)}
-              className="fixed left-0 top-20 w-screen bg-card shadow-lg z-40"
-            >
-              <div className="flex flex-wrap justify-evenly sm:max-w-7xl mx-auto px-8 py-8 gap-6">
-                {Navlinks[hoveredIndex].items?.map((option, idx) => (
-                  <motion.div
-                    key={idx}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: idx * 0.03, duration: 0.2 }}
-                  >
-                    <Link
-                      onClick={() => setHoveredIndex(null)}
-                      to={option.href}
-                      className="flex items-center gap-3 transition w-60"
+      {hoveredIndex !== null &&
+        (Navlinks[hoveredIndex].items || Navlinks[hoveredIndex].groups) && (
+          <div
+            className="absolute left-0 top-14 w-full bg-card shadow-lg z-30 border-border"
+            onMouseEnter={() => setHoveredIndex(hoveredIndex)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            {/* Items Dropdown */}
+            {Navlinks[hoveredIndex].items && (
+              <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 py-6">
+                {(() => {
+                  const items = Navlinks[hoveredIndex].items;
+                  const columns = getDropdownColumns(items.length);
+                  const chunked = chunkArray(items, Math.ceil(items.length / columns));
+                  return (
+                    <div
+                      className={`grid gap-6 ${columns === 4
+                        ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+                        : columns === 3
+                          ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+                          : columns === 2
+                            ? "grid-cols-1 sm:grid-cols-2"
+                            : "grid-cols-1"
+                        }`}
                     >
-                      <IconRenderer name={option.icon} />
-                      <TypographyMuted className="hover:text-primary">
-                        {option.label}
-                      </TypographyMuted>
-                    </Link>
-                  </motion.div>
-                ))}
-                {Navlinks[hoveredIndex].groups?.map((group, gIdx) => (
-                  <motion.div
-                    key={gIdx}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: gIdx * 0.03 }}
-                    className="w-60"
-                  >
-                    <TypographyH5
-                      className={`${group.group === "" ? "mb-10" : "mb-4"}`}
-                    >
-                      {group.group}
-                    </TypographyH5>
-                    <ul className="space-y-4">
-                      {group.links.map((link, lIdx) => (
-                        <motion.li
-                          key={lIdx}
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 0.05 * lIdx, duration: 0.5 }}
-                        >
-                          <Link
-                            onClick={() => setHoveredIndex(null)}
-                            to={link.href}
-                            className="flex items-center gap-2 text-sm hover:text-primary transition"
-                          >
-                            <IconRenderer name={link.icon} />
-                            <TypographyMuted className="hover:text-primary">
-                              {link.label}
-                            </TypographyMuted>
-                          </Link>
-                        </motion.li>
+                      {chunked.map((col, colIdx) => (
+                        <div key={colIdx} >
+                          {col.map((option, idx) => (
+                            <FadeInWhenVisible key={idx} delay={idx * 0.04}>
+                              <Link
+                                onClick={() => setHoveredIndex(null)}
+                                to={option.href}
+                                className="flex items-center gap-3 transition hover:text-primary hover:underline underline-offset-4 p-3 rounded-md hover:bg-accent"
+                              >
+                                <IconRenderer name={option.icon} />
+                                <TypographyMuted className="hover:text-primary">{option.label}</TypographyMuted>
+                              </Link>
+                            </FadeInWhenVisible>
+                          ))}
+                        </div>
                       ))}
-                    </ul>
-                  </motion.div>
-                ))}
+                    </div>
+                  );
+                })()}
               </div>
-            </motion.div>
-          )}
-      </AnimatePresence>
-    </motion.div>
+            )}
+
+            {/* Groups Dropdown */}
+            {Navlinks[hoveredIndex].groups && (
+              <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 py-6">
+                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+                  {Navlinks[hoveredIndex].groups.map((group, gIdx) => (
+                    <FadeInWhenVisible key={gIdx} delay={gIdx * 0.08} className="w-full">
+                      {group.group && (
+                        <TypographyH5 className="mb-4">{group.group}</TypographyH5>
+                      )}
+                      <ul>
+                        {group.links.map((link, lIdx) => (
+                          <FadeInWhenVisible key={lIdx} delay={lIdx * 0.07}>
+                            <Link
+                              onClick={() => setHoveredIndex(null)}
+                              to={link.href}
+                              className="flex items-center gap-2 text-sm hover:text-primary transition p-3 rounded-md hover:bg-accent"
+                            >
+                              <IconRenderer name={link.icon} />
+                              <TypographyMuted className="hover:text-primary">
+                                {link.label}
+                              </TypographyMuted>
+                            </Link>
+                          </FadeInWhenVisible>
+                        ))}
+                      </ul>
+                    </FadeInWhenVisible>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+    </div>
   );
 };
 

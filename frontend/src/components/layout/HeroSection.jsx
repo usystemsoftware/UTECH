@@ -30,13 +30,13 @@ export const HeroSection = () => {
       <div className="md:container mx-auto relative z-10">
         <div className="grid lg:grid-cols-12 items-center">
           <motion.div className="space-y-8 lg:col-span-8">
-            <div className="flex justify-center mt-3 items-center w-full">
+            <div className="flex mt-3 items-center w-full">
               <TypographySmall className="p-3 bg-gradient-to-r from-orange-100 to-red-100 text-orange-700 rounded-full text-sm border border-orange-200">
                 🚀 Digital Engineering & Enterprise Modernization
               </TypographySmall>
             </div>
             <motion.h1
-              className="text-xl lg:text-4xl font-bold text-gray-900 leading-tight transform-3d"
+              className="text-xl lg:text-4xl font-bold leading-tight transform-3d"
             >
               Accelerate Your
               <span className="block bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent">
@@ -58,7 +58,7 @@ export const HeroSection = () => {
                 </Button>
               </Link>
               <Link to='/book-call'>
-                <Button className="bg-[#111111] w-full hover:bg-[#111111]">
+                <Button variant="secondary">
                   Book Call
                   <Video />
                 </Button>
@@ -84,13 +84,13 @@ export const HeroSection = () => {
           </motion.div>
 
           {/* right side logo */}
-          {/* <div className="lg:col-span-4 cursor-pointer perspective-[1000px]">
+          <div className="lg:col-span-4 md:block hidden cursor-pointer perspective-[1000px]">
             <img
-              src="https://pngtree.com/freepng/letter-u-3d-company-logo-design_4173434.html"
+              src="/logo-2.png"
               alt="U Logo"
-              className="h-[75vh] w-full transition-transform duration-700 hover:scale-105"
+              className="h-[60vh] w-[80%] mx-auto"
             />
-          </div> */}
+          </div>
 
         </div>
       </div>

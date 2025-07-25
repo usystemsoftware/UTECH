@@ -1,6 +1,6 @@
 import PageLayout from "@/custom/PageLayout";
 import { useState } from "react";
-import { Label } from "@/components/ui/Label";
+import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import {
   Headline,

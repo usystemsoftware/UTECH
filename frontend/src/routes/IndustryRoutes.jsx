@@ -4,7 +4,8 @@ import RealEstate from "@/pages/industries/real-estate/RealEstate";
 import Construction from "@/pages/industries/construction/Construction";
 import Healthcare from "@/pages/industries/healthcare/Healthcare";
 import HospitalandTravelling from "@/pages/industries/hostipal-travel/HospitalandTravelling";
-import Aviation from "../pages/industries/Aviation/Aviation";
+import Aviation from "@/pages/industries/Aviation/Aviation";
+import HCM from "@/pages/industries/hcm/HCM";
 
 export const IndustryRoutes = [
     { path: "/industries/banking", element: <Banking /> },
@@ -14,4 +15,5 @@ export const IndustryRoutes = [
     { path: "/industries/real-estate", element: <RealEstate /> },
     { path: "/industries/healthcare", element: <Healthcare /> },
     { path: "/industries/hospitality-travel", element: <HospitalandTravelling /> },
+    { path: "/industries/hcm", element: <HCM /> },
 ];

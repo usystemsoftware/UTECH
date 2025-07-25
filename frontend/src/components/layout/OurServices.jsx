@@ -31,7 +31,7 @@ export default function OurServices() {
           description="Comprehensive digital transformation services to accelerate your business growth."
         />
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:px-6 mb-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:px-6 mb-8">
           {services?.map((service, index) => (
             <motion.div
               key={index}
