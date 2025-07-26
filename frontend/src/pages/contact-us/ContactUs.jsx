@@ -163,7 +163,7 @@ const ContactUs = () => {
           </details>
 
           <details className="border-b border-primary py-2">
-            <summary className="font-semibold text-lg cursor-pointer">
+            <summary className="font-semibold text-lg text-primary cursor-pointer">
               Estan Asia Specifics
             </summary>
             <div className="mt-3 space-y-2">

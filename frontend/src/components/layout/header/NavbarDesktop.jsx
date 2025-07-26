@@ -12,11 +12,11 @@ import { Navlinks } from "@/data/Navlinks";
 import { IconRenderer } from "@/custom/IconRenderer";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 
-// Responsive NavbarDesktop with adaptive dropdown grid
+// Responsive NavbarDesktop with fixed 4-column dropdowns
 const NavbarDesktop = ({ setIsCommandOpen }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
-  // Helper: chunk array for grid columns
+  // Helper: chunk array into 4 parts
   const chunkArray = (arr, size) => {
     const res = [];
     for (let i = 0; i < arr.length; i += size) {
@@ -25,25 +25,12 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
     return res;
   };
 
-  // Responsive columns for dropdowns
-  const getDropdownColumns = (itemsLength) => {
-    if (itemsLength >= 18) return 4;
-    if (itemsLength >= 10) return 3;
-    if (itemsLength >= 5) return 2;
-    return 1;
-  };
-
   return (
     <div className="w-full fixed top-0 z-40 h-20 bg-card shadow">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center relative">
-          <img
-            loading="lazy"
-            src="/logo-2.png"
-            alt="Logo"
-            className="h-8"
-          />
+          <img loading="lazy" src="/logo-2.png" alt="Logo" className="h-8" />
           <TypographyH4 className="absolute left-8 bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent">
             Technology
           </TypographyH4>
@@ -68,22 +55,12 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
               </TypographySmall>
             </div>
           ))}
-          <Link
-            to="book-call"
-            className="group"
-            onMouseEnter={() => setHoveredIndex(null)}
-            onMouseLeave={() => setHoveredIndex(null)}
-          >
+          <Link to="book-call" className="group">
             <TypographySmall className="cursor-pointer uppercase text-md font-semibold hover:text-primary">
               Book Call
             </TypographySmall>
           </Link>
-          <Link
-            to="contact-us"
-            className="group"
-            onMouseEnter={() => setHoveredIndex(null)}
-            onMouseLeave={() => setHoveredIndex(null)}
-          >
+          <Link to="contact-us" className="group">
             <TypographySmall className="cursor-pointer uppercase text-md font-semibold hover:text-primary">
               Contact Us
             </TypographySmall>
@@ -124,21 +101,11 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
               <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 py-6">
                 {(() => {
                   const items = Navlinks[hoveredIndex].items;
-                  const columns = getDropdownColumns(items.length);
-                  const chunked = chunkArray(items, Math.ceil(items.length / columns));
+                  const chunked = chunkArray(items, Math.ceil(items.length / 4));
                   return (
-                    <div
-                      className={`grid gap-6 ${columns === 4
-                        ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-                        : columns === 3
-                          ? "grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
-                          : columns === 2
-                            ? "grid-cols-1 sm:grid-cols-2"
-                            : "grid-cols-1"
-                        }`}
-                    >
+                    <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                       {chunked.map((col, colIdx) => (
-                        <div key={colIdx} >
+                        <div key={colIdx}>
                           {col.map((option, idx) => (
                             <FadeInWhenVisible key={idx} delay={idx * 0.04}>
                               <Link
@@ -147,7 +114,9 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
                                 className="flex items-center gap-3 transition hover:text-primary hover:underline underline-offset-4 p-3 rounded-md hover:bg-accent"
                               >
                                 <IconRenderer name={option.icon} />
-                                <TypographyMuted className="hover:text-primary">{option.label}</TypographyMuted>
+                                <TypographyMuted className="hover:text-primary">
+                                  {option.label}
+                                </TypographyMuted>
                               </Link>
                             </FadeInWhenVisible>
                           ))}
@@ -156,37 +125,6 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
                     </div>
                   );
                 })()}
-              </div>
-            )}
-
-            {/* Groups Dropdown */}
-            {Navlinks[hoveredIndex].groups && (
-              <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 py-6">
-                <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-                  {Navlinks[hoveredIndex].groups.map((group, gIdx) => (
-                    <FadeInWhenVisible key={gIdx} delay={gIdx * 0.08} className="w-full">
-                      {group.group && (
-                        <TypographyH5 className="mb-4">{group.group}</TypographyH5>
-                      )}
-                      <ul>
-                        {group.links.map((link, lIdx) => (
-                          <FadeInWhenVisible key={lIdx} delay={lIdx * 0.07}>
-                            <Link
-                              onClick={() => setHoveredIndex(null)}
-                              to={link.href}
-                              className="flex items-center gap-2 text-sm hover:text-primary transition p-3 rounded-md hover:bg-accent"
-                            >
-                              <IconRenderer name={link.icon} />
-                              <TypographyMuted className="hover:text-primary">
-                                {link.label}
-                              </TypographyMuted>
-                            </Link>
-                          </FadeInWhenVisible>
-                        ))}
-                      </ul>
-                    </FadeInWhenVisible>
-                  ))}
-                </div>
               </div>
             )}
           </div>

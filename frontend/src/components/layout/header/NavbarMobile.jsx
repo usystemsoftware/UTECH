@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Input } from "@/components/ui/input";
-import { TypographyH4 } from "@/custom/Typography";
+import { TypographyH4, TypographySmall } from "@/custom/Typography";
 import { Navlinks } from "@/data/Navlinks";
 import { IconRenderer } from "@/custom/IconRenderer";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
@@ -179,8 +179,22 @@ const NavbarMobile = () => {
           </div>
 
           {/* Footer (Fixed Bottom) */}
-          <div className="absolute bottom-0 left-0 pl-14 w-full border-t px-4 py-1 bg-card text-xs text-muted-foreground flex items-center gap-2">
-            <ModeToggle />
+          <div className="absolute bottom-0 left-0 pl-14 w-full border-t px-4 py-2 bg-card text-xs text-muted-foreground flex items-center gap-2">
+            <div className="flex justify-between items-center">
+              <ModeToggle />
+              <div className="right-6 absolute space-x-8">
+                <Link onClick={() => setOpen(false)} to="book-call" className="group bg-primary text-white p-2 rounded">
+                  <TypographySmall className="cursor-pointer uppercase text-md font-semibold hover:text-primary">
+                    Book Call
+                  </TypographySmall>
+                </Link>
+                <Link onClick={() => setOpen(false)} to="contact-us" className="group bg-secondary p-2 rounded">
+                  <TypographySmall className="cursor-pointer uppercase text-md font-semibold hover:text-primary">
+                    Contact Us
+                  </TypographySmall>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       )}

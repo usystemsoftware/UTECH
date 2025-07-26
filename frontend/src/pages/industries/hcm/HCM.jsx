@@ -100,7 +100,7 @@ export default function HCM() {
                     {/* Right-side Image */}
                     <FadeInWhenVisible>
                         <img
-                            src="/assets/industries/hcm/chetus-workforce-management-software-development-services.png"
+                            src="/assets/industries/hcm/U Techs-workforce-management-software-development-services.png"
                             alt="Accounting Dashboard"
                             loading="lazy"
                             className="w-96 mx-auto"

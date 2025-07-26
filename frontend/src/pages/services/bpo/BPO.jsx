@@ -58,7 +58,7 @@ export default function BPO() {
             <PageLayout className="py-16 space-y-8">
                 <Headline
                     title='Streamline and automate your non-core processes with our BPO and digital transformation services.'
-                    description='Chetu provides front-office and back-office support services to ensure your business runs smoothly as you focus on the core aspects of your company.'
+                    description='U Tech provides front-office and back-office support services to ensure your business runs smoothly as you focus on the core aspects of your company.'
                 />
 
                 <div className="flex flex-col sm:flex-row justify-center gap-10">
@@ -190,7 +190,7 @@ export default function BPO() {
             <PageLayout className="space-y-10 py-16 text-center">
                 <Headline
                     title='Top Talent'
-                    description='Chetu recruits top talent that goes through a rigorous hiring process followed by thorough training and development to provide optimal service.'
+                    description='U Tech recruits top talent that goes through a rigorous hiring process followed by thorough training and development to provide optimal service.'
                 />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                     <FeaturesList features={companyHighlights.slice(0, 2)} fadeUp={fadeUp} />

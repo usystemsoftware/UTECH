@@ -2,7 +2,7 @@ export const bpoServices = [
     {
         title: "Specialized Teams",
         description:
-            "Chetu’s industry-specific support teams are comprised of dedicated experts with decades of specialized experience. We stay updated on trends, regulations, and processes to deliver optimal solutions.",
+            "U Tech’s industry-specific support teams are comprised of dedicated experts with decades of specialized experience. We stay updated on trends, regulations, and processes to deliver optimal solutions.",
         icon: "Users",
     },
     {
@@ -24,7 +24,7 @@ export const servicesData = [
         icon: "Headset", // customer support symbol
         title: "Customer Service",
         description:
-            "Chetu can provide optimal support for your organization’s customer service needs. Our specialists will help you gain and maintain customer loyalty by providing scalable world-class customer support services as we handle your customer queries received through all channels of communication.",
+            "U Tech can provide optimal support for your organization’s customer service needs. Our specialists will help you gain and maintain customer loyalty by providing scalable world-class customer support services as we handle your customer queries received through all channels of communication.",
     },
     {
         icon: "Users", // HR and people management
@@ -36,7 +36,7 @@ export const servicesData = [
         icon: "FileCheck2", // documents/claims
         title: "Claims Processing",
         description:
-            "Chetu can optimize your claims processing with a streamlined workflow that includes automation. By taking on the large quantities of data you would have to deal with to process a high volume of claims, we can help you reduce operational costs and save time.",
+            "U Tech can optimize your claims processing with a streamlined workflow that includes automation. By taking on the large quantities of data you would have to deal with to process a high volume of claims, we can help you reduce operational costs and save time.",
     },
     {
         icon: "ShieldCheck", // compliance
@@ -144,7 +144,7 @@ export const facilityFeatures = [
         icon: "Server", // For infrastructure reliability
         title: "Reliability",
         description:
-            "Chetu’s facilities have fast, reliable Internet connections with a 24/7 admin team. We also have backup generators to withstand outages and keep our operations going at full strength and efficiency. We offer real-time communication along with both proactive support and troubleshooting to resolve issues.",
+            "U Tech’s facilities have fast, reliable Internet connections with a 24/7 admin team. We also have backup generators to withstand outages and keep our operations going at full strength and efficiency. We offer real-time communication along with both proactive support and troubleshooting to resolve issues.",
     },
 ];
 
@@ -164,7 +164,7 @@ export const companyHighlights = [
     {
         title: "Soft-Skills Training",
         description:
-            "We have in-house soft skills training to ensure that our talent has top-notch interpersonal skills to complement their technical abilities. This training ensures greater teamwork and productivity while also instilling leadership qualities in team members. Chetu’s employee retention rate is higher than the industry average.",
+            "We have in-house soft skills training to ensure that our talent has top-notch interpersonal skills to complement their technical abilities. This training ensures greater teamwork and productivity while also instilling leadership qualities in team members. U Tech’s employee retention rate is higher than the industry average.",
         icon: "MessageSquareHeart",
     },
     {
@@ -191,7 +191,7 @@ export const companyHighlights2 = [
     {
         title: "Soft-Skills Training",
         description:
-            "We have in-house soft skills training to ensure that our talent has top-notch interpersonal skills to complement their technical abilities. This training ensures greater teamwork and productivity while also instilling leadership qualities in team members. Chetu’s employee retention rate is higher than the industry average.",
+            "We have in-house soft skills training to ensure that our talent has top-notch interpersonal skills to complement their technical abilities. This training ensures greater teamwork and productivity while also instilling leadership qualities in team members. U Tech’s employee retention rate is higher than the industry average.",
         icon: "MessageSquareHeart",
     },
     {
