@@ -124,7 +124,7 @@ const RealEstate = () => {
           {realEstateSolutions?.map((item, index) => (
             <FadeInWhenVisible key={index} delay={index * 0.2}>
               <div className={`flex items-start gap-4 ${item.reverse ? "lg:justify-end lg:text-right flex-row-reverse" : ""}`}>
-                <IconRenderer name={item.icon} size={36} className="text-primary flex-shrink-0" />
+                <IconRenderer name={item.icon} size={40} className="text-primary flex-shrink-0" />
                 <div>
                   <TypographyH5>{item.title}</TypographyH5>
                   <TypographyMuted>{item.description}</TypographyMuted>
@@ -172,7 +172,7 @@ const RealEstate = () => {
         </FadeInWhenVisible>
       </section>
 
-      {/* === Banking Software Support Section === */}
+      {/* === Banking Software Support Section ==g= */}
       <PageLayout className="py-16 space-y-8 text-center">
         <Headline
           title='Banking Software Support'
@@ -185,7 +185,7 @@ const RealEstate = () => {
           {realEstateFeatures?.map((item, index) => (
             <FadeInWhenVisible key={index} delay={index * 0.2}>
               <div className={`flex items-start gap-4 ${item.reverse ? "lg:justify-end lg:text-right flex-row-reverse" : ""}`}>
-                <IconRenderer name={item.icon} size={36} className="text-primary flex-shrink-0" />
+                <IconRenderer name={item.icon} size={40} className="text-primary flex-shrink-0" />
                 <div>
                   <TypographyH5>{item.title}</TypographyH5>
                   <TypographyMuted>{item.description}</TypographyMuted>

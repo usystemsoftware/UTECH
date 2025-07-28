@@ -6,7 +6,7 @@ import { IconRenderer } from "@/custom/IconRenderer";
 export const FeaturesList = ({
     features = [],
     fadeUp,
-    iconSize = 28,
+    iconSize = 40,
     grid = false,
     image,
     imageClass = "",
