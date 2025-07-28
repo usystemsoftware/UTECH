@@ -15,7 +15,7 @@ import dayjs from "dayjs";
 import BookUserSubmiteDetails from "./BookUserSubmiteDetails";
 
 const timeSlots = {
-  "2025-07-23": {
+  "2025-07-30": {
     Morning: ["9:00 AM", "10:30 AM"],
     Afternoon: ["1:00 PM"],
     Evening: [],
@@ -27,7 +27,7 @@ const timeSlots = {
     Evening: [],
     Night: []
   },
-  "2025-07-25": {
+  "2025-08-02": {
     Morning: ["8:30 AM", "9:15 AM"],
     Afternoon: ["2:00 PM", "3:00 PM"],
     Evening: ["6:00 PM"],

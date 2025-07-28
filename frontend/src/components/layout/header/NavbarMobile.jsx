@@ -56,8 +56,17 @@ const NavbarMobile = () => {
     <div className="md:hidden fixed top-0 left-0 z-50 w-full bg-background shadow-md overflow-hidden">
       {/* Top Bar */}
       <div className="flex items-center justify-between px-4 py-4 border-b">
-        <Link to="/" className="flex items-center relative">
-          <img loading="lazy" src="/small-logo.png" alt="Logo" className="h-7 w-6" />
+        <Link
+          onClick={() => setOpen((prev) => !prev)}
+          to="/"
+          className="flex items-center relative"
+        >
+          <img
+            loading="lazy"
+            src="/small-logo.png"
+            alt="Logo"
+            className="h-7 w-6"
+          />
           <TypographyH4 className="absolute left-7 text-lg top-0.5 bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent">
             Technology
           </TypographyH4>
@@ -95,10 +104,11 @@ const NavbarMobile = () => {
                     onClick={() =>
                       setOpenMenuIndex((prev) => (prev === idx ? null : idx))
                     }
-                    className={`flex w-full items-center justify-between px-3 py-2 text-sm font-medium rounded-md ${sectionMatch || isOpen
-                      ? "bg-blue-100 text-blue-800"
-                      : "text-muted-foreground"
-                      }`}
+                    className={`flex w-full items-center justify-between px-3 py-2 text-sm font-medium rounded-md ${
+                      sectionMatch || isOpen
+                        ? "bg-blue-100 text-blue-800"
+                        : "text-muted-foreground"
+                    }`}
                   >
                     <span>{highlightMatch(section.title, searchTerm)}</span>
                     <IconRenderer
@@ -124,10 +134,11 @@ const NavbarMobile = () => {
                                 setOpen(false);
                                 setSelectedLink(item.href);
                               }}
-                              className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${selectedLink === item.href
-                                ? "bg-blue-100 text-blue-800 font-medium"
-                                : "text-muted-foreground hover:text-primary"
-                                }`}
+                              className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${
+                                selectedLink === item.href
+                                  ? "bg-blue-100 text-blue-800 font-medium"
+                                  : "text-muted-foreground hover:text-primary"
+                              }`}
                             >
                               <IconRenderer name={item?.icon} size={16} />
                               {highlightMatch(item.label, searchTerm)}
@@ -159,10 +170,11 @@ const NavbarMobile = () => {
                                     setOpen(false);
                                     setSelectedLink(link.href);
                                   }}
-                                  className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${selectedLink === link.href
-                                    ? "bg-blue-100 text-blue-800 font-medium"
-                                    : "text-muted-foreground hover:text-primary"
-                                    }`}
+                                  className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${
+                                    selectedLink === link.href
+                                      ? "bg-blue-100 text-blue-800 font-medium"
+                                      : "text-muted-foreground hover:text-primary"
+                                  }`}
                                 >
                                   {highlightMatch(link.label, searchTerm)}
                                 </Link>
@@ -183,12 +195,20 @@ const NavbarMobile = () => {
             <div className="flex justify-between items-center">
               <ModeToggle />
               <div className="right-6 absolute space-x-8">
-                <Link onClick={() => setOpen(false)} to="book-call" className="group bg-primary text-white p-2 rounded">
+                <Link
+                  onClick={() => setOpen(false)}
+                  to="book-call"
+                  className="group bg-primary text-white p-2 rounded"
+                >
                   <TypographySmall className="cursor-pointer uppercase text-md font-semibold hover:text-primary">
                     Book Call
                   </TypographySmall>
                 </Link>
-                <Link onClick={() => setOpen(false)} to="contact-us" className="group bg-secondary p-2 rounded">
+                <Link
+                  onClick={() => setOpen(false)}
+                  to="contact-us"
+                  className="group bg-secondary p-2 rounded"
+                >
                   <TypographySmall className="cursor-pointer uppercase text-md font-semibold hover:text-primary">
                     Contact Us
                   </TypographySmall>

@@ -4,17 +4,25 @@ import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { TypographyH3, TypographyH4 } from "@/custom/Typography";
-import { version } from "../../../package.json";
 
 const footerLinks = [
   {
     title: "Services",
     links: [
       { label: "API Development", to: "/services/api-development" },
-      { label: "Aplication Development", to: "/services/application-development" },
+      {
+        label: "Aplication Development",
+        to: "/services/application-development",
+      },
       { label: "QA Testing", to: "/services/qa-testing" },
-      { label: "Digital Transformation", to: "/services/digital-transformation" },
-      { label: "Application Maintenance", to: "/services/application-maintenance" },
+      {
+        label: "Digital Transformation",
+        to: "/services/digital-transformation",
+      },
+      {
+        label: "Application Maintenance",
+        to: "/services/application-maintenance",
+      },
     ],
   },
   {
@@ -40,10 +48,22 @@ const footerLinks = [
 ];
 
 const socialIcons = [
-  { icon: "facebook", url: "https://www.facebook.com/AryaSoft1", label: "Facebook" },
-  { icon: "instagram", url: "https://www.instagram.com/usystem_software", label: "Instagram" },
+  {
+    icon: "facebook",
+    url: "https://www.facebook.com/AryaSoft1",
+    label: "Facebook",
+  },
+  {
+    icon: "instagram",
+    url: "https://www.instagram.com/usystem_software",
+    label: "Instagram",
+  },
   { icon: "twitter", url: "#", label: "Twitter" },
-  { icon: "linkedin", url: "https://in.linkedin.com/company/umbarkar-technology-india-pvt-ltd", label: "LinkedIn" },
+  {
+    icon: "linkedin",
+    url: "https://in.linkedin.com/company/umbarkar-technology-india-pvt-ltd",
+    label: "LinkedIn",
+  },
 ];
 
 export const Footer = () => {
@@ -119,10 +139,9 @@ export const Footer = () => {
       </div>
 
       <div className="mt-10 text-center border-t border-white/10 pt-6 text-sm text-gray-400">
-        © {new Date().getFullYear()} Umbarkar Technology India Pvt Ltd. All rights reserved.<br />
-        <span>
-          Version:{version}
-        </span>
+        © {new Date().getFullYear()} Umbarkar Technology India Pvt Ltd. All
+        rights reserved.
+        <br />
       </div>
     </footer>
   );

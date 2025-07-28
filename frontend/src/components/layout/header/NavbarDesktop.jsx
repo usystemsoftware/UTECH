@@ -30,7 +30,12 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center relative">
-          <img loading="lazy" src="/small-logo.png" alt="Logo" className="h-8 w-7" />
+          <img
+            loading="lazy"
+            src="/small-logo.png"
+            alt="Logo"
+            className="h-8 w-7"
+          />
           <TypographyH4 className="absolute left-8 top-1 bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent">
             Technology
           </TypographyH4>
@@ -46,25 +51,16 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <TypographySmall
-                className={`cursor-pointer hover:text-primary pb-1 uppercase text-md font-semibold transition-all duration-200 ${hoveredIndex === index
-                  ? "border-b-2 border-primary text-primary"
-                  : ""
-                  }`}
+                className={`cursor-pointer hover:text-primary pb-1 uppercase text-md font-semibold transition-all duration-200 ${
+                  hoveredIndex === index
+                    ? "border-b-2 border-primary text-primary"
+                    : ""
+                }`}
               >
                 {item.title}
               </TypographySmall>
             </div>
           ))}
-          <Link to="book-call" className="group">
-            <TypographySmall className="cursor-pointer uppercase text-md font-semibold hover:text-primary">
-              Book Call
-            </TypographySmall>
-          </Link>
-          <Link to="contact-us" className="group">
-            <TypographySmall className="cursor-pointer uppercase text-md font-semibold hover:text-primary">
-              Contact Us
-            </TypographySmall>
-          </Link>
         </nav>
 
         {/* Right Actions */}
@@ -73,7 +69,11 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
             className="h-8.5 flex items-center gap-2 rounded-md px-2 bg-accent relative"
             onClick={() => setIsCommandOpen(true)}
           >
-            <IconRenderer name="Search" size={16} className="cursor-pointer text-muted-foreground" />
+            <IconRenderer
+              name="Search"
+              size={16}
+              className="cursor-pointer text-muted-foreground"
+            />
             <input
               placeholder="Search documentation"
               className="outline-none text-sm bg-transparent w-28 sm:w-44 cursor-pointer"
@@ -81,10 +81,12 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
             />
           </div>
           <ModeToggle />
-          <Button size="xs" className="py-1 px-2">
-            <IconRenderer name="HelpCircle" />
-            <span className="hidden sm:inline">&nbsp;Let's Talk !</span>
-          </Button>
+          <Link to="/book-call">
+            <Button size="xs" className="py-1 px-2">
+              <IconRenderer name="HelpCircle" />
+              <span className="hidden sm:inline">&nbsp;Let's Meet !</span>
+            </Button>
+          </Link>
         </div>
       </div>
 
@@ -101,7 +103,10 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
               <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 py-6">
                 {(() => {
                   const items = Navlinks[hoveredIndex].items;
-                  const chunked = chunkArray(items, Math.ceil(items.length / 4));
+                  const chunked = chunkArray(
+                    items,
+                    Math.ceil(items.length / 4)
+                  );
                   return (
                     <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                       {chunked.map((col, colIdx) => (

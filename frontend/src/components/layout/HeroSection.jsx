@@ -1,21 +1,16 @@
 import { Phone, Video } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import {
-  TypographyLead,
-  TypographySmall,
-} from "@/custom/Typography";
+import { TypographyLead, TypographySmall } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 
 export const HeroSection = () => {
-
   return (
     <AuroraBackground>
-      <PageLayout className="relative flex items-center justify-center overflow-hidden mt-20 sm:mt-0">
-
+      <PageLayout className="relative flex items-center justify-center overflow-hidden mt-20">
         {/* Main Content */}
         <div className="grid sm:grid-cols-2 items-center">
           <div className="space-y-8">
@@ -40,8 +35,10 @@ export const HeroSection = () => {
 
             <FadeInWhenVisible delay={0.3}>
               <TypographyLead>
-                U Tech Systems is a global services and Custom Software Solutions & Support Services for Every Industry
-                and Enterprise Modernization to help enterprises accelerate their Software Development journey.
+                U Tech Systems is a global services and Custom Software
+                Solutions & Support Services for Every Industry and Enterprise
+                Modernization to help enterprises accelerate their Software
+                Development journey.
               </TypographyLead>
             </FadeInWhenVisible>
 
