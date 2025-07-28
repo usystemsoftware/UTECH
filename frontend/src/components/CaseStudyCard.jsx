@@ -17,7 +17,7 @@ export default function CaseStudyCard({
 }) {
     return (
         <FadeInWhenVisible delay={index * 0.2}>
-            <Card className="cursor-pointer border-none shadow-2xl hover:scale-105 transaction hover:translate-y-1">
+            <Card className="cursor-pointer border-none shadow-primary/20 shadow-2xl hover:scale-105 transaction hover:translate-y-1">
                 <FadeInWhenVisible
                     whileHover={{ scale: 1.1, rotate: 5, z: 20 }}
                     className={`w-11 h-11 rounded-2xl bg-gradient-to-r ${color} flex items-center justify-center relative z-10 transform-3d`}
@@ -64,7 +64,7 @@ export default function CaseStudyCard({
 
                 <Link to={link}>
                     <button
-                        className="mt-2 w-full px-4 py-2 bg-gradient-to-r from-gray-200 to-gray-100 text-sm cursor-pointer text-gray-700 rounded-md font-medium hover:from-orange-50 hover:to-red-50 hover:text-orange-600 transition-all duration-300 border border-gray-200 transform-3d"
+                        className="mt-2 w-full px-4 py-2 bg-gradient-to-r from-primary/20 to-primary/50 text-primary text-sm cursor-pointer rounded-md font-semibold hover:from-primary/10 hover:to-primary/20 hover:text-primary transition-all duration-300 border border-gray-200 transform-3d"
                     >
                         Learn More
                     </button>

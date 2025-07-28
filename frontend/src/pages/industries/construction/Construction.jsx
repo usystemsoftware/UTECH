@@ -69,7 +69,7 @@ export default function Construction() {
                         title='AI-Powered Smart Construction Software'
                         description='U Tech is at the forefront of AI-driven smart construction solutions, dedicated to transforming the AEC industry...'
                     />
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12">
                         <FeaturesList features={AIPoweredConstructionFeatures.slice(0, 4)} />
                         <FeaturesList features={AIPoweredConstructionFeatures.slice(4, 8)} />
                     </div>

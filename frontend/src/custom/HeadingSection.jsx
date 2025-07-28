@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { TypographyH1, TypographyMuted } from "@/custom/Typography";
 import clsx from "clsx";
+import { PointerHighlight } from "@/components/ui/pointer-highlight";
 
 export default function HeadingSection({
   title,
@@ -15,11 +16,13 @@ export default function HeadingSection({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <TypographyH1>
+      <TypographyH1 className='flex items-center justify-center gap-2'>
         {title}{" "}
-        <span className="bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent">
-          {highlight}
-        </span>
+        <PointerHighlight>
+          <span className="bg-gradient-to-r px-2 from-blue-600 via-indigo-500 to-blue-400 bg-clip-text text-transparent">
+            {highlight}
+          </span>
+        </PointerHighlight>
       </TypographyH1>
 
       {description && (

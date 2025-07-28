@@ -10,6 +10,7 @@ import Correction from "@/pages/industries/correction/Correction";
 import ELearningEducation from "@/pages/industries/e-learning-education/ELearningEducation";
 import EnergyUtilities from "@/pages/industries/energy-utilities/EnergyUtilities";
 import EnvManagement from "@/pages/industries/env-mangt/EnvManagement";
+import MediaEntertainment from "@/pages/industries/media-entertainment/MediaEntertainment";
 
 export const IndustryRoutes = [
     { path: "/industries/banking", element: <Banking /> },
@@ -24,4 +25,5 @@ export const IndustryRoutes = [
     { path: "/industries/e-learning-education", element: <ELearningEducation /> },
     { path: "/industries/energy-utilities", element: <EnergyUtilities /> },
     { path: "/industries/environmental-management", element: <EnvManagement /> },
+    { path: "/industries/media-entertainment", element: <MediaEntertainment /> },
 ];

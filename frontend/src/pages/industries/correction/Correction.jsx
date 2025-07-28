@@ -41,7 +41,7 @@ export default function Correction() {
                     description="We develop custom Jail Management Software that provides a comprehensive set of capabilities to manage the entire jail management lifecycle from booking to release."
                 />
 
-                <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
                     {/* Features List */}
                     <div className="text-start">
                         <TypographyH5>
