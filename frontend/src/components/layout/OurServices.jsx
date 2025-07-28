@@ -2,21 +2,8 @@ import HeadingSection from "@/custom/HeadingSection";
 import PageLayout from "@/custom/PageLayout";
 import { services } from "@/data/LandingData";
 import CaseStudyCard from "@/components/CaseStudyCard";
-import { motion } from "framer-motion";
 import BubblesBackground from "@/components/BubblesBackground";
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: (i) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.1,
-      duration: 0.6,
-      ease: "easeOut",
-    },
-  }),
-};
+import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 
 export default function OurServices() {
   return (
@@ -33,14 +20,7 @@ export default function OurServices() {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:px-6 mb-8">
           {services?.map((service, index) => (
-            <motion.div
-              key={index}
-              custom={index}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={cardVariants}
-            >
+            <FadeInWhenVisible key={index} delay={index * 0.1}>
               <CaseStudyCard
                 index={index}
                 icon={service.icon}
@@ -51,7 +31,7 @@ export default function OurServices() {
                 link={service.link}
                 color={service.color}
               />
-            </motion.div>
+            </FadeInWhenVisible>
           ))}
         </div>
       </div>

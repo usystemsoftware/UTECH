@@ -30,8 +30,8 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center relative">
-          <img loading="lazy" src="/logo-2.png" alt="Logo" className="h-8" />
-          <TypographyH4 className="absolute left-8 bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 bg-clip-text text-transparent">
+          <img loading="lazy" src="/small-logo.png" alt="Logo" className="h-8 w-7" />
+          <TypographyH4 className="absolute left-8 top-1 bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent">
             Technology
           </TypographyH4>
         </Link>
