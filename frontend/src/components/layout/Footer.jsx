@@ -76,7 +76,7 @@ export const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-b relative from-[#0d101f] to-[#071427] text-white px-6 py-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+      <div className="md:max-w-7xl lg:max-w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
         {/* Brand and Subscribe */}
         <FadeInWhenVisible className="sm:col-span-2 space-y-4">
           <TypographyH3>U Technology</TypographyH3>

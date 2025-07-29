@@ -10,7 +10,7 @@ import { AuroraBackground } from "@/components/ui/aurora-background";
 export const HeroSection = () => {
   return (
     <AuroraBackground>
-      <PageLayout className="relative flex items-center justify-center overflow-hidden mt-20">
+      <PageLayout className="relative flex items-center justify-center overflow-hidden pt-24">
         {/* Main Content */}
         <div className="grid sm:grid-cols-2 items-center">
           <div className="space-y-8">
@@ -23,7 +23,7 @@ export const HeroSection = () => {
             </FadeInWhenVisible>
 
             <FadeInWhenVisible delay={0.2}>
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold dark:text-white leading-tight">
+              <h1 className="text-2xl md:text-4xl font-bold dark:text-white leading-tight">
                 Drive Innovation with a World-Class
                 <PointerHighlight>
                   <span className="block px-2 py-2 mt-3 bg-gradient-to-r from-blue-600 via-indigo-500 to-blue-400 bg-clip-text text-transparent">
@@ -61,12 +61,13 @@ export const HeroSection = () => {
           </div>
 
           {/* Right Side Logo */}
-          <FadeInWhenVisible delay={0.5}>
-            <div className="hidden sm:block cursor-pointer perspective-[1000px]">
+          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
+            <div className="w-full flex justify-center">
               <img
+                loading="lazy"
                 src="/small-logo.png"
                 alt="U Logo"
-                className="h-[65vh] w-[80%] md:w-[60%] mx-auto"
+                className="w-[70%] sm:w-[50%] md:w-[40%] lg:w-[50%] xl:w-[60%] max-h-[65vh] object-contain transition-transform duration-300 hover:scale-105"
               />
             </div>
           </FadeInWhenVisible>

@@ -367,7 +367,9 @@ export default function Chat() {
         </div>
       )}
 
-      <span className="fixed bottom-3 right-4 text-sm">Version:{version}</span>
+      <span className="fixed bottom-3 right-4 z-50 text-sm">
+        Version:{version}
+      </span>
     </>
   );
 }

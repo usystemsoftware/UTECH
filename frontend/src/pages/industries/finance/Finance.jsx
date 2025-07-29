@@ -6,11 +6,7 @@ import { TestimonialSection } from "@/components/TestimonialSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
-import {
-  TypographyH3,
-  TypographyMuted,
-  Headline,
-} from "@/custom/Typography";
+import { TypographyH3, TypographyMuted, Headline } from "@/custom/Typography";
 import {
   leftFeatures,
   rightFeatures,
@@ -33,7 +29,7 @@ const Finance = () => {
     <>
       {/* Banner */}
       <HeroSection
-        backgroundImage='/assets/industries/finance/finance-banner.jpg'
+        backgroundImage="/assets/industries/finance/finance-banner.jpg"
         title="FINANCIAL SOFTWARE DEVELOPMENT SERVICES"
         description="Transforming banking with AI, fraud detection, wealth management & more."
         buttonText="GET FINTECH DEVELOPERS"
@@ -55,9 +51,7 @@ const Finance = () => {
           fadeUp={fadeUp}
         />
         <FadeInWhenVisible>
-          <Button variant='hover'>
-            CUSTOMIZE YOUR BANKING SOLUTION NOW
-          </Button>
+          <Button variant="hover">CUSTOMIZE YOUR BANKING SOLUTION NOW</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
@@ -68,24 +62,20 @@ const Finance = () => {
             title="Optimizing Finance with Artificial Intelligence"
             description="With the ever-evolving landscape of financial services becoming increasingly complex and digital, AI is a game-changer. U Technology’s Financial Software Development Services are here to help you transform your operations, improve your customer experiences, and aid in strategic decision-making."
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-left">
-            {
-              aiBenefits.map((item, index) => (
-                <FadeInWhenVisible key={index} delay={index * 0.2}>
-                  <CaseStudyCard
-                    key={index}
-                    icon={item.icon}
-                    title={item.title}
-                    description={item.description}
-                  />
-                </FadeInWhenVisible>
-              ))
-            }
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-12 text-left">
+            {aiBenefits.map((item, index) => (
+              <FadeInWhenVisible key={index} delay={index * 0.2}>
+                <CaseStudyCard
+                  key={index}
+                  icon={item.icon}
+                  title={item.title}
+                  description={item.description}
+                />
+              </FadeInWhenVisible>
+            ))}
           </div>
           <FadeInWhenVisible delay={0.8}>
-            <Button variant='hover' >
-              GET AI-POWERED FINANCIAL SOLUTIONS
-            </Button>
+            <Button variant="hover">GET AI-POWERED FINANCIAL SOLUTIONS</Button>
           </FadeInWhenVisible>
         </PageLayout>
       </section>
@@ -96,7 +86,7 @@ const Finance = () => {
           title="Custom Accounting Software Development"
           description="U Technology’s custom accounting software development services include API programming & integrations, AIS architecture, bookkeeping app development, and much more."
         />
-        <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-12">
           <FadeInWhenVisible>
             <img
               src="/assets/industries/finance/accounting-development.png"
@@ -108,16 +98,15 @@ const Finance = () => {
           <FeaturesList features={accountingFeatures} fadeUp={fadeUp} />
         </div>
         <TypographyMuted>
-          U Technology integrates your current accounting management system with industry-leading ERP and bookkeeping solutions, including:
+          U Technology integrates your current accounting management system with
+          industry-leading ERP and bookkeeping solutions, including:
         </TypographyMuted>
         <IntigrateWith
           title="Integrate with Leading Accounting Platforms"
           description="Sync your financial data with top financial tools for better efficiency and accuracy."
         />
         <FadeInWhenVisible>
-          <Button variant="hover">
-            GET ACCOUNTING SOFTWARE SOLUTIONS
-          </Button>
+          <Button variant="hover">GET ACCOUNTING SOFTWARE SOLUTIONS</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
@@ -127,7 +116,7 @@ const Finance = () => {
           title="Custom Portfolio Management Software Development"
           description="U Technology’s custom portfolio management software solutions encompass everything from risk analysis and investments to stock trading apps and fund management in a centralized platform."
         />
-        <PageLayout className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8 md:gap-12">
           <FeaturesList
             features={portfolioFeatures}
             fadeUp={fadeUp}
@@ -143,9 +132,7 @@ const Finance = () => {
           </FadeInWhenVisible>
         </PageLayout>
         <FadeInWhenVisible delay={0.8}>
-          <Button variant="hover">
-            GET PORTFOLIO MGMT SOFTWARE SOLUTIONS
-          </Button>
+          <Button variant="hover">GET PORTFOLIO MGMT SOFTWARE SOLUTIONS</Button>
         </FadeInWhenVisible>
       </section>
 
@@ -156,7 +143,7 @@ const Finance = () => {
             title="Custom Financial Planning Software Development"
             description="U Technology’s custom financial planning software solutions streamline day-to-day processes, including invoicing, payment processing, audit archiving, report generation, and more."
           />
-          <div className="flex justify-center md:flex-row flex-col items-center gap-6">
+          <div className="flex justify-center sm:flex-row flex-col gap-6">
             <FadeInWhenVisible>
               <img
                 loading="lazy"
@@ -168,7 +155,7 @@ const Finance = () => {
             <FeaturesList features={planningFeatures} fadeUp={fadeUp} />
           </div>
           <FadeInWhenVisible>
-            <Button variant="hover" >
+            <Button variant="hover">
               GET FINANCIAL PLANNING SOFTWARE SOLUTIONS
             </Button>
           </FadeInWhenVisible>
@@ -176,13 +163,17 @@ const Finance = () => {
       </section>
 
       {/* Compliance Section */}
-      <PageLayout className="py-12 bg-cyan-50 my-12 flex flex-col md:flex-row justify-between items-center space-x-8">
+      <PageLayout className="py-12 bg-cyan-50 my-12 flex flex-col sm:flex-row justify-between items-center md:space-x-8">
         <div className="flex-1 space-y-4">
           <TypographyH3 className="text-black">
             WE ENSURE YOU A 100% COMPLIANCE WITH THE IRS & FASB!
           </TypographyH3>
           <TypographyMuted>
-            U Technology's finance software development experts comply with regulatory standards including anti-money laundering and consumer protection standards such as Financial Accounting Standards Boards (FASB), SOX, Dodd-Frank, the Securities Act of 1933, and Payment Application Data Security Standard (PA-DSS).
+            U Technology's finance software development experts comply with
+            regulatory standards including anti-money laundering and consumer
+            protection standards such as Financial Accounting Standards Boards
+            (FASB), SOX, Dodd-Frank, the Securities Act of 1933, and Payment
+            Application Data Security Standard (PA-DSS).
           </TypographyMuted>
         </div>
         <FadeInWhenVisible>
@@ -197,16 +188,24 @@ const Finance = () => {
             </video>
             {/* Labels */}
             <div className="absolute -left-10 top-5 hidden md:block">
-              <div className="mb-6 px-4 py-1 bg-white rounded-full shadow text-sm font-semibold">FASB</div>
+              <div className="mb-6 px-4 py-1 bg-white rounded-full shadow text-sm font-semibold">
+                FASB
+              </div>
             </div>
             <div className="absolute -left-10 bottom-5 hidden md:block">
-              <div className="px-4 py-1 bg-white rounded-full shadow text-sm font-semibold">SOX</div>
+              <div className="px-4 py-1 bg-white rounded-full shadow text-sm font-semibold">
+                SOX
+              </div>
             </div>
             <div className="absolute -right-10 top-24 hidden md:block">
-              <div className="px-4 py-1 bg-white rounded-full shadow text-sm font-semibold">PA-Dss</div>
+              <div className="px-4 py-1 bg-white rounded-full shadow text-sm font-semibold">
+                PA-Dss
+              </div>
             </div>
             <div className="absolute -right-10 bottom-5 hidden md:block">
-              <div className="px-4 py-1 bg-white rounded-full shadow text-sm font-semibold">IRS</div>
+              <div className="px-4 py-1 bg-white rounded-full shadow text-sm font-semibold">
+                IRS
+              </div>
             </div>
           </div>
         </FadeInWhenVisible>
@@ -219,7 +218,7 @@ const Finance = () => {
             title="Custom Insurance Software Development"
             description="U Technology’s custom insurance software solutions ensures success-driven insurance automation to help insurance companies drive momentum and drive productivity."
           />
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+          <div className="flex flex-col sm:flex-row  justify-between gap-12">
             <FeaturesList features={insuranceFeatures} fadeUp={fadeUp} />
             <FadeInWhenVisible>
               <img
@@ -231,9 +230,7 @@ const Finance = () => {
             </FadeInWhenVisible>
           </div>
           <FadeInWhenVisible>
-            <Button variant='hover'>
-              GET INSURANCE SOFTWARE SOLUTIONS
-            </Button>
+            <Button variant="hover">GET INSURANCE SOFTWARE SOLUTIONS</Button>
           </FadeInWhenVisible>
         </PageLayout>
       </section>
@@ -244,7 +241,7 @@ const Finance = () => {
           title="Custom Tax Preparation Software Development"
           description="U Technology’s custom tax prep software solutions support the preparation, calculation, and reporting of personal and business taxes."
         />
-        <PageLayout className="mt-16 flex flex-col lg:flex-row items-center justify-between gap-10">
+        <PageLayout className="mt-16 flex flex-col sm:flex-row justify-between gap-10">
           <FadeInWhenVisible>
             <img
               loading="lazy"
@@ -256,9 +253,7 @@ const Finance = () => {
           <FeaturesList features={portfolioFeatures} fadeUp={fadeUp} />
         </PageLayout>
         <FadeInWhenVisible>
-          <Button variant="hover" >
-            GET TAX PREP SOFTWARE SOLUTIONS
-          </Button>
+          <Button variant="hover">GET TAX PREP SOFTWARE SOLUTIONS</Button>
         </FadeInWhenVisible>
       </section>
 
@@ -269,8 +264,8 @@ const Finance = () => {
             title="Capital & Stock Trading Software Development"
             description="U Technology’s creates custom trading software solutions for capital markets, focusing on security and performance."
           />
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
-            <FadeInWhenVisible>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
+            <FadeInWhenVisible className="hidden md:block">
               <img
                 loading="lazy"
                 src="/assets/industries/finance/trading-development.png"
@@ -281,9 +276,7 @@ const Finance = () => {
             <FeaturesList features={tradingFeatures} fadeUp={fadeUp} grid />
           </div>
           <FadeInWhenVisible>
-            <Button variant="hover">
-              GET TRADING SOFTWARE SOLUTIONS
-            </Button>
+            <Button variant="hover">GET TRADING SOFTWARE SOLUTIONS</Button>
           </FadeInWhenVisible>
         </PageLayout>
       </section>
@@ -296,9 +289,7 @@ const Finance = () => {
         />
         <FeaturesList features={factoringFeatures} fadeUp={fadeUp} grid />
         <FadeInWhenVisible>
-          <Button variant="hover">
-            GET FACTORING SOLUTIONS
-          </Button>
+          <Button variant="hover">GET FACTORING SOLUTIONS</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
@@ -311,9 +302,7 @@ const Finance = () => {
           />
           <FeaturesList features={supportFeatures} fadeUp={fadeUp} grid />
           <FadeInWhenVisible>
-            <Button variant="hover">
-              GET FINANCE SOFTWARE SUPPORT
-            </Button>
+            <Button variant="hover">GET FINANCE SOFTWARE SUPPORT</Button>
           </FadeInWhenVisible>
         </PageLayout>
         {/* Testimonials */}
@@ -324,10 +313,7 @@ const Finance = () => {
 
       {/* FAQ Section */}
       <div className="mb-16 mt-2">
-        <FaqSection
-          faqs={faqs}
-          title="FAQ's"
-        />
+        <FaqSection faqs={faqs} title="FAQ's" />
       </div>
     </>
   );

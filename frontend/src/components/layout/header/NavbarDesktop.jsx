@@ -27,18 +27,10 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
 
   return (
     <div className="w-full fixed top-0 z-40 h-20 bg-card shadow">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center h-20">
+      <div className="md:max-w-7xl lg:max-w-[90%] mx-auto px-4 sm:px-6 flex justify-between items-center h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center relative">
-          <img
-            loading="lazy"
-            src="/small-logo.png"
-            alt="Logo"
-            className="h-8 w-7"
-          />
-          <TypographyH4 className="absolute left-8 top-1 bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent">
-            Technology
-          </TypographyH4>
+          <img loading="lazy" src="/logo.png" alt="Logo" className="w-32" />
         </Link>
 
         {/* Navigation */}

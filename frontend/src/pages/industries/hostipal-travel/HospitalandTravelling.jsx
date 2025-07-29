@@ -94,7 +94,7 @@ export default function HospitalandTravelling() {
                     />
 
                     {/* Layout: Image left, features right */}
-                    <div className="grid grid-cols-1 md:grid-cols-2">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <FadeInWhenVisible delay={0.5}>
                             <img
                                 loading="lazy"
@@ -119,7 +119,7 @@ export default function HospitalandTravelling() {
                     description="U Tech’s development team is highly skilled in creating custom B2B & B2C travel apps..."
                 />
 
-                <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2">
                     <FadeInWhenVisible delay={0.5}>
                         <img
                             loading="lazy"

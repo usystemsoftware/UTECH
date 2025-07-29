@@ -7,11 +7,7 @@ import { Button } from "@/components/ui/button";
 import { FeaturesGrid } from "@/components/FeaturesGridCard";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
-import {
-  TypographyH5,
-  TypographyMuted,
-  Headline,
-} from "@/custom/Typography";
+import { TypographyH5, TypographyMuted, Headline } from "@/custom/Typography";
 
 import {
   appDevFeatures,
@@ -21,10 +17,9 @@ import {
   realEstateFeatures,
   realEstateServices,
   realEstateSolutions,
-  rightFeatureIcons
+  rightFeatureIcons,
 } from "./Data";
 import IntigrateWith from "@/custom/IntigrateWith";
-
 
 export const AppDevelopPartner = () => {
   return (
@@ -41,16 +36,14 @@ export const AppDevelopPartner = () => {
         />
       ))}
     </div>
-  )
-}
+  );
+};
 
 const RealEstate = () => {
-
   return (
     <div>
-
       <HeroSection
-        backgroundImage='/assets/industries/real-estate/real-banner.jpg'
+        backgroundImage="/assets/industries/real-estate/real-banner.jpg"
         title="REAL ESTATE SOFTWARE DEVELOPMENT"
         buttonText="GET REAL ESTATE SOFTWARE DEVELOPERS"
         buttonLink="/real-estate"
@@ -86,7 +79,7 @@ const RealEstate = () => {
             solutions using our specialized, multi-purpose technologies and
             industry-specific experience."
           />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:items-center mt-8">
             <FeaturesList
               features={realEstateServices.slice(0, 2)}
               fadeUp={fadeUp}
@@ -95,7 +88,7 @@ const RealEstate = () => {
             <FadeInWhenVisible delay={0.4}>
               <img
                 loading="lazy"
-                src='/assets/industries/real-estate/laptop.png'
+                src="/assets/industries/real-estate/laptop.png"
                 alt="AI-powered banking analytics"
                 className="w-132"
               />
@@ -115,16 +108,26 @@ const RealEstate = () => {
 
       <PageLayout className="py-16 space-y-8 text-center">
         <Headline
-          title='AI-Powered Real Estate Solutions'
+          title="AI-Powered Real Estate Solutions"
           description="Discover how advanced technologies like AI, IoT, AR/VR, and automation
         are transforming the real estate industry with intelligent, data-driven
         tools."
         />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-12 text-left">
           {realEstateSolutions?.map((item, index) => (
             <FadeInWhenVisible key={index} delay={index * 0.2}>
-              <div className={`flex items-start gap-4 ${item.reverse ? "lg:justify-end lg:text-right flex-row-reverse" : ""}`}>
-                <IconRenderer name={item.icon} size={36} className="text-primary flex-shrink-0" />
+              <div
+                className={`flex items-start gap-4 ${
+                  item.reverse
+                    ? "lg:justify-end lg:text-right flex-row-reverse"
+                    : ""
+                }`}
+              >
+                <IconRenderer
+                  name={item.icon}
+                  size={36}
+                  className="text-primary flex-shrink-0"
+                />
                 <div>
                   <TypographyH5>{item.title}</TypographyH5>
                   <TypographyMuted>{item.description}</TypographyMuted>
@@ -147,11 +150,11 @@ const RealEstate = () => {
             to help streamline real estate business operations, automate routine
             tasks, and ensure easy access to market information."
         />
-        <PageLayout className="flex flex-col lg:flex-row items-center justify-center gap-16">
-          <FadeInWhenVisible delay={0.4}>
+        <PageLayout className="flex flex-col sm:flex-row md:items-center justify-center gap-16">
+          <FadeInWhenVisible delay={0.4} className="md:block hidden">
             <img
               loading="lazy"
-              src='/assets/industries/real-estate/mobile.png'
+              src="/assets/industries/real-estate/mobile.png"
               alt="Mobile real estate App"
               className="h-96"
             />
@@ -166,26 +169,34 @@ const RealEstate = () => {
           </div>
         </PageLayout>
         <FadeInWhenVisible>
-          <Button variant="hover">
-            Get Your Custom App
-          </Button>
+          <Button variant="hover">Get Your Custom App</Button>
         </FadeInWhenVisible>
       </section>
 
       {/* === Banking Software Support Section === */}
       <PageLayout className="py-16 space-y-8 text-center">
         <Headline
-          title='Banking Software Support'
+          title="Banking Software Support"
           description="Banking and fiscal services have seen a significant transformation
           because of the use of new software solutions and apps. U Technology
           banking software support enhances efficiency, reliability, and
           regulatory compliance while improving the customer experience."
         />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 text-left">
           {realEstateFeatures?.map((item, index) => (
             <FadeInWhenVisible key={index} delay={index * 0.2}>
-              <div className={`flex items-start gap-4 ${item.reverse ? "lg:justify-end lg:text-right flex-row-reverse" : ""}`}>
-                <IconRenderer name={item.icon} size={36} className="text-primary flex-shrink-0" />
+              <div
+                className={`flex items-start gap-4 ${
+                  item.reverse
+                    ? "lg:justify-end lg:text-right flex-row-reverse"
+                    : ""
+                }`}
+              >
+                <IconRenderer
+                  name={item.icon}
+                  size={36}
+                  className="text-primary flex-shrink-0"
+                />
                 <div>
                   <TypographyH5>{item.title}</TypographyH5>
                   <TypographyMuted>{item.description}</TypographyMuted>
@@ -195,18 +206,13 @@ const RealEstate = () => {
           ))}
         </div>
         <FadeInWhenVisible delay={0.4}>
-          <Button variant="hover">
-            Get Real Estate Software Support
-          </Button>
+          <Button variant="hover">Get Real Estate Software Support</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
       {/* FAQ Section */}
       <div className="mb-16 mt-2">
-        <FaqSection
-          faqs={realEstateFaqs}
-          title="FAQ's"
-        />
+        <FaqSection faqs={realEstateFaqs} title="FAQ's" />
       </div>
     </div>
   );
