@@ -1,4 +1,3 @@
-import { IconRenderer } from "@/custom/IconRenderer";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
