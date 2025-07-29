@@ -34,7 +34,7 @@ const Legal = () => (
     <PageLayout className="space-y-8 py-12">
       <Headline
         title="Hire Developers with Custom Legal Software Development Experience"
-        description="Chetu, a legal software development company has extensive legal industry experience providing best-in-class Legal Software Development Services from the ground up and revamping existing solutions through custom-tailored integrations."
+        description="U Technology's, a legal software development company has extensive legal industry experience providing best-in-class Legal Software Development Services from the ground up and revamping existing solutions through custom-tailored integrations."
       />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -90,7 +90,7 @@ const Legal = () => (
       <PageLayout className="space-y-6 text-center">
         <Headline
           title="AI-Powered Legal Software Development Services"
-          description="Enhance legal workflows with Chetu’s AI-driven software, enhancing accuracy, automation, and compliance across processes."
+          description="Enhance legal workflows with U Technology's’s AI-driven software, enhancing accuracy, automation, and compliance across processes."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <FeaturesList
@@ -157,7 +157,7 @@ const Legal = () => (
     <PageLayout className="py-12 space-y-10 text-center">
       <Headline
         title="Specialized Legal Practice Software Solutions"
-        description="Chetu designs and deploys customized legal practice software to augment research, streamline workflow, and enable data-driven decisions with powerful analytics. This intuitive software addresses the unique needs of various legal fields, such as immigration law, estate law, family law, and personal injury."
+        description="U Technology's designs and deploys customized legal practice software to augment research, streamline workflow, and enable data-driven decisions with powerful analytics. This intuitive software addresses the unique needs of various legal fields, such as immigration law, estate law, family law, and personal injury."
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <FeaturesList features={legalgSupportIsecound.slice(0, 2)} />

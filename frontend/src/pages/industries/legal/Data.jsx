@@ -21,7 +21,7 @@ export const LegalTransformationFeatures = [
     icon: "FileBarChart",
     title: "Legal Research Software",
     description:
-      "Chetu’s customized research software augments your team’s research process with automated, highly targeted results for statutes, relevant case law, and regulations to enable streamlined workflow and enhanced productivity with advanced search tools seamlessly integrated with existing legal databases..",
+      "U Technology's customized research software augments your team’s research process with automated, highly targeted results for statutes, relevant case law, and regulations to enable streamlined workflow and enhanced productivity with advanced search tools seamlessly integrated with existing legal databases..",
   },
 ];
 
@@ -48,7 +48,7 @@ export const LegalTransformation = [
     icon: "FileBarChart",
     title: "Legal Analytics Software",
     description:
-      "Our analytics specialists create trend analysis tools, intuitive performance dashboards, and document management systems for accurate, data-driven decisions. Gain unprecedented insights into personnel productivity and case efficiency with Chetu’s customized legal analytics software, seamlessly integrates with your existing DMS..",
+      "Our analytics specialists create trend analysis tools, intuitive performance dashboards, and document management systems for accurate, data-driven decisions. Gain unprecedented insights into personnel productivity and case efficiency with U Technology's customized legal analytics software, seamlessly integrates with your existing DMS..",
   },
 ];
 
@@ -95,13 +95,13 @@ export const legalgSupportItems = [
   {
     title: "AI-Driven Court Briefing Tools",
     description:
-      "Transform court brief preparation using Chetu’s AI-powered tools. Leverage automation for legal research, document summarization, and case law analysis. Empower strategic planning through advanced natural language processing (NLP), enabling quicker identification of key arguments and reduced research overhead.",
+      "Transform court brief preparation using U Technology's AI-powered tools. Leverage automation for legal research, document summarization, and case law analysis. Empower strategic planning through advanced natural language processing (NLP), enabling quicker identification of key arguments and reduced research overhead.",
     icon: "BellRing",
   },
   {
     title: "Smart Contracts Software",
     description:
-      "Utilize blockchain technology with Chetu’s smart contract solutions to automate execution, verification, and secure transactions. These features streamline workflows, eliminate intermediaries, and ensure tamper-proof, compliant legal agreements.",
+      "Utilize blockchain technology with U Technology's smart contract solutions to automate execution, verification, and secure transactions. These features streamline workflows, eliminate intermediaries, and ensure tamper-proof, compliant legal agreements.",
     icon: "Wallet",
   },
 ];
@@ -170,7 +170,7 @@ export const legalgSupportIsecound = [
   {
     title: "Immigration Law Software",
     description:
-      "Our intuitive immigration software simplifies the complexities of immigration intake forms and elevates the performance of client communication tools. Organized document management is paramount for success and Chetu’s automated document management streamlines every process to ensure end-users expedient access and error-free processing of critical documents.",
+      "Our intuitive immigration software simplifies the complexities of immigration intake forms and elevates the performance of client communication tools. Organized document management is paramount for success and U Technology's automated document management streamlines every process to ensure end-users expedient access and error-free processing of critical documents.",
     icon: "Banknote",
   },
   {
