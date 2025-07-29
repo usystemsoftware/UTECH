@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { TypographyLead, TypographySmall } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
-import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { AuroraBackground } from "@/components/ui/aurora-background";
 
 export const HeroSection = () => {
@@ -16,7 +15,7 @@ export const HeroSection = () => {
           <div className="space-y-8">
             <FadeInWhenVisible delay={0.1}>
               <div className="flex items-center w-full">
-                <TypographySmall className="p-3 bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-700 rounded-full text-sm border border-blue-200">
+                <TypographySmall className="p-3 bg-gradient-to-r from-orange-600 to-red-600 text-pink-600 bg-clip-text rounded-full text-sm border border-blue-200">
                   🚀 Digital Engineering & Enterprise Modernization
                 </TypographySmall>
               </div>
@@ -25,11 +24,9 @@ export const HeroSection = () => {
             <FadeInWhenVisible delay={0.2}>
               <h1 className="text-2xl md:text-4xl font-bold dark:text-white leading-tight">
                 Drive Innovation with a World-Class
-                <PointerHighlight>
-                  <span className="block px-2 py-2 mt-3 bg-gradient-to-r from-blue-600 via-indigo-500 to-blue-400 bg-clip-text text-transparent">
+                  <span className="block px-2 py-2 mt-3 bg-gradient-to-r from-orange-600 to-red-600 text-pink-600 bg-clip-text">
                     Software Development Company
                   </span>
-                </PointerHighlight>
               </h1>
             </FadeInWhenVisible>
 

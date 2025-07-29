@@ -1,15 +1,12 @@
 import CaseStudyCard from "@/components/CaseStudyCard";
-import { motion } from "framer-motion";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Headline, TypographyH4, TypographyH1, TypographyMuted } from "@/custom/Typography";
+import { Headline, TypographyH4, TypographyH1 } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import HeroSection from "@/components/HeroSection";
-import { Button } from '@/components/ui/button'
+import { Button } from "@/components/ui/button";
 
-import {
-  FaCheck,
-} from "react-icons/fa";
+import { FaCheck } from "react-icons/fa";
 import {
   digitalTransformationFeatures,
   dxFeatures,
@@ -20,17 +17,15 @@ import {
   industrySolutions,
   points,
   readingData,
-  services
+  services,
 } from "./Data";
 
 const DigitalTransformation = () => {
-
   return (
     <>
-
       {/* ===== HERO SECTION ===== */}
       <HeroSection
-        backgroundImage='/assets/services/transformation-banner.jpg'
+        backgroundImage="/assets/services/transformation-banner.jpg"
         title="DIGITAL TRANSFORMATION SERVICES & SOLUTIONS"
         buttonText="Hire A Reliable DX Resource"
         buttonLink="#"
@@ -38,7 +33,7 @@ const DigitalTransformation = () => {
         overlayOpacity={0.6}
       />
 
-      <PageLayout className="py-12 space-y-8 text-center">
+      <PageLayout className="py-12 space-y-10 text-center">
         <Headline
           title="Drive Growth and Innovation With Our Digital Transformation
             Solutions"
@@ -49,21 +44,19 @@ const DigitalTransformation = () => {
             and support technical solutions."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10">
-          <FeaturesList features={growthInnovationFeaturesData.slice(0, 2)} fadeUp={fadeUp} />
-          <FeaturesList features={growthInnovationFeaturesData.slice(2, 4)} fadeUp={fadeUp} />
-        </div>
+        <FeaturesList
+          features={growthInnovationFeaturesData}
+          fadeUp={fadeUp}
+          grid
+        />
 
         <FadeInWhenVisible>
-          <Button variant="hover">
-            WORK WITH TRASFORAMTION EXPERTS
-          </Button>
+          <Button variant="hover">WORK WITH TRASFORAMTION EXPERTS</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
       <section className="py-16 bg-secondary text-center">
         <PageLayout className="space-y-12">
-
           <Headline
             title="Work With Top Digital Transformation Experts"
             description="We provide digital transformation services that will optimize your
@@ -72,19 +65,22 @@ const DigitalTransformation = () => {
             staff augmentation to help you fulfill your core objectives."
           />
 
-          <div className="flex justify-center md:flex-row flex-col items-center gap-6">
-            <FeaturesList features={digitalTransformationFeatures} fadeUp={fadeUp} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <FeaturesList
+              features={digitalTransformationFeatures}
+              fadeUp={fadeUp}
+            />
             <FadeInWhenVisible>
               <img
                 loading="lazy"
                 src="/assets/services/digital-services.jpg"
                 alt="Financial Planning Dashboard"
-                className="w-110"
+                className="w-110 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
 
-          <div className="grid grid-cols-1  text-start sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 text-start sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {services.map((item, index) => (
               <CaseStudyCard
                 key={index}
@@ -98,88 +94,75 @@ const DigitalTransformation = () => {
           </div>
 
           <FadeInWhenVisible>
-            <Button variant="hover">
-              GET DIGITAL TRANSFORMATION SERVICES
-            </Button>
+            <Button variant="hover">GET DIGITAL TRANSFORMATION SERVICES</Button>
           </FadeInWhenVisible>
         </PageLayout>
       </section>
 
       <PageLayout className="py-16 text-center space-y-10">
-
         <Headline
-          title='Industry-Specific Digital Transformation Solutions'
-          description='U Technology provides customized digital transformation solutions to meet
+          title="Industry-Specific Digital Transformation Solutions"
+          description="U Technology provides customized digital transformation solutions to meet
           the specific needs of businesses across different industries,
-          including finance, healthcare, and retail.'
+          including finance, healthcare, and retail."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10">
-          <FeaturesList features={industrySolutions.slice(0, 4)} fadeUp={fadeUp} />
-          <FeaturesList features={industrySolutions.slice(4, 8)} fadeUp={fadeUp} />
-        </div>
+        <FeaturesList features={industrySolutions} fadeUp={fadeUp} grid />
 
         {/* Button */}
         <FadeInWhenVisible>
-          <Button variant="hover">
-            Get Industry DX Solution
-          </Button>
+          <Button variant="hover">Get Industry DX Solution</Button>
         </FadeInWhenVisible>
-
       </PageLayout>
 
       <section className="py-16 bg-secondary">
         <PageLayout className="space-y-10 text-center">
-
           <Headline
-            title='Reliable Digital Transformation Service Providers'
-            description='We have the infrastructure and bandwidth to provide streamlined
+            title="Reliable Digital Transformation Service Providers"
+            description="We have the infrastructure and bandwidth to provide streamlined
             service and support in digital transformation and business process
-            outsourcing. Our facilities and resources are secure and reliable.'
+            outsourcing. Our facilities and resources are secure and reliable."
           />
 
-          <div className="flex justify-center md:flex-row flex-col items-center gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-6">
             <FadeInWhenVisible>
               <img
                 loading="lazy"
                 src="/assets/services/images.png"
                 alt="Financial Planning Dashboard"
-                className="w-56 sm:w-84"
+                className="w-72 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList features={facilityHighlights} fadeUp={fadeUp} />
           </div>
 
-          <div className="flex justify-center md:flex-row flex-col items-center gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             <FeaturesList features={facilityAssurance} fadeUp={fadeUp} />
             <FadeInWhenVisible>
               <img
                 loading="lazy"
                 src="/assets/services/vector.jpg"
                 alt="Financial Planning Dashboard"
-                className="w-56 sm:w-84"
+                className="w-72 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
 
           <FadeInWhenVisible>
-            <Button variant="hover">
-              Hire A Reliable DX Resource
-            </Button>
+            <Button variant="hover">Hire A Reliable DX Resource</Button>
           </FadeInWhenVisible>
-
         </PageLayout>
       </section>
 
       <PageLayout className="py-20 text-center space-y-10">
         <Headline
-          title='Top Talent & Industry Expertise'
+          title="Top Talent & Industry Expertise"
           description="U Technology recruits top talent that goes through a rigorous hiring
           process followed by thorough training and development to provide
           optimal service."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-start">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-start">
           {features.map((item, index) => (
             <CaseStudyCard
               key={index}
@@ -192,22 +175,20 @@ const DigitalTransformation = () => {
           ))}
         </div>
         <FadeInWhenVisible>
-          <Button variant="hover">
-            WORK WITH TOP TALENT
-          </Button>
+          <Button variant="hover">WORK WITH TOP TALENT</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
       <section className="bg-secondary py-16">
         <PageLayout className="py-20 text-center space-y-10">
           <Headline
-            title='One-Stop Digital Transformation Solution Provider'
+            title="One-Stop Digital Transformation Solution Provider"
             description="Our specialized industry-specific teams provide skill, intelligence,
             and efficiency to drive value and growth. With our innovative
             resources, we will help you increase operational flexibility."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-start">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-start">
             {dxFeatures.map((item, index) => (
               <CaseStudyCard
                 key={index}
@@ -220,29 +201,26 @@ const DigitalTransformation = () => {
             ))}
           </div>
           <FadeInWhenVisible>
-            <Button variant="hover">
-              HIRE A ONE-STOP SHOP
-            </Button>
+            <Button variant="hover">HIRE A ONE-STOP SHOP</Button>
           </FadeInWhenVisible>
         </PageLayout>
-
-      </section >
+      </section>
 
       <PageLayout className="py-12">
         <Headline
           title="Compliance Measures"
-          description='Our expert management team will help you make business process
+          description="Our expert management team will help you make business process
             outsourcing as seamless as possible as we implement processes per
-            industry standards.'
+            industry standards."
         />
 
-        <div className="flex justify-center space-y-10 md:flex-row flex-col items-center gap-6">
+        <div className="flex justify-center space-y-10 sm:flex-row flex-col items-center gap-6">
           <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/services/newsroom.png"
               alt="Financial Planning Dashboard"
-              className="w-84"
+              className="w-84 mx-auto"
             />
           </FadeInWhenVisible>
 
@@ -262,33 +240,25 @@ const DigitalTransformation = () => {
 
       <section className="bg-secondary py-16">
         <PageLayout className="text-center space-y-10">
-          <TypographyH1>
-            SUGGESTED READING
-          </TypographyH1>
+          <TypographyH1>SUGGESTED READING</TypographyH1>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            {
-              readingData?.map((item, index) => (
-                <div key={index} className="space-y-4 text-start">
-                  <FadeInWhenVisible>
-                    <img
-                      loading="lazy"
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full h-48 object-cover rounded-sm"
-                    />
-                  </FadeInWhenVisible>
-                  <TypographyH4>
-                    {item.title}
-                  </TypographyH4>
-                  <FadeInWhenVisible>
-                    <Button className="w-full">
-                      READ MORE
-                    </Button>
-                  </FadeInWhenVisible>
-                </div>
-              ))
-            }
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+            {readingData?.map((item, index) => (
+              <div key={index} className="space-y-4 text-start">
+                <FadeInWhenVisible>
+                  <img
+                    loading="lazy"
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-48 object-cover rounded-sm"
+                  />
+                </FadeInWhenVisible>
+                <TypographyH4>{item.title}</TypographyH4>
+                <FadeInWhenVisible>
+                  <Button className="w-full">READ MORE</Button>
+                </FadeInWhenVisible>
+              </div>
+            ))}
           </div>
         </PageLayout>
       </section>

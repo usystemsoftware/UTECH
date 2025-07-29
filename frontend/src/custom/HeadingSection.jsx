@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { TypographyH1, TypographyMuted } from "@/custom/Typography";
 import clsx from "clsx";
-import { PointerHighlight } from "@/components/ui/pointer-highlight";
 
 export default function HeadingSection({
   title,
@@ -18,11 +17,9 @@ export default function HeadingSection({
     >
       <TypographyH1 className='flex items-center justify-center gap-2'>
         {title}{" "}
-        <PointerHighlight>
-          <span className="bg-gradient-to-r px-2 from-blue-600 via-indigo-500 to-blue-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r px-2 from-orange-600 to-red-600 text-pink-600 bg-clip-text">
             {highlight}
           </span>
-        </PointerHighlight>
       </TypographyH1>
 
       {description && (

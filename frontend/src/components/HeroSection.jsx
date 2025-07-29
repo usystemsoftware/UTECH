@@ -37,7 +37,7 @@ export default function HeroSection({
 
                 {/* Foreground Content */}
                 <FadeInWhenVisible
-                    className="relative z-20 max-w-3xl mx-auto text-center px-4 space-y-6 text-white"
+                    className="relative z-20 max-w-6xl mx-auto text-center px-4 space-y-6 text-white"
                     variants={fadeUp}
                 >
                     <TypographyH1>{title}</TypographyH1>

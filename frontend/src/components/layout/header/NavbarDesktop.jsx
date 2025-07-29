@@ -29,7 +29,7 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
     <div className="w-full fixed top-0 z-40 h-20 bg-card shadow">
       <div className="md:max-w-7xl lg:max-w-[90%] mx-auto px-4 sm:px-6 flex justify-between items-center h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center relative z-50">
+        <Link to="/" className="flex items-center relative z-40">
           <img loading="lazy" src="/logo.png" alt="Logo" className="w-32" />
         </Link>
 
@@ -56,7 +56,7 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
         </nav>
 
         {/* Right Actions */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 z-40">
           <div
             className="h-8.5 flex items-center gap-2 rounded-md px-2 bg-accent relative"
             onClick={() => setIsCommandOpen(true)}
@@ -86,13 +86,13 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
       {hoveredIndex !== null &&
         (Navlinks[hoveredIndex].items || Navlinks[hoveredIndex].groups) && (
           <div
-            className="absolute left-0 top-14 w-full bg-card shadow-lg z-30 border-border"
+            className="absolute left-0 top-12 w-full bg-card shadow-lg z-30 border-border"
             onMouseEnter={() => setHoveredIndex(hoveredIndex)}
             onMouseLeave={() => setHoveredIndex(null)}
           >
             {/* Items Dropdown */}
             {Navlinks[hoveredIndex].items && (
-              <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 py-6">
+              <div className="w-full md:max-w-7xl lg:max-w-[90%] mx-auto px-4 sm:px-8 py-6">
                 {(() => {
                   const items = Navlinks[hoveredIndex].items;
                   const chunked = chunkArray(

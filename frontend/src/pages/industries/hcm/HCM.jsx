@@ -69,7 +69,7 @@ export default function HCM() {
           title="HRMS & HRIS Software Solutions"
           description="We create end-to-end Human Resource Management Systems (HRMS) and Human Resource Information Systems (HRIS) to help companies run a successful business."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
           <div className="grid gap-4">
             {/* HRMS/HRIS Features List */}
             <FeaturesList features={hrmsSoftwareSolution} fadeUp={fadeUp} />
@@ -120,7 +120,7 @@ export default function HCM() {
             title="Payroll & Benefits Administration Software Solutions"
             description="We engineer custom payroll & benefits administration systems to help organizations of all sizes effectively manage employee payroll and benefits packages"
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
             {/* Payroll Feature List */}
             <FeaturesList fadeUp={fadeUp} features={payrollBenefitsSolutions} />
 
@@ -144,14 +144,14 @@ export default function HCM() {
           description="We develop custom background screening software solutions powered by Artificial Intelligence (AI) to ensure a seamless pre-employment background screening process."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:items-center gap-12">
           {/* Left Image */}
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
               src="/assets/industries/hcm/background-screening-software-solutions.png"
               alt="Portfolio"
-              className="w-135"
+              className="md:w-135 w-96 mx-auto"
             />
           </FadeInWhenVisible>
 
@@ -159,6 +159,7 @@ export default function HCM() {
           <FeaturesList
             fadeUp={fadeUp}
             features={backgroundScreeningSolutions}
+            grid
           />
         </div>
 

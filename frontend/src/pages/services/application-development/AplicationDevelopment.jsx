@@ -5,6 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import {
   Headline,
   TypographyH4,
+  TypographyH5,
   TypographyP,
   TypographyH3,
   TypographyMuted,
@@ -53,49 +54,43 @@ const ApplicationDevelopment = () => {
       />
 
       {/* === CROSS PLATFORM INTRO + PLATFORMS SECTION === */}
-      <PageLayout className="py-16">
+      <PageLayout className="py-16 space-y-10">
         {/* Intro headline */}
-        <FadeInWhenVisible>
-          <Headline
-            title={introText.title}
-            description={introText.description}
-          />
-        </FadeInWhenVisible>
+        <Headline title={introText.title} description={introText.description} />
 
         {/* Cross-platform features and image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 space-y-12 items-center">
-          <FadeInWhenVisible className="space-y-8">
-            <Headline
-              title={crossPlatformText.title}
-              description={crossPlatformText.description}
-            />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 space-y-12 items-center">
+          <div className="space-y-8">
+            <FadeInWhenVisible className="">
+              <TypographyH5>{crossPlatformText?.title}</TypographyH5>
+              <TypographyMuted>
+                {crossPlatformText?.description}
+              </TypographyMuted>
+            </FadeInWhenVisible>
             <FeaturesList features={mobileAppPlatforms} />
-          </FadeInWhenVisible>
+          </div>
 
           <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/services/application-development/developers.png"
               alt="Mobile App Devices"
-              className="w-56 sm:w-84 mx-auto"
+              className="w-64 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
       </PageLayout>
 
       {/* === AI-POWERED CUSTOM APP DEVELOPMENT SECTION === */}
-      <section className="bg-secondary">
-        <PageLayout className="py-20 text-center space-y-10 ">
+      <section className="bg-secondary py-16">
+        <PageLayout className="text-center space-y-10 ">
           <Headline
             title={aiHeadline.title}
             description={aiHeadline.description}
           />
 
           {/* Features split into 2 columns */}
-          <FadeInWhenVisible className="space-y-8 grid grid-cols-1 md:grid-cols-2 gap-10">
-            <FeaturesList features={aiApplicationServices.slice(0, 3)} />
-            <FeaturesList features={aiApplicationServices.slice(3, 6)} />
-          </FadeInWhenVisible>
+          <FeaturesList features={aiApplicationServices} grid />
 
           {/* CTA button */}
           <FadeInWhenVisible>
@@ -108,7 +103,7 @@ const ApplicationDevelopment = () => {
 
       {/* === APIaaS Feature Cards Section === */}
       <PageLayout className="py-16 text-center space-y-10">
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-12 text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-left">
           {AiApiFeatures.map((item, index) => (
             <CaseStudyCard
               key={index}
@@ -139,26 +134,27 @@ const ApplicationDevelopment = () => {
           />
 
           {/* Content with image + features */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <FadeInWhenVisible>
               <img
                 loading="lazy"
                 src="/assets/services/application-development/solutions.png"
                 alt="Time Clock App"
-                className="w-56 sm:w-64 mx-auto"
+                className="w-48 mx-auto"
               />
             </FadeInWhenVisible>
 
-            <div className="space-y-8">
-              <Headline
-                title="Enterprise-Class Development Solutions"
-                description="Covering every aspect of the entire enterprise app development process..."
-              />
-
-              {/* Feature list */}
-              <FadeInWhenVisible>
-                <FeaturesList features={enterpriseSolutionsData} />
+            <div className="space-y-8 text-start">
+              <FadeInWhenVisible className="">
+                <TypographyH5>
+                  Enterprise-Class Development Solutions
+                </TypographyH5>
+                <TypographyMuted>
+                  Covering every aspect of the entire enterprise app development
+                  process...
+                </TypographyMuted>
               </FadeInWhenVisible>
+              <FeaturesList features={enterpriseSolutionsData} />
             </div>
           </div>
         </PageLayout>
@@ -166,10 +162,7 @@ const ApplicationDevelopment = () => {
 
       {/* === CUSTOM SERVICE SECTION === */}
       <PageLayout className="py-20 text-center space-y-10">
-        <FadeInWhenVisible className="grid-cols-1 grid md:grid-cols-2 gap-10">
-          <FeaturesList features={CustomServices.slice(0, 3)} />
-          <FeaturesList features={CustomServices.slice(3, 6)} />
-        </FadeInWhenVisible>
+        <FeaturesList features={CustomServices} grid />
 
         <FadeInWhenVisible>
           <Button variant="hover">Create Your Custom App</Button>
@@ -178,64 +171,62 @@ const ApplicationDevelopment = () => {
 
       {/* === COMPLIANCE VIDEO SECTION === */}
       <section className=" bg-secondary py-20">
-        <PageLayout className="bg-[#E5F8FF] p-10">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6">
-            {/* Left text section */}
-            <FadeInWhenVisible>
-              <div>
-                <TypographyH4 className="text-black font-bold mb-4">
-                  {title}
-                </TypographyH4>
-                <TypographyP className="text-muted-foreground">
-                  {description}
-                </TypographyP>
+        <PageLayout className="bg-[#E5F8FF] p-10 grid grid-cols-1 sm:grid-cols-2">
+          {/* Left text section */}
+          <FadeInWhenVisible>
+            <div>
+              <TypographyH4 className="text-black font-bold mb-4">
+                {title}
+              </TypographyH4>
+              <TypographyP className="text-muted-foreground">
+                {description}
+              </TypographyP>
+            </div>
+          </FadeInWhenVisible>
+
+          {/* Right video with floating tags */}
+          <FadeInWhenVisible>
+            <div className="relative flex justify-center">
+              <div className="relative z-10">
+                <video
+                  width="300"
+                  height="200"
+                  controls
+                  className="rounded-xl shadow-lg"
+                >
+                  <source src={videoPath} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
-            </FadeInWhenVisible>
 
-            {/* Right video with floating tags */}
-            <FadeInWhenVisible>
-              <div className="relative flex justify-center">
-                <div className="relative z-10">
-                  <video
-                    width="300"
-                    height="200"
-                    controls
-                    className="rounded-xl shadow-lg"
-                  >
-                    <source src={videoPath} type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+              {/* Floating compliance tags */}
+              <div className="absolute inset-0 flex flex-col items-end justify-between py-2 pr-2 pointer-events-none">
+                <div className="space-y-2">
+                  {complianceTags.slice(0, 2).map((tag, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-white px-4 py-1 rounded-full shadow text-sm font-semibold"
+                    >
+                      {tag}
+                    </div>
+                  ))}
                 </div>
-
-                {/* Floating compliance tags */}
-                <div className="absolute inset-0 flex flex-col items-end justify-between py-2 pr-2 pointer-events-none">
-                  <div className="space-y-2">
-                    {complianceTags.slice(0, 2).map((tag, idx) => (
-                      <div
-                        key={idx}
-                        className="bg-white px-4 py-1 rounded-full shadow text-sm font-semibold"
-                      >
-                        {tag}
-                      </div>
-                    ))}
-                  </div>
-                  <div className="space-y-2">
-                    {complianceTags.slice(2, 4).map((tag, idx) => (
-                      <div
-                        key={idx}
-                        className="bg-white px-4 py-1 rounded-full shadow text-sm font-semibold"
-                      >
-                        {tag}
-                      </div>
-                    ))}
-                  </div>
-                  <div className="absolute bottom-0 left-[45%] translate-x-[-50%] translate-y-[80%] bg-white px-4 py-1 rounded-full shadow text-sm font-semibold">
-                    {complianceTags[4]}
-                  </div>
+                <div className="space-y-2">
+                  {complianceTags.slice(2, 4).map((tag, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-white px-4 py-1 rounded-full shadow text-sm font-semibold"
+                    >
+                      {tag}
+                    </div>
+                  ))}
+                </div>
+                <div className="absolute bottom-0 left-[45%] translate-x-[-50%] translate-y-[80%] bg-white px-4 py-1 rounded-full shadow text-sm font-semibold">
+                  {complianceTags[4]}
                 </div>
               </div>
-            </FadeInWhenVisible>
-          </div>
+            </div>
+          </FadeInWhenVisible>
         </PageLayout>
       </section>
 

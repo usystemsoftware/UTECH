@@ -37,7 +37,7 @@ export default function Correction() {
           description="We develop custom Jail Management Software that provides a comprehensive set of capabilities to manage the entire jail management lifecycle from booking to release."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center md:gap-8">
           {/* Features List */}
           <div className="text-start">
             <TypographyH5>Jail Management System Development</TypographyH5>
@@ -216,7 +216,7 @@ export default function Correction() {
                 loading="lazy"
                 src="/assets/industries/correction/immate-tracking-mobile.png"
                 alt="Mobile Analytics App"
-                className="w-64"
+                className="w-52"
               />
             </FadeInWhenVisible>
 
@@ -290,7 +290,7 @@ export default function Correction() {
           description="We offer Human Resource Management & Human Capital Management (HCM) Software Development Services to manage correctional officers and civilian staff members."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center md:gap-8">
           {/* Features List */}
           <div className="text-start">
             <TypographyH5>HRMS Solutions</TypographyH5>
@@ -334,7 +334,7 @@ export default function Correction() {
                 <FeaturesList fadeUp={fadeUp} features={[item]} />
 
                 {item?.partners && item.partners.length > 0 && (
-                  <div className="flex items-center flex-wrap gap-6">
+                  <div className="flex items-center flex-wrap gap-6 mt-6">
                     {item.partners.map((partner, pIndex) => (
                       <FadeInWhenVisible key={pIndex} delay={0.5}>
                         <img

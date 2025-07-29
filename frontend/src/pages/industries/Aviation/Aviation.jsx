@@ -52,7 +52,7 @@ export default function Aviation() {
             description="U Tech's advanced AI solutions revolutionize the airline industry by optimizing revenue management, flight management, predictive maintenance, and more. With cutting-edge technology and industry expertise, our AI-driven systems provide real-time insights, streamline workflows, and ensure regulatory compliance. Seamlessly integrating with existing infrastructure, our solutions empower airlines, MROs, and flight operators to enhance operational efficiency and deliver superior customer support."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             <FeaturesList
               features={airlineAIandAutomationServices.slice(0, 3)}
               fadeUp={fadeUp}
@@ -78,17 +78,12 @@ export default function Aviation() {
           title="Custom Airline Technology Solutions"
           description="U Tech provides custom airline management software for OEMs, MROs, Airports, and flight operators to streamline their operational workflows."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={airlineOperationsServices.slice(0, 2)}
-            />
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={airlineOperationsServices.slice(2, 4)}
-            />
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          <FeaturesList
+            fadeUp={fadeUp}
+            features={airlineOperationsServices}
+            grid
+          />
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -109,7 +104,7 @@ export default function Aviation() {
             title="Custom Airline Reservation & Ticketing Software Development"
             description="U Tech provides custom airline reservation & ticketing software development services for airlines, airline call centers, OTAs, internet booking & ticket vendors, and more."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2">
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
@@ -118,17 +113,12 @@ export default function Aviation() {
                 className="w-48 mx-auto"
               />
             </FadeInWhenVisible>
-            <div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <FeaturesList
-                  fadeUp={fadeUp}
-                  features={airlineReservationSolutions.slice(0, 2)}
-                />
-                <FeaturesList
-                  fadeUp={fadeUp}
-                  features={airlineReservationSolutions.slice(2, 4)}
-                />
-              </div>
+            <div className="space-y-8">
+              <FeaturesList
+                fadeUp={fadeUp}
+                features={airlineReservationSolutions}
+                grid
+              />
               <TypographyMuted>
                 Integrate with leading GDSs and airline reservation system
                 providers, such as Sabre, Galileo, Amadeus, and FlightsLogic, to
@@ -186,7 +176,7 @@ export default function Aviation() {
             description="U Tech delivers aviation maintenance, repair, and overhaul (MRO) software solutions to aircraft maintenance directors, flight schedulers & dispatchers, inventory parts managers, and more."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 items-center">
             <FeaturesList
               features={aviationMroSolutions.slice(0, 2)}
               fadeUp={fadeUp}
@@ -196,7 +186,7 @@ export default function Aviation() {
                 src="/assets/industries/aviation/mro-aviation-software-developers.png"
                 alt="Accounting Dashboard"
                 loading="lazy"
-                className="w-52 mx-auto"
+                className="w-64 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList
@@ -212,7 +202,7 @@ export default function Aviation() {
           title="Custom Drone Software Development"
           description="U Tech develops custom drone software for agriculture, construction, cinematography, indoor/outdoor inspections, search-and-rescue, and many other industry sectors."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2">
           <FadeInWhenVisible>
             <img
               src="/assets/industries/aviation/custom-drone-software-development.png"
@@ -221,8 +211,8 @@ export default function Aviation() {
               className="w-110 mx-auto"
             />
           </FadeInWhenVisible>
-          <div className="grid gap-4">
-            <FeaturesList features={droneSoftwareSolutions} fadeUp={fadeUp} />
+          <div className="grid gap-9">
+            <FeaturesList features={droneSoftwareSolutions} fadeUp={fadeUp} grid />
             <TypographyMuted>
               Leverage ArcGIS by ESRI, along with other leading drone software
               solutions like FlytBase, DroneDeploy, and Pix4DMapper to transform

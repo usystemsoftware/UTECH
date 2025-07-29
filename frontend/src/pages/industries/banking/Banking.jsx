@@ -61,27 +61,24 @@ export const Banking = () => (
 
     {/* AI Features */}
     <section className="py-16 bg-secondary text-center">
-      <PageLayout>
+      <PageLayout className="space-y-8">
         <Headline
           title="Transforming the Banking Industry with AI-Powered Solutions"
           description="Following best practices, we harness the power of Artificial Intelligence (AI) in our financial software development process to build transformative solutions for the Banking industry. Our AI-driven software solution experts develop cutting-edge capabilities such as advanced fraud detection, AI-enhanced credit assessment, and AI-enhanced financial forecasting."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:gap-6 items-center mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:gap-6 xl:gap-16 items-center mt-8">
           <FeaturesList
             features={BankingSoftwareAIFeatures.slice(0, 2)}
             fadeUp={fadeUp}
             iconSize={40}
           />
-          <FadeInWhenVisible delay={0.4}>
-            <img
-              loading="lazy"
-              src="/assets/industries/banking/BankingPhone.png"
-              alt="AI-powered banking analytics"
-              className="mx-auto w-[45%] sm:max-w-sm"
-            />
-          </FadeInWhenVisible>
           <FeaturesList
-            features={BankingSoftwareAIFeatures.slice(2)}
+            features={BankingSoftwareAIFeatures.slice(2, 4)}
+            fadeUp={fadeUp}
+            iconSize={40}
+          />
+          <FeaturesList
+            features={BankingSoftwareAIFeatures.slice(4, 6)}
             fadeUp={fadeUp}
             iconSize={40}
           />
@@ -106,7 +103,6 @@ export const Banking = () => (
         iconSize={38}
         image="/assets/industries/banking/softwareSolutions.png"
         imageClass="w-135"
-        grid
         reverse
       />
       <FadeInWhenVisible>
@@ -120,19 +116,18 @@ export const Banking = () => (
         title="Custom Mobile Banking Software Solutions"
         description="U Technology makes it possible for mobile banking software providers to customize features, such as electronic bill payments, remote check deposits, P2P payments, fund transfers between accounts, text messaging, and statement downloading & printing."
       />
-      <PageLayout className="flex flex-col-reverse sm:flex-row items-center gap-10 ">
+      <PageLayout className="grid grid-cols-1 sm:grid-cols-2 ">
         <FeaturesList
           features={GetMobileBankingSoftwareSolutions}
           fadeUp={fadeUp}
           iconSize={36}
-          grid
         />
         <FadeInWhenVisible delay={0.4} className="hidden md:block">
           <img
             loading="lazy"
             src="/assets/industries/banking/Phone.png"
             alt="Mobile Banking App"
-            className="w-135 mx-auto"
+            className="w-56 mx-auto"
           />
         </FadeInWhenVisible>
       </PageLayout>
@@ -152,9 +147,8 @@ export const Banking = () => (
         fadeUp={fadeUp}
         iconSize={36}
         image="/assets/industries/banking/softwareSolutions.png"
-        imageClass="w-135"
+        imageClass="w-135 "
         reverse
-        grid
       />
       <FadeInWhenVisible>
         <Button variant="hover" className="mt-8">
@@ -221,14 +215,26 @@ export const Banking = () => (
         title="Custom ATM Software Development"
         description="U Technology's banking software developers are at the forefront of the industry, configuring and customizing existing ATM software, as well as providing end-to-end ATM software development services for national and international financial institutions."
       />
-      <FeaturesList
-        features={BankingAtmFeatures}
-        fadeUp={fadeUp}
-        iconSize={36}
-        image="/assets/industries/banking/customatm.png"
-        imageClass="w-32 hidden md:block md:w-72"
-        grid
-      />
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <FeaturesList
+          features={BankingAtmFeatures.slice(0, 2)}
+          fadeUp={fadeUp}
+          iconSize={36}
+        />
+        <FadeInWhenVisible delay={0.4}>
+          <img
+            loading="lazy"
+            src="/assets/industries/banking/customatm.png"
+            alt="Loan Software"
+            className="w-64 mx-auto"
+          />
+        </FadeInWhenVisible>
+        <FeaturesList
+          features={BankingAtmFeatures.slice(2, 4)}
+          fadeUp={fadeUp}
+          iconSize={36}
+        />
+      </div>
       <FadeInWhenVisible>
         <Button variant="hover">Get ATM Software Solutions</Button>
       </FadeInWhenVisible>
@@ -236,24 +242,23 @@ export const Banking = () => (
 
     {/* CORE Banking Section */}
     <section className="bg-secondary py-16 space-y-8 text-center">
-      <div className="px-4">
-        <Headline
-          title="Custom CORE Banking Solutions"
-          description="U Technology’s developers provide Centralized Online Real-Time Exchange (CORE) banking software services that effortlessly support all of a bank’s most common transactions, including making and servicing loans, opening new accounts, and processing cash deposits & withdrawals."
-        />
-      </div>
-      <PageLayout className="flex flex-col sm:flex-row md:items-center justify-center gap-16 mt-12">
+      <Headline
+        title="Custom CORE Banking Solutions"
+        description="U Technology’s developers provide Centralized Online Real-Time Exchange (CORE) banking software services that effortlessly support all of a bank’s most common transactions, including making and servicing loans, opening new accounts, and processing cash deposits & withdrawals."
+      />
+      <PageLayout className="grid grid-cols-1 sm:grid-cols-2 gap-12">
         <FeaturesList
           features={BankingCoreFeatures}
           fadeUp={fadeUp}
           iconSize={36}
+          grid
         />
         <FadeInWhenVisible delay={0.4}>
           <img
             loading="lazy"
             src="/assets/industries/banking/customcore.png"
             alt="Loan Software"
-            className="w-135"
+            className="w-110"
           />
         </FadeInWhenVisible>
       </PageLayout>
@@ -268,14 +273,26 @@ export const Banking = () => (
         title="Custom EMV Software Solutions"
         description="U Technology provides a comprehensive, broad range of EMV software solutions from custom-coded programming to advanced feature implementation, enabling institutions to deliver secure data in sensitive environments."
       />
-      <FeaturesList
-        features={BankingCustomEMVServices}
-        fadeUp={fadeUp}
-        iconSize={36}
-        image="/assets/industries/banking/mobilebrowser.png"
-        imageClass="w-32 md:block hidden"
-        grid
-      />
+      <div className="grid grid-cols-1 sm:grid-cols-3">
+        <FeaturesList
+          features={BankingCustomEMVServices.slice(0, 2)}
+          fadeUp={fadeUp}
+          iconSize={36}
+        />
+        <FadeInWhenVisible delay={0.4}>
+          <img
+            loading="lazy"
+            src="/assets/industries/banking/mobilebrowser.png"
+            alt="Loan Software"
+            className="w-64 mx-auto"
+          />
+        </FadeInWhenVisible>
+        <FeaturesList
+          features={BankingCustomEMVServices.slice(2, 4)}
+          fadeUp={fadeUp}
+          iconSize={36}
+        />
+      </div>
       <FadeInWhenVisible>
         <Button variant="hover">Get EMV Software Solutions</Button>
       </FadeInWhenVisible>
@@ -287,21 +304,16 @@ export const Banking = () => (
         title="Check 21 Software & ACH Processing Solutions"
         description="At U Technology, we customize your ACH payment processing and Check 21 capabilities to seamlessly integrate e-check processing functionality and credit card processing with secure verification systems and enhanced UX designs."
       />
-      <PageLayout className="flex flex-col sm:flex-row justify-center md:gap-16">
+      <PageLayout className="grid grid-cols-1 sm:grid-cols-2">
         <FadeInWhenVisible delay={0.4}>
           <img
             loading="lazy"
             src="/assets/industries/banking/payment.png"
             alt="Mobile Banking App"
-            className="sm:w-145 hidden md:block"
+            className="w-52 mx-auto hidden sm:block"
           />
         </FadeInWhenVisible>
-        <FeaturesList
-          features={BankingACHfeatures}
-          fadeUp={fadeUp}
-          iconSize={36}
-          grid
-        />
+        <FeaturesList features={BankingACHfeatures} fadeUp={fadeUp} />
       </PageLayout>
       <FadeInWhenVisible>
         <Button variant="hover">Get Check 21 & ACH Processing Solutions</Button>
@@ -314,28 +326,17 @@ export const Banking = () => (
         title="Banking Software Support"
         description="Banking and fiscal services have seen a significant transformation because of the use of new software solutions and apps. U Technology’s banking software support enhances efficiency, reliability, and regulatory compliance while improving the customer experience."
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 text-left">
-        {BankingSupportItems?.map((item, index) => (
-          <FadeInWhenVisible key={index} delay={index * 0.2}>
-            <div
-              className={`flex items-start gap-4 ${
-                item.reverse
-                  ? "lg:justify-end lg:text-right flex-row-reverse"
-                  : ""
-              }`}
-            >
-              <IconRenderer
-                name={item.icon}
-                size={36}
-                className="text-primary flex-shrink-0"
-              />
-              <div>
-                <TypographyH5>{item.title}</TypographyH5>
-                <TypographyMuted>{item.description}</TypographyMuted>
-              </div>
-            </div>
-          </FadeInWhenVisible>
-        ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+        <FeaturesList
+          features={BankingSupportItems.slice(0, 5)}
+          fadeUp={fadeUp}
+          grid
+        />
+        <FeaturesList
+          features={BankingSupportItems.slice(5.1)}
+          fadeUp={fadeUp}
+          grid
+        />
       </div>
       <FadeInWhenVisible delay={0.4}>
         <Button variant="hover">Get Finance Software Support</Button>

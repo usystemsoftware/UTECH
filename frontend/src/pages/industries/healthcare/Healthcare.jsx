@@ -83,7 +83,7 @@ export default function Healthcare() {
           description="With Digital Health Platforms, medical professionals can take a different approach to their research, health management, and patient care, leading to significant improvements in efficiency and patient outcomes."
         />
 
-        <div className="flex flex-col sm:flex-row justify-baseline gap-8 md:gap-26">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {/* Left Features List */}
           <FeaturesList
             features={digitalHelthSolutions.slice(0, 2)}
@@ -96,7 +96,7 @@ export default function Healthcare() {
               loading="lazy"
               src="/assets/industries/healthcare/industry-leadin-telehealth.png"
               alt="Mobile Analytics App"
-              className="w-64"
+              className="w-48 mx-auto"
             />
           </FadeInWhenVisible>
 
@@ -121,7 +121,7 @@ export default function Healthcare() {
                 loading="lazy"
                 src="/assets/industries/healthcare/electronic-medical-records-with-laptop.png"
                 alt="Portfolio"
-                className="w-120"
+                className="w-120 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList features={healthcareExtraFeatures} fadeUp={fadeUp} />
@@ -139,7 +139,7 @@ export default function Healthcare() {
           description="We build custom telehealth apps to deliver remote health services, education, and training for improved efficiency and quality of care."
         />
 
-        <div className="flex flex-col sm:flex-row justify-baseline gap-8 md:gap-26">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {/* Left Features List */}
           <FeaturesList
             features={telemedicineFeatures.slice(0, 2)}
@@ -152,7 +152,7 @@ export default function Healthcare() {
               loading="lazy"
               src="/assets/industries/healthcare/cellphone.png"
               alt="Mobile Analytics App"
-              className="w-64"
+              className="w-48 mx-auto"
             />
           </FadeInWhenVisible>
 
@@ -193,13 +193,13 @@ export default function Healthcare() {
           title="PACS & DICOM Viewer platform"
           description="We deliver end-to-end PACS/DICOM platform designed for secure data and image sharing, archiving, viewing, and more."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
               src="/assets/industries/construction/building-information-modeling-solutions-cut.png"
               alt="Portfolio"
-              className="w-135"
+              className="w-135 mx-auto"
             />
           </FadeInWhenVisible>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -247,7 +247,7 @@ export default function Healthcare() {
           title="Pharmacy Management System"
           description="We enhance existing pharmacy management systems with features that promote workflow automation, fully integrated payment processing, and real-time communication."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <FeaturesList
               fadeUp={fadeUp}
@@ -315,7 +315,7 @@ export default function Healthcare() {
               loading="lazy"
               src="/assets/industries/healthcare/custom-hl7-interface-software-solutions.png"
               alt="Mobile Analytics App"
-              className="w-96"
+              className="w-62 mx-auto"
             />
           </FadeInWhenVisible>
 
@@ -466,23 +466,21 @@ export default function Healthcare() {
           description="We develop robust and intuitive cloud-based veterinary practice management software to organize workflows and improve vet clinic productivity."
         />
 
-        <div className="flex flex-col sm:flex-row justify-baseline gap-8 md:gap-26">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {/* Left Features List */}
           <FeaturesList
             features={veterinarySoftwareFeatures.slice(0, 2)}
             fadeUp={fadeUp}
           />
-
           {/* Center Animation */}
           <FadeInWhenVisible className="md:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/healthcare/veterinary-practice-management-software-solutions.png"
               alt="Mobile Analytics App"
-              className="w-64"
+              className="w-48 mx-auto"
             />
           </FadeInWhenVisible>
-
           {/* Right Features List */}
           <FeaturesList
             features={veterinarySoftwareFeatures.slice(2, 4)}

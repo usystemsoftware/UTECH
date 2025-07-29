@@ -15,11 +15,11 @@ import {
   portfolioFeatures,
   planningFeatures,
   insuranceFeatures,
-  tradingFeatures,
   factoringFeatures,
   supportFeatures,
   faqs,
   testimonials,
+  taxFeatures,
 } from "./Data";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import IntigrateWith from "@/custom/IntigrateWith";
@@ -39,7 +39,7 @@ const Finance = () => {
       />
 
       {/* Features Grid */}
-      <PageLayout className="text-center my-12">
+      <PageLayout className="text-center my-12 space-y-8">
         <Headline
           title="U Technology’s Financial Software Development Services"
           description="U Technology’s custom financial software development services cater to the finance industry, providing custom-tailored solutions for accounting, portfolio management, financial planning, insurance, and taxes."
@@ -62,7 +62,7 @@ const Finance = () => {
             title="Optimizing Finance with Artificial Intelligence"
             description="With the ever-evolving landscape of financial services becoming increasingly complex and digital, AI is a game-changer. U Technology’s Financial Software Development Services are here to help you transform your operations, improve your customer experiences, and aid in strategic decision-making."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-12 text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 md:gap-8 text-left">
             {aiBenefits.map((item, index) => (
               <FadeInWhenVisible key={index} delay={index * 0.2}>
                 <CaseStudyCard
@@ -86,13 +86,13 @@ const Finance = () => {
           title="Custom Accounting Software Development"
           description="U Technology’s custom accounting software development services include API programming & integrations, AIS architecture, bookkeeping app development, and much more."
         />
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2">
           <FadeInWhenVisible>
             <img
               src="/assets/industries/finance/accounting-development.png"
               alt="Accounting Dashboard"
               loading="lazy"
-              className="w-135"
+              className="w-110 mx-auto"
             />
           </FadeInWhenVisible>
           <FeaturesList features={accountingFeatures} fadeUp={fadeUp} />
@@ -116,7 +116,7 @@ const Finance = () => {
           title="Custom Portfolio Management Software Development"
           description="U Technology’s custom portfolio management software solutions encompass everything from risk analysis and investments to stock trading apps and fund management in a centralized platform."
         />
-        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8 md:gap-12">
+        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8 md:gap-12">
           <FeaturesList
             features={portfolioFeatures}
             fadeUp={fadeUp}
@@ -143,16 +143,16 @@ const Finance = () => {
             title="Custom Financial Planning Software Development"
             description="U Technology’s custom financial planning software solutions streamline day-to-day processes, including invoicing, payment processing, audit archiving, report generation, and more."
           />
-          <div className="flex justify-center sm:flex-row flex-col gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <FadeInWhenVisible>
               <img
                 loading="lazy"
                 src="/assets/industries/finance/planning-development.png"
                 alt="Financial Planning Dashboard"
-                className="w-135"
+                className="w-96 mx-auto"
               />
             </FadeInWhenVisible>
-            <FeaturesList features={planningFeatures} fadeUp={fadeUp} />
+            <FeaturesList features={planningFeatures} fadeUp={fadeUp} grid />
           </div>
           <FadeInWhenVisible>
             <Button variant="hover">
@@ -218,14 +218,14 @@ const Finance = () => {
             title="Custom Insurance Software Development"
             description="U Technology’s custom insurance software solutions ensures success-driven insurance automation to help insurance companies drive momentum and drive productivity."
           />
-          <div className="flex flex-col sm:flex-row  justify-between gap-12">
-            <FeaturesList features={insuranceFeatures} fadeUp={fadeUp} />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <FeaturesList features={insuranceFeatures} fadeUp={fadeUp} grid />
             <FadeInWhenVisible>
               <img
                 loading="lazy"
                 src="/assets/industries/finance/insurance-development.png"
                 alt="Insurance Dashboard"
-                className="w-135"
+                className="w-135 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
@@ -241,44 +241,20 @@ const Finance = () => {
           title="Custom Tax Preparation Software Development"
           description="U Technology’s custom tax prep software solutions support the preparation, calculation, and reporting of personal and business taxes."
         />
-        <PageLayout className="mt-16 flex flex-col sm:flex-row justify-between gap-10">
+        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/industries/finance/preparation-development.png"
               alt="Tax Preparation"
-              className="w-135"
+              className="w-135 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList features={portfolioFeatures} fadeUp={fadeUp} />
+          <FeaturesList features={taxFeatures} fadeUp={fadeUp} />
         </PageLayout>
         <FadeInWhenVisible>
           <Button variant="hover">GET TAX PREP SOFTWARE SOLUTIONS</Button>
         </FadeInWhenVisible>
-      </section>
-
-      {/* Trading Section */}
-      <section className="py-16 bg-secondary text-center">
-        <PageLayout className="space-y-10">
-          <Headline
-            title="Capital & Stock Trading Software Development"
-            description="U Technology’s creates custom trading software solutions for capital markets, focusing on security and performance."
-          />
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
-            <FadeInWhenVisible className="hidden md:block">
-              <img
-                loading="lazy"
-                src="/assets/industries/finance/trading-development.png"
-                alt="Trading Dashboard"
-                className="w-165"
-              />
-            </FadeInWhenVisible>
-            <FeaturesList features={tradingFeatures} fadeUp={fadeUp} grid />
-          </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET TRADING SOFTWARE SOLUTIONS</Button>
-          </FadeInWhenVisible>
-        </PageLayout>
       </section>
 
       {/* Factoring Section */}
@@ -287,7 +263,18 @@ const Finance = () => {
           title="Tailored Factoring Software Development Solutions"
           description="Leverage U Technology's profound financial software development expertise to drive your business forward with advanced factoring solutions. Our innovative services are meticulously designed to streamline your financial processes and set you apart in the competitive landscape."
         />
-        <FeaturesList features={factoringFeatures} fadeUp={fadeUp} grid />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <FeaturesList
+            features={factoringFeatures.slice(0, 4)}
+            fadeUp={fadeUp}
+            grid
+          />
+          <FeaturesList
+            features={factoringFeatures.slice(4, 8)}
+            fadeUp={fadeUp}
+            grid
+          />
+        </div>
         <FadeInWhenVisible>
           <Button variant="hover">GET FACTORING SOLUTIONS</Button>
         </FadeInWhenVisible>

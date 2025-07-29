@@ -56,23 +56,11 @@ const NavbarMobile = () => {
     <div className="md:hidden fixed top-0 left-0 z-50 w-full bg-background shadow-md overflow-hidden">
       {/* Top Bar */}
       <div className="flex items-center justify-between px-4 py-4 border-b">
-        <Link
-          onClick={() => setOpen((prev) => !prev)}
-          to="/"
-          className="flex items-center relative"
-        >
-          <img
-            loading="lazy"
-            src="/small-logo.png"
-            alt="Logo"
-            className="h-7 w-6"
-          />
-          <TypographyH4 className="absolute left-7 text-lg top-0.5 bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent">
-            Technology
-          </TypographyH4>
+        <Link to="/" className="flex items-center relative z-50">
+          <img loading="lazy" src="/logo.png" alt="Logo" className="w-26" />
         </Link>
 
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-6">
           <IconRenderer name="Search" size={17} className="cursor-pointer" />
           <button onClick={() => setOpen((prev) => !prev)}>
             <IconRenderer name={open ? "X" : "AlignJustify"} size={22} />

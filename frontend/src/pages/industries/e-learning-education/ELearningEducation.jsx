@@ -90,7 +90,7 @@ export default function ELearningEducation() {
           title="We Have Experienced Jail Management Software Developers "
           description="Our industry-experienced e-learning software developers create custom LMS software solutions to manage, track, and achieve your corporate learning goals."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:items-center gap-8">
           {/* Image */}
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
@@ -104,12 +104,16 @@ export default function ELearningEducation() {
           {/* Feature List */}
           <div className="text-start">
             <TypographyH5>Custom LMS Software Solutions</TypographyH5>
-            <TypographyMuted className="mb-4">
+            <TypographyMuted className="mb-8">
               Our development team delivers custom LMS development, integration,
               and implementation for academic establishments ranging from public
               K-12 to university-level, and everything in between.
             </TypographyMuted>
-            <FeaturesList fadeUp={fadeUp} features={customELearningSolutions} />
+            <FeaturesList
+              fadeUp={fadeUp}
+              features={customELearningSolutions}
+              grid
+            />
           </div>
         </div>
       </PageLayout>
@@ -117,7 +121,7 @@ export default function ELearningEducation() {
       {/* LMS Solutions Features */}
       <section className="bg-secondary py-10">
         <PageLayout className="text-center space-y-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2">
             <FeaturesList features={lmsSolutions.slice(0, 3)} fadeUp={fadeUp} />
             <FeaturesList features={lmsSolutions.slice(3, 6)} fadeUp={fadeUp} />
           </div>
@@ -143,7 +147,7 @@ export default function ELearningEducation() {
         />
 
         {/* First Set */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8">
           <div className="text-start">
             <TypographyH5>Content Authoring Software Development</TypographyH5>
             <TypographyMuted className="mb-8">
@@ -188,13 +192,13 @@ export default function ELearningEducation() {
       </PageLayout>
 
       {/* SIS Development Section */}
-      <section className="py-16">
+      <section className="py-16 bg-secondary">
         <PageLayout className="space-y-8 text-center">
           <Headline
             title="Student Information System (SIS) Solutions"
             description="Our knowledgeable e-learning software developers build SISs and perform seamless SIS integrations that enable bilateral communication & interoperability."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-12">
             <FadeInWhenVisible delay={0.5} className="sm:block hidden">
               <img
                 loading="lazy"
@@ -217,18 +221,9 @@ export default function ELearningEducation() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <FeaturesList
-                fadeUp={fadeUp}
-                features={sisSolutions.slice(0, 2)}
-              />
-              <FeaturesList
-                fadeUp={fadeUp}
-                features={sisSolutions.slice(2, 4)}
-              />
-            </div>
-            <FadeInWhenVisible delay={0.5}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <FeaturesList fadeUp={fadeUp} features={sisSolutions} grid />
+            <FadeInWhenVisible delay={0.5} className="md:block hidden">
               <img
                 loading="lazy"
                 src="/assets/industries/e-learning-education/laptop-01.png"
@@ -280,18 +275,13 @@ export default function ELearningEducation() {
       {/* WBT Features */}
       <section className="bg-secondary py-8">
         <PageLayout className="space-y-8 text-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <FeaturesList
-                fadeUp={fadeUp}
-                features={webBasedTrainingFeatures.slice(0, 2)}
-              />
-              <FeaturesList
-                fadeUp={fadeUp}
-                features={webBasedTrainingFeatures.slice(2, 4)}
-              />
-            </div>
-            <FadeInWhenVisible className="sm:block hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:items-center gap-8">
+            <FeaturesList
+              fadeUp={fadeUp}
+              features={webBasedTrainingFeatures}
+              grid
+            />
+            <FadeInWhenVisible className="md:block hidden">
               <img
                 loading="lazy"
                 src="/assets/industries/e-learning-education/credentials-&-digital-badges1.png"
@@ -312,16 +302,11 @@ export default function ELearningEducation() {
           title="eLearning Software Support Services"
           description="Our support services team provides responsive around-the-clock eLearning software support. We troubleshoot issues and carefully monitor the performance of all e-learning resources to eliminate latency and costly workflow interruption and ensure high-performing education materials that are SCORM compliant."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-          <FeaturesList
-            features={elearningSupportServices.slice(0, 3)}
-            fadeUp={fadeUp}
-          />
-          <FeaturesList
-            features={elearningSupportServices.slice(3, 6)}
-            fadeUp={fadeUp}
-          />
-        </div>
+        <FeaturesList
+          features={elearningSupportServices}
+          fadeUp={fadeUp}
+          grid
+        />
         <FadeInWhenVisible>
           <Button variant="hover">HIRE eLEARNING DEVELOPERS</Button>
         </FadeInWhenVisible>

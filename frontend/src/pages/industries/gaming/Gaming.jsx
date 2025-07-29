@@ -55,7 +55,7 @@ const Gaming = () => (
       </PageLayout>
     </div>
 
-    <PageLayout className="py-8 text-center space-y-6">
+    <PageLayout className="py-8 text-center space-y-10">
       <Headline
         title="Custom Loan Servicing & Origination Solutions"
         description="U Technology’s custom loan servicing and origination personalized solutions handle underwriting, origination, disbursement, servicing, amortization, processing, and so much more for financial services and institutions."
@@ -72,7 +72,7 @@ const Gaming = () => (
         We integrate with gaming industry-leading video game development tools
         and gaming engines, including:
       </TypographyMuted>
-      <div className="flex flex-wrap justify-center items-center gap-6 my-2">
+      <div className="flex flex-wrap justify-center items-center gap-6 my-8">
         {gameEngineLogos.map((logo, idx) => (
           <img key={idx} src={logo.src} alt={logo.alt} className="h-10" />
         ))}

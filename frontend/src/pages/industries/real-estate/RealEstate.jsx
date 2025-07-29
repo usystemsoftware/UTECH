@@ -90,7 +90,7 @@ const RealEstate = () => {
                 loading="lazy"
                 src="/assets/industries/real-estate/laptop.png"
                 alt="AI-powered banking analytics"
-                className="w-132"
+                className="w-132 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList
@@ -106,36 +106,14 @@ const RealEstate = () => {
         </PageLayout>
       </section>
 
-      <PageLayout className="py-16 space-y-8 text-center">
+      <PageLayout className="py-16 text-center space-y-10">
         <Headline
           title="AI-Powered Real Estate Solutions"
           description="Discover how advanced technologies like AI, IoT, AR/VR, and automation
         are transforming the real estate industry with intelligent, data-driven
         tools."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-12 text-left">
-          {realEstateSolutions?.map((item, index) => (
-            <FadeInWhenVisible key={index} delay={index * 0.2}>
-              <div
-                className={`flex items-start gap-4 ${
-                  item.reverse
-                    ? "lg:justify-end lg:text-right flex-row-reverse"
-                    : ""
-                }`}
-              >
-                <IconRenderer
-                  name={item.icon}
-                  size={36}
-                  className="text-primary flex-shrink-0"
-                />
-                <div>
-                  <TypographyH5>{item.title}</TypographyH5>
-                  <TypographyMuted>{item.description}</TypographyMuted>
-                </div>
-              </div>
-            </FadeInWhenVisible>
-          ))}
-        </div>
+        <FeaturesList features={realEstateSolutions} fadeUp={fadeUp} grid />
         <FadeInWhenVisible delay={0.4}>
           <Button variant="hover">
             Get Real Estate Solutions integrated with AI
@@ -150,13 +128,13 @@ const RealEstate = () => {
             to help streamline real estate business operations, automate routine
             tasks, and ensure easy access to market information."
         />
-        <PageLayout className="flex flex-col sm:flex-row md:items-center justify-center gap-16">
+        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <FadeInWhenVisible delay={0.4} className="md:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/real-estate/mobile.png"
               alt="Mobile real estate App"
-              className="h-96"
+              className="h-96 mx-auto"
             />
           </FadeInWhenVisible>
           <div>
@@ -182,29 +160,7 @@ const RealEstate = () => {
           banking software support enhances efficiency, reliability, and
           regulatory compliance while improving the customer experience."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 text-left">
-          {realEstateFeatures?.map((item, index) => (
-            <FadeInWhenVisible key={index} delay={index * 0.2}>
-              <div
-                className={`flex items-start gap-4 ${
-                  item.reverse
-                    ? "lg:justify-end lg:text-right flex-row-reverse"
-                    : ""
-                }`}
-              >
-                <IconRenderer
-                  name={item.icon}
-                  size={36}
-                  className="text-primary flex-shrink-0"
-                />
-                <div>
-                  <TypographyH5>{item.title}</TypographyH5>
-                  <TypographyMuted>{item.description}</TypographyMuted>
-                </div>
-              </div>
-            </FadeInWhenVisible>
-          ))}
-        </div>
+        <FeaturesList features={realEstateFeatures} fadeUp={fadeUp} grid />
         <FadeInWhenVisible delay={0.4}>
           <Button variant="hover">Get Real Estate Software Support</Button>
         </FadeInWhenVisible>

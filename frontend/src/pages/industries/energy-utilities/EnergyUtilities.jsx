@@ -58,7 +58,7 @@ export default function EnergyUtilities() {
             title="Custom Energy Management Software Solutions"
             description="U Tech developers engineer custom energy management solutions built to streamline, automate, and simplify energy management workflows, providing resolutions for utility asset management, billing services and much more."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
@@ -107,7 +107,7 @@ export default function EnergyUtilities() {
             title="Electric Utility Software Solutions"
             description="U Tech delivers custom electric utility software solutions designed for grid modernization, automating and simplifying the management of electrical power sources and all other electric operations management workflows."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
             <FeaturesList
               fadeUp={fadeUp}
               features={electricSoftwareSolutions}
@@ -133,7 +133,7 @@ export default function EnergyUtilities() {
           title="Custom Water Management Solutions"
           description="We develop custom water quality monitoring solutions to help businesses manage and meet all of their water and wastewater management needs, tracking sampling activities, producing region-specific discharge monitoring reports (DMRs) and ensuring continual compliance with all water and wastewater requirements."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -156,7 +156,7 @@ export default function EnergyUtilities() {
             title="Custom Smart Grid Technology Software"
             description="Our developers can either augment existing systems or provide custom solutions to fit specific business needs, engineering advanced technologies for grid distribution, transmission, consumption processes and more."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
             <FeaturesList fadeUp={fadeUp} features={smartGridSolutions} />
             <FadeInWhenVisible delay={0.5}>
               <img
@@ -179,7 +179,7 @@ export default function EnergyUtilities() {
           title="Custom Heat Software Solutions"
           description="At U Tech, our software developers are well-versed in the energy & utilities industry along with developing comprehensive heat monitoring software, creating all-in-one solutions for district heating systems, individual heating systems, heating plants, heat monitoring software, and much more."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -202,7 +202,7 @@ export default function EnergyUtilities() {
             title="Custom Solar Asset Management Software Solutions"
             description="U Tech’s expert developers utilize a wide range of technologies, such as solar heating, artificial photosynthesis, photovoltaics, and more to customize solar asset management software solutions engineered to improve the design, construction, and management of solar power as a sustainable, renewable energy source."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-8">
             <FeaturesList fadeUp={fadeUp} features={solarSoftwareSolutions} />
             <FadeInWhenVisible delay={0.5}>
               <img
@@ -225,7 +225,7 @@ export default function EnergyUtilities() {
           title="Waste Management Software Solutions"
           description="Our software developers have a vast amount of knowledge and experience building custom software for the waste industry, aumenting existing IT teams and optimizing solutions through custom integrations to create a more interoperable system that encompasses all aspects of waste management."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -261,7 +261,7 @@ export default function EnergyUtilities() {
           title="Custom Wind Software Solutions"
           description="U Tech delivers custom-developed wind software solutions and applications designed to assist in the operation and development of wind farms, as well as monitoring wind speed forecasting, utilizing 3D farm modeling & visualization, monitoring wind flow/energy output window simulations, and more."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -284,7 +284,7 @@ export default function EnergyUtilities() {
             title="Custom Nuclear Energy Software Solutions"
             description="At U Tech, we deliver comprehensive nuclear energy software solutions to help businesses with nuclear facilities to automate & streamline their workflows regarding their nuclear power plant planning, power plant equipment design, spent fuel analysis & safety management monitoring, and operations management & analysis."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
             <FeaturesList fadeUp={fadeUp} features={nuclearSolutions} />
             <FadeInWhenVisible delay={0.5}>
               <img

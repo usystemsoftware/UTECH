@@ -39,7 +39,7 @@ const ApiDevelopment = () => {
           description="U Tech custom API solutions support a range of integration protocols, including REST, SOAP, XML, and RPC API. Our developers have extensive experience creating custom application programming interfaces using these protocols to ensure seamless integration between your systems."
         />
 
-        <div className="flex flex-col md:flex-row justify-baseline gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
           {/* Left Features List */}
           <FeaturesList features={features.slice(0, 2)} fadeUp={fadeUp} />
 
@@ -49,7 +49,7 @@ const ApiDevelopment = () => {
               loading="lazy"
               src="/assets/services/api-development/cellphone-animation.gif"
               alt="Mobile Analytics App"
-              className="w-64"
+              className="w-48 mx-auto"
             />
           </FadeInWhenVisible>
 
@@ -71,7 +71,7 @@ const ApiDevelopment = () => {
         />
 
         {/* Feature Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-left">
           {AiApiFeatures.map((item, index) => (
             <CaseStudyCard
               key={index}
@@ -98,7 +98,7 @@ const ApiDevelopment = () => {
         />
 
         {/* APIaaS Image + Feature Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-12 text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 text-left">
           {services.map((item, index) => (
             <CaseStudyCard
               key={index}
@@ -138,6 +138,7 @@ const ApiDevelopment = () => {
               >
                 {feature.logos.map((logo, index) => (
                   <img
+                    key={index}
                     loading="lazy"
                     src={`/assets/services/api-development/api-conf/${logo}.png`}
                     className="h-8 cursor-pointer hover:scale-105"
@@ -163,7 +164,7 @@ const ApiDevelopment = () => {
         />
 
         {/* Support Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 text-left">
           {support.map((item, index) => (
             <CaseStudyCard
               key={index}

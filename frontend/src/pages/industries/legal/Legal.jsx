@@ -1,4 +1,3 @@
-import { IconRenderer } from "@/custom/IconRenderer";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
@@ -38,7 +37,7 @@ const Legal = () => (
         description="Chetu, a legal software development company has extensive legal industry experience providing best-in-class Legal Software Development Services from the ground up and revamping existing solutions through custom-tailored integrations."
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-4">
           <TypographyH5>Law Firm Management Software</TypographyH5>
           <TypographyMuted>
@@ -50,6 +49,7 @@ const Legal = () => (
           <FeaturesList
             features={LegalTransformationFeatures}
             fadeUp={fadeUp}
+            grid
           />
         </div>
         <FadeInWhenVisible>
@@ -57,18 +57,18 @@ const Legal = () => (
             loading="lazy"
             src="/assets/industries/legal/phone.png"
             alt="Financial Planning Dashboard"
-            className="w-60 mx-auto hidden sm:block"
+            className="w-48 mx-auto hidden md:block"
           />
         </FadeInWhenVisible>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:items-center gap-6">
         <FadeInWhenVisible>
           <img
             loading="lazy"
             src="/assets/industries/legal/software.png"
             alt="Financial Planning Dashboard"
-            className="w-145 hidden sm:block"
+            className="w-145 hidden md:block"
           />
         </FadeInWhenVisible>
         <div className="space-y-4 mb-10">
@@ -81,7 +81,7 @@ const Legal = () => (
             manage billing information, locate essential case notes, and
             schedule appointments.
           </TypographyMuted>
-          <FeaturesList features={LegalTransformation} fadeUp={fadeUp} />
+          <FeaturesList features={LegalTransformation} fadeUp={fadeUp} grid />
         </div>
       </div>
       <FeaturesList features={legalFeatures} fadeUp={fadeUp} grid />
@@ -93,16 +93,7 @@ const Legal = () => (
           title="AI-Powered Legal Software Development Services"
           description="Enhance legal workflows with Chetu’s AI-driven software, enhancing accuracy, automation, and compliance across processes."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <FeaturesList
-            features={legalgSupportItems.slice(0, 2)}
-            fadeUp={fadeUp}
-          />
-          <FeaturesList
-            features={legalgSupportItems.slice(2, 4)}
-            fadeUp={fadeUp}
-          />
-        </div>
+        <FeaturesList features={legalgSupportItems} fadeUp={fadeUp} grid />
       </PageLayout>
     </section>
 
@@ -160,10 +151,9 @@ const Legal = () => (
         title="Specialized Legal Practice Software Solutions"
         description="Chetu designs and deploys customized legal practice software to augment research, streamline workflow, and enable data-driven decisions with powerful analytics. This intuitive software addresses the unique needs of various legal fields, such as immigration law, estate law, family law, and personal injury."
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-        <FeaturesList features={legalgSupportIsecound.slice(0, 2)} />
-        <FeaturesList features={legalgSupportIsecound.slice(2, 4)} />
-      </div>
+
+      <FeaturesList features={legalgSupportIsecound} grid />
+
       <FadeInWhenVisible>
         <Button variant="hover">Get Started with Custom Legal Software</Button>
       </FadeInWhenVisible>

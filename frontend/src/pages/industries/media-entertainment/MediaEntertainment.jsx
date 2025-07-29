@@ -179,10 +179,7 @@ export default function MediaEntertainment() {
           description="We specialize in custom media software, interactive media, VR and AR applications, and animation tools tailored for entertainment industry needs."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <FeaturesList fadeUp={fadeUp} features={mediaSolutions.slice(0, 2)} />
-          <FeaturesList fadeUp={fadeUp} features={mediaSolutions.slice(2, 4)} />
-        </div>
+        <FeaturesList fadeUp={fadeUp} features={mediaSolutions} grid />
 
         {/* CTA Button */}
         <FadeInWhenVisible>
@@ -211,7 +208,7 @@ export default function MediaEntertainment() {
                 loading="lazy"
                 src="/assets/industries/media-entertainment/custom-music-software-solutins.png"
                 alt="Mobile Analytics App"
-                className="w-64"
+                className="w-52"
               />
             </FadeInWhenVisible>
             <FeaturesList
@@ -268,7 +265,7 @@ export default function MediaEntertainment() {
             description="We deliver best-in-class, reliable, and fully customizable photography software solutions so that photographers can get the most out of their images."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8">
             {/* Left Image */}
             <FadeInWhenVisible delay={0.5} className="sm:block hidden">
               <img
@@ -326,16 +323,7 @@ export default function MediaEntertainment() {
           title="Enhance Media & Entertainment with Cutting-Edge AI Solutions"
           description="Chetu’s extensive industry experience allows us to deliver cutting-edge AI solutions that enable businesses to enhance content creation, personalization, audience engagement, and operational efficiency, transforming the media and entertainment landscape."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <FeaturesList
-            features={aiMediaSolutions.slice(0, 4)}
-            fadeUp={fadeUp}
-          />
-          <FeaturesList
-            features={aiMediaSolutions.slice(4, 8)}
-            fadeUp={fadeUp}
-          />
-        </div>
+        <FeaturesList features={aiMediaSolutions} fadeUp={fadeUp} grid />
 
         <FadeInWhenVisible>
           <Button variant="hover">
@@ -351,14 +339,14 @@ export default function MediaEntertainment() {
             title="Digital Asset Management Solutions"
             description="We design digital asset management (DAM) systems to specifically address the needs of the entertainment industry."
           />
-          <div className="flex flex-col sm:flex-row md:items-center justify-baseline gap-8 md:gap-26">
+          <div className="flex flex-col sm:flex-row md:items-center justify-baseline gap-8">
             <FeaturesList features={damSolutions.slice(0, 2)} fadeUp={fadeUp} />
             <FadeInWhenVisible className="hidden md:block">
               <img
                 loading="lazy"
                 src="/assets/industries/media-entertainment/dropbox-developer.png"
                 alt="Mobile Analytics App"
-                className="sm:w-165 w-96"
+                className="sm:w-135 w-96"
               />
             </FadeInWhenVisible>
             <FeaturesList features={damSolutions.slice(2, 4)} fadeUp={fadeUp} />
@@ -376,7 +364,7 @@ export default function MediaEntertainment() {
           description="Chetu provides custom-tailored software designed to protect and safeguard your digital assets from being altered or redistributed."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8">
           {/* Left: DRM Features */}
           <div className="text-start space-y-6">
             <FeaturesList fadeUp={fadeUp} features={drmSolutions} />
