@@ -173,7 +173,7 @@ const RealEstate = () => {
         </FadeInWhenVisible>
       </section>
 
-      {/* === Banking Software Support Section === */}
+      {/* === Banking Software Support Section ==g= */}
       <PageLayout className="py-16 space-y-8 text-center">
         <Headline
           title="Banking Software Support"

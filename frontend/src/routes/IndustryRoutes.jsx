@@ -11,6 +11,8 @@ import ELearningEducation from "@/pages/industries/e-learning-education/ELearnin
 import EnergyUtilities from "@/pages/industries/energy-utilities/EnergyUtilities";
 import EnvManagement from "@/pages/industries/env-mangt/EnvManagement";
 import MediaEntertainment from "@/pages/industries/media-entertainment/MediaEntertainment";
+import Gaming from "@/pages/industries/gaming/Gaming";
+import Legal from "@/pages/industries/Legal/Legal";
 
 export const IndustryRoutes = [
     { path: "/industries/banking", element: <Banking /> },
@@ -26,4 +28,7 @@ export const IndustryRoutes = [
     { path: "/industries/energy-utilities", element: <EnergyUtilities /> },
     { path: "/industries/environmental-management", element: <EnvManagement /> },
     { path: "/industries/media-entertainment", element: <MediaEntertainment /> },
+    { path: "/industries/gaming", element: <Gaming /> },
+    { path: "/industries/legal", element: <Legal /> },
+    
 ];

@@ -29,7 +29,7 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
     <div className="w-full fixed top-0 z-40 h-20 bg-card shadow">
       <div className="md:max-w-7xl lg:max-w-[90%] mx-auto px-4 sm:px-6 flex justify-between items-center h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center relative">
+        <Link to="/" className="flex items-center relative z-50">
           <img loading="lazy" src="/logo.png" alt="Logo" className="w-32" />
         </Link>
 
