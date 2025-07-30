@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Link } from "react-router-dom";
-import {
-  TypographyH5,
-  TypographyH4,
-  TypographyMuted,
-  TypographySmall,
-} from "@/custom/Typography";
+import { TypographyMuted, TypographySmall } from "@/custom/Typography";
 import { Button } from "@/components/ui/button";
 import { Navlinks } from "@/data/Navlinks";
 import { IconRenderer } from "@/custom/IconRenderer";

@@ -1,17 +1,20 @@
-import {
-  TypographyMuted,
-  TypographyH3,
-  Headline
-} from "@/custom/Typography";
+import { TypographyMuted, TypographyH3, Headline } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import { FeaturesList } from "@/components/FeaturesList";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import CaseStudyCard from "@/components/CaseStudyCard";
-import { aiBenefits, processSteps, uiuxfaqs, uiuxServices, uiuxtestimonials, uxUiTechStack } from "./Data";
+import {
+  aiBenefits,
+  processSteps,
+  uiuxfaqs,
+  uiuxServices,
+  uiuxtestimonials,
+  uxUiTechStack,
+} from "./Data";
 
 // Logo row utility
 const LogoRow = ({ logos }) => (
@@ -32,7 +35,7 @@ const UiUx = () => {
     <>
       {/* HERO SECTION */}
       <HeroSection
-        backgroundImage='/assets/solutions/ui-ux/banner.jpg'
+        backgroundImage="/assets/solutions/ui-ux/banner.jpg"
         title="UI & UX DESIGN AND DEVELOPMENT SERVICES"
         description="Empowering Businesses with Tailored UI/UX Solutions By Our Design Experts"
         buttonText="HIRE UI/UX DEVELOPMENT"
@@ -54,43 +57,41 @@ const UiUx = () => {
             innovative digital user experiences
             that solve complex business problems."
         />
-        <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/solutions/ui-ux/mockup.png"
               alt="Tax Preparation"
-              className="w-62"
+              className="w-62 mx-auto"
             />
           </FadeInWhenVisible>
           <FeaturesList features={uiuxServices.slice(0, 3)} fadeUp={fadeUp} />
         </div>
-        <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           <FeaturesList features={uiuxServices.slice(3, 6)} fadeUp={fadeUp} />
           <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/solutions/ui-ux/mobile-mockup.png"
               alt="Tax Preparation"
-              className="w-68"
+              className="w-68 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
         <FadeInWhenVisible>
-          <Button variant="hover" >
-            Hire Experienced UI/UX Developer
-          </Button>
+          <Button variant="hover">Hire Experienced UI/UX Developer</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
       {/* AI BENEFITS SECTION */}
       <section className="bg-secondary py-12">
-        <PageLayout>
+        <PageLayout className="space-y-10">
           <Headline
             title="AI-Powered UI UX Development Services"
             description="U Technology commitment to staying ahead of the technological curve is ushering in a new era of AI-powered innovation. Our commitment to seamless, intuitive design takes center stage as we harness the transformative capabilities of Artificial Intelligence."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {aiBenefits?.map((benefit, index) => (
               <CaseStudyCard
                 key={index}
@@ -114,22 +115,20 @@ const UiUx = () => {
             business goals and how to best serve your target audience with a
             seamless, intuitive, and pleasurable user experience."
         />
-        <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           <FeaturesList features={processSteps.slice(0, 2)} fadeUp={fadeUp} />
           <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/solutions/ui-ux/processes.png"
               alt="Tax Preparation"
-              className="w-96"
+              className="w-86 mx-auto"
             />
           </FadeInWhenVisible>
           <FeaturesList features={processSteps.slice(2, 4)} fadeUp={fadeUp} />
         </div>
         <FadeInWhenVisible>
-          <Button variant="hover" >
-            CUSTOMIZE YOUR UX/UI DESIGN
-          </Button>
+          <Button variant="hover">CUSTOMIZE YOUR UX/UI DESIGN</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
@@ -157,7 +156,7 @@ const UiUx = () => {
         </div>
 
         <FadeInWhenVisible>
-          <Button variant="hover" >
+          <Button variant="hover">
             Hire Developers with UX/UI Design Experience
           </Button>
         </FadeInWhenVisible>
@@ -171,10 +170,7 @@ const UiUx = () => {
 
       {/* FAQ SECTION */}
       <div className="my-16">
-        <FaqSection
-          faqs={uiuxfaqs}
-          title="FAQ's"
-        />
+        <FaqSection faqs={uiuxfaqs} title="FAQ's" />
       </div>
     </>
   );

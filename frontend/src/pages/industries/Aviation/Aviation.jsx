@@ -23,7 +23,7 @@ export default function Aviation() {
     <>
       {/* Banner */}
       <HeroSection
-        backgroundImage="/assets/industries/aviation/hero.jpeg"
+        backgroundImage="/assets/industries/aviation/hero.avif"
         title="AVIATION SOFTWARE DEVELOPMENT"
         description="Revolutionize aviation operations with AI-powered solutions for seamless integration and enhanced efficiency."
         buttonText="GET AIRLINE SOFTWARE DEVELOPERS"
@@ -212,7 +212,11 @@ export default function Aviation() {
             />
           </FadeInWhenVisible>
           <div className="grid gap-9">
-            <FeaturesList features={droneSoftwareSolutions} fadeUp={fadeUp} grid />
+            <FeaturesList
+              features={droneSoftwareSolutions}
+              fadeUp={fadeUp}
+              grid
+            />
             <TypographyMuted>
               Leverage ArcGIS by ESRI, along with other leading drone software
               solutions like FlytBase, DroneDeploy, and Pix4DMapper to transform

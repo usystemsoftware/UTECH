@@ -1,7 +1,7 @@
 import { Headline } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import TechnologyStatCard from "@/components/TechnologyStatCard";
@@ -14,7 +14,7 @@ import {
   frontendTech,
   hmiSolutions,
   industrySolutions,
-  robustSolutions
+  robustSolutions,
 } from "./Data";
 
 const EmbeddedSoftware = () => {
@@ -22,7 +22,7 @@ const EmbeddedSoftware = () => {
     <>
       {/* ===== HERO SECTION ===== */}
       <HeroSection
-        backgroundImage='/assets/solutions/embedded-software/banner.jpg'
+        backgroundImage="/assets/solutions/embedded-software/banner.jpg"
         title="CUSTOM EMBEDDED SOFTWARE DEVELOPMENT"
         buttonText="GET EMBEDDED SOFTWARE DEVELOPERS"
         buttonLink="#"
@@ -39,14 +39,14 @@ const EmbeddedSoftware = () => {
             for various platforms and architectures, utilizing their expertise
             in computer science."
         />
-        <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {/* Left-side image */}
           <FadeInWhenVisible delay={0.2}>
             <img
               loading="lazy"
               src="/assets/solutions/embedded-software/solution.png"
               alt="Tax Preparation"
-              className="sm:w-96 w-68"
+              className="sm:w-96 w-68 mx-auto"
             />
           </FadeInWhenVisible>
 
@@ -56,9 +56,7 @@ const EmbeddedSoftware = () => {
 
         {/* Call to action button */}
         <FadeInWhenVisible>
-          <Button variant="hover">
-            Get Embedded Software Developers
-          </Button>
+          <Button variant="hover">Get Embedded Software Developers</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
@@ -70,7 +68,7 @@ const EmbeddedSoftware = () => {
             enable full visibility and control over your embedded systems in
             real-time."
         />
-        <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {/* Left-side feature list */}
           <FeaturesList features={hmiSolutions} fadeUp={fadeUp} />
 
@@ -80,22 +78,20 @@ const EmbeddedSoftware = () => {
               loading="lazy"
               src="/assets/solutions/embedded-software/development.png"
               alt="Tax Preparation"
-              className="w-68 sm:w-96"
+              className="w-68 sm:w-96 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
 
         {/* CTA button */}
         <FadeInWhenVisible>
-          <Button variant="hover">
-            Get Embedded Hmi Solutions
-          </Button>
+          <Button variant="hover">Get Embedded Hmi Solutions</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
       {/* ===== AI-POWERED EMBEDDED SOFTWARE SOLUTIONS ===== */}
       <section className="text-center bg-secondary py-12">
-        <PageLayout className="text-center">
+        <PageLayout className="text-center space-y-10">
           <Headline
             title="AI-Powered Embedded Software Solutions"
             description="We design our AI-powered Embedded solutions to empower your
@@ -103,10 +99,7 @@ const EmbeddedSoftware = () => {
               through advanced AI integration."
           />
           {/* Two-column grid for AI solution features */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
-            <FeaturesList features={aiEmbeddedSolutions.slice(0, 2)} />
-            <FeaturesList features={aiEmbeddedSolutions.slice(2, 4)} />
-          </div>
+          <FeaturesList features={aiEmbeddedSolutions} grid />
         </PageLayout>
       </section>
 
@@ -118,14 +111,14 @@ const EmbeddedSoftware = () => {
             by completing a custom Linux development board support package
             (BSP)."
         />
-        <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {/* Left-side image */}
           <FadeInWhenVisible delay={0.2}>
             <img
               loading="lazy"
               src="/assets/solutions/embedded-software/package.png"
               alt="Tax Preparation"
-              className="w-96"
+              className="w-110 mx-auto"
             />
           </FadeInWhenVisible>
 
@@ -135,9 +128,7 @@ const EmbeddedSoftware = () => {
 
         {/* CTA button */}
         <FadeInWhenVisible>
-          <Button variant="hover">
-            Get Embedded Bsp Solutions
-          </Button>
+          <Button variant="hover">Get Embedded Bsp Solutions</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
@@ -151,16 +142,11 @@ const EmbeddedSoftware = () => {
               Internet of Things, industrial automation, and beyond."
           />
           {/* Grid layout for two columns of feature lists */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <FeaturesList features={embeddedDevSolutions.slice(0, 3)} />
-            <FeaturesList features={embeddedDevSolutions.slice(3, 6)} />
-          </div>
+          <FeaturesList features={embeddedDevSolutions} grid />
 
           {/* CTA button */}
           <FadeInWhenVisible>
-            <Button variant="hover">
-              Get Embedded Solutions
-            </Button>
+            <Button variant="hover">Get Embedded Solutions</Button>
           </FadeInWhenVisible>
         </PageLayout>
       </section>
@@ -172,7 +158,7 @@ const EmbeddedSoftware = () => {
           description="We revamp your existing custom embedded hardware or off-the-shelf
             solution, providing end-to-end design from concept to production."
         />
-        <div className="mt-16 flex flex-col lg:flex-row items-center justify-center gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {/* Left-side features */}
           <FeaturesList features={industrySolutions} fadeUp={fadeUp} />
 
@@ -182,16 +168,14 @@ const EmbeddedSoftware = () => {
               loading="lazy"
               src="/assets/solutions/embedded-software/services.png"
               alt="Tax Preparation"
-              className="w-68 sm:w-96"
+              className="w-68 mx-auto sm:w-96"
             />
           </FadeInWhenVisible>
         </div>
 
         {/* CTA button */}
         <FadeInWhenVisible>
-          <Button variant="hover">
-            Get Embedded Hmi Solutions
-          </Button>
+          <Button variant="hover">Get Embedded Hmi Solutions</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
@@ -210,16 +194,12 @@ const EmbeddedSoftware = () => {
               <TechnologyStatCard key={index} tech={tech} />
             ))}
           </div>
-
         </PageLayout>
       </section>
 
       {/* ===== FAQ SECTION ===== */}
       <div className="my-16">
-        <FaqSection
-          faqs={embeddedSoftwareFaqs}
-          title="FAQ's"
-        />
+        <FaqSection faqs={embeddedSoftwareFaqs} title="FAQ's" />
       </div>
     </>
   );

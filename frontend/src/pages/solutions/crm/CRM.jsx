@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { Button } from "@/components/ui/button";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import { FeaturesList } from "@/components/FeaturesList";
@@ -15,7 +15,7 @@ import {
   crmPlatforms,
   crmFaqs,
   crmTestimonials,
-  crmSupportItems
+  crmSupportItems,
 } from "./Data";
 
 const CRM = () => {
@@ -23,7 +23,7 @@ const CRM = () => {
     <>
       {/* ====== Hero Section ====== */}
       <HeroSection
-        backgroundImage='/assets/solutions/crm/Employment.webp'
+        backgroundImage="/assets/solutions/crm/Employment.webp"
         title="CRM DEVELOPMENT SERVICES"
         description="Unleashing the Power of AI for Custom CRM Solutions"
         buttonText="HIRE CRM DEVELOPERS"
@@ -42,9 +42,7 @@ const CRM = () => {
         />
         <FeaturesList features={services} fadeUp={fadeUp} grid />
         <FadeInWhenVisible>
-          <Button variant="hover">
-            GET FACTORING SOLUTIONS
-          </Button>
+          <Button variant="hover">GET FACTORING SOLUTIONS</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
@@ -61,9 +59,7 @@ const CRM = () => {
           />
           <FeaturesList features={aiFeatures} fadeUp={fadeUp} grid />
           <FadeInWhenVisible>
-            <Button variant="hover">
-              DEVELOP CRM WITH AI
-            </Button>
+            <Button variant="hover">DEVELOP CRM WITH AI</Button>
           </FadeInWhenVisible>
         </PageLayout>
       </section>
@@ -78,21 +74,19 @@ const CRM = () => {
             business processes for healthcare, banking, real estate, and other
             industries."
         />
-        <div className="mt-16 flex flex-col lg:flex-row items-center justify-between gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/solutions/crm/marketing.png"
               alt="Tax Preparation"
-              className="sm:w-86 w-68"
+              className="sm:w-96 mx-auto w-68"
             />
           </FadeInWhenVisible>
           <FeaturesList features={crmSoftwares} fadeUp={fadeUp} />
         </div>
         <FadeInWhenVisible>
-          <Button variant="hover" >
-            DEVELOP CUSTOM CRM SOLUTIONS
-          </Button>
+          <Button variant="hover">DEVELOP CUSTOM CRM SOLUTIONS</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
@@ -109,9 +103,7 @@ const CRM = () => {
           />
           <FeaturesList features={crmSupportItems} fadeUp={fadeUp} grid />
           <FadeInWhenVisible>
-            <Button variant="hover">
-              HIRE CRM CONSULTING SERVICES
-            </Button>
+            <Button variant="hover">HIRE CRM CONSULTING SERVICES</Button>
           </FadeInWhenVisible>
         </PageLayout>
       </section>
@@ -125,22 +117,20 @@ const CRM = () => {
             Microsoft Dynamics, SugarCRM, Zoho, GoHighLevel, and SAP, to boost
             productivity and meet client needs."
         />
-        <div className="mt-16 flex flex-col lg:flex-row  items-center justify-between gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           <FeaturesList features={crmPlatforms.slice(0, 3)} fadeUp={fadeUp} />
           <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/solutions/crm/integrations.png"
               alt="Tax Preparation"
-              className="md:w-135 w-68"
+              className="md:w-96 mx-auto w-68"
             />
           </FadeInWhenVisible>
           <FeaturesList features={crmPlatforms.slice(3, 6)} fadeUp={fadeUp} />
         </div>
         <FadeInWhenVisible>
-          <Button variant="hover" >
-            HIRE CRM INTEGRATION DEVELOPMENT
-          </Button>
+          <Button variant="hover">HIRE CRM INTEGRATION DEVELOPMENT</Button>
         </FadeInWhenVisible>
       </PageLayout>
 
@@ -152,10 +142,7 @@ const CRM = () => {
 
       {/* ====== FAQ Section ====== */}
       <div className="my-16">
-        <FaqSection
-          faqs={crmFaqs}
-          title="FAQ's"
-        />
+        <FaqSection faqs={crmFaqs} title="FAQ's" />
       </div>
     </>
   );

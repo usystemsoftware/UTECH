@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { TypographyH3, TypographyH4 } from "@/custom/Typography";
 
-const footerLinks = [
+export const footerLinks = [
   {
     title: "Services",
     links: [

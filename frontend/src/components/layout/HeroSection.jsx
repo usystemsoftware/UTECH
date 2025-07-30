@@ -5,11 +5,12 @@ import { TypographyLead, TypographySmall } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { AuroraBackground } from "@/components/ui/aurora-background";
+import FloatingPhoneRight from "./FloatingPhone";
 
 export const HeroSection = () => {
   return (
-    <AuroraBackground>
-      <PageLayout className="relative flex items-center justify-center overflow-hidden pt-24">
+    <AuroraBackground className="min-h-[100vh]">
+      <PageLayout className="relative flex items-center justify-center overflow-hidden pt-20 sm:pt-16">
         {/* Main Content */}
         <div className="grid sm:grid-cols-2 items-center">
           <div className="space-y-8">
@@ -24,9 +25,9 @@ export const HeroSection = () => {
             <FadeInWhenVisible delay={0.2}>
               <h1 className="text-2xl md:text-4xl font-bold dark:text-white leading-tight">
                 Drive Innovation with a World-Class
-                  <span className="block px-2 py-2 mt-3 bg-gradient-to-r from-orange-600 to-red-600 text-pink-600 bg-clip-text">
-                    Software Development Company
-                  </span>
+                <span className="block mt-3 bg-gradient-to-r from-orange-600 to-red-600 text-pink-600 bg-clip-text">
+                  Software Development Company
+                </span>
               </h1>
             </FadeInWhenVisible>
 
@@ -40,7 +41,7 @@ export const HeroSection = () => {
             </FadeInWhenVisible>
 
             <FadeInWhenVisible delay={0.4}>
-              <div className="flex flex-col md:flex-row gap-6">
+              <div className="flex flex-col md:flex-row gap-3 md:gap-6">
                 <Link to="/contact-us">
                   <Button className="w-full">
                     Contact US
@@ -48,7 +49,7 @@ export const HeroSection = () => {
                   </Button>
                 </Link>
                 <Link to="/book-call">
-                  <Button variant="secondary" className="w-full">
+                  <Button variant="outline" className="w-full">
                     Book Call
                     <Video />
                   </Button>
@@ -59,6 +60,10 @@ export const HeroSection = () => {
 
           {/* Right Side Logo */}
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
+            <FloatingPhoneRight />
+          </FadeInWhenVisible>
+
+          {/* <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <div className="w-full flex justify-center">
               <img
                 loading="lazy"
@@ -67,7 +72,7 @@ export const HeroSection = () => {
                 className="w-[70%] sm:w-[50%] md:w-[40%] lg:w-[50%] xl:w-[60%] max-h-[65vh] object-contain transition-transform duration-300 hover:scale-105"
               />
             </div>
-          </FadeInWhenVisible>
+          </FadeInWhenVisible> */}
         </div>
       </PageLayout>
     </AuroraBackground>

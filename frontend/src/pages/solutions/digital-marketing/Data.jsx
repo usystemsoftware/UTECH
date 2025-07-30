@@ -156,4 +156,3 @@ export const TestSolution = [
       "Schedule social media & email campaigns, ads, press releases, and other content marketing projects with an automated scheduling system built within a custom calendar module.",
   },
 ];
-

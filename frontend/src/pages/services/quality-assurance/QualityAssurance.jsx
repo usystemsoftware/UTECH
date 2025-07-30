@@ -1,15 +1,10 @@
-import React from "react";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesList } from "@/components/FeaturesList";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
 import CaseStudyCard from "@/components/CaseStudyCard";
-import {
-  Headline,
-  TypographyH3,
-  TypographyMuted,
-} from "@/custom/Typography";
+import { Headline, TypographyH3, TypographyMuted } from "@/custom/Typography";
 import {
   mobileAppPlatforms,
   qualityPlatforms,
@@ -42,12 +37,16 @@ const QualityAssurance = () => {
         </FadeInWhenVisible>
 
         {/* Cross-platform features and image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 space-y-12 items-center">
-          <FadeInWhenVisible className="space-y-8">
-            <Headline
-              title="Software QA Web & Mobile App Testing"
-              description="U Technology's seasoned test architects and engineers provide world-class QA testing services for web and mobile applications, ensuring full compliance and high-quality software every time. We harness the power of innovative AI, IoT, and RPA technologies to perform advanced QA web & mobile app testing."
-            />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 space-y-12 md:items-center">
+          <FadeInWhenVisible className="space-y-4 text-start">
+            <TypographyH3>Software QA Web & Mobile App Testing</TypographyH3>
+            <TypographyMuted>
+              U Technology's seasoned test architects and engineers provide
+              world-class QA testing services for web and mobile applications,
+              ensuring full compliance and high-quality software every time. We
+              harness the power of innovative AI, IoT, and RPA technologies to
+              perform advanced QA web & mobile app testing.
+            </TypographyMuted>
             <FeaturesList features={mobileAppPlatforms} />
           </FadeInWhenVisible>
 
@@ -69,17 +68,17 @@ const QualityAssurance = () => {
             title="Harness the Power of U Technology's QA Testing Solutions"
             description="Augment your software development A-team with U Technology's custom-tailored QA software testing solutions."
           />
-          <div className="mt-16 flex flex-col lg:flex-row  items-center justify-between gap-10">
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <FeaturesList
               features={qualityPlatforms.slice(0, 2)}
               fadeUp={fadeUp}
             />
-            <FadeInWhenVisible>
+            <FadeInWhenVisible className="md:block hidden">
               <img
                 loading="lazy"
                 src="/assets/services/quality-assurance/solution.png"
                 alt="Tax Preparation"
-                className="w-68"
+                className="w-48 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList
@@ -95,15 +94,13 @@ const QualityAssurance = () => {
 
       <PageLayout className="py-16 space-y-8">
         {/* Intro headline */}
-        <FadeInWhenVisible>
-          <Headline
-            title="Custom Quality Assurance (QA) Testing Solutions"
-            description="We develop custom QA testing solutions from scratch or enhance your existing QA testing solutions through modifications, integrations, and feature implementations."
-          />
-        </FadeInWhenVisible>
+        <Headline
+          title="Custom Quality Assurance (QA) Testing Solutions"
+          description="We develop custom QA testing solutions from scratch or enhance your existing QA testing solutions through modifications, integrations, and feature implementations."
+        />
 
         {/* Cross-platform features and image */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 space-y-12 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 space-y-12 md:items-center">
           <FadeInWhenVisible>
             <img
               loading="lazy"
@@ -112,13 +109,18 @@ const QualityAssurance = () => {
               className="h-auto mx-auto"
             />
           </FadeInWhenVisible>
-          <FadeInWhenVisible className="space-y-8">
-            <Headline
-              title="Software QA Testing Solutions"
-              description="Our experienced test architects and engineers develop top-of-the-line software QA testing solutions for API, unit, multi-browser, and multi-device testing focused on all testing categories, including penetration, functional, localization, regression, performance, usability security, and compatibility testing.."
-            />
+          <div className="space-y-4">
+            <TypographyH3>Software QA Testing Solutions</TypographyH3>
+            <TypographyMuted>
+              Our experienced test architects and engineers develop
+              top-of-the-line software QA testing solutions for API, unit,
+              multi-browser, and multi-device testing focused on all testing
+              categories, including penetration, functional, localization,
+              regression, performance, usability security, and compatibility
+              testing..
+            </TypographyMuted>
             <FeaturesList features={CustomQuality} />
-          </FadeInWhenVisible>
+          </div>
         </div>
       </PageLayout>
 
@@ -130,7 +132,7 @@ const QualityAssurance = () => {
             description="Elevate your IT efforts to new heights by leveraging our custom QA Testing Solutions designed specifically for your website or application."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 text-left">
             {supportServices?.map((service, index) => (
               <CaseStudyCard
                 key={index}

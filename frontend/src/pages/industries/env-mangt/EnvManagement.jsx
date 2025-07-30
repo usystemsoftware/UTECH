@@ -35,7 +35,7 @@ export default function EnvManagement() {
       <PageLayout className="py-12">
         <Headline
           title="Environmental Management Software Solutions"
-          description="Chetu developers create custom environmental management software built with custom database reporting platforms that track, store, and manage essential environmental compliance requirements for air, water, and waste emissions."
+          description="U Tech developers create custom environmental management software built with custom database reporting platforms that track, store, and manage essential environmental compliance requirements for air, water, and waste emissions."
         />
         <FeaturesGrid
           leftFeatures={environmentalFeatures?.slice(0, 3)}
@@ -51,7 +51,7 @@ export default function EnvManagement() {
         <PageLayout className="text-center space-y-8">
           <Headline
             title="Environmental Management System Development"
-            description="Chetu’s custom environmental management system incorporates a ton of customizable features..."
+            description="U Tech’s custom environmental management system incorporates a ton of customizable features..."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8">
             <FadeInWhenVisible delay={0.5}>
@@ -64,7 +64,7 @@ export default function EnvManagement() {
             </FadeInWhenVisible>
             <div className="text-start space-y-8">
               <TypographySmall>
-                Save more time & money by having Chetu developers integrate
+                Save more time & money by having U Tech developers integrate
                 custom features...
               </TypographySmall>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
@@ -193,7 +193,7 @@ export default function EnvManagement() {
         <PageLayout className="space-y-10 text-center">
           <Headline
             title="Environmental Operational Database Systems"
-            description="Manage data governance and records using Chetu’s custom environmental..."
+            description="Manage data governance and records using U Tech’s custom environmental..."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
             <FeaturesList

@@ -184,13 +184,13 @@ export const factoringFeatures = [
     icon: "CheckCheck",
     title: "General Ledger Precision",
     description:
-      "Rely on Chetu's expertise to code online accounting software integrated seamlessly with CRM, ERP, and factoring management programs. Our solutions encompass asset tracking, auditing features, general ledgers, and comprehensive cash flow and credit management.",
+      "Rely on U Tech's expertise to code online accounting software integrated seamlessly with CRM, ERP, and factoring management programs. Our solutions encompass asset tracking, auditing features, general ledgers, and comprehensive cash flow and credit management.",
   },
   {
     icon: "Bell",
     title: "Custom Settlement Engines",
     description:
-      "Personalize factoring contract lifecycles effortlessly. Chetu develops customizable business logic to monitor invoice settlements and financial performance. Gain visibility into delinquent accounts and integrate follow-up workflows seamlessly with CRMs.",
+      "Personalize factoring contract lifecycles effortlessly. U Tech develops customizable business logic to monitor invoice settlements and financial performance. Gain visibility into delinquent accounts and integrate follow-up workflows seamlessly with CRMs.",
   },
   {
     icon: "Wallet",
@@ -235,7 +235,7 @@ export const supportFeatures = [
     icon: "CheckCheck",
     title: "Help Desk For Application Maintenance",
     description:
-      "Regular maintenance is crucial for finance applications, involving updates, security patches, and checks, ensuring reliability and security. It prevents critical issues, reducing downtime. Similarly, a well-maintained help desk ensures smooth interactions and efficient workflows through regular updates, aligning with business needs. Chetu excels in system auditing and server administration, fortifying IT infrastructures.",
+      "Regular maintenance is crucial for finance applications, involving updates, security patches, and checks, ensuring reliability and security. It prevents critical issues, reducing downtime. Similarly, a well-maintained help desk ensures smooth interactions and efficient workflows through regular updates, aligning with business needs. U Tech excels in system auditing and server administration, fortifying IT infrastructures.",
   },
   {
     icon: "Bell",
@@ -247,7 +247,7 @@ export const supportFeatures = [
     icon: "Wallet",
     title: "Exceptional Customer Support",
     description:
-      "Exceptional customer support is imperative in finance application support, ensuring users receive prompt assistance, fostering trust, and enhancing overall user experience. Chetu stands out with a commitment to delivering top-notch customer service. Our dedicated support teams prioritize user satisfaction, offering timely and effective solutions, personalized assistance, and ongoing communication. We ensure the client receives reliable finance applications and a supportive experience in their use and maintenance.",
+      "Exceptional customer support is imperative in finance application support, ensuring users receive prompt assistance, fostering trust, and enhancing overall user experience. U Tech stands out with a commitment to delivering top-notch customer service. Our dedicated support teams prioritize user satisfaction, offering timely and effective solutions, personalized assistance, and ongoing communication. We ensure the client receives reliable finance applications and a supportive experience in their use and maintenance.",
   },
 ];
 

@@ -21,7 +21,7 @@ export const LegalTransformationFeatures = [
     icon: "FileBarChart",
     title: "Legal Research Software",
     description:
-      "Chetu’s customized research software augments your team’s research process with automated, highly targeted results for statutes, relevant case law, and regulations to enable streamlined workflow and enhanced productivity with advanced search tools seamlessly integrated with existing legal databases..",
+      "U Technology's customized research software augments your team’s research process with automated, highly targeted results for statutes, relevant case law, and regulations to enable streamlined workflow and enhanced productivity with advanced search tools seamlessly integrated with existing legal databases..",
   },
 ];
 
@@ -48,7 +48,7 @@ export const LegalTransformation = [
     icon: "FileBarChart",
     title: "Legal Analytics Software",
     description:
-      "Our analytics specialists create trend analysis tools, intuitive performance dashboards, and document management systems for accurate, data-driven decisions. Gain unprecedented insights into personnel productivity and case efficiency with Chetu’s customized legal analytics software, seamlessly integrates with your existing DMS..",
+      "Our analytics specialists create trend analysis tools, intuitive performance dashboards, and document management systems for accurate, data-driven decisions. Gain unprecedented insights into personnel productivity and case efficiency with U Technology's customized legal analytics software, seamlessly integrates with your existing DMS..",
   },
 ];
 
@@ -83,25 +83,25 @@ export const legalgSupportItems = [
   {
     title: "AI-Powered eDiscovery",
     description:
-      "Experts at Chetu optimize legal processes with predictive coding, concept clustering, and data deduplication using AI-powered eDiscovery solutions. Automating early case assessments and redaction ensures compliance, reduces workloads, and improves discovery accuracy.",
+      "Experts at U Tech optimize legal processes with predictive coding, concept clustering, and data deduplication using AI-powered eDiscovery solutions. Automating early case assessments and redaction ensures compliance, reduces workloads, and improves discovery accuracy.",
     icon: "Banknote",
   },
   {
     title: "Intelligent Document Management",
     description:
-      "Revolutionize document handling with Chetu's intelligent document management solutions. Utilize AI for automated data entry, document classification, precise data extraction with real-time processing. Minimize manual errors and merge with digital workflows for unparalleled operational effectiveness..",
+      "Revolutionize document handling with U Tech's intelligent document management solutions. Utilize AI for automated data entry, document classification, precise data extraction with real-time processing. Minimize manual errors and merge with digital workflows for unparalleled operational effectiveness..",
     icon: "CheckCheck",
   },
   {
     title: "AI-Driven Court Briefing Tools",
     description:
-      "Transform court brief preparation using Chetu’s AI-powered tools. Leverage automation for legal research, document summarization, and case law analysis. Empower strategic planning through advanced natural language processing (NLP), enabling quicker identification of key arguments and reduced research overhead.",
+      "Transform court brief preparation using U Technology's AI-powered tools. Leverage automation for legal research, document summarization, and case law analysis. Empower strategic planning through advanced natural language processing (NLP), enabling quicker identification of key arguments and reduced research overhead.",
     icon: "BellRing",
   },
   {
     title: "Smart Contracts Software",
     description:
-      "Utilize blockchain technology with Chetu’s smart contract solutions to automate execution, verification, and secure transactions. These features streamline workflows, eliminate intermediaries, and ensure tamper-proof, compliant legal agreements.",
+      "Utilize blockchain technology with U Technology's smart contract solutions to automate execution, verification, and secure transactions. These features streamline workflows, eliminate intermediaries, and ensure tamper-proof, compliant legal agreements.",
     icon: "Wallet",
   },
 ];
@@ -170,13 +170,13 @@ export const legalgSupportIsecound = [
   {
     title: "Immigration Law Software",
     description:
-      "Our intuitive immigration software simplifies the complexities of immigration intake forms and elevates the performance of client communication tools. Organized document management is paramount for success and Chetu’s automated document management streamlines every process to ensure end-users expedient access and error-free processing of critical documents.",
+      "Our intuitive immigration software simplifies the complexities of immigration intake forms and elevates the performance of client communication tools. Organized document management is paramount for success and U Technology's automated document management streamlines every process to ensure end-users expedient access and error-free processing of critical documents.",
     icon: "Banknote",
   },
   {
     title: "Estate Planning Software",
     description:
-      "Revolutionize document handling with Chetu's intelligent document management solutions. Utilize AI for automated data entry, document classification, precise data extraction with real-time processing. Minimize manual errors and merge with digital workflows for unparalleled operational effectiveness..",
+      "Revolutionize document handling with U Tech's intelligent document management solutions. Utilize AI for automated data entry, document classification, precise data extraction with real-time processing. Minimize manual errors and merge with digital workflows for unparalleled operational effectiveness..",
     icon: "CheckCheck",
   },
   {
@@ -199,7 +199,8 @@ export const Legallogs = [
     title: "Legal Management Software",
     description: (
       <>
-        We integrate legal management systems, such as Clio, PCLaw, PracticePanther, and MyCase into existing workflows.
+        We integrate legal management systems, such as Clio, PCLaw,
+        PracticePanther, and MyCase into existing workflows.
       </>
     ),
     logos: ["qb"], // actual logo file names
@@ -209,9 +210,10 @@ export const Legallogs = [
     title: "Third-Party Software APIs",
     description: (
       <>
-        We integrate with third-party product APIs, like Quickbooks, Xero, Dropbox, and DocuSign to streamline workflows.
+        We integrate with third-party product APIs, like Quickbooks, Xero,
+        Dropbox, and DocuSign to streamline workflows.
       </>
     ),
     logos: ["right"], // actual logo file names
-    },
+  },
 ];

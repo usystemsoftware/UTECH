@@ -34,7 +34,7 @@ const DigitalMarketing = () => {
         />
 
         {/* === Features Grid: DriveMore Items === */}
-        <FadeInWhenVisible className="space-y-8 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <FadeInWhenVisible className="space-y-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <FeaturesList features={DriveMore.slice(0, 2)} />
           <FeaturesList features={DriveMore.slice(2, 4)} />
           <FeaturesList features={DriveMore.slice(4, 6)} />
@@ -62,7 +62,7 @@ const DigitalMarketing = () => {
                 loading="lazy"
                 src="/assets/solutions/digital-marketing/software.png"
                 alt="Mobile App Devices"
-                className="w-110 mx-auto"
+                className="w-135 mx-auto"
               />
             </FadeInWhenVisible>
 
@@ -112,7 +112,10 @@ const DigitalMarketing = () => {
           {/* === Features + Image + Features Split Grid === */}
           <div className="mt-16 flex flex-col lg:flex-row justify-between gap-10">
             {/* Left Features List: TestingSolutions */}
-            <FeaturesList features={TestingSolutions.slice(0, 6)} fadeUp={fadeUp} />
+            <FeaturesList
+              features={TestingSolutions.slice(0, 3)}
+              fadeUp={fadeUp}
+            />
 
             {/* Center Image */}
             <FadeInWhenVisible>
@@ -125,8 +128,13 @@ const DigitalMarketing = () => {
             </FadeInWhenVisible>
 
             {/* Right Features List: TestSolution */}
-            <FeaturesList features={TestSolution.slice(0, 6)} fadeUp={fadeUp} />
+            <FeaturesList
+              features={TestingSolutions.slice(3, 6)}
+              fadeUp={fadeUp}
+            />
           </div>
+
+          <FeaturesList features={TestSolution} fadeUp={fadeUp} grid />
 
           {/* === CTA Button: Maximize Marketing === */}
           <FadeInWhenVisible>

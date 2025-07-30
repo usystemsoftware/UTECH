@@ -13,6 +13,10 @@ import EnvManagement from "@/pages/industries/env-mangt/EnvManagement";
 import MediaEntertainment from "@/pages/industries/media-entertainment/MediaEntertainment";
 import Gaming from "@/pages/industries/gaming/Gaming";
 import Legal from "@/pages/industries/Legal/Legal";
+import FoodBeverage from "@/pages/industries/food-beverage/FoodBeverage";
+import MeetingEvents from "@/pages/industries/Meeting-Events/MeetingEvents";
+import Retail from "@/pages/industries/retail/Retail";
+import Sports from "@/pages/industries/sports/Sports";
 
 export const IndustryRoutes = [
     { path: "/industries/banking", element: <Banking /> },
@@ -30,5 +34,8 @@ export const IndustryRoutes = [
     { path: "/industries/media-entertainment", element: <MediaEntertainment /> },
     { path: "/industries/gaming", element: <Gaming /> },
     { path: "/industries/legal", element: <Legal /> },
-    
+    { path: "/industries/food-beverage", element: <FoodBeverage /> },
+    { path: "/industries/meetings-events", element: <MeetingEvents /> },
+    { path: "/industries/retail", element: <Retail /> },
+    { path: "/industries/sports", element: <Sports /> },   
 ];

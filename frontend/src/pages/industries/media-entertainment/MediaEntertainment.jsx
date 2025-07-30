@@ -60,7 +60,7 @@ export default function MediaEntertainment() {
       <PageLayout className="py-16 space-y-10 text-center">
         <Headline
           title="Custom Streaming Solutions"
-          description="Chetu engineers powerful live video streaming solutions that deliver high-definition video & audio streams to any device."
+          description="U Tech engineers powerful live video streaming solutions that deliver high-definition video & audio streams to any device."
         />
 
         {/* Streaming Features + Comparison Tools */}
@@ -79,7 +79,7 @@ export default function MediaEntertainment() {
           <div className="text-start space-y-6">
             <TypographyH5>Live Video Streaming Software Features</TypographyH5>
             <TypographyMuted className="mb-8">
-              Chetu’s live video streaming software integrates features such as
+              U Tech’s live video streaming software integrates features such as
               multi-camera operations and web streaming support to deliver
               high-quality streaming for any audience.
             </TypographyMuted>
@@ -120,7 +120,7 @@ export default function MediaEntertainment() {
         <PageLayout className="space-y-10 text-center">
           <Headline
             title="Custom Video Production Solutions"
-            description="Chetu develops world-class video production software with robust digital editing features catered to the media and entertainment industry."
+            description="U Tech develops world-class video production software with robust digital editing features catered to the media and entertainment industry."
           />
 
           {/* Production Features + Tools */}
@@ -321,7 +321,7 @@ export default function MediaEntertainment() {
       <PageLayout className="py-16 space-y-8 text-center">
         <Headline
           title="Enhance Media & Entertainment with Cutting-Edge AI Solutions"
-          description="Chetu’s extensive industry experience allows us to deliver cutting-edge AI solutions that enable businesses to enhance content creation, personalization, audience engagement, and operational efficiency, transforming the media and entertainment landscape."
+          description="U Tech’s extensive industry experience allows us to deliver cutting-edge AI solutions that enable businesses to enhance content creation, personalization, audience engagement, and operational efficiency, transforming the media and entertainment landscape."
         />
         <FeaturesList features={aiMediaSolutions} fadeUp={fadeUp} grid />
 
@@ -361,7 +361,7 @@ export default function MediaEntertainment() {
       <PageLayout className="space-y-10 py-16 text-center">
         <Headline
           title="Digital Rights Management Solutions"
-          description="Chetu provides custom-tailored software designed to protect and safeguard your digital assets from being altered or redistributed."
+          description="U Tech provides custom-tailored software designed to protect and safeguard your digital assets from being altered or redistributed."
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8">
