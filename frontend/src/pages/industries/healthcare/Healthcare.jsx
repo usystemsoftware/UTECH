@@ -60,7 +60,15 @@ export default function Healthcare() {
             description="Our expert-level software developers leverage the power and versatility of Artificial Intelligence (AI) to design and implement innovative solutions to meet the healthcare industry’s evolving needs. Our transformative solutions enable healthcare providers and institutions to modernize medicine by deploying cutting-edge resources designed to improve workflows, processes, and optimize patient engagement and care."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <div className="block md:hidden">
+            <FeaturesList
+              features={healthcareAIFeatures}
+              fadeUp={fadeUp}
+              grid
+            />
+          </div>
+
+          <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
             <FeaturesList
               features={healthcareAIFeatures.slice(0, 2)}
               fadeUp={fadeUp}
@@ -83,7 +91,7 @@ export default function Healthcare() {
           description="With Digital Health Platforms, medical professionals can take a different approach to their research, health management, and patient care, leading to significant improvements in efficiency and patient outcomes."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Left Features List */}
           <FeaturesList
             features={digitalHelthSolutions.slice(0, 2)}
@@ -115,7 +123,7 @@ export default function Healthcare() {
             description="We engineer custom web, desktop or mobile apps that promote enhanced interoperability, streamline clinical workflows, and improve doctor-patient communications. Healthcare IT software implementation is useful for tracking critical information in the medical system."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
@@ -139,7 +147,7 @@ export default function Healthcare() {
           description="We build custom telehealth apps to deliver remote health services, education, and training for improved efficiency and quality of care."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-6">
           {/* Left Features List */}
           <FeaturesList
             features={telemedicineFeatures.slice(0, 2)}
@@ -147,7 +155,7 @@ export default function Healthcare() {
           />
 
           {/* Center Animation */}
-          <FadeInWhenVisible className="md:block hidden">
+          <FadeInWhenVisible className="sm:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/healthcare/cellphone.png"
@@ -193,7 +201,7 @@ export default function Healthcare() {
           title="PACS & DICOM Viewer platform"
           description="We deliver end-to-end PACS/DICOM platform designed for secure data and image sharing, archiving, viewing, and more."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 md:gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -225,7 +233,7 @@ export default function Healthcare() {
             description="We create scalable and flexible LIMS applications to track laboratory storage & inventory, protocol executions, data integrity & security."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
             <FeaturesList features={limsFeatures} fadeUp={fadeUp} />
             <FadeInWhenVisible delay={0.5}>
               <img
@@ -247,7 +255,7 @@ export default function Healthcare() {
           title="Pharmacy Management System"
           description="We enhance existing pharmacy management systems with features that promote workflow automation, fully integrated payment processing, and real-time communication."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 md:gap-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <FeaturesList
               fadeUp={fadeUp}
@@ -279,7 +287,7 @@ export default function Healthcare() {
             description="We engineer advanced eRx application solutions to automate clinical decision support, optimize visibility, and streamline prescription processes."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
@@ -337,7 +345,7 @@ export default function Healthcare() {
             description="Our custom-tailored RCM software solutions offer a single, centralized platform that enables faster and more efficient payment cycle organization."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
             <FeaturesList features={rcmFeatures} fadeUp={fadeUp} />
             <FadeInWhenVisible delay={0.5}>
               <img
@@ -359,7 +367,7 @@ export default function Healthcare() {
           title="HL7 Interface Software Solutions"
           description="We create custom HL7 interface solutions for optimal interfacing, interconnectivity, and interoperability of healthcare applications, data management, and workflows."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 md:gap-12">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -391,7 +399,15 @@ export default function Healthcare() {
             description="In the dynamic digital realm, robust healthcare application support, including FHIR integration support, ICD-10 support (diagnosis coding), and Healthcare IT help desk services, are essential for seamless business operations. U Tech stands out with an unwavering commitment to delivering comprehensive support, ensuring your applications—including third-party MEDITECH support and medical middleware support—thrive in today's complex healthcare landscape."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <div className="block md:hidden">
+            <FeaturesList
+              features={healthcareSupportServices}
+              fadeUp={fadeUp}
+              grid
+            />
+          </div>
+
+          <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
             <FeaturesList
               features={healthcareSupportServices.slice(0, 2)}
               fadeUp={fadeUp}
@@ -408,7 +424,7 @@ export default function Healthcare() {
         </PageLayout>
       </section>
 
-      <PageLayout className="my-16 py-16 grid grid-cols-1 sm:grid-cols-2 space-y-10 bg-cyan-50">
+      <PageLayout className="my-16 py-16 grid grid-cols-1 items-center sm:grid-cols-2 space-y-10 bg-cyan-50">
         <div className="space-y-8">
           <TypographyH3>
             WE ENSURE YOUR SOLUTIONS ARE COMPLIANT WITH REGULATORY STANDARDS
@@ -440,7 +456,7 @@ export default function Healthcare() {
             description="We build custom-tailored assistive technology software solutions to improve the quality of care for those with disabilities."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
@@ -466,14 +482,14 @@ export default function Healthcare() {
           description="We develop robust and intuitive cloud-based veterinary practice management software to organize workflows and improve vet clinic productivity."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-4">
           {/* Left Features List */}
           <FeaturesList
             features={veterinarySoftwareFeatures.slice(0, 2)}
             fadeUp={fadeUp}
           />
           {/* Center Animation */}
-          <FadeInWhenVisible className="md:block hidden">
+          <FadeInWhenVisible className="sm:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/healthcare/veterinary-practice-management-software-solutions.png"

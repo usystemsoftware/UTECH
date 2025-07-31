@@ -41,7 +41,7 @@ const MeetingEvents = () => {
           description="We develop custom event management software solutions to allow your teams to manage every type of event from start to finish.."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
           <div className="text-start space-y-4">
             <TypographyH5>Event Management Software</TypographyH5>
             <TypographyMuted>

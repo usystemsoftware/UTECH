@@ -53,7 +53,7 @@ export default function EnvManagement() {
             title="Environmental Management System Development"
             description="U Tech’s custom environmental management system incorporates a ton of customizable features..."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
@@ -116,7 +116,7 @@ export default function EnvManagement() {
           title="Environmental Risk Management Assessment Database Software"
           description="We develop Enterprise Resource Planning (ERP)..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
               loading="lazy"
@@ -139,7 +139,7 @@ export default function EnvManagement() {
             title="Environmental Risk Management Assessment Database Software"
             description="We develop Enterprise Resource Planning (ERP)..."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
             <FeaturesList
               fadeUp={fadeUp}
               features={environmentalSoftwareSolutions}
@@ -167,7 +167,7 @@ export default function EnvManagement() {
           title="Environmental Inventory Management & Waste Tracking Solutions"
           description="Our inventory management systems comply with the U.S. EPA..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
               loading="lazy"
@@ -195,7 +195,7 @@ export default function EnvManagement() {
             title="Environmental Operational Database Systems"
             description="Manage data governance and records using U Tech’s custom environmental..."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
             <FeaturesList
               fadeUp={fadeUp}
               features={environmentalUtilitySolutions}
@@ -221,7 +221,7 @@ export default function EnvManagement() {
           title="Hire Experienced Weather Management Software Developers"
           description="We develop custom weather management software solutions..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
               loading="lazy"

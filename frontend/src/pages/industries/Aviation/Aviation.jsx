@@ -84,7 +84,7 @@ export default function Aviation() {
             features={airlineOperationsServices}
             grid
           />
-          <FadeInWhenVisible delay={0.5}>
+          <FadeInWhenVisible delay={0.5} className="md:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/aviation/custom-flight-operations-management-software-development.png"
@@ -104,8 +104,8 @@ export default function Aviation() {
             title="Custom Airline Reservation & Ticketing Software Development"
             description="U Tech provides custom airline reservation & ticketing software development services for airlines, airline call centers, OTAs, internet booking & ticket vendors, and more."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2">
-            <FadeInWhenVisible delay={0.5}>
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <FadeInWhenVisible delay={0.5} className="md:block hidden">
               <img
                 loading="lazy"
                 src="/assets/industries/aviation/sabre-travel-network-solutions-gif.gif"
@@ -144,7 +144,7 @@ export default function Aviation() {
         </PageLayout>
       </section>
 
-      <PageLayout className="my-16 py-16 grid grid-cols-1 sm:grid-cols-2 space-y-10 bg-cyan-50">
+      <PageLayout className="my-16 py-16 grid grid-cols-1 sm:grid-cols-2 items-center space-y-10 bg-cyan-50">
         <div className="space-y-8">
           <TypographyH5>
             U Tech ENSURES COMPLIANCE WITH AVIATION INDUSTRY REGULATORY
@@ -176,7 +176,7 @@ export default function Aviation() {
             description="U Tech delivers aviation maintenance, repair, and overhaul (MRO) software solutions to aircraft maintenance directors, flight schedulers & dispatchers, inventory parts managers, and more."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
             <FeaturesList
               features={aviationMroSolutions.slice(0, 2)}
               fadeUp={fadeUp}
@@ -202,7 +202,7 @@ export default function Aviation() {
           title="Custom Drone Software Development"
           description="U Tech develops custom drone software for agriculture, construction, cinematography, indoor/outdoor inspections, search-and-rescue, and many other industry sectors."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <FadeInWhenVisible>
             <img
               src="/assets/industries/aviation/custom-drone-software-development.png"

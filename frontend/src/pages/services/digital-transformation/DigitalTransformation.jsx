@@ -124,7 +124,7 @@ const DigitalTransformation = () => {
             outsourcing. Our facilities and resources are secure and reliable."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             <FadeInWhenVisible>
               <img
                 loading="lazy"

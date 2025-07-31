@@ -64,7 +64,7 @@ export default function MediaEntertainment() {
         />
 
         {/* Streaming Features + Comparison Tools */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
           {/* Left Image */}
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
@@ -124,7 +124,7 @@ export default function MediaEntertainment() {
           />
 
           {/* Production Features + Tools */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
             {/* Features List */}
             <div className="text-start space-y-6">
               <TypographyH5>Video Production Tools</TypographyH5>
@@ -265,7 +265,7 @@ export default function MediaEntertainment() {
             description="We deliver best-in-class, reliable, and fully customizable photography software solutions so that photographers can get the most out of their images."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
             {/* Left Image */}
             <FadeInWhenVisible delay={0.5} className="sm:block hidden">
               <img
@@ -339,7 +339,7 @@ export default function MediaEntertainment() {
             title="Digital Asset Management Solutions"
             description="We design digital asset management (DAM) systems to specifically address the needs of the entertainment industry."
           />
-          <div className="flex flex-col sm:flex-row md:items-center justify-baseline gap-8">
+          <div className="flex flex-col sm:flex-row items-center justify-baseline gap-8">
             <FeaturesList features={damSolutions.slice(0, 2)} fadeUp={fadeUp} />
             <FadeInWhenVisible className="hidden md:block">
               <img
@@ -364,7 +364,7 @@ export default function MediaEntertainment() {
           description="U Tech provides custom-tailored software designed to protect and safeguard your digital assets from being altered or redistributed."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
           {/* Left: DRM Features */}
           <div className="text-start space-y-6">
             <FeaturesList fadeUp={fadeUp} features={drmSolutions} />

@@ -58,7 +58,7 @@ const FoodBeverage = () => {
             title="Food & Beverage Service Management Software"
             description="We develop food service ordering software solutions built to facilitate menu, inventory, food cost, kitchen, catering, report tracking, and more."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
             {/* Left Image */}
             <FadeInWhenVisible>
               <img
@@ -94,7 +94,7 @@ const FoodBeverage = () => {
           title="Food & Beverage Service Management Software"
           description="We develop food service ordering software solutions..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           <FeaturesList features={FoodBeverageTransformation} fadeUp={fadeUp} />
           <FadeInWhenVisible>
             <img
@@ -117,7 +117,7 @@ const FoodBeverage = () => {
             title="Food & Beverage Quality Management Software"
             description="Utilize trigger-based automation to monitor moisture, acidity..."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
             <FadeInWhenVisible>
               <img
                 loading="lazy"
@@ -140,7 +140,7 @@ const FoodBeverage = () => {
           title="Food & Beverage Distribution Software"
           description="Custom food distribution software streamlines inventory management..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           <FeaturesList features={FoodBeverageSoftware} fadeUp={fadeUp} />
           <FadeInWhenVisible>
             <img
@@ -163,7 +163,7 @@ const FoodBeverage = () => {
             title="Food & Beverage Inventory Management Software"
             description="Custom food & beverage inventory management solutions offer detailed SKU..."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
             <FadeInWhenVisible>
               <img
                 loading="lazy"
@@ -241,7 +241,7 @@ const FoodBeverage = () => {
           title="Food Traceability Software Services"
           description="Food traceability software solutions empower F&B producers to track-and-trace food..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           <FeaturesList features={FoodBeverageTraceability} fadeUp={fadeUp} />
           <FadeInWhenVisible>
             <img

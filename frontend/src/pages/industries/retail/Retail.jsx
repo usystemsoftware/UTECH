@@ -149,7 +149,7 @@ export default function Retail() {
           />
 
           {/* Text + Feature List + Image */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
             {/* Features */}
             <div className="text-start space-y-6">
               <TypographyH5>E-Commerce Software Solutions</TypographyH5>
@@ -190,7 +190,7 @@ export default function Retail() {
         />
 
         {/* Image + Feature List */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
               loading="lazy"
@@ -249,7 +249,7 @@ export default function Retail() {
           />
 
           {/* Text + Image */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
             <div className="text-start space-y-6">
               <TypographyH5>Mobile E-Commerce Solutions</TypographyH5>
               <TypographyMuted className="mb-8">

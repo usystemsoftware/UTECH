@@ -93,7 +93,11 @@ export default function HospitalandTravelling() {
           description="U Tech empowers the booming hospitality industry with customized solutions..."
         />
 
-        <FeaturesList features={hospitalitySupportServices} fadeUp={fadeUp} grid/>
+        <FeaturesList
+          features={hospitalitySupportServices}
+          fadeUp={fadeUp}
+          grid
+        />
 
         <FadeInWhenVisible>
           <Button variant="hover">GET HOSPITILITY & TRAVEL SOFTWARE</Button>

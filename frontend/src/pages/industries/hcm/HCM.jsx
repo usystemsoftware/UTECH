@@ -54,8 +54,12 @@ export default function HCM() {
             description="Our expert AI developers build, integrate, and implement cutting-edge solutions empowered by Artificial Intelligence to provide advanced solutions for a new era in HCM technology."
           />
 
+          <div className="block md:hidden">
+            <FeaturesList features={aiFeatures} fadeUp={fadeUp} grid />
+          </div>
+
           {/* Displaying AI Feature Cards in 3 Columns */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-12">
+          <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-12">
             <FeaturesList features={aiFeatures.slice(0, 2)} fadeUp={fadeUp} />
             <FeaturesList features={aiFeatures.slice(2, 4)} fadeUp={fadeUp} />
             <FeaturesList features={aiFeatures.slice(4, 6)} fadeUp={fadeUp} />
@@ -69,7 +73,7 @@ export default function HCM() {
           title="HRMS & HRIS Software Solutions"
           description="We create end-to-end Human Resource Management Systems (HRMS) and Human Resource Information Systems (HRIS) to help companies run a successful business."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 items-center">
           <div className="grid gap-4">
             {/* HRMS/HRIS Features List */}
             <FeaturesList features={hrmsSoftwareSolution} fadeUp={fadeUp} />
@@ -120,7 +124,7 @@ export default function HCM() {
             title="Payroll & Benefits Administration Software Solutions"
             description="We engineer custom payroll & benefits administration systems to help organizations of all sizes effectively manage employee payroll and benefits packages"
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
             {/* Payroll Feature List */}
             <FeaturesList fadeUp={fadeUp} features={payrollBenefitsSolutions} />
 
@@ -144,7 +148,7 @@ export default function HCM() {
           description="We develop custom background screening software solutions powered by Artificial Intelligence (AI) to ensure a seamless pre-employment background screening process."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 md:items-center gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
           {/* Left Image */}
           <FadeInWhenVisible delay={0.5}>
             <img

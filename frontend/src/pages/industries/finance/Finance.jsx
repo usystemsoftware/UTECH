@@ -86,7 +86,7 @@ const Finance = () => {
           title="Custom Accounting Software Development"
           description="U Technology’s custom accounting software development services include API programming & integrations, AIS architecture, bookkeeping app development, and much more."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           <FadeInWhenVisible>
             <img
               src="/assets/industries/finance/accounting-development.png"
@@ -116,7 +116,7 @@ const Finance = () => {
           title="Custom Portfolio Management Software Development"
           description="U Technology’s custom portfolio management software solutions encompass everything from risk analysis and investments to stock trading apps and fund management in a centralized platform."
         />
-        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8 md:gap-12">
+        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8 md:gap-12">
           <FeaturesList
             features={portfolioFeatures}
             fadeUp={fadeUp}
@@ -241,7 +241,7 @@ const Finance = () => {
           title="Custom Tax Preparation Software Development"
           description="U Technology’s custom tax prep software solutions support the preparation, calculation, and reporting of personal and business taxes."
         />
-        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
           <FadeInWhenVisible>
             <img
               loading="lazy"

@@ -110,7 +110,7 @@ export default function Construction() {
             title="Construction Accounting Software"
             description="U Tech designs construction accounting software systems integrated with business intelligence engines, ERP tools..."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 items-center">
             <FeaturesList fadeUp={fadeUp} features={accountingSolutions} />
             <FadeInWhenVisible delay={0.5}>
               <img
@@ -130,7 +130,7 @@ export default function Construction() {
           title="Building Information Modeling (BIM) Software"
           description="Building Information Modeling (BIM) Software U Tech is a software development company..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -149,7 +149,7 @@ export default function Construction() {
           title="Revit Software Solutions"
           description="U Tech’s Revit software include app development & plugin development..."
         />
-        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
+        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center md:gap-8">
           <FeaturesList fadeUp={fadeUp} features={revitSolutions} />
           <FadeInWhenVisible delay={0.5}>
             <img
@@ -168,7 +168,7 @@ export default function Construction() {
           title="Construction ERP Software Solutions"
           description="U Tech engineers customized construction ERP software solutions that facilitate..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-2 md:gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -187,7 +187,7 @@ export default function Construction() {
           title="Cost Estimation Software"
           description="U Tech’s construction cost estimation software solutions save time and money..."
         />
-        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
+        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center md:gap-8">
           <FeaturesList fadeUp={fadeUp} features={estimationSolutions} />
           <FadeInWhenVisible delay={0.5}>
             <img
@@ -206,7 +206,7 @@ export default function Construction() {
           title="Construction Bid Management Software"
           description="U Tech’s construction bid management software solutions enable companies to simplify..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center md:gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -247,7 +247,7 @@ export default function Construction() {
           title="Scheduling Software Solution"
           description="U Tech’s scheduling software solutions facilitate fast schedule generation..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center md:gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -285,7 +285,7 @@ export default function Construction() {
           title="Project Management Software Solutions"
           description="U Tech creates construction project management systems that simplify and streamline..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center md:gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"

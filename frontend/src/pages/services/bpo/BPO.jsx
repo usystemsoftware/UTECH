@@ -96,7 +96,7 @@ export default function BPO() {
           description="Our specialized industry-specific teams provide skill, intelligence, and efficiency to drive value and growth. With our innovative resources, we will help you increase operational flexibility."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"

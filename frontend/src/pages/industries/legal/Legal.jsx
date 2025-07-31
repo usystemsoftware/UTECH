@@ -62,7 +62,7 @@ const Legal = () => (
         </FadeInWhenVisible>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 md:items-center gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
         <FadeInWhenVisible>
           <img
             loading="lazy"
@@ -102,7 +102,7 @@ const Legal = () => (
         title="Legal Management Workflow Automation"
         description="We develop Legal Management Software that streamlines workflows through advanced automation, real-time integrations, full visibility & control, and comprehensive insights to increase legal productivity."
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
         <FadeInWhenVisible>
           <img
             loading="lazy"

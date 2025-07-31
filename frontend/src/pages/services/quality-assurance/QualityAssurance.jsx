@@ -37,7 +37,7 @@ const QualityAssurance = () => {
         </FadeInWhenVisible>
 
         {/* Cross-platform features and image */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 space-y-12 md:items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 space-y-12 items-center">
           <FadeInWhenVisible className="space-y-4 text-start">
             <TypographyH3>Software QA Web & Mobile App Testing</TypographyH3>
             <TypographyMuted>
@@ -100,7 +100,7 @@ const QualityAssurance = () => {
         />
 
         {/* Cross-platform features and image */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 space-y-12 md:items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 space-y-12 items-center">
           <FadeInWhenVisible>
             <img
               loading="lazy"

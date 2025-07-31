@@ -64,7 +64,14 @@ export default function ELearningEducation() {
             title="Custom AI-Powered eLearning Solutions"
             description="With eLearning representing an interesting facet of modern education, Artificial Intelligence represents a revolutionary path to make the learning experience more engaging and fruitful for learners!"
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <div className="block md:hidden">
+            <FeaturesList
+              features={aiPoweredELearningSolutions}
+              fadeUp={fadeUp}
+              grid
+            />
+          </div>
+          <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
             <FeaturesList
               features={aiPoweredELearningSolutions.slice(0, 2)}
               fadeUp={fadeUp}
@@ -90,7 +97,7 @@ export default function ELearningEducation() {
           title="We Have Experienced Jail Management Software Developers "
           description="Our industry-experienced e-learning software developers create custom LMS software solutions to manage, track, and achieve your corporate learning goals."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 md:items-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           {/* Image */}
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
@@ -147,7 +154,7 @@ export default function ELearningEducation() {
         />
 
         {/* First Set */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
           <div className="text-start">
             <TypographyH5>Content Authoring Software Development</TypographyH5>
             <TypographyMuted className="mb-8">
@@ -198,7 +205,7 @@ export default function ELearningEducation() {
             title="Student Information System (SIS) Solutions"
             description="Our knowledgeable e-learning software developers build SISs and perform seamless SIS integrations that enable bilateral communication & interoperability."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center md:gap-12">
             <FadeInWhenVisible delay={0.5} className="sm:block hidden">
               <img
                 loading="lazy"
@@ -245,7 +252,7 @@ export default function ELearningEducation() {
           title="Customized Web-Based Training (WBT) Software Development"
           description="We create custom-tailored web-based training (WBT) systems that give businesses, academic institutions, and other organizations a chance to improve job performances."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center md:gap-12">
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
               loading="lazy"
@@ -275,7 +282,7 @@ export default function ELearningEducation() {
       {/* WBT Features */}
       <section className="bg-secondary py-8">
         <PageLayout className="space-y-8 text-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 md:items-center gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <FeaturesList
               fadeUp={fadeUp}
               features={webBasedTrainingFeatures}

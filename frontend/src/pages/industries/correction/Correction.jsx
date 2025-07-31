@@ -37,7 +37,7 @@ export default function Correction() {
           description="We develop custom Jail Management Software that provides a comprehensive set of capabilities to manage the entire jail management lifecycle from booking to release."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center md:gap-8">
           {/* Features List */}
           <div className="text-start">
             <TypographyH5>Jail Management System Development</TypographyH5>
@@ -61,7 +61,7 @@ export default function Correction() {
           </FadeInWhenVisible>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
           {/* Left Image */}
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
@@ -123,7 +123,7 @@ export default function Correction() {
           description="We build robust Commissary Management & Visitation Management Solutions with a suite of tools designed for streamlining correctional facility operations."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -174,7 +174,7 @@ export default function Correction() {
           description="We develop and integrate Inmate EMR, EHR, EMAR, and other medical data into existing Jail Management Solutions for optimized interoperability and flexibility."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <FeaturesList
               fadeUp={fadeUp}
@@ -233,7 +233,7 @@ export default function Correction() {
       </section>
 
       <PageLayout className="py-8 space-y-8 text-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <FeaturesList
               fadeUp={fadeUp}
@@ -290,7 +290,7 @@ export default function Correction() {
           description="We offer Human Resource Management & Human Capital Management (HCM) Software Development Services to manage correctional officers and civilian staff members."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:items-center md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center md:gap-8">
           {/* Features List */}
           <div className="text-start">
             <TypographyH5>HRMS Solutions</TypographyH5>

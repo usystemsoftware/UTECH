@@ -47,11 +47,14 @@ const Gaming = () => (
           description="Are you looking to create impressive PixiJS examples or PixiJS games? At U Technology’s, we leverage the power of PixiJS, the HTML5 creation engine that offers the quickest and most adaptable 2D WebGL renderer."
         />
 
-        <FadeInWhenVisible className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="block md:hidden">
+          <FeaturesList features={gamingSolutions} grid />
+        </div>
+        <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <FeaturesList features={gamingSolutions.slice(0, 2)} />
           <FeaturesList features={gamingSolutions.slice(2, 4)} />
           <FeaturesList features={gamingSolutions.slice(4, 6)} />
-        </FadeInWhenVisible>
+        </div>
       </PageLayout>
     </div>
 
