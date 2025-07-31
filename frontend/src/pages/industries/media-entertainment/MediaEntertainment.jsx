@@ -32,13 +32,12 @@ export default function MediaEntertainment() {
     <>
       {/* === Hero Section === */}
       <HeroSection
-        backgroundImage="/assets/industries/media-entertainment/hero.avif"
+        backgroundImage="/banner/media-enterntainment-banner.jpg"
         title="MEDIA AND ENTERTAINMENT SOFTWARE"
         description="Revolutionizing Media & Entertainment With Custom AI-Powered Solutions."
         buttonText="GET MEDIA AND ENTERTAINMENT SOFTWARE DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
       />
 
       {/* === Overview of Digital Services === */}
@@ -147,7 +146,7 @@ export default function MediaEntertainment() {
                       loading="lazy"
                       src={`/assets/industries/media-entertainment/production-tools/${item?.img}.png`}
                       alt={item.label}
-                      className="w-8 h-8 mx-auto"
+                      className="mx-auto"
                     />
                   </FadeInWhenVisible>
                 ))}
@@ -293,16 +292,12 @@ export default function MediaEntertainment() {
               {/* Tool Icons */}
               <div className="flex items-center flex-wrap gap-6 mt-6">
                 {photoGraphyTools.map((item, index) => (
-                  <FadeInWhenVisible
-                    key={index}
-                    delay={0.5}
-                    className="md:block hidden"
-                  >
+                  <FadeInWhenVisible key={index} delay={0.5}>
                     <img
                       loading="lazy"
                       src={`/assets/industries/media-entertainment/photographyTools/${item?.img}.png`}
                       alt={item.label}
-                      className="w-8 h-8 mx-auto"
+                      className="mx-auto"
                     />
                   </FadeInWhenVisible>
                 ))}
@@ -383,7 +378,7 @@ export default function MediaEntertainment() {
                     loading="lazy"
                     src={`/assets/industries/media-entertainment/digital-marketing/${item?.img}.png`}
                     alt={item.label}
-                    className="w-8 h-8 mx-auto"
+                    className="mx-auto"
                   />
                 </FadeInWhenVisible>
               ))}

@@ -2,11 +2,14 @@ import PageLayout from "@/custom/PageLayout";
 import { useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import {
-  Headline,
   TypographyH3,
+  TypographyH1,
   TypographyH6,
-  TypographyMuted
+  TypographyMuted,
+  TypographyLead,
 } from "@/custom/Typography";
 import { Locations } from "./Data";
 
@@ -14,7 +17,12 @@ const contactFields = [
   { name: "name", label: "Full Name", required: true, type: "text" },
   { name: "email", label: "Email", required: true, type: "email" },
   { name: "phone", label: "Phone", required: true, type: "text" },
-  { name: "company", label: "Company (Optional)", required: false, type: "text" },
+  {
+    name: "company",
+    label: "Company (Optional)",
+    required: false,
+    type: "text",
+  },
 ];
 
 const emails = [
@@ -51,49 +59,52 @@ const ContactUs = () => {
   return (
     <PageLayout className="grid grid-cols-1 md:grid-cols-2 py-16 mt-16 gap-6">
       {/* LEFT FORM */}
-      <div className="md:p-6 space-y-6">
-        <Headline
-          title="CONTACT US"
-          className="text-start"
-          description="Fill out our form and a software expert will contact you within 24hrs."
-        />
+      <div className="md:p-6 space-y-6 text-start">
+        <div className="space-y-2 mb-6">
+          <TypographyH1>Let's Talk Solutions.</TypographyH1>
+          <TypographyLead>
+            Fill out our form and a software expert will contact you within
+            24hrs.
+          </TypographyLead>
+        </div>
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Input Fields */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {contactFields.map(({ name, label, required, type }) => (
-              <div key={name}>
-                <Label className="text-xs uppercase block">
+              <div key={name} className="grid gap-2">
+                <Label className="uppercase block">
                   {label} {required && <span className="text-red-500">*</span>}
                 </Label>
-                <input
+                <Input
                   type={type}
                   name={name}
                   value={formData[name]}
                   onChange={handleChange}
-                  className="w-full border-b-2 border-primary outline-none p-1"
+                  className="w-full"
                 />
               </div>
             ))}
           </div>
 
           {/* Message */}
-          <div>
+          <div className="grid gap-2">
             <Label className="text-xs uppercase block">
               How can we help you? <span className="text-red-500">*</span>
             </Label>
-            <textarea
+            <Textarea
               name="message"
-              rows={4}
+              rows={6}
               value={formData.message}
               onChange={handleChange}
-              className="w-full border-b-2 border-primary outline-none p-1"
+              className="w-full"
             />
           </div>
 
           {/* Tradeshow */}
-          <div>
+          <div className="grid gap-2">
             <Label className="text-sm mb-1 block">
-              Have you seen us at any tradeshow? <span className="text-red-500">*</span>
+              Have you seen us at any tradeshow?{" "}
+              <span className="text-red-500">*</span>
             </Label>
             <div className="flex items-center gap-6">
               {["Yes", "No"].map((option) => (
@@ -111,19 +122,29 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <Button variant="hover" type="submit">
-            SPEAK WITH A SOFTWARE EXPERT
+          <Button className="py-5 px-10" type="submit">
+            SUBMIT
           </Button>
 
           {/* Legal Notes */}
           <TypographyMuted className="text-xs pt-2">
-            <span className="text-red-500">*</span> By requesting a consult you agree to the terms of U Tech's{" "}
-            <a href="#" className="text-blue-600 underline">privacy policy</a>.
+            <span className="text-red-500">*</span> By requesting a consult you
+            agree to the terms of U Tech's{" "}
+            <a href="#" className="text-blue-600 underline">
+              privacy policy
+            </a>
+            .
           </TypographyMuted>
           <TypographyMuted className="text-xs">
             This site is protected by reCAPTCHA and the Google{" "}
-            <a href="#" className="text-blue-600 underline">Privacy Policy</a> and{" "}
-            <a href="#" className="text-blue-600 underline">Terms of Service</a> apply.
+            <a href="#" className="text-blue-600 underline">
+              Privacy Policy
+            </a>{" "}
+            and{" "}
+            <a href="#" className="text-blue-600 underline">
+              Terms of Service
+            </a>{" "}
+            apply.
           </TypographyMuted>
         </form>
       </div>
@@ -131,10 +152,16 @@ const ContactUs = () => {
       {/* RIGHT INFO */}
       <div className="md:p-6 space-y-6 text-sm">
         <div className="space-y-2">
-          <p className="flex items-center gap-2">Mumbai: <span>+91 9270033002</span></p>
-          <p className="flex items-center gap-2">Pune: <span>+91 9270033002</span></p>
+          <p className="flex items-center gap-2">
+            Mumbai: <span>+91 9270033002</span>
+          </p>
+          <p className="flex items-center gap-2">
+            Pune: <span>+91 9270033002</span>
+          </p>
           <div className="flex items-center gap-2">
-            <span className="bg-primary text-white px-2 rounded text-xs">SMS</span>
+            <span className="bg-primary text-white px-2 rounded text-xs">
+              SMS
+            </span>
             +91 9270033002
           </div>
           <div className="grid gap-1 pt-2">
@@ -169,7 +196,9 @@ const ContactUs = () => {
             <div className="mt-3 space-y-2">
               <TypographyH6>Singapore</TypographyH6>
               <div className="flex items-center gap-2">
-                <span className="bg-primary text-white px-2 rounded text-xs">SMS</span>
+                <span className="bg-primary text-white px-2 rounded text-xs">
+                  SMS
+                </span>
                 <TypographyMuted>+91 9270033002</TypographyMuted>
               </div>
             </div>

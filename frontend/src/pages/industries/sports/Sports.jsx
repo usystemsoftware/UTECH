@@ -24,13 +24,12 @@ export default function Sports() {
     <>
       {/* === Hero Banner Section === */}
       <HeroSection
-        backgroundImage="/assets/industries/sports/hero.jpg"
+        backgroundImage="/banner/sport-banner.jpg"
         title="Sports Management Software Development"
         description="Revolutionizing Sports Management Software With AI-Driven Innovation"
         buttonText="HIRE SPORT MANAGEMENT SOFTWARE DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.2}
       />
 
       {/* === Main Features Grid Section === */}
@@ -123,7 +122,7 @@ export default function Sports() {
           title="Golf Course Management Software Development"
           description="Our cloud-based golf management systems are configurable, customizable, and intuitive for the golf industry, incorporating customized features for scheduling online tee time, live leaderboard programming, POS integration, tournament management, and so much more."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -148,7 +147,7 @@ export default function Sports() {
             title="Sports Training Software Solutions"
             description="Our robust, feature-rich, and custom-tailored sports training and management software solutions capture, organize, and translate data into valuable knowledge for coaches, athletes, teams, and sporting organizations."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
             <FeaturesList fadeUp={fadeUp} features={sportsTrainingSolutions} />
             <FadeInWhenVisible delay={0.5}>
               <img
@@ -173,7 +172,7 @@ export default function Sports() {
           title="Sports Kinesiology & Motion Analysis Software"
           description="We engineer cutting-edge motion & muscle movement kinesiology software solutions to support sports institutions, educators, course curriculums, and health-related programs."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <FadeInWhenVisible delay={0.5} className="md:block hidden">
             <img
               loading="lazy"
@@ -198,14 +197,14 @@ export default function Sports() {
             title="Sports Medicine Management Software Solutions"
             description="We fully integrate custom sports medicine systems and build sports injury tracking software to better evaluate injury statuses and overall fitness levels."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-2">
             <FeaturesList fadeUp={fadeUp} features={sportsHealthSolutions} />
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
                 src="/assets/industries/sports/sports-medicine-management-software-solutions.png"
                 alt="Portfolio"
-                className="w-96 mx-auto"
+                className="md:w-96 w-80 mx-auto"
               />
             </FadeInWhenVisible>
           </div>

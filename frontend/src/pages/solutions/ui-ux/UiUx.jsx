@@ -18,13 +18,13 @@ import {
 
 // Logo row utility
 const LogoRow = ({ logos }) => (
-  <div className="flex flex-wrap gap-4 items-center mt-4">
+  <div className="flex flex-wrap items-center mt-4">
     {logos.map((src, index) => (
       <img
         key={index}
         src={src}
         alt="Tech logo"
-        className="h-10 w-10 object-contain"
+        className="mx-auto object-contain"
       />
     ))}
   </div>
@@ -35,13 +35,12 @@ const UiUx = () => {
     <>
       {/* HERO SECTION */}
       <HeroSection
-        backgroundImage="/assets/solutions/ui-ux/banner.jpg"
+        backgroundImage="/banner/ui-ux-banner.jpg"
         title="UI & UX DESIGN AND DEVELOPMENT SERVICES"
         description="Empowering Businesses with Tailored UI/UX Solutions By Our Design Experts"
         buttonText="HIRE UI/UX DEVELOPMENT"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.2}
       />
 
       {/* UI/UX DESIGN SERVICES SECTION */}
@@ -57,7 +56,7 @@ const UiUx = () => {
             innovative digital user experiences
             that solve complex business problems."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
           <FadeInWhenVisible>
             <img
               loading="lazy"
@@ -68,7 +67,7 @@ const UiUx = () => {
           </FadeInWhenVisible>
           <FeaturesList features={uiuxServices.slice(0, 3)} fadeUp={fadeUp} />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
           <FeaturesList features={uiuxServices.slice(3, 6)} fadeUp={fadeUp} />
           <FadeInWhenVisible>
             <img
@@ -115,7 +114,7 @@ const UiUx = () => {
             business goals and how to best serve your target audience with a
             seamless, intuitive, and pleasurable user experience."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
           <FeaturesList features={processSteps.slice(0, 2)} fadeUp={fadeUp} />
           <FadeInWhenVisible>
             <img
@@ -141,7 +140,7 @@ const UiUx = () => {
           the full strength of these systems to provide computing power,
           enhanced graphics, robust security standards, and greater performance."
         />
-        <div className="grid md:grid-cols-3 gap-12 text-left my-16">
+        <div className="grid md:grid-cols-3 gap-12 space-y-8 text-center my-16">
           {uxUiTechStack?.map((item, idx) => (
             <FadeInWhenVisible key={idx}>
               <TypographyH3 className="text-lg font-semibold mb-2">

@@ -1,0 +1,43 @@
+const metaData = {
+  "/": {
+    title: "Home | U Tech",
+    description: "Welcome to U Tech - Your technology partner.",
+    keywords: "software engineering, IoT, IT consultancy",
+    canonical: "https://usystem.software/",
+    author: "U Tech Solutions",
+    robots: "index, follow",
+    favicon: "https://usystem.software/thumbnil.png",
+    ogTitle: "U Tech - Software Engineering Experts",
+    ogDescription: "We provide expert software engineering and IoT solutions.",
+    ogImage: "https://usystem.software/thumbnil.png",
+    twitterTitle: "U Tech - Digital Experts",
+    twitterDescription: "Solutions for enterprises and startups.",
+    twitterImage: "https://usystem.software/thumbnil.png",
+  },
+  "/about": {
+    title: "About Us | U Tech",
+    description: "Learn about our mission, team, and values.",
+    keywords: "about u tech, our team, company info",
+    canonical: "https://usystem.software/about",
+    ogTitle: "About U Tech",
+    ogDescription: "Discover what drives our company.",
+    ogImage: "https://usystem.software/thumbnil.png",
+    twitterTitle: "About U Tech",
+    twitterDescription: "Meet the minds behind our innovation.",
+    twitterImage: "https://usystem.software/thumbnil.png",
+  },
+  "/contact-us": {
+    title: "Services | U Tech",
+    description: "Explore software, cloud, and AI services.",
+    keywords: "services, software development, ai, cloud",
+    canonical: "https://usystem.software/services",
+    ogTitle: "Our Services",
+    ogDescription: "Scalable digital solutions for your business.",
+    ogImage: "https://usystem.software/thumbnil.png",
+    twitterTitle: "Our Services",
+    twitterDescription: "Expert IT services and digital transformation.",
+    twitterImage: "https://usystem.software/thumbnil.png",
+  },
+};
+
+export default metaData;

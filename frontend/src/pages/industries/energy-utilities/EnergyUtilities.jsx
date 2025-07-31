@@ -26,13 +26,12 @@ export default function EnergyUtilities() {
     <>
       {/* Hero section for banner */}
       <HeroSection
-        backgroundImage="/assets/industries/energy-utilities/hero.avif"
+        backgroundImage="/banner/utilities-banner.jpg"
         title="Utility Management with Energy Saving AI Technology"
         description="Leverage the power of AI to revolutionize energy and utilities with cutting-edge solutions for electric, water, smart grid, heat, solar, waste management, wind, and nuclear sectors."
         buttonText="GET ENERGY DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
       />
 
       {/* Feature grid for top utility software areas */}
@@ -84,11 +83,7 @@ export default function EnergyUtilities() {
           description="AI-Powered Energy and Utilities Solutions U Tech’s experts design powerful AI solutions for energy and utility companies that want more efficiency, productivity, and resourcefulness. Let U Tech’s AI technology help your staff maximize their efforts to benefit loyal customers."
         />
         <div className="block md:hidden">
-          <FeaturesList
-            features={aiUtilitySolutions}
-            fadeUp={fadeUp}
-            grid
-          />
+          <FeaturesList features={aiUtilitySolutions} fadeUp={fadeUp} grid />
         </div>
         <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-10">
           <FeaturesList
@@ -208,14 +203,14 @@ export default function EnergyUtilities() {
             title="Custom Solar Asset Management Software Solutions"
             description="U Tech’s expert developers utilize a wide range of technologies, such as solar heating, artificial photosynthesis, photovoltaics, and more to customize solar asset management software solutions engineered to improve the design, construction, and management of solar power as a sustainable, renewable energy source."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-2 md:gap-8">
             <FeaturesList fadeUp={fadeUp} features={solarSoftwareSolutions} />
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
                 src="/assets/industries/energy-utilities/custom-solar-software-solutions.png"
                 alt="Portfolio"
-                className="w-96 mx-auto"
+                className="w-72 sm:w-86 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
@@ -297,7 +292,7 @@ export default function EnergyUtilities() {
                 loading="lazy"
                 src="/assets/industries/energy-utilities/custom-nuclear-energy-software.png"
                 alt="Portfolio"
-                className="w-96 mx-auto"
+                className="w-86 mx-auto"
               />
             </FadeInWhenVisible>
           </div>

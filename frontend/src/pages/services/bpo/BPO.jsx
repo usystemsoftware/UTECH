@@ -43,12 +43,11 @@ export default function BPO() {
     <>
       {/* === HERO SECTION === */}
       <HeroSection
-        backgroundImage="/assets/services/bpo/hero.avif"
+        backgroundImage="/banner/business-process-outsourcing-banner.jpg"
         title="Business Process Outsourcing Services"
         buttonText="HIRE RELIABLE BPO RESOURCE"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.2}
       />
 
       <PageLayout className="py-16 space-y-8">
@@ -193,7 +192,7 @@ export default function BPO() {
           description="Our DevOps experts will help your business processes reach optimal efficiency through automation and digital transformation."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"

@@ -23,13 +23,12 @@ const ApiDevelopment = () => {
     <>
       {/* ===== HERO SECTION ===== */}
       <HeroSection
-        backgroundImage="/assets/industries/banking/banking-header.avif"
+        backgroundImage="/banner/api-development-banner.jpg"
         title=" CUSTOM API DEVELOPMENT & INTEGRATION SOLUTIONS "
         description="Expert API Development with AI-Powered Solutions for Seamless Integrations"
         buttonText="GET API DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
       />
 
       {/* ===== FEATURES SECTION ===== */}
@@ -127,21 +126,21 @@ const ApiDevelopment = () => {
         />
 
         {/* Two-Column Functionality Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-left mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 space-y-8 items-center mt-16">
           {apiFunctionality.map((feature, index) => (
             <div key={index}>
               <TypographyH3>{feature?.title}</TypographyH3>
               <TypographyMuted>{feature?.description}</TypographyMuted>
               <div
                 key={index}
-                className="flex items-center sm:gap-12 gap-8 mt-8 flex-wrap"
+                className="flex items-center gap-2 mt-8 flex-wrap"
               >
                 {feature.logos.map((logo, index) => (
                   <img
                     key={index}
                     loading="lazy"
                     src={`/assets/services/api-development/api-conf/${logo}.png`}
-                    className="h-8 cursor-pointer hover:scale-105"
+                    className="h-8 mx-auto cursor-pointer hover:scale-105"
                     alt={feature?.title}
                   />
                 ))}

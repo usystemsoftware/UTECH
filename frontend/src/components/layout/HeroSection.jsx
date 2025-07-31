@@ -5,12 +5,12 @@ import { TypographyLead, TypographySmall } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { AuroraBackground } from "@/components/ui/aurora-background";
-import FloatingPhoneRight from "./FloatingPhone";
+// import FloatingPhoneRight from "./FloatingPhone";
 
 export const HeroSection = () => {
   return (
     <AuroraBackground className="min-h-[100vh]">
-      <PageLayout className="relative flex items-center justify-center overflow-hidden pt-20 sm:pt-16">
+      <PageLayout className="relative flex items-center justify-center overflow-hidden pt-20 sm:pt-14">
         {/* Main Content */}
         <div className="grid sm:grid-cols-2 items-center">
           <div className="space-y-8">
@@ -59,20 +59,20 @@ export const HeroSection = () => {
           </div>
 
           {/* Right Side Logo */}
-          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-            <FloatingPhoneRight />
-          </FadeInWhenVisible>
-
           {/* <FadeInWhenVisible delay={0.5} className="sm:block hidden">
+            <FloatingPhoneRight />
+          </FadeInWhenVisible> */}
+
+          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <div className="w-full flex justify-center">
               <img
                 loading="lazy"
                 src="/small-logo.png"
                 alt="U Logo"
-                className="w-[70%] sm:w-[50%] md:w-[40%] lg:w-[50%] xl:w-[60%] max-h-[65vh] object-contain transition-transform duration-300 hover:scale-105"
+                className="w-[70%] sm:w-[70%] md:w-[60%] lg:w-[50%] xl:w-[60%] max-h-[65vh] object-contain transition-transform duration-300 hover:scale-105"
               />
             </div>
-          </FadeInWhenVisible> */}
+          </FadeInWhenVisible>
         </div>
       </PageLayout>
     </AuroraBackground>

@@ -22,13 +22,12 @@ export default function Correction() {
   return (
     <>
       <HeroSection
-        backgroundImage="/assets/industries/correction/hero.avif"
+        backgroundImage="/banner/correction-banner.jpg"
         title="Custom Corrections & Jail Management System Development"
         description="Streamline jail management with our AI-powered solutions to streamline workflows including housing, scheduling, inmate tracking, and data storage."
         buttonText="HIRE EXPERT DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
       />
 
       <PageLayout className="py-16 space-y-10 text-center">

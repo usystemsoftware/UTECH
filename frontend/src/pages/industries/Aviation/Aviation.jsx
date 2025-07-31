@@ -23,7 +23,7 @@ export default function Aviation() {
     <>
       {/* Banner */}
       <HeroSection
-        backgroundImage="/assets/industries/aviation/hero.avif"
+        backgroundImage="/banner/aviation-banner.jpg"
         title="AVIATION SOFTWARE DEVELOPMENT"
         description="Revolutionize aviation operations with AI-powered solutions for seamless integration and enhanced efficiency."
         buttonText="GET AIRLINE SOFTWARE DEVELOPERS"
@@ -84,7 +84,10 @@ export default function Aviation() {
             features={airlineOperationsServices}
             grid
           />
-          <FadeInWhenVisible delay={0.5} className="md:block hidden">
+          <FadeInWhenVisible
+            delay={0.5}
+            className="md:block hidden absolute right-0"
+          >
             <img
               loading="lazy"
               src="/assets/industries/aviation/custom-flight-operations-management-software-development.png"

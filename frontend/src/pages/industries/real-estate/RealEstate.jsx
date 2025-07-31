@@ -1,13 +1,12 @@
 import { motion } from "framer-motion";
 import FaqSection from "@/custom/FaqSection";
-import { IconRenderer } from "@/custom/IconRenderer";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
 import { FeaturesGrid } from "@/components/FeaturesGridCard";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
-import { TypographyH5, TypographyMuted, Headline } from "@/custom/Typography";
+import { Headline } from "@/custom/Typography";
 
 import {
   appDevFeatures,
@@ -43,12 +42,11 @@ const RealEstate = () => {
   return (
     <div>
       <HeroSection
-        backgroundImage="/assets/industries/real-estate/real-banner.jpg"
+        backgroundImage="/banner/real-banner.jpg"
         title="REAL ESTATE SOFTWARE DEVELOPMENT"
         buttonText="GET REAL ESTATE SOFTWARE DEVELOPERS"
         buttonLink="/real-estate"
         imageFit="cover"
-        overlayOpacity={0.2}
       />
 
       {/* Features Grid */}
@@ -72,14 +70,14 @@ const RealEstate = () => {
       </PageLayout>
 
       <section className="py-16 bg-secondary text-center">
-        <PageLayout>
+        <PageLayout className="space-y-10">
           <Headline
             title="We Have Experienced Real Estate Software Developers"
             description="We augment your current IT teams to revamp your real estate software
             solutions using our specialized, multi-purpose technologies and
             industry-specific experience."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-1 space-y-6 md:grid-cols-3 gap-6 items-center mt-8">
             <FeaturesList
               features={realEstateServices.slice(0, 2)}
               fadeUp={fadeUp}
@@ -128,8 +126,8 @@ const RealEstate = () => {
             to help streamline real estate business operations, automate routine
             tasks, and ensure easy access to market information."
         />
-        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <FadeInWhenVisible delay={0.4} className="md:block hidden">
+        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
+          <FadeInWhenVisible delay={0.4} className="sm:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/real-estate/mobile.png"

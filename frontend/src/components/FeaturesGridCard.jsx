@@ -15,7 +15,7 @@ export const FeaturesGrid = ({
       {leftFeatures.map((item, index) => (
         <FadeInWhenVisible
           key={index}
-          className="flex items-center md:justify-end gap-3"
+          className="flex items-center justify-end gap-3"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"

@@ -21,12 +21,11 @@ export default function HospitalandTravelling() {
     <>
       {/* === HERO SECTION === */}
       <HeroSection
-        backgroundImage="/assets/industries/hospital-travel/hero.jpeg"
+        backgroundImage="/banner/hospitality-banner2.jpg"
         title="HOSPITALITY SOFTWARE DEVELOPMENT SERVICES"
         buttonText="HIRE HOSPITALITY SOFTWARE DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.2}
       />
 
       {/* === MAIN SERVICES SECTION === */}
@@ -36,8 +35,12 @@ export default function HospitalandTravelling() {
           description="Our Hospitality Management System software solutions are tailored to your hospitality technology needs..."
         />
 
+        <div className="block md:hidden">
+          <FeaturesList features={hospitalityServices} fadeUp={fadeUp} grid />
+        </div>
+
         {/* Service features split into 3 columns */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           <FeaturesList
             features={hospitalityServices.slice(0, 2)}
             fadeUp={fadeUp}
@@ -65,7 +68,15 @@ export default function HospitalandTravelling() {
             description="Our team of developers unlock the full potential of property management systems..."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <div className="block md:hidden">
+            <FeaturesList
+              features={hospitalityAdditionalServices}
+              fadeUp={fadeUp}
+              grid
+            />
+          </div>
+
+          <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
             <FeaturesList
               features={hospitalityAdditionalServices.slice(0, 2)}
               fadeUp={fadeUp}
@@ -113,7 +124,7 @@ export default function HospitalandTravelling() {
           />
 
           {/* Layout: Image left, features right */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
@@ -141,7 +152,7 @@ export default function HospitalandTravelling() {
           description="U Tech’s development team is highly skilled in creating custom B2B & B2C travel apps..."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"

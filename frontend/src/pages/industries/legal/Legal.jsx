@@ -23,12 +23,11 @@ import {
 const Legal = () => (
   <>
     <HeroSection
-      backgroundImage="/assets/industries/legal/business.jpg"
+      backgroundImage="/banner/legel-banner.jpg"
       title="LEGAL SOFTWARE DEVELOPMENT"
       buttonText="GET LEGAL SOFTWARE SOLUTIONS"
       buttonLink="/legal"
       imageFit="cover"
-      overlayOpacity={0.2}
     />
 
     <PageLayout className="space-y-8 py-12">
@@ -38,7 +37,7 @@ const Legal = () => (
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="space-y-4">
+        <div className="space-y-4 md:text-start text-center">
           <TypographyH5>Law Firm Management Software</TypographyH5>
           <TypographyMuted>
             We develop Law Firm Management Software that’s custom-tailored to
@@ -71,7 +70,7 @@ const Legal = () => (
             className="w-145 hidden md:block"
           />
         </FadeInWhenVisible>
-        <div className="space-y-4 mb-10">
+        <div className="space-y-4 md:text-start text-center">
           <TypographyH5>
             Case & Matter Management Software Development
           </TypographyH5>
@@ -102,7 +101,7 @@ const Legal = () => (
         title="Legal Management Workflow Automation"
         description="We develop Legal Management Software that streamlines workflows through advanced automation, real-time integrations, full visibility & control, and comprehensive insights to increase legal productivity."
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
         <FadeInWhenVisible>
           <img
             loading="lazy"
@@ -134,7 +133,11 @@ const Legal = () => (
           description="We engineer custom-tailored Legal Management Software Solutions to help legal practices automate repetitive tasks, streamline workflows, and store legal documentation in an all-in-one platform."
         />
 
-        <FadeInWhenVisible className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="block md:hidden">
+          <FeaturesList features={gamingLegal} fadeUp={fadeUp} grid />
+        </div>
+
+        <FadeInWhenVisible className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <FeaturesList features={gamingLegal.slice(0, 2)} />
           <FeaturesList features={gamingLegal.slice(2, 4)} />
           <FeaturesList features={gamingLegal.slice(4, 6)} />

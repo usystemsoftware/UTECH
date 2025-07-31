@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSection from "@/components/HeroSection";
 import {
   Application,
@@ -21,12 +20,11 @@ const ApplicationMaintenance = () => {
     <>
       {/* === HERO SECTION === */}
       <HeroSection
-        backgroundImage="/assets/services/application-maintenanc/banner.jpg"
+        backgroundImage="/banner/app-maintanance-banner.jpg"
         title="APPLICATION MAINTENANCE AND SUPPORT SERVICES"
         buttonText="HIRE EXPERT DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
       />
 
       {/* === INTRODUCTION SECTION === */}
@@ -39,7 +37,11 @@ const ApplicationMaintenance = () => {
           Application Maintenance Services
         </TypographyH3>
         {/* === APPLICATION MAINTENANCE FEATURES SECTION === */}
-        <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 mt-8 items-center gap-8 space-y-12">
+        <div className="block md:hidden">
+          <FeaturesList features={Application} grid />
+        </div>
+
+        <div className="md:grid hidden grid-cols-1 md:grid-cols-3 sm:grid-cols-2 mt-8 items-center gap-8 space-y-12">
           <FeaturesList features={Application.slice(0, 3)} />
 
           <FadeInWhenVisible>
@@ -61,19 +63,21 @@ const ApplicationMaintenance = () => {
       </PageLayout>
 
       {/* === APPLICATION SUPPORT SERVICES SECTION === */}
-      <PageLayout className="py-16 space-y-10 text-center">
-        <Headline
-          title="Application Support Servicest"
-          description="Applications are long-term investments, and U Technology's Application Support Services encompass technical expertise, software maintenance, extended support, and exceptional customer service, all aimed at keeping your applications running optimally."
-        />
+      <section className="bg-secondary py-12">
+        <PageLayout className="space-y-10 text-center">
+          <Headline
+            title="Application Support Servicest"
+            description="Applications are long-term investments, and U Technology's Application Support Services encompass technical expertise, software maintenance, extended support, and exceptional customer service, all aimed at keeping your applications running optimally."
+          />
 
-        <FeaturesList features={ApplicationSupport} grid />
+          <FeaturesList features={ApplicationSupport} grid />
 
-        {/* === CTA BUTTON: SUPPORT === */}
-        <FadeInWhenVisible delay={0.4}>
-          <Button variant="hover">GET APPLICATION SUPPORT</Button>
-        </FadeInWhenVisible>
-      </PageLayout>
+          {/* === CTA BUTTON: SUPPORT === */}
+          <FadeInWhenVisible delay={0.4}>
+            <Button variant="hover">GET APPLICATION SUPPORT</Button>
+          </FadeInWhenVisible>
+        </PageLayout>
+      </section>
 
       {/* === AI-POWERED INTELLIGENT SOLUTIONS SECTION === */}
       <PageLayout className="py-10 text-center space-y-10">
@@ -91,45 +95,47 @@ const ApplicationMaintenance = () => {
       </PageLayout>
 
       {/* === BLOCK OF HOURS SUPPORT SECTION === */}
-      <PageLayout className="py-16">
-        <div className="flex justify-between gap-8 md:flex-row flex-col">
-          <Headline
-            title="Block of Hours Support Services"
-            description="U Technology's team comprises over 2,800 industry-experienced developers with comprehensive domain expertise and technical proficiency. Our commitment to excellence is reflected in the delivery of superior support through flexible and cost-effective Block of Hours support services tailored for various applications.."
-            className="text-start"
-          />
-
-          <Headline
-            title="Technical & Non-Technical Support"
-            description="U Technology’s Block of Hours program is a cost-effective alternative to our standard flat-rate support offered to new, current, and past customers. We offer technical and non-technical support services for all software applications. Services are sold per 100 Block of Hours with reduced rates contingent on hours purchased.."
-            className="text-start"
-          />
-        </div>
-
-        {/* === IMAGE + SUPPORT LIST === */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 items-center mt-12">
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/services/application-maintenanc/support.png"
-              alt="Support Dashboard"
-              className="mx-auto w-135"
+      <section className="bg-secondary py-12">
+        <PageLayout>
+          <div className="flex justify-between gap-8 md:flex-row flex-col">
+            <Headline
+              title="Block of Hours Support Services"
+              description="U Technology's team comprises over 2,800 industry-experienced developers with comprehensive domain expertise and technical proficiency. Our commitment to excellence is reflected in the delivery of superior support through flexible and cost-effective Block of Hours support services tailored for various applications.."
+              className="text-start"
             />
-          </FadeInWhenVisible>
 
-          <FadeInWhenVisible className="space-y-4">
-            <TypographyH3>BOH Support:</TypographyH3>
-            <ul className="space-y-3 text-left">
-              {supportItems.map((item, index) => (
-                <li key={index} className="flex items-start space-x-2">
-                  <Check className="text-orange-500 w-5 h-5 mt-1" />
-                  <span className="text-muted-foreground">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </FadeInWhenVisible>
-        </div>
-      </PageLayout>
+            <Headline
+              title="Technical & Non-Technical Support"
+              description="U Technology’s Block of Hours program is a cost-effective alternative to our standard flat-rate support offered to new, current, and past customers. We offer technical and non-technical support services for all software applications. Services are sold per 100 Block of Hours with reduced rates contingent on hours purchased.."
+              className="text-start"
+            />
+          </div>
+
+          {/* === IMAGE + SUPPORT LIST === */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 items-center mt-12">
+            <FadeInWhenVisible>
+              <img
+                loading="lazy"
+                src="/assets/services/application-maintenanc/support.png"
+                alt="Support Dashboard"
+                className="mx-auto w-135"
+              />
+            </FadeInWhenVisible>
+
+            <FadeInWhenVisible className="space-y-4">
+              <TypographyH3>BOH Support:</TypographyH3>
+              <ul className="space-y-3 text-left">
+                {supportItems.map((item, index) => (
+                  <li key={index} className="flex items-start space-x-2">
+                    <Check className="text-orange-500 w-5 h-5 mt-1" />
+                    <span className="text-muted-foreground">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </FadeInWhenVisible>
+          </div>
+        </PageLayout>
+      </section>
 
       {/* === TECHNOLOGY LOGO SECTION === */}
       <PageLayout className="py-16 text-center space-y-10">
@@ -138,22 +144,19 @@ const ApplicationMaintenance = () => {
           description="Our programmers, developers, and engineers are highly proficient..."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-left mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-center mt-16">
           {apiLogs.map((feature, index) => (
             <div key={index}>
               <TypographyH3>{feature?.title}</TypographyH3>
               <TypographyMuted>{feature?.description}</TypographyMuted>
 
-              <div
-                key={index}
-                className="flex items-center sm:gap-12 gap-8 mt-8 flex-wrap"
-              >
+              <div key={index} className="flex items-center mt-8 flex-wrap">
                 {feature.logos.map((logo, index) => (
                   <img
                     key={index}
                     loading="lazy"
                     src={`/assets/services/application-development/logos/${logo}.png`}
-                    className="h-8 cursor-pointer hover:scale-105 transition-transform"
+                    className="h-8 mx-auto cursor-pointer hover:scale-105 transition-transform"
                     alt={logo}
                   />
                 ))}

@@ -23,12 +23,11 @@ export default function Retail() {
     <>
       {/* === Hero Banner Section === */}
       <HeroSection
-        backgroundImage="/assets/industries/retail/hero.jpg"
+        backgroundImage="/banner/retail-banner.jpg"
         title="RETAIL SOFTWARE DEVELOPMENT"
         buttonText="GET RETAIL SOFTWARE DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.2}
       />
 
       {/* === Core Retail Solutions Overview with Center Image === */}
@@ -47,8 +46,16 @@ export default function Retail() {
             description="Chetu, an retail software development company provides custom retail software development solutions for brick and mortar, e-commerce, c-store & grocery, dealerships, shopping cart, and mobile systems."
           />
 
+          <div className="block md:hidden">
+            <FeaturesList
+              features={retailSoftwareSolutions}
+              fadeUp={fadeUp}
+              grid
+            />
+          </div>
+
           {/* Retail Software Capabilities Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <FeaturesList
               features={retailSoftwareSolutions.slice(0, 2)}
               fadeUp={fadeUp}
@@ -87,8 +94,12 @@ export default function Retail() {
           description="We leverage the power of artificial intelligence (AI) to develop innovative solutions for all sectors of retail. These AI-powered technology solutions provide powerful avenues for modernization and optimization."
         />
 
+        <div className="block md:hidden">
+          <FeaturesList features={retailAiSolutions} fadeUp={fadeUp} grid />
+        </div>
+
         {/* AI Retail Features */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           <FeaturesList
             features={retailAiSolutions.slice(0, 2)}
             fadeUp={fadeUp}
@@ -117,7 +128,7 @@ export default function Retail() {
         />
 
         {/* Image and Customer-Facing Features */}
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"

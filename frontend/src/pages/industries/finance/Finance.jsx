@@ -29,7 +29,7 @@ const Finance = () => {
     <>
       {/* Banner */}
       <HeroSection
-        backgroundImage="/assets/industries/finance/finance-banner.jpg"
+        backgroundImage="/banner/finance-banner.jpg"
         title="FINANCIAL SOFTWARE DEVELOPMENT SERVICES"
         description="Transforming banking with AI, fraud detection, wealth management & more."
         buttonText="GET FINTECH DEVELOPERS"

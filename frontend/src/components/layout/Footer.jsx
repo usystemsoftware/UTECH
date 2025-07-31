@@ -45,6 +45,16 @@ export const footerLinks = [
       { label: "Web Development", to: "/solutions/web-development" },
     ],
   },
+  {
+    title: "Quick Links",
+    links: [
+      { label: "About Us", to: "/company/about-us" },
+      { label: "Careers", to: "/company/careers" },
+      { label: "History", to: "/company/history" },
+      { label: "Locations", to: "/company/locations" },
+      { label: "Reviews", to: "/company/reviews" },
+    ],
+  },
 ];
 
 const socialIcons = [
@@ -75,27 +85,36 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-b relative from-[#0d101f] to-[#071427] text-white px-6 py-12">
-      <div className="md:max-w-7xl lg:max-w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+    <footer className="bg-gradient-to-b from-[#0d101f] to-[#071427] text-white px-4 sm:px-6 py-10 sm:py-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 space-y-4 md:space-y-0 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-8 md:gap-12">
         {/* Brand and Subscribe */}
-        <FadeInWhenVisible className="sm:col-span-2 space-y-4">
-          <TypographyH3>U Technology</TypographyH3>
-          <p className="text-sm mb-4 text-gray-300">
+        <FadeInWhenVisible className="col-span-2 space-y-4">
+          <TypographyH3 className="text-xl sm:text-2xl md:text-3xl">
+            U Technology
+          </TypographyH3>
+          <p className="text-sm md:text-base text-gray-300">
             Subscribe to get the latest updates, articles, and inspiration.
           </p>
           <form
             onSubmit={handleSubscribe}
-            className="flex flex-col sm:flex-row gap-2 sm:max-w-md"
+            className="flex flex-col sm:flex-row gap-2 w-full max-w-md"
           >
-            <Input type="email" required placeholder="Enter your email" />
-            <Button type="submit">Subscribe</Button>
+            <Input
+              type="email"
+              required
+              placeholder="Enter your email"
+              className="flex-1 min-w-0"
+            />
+            <Button type="submit" className="w-full sm:w-auto">
+              Subscribe
+            </Button>
           </form>
           {subscribed && (
             <p className="mt-2 text-green-400 text-sm transition-opacity duration-300">
               Thank you for subscribing! 🎉
             </p>
           )}
-          <div className="flex gap-4 mt-6 text-xl">
+          <div className="flex flex-wrap gap-4 mt-6">
             {socialIcons.map((item, i) => (
               <FadeInWhenVisible key={i}>
                 <a
@@ -103,12 +122,13 @@ export const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={item.label}
+                  className="hover:scale-110 transition-transform"
                 >
                   <img
                     src={`/assets/social-icon/${item.icon}.png`}
                     alt={item.label}
                     loading="lazy"
-                    className="w-8 h-8 cursor-pointer hover:scale-120 transition-transform"
+                    className="w-7 h-7 sm:w-8 sm:h-8"
                   />
                 </a>
               </FadeInWhenVisible>
@@ -120,8 +140,10 @@ export const Footer = () => {
         {footerLinks.map((section, i) => (
           <FadeInWhenVisible key={i}>
             <div>
-              <TypographyH4>{section.title}</TypographyH4>
-              <ul className="space-y-3 mt-3 text-sm text-gray-300">
+              <TypographyH4 className="text-base md:text-lg">
+                {section.title}
+              </TypographyH4>
+              <ul className="space-y-2 mt-3 text-sm text-gray-300">
                 {section.links.map((link, j) => (
                   <li key={j}>
                     <Link
@@ -138,10 +160,9 @@ export const Footer = () => {
         ))}
       </div>
 
-      <div className="mt-10 text-center border-t border-white/10 pt-6 text-sm text-gray-400">
+      <div className="mt-10 text-center border-t border-white/10 pt-6 text-xs sm:text-sm text-gray-400">
         © {new Date().getFullYear()} Umbarkar Technology India Pvt Ltd. All
         rights reserved.
-        <br />
       </div>
     </footer>
   );

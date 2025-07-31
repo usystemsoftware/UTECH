@@ -23,12 +23,11 @@ export default function EnvManagement() {
     <>
       {/* Hero Section */}
       <HeroSection
-        backgroundImage="/assets/industries/env-mng/hero.avif"
+        backgroundImage="/banner/env-mang-banner.jpg"
         title="Environmental Management Software Development"
         buttonText="GET EMS DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
       />
 
       {/* Uses: environmentalFeatures */}

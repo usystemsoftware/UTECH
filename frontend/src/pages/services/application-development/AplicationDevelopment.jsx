@@ -44,13 +44,12 @@ const ApplicationDevelopment = () => {
     <>
       {/* === HERO SECTION === */}
       <HeroSection
-        backgroundImage="/assets/services/application-development/banner.jpg"
+        backgroundImage="/banner/application-development-banner.jpg"
         description="Harnessing The Power of AI to Drive Innovative App Development"
         title="APPLICATION DEVELOPMENT SERVICES"
         buttonText="Get App Developers"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
       />
 
       {/* === CROSS PLATFORM INTRO + PLATFORMS SECTION === */}
@@ -60,7 +59,7 @@ const ApplicationDevelopment = () => {
 
         {/* Cross-platform features and image */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 space-y-12 items-center">
-          <div className="space-y-8">
+          <div className="space-y-8 md:text-start text-center">
             <FadeInWhenVisible className="">
               <TypographyH5>{crossPlatformText?.title}</TypographyH5>
               <TypographyMuted>
@@ -134,7 +133,7 @@ const ApplicationDevelopment = () => {
           />
 
           {/* Content with image + features */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
             <FadeInWhenVisible>
               <img
                 loading="lazy"
@@ -171,7 +170,7 @@ const ApplicationDevelopment = () => {
 
       {/* === COMPLIANCE VIDEO SECTION === */}
       <section className=" bg-secondary py-20">
-        <PageLayout className="bg-[#E5F8FF] p-10 grid grid-cols-1 sm:grid-cols-2">
+        <PageLayout className="bg-[#E5F8FF] p-10 grid grid-cols-1 items-center sm:grid-cols-2">
           {/* Left text section */}
           <FadeInWhenVisible>
             <div>
@@ -238,21 +237,18 @@ const ApplicationDevelopment = () => {
         />
 
         {/* Features with tech logos */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-left mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-center space-y-10 mt-16">
           {apiLogs.map((feature, index) => (
             <div key={index}>
               <TypographyH3>{feature?.title}</TypographyH3>
               <TypographyMuted>{feature?.description}</TypographyMuted>
-              <div
-                key={index}
-                className="flex items-center sm:gap-12 gap-8 mt-8 flex-wrap"
-              >
+              <div key={index} className="flex items-center mt-8 flex-wrap">
                 {feature.logos.map((logo, index) => (
                   <img
                     key={index}
                     loading="lazy"
                     src={`/assets/services/application-development/logos/${logo}.png`}
-                    className="h-8 cursor-pointer hover:scale-105 transition-transform"
+                    className="h-8 cursor-pointer mx-auto hover:scale-105 transition-transform"
                     alt={logo}
                   />
                 ))}

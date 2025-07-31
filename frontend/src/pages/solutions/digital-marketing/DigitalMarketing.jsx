@@ -19,11 +19,10 @@ const DigitalMarketing = () => {
       <HeroSection
         title="Digital Marketing Software Development"
         description="HIRE DIGITAL MARKETING EXPERTS"
-        backgroundImage="/assets/solutions/digital-marketing/picture.jpg"
+        backgroundImage="/banner/digital-marketing-banner.jpg"
         buttonText="Get App Developers"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
       />
 
       {/* === DRIVE MORE REVENUE SECTION === */}
@@ -33,12 +32,16 @@ const DigitalMarketing = () => {
           description="Whether you require digital marketing software developers-for-hire to augment your existing in-house development team, or a newly developed digital marketing software solution to help your business drive more revenue, U Technology’s got you covered."
         />
 
+        <div className="block md:hidden">
+          <FeaturesList features={DriveMore} fadeUp={fadeUp} grid />
+        </div>
+
         {/* === Features Grid: DriveMore Items === */}
-        <FadeInWhenVisible className="space-y-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <FeaturesList features={DriveMore.slice(0, 2)} />
           <FeaturesList features={DriveMore.slice(2, 4)} />
           <FeaturesList features={DriveMore.slice(4, 6)} />
-        </FadeInWhenVisible>
+        </div>
 
         {/* === CTA Button: Marketing Experts === */}
         <FadeInWhenVisible>
@@ -55,7 +58,7 @@ const DigitalMarketing = () => {
           />
 
           {/* === Features + Image Grid: CustomDigitalMarketing === */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 space-y-12 items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 space-y-12 items-center">
             {/* Left: Image */}
             <FadeInWhenVisible>
               <img
@@ -80,7 +83,7 @@ const DigitalMarketing = () => {
         />
 
         {/* === Features + Image Grid: WebApps === */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-12 space-y-12 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-12 space-y-12 items-center">
           {/* Left: Feature List */}
           <FeaturesList features={WebApps} />
 
@@ -90,7 +93,7 @@ const DigitalMarketing = () => {
               loading="lazy"
               src="/assets/solutions/digital-marketing/application.png"
               alt="Mobile App Devices"
-              className="md:w-55 w-32 mx-auto"
+              className="md:w-55 w-48 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
@@ -110,7 +113,7 @@ const DigitalMarketing = () => {
           />
 
           {/* === Features + Image + Features Split Grid === */}
-          <div className="mt-16 flex flex-col lg:flex-row justify-between gap-10">
+          <div className="md:grid hidden grid-cols-1 gap-8 sm:grid-cols-3 items-center">
             {/* Left Features List: TestingSolutions */}
             <FeaturesList
               features={TestingSolutions.slice(0, 3)}
@@ -123,7 +126,7 @@ const DigitalMarketing = () => {
                 loading="lazy"
                 src="/assets/solutions/digital-marketing/functions.png"
                 alt="Tax Preparation"
-                className="md:w-250 w-68"
+                className="md:w-135 w-96 mx-auto"
               />
             </FadeInWhenVisible>
 
@@ -132,6 +135,10 @@ const DigitalMarketing = () => {
               features={TestingSolutions.slice(3, 6)}
               fadeUp={fadeUp}
             />
+          </div>
+
+          <div className="block md:hidden">
+            <FeaturesList features={TestingSolutions} fadeUp={fadeUp} grid />
           </div>
 
           <FeaturesList features={TestSolution} fadeUp={fadeUp} grid />

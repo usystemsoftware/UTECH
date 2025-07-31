@@ -5,14 +5,19 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@/components/theme-provider";
 import ScrollToTop from "@/components/ScrollToTop.jsx";
+import { HelmetProvider } from "react-helmet-async";
+import MetaSetter from "@/custom/MetaSetter.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-      <ThemeProvider defaultTheme="default" storageKey="u-tech-theme">
-        <ScrollToTop />
-        <App />
-      </ThemeProvider>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <ThemeProvider defaultTheme="default" storageKey="u-tech-theme">
+          <MetaSetter />
+          <ScrollToTop />
+          <App />
+        </ThemeProvider>
+      </BrowserRouter>
+    </HelmetProvider>
   </StrictMode>
 );

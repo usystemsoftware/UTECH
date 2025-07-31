@@ -30,13 +30,12 @@ export default function Healthcare() {
   return (
     <>
       <HeroSection
-        backgroundImage="/assets/industries/healthcare/hero.jpeg"
+        backgroundImage="/banner/healthcare-banner.jpg"
         title="CUSTOM HEALTHCARE SOFTWARE DEVELOPMENT COMPANY"
         description="Transforming Healthcare with Custom Solutions for Greater Efficiency and Patient Care"
         buttonText="Hire Helthcare Developers"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
       />
 
       <PageLayout className="py-12">

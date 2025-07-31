@@ -22,12 +22,11 @@ const EmbeddedSoftware = () => {
     <>
       {/* ===== HERO SECTION ===== */}
       <HeroSection
-        backgroundImage="/assets/solutions/embedded-software/banner.jpg"
+        backgroundImage="/banner/embedded-software-banner.jpg"
         title="CUSTOM EMBEDDED SOFTWARE DEVELOPMENT"
         buttonText="GET EMBEDDED SOFTWARE DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.2}
       />
 
       {/* ===== ROBUST SOFTWARE & HARDWARE SOLUTIONS ===== */}
@@ -39,7 +38,7 @@ const EmbeddedSoftware = () => {
             for various platforms and architectures, utilizing their expertise
             in computer science."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           {/* Left-side image */}
           <FadeInWhenVisible delay={0.2}>
             <img
@@ -68,7 +67,7 @@ const EmbeddedSoftware = () => {
             enable full visibility and control over your embedded systems in
             real-time."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
           {/* Left-side feature list */}
           <FeaturesList features={hmiSolutions} fadeUp={fadeUp} />
 
@@ -111,7 +110,7 @@ const EmbeddedSoftware = () => {
             by completing a custom Linux development board support package
             (BSP)."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           {/* Left-side image */}
           <FadeInWhenVisible delay={0.2}>
             <img
@@ -158,7 +157,7 @@ const EmbeddedSoftware = () => {
           description="We revamp your existing custom embedded hardware or off-the-shelf
             solution, providing end-to-end design from concept to production."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
           {/* Left-side features */}
           <FeaturesList features={industrySolutions} fadeUp={fadeUp} />
 
@@ -189,7 +188,7 @@ const EmbeddedSoftware = () => {
           />
 
           {/* Grid of tech cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-left mt-10">
             {frontendTech.map((tech, index) => (
               <TechnologyStatCard key={index} tech={tech} />
             ))}

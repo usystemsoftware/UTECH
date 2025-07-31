@@ -17,13 +17,12 @@ const Gaming = () => (
   <div>
     {/* ===== HERO SECTION ===== */}
     <HeroSection
-      backgroundImage="/assets/industries/gaming/photo.jpg"
+      backgroundImage="/banner/blockchain-social-media-platform-banner.jpg"
       title="GAME DEVELOPMENT SERVICES"
       description="Transforming Game Development With AI-Powered Innovation"
       buttonText="GET API DEVELOPERS"
       buttonLink="HIRE GAME DEVELOPERS"
       imageFit="cover"
-      overlayOpacity={0.6}
     />
 
     <PageLayout className="text-center py-10">

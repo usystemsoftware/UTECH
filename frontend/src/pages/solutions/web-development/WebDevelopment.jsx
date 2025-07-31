@@ -22,13 +22,12 @@ const WebDevelopment = () => {
     <>
       {/* ====== Hero Section ====== */}
       <HeroSection
-        backgroundImage="/assets/solutions/hero-banner.jpg"
+        backgroundImage="/banner/web-development-banner.jpg"
         title="CUSTOM WEB DEVELOPMENT SERVICES"
         description="We’ve Got Experienced Website Developers"
         buttonText="GET CUSTOM WEB DEVELOPMENT SOLUTIONS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.2}
       />
 
       {/* ====== Feature Section 1 ====== */}
@@ -95,7 +94,7 @@ const WebDevelopment = () => {
             Client Software (Front-End)
           </TypographyH4>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-left mt-10">
             {frontendTech.map((tech, index) => (
               <TechnologyStatCard key={index} tech={tech} />
             ))}
@@ -106,7 +105,7 @@ const WebDevelopment = () => {
             Server Software (Back-End)
           </TypographyH4>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-left mt-10">
             {backendTechDetails.map((tech, index) => (
               <TechnologyStatCard key={index} tech={tech} />
             ))}

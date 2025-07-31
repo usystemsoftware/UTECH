@@ -25,12 +25,11 @@ const DigitalTransformation = () => {
     <>
       {/* ===== HERO SECTION ===== */}
       <HeroSection
-        backgroundImage="/assets/services/transformation-banner.jpg"
+        backgroundImage="/banner/digital-transformation-banner.jpg"
         title="DIGITAL TRANSFORMATION SERVICES & SOLUTIONS"
         buttonText="Hire A Reliable DX Resource"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
       />
 
       <PageLayout className="py-12 space-y-10 text-center">
@@ -65,7 +64,7 @@ const DigitalTransformation = () => {
             staff augmentation to help you fulfill your core objectives."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             <FeaturesList
               features={digitalTransformationFeatures}
               fadeUp={fadeUp}
@@ -73,7 +72,7 @@ const DigitalTransformation = () => {
             <FadeInWhenVisible>
               <img
                 loading="lazy"
-                src="/assets/services/digital-services.jpg"
+                src="/assets/services/digital-transformation/digital-services.jpg"
                 alt="Financial Planning Dashboard"
                 className="w-110 mx-auto"
               />
@@ -128,7 +127,7 @@ const DigitalTransformation = () => {
             <FadeInWhenVisible>
               <img
                 loading="lazy"
-                src="/assets/services/images.png"
+                src="/assets/services/digital-transformation/images.png"
                 alt="Financial Planning Dashboard"
                 className="w-72 mx-auto"
               />
@@ -141,7 +140,7 @@ const DigitalTransformation = () => {
             <FadeInWhenVisible>
               <img
                 loading="lazy"
-                src="/assets/services/vector.jpg"
+                src="/assets/services/digital-transformation/vector.jpg"
                 alt="Financial Planning Dashboard"
                 className="w-72 mx-auto"
               />
@@ -218,7 +217,7 @@ const DigitalTransformation = () => {
           <FadeInWhenVisible>
             <img
               loading="lazy"
-              src="/assets/services/newsroom.png"
+              src="/assets/services/digital-transformation/newsroom.png"
               alt="Financial Planning Dashboard"
               className="w-84 mx-auto"
             />

@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Link } from "react-router-dom";
-import {
-  TypographyH5,
-  TypographyH4,
-  TypographyMuted,
-  TypographySmall,
-} from "@/custom/Typography";
+import { TypographyMuted, TypographySmall } from "@/custom/Typography";
 import { Button } from "@/components/ui/button";
 import { Navlinks } from "@/data/Navlinks";
 import { IconRenderer } from "@/custom/IconRenderer";
@@ -75,7 +70,7 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
           <ModeToggle />
           <Link to="/book-call">
             <Button size="xs" className="py-1 px-2">
-              <IconRenderer name="HelpCircle" />
+              <IconRenderer name="HelpCircle" strokeWidth={2} />
               <span className="hidden sm:inline">&nbsp;Let's Meet !</span>
             </Button>
           </Link>
@@ -110,7 +105,10 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
                                 to={option.href}
                                 className="flex items-center gap-3 transition hover:text-primary hover:underline underline-offset-4 p-3 rounded-md hover:bg-accent"
                               >
-                                <IconRenderer name={option.icon} />
+                                <IconRenderer
+                                  name={option.icon}
+                                  strokeWidth={1.5}
+                                />
                                 <TypographyMuted className="hover:text-primary">
                                   {option.label}
                                 </TypographyMuted>

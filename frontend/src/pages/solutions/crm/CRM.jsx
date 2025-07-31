@@ -23,13 +23,12 @@ const CRM = () => {
     <>
       {/* ====== Hero Section ====== */}
       <HeroSection
-        backgroundImage="/assets/solutions/crm/Employment.webp"
+        backgroundImage="/banner/crm-development-services-banner.jpg"
         title="CRM DEVELOPMENT SERVICES"
         description="Unleashing the Power of AI for Custom CRM Solutions"
         buttonText="HIRE CRM DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.2}
       />
 
       {/* ====== Custom CRM Development Services Section ====== */}
@@ -74,7 +73,7 @@ const CRM = () => {
             business processes for healthcare, banking, real estate, and other
             industries."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
           <FadeInWhenVisible>
             <img
               loading="lazy"
@@ -117,7 +116,7 @@ const CRM = () => {
             Microsoft Dynamics, SugarCRM, Zoho, GoHighLevel, and SAP, to boost
             productivity and meet client needs."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-8">
           <FeaturesList features={crmPlatforms.slice(0, 3)} fadeUp={fadeUp} />
           <FadeInWhenVisible>
             <img

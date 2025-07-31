@@ -21,13 +21,12 @@ export default function HCM() {
     <>
       {/* ======================= Hero Section ======================= */}
       <HeroSection
-        backgroundImage="/assets/industries/hcm/hero.jpg"
+        backgroundImage="/banner/hcm-banner.jpg"
         title="HUMAN CAPITAL MANAGEMENT SOLUTIONS"
         description="Transforming Human Capital Management Software With AI-Powered Solutions"
         buttonText="GET HCM SOFTWARE DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
       />
 
       {/* =================== Airline Software Developers Section =================== */}

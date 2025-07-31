@@ -33,13 +33,13 @@ export default function ELearningEducation() {
     <>
       {/* Hero Section */}
       <HeroSection
-        backgroundImage="/assets/industries/e-learning-education/hero.avif"
+        backgroundImage="/banner/e-learning-banner.jpg"
         title="eLEARNING SOFTWARE DEVELOPMENT SERVICES"
         description="Transforming Education with E-Learning Software from a Leading eLearning Software Development Company"
         buttonText="GET eLEARNING SOFTWARE SOLUTIONS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
+        overlayOpacity={0.1}
       />
 
       {/* Personalized LMS Software Features */}

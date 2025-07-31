@@ -12,12 +12,12 @@ export default function HeroSection({
   buttonLink = "#",
   animationVariants = fadeUp,
   imageFit = "cover", // Accepts: 'cover', 'contain', etc.
-  overlayOpacity = 0.5, // Accepts: 0 to 1
+  overlayOpacity = 0.1,
 }) {
   return (
     <>
       {/* Hero Section Container */}
-      <section className="relative w-full min-h-[75vh] md:min-h-[80vh] top-18 flex items-center justify-center overflow-hidden">
+      <section className="relative w-full min-h-[75vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden">
         {/* Background Image Layer */}
         <div
           className="absolute inset-0 z-0"

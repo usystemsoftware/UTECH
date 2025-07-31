@@ -18,12 +18,11 @@ const QualityAssurance = () => {
     <div>
       {/* === HERO SECTION === */}
       <HeroSection
-        backgroundImage="/assets/services/quality-assurance/photo.jpeg"
+        backgroundImage="/banner/quality-assurance-banner.jpg"
         title="Quality Assurance (QA) &Software Testing Services"
         buttonText="Hire QA Testers"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.6}
       />
 
       {/* === CROSS PLATFORM INTRO + PLATFORMS SECTION === */}
@@ -160,7 +159,7 @@ const QualityAssurance = () => {
         />
 
         {/* Features with tech logos */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-left mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center mt-16">
           {QualityAssur.map((feature, index) => (
             <div key={index}>
               <TypographyH3>{feature?.title}</TypographyH3>
@@ -174,7 +173,7 @@ const QualityAssurance = () => {
                     key={index}
                     loading="lazy"
                     src={`/assets/services/quality-assurance/logo/${logo}.png`}
-                    className="h-8 cursor-pointer hover:scale-105 transition-transform"
+                    className="h-8 mx-auto cursor-pointer hover:scale-105 transition-transform"
                     alt={logo}
                   />
                 ))}

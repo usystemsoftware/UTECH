@@ -28,7 +28,7 @@ const FoodBeverage = () => {
     <>
       {/* Hero Section */}
       <HeroSection
-        backgroundImage="/assets/industries/food-beverage/building.jpg"
+        backgroundImage="/banner/food-and-beverage-banner.jpg"
         title="FOOD AND BEVERAGE SOFTWARE DEVELOPMENT"
         buttonText="HIRE F&B SOFTWARE DEVELOPERSS"
         buttonLink="/FoodBeverage"

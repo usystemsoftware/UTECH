@@ -24,13 +24,13 @@ import {
 export const Banking = () => (
   <>
     <HeroSection
-      backgroundImage="/assets/industries/banking/banking-header.avif"
+      backgroundImage="/banner/new-banking-banner.jpg"
       title="BANKING SOFTWARE DEVELOPMENT"
       description="Transforming banking with AI, fraud detection, wealth management & more."
       buttonText="Hire Banking Software Developers"
       buttonLink="/contact"
       imageFit="cover"
-      overlayOpacity={0.6}
+      overlayOpacity={0.2}
     />
 
     {/* Features Grid */}
@@ -68,7 +68,7 @@ export const Banking = () => (
             grid
           />
         </div>
-        <div className="md:block grid-cols-1 hidden sm:grid-cols-3 md:gap-6 xl:gap-16 items-center mt-8">
+        <div className="md:grid grid-cols-1 hidden sm:grid-cols-3 md:gap-6 xl:gap-16 items-center mt-8">
           <FeaturesList
             features={BankingSoftwareAIFeatures.slice(0, 2)}
             fadeUp={fadeUp}
@@ -328,14 +328,18 @@ export const Banking = () => (
         title="Banking Software Support"
         description="Banking and fiscal services have seen a significant transformation because of the use of new software solutions and apps. U Technology’s banking software support enhances efficiency, reliability, and regulatory compliance while improving the customer experience."
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-left">
+      <div className="block md:hidden">
+        <FeaturesList features={BankingSupportItems} fadeUp={fadeUp} grid />
+      </div>
+
+      <div className="md:grid hidden grid-cols-1 md:grid-cols-2 gap-12 text-left">
         <FeaturesList
           features={BankingSupportItems.slice(0, 5)}
           fadeUp={fadeUp}
           grid
         />
         <FeaturesList
-          features={BankingSupportItems.slice(5.1)}
+          features={BankingSupportItems.slice(5, 10)}
           fadeUp={fadeUp}
           grid
         />
