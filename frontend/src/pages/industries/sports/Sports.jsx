@@ -37,7 +37,7 @@ export default function Sports() {
       <PageLayout className="py-10">
         <Headline
           title="Hire Experienced Sports Software Developers"
-          description="Chetu has a strong history of developing custom sports management software solutions for fitness clubs, athletic programs, and sports medicine practices. We have on-demand developers to help you navigate your sports management technology challenges."
+          description="U Tech has a strong history of developing custom sports management software solutions for fitness clubs, athletic programs, and sports medicine practices. We have on-demand developers to help you navigate your sports management technology challenges."
         />
         <FeaturesGrid
           leftFeatures={sportsAndFitnessSolutions.slice(0, 3)}
@@ -52,7 +52,7 @@ export default function Sports() {
         <PageLayout className="space-y-10 text-center">
           <Headline
             title="Artificial Intelligence Solutions for Sports Management"
-            description="Chetu leverages cutting-edge AI analytics to modernize sports management by designing intuitive wearables for customized training, personalized nutrition, and performance monitoring."
+            description="U Tech leverages cutting-edge AI analytics to modernize sports management by designing intuitive wearables for customized training, personalized nutrition, and performance monitoring."
           />
           <FeaturesList features={aiSportsSolutions} fadeUp={fadeUp} grid />
           <FadeInWhenVisible>

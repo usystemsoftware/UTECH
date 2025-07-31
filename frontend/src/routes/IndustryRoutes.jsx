@@ -17,6 +17,7 @@ import FoodBeverage from "@/pages/industries/food-beverage/FoodBeverage";
 import MeetingEvents from "@/pages/industries/meeting-events/MeetingEvents";
 import Retail from "@/pages/industries/retail/Retail";
 import Sports from "@/pages/industries/sports/Sports";
+import Payments from "@/pages/payments/Payments";
 
 export const IndustryRoutes = [
     { path: "/industries/banking", element: <Banking /> },
@@ -38,4 +39,5 @@ export const IndustryRoutes = [
     { path: "/industries/meetings-events", element: <MeetingEvents /> },
     { path: "/industries/retail", element: <Retail /> },
     { path: "/industries/sports", element: <Sports /> },   
+    { path: "/industries/payments", element: <Payments /> },   
 ];
