@@ -12,7 +12,7 @@ export const aiSportsSolutions = [
   {
     title: "AI-Driven Health Athlete Metrics",
     description:
-      "Chetu’s artificial intelligence experts design and customize algorithms measuring health metrics in real-time, using parameters such as agility, speed, skill, and endurance to enable data-driven decisions when evaluating athlete health and performance.",
+      "U Tech’s artificial intelligence experts design and customize algorithms measuring health metrics in real-time, using parameters such as agility, speed, skill, and endurance to enable data-driven decisions when evaluating athlete health and performance.",
     icon: "HeartPulse",
   },
   {
@@ -24,7 +24,7 @@ export const aiSportsSolutions = [
   {
     title: "Player Biometrics System",
     description:
-      "Chetu transforms athlete training with real-time monitoring of heart rate, fatigue, and oxygen rates to provide insights into performance and training response.",
+      "U Tech transforms athlete training with real-time monitoring of heart rate, fatigue, and oxygen rates to provide insights into performance and training response.",
     icon: "Thermometer",
   },
   {
@@ -218,23 +218,23 @@ export const sportsFaqs = [
   {
     question: "Can I Use Custom Sports Software on Any Device?",
     answer:
-      "Chetu designs custom, scalable sports app development solutions driven by AI. We seamlessly integrate robust sports software programs with any device, giving end-users flexibility when utilizing our software for any mobile app or desktop.",
+      "U Tech designs custom, scalable sports app development solutions driven by AI. We seamlessly integrate robust sports software programs with any device, giving end-users flexibility when utilizing our software for any mobile app or desktop.",
   },
   {
-    question: "What Types of Sports Management Software Does Chetu Develop?",
+    question: "What Types of Sports Management Software Does U Tech Develop?",
     answer:
-      "Chetu develops versatile, customized sports management software to enable individualized athlete performance solutions. Our scalable software provides all end-users with modern, robust resources to drive innovation with data-driven analytics to promote actionable insights.",
+      "U Tech develops versatile, customized sports management software to enable individualized athlete performance solutions. Our scalable software provides all end-users with modern, robust resources to drive innovation with data-driven analytics to promote actionable insights.",
   },
   {
     question: "What Features Are Included in Golf Course Management Software?",
     answer:
-      "Our specialists design intuitive golf simulator software promoting engagement to enable individualized performance metrics to improve technique. Chetu’s golf club management software provides modernized resources to elevate guest experiences, streamline workflows, and expedite transactions with seamless POS integration.",
+      "Our specialists design intuitive golf simulator software promoting engagement to enable individualized performance metrics to improve technique. U Tech’s golf club management software provides modernized resources to elevate guest experiences, streamline workflows, and expedite transactions with seamless POS integration.",
   },
   {
     question:
       "How Does Sports Kinesiology and Motion Analysis Software Benefit Athletes?",
     answer:
-      "Chetu’s cutting-edge motion capture software and 3D motion analysis provides accurate reconstruction and data-driven insights to mitigate injuries. Our sports kinesiology software is infused with modern analytics to monitor health, range of motion, and forecasts injury history to enable proactive technique adjustments.",
+      "U Tech’s cutting-edge motion capture software and 3D motion analysis provides accurate reconstruction and data-driven insights to mitigate injuries. Our sports kinesiology software is infused with modern analytics to monitor health, range of motion, and forecasts injury history to enable proactive technique adjustments.",
   },
   {
     question: "What Are Some of the Challenges of Sports App Development?",

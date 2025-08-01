@@ -43,7 +43,7 @@ export default function Retail() {
         <PageLayout className="space-y-10 text-center">
           <Headline
             title="We Have Retail Software Developers with Industry-Experience"
-            description="Chetu, an retail software development company provides custom retail software development solutions for brick and mortar, e-commerce, c-store & grocery, dealerships, shopping cart, and mobile systems."
+            description="U Tech, an retail software development company provides custom retail software development solutions for brick and mortar, e-commerce, c-store & grocery, dealerships, shopping cart, and mobile systems."
           />
 
           <div className="block md:hidden">
