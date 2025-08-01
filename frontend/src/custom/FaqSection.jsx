@@ -22,28 +22,13 @@ export default function FaqSection({ faqs = [], title, hightlight }) {
           <FadeInWhenVisible key={index} delay={index * 0.1}>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value={`item-${index}`}>
-                <AccordionTrigger>
-                  <div className="flex items-center gap-2">
-                    {faq.icon && (
-                      <IconRenderer
-                        name={faq.icon}
-                        className="text-primary"
-                        size={20}
-                      />
-                    )}
-                    {faq.img && (
-                      <img
-                        src={faq.img}
-                        alt=""
-                        className="w-5 h-5 object-contain"
-                        loading="lazy"
-                      />
-                    )}
-                    <span>{faq.question}</span>
-                  </div>
+                <AccordionTrigger className="text-[#009698] text-base font-semibold tracking-normal">
+                  {faq.question}
                 </AccordionTrigger>
                 <AccordionContent>
-                  <TypographyMuted>{faq.answer}</TypographyMuted>
+                  <TypographyMuted className="md:text-sm text-foreground">
+                    {faq.answer}
+                  </TypographyMuted>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

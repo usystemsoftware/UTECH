@@ -412,35 +412,45 @@ export const LegalManagement = [
 
 export const faqs = [
   {
-    question: "What is a financial system software?",
-    answer: "Financial system software is a custom program developed...",
+    question: "How does payment software work?",
+    answer:
+      "Payment software uses encryption to secure transactions, and may rely on various payment methods such as credit/debit cards, bank transfers, SMS payments, mobile payments or digital wallets. When a payment is initiated, the software sends a request to the appropriate financial institution to transfer the funds. Once the transfer is complete, the software confirms the transaction and updates the relevant records.",
   },
   {
-    question: "What is the main threat of AI to the financial industry?",
-    answer: "Algorithmic errors that cause instability or security risks...",
+    question: "Do you offer 24/7 support for payment software issues?",
+    answer:
+      "Our dedicated team provides 24/7 support for any payment software issues you may encounter, maintaining uninterrupted financial transactions and user satisfaction.",
   },
   {
-    question: "What features are available for financial software?",
-    answer: "Automated bookkeeping, secure transactions, analytics, etc...",
+    question: "What types of biometrics are used for payment authentication?",
+    answer:
+      "Biometric payment authentication uses fingerprint recognition, facial recognition, iris scanning, voice recognition, palm vein recognition, and behavioral biometrics. These technologies enhance security and convenience, reducing fraud risks and enabling seamless, password-free transactions for businesses and consumers.",
   },
   {
-    question: "How can financial applications assist any business?",
-    answer: "They help with accuracy, insights, and resource optimization...",
+    question:
+      "What is the difference between embedded payments and traditional payments?",
+    answer:
+      "Embedded payments integrate seamlessly within software platforms, enabling frictionless transactions without redirecting users to external gateways. Traditional payments, in contrast, require separate processing steps, often leading to manual entry, delays, and a less streamlined user experience.",
   },
   {
-    question: "What are the challenges in implementing AI in finance?",
-    answer: "Regulatory compliance, privacy, unbiased analysis, etc...",
+    question: "How does AI help prevent fraud in payment software?",
+    answer:
+      "By analyzing transaction data and detecting patterns and anomalies that may indicate fraudulent activity. This analysis can then trigger alerts or flag transactions for review by a human analyst.",
   },
   {
-    question: "What is the role of financial software in a startup?",
-    answer: "Tracking health, managing expenses, and aiding growth...",
+    question: "Can you assist with payment gateway integration?",
+    answer:
+      "Yes, we specialize in seamless payment gateway integration tailored to specific needs, ensuring secure and efficient transaction processing for your users.",
   },
   {
-    question: "Which types of reporting and analytics are essential?",
-    answer: "Budget analysis, KPI metrics, and cash flow forecasting...",
+    question: "Is biometric payment authentication secure?",
+    answer:
+      "Yes, biometric payment authentication is highly secure, as it utilizes unique biological characteristics, such as fingerprints or facial recognition. It reduces fraud risks, enhances customer convenience, and accelerates transactions by using encryption and multi-factor authentication for added security.",
   },
   {
-    question: "What assistance is provided during implementation?",
-    answer: "Needs assessment, integration, training, and post-support...",
+    question:
+      "Can embedded payments be used for both online and offline transactions?",
+    answer:
+      "Yes, embedded payments can be used in both online and offline environments, enabling businesses to offer unified and consistent payment experiences across all touchpoints.",
   },
 ];

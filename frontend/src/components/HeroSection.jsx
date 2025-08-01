@@ -47,7 +47,7 @@ export default function HeroSection({
           {buttonText && (
             <Link
               to={buttonLink}
-              className="inline-block border-2 border-primary text-sm hover:bg-primary hover:text-secondary transition-colors duration-300 py-2 px-6 rounded-full"
+              className="inline-block border-3 border-orange-500 md:text-md hover:bg-orange-500 hover:text-white transition-colors duration-300 py-2 md:py-4 px-6 rounded-full"
             >
               {buttonText}
             </Link>

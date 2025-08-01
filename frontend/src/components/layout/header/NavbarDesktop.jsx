@@ -38,7 +38,7 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <TypographySmall
-                className={`cursor-pointer hover:text-primary pb-1 uppercase text-md font-semibold transition-all duration-200 ${
+                className={`cursor-pointer hover:text-primary pb-1 uppercase md:text-sm font-semibold transition-all duration-200 ${
                   hoveredIndex === index
                     ? "border-b-2 border-primary text-primary"
                     : ""
@@ -109,7 +109,7 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
                                   name={option.icon}
                                   strokeWidth={1.5}
                                 />
-                                <TypographyMuted className="hover:text-primary">
+                                <TypographyMuted className="hover:text-primary md:text-sm">
                                   {option.label}
                                 </TypographyMuted>
                               </Link>

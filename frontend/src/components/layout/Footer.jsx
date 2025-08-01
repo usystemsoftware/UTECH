@@ -161,7 +161,7 @@ export const Footer = () => {
       </div>
 
       <div className="mt-10 text-center border-t border-white/10 pt-6 text-xs sm:text-sm text-gray-400">
-        © {new Date().getFullYear()} Umbarkar Technology India Pvt Ltd. All
+        © {new Date().getFullYear()} Utech (india) Pvt Ltd.. All
         rights reserved.
       </div>
     </footer>

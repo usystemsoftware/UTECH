@@ -9,13 +9,13 @@ export const FeaturesGrid = ({
   fadeUp,
   iconSize = 40,
 }) => (
-  <div className="flex sm:mt-0 mt-8 flex-col sm:flex-row items-center w-full justify-between gap-8 md:gap-12 xl:gap-48">
+  <div className="flex sm:mt-0 mt-8 flex-col sm:flex-row items-center w-full justify-between gap-8 md:gap-12">
     {/* Left Column */}
     <div className="flex flex-col gap-8 text-start sm:text-right w-full">
       {leftFeatures.map((item, index) => (
         <FadeInWhenVisible
           key={index}
-          className="flex items-center justify-end gap-3"
+          className="flex items-center sm:justify-end gap-3"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
@@ -52,7 +52,12 @@ export const FeaturesGrid = ({
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }}
       >
-        <img loading="lazy" src={centerImage} alt="" className="w-145" />
+        <img
+          loading="lazy"
+          src={centerImage}
+          alt=""
+          className="w-145 md:flex-shrink-0"
+        />
       </FadeInWhenVisible>
     )}
 
