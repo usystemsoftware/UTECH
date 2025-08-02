@@ -1,18 +1,16 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import { initGA, trackPageView } from "@/lib/analytics";
-import MetaSetter from "@/custom/MetaSetter.jsx";
-
 import Navbar from "@/components/layout/header/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import Chat from "@/components/chatbot/Chat";
 import MainLayout from "@/components/layout/MainLayout";
-
-// Route groups
 import { SolutionRoutes } from "@/routes/SolutionRoutes";
 import { IndustryRoutes } from "@/routes/IndustryRoutes";
 import { ServiceRoutes } from "@/routes/ServiceRoutes";
 import { DefaultRoutes } from "@/routes/DefaultRoutes";
+import DynamicHelmet from "@/custom/DynamicHelmet";
 
 export default function App() {
   const location = useLocation();
@@ -28,8 +26,8 @@ export default function App() {
   }, [location]);
 
   return (
-    <>
-      <MetaSetter />
+    <HelmetProvider>
+      <DynamicHelmet />
       <Navbar />
 
       <Routes>
@@ -58,6 +56,6 @@ export default function App() {
 
       <Chat />
       <Footer />
-    </>
+    </HelmetProvider>
   );
 }

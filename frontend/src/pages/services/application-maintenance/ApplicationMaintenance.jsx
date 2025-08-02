@@ -1,4 +1,11 @@
 import HeroSection from "@/components/HeroSection";
+import PageLayout from "@/custom/PageLayout";
+import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
+import { FeaturesList } from "@/components/FeaturesList";
+import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
+import FaqSection from "@/custom/FaqSection";
+import { Headline, TypographyH3, TypographyMuted } from "@/custom/Typography";
 import {
   Application,
   ApplicationSupport,
@@ -7,13 +14,6 @@ import {
   apiLogs,
   faqs,
 } from "./Data";
-import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
-import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
-import FaqSection from "@/custom/FaqSection";
-import { Headline, TypographyH3, TypographyMuted } from "@/custom/Typography";
 
 const ApplicationMaintenance = () => {
   return (

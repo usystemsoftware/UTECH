@@ -1,6 +1,5 @@
 const isLocal =
   typeof window !== "undefined" && window.location.hostname === "localhost";
-
 const baseUrl = isLocal ? "http://localhost:5173" : "https://usystem.software";
 
 export const metaData = {
@@ -367,7 +366,7 @@ export const metaData = {
       description:
         "Comprehensive backup and disaster recovery services to protect your data.",
       keywords: "backup, disaster recovery, services, U Tech",
-      thumbnail: "banner/aec-banner.jpg",
+      thumbnail: "banner/backup-recovery-banner.jpg",
       canonical: `${baseUrl}/services/backup-disaster-recovery`,
       breadcrumbs: [
         { label: "Home", href: baseUrl },

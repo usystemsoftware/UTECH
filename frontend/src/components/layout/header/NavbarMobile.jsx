@@ -188,18 +188,18 @@ const NavbarMobile = () => {
                   to="book-call"
                   className="group bg-primary text-white p-2 rounded"
                 >
-                  <TypographySmall className="cursor-pointer uppercase text-md font-semibold hover:text-primary">
+                  <span className="cursor-pointer uppercase text-xs font-semibold hover:text-primary">
                     Book Call
-                  </TypographySmall>
+                  </span>
                 </Link>
                 <Link
                   onClick={() => setOpen(false)}
                   to="contact-us"
                   className="group bg-secondary p-2 rounded"
                 >
-                  <TypographySmall className="cursor-pointer uppercase text-md font-semibold hover:text-primary">
+                  <span className="cursor-pointer uppercase text-xs font-semibold hover:text-primary">
                     Contact Us
-                  </TypographySmall>
+                  </span>
                 </Link>
               </div>
             </div>
