@@ -167,7 +167,7 @@ export const testimonials = [
     author: "Juan B., Chief Operating Officer",
   },
   {
-    text: "We wanted to take a moment to sincerely appreciate the hard work, dedication, and effort you have put into our company. Your commitment to delivering high-quality work, problem-solving skills, and teamwork has been truly commendable. Chetu’s team has played a crucial role in ensuring the success of this project, and we are grateful for the attention to detail and proactive approach. Looking forward to more success together!.",
+    text: "We wanted to take a moment to sincerely appreciate the hard work, dedication, and effort you have put into our company. Your commitment to delivering high-quality work, problem-solving skills, and teamwork has been truly commendable. U Tech’s team has played a crucial role in ensuring the success of this project, and we are grateful for the attention to detail and proactive approach. Looking forward to more success together!.",
     author: "Charles D., Senior Project Manager",
   },
 ];
