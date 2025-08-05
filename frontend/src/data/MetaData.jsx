@@ -3,6 +3,30 @@ const isLocal =
 const baseUrl = isLocal ? "http://localhost:5173" : "https://usystem.software";
 
 export const metaData = {
+  pages: [
+    {
+      title: "Contact Us | U Tech",
+      description: "Get in touch with our team for inquiries and support.",
+      keywords: "contact, support, help, U Tech",
+      thumbnail: "banner/contact-us.jpg",
+      canonical: `${baseUrl}/contact`,
+      breadcrumbs: [
+        { label: "Home", href: baseUrl },
+        { label: "Contact", href: `${baseUrl}/contact` },
+      ],
+    },
+    {
+      title: "Book a Call | U Tech",
+      description: "Schedule a consultation with our experts.",
+      keywords: "book call, consultation, meeting, U Tech",
+      thumbnail: "banner/bookcall-banner.jpg",
+      canonical: `${baseUrl}/bookcall`,
+      breadcrumbs: [
+        { label: "Home", href: baseUrl },
+        { label: "Book a Call", href: `${baseUrl}/bookcall` },
+      ],
+    }
+  ],
   industries: [
     {
       title: "Aviation Industry Solutions | U Tech",
@@ -237,7 +261,7 @@ export const metaData = {
       title: "Political Campaigns Industry Solutions | U Tech",
       description: "Solutions for effective political campaign management.",
       keywords: "political campaigns, industry solutions, U Tech",
-      thumbnail: "banner/aec-banner.jpg",
+      thumbnail: "banner/political-campaigns-banner.jpg",
       canonical: `${baseUrl}/industries/political-campaigns`,
       breadcrumbs: [
         { label: "Home", href: baseUrl },
@@ -288,7 +312,7 @@ export const metaData = {
       title: "Supply Chain Industry Solutions | U Tech",
       description: "Solutions for effective supply chain management.",
       keywords: "supply chain, industry solutions, U Tech",
-      thumbnail: "banner/aec-banner.jpg",
+      thumbnail: "banner/supply-chain-management-banner.jpg",
       canonical: `${baseUrl}/industries/supply-chain`,
       breadcrumbs: [
         { label: "Home", href: baseUrl },
@@ -300,7 +324,7 @@ export const metaData = {
       title: "Telecommunications Industry Solutions | U Tech",
       description: "Innovative solutions for the telecommunications sector.",
       keywords: "telecommunications, industry solutions, U Tech",
-      thumbnail: "banner/aec-banner.jpg",
+      thumbnail: "banner/telecom-hero-banner.jpg",
       canonical: `${baseUrl}/industries/telecommunications`,
       breadcrumbs: [
         { label: "Home", href: baseUrl },
@@ -413,7 +437,7 @@ export const metaData = {
       title: "Data Integration Services | U Tech",
       description: "Seamless data integration services to unify your systems.",
       keywords: "data integration, services, U Tech",
-      thumbnail: "banner/aec-banner.jpg",
+      thumbnail: "banner/backup-recovery-banner.jpg",
       canonical: `${baseUrl}/services/data-integration`,
       breadcrumbs: [
         { label: "Home", href: baseUrl },
@@ -429,7 +453,7 @@ export const metaData = {
       description:
         "Effective data management services to optimize your data usage.",
       keywords: "data management, services, U Tech",
-      thumbnail: "banner/aec-banner.jpg",
+      thumbnail: "banner/data-management-banner.jpg",
       canonical: `${baseUrl}/services/data-management`,
       breadcrumbs: [
         { label: "Home", href: baseUrl },
@@ -445,7 +469,7 @@ export const metaData = {
       description:
         "Enhance your development and operations with our DevOps services.",
       keywords: "DevOps, services, U Tech",
-      thumbnail: "banner/aec-banner.jpg",
+      thumbnail: "banner/hero-img-banner-devops.jpg",
       canonical: `${baseUrl}/services/devops`,
       breadcrumbs: [
         { label: "Home", href: baseUrl },

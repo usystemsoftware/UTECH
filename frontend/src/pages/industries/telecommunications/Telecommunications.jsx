@@ -26,7 +26,6 @@ const Telecommunications = () => {
         buttonText="Talk to Our Telecom Software Experts"
         buttonLink="/telecommunications"
         imageFit="cover"
-        overlayOpacity={0.2}
       />
 
       {/* Section: Hire Dedicated Telecom Software Developers */}

@@ -47,7 +47,7 @@ const DynamicHelmet = () => {
           "U Tech provides cutting-edge technology solutions for various industries.",
         keywords: "technology solutions, software development, U Tech",
         canonical: currentUrl,
-        thumbnail: "banner/default-banner.jpg",
+        thumbnail: "logo.png",
         breadcrumbs: [
           { label: "Home", href: baseUrl },
           {
@@ -68,30 +68,87 @@ const DynamicHelmet = () => {
     ? currentMeta.thumbnail
     : `${baseImageUrl}/${currentMeta.thumbnail}`;
 
-  console.log("currentMetaData", currentMeta);
-
   return (
     <Helmet>
-      <title>{currentMeta.title}</title>
-      <meta name="description" content={currentMeta.description} />
-      <meta name="keywords" content={currentMeta.keywords} />
-      <link rel="canonical" href={currentMeta.canonical} />
+      {/* Add key attributes to force updates on route change */}
+      <title key="title">{currentMeta.title}</title>
+      <meta
+        key="description"
+        name="description"
+        content={currentMeta.description}
+      />
+      <meta
+        key="keywords"
+        name="keywords"
+        content={currentMeta.keywords}
+      />
+      <link
+        key="canonical"
+        rel="canonical"
+        href={currentMeta.canonical}
+      />
 
       {/* Open Graph / Facebook */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={currentMeta.canonical} />
-      <meta property="og:title" content={currentMeta.title} />
-      <meta property="og:description" content={currentMeta.description} />
-      <meta property="og:image" content={imageUrl} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+      <meta
+        key="og:type"
+        property="og:type"
+        content="website"
+      />
+      <meta
+        key="og:url"
+        property="og:url"
+        content={currentMeta.canonical}
+      />
+      <meta
+        key="og:title"
+        property="og:title"
+        content={currentMeta.title || "Software Development | U Technology"}
+      />
+      <meta
+        key="og:description"
+        property="og:description"
+        content={currentMeta.description}
+      />
+      <meta
+        key="og:image"
+        property="og:image"
+        content={imageUrl}
+      />
+      <meta
+        property="og:image:width"
+        content="1200"
+      />
+      <meta
+        property="og:image:height"
+        content="630"
+      />
 
       {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={currentMeta.canonical} />
-      <meta name="twitter:title" content={currentMeta.title} />
-      <meta name="twitter:description" content={currentMeta.description} />
-      <meta name="twitter:image" content={imageUrl} />
+      <meta
+        key="twitter:card"
+        name="twitter:card"
+        content="summary_large_image"
+      />
+      <meta
+        key="twitter:url"
+        name="twitter:url"
+        content={currentMeta.canonical}
+      />
+      <meta
+        key="twitter:title"
+        name="twitter:title"
+        content={currentMeta.title || "Software Development | U Technology"}
+      />
+      <meta
+        key="twitter:description"
+        name="twitter:description"
+        content={currentMeta.description}
+      />
+      <meta
+        key="twitter:image"
+        name="twitter:image"
+        content={imageUrl}
+      />
     </Helmet>
   );
 };
