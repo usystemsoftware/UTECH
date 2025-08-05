@@ -20,6 +20,7 @@ import Aviation from "@/pages/industries/aviation/Aviation";
 import Payments from "@/pages/industries/payments/Payments";
 import PoliticalCompaign from "@/pages/industries/politicalcampaign/PoliticalCompaign";
 import SupplyChain from "@/pages/industries/supplychain/SupplyChain";
+import Telecommunications from "@/pages/industries/telecommunications/Telecommunications";
 
 export const IndustryRoutes = [
     { path: "/industries/banking", element: <Banking /> },
@@ -44,4 +45,5 @@ export const IndustryRoutes = [
     { path: "/industries/payments", element: <Payments /> },   
     { path: "/industries/political-campaigns", element: <PoliticalCompaign /> },   
     { path: "/industries/supply-chain", element: <SupplyChain /> },   
+    { path: "/industries/telecommunications", element: <Telecommunications /> },   
 ];
