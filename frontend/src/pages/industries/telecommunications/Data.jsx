@@ -215,7 +215,7 @@ export const gamingtelecommunication = [
     icon: "Link2",
     title: "Performance Monitoring Systems Integration",
     description:
-      "Chetu’s experts integrate IP management, security modules, performance data collection, , information modules, network layers, fault detection solutions, and diagnostic tools to enable teams to monitor and maintain network efficacy..",
+      "U Tech’s experts integrate IP management, security modules, performance data collection, , information modules, network layers, fault detection solutions, and diagnostic tools to enable teams to monitor and maintain network efficacy..",
   },
   {
     icon: "SatelliteDish",
@@ -305,34 +305,34 @@ export const telcommunicationSoftwareSolutions = [
 ];
 
 export const telecommunicationFaqs = [
-    {
-        question: "What are telecom software solutions?",
-        answer:
-            "Telecom software solutions are customized platforms that streamline OSS/BSS, customer billing, and network management. For example, our AI-driven tools reduce operational costs by 30% while ensuring 99.9% uptime, unlike generic ERP systems.",
-    },
-    {
-        question: "Does your software support 5G/IoT systems?",
-        answer:
-            "AI analyzes borrower behavior to identify risks, reduce defaults, and detect fraud in real-timeYes! Our solutions include NB-IoT, network slicing, and edge computing integration. For example, we specialize in deploying scalable 5G and IoT platforms that optimize asset tracking and data security..",
-    },
-    {
-        question: "What is CTI used for?",
-        answer:
-            "CTI (computer telephony integration) software integrates telephony and computer applications for enhanced call management, customer service, and operational efficiency. It streamlines communication processes, routing, and data management. Boost productivity and deliver exceptional experiences.",
-    },
-    {
-        question: "How is AI being used in telecommunications?",
-        answer:
-            "AI transform telecom operations through smart fraud detection (blocking threats while reducing costs), predictive maintenance (identifying network issues hours before outages), and intelligent chatbots (resolving 80% of routine customer inquiries instantly)..",
-    },
-    {
-        question: "What are the challenges of AI in telecom?",
-        answer:
-            "Implementing AI in telecom requires overcoming data complexity, legacy system integration, and talent shortages. Security and privacy remain top priorities, which is why we use zero-trust frameworks in all deployments..",
-    },
-    {
-        question: "What are software support services for Telecom?",
-        answer:
-            "Our support covers 24/7 troubleshooting, security patches, and performance tuning for OSS/BSS, billing, and network apps, all delivered by certified telecom engineers..",
-    },
+  {
+    question: "What are telecom software solutions?",
+    answer:
+      "Telecom software solutions are customized platforms that streamline OSS/BSS, customer billing, and network management. For example, our AI-driven tools reduce operational costs by 30% while ensuring 99.9% uptime, unlike generic ERP systems.",
+  },
+  {
+    question: "Does your software support 5G/IoT systems?",
+    answer:
+      "AI analyzes borrower behavior to identify risks, reduce defaults, and detect fraud in real-timeYes! Our solutions include NB-IoT, network slicing, and edge computing integration. For example, we specialize in deploying scalable 5G and IoT platforms that optimize asset tracking and data security..",
+  },
+  {
+    question: "What is CTI used for?",
+    answer:
+      "CTI (computer telephony integration) software integrates telephony and computer applications for enhanced call management, customer service, and operational efficiency. It streamlines communication processes, routing, and data management. Boost productivity and deliver exceptional experiences.",
+  },
+  {
+    question: "How is AI being used in telecommunications?",
+    answer:
+      "AI transform telecom operations through smart fraud detection (blocking threats while reducing costs), predictive maintenance (identifying network issues hours before outages), and intelligent chatbots (resolving 80% of routine customer inquiries instantly)..",
+  },
+  {
+    question: "What are the challenges of AI in telecom?",
+    answer:
+      "Implementing AI in telecom requires overcoming data complexity, legacy system integration, and talent shortages. Security and privacy remain top priorities, which is why we use zero-trust frameworks in all deployments..",
+  },
+  {
+    question: "What are software support services for Telecom?",
+    answer:
+      "Our support covers 24/7 troubleshooting, security patches, and performance tuning for OSS/BSS, billing, and network apps, all delivered by certified telecom engineers..",
+  },
 ];

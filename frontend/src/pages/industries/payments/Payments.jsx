@@ -47,7 +47,7 @@ const Payments = () => {
 
       <PageLayout className="text-center space-y-10 py-10">
         <Headline
-          title="Get Chetu’s Custom Payments Software Development"
+          title="Get U Tech’s Custom Payments Software Development"
           description="U Tech is a proud leader in providing high-quality, custom payment software solutions using our payments industry experience combined with our extensive knowledge for leveraging best-in-class programming tools and technologies to enable fast, secure, and seamless payment transactions.."
         />
         <FeaturesGrid
