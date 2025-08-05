@@ -18,6 +18,7 @@ import Retail from "@/pages/industries/retail/Retail";
 import Sports from "@/pages/industries/sports/Sports";
 import Aviation from "@/pages/industries/aviation/Aviation";
 import Payments from "../pages/industries/payments/Payments";
+import Telecommunications from "../pages/industries/telecommunications/Telecommunications";
 
 export const IndustryRoutes = [
     { path: "/industries/banking", element: <Banking /> },
@@ -40,4 +41,5 @@ export const IndustryRoutes = [
     { path: "/industries/retail", element: <Retail /> },
     { path: "/industries/sports", element: <Sports /> },   
     { path: "/industries/payments", element: <Payments /> },   
+    { path: "/industries/telecommunications", element: <Telecommunications /> },   
 ];
