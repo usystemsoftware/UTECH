@@ -190,17 +190,16 @@ export const Banking = () => (
           {["PCI-DSS", "PA-DSS", "PCI SSC", "SOX", "PA-QSA"].map((label, i) => (
             <div
               key={label}
-              className={`absolute ${
-                i === 0
+              className={`absolute ${i === 0
                   ? "-left-10 top-5"
                   : i === 1
-                  ? "-left-10 bottom-5"
-                  : i === 2
-                  ? "-right-10 top-5"
-                  : i === 3
-                  ? "-right-10 top-24"
-                  : "-right-10 bottom-5"
-              } hidden md:block`}
+                    ? "-left-10 bottom-5"
+                    : i === 2
+                      ? "-right-10 top-5"
+                      : i === 3
+                        ? "-right-10 top-24"
+                        : "-right-10 bottom-5"
+                } hidden md:block`}
             >
               <div className="mb-6 px-4 py-1 bg-white rounded-full shadow text-sm font-semibold">
                 {label}
