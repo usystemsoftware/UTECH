@@ -1,10 +1,9 @@
-import { Headline, TypographyH3, TypographyMuted } from "@/custom/Typography";
+import { Headline, TypographyH3 } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesList } from "@/components/FeaturesList";
 import { Button } from "@/components/ui/button";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
-import CaseStudyCard from "@/components/CaseStudyCard";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 
 // Data imports
@@ -70,18 +69,7 @@ const ApiDevelopment = () => {
         />
 
         {/* Feature Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-left">
-          {AiApiFeatures.map((item, index) => (
-            <CaseStudyCard
-              key={index}
-              index={index}
-              icon={item?.icon}
-              title={item?.title}
-              description={item?.description}
-              link={item?.link}
-            />
-          ))}
-        </div>
+        <FeaturesList features={AiApiFeatures} fadeUp={fadeUp} grid3 />
 
         {/* Call to Action */}
         <FadeInWhenVisible>
@@ -97,18 +85,7 @@ const ApiDevelopment = () => {
         />
 
         {/* APIaaS Image + Feature Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 text-left">
-          {services.map((item, index) => (
-            <CaseStudyCard
-              key={index}
-              index={index}
-              icon={item?.icon}
-              title={item?.title}
-              description={item?.description}
-              link={item?.link}
-            />
-          ))}
-        </div>
+        <FeaturesList features={services} fadeUp={fadeUp} grid />
 
         {/* CTA */}
         <FadeInWhenVisible>
@@ -126,28 +103,7 @@ const ApiDevelopment = () => {
         />
 
         {/* Two-Column Functionality Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 space-y-8 items-center mt-16">
-          {apiFunctionality.map((feature, index) => (
-            <div key={index}>
-              <TypographyH3>{feature?.title}</TypographyH3>
-              <TypographyMuted>{feature?.description}</TypographyMuted>
-              <div
-                key={index}
-                className="flex items-center gap-2 mt-8 flex-wrap"
-              >
-                {feature.logos.map((logo, index) => (
-                  <img
-                    key={index}
-                    loading="lazy"
-                    src={`/assets/services/api-development/api-conf/${logo}.png`}
-                    className="h-8 mx-auto cursor-pointer hover:scale-105"
-                    alt={feature?.title}
-                  />
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
+        <FeaturesList features={apiFunctionality} fadeUp={fadeUp} grid />
 
         {/* CTA */}
         <FadeInWhenVisible>
@@ -163,18 +119,7 @@ const ApiDevelopment = () => {
         />
 
         {/* Support Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 text-left">
-          {support.map((item, index) => (
-            <CaseStudyCard
-              key={index}
-              index={index}
-              icon={item?.icon}
-              title={item?.title}
-              description={item?.description}
-              link={item?.link}
-            />
-          ))}
-        </div>
+        <FeaturesList features={support} fadeUp={fadeUp} grid />
       </PageLayout>
 
       {/* ===== FAQ SECTION ===== */}

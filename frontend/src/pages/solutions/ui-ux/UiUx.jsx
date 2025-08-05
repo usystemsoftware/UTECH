@@ -6,7 +6,6 @@ import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import { FeaturesList } from "@/components/FeaturesList";
 import { TestimonialSection } from "@/components/TestimonialSection";
-import CaseStudyCard from "@/components/CaseStudyCard";
 import {
   aiBenefits,
   processSteps,
@@ -90,19 +89,8 @@ const UiUx = () => {
             title="AI-Powered UI UX Development Services"
             description="U Technology commitment to staying ahead of the technological curve is ushering in a new era of AI-powered innovation. Our commitment to seamless, intuitive design takes center stage as we harness the transformative capabilities of Artificial Intelligence."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {aiBenefits?.map((benefit, index) => (
-              <CaseStudyCard
-                key={index}
-                index={index}
-                icon={benefit?.icon}
-                title={benefit?.title}
-                description={benefit?.description}
-                features={benefit?.features}
-                link={benefit?.link}
-              />
-            ))}
-          </div>
+          <FeaturesList features={aiBenefits} fadeUp={fadeUp} grid3 />
+
         </PageLayout>
       </section>
 

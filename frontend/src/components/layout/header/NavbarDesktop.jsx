@@ -1,17 +1,21 @@
-import React, { useState } from "react";
-import { ModeToggle } from "@/components/mode-toggle";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { TypographyMuted, TypographySmall } from "@/custom/Typography";
+import { motion } from "framer-motion";
+
+import AccessibilityWidget from "@/components/layout/AccessibilityWidget";
+import PageLayout from "@/custom/PageLayout";
+import { TypographyP, TypographySmall } from "@/custom/Typography";
 import { Button } from "@/components/ui/button";
 import { Navlinks } from "@/data/Navlinks";
 import { IconRenderer } from "@/custom/IconRenderer";
-import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 
-// Responsive NavbarDesktop with fixed 4-column dropdowns
 const NavbarDesktop = ({ setIsCommandOpen }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
+  const lastScrollY = useRef(0);
+  const timeoutRef = useRef(null);
 
-  // Helper: chunk array into 4 parts
   const chunkArray = (arr, size) => {
     const res = [];
     for (let i = 0; i < arr.length; i += size) {
@@ -20,74 +24,107 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
     return res;
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentY = window.scrollY;
+      setScrolled(currentY > 100);
+
+      if (currentY > lastScrollY.current && currentY > 100) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
+      }
+
+      lastScrollY.current = currentY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleMouseEnter = (index) => {
+    clearTimeout(timeoutRef.current);
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setHoveredIndex(null);
+    }, 100);
+  };
+
   return (
-    <div className="w-full fixed top-0 z-40 h-20 bg-card shadow">
-      <div className="md:max-w-7xl lg:max-w-[90%] mx-auto px-4 sm:px-6 flex justify-between items-center h-20">
-        {/* Logo */}
-        <Link to="/" className="flex items-center relative z-40">
-          <img loading="lazy" src="/logo.png" alt="Logo" className="w-32" />
-        </Link>
+    <motion.div
+      initial={{ y: -120 }}
+      animate={{ y: showNavbar ? 0 : -120 }}
+      transition={{ duration: 0.3 }}
+      className={`fixed top-0 left-0 w-full z-50 hover:bg-white hover:text-black transition-all duration-300 ${scrolled ? "bg-white/40 backdrop-blur-2xl shadow-md" : "bg-transparent text-white"
+        }`}
+    >
+      <AccessibilityWidget />
 
-        {/* Navigation */}
-        <nav className="flex items-center gap-4 sm:gap-8 relative lg:ml-20 z-40">
-          {Navlinks.map((item, index) => (
-            <div
-              key={index}
-              className="group"
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
-            >
-              <TypographySmall
-                className={`cursor-pointer hover:text-primary pb-1 uppercase md:text-sm font-semibold transition-all duration-200 ${
-                  hoveredIndex === index
-                    ? "border-b-2 border-primary text-primary"
-                    : ""
-                }`}
-              >
-                {item.title}
-              </TypographySmall>
-            </div>
-          ))}
-        </nav>
-
-        {/* Right Actions */}
-        <div className="flex items-center gap-2 sm:gap-3 z-40">
-          <div
-            className="h-8.5 flex items-center gap-2 rounded-md px-2 bg-accent relative"
-            onClick={() => setIsCommandOpen(true)}
-          >
-            <IconRenderer
-              name="Search"
-              size={16}
-              className="cursor-pointer text-muted-foreground"
-            />
-            <input
-              placeholder="Search documentation"
-              className="outline-none text-sm bg-transparent w-28 sm:w-44 cursor-pointer"
-              readOnly
-            />
-          </div>
-          <ModeToggle />
-          <Link to="/book-call">
-            <Button size="xs" className="py-1 px-2">
-              <IconRenderer name="HelpCircle" strokeWidth={2} />
-              <span className="hidden sm:inline">&nbsp;Let's Meet !</span>
-            </Button>
+      <div className="h-20">
+        <PageLayout className="flex justify-between items-center h-full max-w-[1440px] mx-auto px-6">
+          {/* Logo */}
+          <Link to="/" className="flex items-center relative z-40">
+            <img src="/logo.png" alt="Logo" className="w-28" loading="lazy" />
           </Link>
-        </div>
+
+          {/* Nav Links */}
+          <nav className="flex items-center gap-6 relative z-40">
+            {Navlinks.map((item, index) => (
+              <div
+                key={index}
+                className="group relative"
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+              >
+                <div className="flex items-center gap-1 cursor-pointer">
+                  <TypographySmall
+                    className={`font-semibold tracking-wide transition-colors duration-200 ${hoveredIndex === index
+                      ? "text-primary border-b-2 border-primary"
+                      : "hover:text-primary"
+                      }`}
+                  >
+                    {item.title}
+                  </TypographySmall>
+                  <IconRenderer
+                    name="ChevronDown"
+                    strokeWidth={2}
+                    size={20}
+                    className={`transition-transform duration-200 ${hoveredIndex === index ? "rotate-180 text-primary" : ""
+                      }`}
+                  />
+                </div>
+              </div>
+            ))}
+          </nav>
+
+          {/* Right Side Buttons */}
+          <div className="flex items-center gap-4">
+            <button onClick={() => setIsCommandOpen(true)}>
+              <IconRenderer name="Search" size={22} strokeWidth={2} />
+            </button>
+            <Link to="/book-call">
+              <Button size="sm">
+                <IconRenderer name="HelpCircle" strokeWidth={2} />
+                Help
+              </Button>
+            </Link>
+          </div>
+        </PageLayout>
       </div>
 
       {/* Dropdown */}
       {hoveredIndex !== null &&
         (Navlinks[hoveredIndex].items || Navlinks[hoveredIndex].groups) && (
           <div
-            className="absolute left-0 top-12 w-full bg-card shadow-lg z-30 border-border"
-            onMouseEnter={() => setHoveredIndex(hoveredIndex)}
-            onMouseLeave={() => setHoveredIndex(null)}
+            className="absolute top-24 left-0 w-full bg-white z-30 shadow-xl"
+            onMouseEnter={() => handleMouseEnter(hoveredIndex)}
+            onMouseLeave={handleMouseLeave}
           >
-            {/* Items Dropdown */}
             {Navlinks[hoveredIndex].items && (
-              <div className="w-full md:max-w-7xl lg:max-w-[90%] mx-auto px-4 sm:px-8 py-6">
+              <PageLayout className="py-6 max-w-[1440px] mx-auto px-6">
                 {(() => {
                   const items = Navlinks[hoveredIndex].items;
                   const chunked = chunkArray(
@@ -95,36 +132,35 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
                     Math.ceil(items.length / 4)
                   );
                   return (
-                    <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                      {chunked.map((col, colIdx) => (
-                        <div key={colIdx}>
-                          {col.map((option, idx) => (
-                            <FadeInWhenVisible key={idx} delay={idx * 0.04}>
-                              <Link
-                                onClick={() => setHoveredIndex(null)}
-                                to={option.href}
-                                className="flex items-center gap-3 transition hover:text-primary hover:underline underline-offset-4 p-3 rounded-md hover:bg-accent"
-                              >
-                                <IconRenderer
-                                  name={option.icon}
-                                  strokeWidth={1.5}
-                                />
-                                <TypographyMuted className="hover:text-primary md:text-sm">
-                                  {option.label}
-                                </TypographyMuted>
-                              </Link>
-                            </FadeInWhenVisible>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                      {chunked.map((col, colIndex) => (
+                        <div key={colIndex}>
+                          {col.map((link, idx) => (
+                            <Link
+                              key={idx}
+                              to={link.href}
+                              onClick={() => setHoveredIndex(null)}
+                              className="flex items-center gap-2 hover:text-primary p-2 rounded-md transition-all"
+                            >
+                              <IconRenderer
+                                name={link.icon}
+                                strokeWidth={2}
+                              />
+                              <TypographyP className="md:text-sm">
+                                {link.label}
+                              </TypographyP>
+                            </Link>
                           ))}
                         </div>
                       ))}
                     </div>
                   );
                 })()}
-              </div>
+              </PageLayout>
             )}
           </div>
         )}
-    </div>
+    </motion.div>
   );
 };
 

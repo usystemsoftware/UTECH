@@ -4,7 +4,6 @@ import HeroSection from "@/components/HeroSection";
 import { FeaturesList } from "@/components/FeaturesList";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import PageLayout from "@/custom/PageLayout";
-import CaseStudyCard from "@/components/CaseStudyCard";
 import TechnologyStatCard from "@/components/TechnologyStatCard";
 import { Headline, TypographyH4 } from "@/custom/Typography";
 import {
@@ -60,19 +59,7 @@ const WebDevelopment = () => {
         />
 
         {/* List of web development services */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-left">
-          {webDevelopmentServices?.map((service, index) => (
-            <CaseStudyCard
-              key={index}
-              index={index}
-              icon={service?.icon}
-              title={service?.title}
-              description={service?.description}
-              year={service?.subtitle}
-              link={service?.link}
-            />
-          ))}
-        </div>
+        <FeaturesList features={webDevelopmentServices} fadeUp={fadeUp} grid3 />
 
         <FadeInWhenVisible>
           <Button variant="hover">HIRE FULL-STACK WEB DEVELOPERS</Button>
@@ -146,19 +133,7 @@ const WebDevelopment = () => {
             your benefit."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-left">
-            {supportServices?.map((service, index) => (
-              <CaseStudyCard
-                key={index}
-                index={index}
-                icon={service?.icon}
-                title={service?.title}
-                description={service?.description}
-                year={service?.subtitle}
-                link={service?.link}
-              />
-            ))}
-          </div>
+          <FeaturesList features={supportServices} fadeUp={fadeUp} grid />
 
           <FadeInWhenVisible>
             <Button variant="hover">GET WEB SUPPORT ON-DEMAND</Button>

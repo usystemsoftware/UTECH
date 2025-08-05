@@ -21,7 +21,6 @@ import {
   testimonials,
   taxFeatures,
 } from "./Data";
-import CaseStudyCard from "@/components/CaseStudyCard";
 import IntigrateWith from "@/custom/IntigrateWith";
 
 const Finance = () => {
@@ -62,18 +61,8 @@ const Finance = () => {
             title="Optimizing Finance with Artificial Intelligence"
             description="With the ever-evolving landscape of financial services becoming increasingly complex and digital, AI is a game-changer. U Technology’s Financial Software Development Services are here to help you transform your operations, improve your customer experiences, and aid in strategic decision-making."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 md:gap-8 text-left">
-            {aiBenefits.map((item, index) => (
-              <FadeInWhenVisible key={index} delay={index * 0.2}>
-                <CaseStudyCard
-                  key={index}
-                  icon={item.icon}
-                  title={item.title}
-                  description={item.description}
-                />
-              </FadeInWhenVisible>
-            ))}
-          </div>
+          <FeaturesList features={aiBenefits} fadeUp={fadeUp} grid3 />
+
           <FadeInWhenVisible delay={0.8}>
             <Button variant="hover">GET AI-POWERED FINANCIAL SOLUTIONS</Button>
           </FadeInWhenVisible>

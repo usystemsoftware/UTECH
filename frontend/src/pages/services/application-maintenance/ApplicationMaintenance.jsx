@@ -70,7 +70,7 @@ const ApplicationMaintenance = () => {
             description="Applications are long-term investments, and U Technology's Application Support Services encompass technical expertise, software maintenance, extended support, and exceptional customer service, all aimed at keeping your applications running optimally."
           />
 
-          <FeaturesList features={ApplicationSupport} grid />
+          <FeaturesList features={ApplicationSupport} grid3 />
 
           {/* === CTA BUTTON: SUPPORT === */}
           <FadeInWhenVisible delay={0.4}>

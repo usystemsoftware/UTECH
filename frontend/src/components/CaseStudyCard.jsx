@@ -1,7 +1,8 @@
-import { motion } from "framer-motion";
-import { Card } from "@/components/ui/card";
-import { TypographyH4, TypographyMuted } from "@/custom/Typography";
+// components/CaseStudyCard.jsx
 import { Link } from "react-router-dom";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { TypographyH4, TypographyMuted } from "@/custom/Typography";
 import { IconRenderer } from "@/custom/IconRenderer";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 
@@ -12,63 +13,79 @@ export default function CaseStudyCard({
   year,
   features,
   link,
+  image,
   color = "from-primary to-foreground/40",
   index = 0,
+  direction = "bottom",
 }) {
+  const delay = index * 0.2;
+
   return (
-    <FadeInWhenVisible delay={index * 0.2}>
-      <Card className="cursor-pointer border-none shadow-primary/20 shadow-2xl hover:scale-105 transaction hover:translate-y-1">
-        <FadeInWhenVisible
-          whileHover={{ scale: 1.1, rotate: 5, z: 20 }}
-          className={`w-11 h-11 rounded-2xl bg-gradient-to-r ${color} flex items-center justify-center relative z-10 transform-3d`}
-        >
-          <IconRenderer name={icon} size={20} className="text-white" />
-        </FadeInWhenVisible>
+    <FadeInWhenVisible delay={delay} direction={direction}>
+      <Card className="cursor-pointer shadow-none p-0 hover:scale-[1.02] transition-transform hover:translate-y-1 rounded-xl overflow-hidden w-full max-w-sm flex flex-col justify-start">
+        {image && (
+          <img
+            src={image}
+            alt={title}
+            className="w-full h-40 object-cover transition-transform duration-300 hover:scale-105"
+          />
+        )}
 
-        <FadeInWhenVisible>
-          <TypographyH4 className="sm:line-clamp-1">{title}</TypographyH4>
-        </FadeInWhenVisible>
+        <div className="space-y-3 flex-1 flex flex-col">
+          {icon && (
+            <div
+              className={`w-11 h-11 mx-3 rounded-2xl px-3 bg-gradient-to-r ${color} flex items-center justify-center z-10 mt-3`}
+            >
+              <IconRenderer
+                name={icon}
+                size={20}
+                strokeWidth={2}
+                className="text-white"
+              />
+            </div>
+          )}
 
-        <FadeInWhenVisible>
-          <TypographyMuted className="sm:line-clamp-3">
+          <TypographyH4 className="px-3">{title}</TypographyH4>
+
+          <TypographyMuted className="px-3 sm:line-clamp-3">
             {description}
           </TypographyMuted>
-        </FadeInWhenVisible>
 
-        {year && (
-          <FadeInWhenVisible>
-            <p className="text-sm text-gray-500 italic">Year: {year}</p>
-          </FadeInWhenVisible>
-        )}
+          {year && (
+            <p className="text-sm text-gray-500 italic px-3">Year: {year}</p>
+          )}
 
-        {features?.length > 0 && (
-          <div className="space-y-3">
-            {features.map((feature, featureIndex) => (
-              <motion.div
-                key={feature}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                  delay: index * 0.1 + featureIndex * 0.05,
-                }}
-                className="flex items-center space-x-3"
-              >
-                <div
-                  className={`w-2 h-2 rounded-full bg-gradient-to-r ${color}`}
-                ></div>
-                <span className="text-sm text-gray-600 font-medium sm:line-clamp-1">
-                  {feature}
-                </span>
-              </motion.div>
-            ))}
-          </div>
-        )}
+          {features?.length > 0 && (
+            <div className="space-y-2 px-3">
+              {features.map((feature) => (
+                <div key={feature} className="flex items-center space-x-3">
+                  <div
+                    className={`w-2 h-2 rounded-full bg-gradient-to-r ${color}`}
+                  />
+                  <span className="text-sm text-gray-600 font-medium sm:line-clamp-1">
+                    {feature}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
 
-        <Link to={link}>
-          <button className="mt-2 w-full px-4 py-2 bg-gradient-to-r from-primary/20 to-primary/50 text-primary text-sm cursor-pointer rounded-md font-semibold hover:from-primary/10 hover:to-primary/20 hover:text-primary transition-all duration-300 border border-gray-200 transform-3d">
-            Learn More
-          </button>
-        </Link>
+          {link && (
+            <div className="px-3 pb-4">
+              <Link to={link}>
+                <Button size="sm" className="w-full">
+                  Learn More
+                  <IconRenderer
+                    name="MoveRight"
+                    size={20}
+                    strokeWidth={2}
+                    className="text-white ml-2"
+                  />
+                </Button>
+              </Link>
+            </div>
+          )}
+        </div>
       </Card>
     </FadeInWhenVisible>
   );

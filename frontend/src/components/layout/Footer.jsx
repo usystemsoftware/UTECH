@@ -4,6 +4,7 @@ import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { TypographyH3, TypographyH4 } from "@/custom/Typography";
+import PageLayout from "@/custom/PageLayout";
 
 export const footerLinks = [
   {
@@ -85,8 +86,8 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-b from-[#0d101f] to-[#071427] text-white px-4 sm:px-6 py-10 sm:py-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-2 space-y-4 md:space-y-0 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-8 md:gap-12">
+    <footer className="bg-gradient-to-b from-[#0d101f] to-[#071427] text-white py-10 sm:py-12">
+      <PageLayout className="grid grid-cols-2 space-y-4 md:space-y-0 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-8 md:gap-12">
         {/* Brand and Subscribe */}
         <FadeInWhenVisible className="col-span-2 space-y-4">
           <TypographyH3 className="text-xl sm:text-2xl md:text-3xl">
@@ -158,7 +159,7 @@ export const Footer = () => {
             </div>
           </FadeInWhenVisible>
         ))}
-      </div>
+      </PageLayout>
 
       <div className="mt-10 text-center border-t border-white/10 pt-6 text-xs sm:text-sm text-gray-400">
         © {new Date().getFullYear()} U Technology (India) Pvt Ltd.. All

@@ -40,7 +40,7 @@ export default function BackupRecovery() {
                         <FadeInWhenVisible>
                             <TypographyH5>Data Backup & Recovery Services</TypographyH5>
                             <TypographyMuted>
-                                Chetu offers fast, easy, and reliable data backup and recovery services for a wide variety of enterprise infrastructures, ensuring robust, scalable, and vigorously maintained data safeguards.
+                                U Tech offers fast, easy, and reliable data backup and recovery services for a wide variety of enterprise infrastructures, ensuring robust, scalable, and vigorously maintained data safeguards.
                             </TypographyMuted>
                         </FadeInWhenVisible>
 

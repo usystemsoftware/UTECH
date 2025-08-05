@@ -3,7 +3,6 @@ import HeadingSection from "@/custom/HeadingSection";
 import { motion } from "framer-motion";
 import CaseStudyCard from "@/components/CaseStudyCard";
 import { projects } from "@/data/LandingData";
-import BubblesBackground from "@/components/BubblesBackground";
 
 const containerVariants = {
     hidden: {},
@@ -29,8 +28,6 @@ const cardVariants = {
 export default function Projects() {
     return (
         <PageLayout className="relative py-10 overflow-hidden">
-            {/* Background Bubbles */}
-            <BubblesBackground />
 
             <HeadingSection
                 title="Our"
@@ -39,7 +36,7 @@ export default function Projects() {
             />
 
             <motion.div
-                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-8 relative z-10"
+                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8 relative z-10"
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="show"
@@ -49,7 +46,7 @@ export default function Projects() {
                     <motion.div key={index} variants={cardVariants}>
                         <CaseStudyCard
                             index={index}
-                            icon={project?.icon}
+                            image={project?.img}
                             title={project?.title}
                             description={project?.description}
                             year={project?.year}

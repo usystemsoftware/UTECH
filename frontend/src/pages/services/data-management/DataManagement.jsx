@@ -18,7 +18,7 @@ export default function DataManagement() {
         <>
             {/* HERO SECTION */}
             <HeroSection
-                backgroundImage="/banner/accelerate-growth-with-custom-database-2023-banner.jpg"
+                backgroundImage="/banner/data-management-banner.jpg"
                 title="Data Management Services"
                 description="Streamline, secure, and optimize enterprise data for smarter decisions, compliance, and sustainable growth."
                 buttonText="CUNSULT A DATA MANAGEMENT EXPERTS"
@@ -30,7 +30,7 @@ export default function DataManagement() {
             <PageLayout className="space-y-10 py-12 text-center">
                 <Headline
                     title="Data Management Solutions"
-                    description="Chetu is a leading data management service provider that offers comprehensive enterprise data solutions to empower businesses with centralized and secured big data for effective operations."
+                    description="U Tech is a leading data management service provider that offers comprehensive enterprise data solutions to empower businesses with centralized and secured big data for effective operations."
                 />
 
                 {/* Mobile Layout */}
@@ -78,7 +78,7 @@ export default function DataManagement() {
                 <PageLayout className="text-center space-y-10">
                     <Headline
                         title="Data Lake Managed Services"
-                        description="Chetu provides comprehensive data lake support services that help businesses maintain their data lakes and optimize them for performance, scalability, and compliance. Our data lake professionals ensure seamless operations while providing the robust data flow and infrastructure that empowers real-time analytics and high-value insights."
+                        description="U Tech provides comprehensive data lake support services that help businesses maintain their data lakes and optimize them for performance, scalability, and compliance. Our data lake professionals ensure seamless operations while providing the robust data flow and infrastructure that empowers real-time analytics and high-value insights."
                     />
                     <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
                         <FeaturesList features={dataLakeServices} />
@@ -103,7 +103,7 @@ export default function DataManagement() {
             <PageLayout className="py-12 space-y-10 text-center">
                 <Headline
                     title="Custom-Built Data Lake Development Services"
-                    description="Let Chetu provide you with expert data lake developers who can design, develop, and deploy data lake platforms. We empower your enterprise with complete ownership, scalability, and ROI."
+                    description="Let U Tech provide you with expert data lake developers who can design, develop, and deploy data lake platforms. We empower your enterprise with complete ownership, scalability, and ROI."
                 />
                 <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
                     <FadeInWhenVisible>
@@ -127,7 +127,7 @@ export default function DataManagement() {
             <section className="bg-secondary py-10">
                 <PageLayout className="space-y-10 text-center">
                     <Headline
-                        title="Why Choose Chetu"
+                        title="Why Choose U Tech"
                         description="Unmatched Expertise & Innovation Our experts bring decades of experience in data architecture, integration, and governance. Our scalable solutions deliver innovation that keeps your enterprise ahead."
                     />
                     <FeaturesList features={dataValueProps} grid />

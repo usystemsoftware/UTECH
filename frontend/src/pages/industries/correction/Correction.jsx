@@ -36,7 +36,7 @@ export default function Correction() {
           description="We develop custom Jail Management Software that provides a comprehensive set of capabilities to manage the entire jail management lifecycle from booking to release."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
           {/* Features List */}
           <div className="text-start">
             <TypographyH5>Jail Management System Development</TypographyH5>
@@ -46,28 +46,28 @@ export default function Correction() {
               features within your existing solution to streamline workflows and
               optimize jailhouse operations.
             </TypographyMuted>
-            <FeaturesList fadeUp={fadeUp} features={jailManagementSolutions} />
+            <FeaturesList fadeUp={fadeUp} features={jailManagementSolutions} grid />
           </div>
 
           {/* Left Image */}
-          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
+          <FadeInWhenVisible delay={0.5} className="md:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/correction/jail-mgmt-systems.png"
               alt="Portfolio"
-              className="w-48 mx-auto"
+              className="w-56 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
           {/* Left Image */}
-          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
+          <FadeInWhenVisible delay={0.5} className="md:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/correction/workflow-mgmt.png"
               alt="Portfolio"
-              className="w-135 mx-auto"
+              className="w-110 mx-auto"
             />
           </FadeInWhenVisible>
 
@@ -83,6 +83,7 @@ export default function Correction() {
             <FeaturesList
               fadeUp={fadeUp}
               features={facilityOperationsSolutions}
+              grid
             />
           </div>
         </div>
@@ -128,7 +129,7 @@ export default function Correction() {
               loading="lazy"
               src="/assets/industries/healthcare/laptop.png"
               alt="Portfolio"
-              className="w-135 mx-auto"
+              className="w-145 mx-auto"
             />
           </FadeInWhenVisible>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -189,7 +190,7 @@ export default function Correction() {
               loading="lazy"
               src="/assets/industries/healthcare/laptop.png"
               alt="Portfolio"
-              className="w-135 mx-auto"
+              className="w-145 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
@@ -202,7 +203,7 @@ export default function Correction() {
             description="Our custom Inmate Tracking & Security Software Solutions allow correctional facilities to track all inmate movements and measure employee performances in real-time."
           />
 
-          <div className="flex flex-col sm:flex-row justify-baseline gap-8 md:gap-26">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
             {/* Left Features List */}
             <FeaturesList
               features={inmateManagementSolutions.slice(0, 2)}
@@ -215,7 +216,7 @@ export default function Correction() {
                 loading="lazy"
                 src="/assets/industries/correction/immate-tracking-mobile.png"
                 alt="Mobile Analytics App"
-                className="w-52"
+                className="w-52 mx-auto"
               />
             </FadeInWhenVisible>
 
@@ -266,7 +267,7 @@ export default function Correction() {
                 loading="lazy"
                 src="/assets/industries/correction/jail-management-solutions-laptop.png"
                 alt="Mobile Analytics App"
-                className="w-96 mx-auto"
+                className="w-110 mx-auto"
               />
             </FadeInWhenVisible>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -311,7 +312,7 @@ export default function Correction() {
               loading="lazy"
               src="/assets/industries/correction/hrms-solutions.png"
               alt="Portfolio"
-              className="w-48 mx-auto"
+              className="w-64 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
@@ -333,7 +334,7 @@ export default function Correction() {
                 <FeaturesList fadeUp={fadeUp} features={[item]} />
 
                 {item?.partners && item.partners.length > 0 && (
-                  <div className="flex items-center flex-wrap gap-6 mt-6">
+                  <div className="flex items-center justify-center flex-wrap gap-6 mt-6">
                     {item.partners.map((partner, pIndex) => (
                       <FadeInWhenVisible key={pIndex} delay={0.5}>
                         <img

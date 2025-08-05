@@ -52,7 +52,7 @@ export default function Aviation() {
             description="U Tech's advanced AI solutions revolutionize the airline industry by optimizing revenue management, flight management, predictive maintenance, and more. With cutting-edge technology and industry expertise, our AI-driven systems provide real-time insights, streamline workflows, and ensure regulatory compliance. Seamlessly integrating with existing infrastructure, our solutions empower airlines, MROs, and flight operators to enhance operational efficiency and deliver superior customer support."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-center">
             <FeaturesList
               features={airlineAIandAutomationServices.slice(0, 3)}
               fadeUp={fadeUp}
@@ -62,7 +62,7 @@ export default function Aviation() {
                 src="/assets/industries/aviation/flightaware-custom-integration.png"
                 alt="Accounting Dashboard"
                 loading="lazy"
-                className="w-135"
+                className="w-110 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList
@@ -86,7 +86,7 @@ export default function Aviation() {
           />
           <FadeInWhenVisible
             delay={0.5}
-            className="md:block hidden absolute right-0"
+            className="md:block hidden"
           >
             <img
               loading="lazy"

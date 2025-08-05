@@ -191,14 +191,14 @@ export const Banking = () => (
             <div
               key={label}
               className={`absolute ${i === 0
-                  ? "-left-10 top-5"
-                  : i === 1
-                    ? "-left-10 bottom-5"
-                    : i === 2
-                      ? "-right-10 top-5"
-                      : i === 3
-                        ? "-right-10 top-24"
-                        : "-right-10 bottom-5"
+                ? "-left-10 top-5"
+                : i === 1
+                  ? "-left-10 bottom-5"
+                  : i === 2
+                    ? "-right-10 top-5"
+                    : i === 3
+                      ? "-right-10 top-24"
+                      : "-right-10 bottom-5"
                 } hidden md:block`}
             >
               <div className="mb-6 px-4 py-1 bg-white rounded-full shadow text-sm font-semibold">
@@ -247,19 +247,18 @@ export const Banking = () => (
         title="Custom CORE Banking Solutions"
         description="U Technology’s developers provide Centralized Online Real-Time Exchange (CORE) banking software services that effortlessly support all of a bank’s most common transactions, including making and servicing loans, opening new accounts, and processing cash deposits & withdrawals."
       />
-      <PageLayout className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
         <FeaturesList
           features={BankingCoreFeatures}
           fadeUp={fadeUp}
           iconSize={36}
-          grid
         />
         <FadeInWhenVisible delay={0.4} className="hidden md:block">
           <img
             loading="lazy"
             src="/assets/industries/banking/customcore.png"
             alt="Loan Software"
-            className="w-110"
+            className="w-110 mx-auto"
           />
         </FadeInWhenVisible>
       </PageLayout>
@@ -285,7 +284,7 @@ export const Banking = () => (
             loading="lazy"
             src="/assets/industries/banking/mobilebrowser.png"
             alt="Loan Software"
-            className="w-64 mx-auto"
+            className="w-82 mx-auto"
           />
         </FadeInWhenVisible>
         <FeaturesList
@@ -327,22 +326,11 @@ export const Banking = () => (
         title="Banking Software Support"
         description="Banking and fiscal services have seen a significant transformation because of the use of new software solutions and apps. U Technology’s banking software support enhances efficiency, reliability, and regulatory compliance while improving the customer experience."
       />
-      <div className="block md:hidden">
-        <FeaturesList features={BankingSupportItems} fadeUp={fadeUp} grid />
-      </div>
-
-      <div className="md:grid hidden grid-cols-1 md:grid-cols-2 gap-12 text-left">
-        <FeaturesList
-          features={BankingSupportItems.slice(0, 5)}
-          fadeUp={fadeUp}
-          grid
-        />
-        <FeaturesList
-          features={BankingSupportItems.slice(5, 10)}
-          fadeUp={fadeUp}
-          grid
-        />
-      </div>
+      <FeaturesList
+        features={BankingSupportItems}
+        fadeUp={fadeUp}
+        grid4
+      />
       <FadeInWhenVisible delay={0.4}>
         <Button variant="hover">Get Finance Software Support</Button>
       </FadeInWhenVisible>

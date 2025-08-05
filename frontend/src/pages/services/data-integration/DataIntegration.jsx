@@ -18,7 +18,7 @@ export default function DataIntegration() {
             <HeroSection
                 backgroundImage="/banner/backup-recovery-banner.jpg"
                 title="DATA INTEGRATION SERVICES"
-                description="Chetu ensures smooth data integration through ongoing support and monitoring beyond the project lifecycle, safeguarding your critical data assets."
+                description="U Tech ensures smooth data integration through ongoing support and monitoring beyond the project lifecycle, safeguarding your critical data assets."
                 buttonText="HIRE DATA INTEGRETION CUNSULTANTS"
                 buttonLink="#"
                 imageFit="cover"
@@ -76,7 +76,7 @@ export default function DataIntegration() {
                 <FadeInWhenVisible>
                     <img
                         loading="lazy"
-                        src="/assets/services/data-integration/our-5-step-guide-to-chetu-big-data-sync-framework.gif"
+                        src="/assets/services/data-integration/our-5-step-guide-to-U Tech-big-data-sync-framework.gif"
                         alt="Mobile App Devices"
                         className="md:max-w-5xl mx-auto"
                     />
@@ -95,7 +95,7 @@ export default function DataIntegration() {
                 <PageLayout className='space-y-10'>
                     <Headline
                         title="Additional Offerings We Provide"
-                        description="Chetu strives to ensure proper data integrity with careful data cleaning and ongoing support for all data-driven workflows. Our data management strategies adhere to stringent governance frameworks."
+                        description="U Tech strives to ensure proper data integrity with careful data cleaning and ongoing support for all data-driven workflows. Our data management strategies adhere to stringent governance frameworks."
                     />
 
                     {/* Features with center image layout */}
@@ -128,7 +128,7 @@ export default function DataIntegration() {
             <PageLayout className="py-10 space-y-10 text-center">
                 <Headline
                     title='Certified Tools & Platforms We Have Expertise In'
-                    description='Chetu is a data integration company specializing in leading data integration tools and platforms, such as Microsoft, AWS, Oracle, Databricks, and Snowflake. We leverage the latest tools to modernize operations and streamline workflows.'
+                    description='U Tech is a data integration company specializing in leading data integration tools and platforms, such as Microsoft, AWS, Oracle, Databricks, and Snowflake. We leverage the latest tools to modernize operations and streamline workflows.'
                 />
 
                 {/* Tools Logos & Illustration */}

@@ -38,7 +38,7 @@ export const dataManagementSolutions = [
     {
         title: "Data Storage",
         description:
-            "Chetu offers hybrid, object, and cloud data storage solutions designed specifically for your business requirements. Be it scalable capacity, on-demand access, or improved data protection; our storage architectures deliver the robustness, security, and flexibility needed for data management at any scale.",
+            "U Tech offers hybrid, object, and cloud data storage solutions designed specifically for your business requirements. Be it scalable capacity, on-demand access, or improved data protection; our storage architectures deliver the robustness, security, and flexibility needed for data management at any scale.",
         icon: "HardDrive", // Storage
     },
     {
@@ -80,7 +80,7 @@ export const dataLakeSolutions = [
     {
         title: "Data Lake Deployment",
         description:
-            "Chetu builds customized data lake solutions for cloud-native, on-premise, or hybrid environments. Our accelerated deployment strategies minimize disruption while assuring seamless high-performance integration with existing systems.",
+            "U Tech builds customized data lake solutions for cloud-native, on-premise, or hybrid environments. Our accelerated deployment strategies minimize disruption while assuring seamless high-performance integration with existing systems.",
         icon: "Rocket", // Represents deployment/launch
     },
     {

@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex md:hidden">
+      <div className="block md:hidden">
         <NavbarMobile
           setIsCommandOpen={setIsCommandOpen}
           isCommandOpen={isCommandOpen}

@@ -98,19 +98,19 @@ export const devOpsChallengesSolutions = [
     {
         title: "Slow Software Delivery",
         description:
-            "Chetu ensures you reduce your project’s time-to-market, so our software specialists eliminate slow-release cycles and work to minimize costly delays by providing timely updates of new features and maintaining consistent communication throughout the project lifecycle.",
+            "U Tech ensures you reduce your project’s time-to-market, so our software specialists eliminate slow-release cycles and work to minimize costly delays by providing timely updates of new features and maintaining consistent communication throughout the project lifecycle.",
         icon: "TimerReset",
     },
     {
         title: "Inefficient Collaboration",
         description:
-            "Our DevOps processes create seamless collaboration between development and operations, with strict attention paid to project details while providing transparent communication to clients. Inefficient collaboration is often responsible for missed deadlines, exceeding budgets, and poor quality. Chetu provides world-class software solutions to optimize industries and give businesses a competitive advantage.",
+            "Our DevOps processes create seamless collaboration between development and operations, with strict attention paid to project details while providing transparent communication to clients. Inefficient collaboration is often responsible for missed deadlines, exceeding budgets, and poor quality. U Tech provides world-class software solutions to optimize industries and give businesses a competitive advantage.",
         icon: "Users",
     },
     {
         title: "Infrastructure Scaling",
         description:
-            "Chetu understands the unique challenges every business face, which is why our development team provides individualized, scalable solutions to augment their growing IT infrastructure. Our software experts scale IT systems and resources with no costly workflow interruption, without compromising performance or security.",
+            "U Tech understands the unique challenges every business face, which is why our development team provides individualized, scalable solutions to augment their growing IT infrastructure. Our software experts scale IT systems and resources with no costly workflow interruption, without compromising performance or security.",
         icon: "Expand",
     },
     {
@@ -122,13 +122,13 @@ export const devOpsChallengesSolutions = [
     {
         title: "Frequent System Failures",
         description:
-            "Frequent system failures are very costly for every business, and with extended downtime, workflow and project development comes to a halt. Chetu proactively monitors, updates, and upgrades system resources to ensure your systems, the backbone of your organization, function optimally.",
+            "Frequent system failures are very costly for every business, and with extended downtime, workflow and project development comes to a halt. U Tech proactively monitors, updates, and upgrades system resources to ensure your systems, the backbone of your organization, function optimally.",
         icon: "AlertTriangle",
     },
     {
         title: "Security Concerns",
         description:
-            "Chetu’s cybersecurity team offers seamless integration of modernized resources adhering to SecOps processes to provide stringent monitoring of data anomalies and real-time alerts to potential threats that cause costly disruptions.",
+            "U Tech’s cybersecurity team offers seamless integration of modernized resources adhering to SecOps processes to provide stringent monitoring of data anomalies and real-time alerts to potential threats that cause costly disruptions.",
         icon: "ShieldCheck",
     },
     {
@@ -140,7 +140,7 @@ export const devOpsChallengesSolutions = [
     {
         title: "Compliance and Auditing",
         description:
-            "Chetu’s DevOps consultants diligently ensure your industry-specific regulations and compliance protocols are strictly adhered to. Our consultants work within your company framework to ensure all internal compliance requirements are met, with swift corrective action to mitigate costly bottlenecks.",
+            "U Tech’s DevOps consultants diligently ensure your industry-specific regulations and compliance protocols are strictly adhered to. Our consultants work within your company framework to ensure all internal compliance requirements are met, with swift corrective action to mitigate costly bottlenecks.",
         icon: "ClipboardList",
     },
     {
@@ -152,7 +152,7 @@ export const devOpsChallengesSolutions = [
     {
         title: "CI/CD Implementation",
         description:
-            "Faster software project delivery does not have to sacrifice quality or performance. Chetu’s CI/CD pipelines enable faster software development utilizing DevOps best-practices while automating software development quality testing eliminates human error to deliver clients reliable software delivery with elevated functionality.",
+            "Faster software project delivery does not have to sacrifice quality or performance. U Tech’s CI/CD pipelines enable faster software development utilizing DevOps best-practices while automating software development quality testing eliminates human error to deliver clients reliable software delivery with elevated functionality.",
         icon: "GitBranch",
     },
 ];

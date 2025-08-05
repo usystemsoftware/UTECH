@@ -1,4 +1,3 @@
-import CaseStudyCard from "@/components/CaseStudyCard";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
 import { Headline, TypographyH4, TypographyH1 } from "@/custom/Typography";
@@ -79,18 +78,11 @@ const DigitalTransformation = () => {
             </FadeInWhenVisible>
           </div>
 
-          <div className="grid grid-cols-1 text-start sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-            {services.map((item, index) => (
-              <CaseStudyCard
-                key={index}
-                index={index}
-                icon={item?.icon}
-                title={item?.title}
-                description={item?.description}
-                link={item?.link}
-              />
-            ))}
-          </div>
+          <FeaturesList
+            features={services}
+            fadeUp={fadeUp}
+            grid3
+          />
 
           <FadeInWhenVisible>
             <Button variant="hover">GET DIGITAL TRANSFORMATION SERVICES</Button>
@@ -161,18 +153,12 @@ const DigitalTransformation = () => {
           optimal service."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-start">
-          {features.map((item, index) => (
-            <CaseStudyCard
-              key={index}
-              index={index}
-              icon={item?.icon}
-              title={item?.title}
-              description={item?.description}
-              link={item?.link}
-            />
-          ))}
-        </div>
+        <FeaturesList
+          features={features}
+          fadeUp={fadeUp}
+          grid
+        />
+
         <FadeInWhenVisible>
           <Button variant="hover">WORK WITH TOP TALENT</Button>
         </FadeInWhenVisible>
@@ -187,18 +173,12 @@ const DigitalTransformation = () => {
             resources, we will help you increase operational flexibility."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-start">
-            {dxFeatures.map((item, index) => (
-              <CaseStudyCard
-                key={index}
-                index={index}
-                icon={item?.icon}
-                title={item?.title}
-                description={item?.description}
-                link={item?.link}
-              />
-            ))}
-          </div>
+
+          <FeaturesList
+            features={dxFeatures}
+            fadeUp={fadeUp}
+            grid3
+          />
           <FadeInWhenVisible>
             <Button variant="hover">HIRE A ONE-STOP SHOP</Button>
           </FadeInWhenVisible>

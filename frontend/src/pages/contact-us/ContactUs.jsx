@@ -5,11 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import {
-  TypographyH3,
-  TypographyH1,
-  TypographyH6,
   TypographyMuted,
-  TypographyLead,
+  TypographyH6,
+  TypographyH3,
 } from "@/custom/Typography";
 import { Locations } from "./Data";
 
@@ -17,12 +15,7 @@ const contactFields = [
   { name: "name", label: "Full Name", required: true, type: "text" },
   { name: "email", label: "Email", required: true, type: "email" },
   { name: "phone", label: "Phone", required: true, type: "text" },
-  {
-    name: "company",
-    label: "Company (Optional)",
-    required: false,
-    type: "text",
-  },
+  { name: "company", label: "Company (Optional)", required: false, type: "text" },
 ];
 
 const emails = [
@@ -31,7 +24,7 @@ const emails = [
   "sales@usystem.software",
 ];
 
-const ContactUs = () => {
+const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -52,29 +45,41 @@ const ContactUs = () => {
     const errors = required.filter((f) => !formData[f]);
     if (errors.length === 0) {
       console.log("Submitted:", formData);
-      // send form logic here
+      // trigger your API logic here
     }
   };
 
   return (
-    <PageLayout className="grid grid-cols-1 md:grid-cols-2 py-16 mt-16 gap-6">
-      {/* LEFT FORM */}
-      <div className="md:p-6 space-y-6 text-start">
-        <div className="space-y-2 mb-6">
-          <TypographyH1>Let's Talk Solutions.</TypographyH1>
-          <TypographyLead>
-            Fill out our form and a software expert will contact you within
-            24hrs.
-          </TypographyLead>
+    <section className="w-full">
+      {/* HERO IMAGE SECTION */}
+      <div className="relative h-[600px] overflow-hidden">
+        <img
+          src="/banner/contact-us.jpg"
+          alt="Contact Us"
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 to-primary/30 z-10" />
+
+        <div className="relative z-20 max-w-7xl mx-auto h-full flex items-center px-6 text-white">
+          <div>
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+              What’s on your mind?
+            </h1>
+            <p className="text-lg mb-6">
+              We’re here to help! Tell us what you’re looking for and we’ll get you connected to the right people.
+            </p>
+          </div>
         </div>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          {/* Input Fields */}
+      </div>
+
+      {/* FORM & LOCATIONS SECTION */}
+      <PageLayout className="grid grid-cols-1 relative z-20 -sm:mt-34 -mt-48 md:mb-32 bg-card md:rounded-2xl rounded-t-2xl shadow-xl md:grid-cols-2 gap-8 py-16">
+        {/* FORM */}
+        <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {contactFields.map(({ name, label, required, type }) => (
               <div key={name} className="grid gap-2">
-                <Label className="uppercase block">
-                  {label} {required && <span className="text-red-500">*</span>}
-                </Label>
+                <Label className="uppercase">{label} {required && <span className="text-red-500">*</span>}</Label>
                 <Input
                   type={type}
                   name={name}
@@ -88,27 +93,25 @@ const ContactUs = () => {
 
           {/* Message */}
           <div className="grid gap-2">
-            <Label className="text-xs uppercase block">
+            <Label className="uppercase">
               How can we help you? <span className="text-red-500">*</span>
             </Label>
             <Textarea
               name="message"
-              rows={6}
+              rows={5}
               value={formData.message}
               onChange={handleChange}
-              className="w-full"
             />
           </div>
 
           {/* Tradeshow */}
           <div className="grid gap-2">
             <Label className="text-sm mb-1 block">
-              Have you seen us at any tradeshow?{" "}
-              <span className="text-red-500">*</span>
+              Have you seen us at any tradeshow? <span className="text-red-500">*</span>
             </Label>
             <div className="flex items-center gap-6">
               {["Yes", "No"].map((option) => (
-                <Label key={option} className="flex items-center gap-1">
+                <Label key={option} className="flex items-center gap-2">
                   <input
                     type="radio"
                     name="tradeshow"
@@ -122,91 +125,71 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <Button className="py-5 px-10" type="submit">
-            SUBMIT
-          </Button>
+          <Button className="px-8 py-4">SUBMIT</Button>
 
           {/* Legal Notes */}
           <TypographyMuted className="text-xs pt-2">
-            <span className="text-red-500">*</span> By requesting a consult you
-            agree to the terms of U Tech's{" "}
-            <a href="#" className="text-blue-600 underline">
-              privacy policy
-            </a>
-            .
+            <span className="text-red-500">*</span> By requesting a consult you agree to the terms of U Tech's{" "}
+            <a href="#" className="text-blue-600 underline">privacy policy</a>.
           </TypographyMuted>
           <TypographyMuted className="text-xs">
             This site is protected by reCAPTCHA and the Google{" "}
-            <a href="#" className="text-blue-600 underline">
-              Privacy Policy
-            </a>{" "}
-            and{" "}
-            <a href="#" className="text-blue-600 underline">
-              Terms of Service
-            </a>{" "}
-            apply.
+            <a href="#" className="text-blue-600 underline">Privacy Policy</a> and{" "}
+            <a href="#" className="text-blue-600 underline">Terms of Service</a> apply.
           </TypographyMuted>
         </form>
-      </div>
 
-      {/* RIGHT INFO */}
-      <div className="md:p-6 space-y-6 text-sm">
-        <div className="space-y-2">
-          <p className="flex items-center gap-2">
-            Mumbai: <span>+91 9270033002</span>
-          </p>
-          <p className="flex items-center gap-2">
-            Pune: <span>+91 9270033002</span>
-          </p>
-          <div className="flex items-center gap-2">
-            <span className="bg-primary text-white px-2 rounded text-xs">
-              SMS
-            </span>
-            +91 9270033002
-          </div>
-          <div className="grid gap-1 pt-2">
-            {emails.map((email) => (
-              <TypographyMuted key={email}>{email}</TypographyMuted>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <TypographyH3>LOCATIONS</TypographyH3>
-
-          <details open className="border-b border-primary py-2">
-            <summary className="font-semibold text-lg text-primary cursor-pointer">
-              Indian Asia Specifics
-            </summary>
-            <div className="pt-2 grid grid-cols-1 ml-8 gap-6">
-              {Locations.map((item, idx) => (
-                <div key={idx} className="space-y-1">
-                  <TypographyH6>{item.title}</TypographyH6>
-                  <TypographyMuted>{item.address}</TypographyMuted>
-                  <p>{item.phone}</p>
-                </div>
+        {/* LOCATIONS */}
+        <div className="space-y-6 text-sm">
+          <div className="space-y-2">
+            <p>Mumbai: +91 9270033002</p>
+            <p>Pune: +91 9270033002</p>
+            <div className="flex gap-2">
+              <span className="bg-primary text-white px-2 rounded text-xs">SMS</span>
+              +91 9270033002
+            </div>
+            <div className="pt-2">
+              {emails.map((email) => (
+                <TypographyMuted key={email}>{email}</TypographyMuted>
               ))}
             </div>
-          </details>
+          </div>
 
-          <details className="border-b border-primary py-2">
-            <summary className="font-semibold text-lg text-primary cursor-pointer">
-              Estan Asia Specifics
-            </summary>
-            <div className="mt-3 space-y-2">
-              <TypographyH6>Singapore</TypographyH6>
-              <div className="flex items-center gap-2">
-                <span className="bg-primary text-white px-2 rounded text-xs">
-                  SMS
-                </span>
-                <TypographyMuted>+91 9270033002</TypographyMuted>
+          <div>
+            <TypographyH3>LOCATIONS</TypographyH3>
+
+            <details open className="border-b border-primary py-2">
+              <summary className="text-lg font-semibold text-primary cursor-pointer">
+                Indian Asia Specifics
+              </summary>
+              <div className="pl-4 pt-2 grid gap-4">
+                {Locations.map((item, idx) => (
+                  <div key={idx}>
+                    <TypographyH6>{item.title}</TypographyH6>
+                    <TypographyMuted>{item.address}</TypographyMuted>
+                    <p>{item.phone}</p>
+                  </div>
+                ))}
               </div>
-            </div>
-          </details>
+            </details>
+
+            <details className="border-b border-primary py-2">
+              <summary className="text-lg font-semibold text-primary cursor-pointer">
+                Estan Asia Specifics
+              </summary>
+              <div className="mt-3 space-y-2 pl-4">
+                <TypographyH6>Singapore</TypographyH6>
+                <div className="flex items-center gap-2">
+                  <span className="bg-primary text-white px-2 rounded text-xs">SMS</span>
+                  <TypographyMuted>+91 9270033002</TypographyMuted>
+                </div>
+              </div>
+            </details>
+          </div>
         </div>
-      </div>
-    </PageLayout>
+      </PageLayout>
+    </section>
   );
 };
 
-export default ContactUs;
+export default ContactPage;

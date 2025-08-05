@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import PageLayout from "@/custom/PageLayout";
 import { Link } from "react-router-dom";
 import { TypographyH1, TypographyMuted } from "@/custom/Typography";
-import BubblesBackground from "@/components/BubblesBackground";
 
 const partners = [
   { name: "Appian", logo: "/assets/partners/appian.svg" },
@@ -40,7 +39,6 @@ export default function OurPartners() {
   return (
     <section className="relative bg-[#061B3A] py-16 text-white overflow-hidden">
       <PageLayout>
-        <BubblesBackground />
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center z-10 relative">
           {/* Left Content */}

@@ -47,7 +47,7 @@ const Payments = () => {
 
       <PageLayout className="text-center space-y-10 py-10">
         <Headline
-          title="Get Chetu’s Custom Payments Software Development"
+          title="Get U Tech’s Custom Payments Software Development"
           description="U Tech is a proud leader in providing high-quality, custom payment software solutions using our payments industry experience combined with our extensive knowledge for leveraging best-in-class programming tools and technologies to enable fast, secure, and seamless payment transactions.."
         />
         <FeaturesGrid
@@ -118,35 +118,37 @@ const Payments = () => {
       </PageLayout>
 
       <section className=" bg-secondary py-12 text-center space-y-10">
-        <Headline
-          title="Mobile Payment Processing Solutions"
-          description="We build and seamlessly integrate personalized mobile payment processing and security solutions for reliable P2P, e-commerce, and credit card processing payment systems.."
-        />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/industries/legal/automation.png"
-              alt="Financial Planning Dashboard"
-              className="w-60 mx-auto hidden sm:block"
-            />
-          </FadeInWhenVisible>
-          <div className="text-start space-y-4">
-            <TypographyH5>Mobile & Online Payment Processing</TypographyH5>
-            <TypographyMuted>
-              We provide native, web, and hybrid payment application solutions
-              for peer-to-peer (P2P) payment exchanges on Android, iOS, and
-              Windows platforms.
-            </TypographyMuted>
-            <FeaturesList
-              features={PaymentTransformationFeatures}
-              fadeUp={fadeUp}
-            />
+        <PageLayout>
+          <Headline
+            title="Mobile Payment Processing Solutions"
+            description="We build and seamlessly integrate personalized mobile payment processing and security solutions for reliable P2P, e-commerce, and credit card processing payment systems.."
+          />
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
+            <FadeInWhenVisible>
+              <img
+                loading="lazy"
+                src="/assets/industries/legal/automation.png"
+                alt="Financial Planning Dashboard"
+                className="w-60 mx-auto hidden sm:block"
+              />
+            </FadeInWhenVisible>
+            <div className="text-start space-y-4">
+              <TypographyH5>Mobile & Online Payment Processing</TypographyH5>
+              <TypographyMuted>
+                We provide native, web, and hybrid payment application solutions
+                for peer-to-peer (P2P) payment exchanges on Android, iOS, and
+                Windows platforms.
+              </TypographyMuted>
+              <FeaturesList
+                features={PaymentTransformationFeatures}
+                fadeUp={fadeUp}
+              />
+            </div>
           </div>
-        </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">Get Mobile Payment Solutions</Button>
-        </FadeInWhenVisible>
+          <FadeInWhenVisible>
+            <Button variant="hover">Get Mobile Payment Solutions</Button>
+          </FadeInWhenVisible>
+        </PageLayout>
       </section>
 
       <PageLayout className="space-y-10 py-12 text-center">

@@ -14,7 +14,6 @@ import { motion } from 'framer-motion';
 import { PhoneCall } from 'lucide-react';
 import HeadingSection from '@/custom/HeadingSection';
 import { readyWithUSstats } from '@/data/LandingData';
-import BubblesBackground from '@/components/BubblesBackground';
 import { gsap } from 'gsap';
 import { Link } from 'react-router-dom'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -143,7 +142,6 @@ export default function WorkWithUs() {
     return (
         <div className="relative bg-secondary py-16 overflow-x-hidden">
             <PageLayout ref={statsRef}>
-                <BubblesBackground />
                 <HeadingSection
                     title="Our"
                     highlight="Impact"

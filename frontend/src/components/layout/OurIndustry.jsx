@@ -4,7 +4,6 @@ import HeadingSection from "@/custom/HeadingSection";
 import { industries } from "@/data/LandingData";
 import { Link } from "react-router-dom";
 import { TypographyH4 } from "@/custom/Typography";
-import BubblesBackground from "@/components/BubblesBackground";
 
 export default function OurIndustry() {
   const directions = [
@@ -15,8 +14,6 @@ export default function OurIndustry() {
 
   return (
     <PageLayout className="relative overflow-x-hidden">
-      {/* Background Bubbles */}
-      <BubblesBackground />
       <HeadingSection
         title="Our"
         highlight="Industry Expertise and Solutions"

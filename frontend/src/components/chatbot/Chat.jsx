@@ -267,29 +267,27 @@ export default function Chat() {
                       {awaitingEmail
                         ? "Please provide your email so we can continue assisting you."
                         : awaitingOTP
-                        ? "Please enter the OTP sent to your email."
-                        : "Welcome! How can we help you today?"}
+                          ? "Please enter the OTP sent to your email."
+                          : "Welcome! How can we help you today?"}
                     </p>
                   </motion.div>
                 ) : (
                   messages.map((message) => (
                     <motion.div
                       key={message.id}
-                      className={`flex items-start space-x-3 ${
-                        message.type === "user"
+                      className={`flex items-start space-x-3 ${message.type === "user"
                           ? "flex-row-reverse space-x-reverse"
                           : ""
-                      }`}
+                        }`}
                       initial="hidden"
                       animate="visible"
                       variants={messageVariants}
                     >
                       <div
-                        className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
-                          message.type === "bot"
+                        className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${message.type === "bot"
                             ? "bg-primary text-white"
                             : "bg-gray-600 text-white"
-                        }`}
+                          }`}
                       >
                         {message.type === "bot" ? (
                           <Bot className="w-4 h-4" />
@@ -298,11 +296,10 @@ export default function Chat() {
                         )}
                       </div>
                       <div
-                        className={`max-w-[75%] px-4 py-2 rounded-lg text-sm ${
-                          message.type === "bot"
+                        className={`max-w-[75%] px-4 py-2 rounded-lg text-sm ${message.type === "bot"
                             ? "bg-gray-100 text-gray-800 shadow-sm border"
                             : "bg-primary text-foreground"
-                        }`}
+                          }`}
                       >
                         <p>{message.text}</p>
                       </div>
@@ -338,8 +335,8 @@ export default function Chat() {
                       awaitingEmail
                         ? "Please enter your email"
                         : awaitingOTP
-                        ? "Please enter the OTP"
-                        : "Enter your response"
+                          ? "Please enter the OTP"
+                          : "Enter your response"
                     }
                     className="flex-1 px-4 py-2 border-2 border-primary placeholder:text-black  rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200 ease-in-out"
                   />
@@ -361,9 +358,9 @@ export default function Chat() {
       {!isOpen && (
         <div
           onClick={toggleChat}
-          className="fixed bottom-10 md:bottom-13 hover:scale-105 hover:shadow-2xl shadow-black rounded-full text-sm bg-primary  p-4 text-white cursor-pointer right-5 z-40 flex items-center gap-2"
+          className="fixed bottom-10 md:bottom-13 hover:scale-105 hover:shadow-2xl shadow-black rounded-full text-sm bg-primary p-4 text-white cursor-pointer right-5 z-40 flex items-center gap-2"
         >
-          <Bot size={32} />
+          <Bot size={26} />
         </div>
       )}
 

@@ -19,7 +19,7 @@ export default function DevOps() {
             <HeroSection
                 backgroundImage="/banner/hero-img-banner-devops.jpg"
                 title="DevOps Consulting Services"
-                description="Chetu’s DevOps consulting services enable seamless collaboration between development and operations teams, expediting project delivery of customized software and elevating QA testing quality throughout the project lifecycle."
+                description="U Tech’s DevOps consulting services enable seamless collaboration between development and operations teams, expediting project delivery of customized software and elevating QA testing quality throughout the project lifecycle."
                 buttonText="GET DEVLOPS SERVICES"
                 buttonLink="#"
                 imageFit="cover"
@@ -28,7 +28,7 @@ export default function DevOps() {
             <PageLayout className='space-y-10 text-center pt-12'>
                 <Headline
                     title='DevOps Consulting Services for End-to-End Solutions'
-                    description='Our software experts offer Cloud DevOps consulting services for careful project assessment and planning strategies, pilot framework creation, seamless process implementation, and CI/CD pipeline to automate processes of creating, testing and deploying new applications. Chetu’s consultants offer individualized end-to-end solutions within FinOps, SecOps, and AiOps, providing versatility and individualized support strategies.'
+                    description='Our software experts offer Cloud DevOps consulting services for careful project assessment and planning strategies, pilot framework creation, seamless process implementation, and CI/CD pipeline to automate processes of creating, testing and deploying new applications. U Tech’s consultants offer individualized end-to-end solutions within FinOps, SecOps, and AiOps, providing versatility and individualized support strategies.'
                 />
 
                 <FeaturesList features={devOpsSolutions} fadeUp={fadeUp} grid />
@@ -56,7 +56,7 @@ export default function DevOps() {
             <section className="bg-secondary py-12">
                 <PageLayout className="text-center space-y-12">
                     <Headline
-                        title='Professional DevOps Services & Solutions by Chetu'
+                        title='Professional DevOps Services & Solutions by U Tech'
                         description='Our DevOps consultants employ best practices, including process automation, streamlining software development, and infrastructure management (AWS, Azure, Google Cloud Platform, etc.) to deliver faster and more reliable software deployment with Containerization and Orchestration approach.'
                     />
 
@@ -111,7 +111,7 @@ export default function DevOps() {
                 <PageLayout className="space-y-10 text-center">
                     <Headline
                         title="Our Consultant's Expertise in DevOps Tools and Implementation"
-                        description="Chetu’s expert consultants utilized strong DevOps practices, harnessing the power of leading DevOps tools & technologies that allow us to automate manual tasks and manage development and DevOps implementation processes effectively."
+                        description="U Tech’s expert consultants utilized strong DevOps practices, harnessing the power of leading DevOps tools & technologies that allow us to automate manual tasks and manage development and DevOps implementation processes effectively."
                     />
 
                     <FeaturesList features={devOpsTools} grid3 />

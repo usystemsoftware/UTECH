@@ -3,7 +3,6 @@ import PageLayout from "@/custom/PageLayout";
 import { FeaturesList } from "@/components/FeaturesList";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
-import CaseStudyCard from "@/components/CaseStudyCard";
 import { Headline, TypographyH3, TypographyMuted } from "@/custom/Typography";
 import {
   mobileAppPlatforms,
@@ -131,19 +130,7 @@ const QualityAssurance = () => {
             description="Elevate your IT efforts to new heights by leveraging our custom QA Testing Solutions designed specifically for your website or application."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 text-left">
-            {supportServices?.map((service, index) => (
-              <CaseStudyCard
-                key={index}
-                index={index}
-                icon={service?.icon}
-                title={service?.title}
-                description={service?.description}
-                year={service?.subtitle}
-                link={service?.link}
-              />
-            ))}
-          </div>
+          <FeaturesList features={supportServices} grid3 />
 
           <FadeInWhenVisible>
             <Button variant="hover">GET WEB SUPPORT ON-DEMAND</Button>

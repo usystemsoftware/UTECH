@@ -14,7 +14,6 @@ import {
 // Features list & cards
 import { FeaturesList } from "@/components/FeaturesList";
 import { Button } from "@/components/ui/button";
-import CaseStudyCard from "@/components/CaseStudyCard";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import FaqSection from "@/custom/FaqSection";
 
@@ -102,18 +101,7 @@ const ApplicationDevelopment = () => {
 
       {/* === APIaaS Feature Cards Section === */}
       <PageLayout className="py-16 text-center space-y-10">
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-left">
-          {AiApiFeatures.map((item, index) => (
-            <CaseStudyCard
-              key={index}
-              index={index}
-              icon={item?.icon}
-              title={item?.title}
-              description={item?.description}
-              link={item?.link}
-            />
-          ))}
-        </div>
+        <FeaturesList features={AiApiFeatures} grid3 />
 
         {/* CTA button */}
         <FadeInWhenVisible>
@@ -161,7 +149,7 @@ const ApplicationDevelopment = () => {
 
       {/* === CUSTOM SERVICE SECTION === */}
       <PageLayout className="py-20 text-center space-y-10">
-        <FeaturesList features={CustomServices} grid />
+        <FeaturesList features={CustomServices} grid3 />
 
         <FadeInWhenVisible>
           <Button variant="hover">Create Your Custom App</Button>

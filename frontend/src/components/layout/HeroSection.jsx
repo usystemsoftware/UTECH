@@ -1,38 +1,44 @@
 import { Phone, Video } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { TypographyLead, TypographySmall } from "@/custom/Typography";
+import {
+  TypographyLead,
+  TypographySmall,
+  TypographyH1,
+} from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
-import { AuroraBackground } from "@/components/ui/aurora-background";
-// import FloatingPhoneRight from "./FloatingPhone";
 
 export const HeroSection = () => {
   return (
-    <AuroraBackground className="min-h-[100vh]">
-      <PageLayout className="relative flex items-center justify-center overflow-hidden pt-20 sm:pt-14">
-        {/* Main Content */}
-        <div className="grid sm:grid-cols-2 items-center">
-          <div className="space-y-8">
+    <div
+      className="relative min-h-[100vh] bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: 'url("/banner/hero.jpg")' }}
+    >
+      {/* Overlay dark gradient */}
+      <div className="absolute inset-0 bg-black/50 z-0" />
+
+      <PageLayout className="relative z-10 flex items-center min-h-[100vh] justify-center pt-20 sm:pt-14">
+        <div className="grid sm:grid-cols-2 items-center gap-10">
+          {/* LEFT TEXT CONTENT */}
+          <div className="space-y-8 text-white">
             <FadeInWhenVisible delay={0.1}>
-              <div className="flex items-center w-full">
-                <TypographySmall className="p-3 bg-gradient-to-r from-orange-600 to-red-600 text-pink-600 bg-clip-text rounded-full text-sm border border-blue-200">
-                  🚀 Digital Engineering & Enterprise Modernization
-                </TypographySmall>
-              </div>
+              <TypographySmall className="sm:p-3 p-2 text-center text-white bg-primary rounded-full text-sm inline-block">
+                🚀 Digital Engineering & Enterprise Modernization
+              </TypographySmall>
             </FadeInWhenVisible>
 
             <FadeInWhenVisible delay={0.2}>
-              <h1 className="text-2xl md:text-4xl font-bold dark:text-white leading-tight">
+              <TypographyH1 className="tracking-tighter text-white">
                 Drive Innovation with a World-Class
-                <span className="block mt-3 bg-gradient-to-r from-orange-600 to-red-600 text-pink-600 bg-clip-text">
+                <span className="block text-primary">
                   Software Development Company
                 </span>
-              </h1>
+              </TypographyH1>
             </FadeInWhenVisible>
 
             <FadeInWhenVisible delay={0.3}>
-              <TypographyLead>
+              <TypographyLead className="text-white">
                 U Tech Systems is a global services and Custom Software
                 Solutions & Support Services for Every Industry and Enterprise
                 Modernization to help enterprises accelerate their Software
@@ -41,28 +47,25 @@ export const HeroSection = () => {
             </FadeInWhenVisible>
 
             <FadeInWhenVisible delay={0.4}>
-              <div className="flex flex-col md:flex-row gap-3 md:gap-6">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact-us">
-                  <Button className="w-full">
-                    Contact US
-                    <Phone />
+                  <Button size="lg" className="w-full sm:w-auto">
+                    Contact Us <Phone />
                   </Button>
                 </Link>
                 <Link to="/book-call">
-                  <Button variant="outline" className="w-full">
-                    Book Call
-                    <Video />
+                  <Button
+                    variant="outline"
+                    className="w-full text-black"
+                  >
+                    Book Call <Video />
                   </Button>
                 </Link>
               </div>
             </FadeInWhenVisible>
           </div>
 
-          {/* Right Side Logo */}
-          {/* <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-            <FloatingPhoneRight />
-          </FadeInWhenVisible> */}
-
+          {/* RIGHT IMAGE / LOGO */}
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <div className="w-full flex justify-center">
               <img
@@ -75,6 +78,6 @@ export const HeroSection = () => {
           </FadeInWhenVisible>
         </div>
       </PageLayout>
-    </AuroraBackground>
+    </div>
   );
 };
