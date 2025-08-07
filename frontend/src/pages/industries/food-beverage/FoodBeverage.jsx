@@ -60,12 +60,12 @@ const FoodBeverage = () => {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
             {/* Left Image */}
-            <FadeInWhenVisible>
+            <FadeInWhenVisible className='hidden sm:block'>
               <img
                 loading="lazy"
                 src="/assets/industries/food-beverage/software.png"
                 alt="Food & Beverage Service Management"
-                className="w-130 mx-auto hidden sm:block"
+                className="w-145 mx-auto"
               />
             </FadeInWhenVisible>
 
@@ -96,12 +96,12 @@ const FoodBeverage = () => {
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           <FeaturesList features={FoodBeverageTransformation} fadeUp={fadeUp} />
-          <FadeInWhenVisible>
+          <FadeInWhenVisible className='hidden sm:block'>
             <img
               loading="lazy"
               src="/assets/industries/food-beverage/systems.png"
               alt="Food & Beverage ERP System"
-              className="w-40 mx-auto hidden sm:block"
+              className="w-52 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
@@ -123,7 +123,7 @@ const FoodBeverage = () => {
                 loading="lazy"
                 src="/assets/industries/food-beverage/management.png"
                 alt="Food & Beverage Quality Management"
-                className="w-110 mx-auto hidden sm:block"
+                className="w-145 mx-auto hidden sm:block"
               />
             </FadeInWhenVisible>
             <FeaturesList features={FoodBeverageFeture} fadeUp={fadeUp} />
@@ -142,12 +142,12 @@ const FoodBeverage = () => {
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           <FeaturesList features={FoodBeverageSoftware} fadeUp={fadeUp} />
-          <FadeInWhenVisible>
+          <FadeInWhenVisible className='hidden sm:block'>
             <img
               loading="lazy"
               src="/assets/industries/food-beverage/distribution.png"
               alt="Food & Beverage Distribution"
-              className="w-110 mx-auto hidden sm:block"
+              className="w-145 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
@@ -164,12 +164,12 @@ const FoodBeverage = () => {
             description="Custom food & beverage inventory management solutions offer detailed SKU..."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-            <FadeInWhenVisible>
+            <FadeInWhenVisible className="hidden sm:block">
               <img
                 loading="lazy"
                 src="/assets/industries/food-beverage/inventory.png"
                 alt="Food & Beverage Inventory Management"
-                className="w-110 mx-auto hidden sm:block"
+                className="w-145 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList features={FoodBeverageInventory} fadeUp={fadeUp} />
@@ -243,12 +243,12 @@ const FoodBeverage = () => {
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           <FeaturesList features={FoodBeverageTraceability} fadeUp={fadeUp} />
-          <FadeInWhenVisible>
+          <FadeInWhenVisible className='hidden sm:block'>
             <img
               loading="lazy"
               src="/assets/industries/food-beverage/development.png"
               alt="Food & Beverage Traceability"
-              className="w-110 mx-auto hidden sm:block"
+              className="w-145 mx-auto"
             />
           </FadeInWhenVisible>
         </div>

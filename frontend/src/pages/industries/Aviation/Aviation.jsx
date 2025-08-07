@@ -171,46 +171,44 @@ export default function Aviation() {
         </FadeInWhenVisible>
       </PageLayout>
 
-      <section className="bg-secondary py-12">
-        <PageLayout className="space-y-8">
-          <Headline
-            title="Custom Maintenance, Repair, & Overhaul (MRO) Solutions"
-            description="U Tech delivers aviation maintenance, repair, and overhaul (MRO) software solutions to aircraft maintenance directors, flight schedulers & dispatchers, inventory parts managers, and more."
-          />
+      <PageLayout className="space-y-8 py-12">
+        <Headline
+          title="Custom Maintenance, Repair, & Overhaul (MRO) Solutions"
+          description="U Tech delivers aviation maintenance, repair, and overhaul (MRO) software solutions to aircraft maintenance directors, flight schedulers & dispatchers, inventory parts managers, and more."
+        />
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
-            <FeaturesList
-              features={aviationMroSolutions.slice(0, 2)}
-              fadeUp={fadeUp}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
+          <FeaturesList
+            features={aviationMroSolutions.slice(0, 2)}
+            fadeUp={fadeUp}
+          />
+          <FadeInWhenVisible>
+            <img
+              src="/assets/industries/aviation/mro-aviation-software-developers.png"
+              alt="Accounting Dashboard"
+              loading="lazy"
+              className="w-64 mx-auto"
             />
-            <FadeInWhenVisible>
-              <img
-                src="/assets/industries/aviation/mro-aviation-software-developers.png"
-                alt="Accounting Dashboard"
-                loading="lazy"
-                className="w-64 mx-auto"
-              />
-            </FadeInWhenVisible>
-            <FeaturesList
-              features={aviationMroSolutions.slice(2, 4)}
-              fadeUp={fadeUp}
-            />
-          </div>
-        </PageLayout>
-      </section>
+          </FadeInWhenVisible>
+          <FeaturesList
+            features={aviationMroSolutions.slice(2, 4)}
+            fadeUp={fadeUp}
+          />
+        </div>
+      </PageLayout>
 
       <PageLayout className="py-12 space-y-12 text-center">
         <Headline
           title="Custom Drone Software Development"
           description="U Tech develops custom drone software for agriculture, construction, cinematography, indoor/outdoor inspections, search-and-rescue, and many other industry sectors."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <FadeInWhenVisible>
             <img
               src="/assets/industries/aviation/custom-drone-software-development.png"
               alt="Accounting Dashboard"
               loading="lazy"
-              className="w-110 mx-auto"
+              className="md:w-110 w-72 mx-auto"
             />
           </FadeInWhenVisible>
           <div className="grid gap-9">

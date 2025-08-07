@@ -29,7 +29,7 @@ export const FeaturesList = ({
   return (
     <div
       className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-        } items-center justify-center`}
+        } items-center justify-center gap-8`}
     >
       <div className={contentClass}>
         {features.map((feature, index) => (
