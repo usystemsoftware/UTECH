@@ -150,7 +150,7 @@ export const TypographyList2 = ({ items, className }) => {
 
   return (
     <ul className={cn(
-      "my-6 ml-6 sm:ml-8 list-disc text-xs sm:text-sm text-gray-800 [&>li]:mt-2",
+      "my-8 list-disc text-xs sm:text-sm text-gray-300 [&>li]:mt-2",
       settings.bigText && 'big-text',
       settings.textSpacing && 'text-spacing',
       settings.dyslexiaFont && 'dyslexia-font',

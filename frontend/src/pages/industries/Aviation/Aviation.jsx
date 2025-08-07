@@ -29,7 +29,6 @@ export default function Aviation() {
         buttonText="GET AIRLINE SOFTWARE DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.2}
       />
 
       <PageLayout className="text-center my-12">
@@ -249,5 +248,5 @@ export default function Aviation() {
         <FaqSection faqs={aviationFaqs} title="FAQ's" />
       </div>
     </>
-  );
+  )
 }

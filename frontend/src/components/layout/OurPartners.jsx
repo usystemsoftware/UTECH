@@ -37,7 +37,7 @@ export default function OurPartners() {
   }, []);
 
   return (
-    <section className="relative bg-[#061B3A] py-16 text-white overflow-hidden">
+    <section className="relative bg-[#213448] py-16 text-white overflow-hidden">
       <PageLayout>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center z-10 relative">
