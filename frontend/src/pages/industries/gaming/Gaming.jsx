@@ -67,7 +67,7 @@ const Gaming = () => (
         fadeUp={fadeUp}
         iconSize={38}
         image="/assets/industries/gaming/services.png"
-        imageClass="w-135"
+        imageClass="w-135 mx-auto"
         grid
       />
       <TypographyMuted>

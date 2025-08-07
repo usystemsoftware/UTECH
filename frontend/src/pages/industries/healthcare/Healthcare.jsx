@@ -309,7 +309,7 @@ export default function Healthcare() {
           description="We build custom telehealth apps to deliver remote health services, education, and training for improved efficiency and quality of care."
         />
 
-        <div className="flex flex-col sm:flex-row justify-baseline gap-8 md:gap-26">
+        <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-6">
           {/* Left Features List */}
           <FeaturesList
             features={hospitalSystemFeatures.slice(0, 2)}

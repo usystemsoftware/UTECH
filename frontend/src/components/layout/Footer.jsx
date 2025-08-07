@@ -68,10 +68,9 @@ export const footerLinks = [
 ];
 
 export const legalNotices = [
-  "U Technology (India) Pvt Ltd CIN: U74999HR2014PTC053454 Registered Office no.02,15, Zeroboyz Chowk, Nehru Nagar, Pune, Pimpri-Chinchwad, Pune, Maharashtra - 411018 Email ID: enquiry@policybazaar.com",
-  "U Technology is registered as a Composite Broker | Registration No. 742, Registration Code No. IRDA/ DB 797/ 19, Valid till 09/06/2027, License category- Composite Broker",
-  "Visitors are hereby informed that their information submitted on the website may be shared with insurers. Product information is authentic and solely based on the information received from the insurers. BEWARE OF SPURIOUS PHONE CALLS AND FICTITIOUS / FRAUDULENT OFFERS",
-  "IRDAI or its officials do not involve in activities like selling insurance policies, announcing bonus or investment of premiums. Public receiving such phone calls are requested to lodge a police complaint.",
+  "U Technology (India) Pvt Ltd CIN: U72900PN2020PTC193410 Registered Office no.02,15, Zeroboyz Chowk, Nehru Nagar, Pune, Pimpri-Chinchwad, Pune, Maharashtra - 411018 Email ID: enquiry@usystem.software",
+  "Visitors are hereby informed that their information submitted on the website may be shared with relevant service providers. Product and service information is accurate based on the latest company data.",
+  "We do not solicit or promote services through unsolicited calls or messages. Any such interactions should be reported to our support team immediately.",
 ];
 
 export const Footer = () => {

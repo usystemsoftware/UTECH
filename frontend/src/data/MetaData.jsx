@@ -9,7 +9,7 @@ export const metaData = {
       description: "Get in touch with our team for inquiries and support.",
       keywords: "contact, support, help, U Tech",
       thumbnail: "thumbnil.png",
-      canonical: `${baseUrl}/`,
+      canonical: `${baseUrl}`,
       breadcrumbs: [
         { label: "/", href: baseUrl },
         { label: "Contact", href: `${baseUrl}/contact` },
