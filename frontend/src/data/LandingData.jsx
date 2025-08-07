@@ -171,7 +171,7 @@ export const services = [
         color: "from-blue-500 to-gray-500",
         features: ["Automated Backups", "Disaster Recovery Planning", "Data Restoration"],
         link: "/services/backup-disaster-recovery",
-        img: "/banner/backup-disaster-recovery-banner.jpg"
+        img: "/banner/application-development-banner.jpg"
     },
     {
         title: "Custom Software Services",
@@ -179,7 +179,7 @@ export const services = [
         color: "from-fuchsia-500 to-purple-600",
         features: ["Custom Platforms", "Workflow Automation", "End-to-End Development"],
         link: "/services/custom-software",
-        img: "/banner/custom-software-banner.jpg"
+        img: "/banner/customservices.jpg"
     },
     {
         title: "FinOps Services",
@@ -187,7 +187,7 @@ export const services = [
         color: "from-amber-600 to-yellow-500",
         features: ["Cloud Cost Optimization", "Budgeting & Forecasting", "Usage Monitoring"],
         link: "/services/finops",
-        img: "/banner/finops-banner.jpg"
+        img: "/banner/finops.jpg"
     },
 ];
 

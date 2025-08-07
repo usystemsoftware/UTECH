@@ -23,13 +23,13 @@ export const FeaturesList = ({
   } else if (grid) {
     contentClass = "grid grid-cols-1 sm:grid-cols-2 gap-6 text-left w-full";
   } else {
-    contentClass = "w-full space-y-10 text-left";
+    contentClass = "w-full space-y-4 text-left";
   }
 
   return (
     <div
       className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-        } items-center justify-center gap-10`}
+        } items-center justify-center`}
     >
       <div className={contentClass}>
         {features.map((feature, index) => (
