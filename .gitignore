@@ -9,7 +9,7 @@ lerna-debug.log*
 
 node_modules
 # dist
-noc-services
+product-lifecycle-management
 dist-ssr
 *.local
 package-lock.json

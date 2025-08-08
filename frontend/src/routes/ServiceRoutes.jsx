@@ -13,7 +13,9 @@ import FinopsServices from "@/pages/services/finops-services/FinopsServices";
 import ImplementationDeployment from "@/pages/services/implementation-deployment/ImplementationDeployment";
 import InfrastructureSupport from "@/pages/services/infrastructure-support/InfrastructureSupport";
 import MigrationsUpgrades from "@/pages/services/migrations-upgrades/MigrationsUpgrades";
-// import NocServices from "../pages/services/noc-services/NocServices";
+import NocServices from "@/pages/services/noc-services/NocServices";
+import PartnerProductSupport from "@/pages/services/partner-product-support/PartnerProductSupport";
+// import ProductLifecycleManagement from "@/pages/services/product-lifecycle-management/ProductLifecycleManagement";
 
 export const ServiceRoutes = [
   { path: "/services/api-development", element: <ApiDevelopment /> },
@@ -31,5 +33,7 @@ export const ServiceRoutes = [
   { path: "/services/implementation-deployment", element: <ImplementationDeployment /> },
   { path: "/services/infrastructure-support", element: <InfrastructureSupport /> },
   { path: "/services/migrations-upgrades", element: <MigrationsUpgrades /> },
-  // { path: "/services/noc", element: <NocServices /> },
+  { path: "/services/noc", element: <NocServices /> },
+  { path: "/services/partner-support", element: <PartnerProductSupport /> },
+  // { path: "/services/plm", element: <ProductLifecycleManagement /> },
 ]
