@@ -207,20 +207,20 @@ export const Headline = ({ title, description, className }) => {
   const { settings } = useAccessibility();
 
   return (
-    <FadeInWhenVisible>
-      <div className={cn(
-        "space-y-4 w-full text-center sm:max-w-2xl md:max-w-4xl lg:max-w-[80%] mx-auto",
-        settings.bigText && 'big-text',
-        settings.textSpacing && 'text-spacing',
-        settings.dyslexiaFont && 'dyslexia-font',
-        settings.lineHeight && 'line-height',
-        settings.textAlign && `text-align-${settings.textAlign}`,
-        className
-      )}>
-        <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tighter">{title}</h1>
-        <p className="text-sm sm:text-base">{description}</p>
-      </div>
-    </FadeInWhenVisible>
+    // <FadeInWhenVisible>
+    <div className={cn(
+      "space-y-4 w-full text-center sm:max-w-2xl md:max-w-4xl lg:max-w-[80%] mx-auto",
+      settings.bigText && 'big-text',
+      settings.textSpacing && 'text-spacing',
+      settings.dyslexiaFont && 'dyslexia-font',
+      settings.lineHeight && 'line-height',
+      settings.textAlign && `text-align-${settings.textAlign}`,
+      className
+    )}>
+      <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tighter">{title}</h1>
+      <p className="text-sm sm:text-base">{description}</p>
+    </div>
+    // </FadeInWhenVisible>
   );
 };
 

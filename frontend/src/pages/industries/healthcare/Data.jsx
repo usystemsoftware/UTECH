@@ -1,95 +1,107 @@
-
+export const features = [
+    { img: "/assets/industries/healthcare/icons/10001.svg", title: "Interoperability using QHIN" },
+    { img: "/assets/industries/healthcare/icons/10002.svg", title: "Voice Assisted EHR" },
+    { img: "/assets/industries/healthcare/icons/10003.svg", title: "Virtual Nursing" },
+    { img: "/assets/industries/healthcare/icons/10004.svg", title: "Social Determinant of Health (SDOH)" },
+    { img: "/assets/industries/healthcare/icons/10005.svg", title: "Bundled Payments" },
+    { img: "/assets/industries/healthcare/icons/10006.svg", title: "Ambient Clinical Documentation" },
+];
 export const healthcareSoftwareFeatures = [
     {
+        label: "AI Consulting",
+        img: "/assets/industries/healthcare/icons/10007.svg",
+    },
+    {
         label: "Veradigm Integration",
-        icon: "ClipboardList",
+        img: "/assets/industries/healthcare/icons/10008.svg",
     },
     {
         label: "Assistive Technology",
-        icon: "Radar",
+        img: "/assets/industries/healthcare/icons/10009.svg",
     },
     {
         label: "DICOM / PACS",
-        icon: "FileImage",
+        img: "/assets/industries/healthcare/icons/10010.svg",
     },
     {
         label: "E-prescribing (eRx)",
-        icon: "Pill",
+        img: "/assets/industries/healthcare/icons/10011.svg",
     },
     {
         label: "Health Information Exchange",
-        icon: "ArrowDownUp",
+        img: "/assets/industries/healthcare/icons/10012.svg",
     },
     {
         label: "HIS & Practice Management System",
-        icon: "History",
+        img: "/assets/industries/healthcare/icons/10020.svg",
     },
     {
         label: "HL7 Interface",
-        icon: "Network", // Using 'Network' as best match
+        img: "/assets/industries/healthcare/icons/10013.svg",
     },
     {
         label: "Laboratory Information",
-        icon: "FlaskConical",
+        img: "/assets/industries/healthcare/icons/10014.svg",
     },
     {
         label: "Mirth Connect",
-        icon: "Smile", // No exact match, Smile is a placeholder
+        img: "/assets/industries/healthcare/icons/10015.svg",
     },
     {
         label: "Pharmacy Management System",
-        icon: "Pill",
+        img: "/assets/industries/healthcare/icons/10016.svg",
     },
     {
         label: "RCM & Medical Billing",
-        icon: "FileDollarSign",
+        img: "/assets/industries/healthcare/icons/10017.svg",
     },
     {
         label: "Telemedicine / Telehealth",
-        icon: "Video",
+        img: "/assets/industries/healthcare/icons/10018.svg",
     },
     {
         label: "Veterinary",
-        icon: "Dog",
+        img: "/assets/industries/healthcare/icons/10019.svg",
     },
 ];
+
 
 export const healthcareAIFeatures = [
     {
         title: "AI-Enabled Remote Monitoring",
         description:
             "Our skilled software developers enable healthcare professionals to monitor patients remotely in real-time, reducing the expenses of patient triage while providing a unique insight into patient health. Our solutions ensure safe delivery of individualized patient care, leveraging innovations like AI-powered Software as a Medical Device (SaMD).",
-        icon: "MonitorSmartphone",
+        img: "/assets/industries/healthcare/icons/10021.svg"
     },
     {
         title: "AI-Powered EHRs",
         description:
             "Electronic Health Record platforms streamline patient documentation. We enhance EHRs for better interoperability, fast access to medical records, and reduced wait times. Features include intelligent data entry, personalized recommendations, and clinical decision support.",
-        icon: "FileHeart",
+        img: "/assets/industries/healthcare/icons/10022.svg"
     },
     {
         title: "Internet of Medical Things (IoMT)",
         description:
             "We offer IoT-based healthcare software that improves efficiency via hospital asset tracking, integrated systems, and real-time data, enhancing patient care and operational decisions.",
-        icon: "Globe",
+        img: "/assets/industries/healthcare/icons/10024.svg"
     },
     {
         title: "Medical AI Chatbots",
         description:
             "Our NLP-powered chatbots enhance patient engagement by automating inquiries, guiding users to departments, and minimizing bottlenecks in service communication—personalizing experiences and reducing service delays.",
-        icon: "Bot",
+        img: "/assets/industries/healthcare/icons/10023.svg"
     },
     {
         title: "Medical Imaging Analysis",
         description:
             "We integrate AI-based predictive analytics to accurately diagnose and analyze medical images, minimizing misdiagnosis and streamlining imaging workflows, thereby reducing hospital labor costs and speeding up screenings.",
-        icon: "ScanEye",
+        img: "/assets/industries/healthcare/icons/10021.svg"
     },
     {
         title: "Medical Device Software and SaMD Development",
         description:
             "We develop Software as a Medical Device (SaMD) tailored for regulated medical apps. Our solutions enhance safety, improve functionality, and ensure robust integration with existing medical systems.",
-        icon: "Cpu",
+        img: "/assets/industries/healthcare/icons/10021.svg"
     },
 ];
 

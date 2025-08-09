@@ -1,11 +1,12 @@
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
+import { FeaturesGridtest } from "@/components/FeaturesGridtest";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import { TypographyH3, Headline, TypographyMuted } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+
 import {
   dicomFeatures,
   digitalHelthSolutions,
@@ -24,7 +25,10 @@ import {
   assistiveTechnologyFeatures,
   veterinarySoftwareFeatures,
   healthcareFAQs,
+  features,
 } from "./Data";
+import VideoPoster from "@/custom/VideoPoster";
+
 
 export default function Healthcare() {
   return (
@@ -38,19 +42,25 @@ export default function Healthcare() {
         imageFit="cover"
       />
 
-      <PageLayout className="py-12">
+      {/* <PageLayout className="py-12"> */}
+      <section className="py-12">
         <Headline
           title="FIND THE RIGHT HEALTHCARE SOFTWARE DEVELOPMENT"
           description="We provide custom healthcare software development services in response to the evolving healthcare industry. Being a custom healthcare software development company, our goal is to improve efficiency and patient care at reduced cost and assist in healthcare management decisions."
         />
-        <FeaturesGrid
-          leftFeatures={healthcareSoftwareFeatures.slice(0, 3)}
-          rightFeatures={healthcareSoftwareFeatures.slice(3, 6)}
+        <FeaturesGridtest
+          leftFeatures={healthcareSoftwareFeatures.slice(0, 7)}
+          rightFeatures={healthcareSoftwareFeatures.slice(7, 14)}
           centerImage="/assets/industries/healthcare/desktop-combo-healthcare.png"
           fadeUp={fadeUp}
           iconSize={38}
         />
-      </PageLayout>
+      </section>
+      {/* </PageLayout> */}
+      <section className="relative w-full overflow-hidden">
+        <VideoPoster features={features} />
+      </section>
+
 
       <section className="bg-secondary py-16">
         <PageLayout className="space-y-16">

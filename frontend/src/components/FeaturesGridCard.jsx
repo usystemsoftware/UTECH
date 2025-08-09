@@ -24,11 +24,14 @@ export const FeaturesGrid = ({
         >
           <span className="flex-shrink-0 sm:hidden block">
             <IconRenderer
-              name={item.icon}
+              name={item?.icon}
               size={iconSize}
               className="text-primary"
             />
           </span>
+          <p className="flex-shrink-0 sm:hidden block">
+            <img src={item?.img} alt="" />
+          </p>
           <TypographyMuted className="leading-none border-b pb-2 border-foreground">
             {item.label}
           </TypographyMuted>
@@ -87,4 +90,4 @@ export const FeaturesGrid = ({
       ))}
     </div>
   </div>
-);
+); 
