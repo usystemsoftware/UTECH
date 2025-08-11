@@ -55,19 +55,19 @@ const InfrastructureSupport = () => {
               loading="lazy"
               src="/assets/services/introstructure-support/introstructuresupport.png"
               alt="Secure Planning Dashboard"
-              className="mx-auto hidden sm:block"
+              className="mx-auto w-145 hidden sm:block"
             />
           </FadeInWhenVisible>
         </div>
 
         {/* === Help Desk Section === */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-          <FadeInWhenVisible>
+          <FadeInWhenVisible className="hidden sm:block">
             <img
               loading="lazy"
               src="/assets/services/introstructure-support/recovery.png"
               alt="Secure Planning Dashboard"
-              className="h-110 md:h-135 mx-auto hidden sm:block"
+              className="h-110 md:h-130 mx-auto"
             />
           </FadeInWhenVisible>
           <div className="space-y-4 md:text-start text-center">
@@ -102,12 +102,12 @@ const InfrastructureSupport = () => {
               </TypographyMuted>
               <FeaturesList features={infrastructureFeatures} fadeUp={fadeUp} />
             </div>
-            <FadeInWhenVisible>
+            <FadeInWhenVisible className='hidden sm:block'>
               <img
                 loading="lazy"
                 src="/assets/services/introstructure-support/secure.png"
                 alt="Secure Planning Dashboard"
-                className=" mx-auto hidden sm:block"
+                className="w-145 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
@@ -209,7 +209,7 @@ const InfrastructureSupport = () => {
       </section>
 
       {/* === FAQ SECTION === */}
-      <div className="mb-8 bg-secondary py-6">
+      <div className="py-10">
         <FaqSection faqs={faqs} title="FAQ's" />
       </div>
     </>

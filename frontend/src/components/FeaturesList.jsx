@@ -10,20 +10,24 @@ export const FeaturesList = ({
   grid = false,
   grid3 = false,
   grid4 = false,
+  center = false,
   image,
   imageClass = "",
   reverse = false,
 }) => {
-  let contentClass = "w-full text-left";
+  // Determine text alignment class
+  const textAlignClass = center ? "text-center" : "text-left";
 
+  // Determine layout class
+  let contentClass;
   if (grid3) {
-    contentClass = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-left w-full";
+    contentClass = `grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ${textAlignClass} w-full`;
   } else if (grid4) {
-    contentClass = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-left w-full";
+    contentClass = `grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 ${textAlignClass} w-full`;
   } else if (grid) {
-    contentClass = "grid grid-cols-1 sm:grid-cols-2 gap-6 text-left w-full";
+    contentClass = `grid grid-cols-1 sm:grid-cols-2 gap-6 ${textAlignClass} w-full`;
   } else {
-    contentClass = "w-full space-y-4 text-left";
+    contentClass = `w-full space-y-4 ${textAlignClass}`;
   }
 
   return (
@@ -33,7 +37,11 @@ export const FeaturesList = ({
     >
       <div className={contentClass}>
         {features.map((feature, index) => (
-          <FadeInWhenVisible key={index} className="flex items-start flex-col gap-2">
+          <FadeInWhenVisible
+            key={index}
+            className={`flex flex-col gap-2 ${center ? "items-center" : "items-start"
+              }`}
+          >
             <span className="flex-shrink-0">
               <IconRenderer
                 name={feature.icon}
@@ -41,7 +49,9 @@ export const FeaturesList = ({
                 className="text-primary"
               />
             </span>
-            <TypographyH5 className="font-extrabold text-base tracking-tight">{feature.title}</TypographyH5>
+            <TypographyH5 className="font-extrabold text-base tracking-tight">
+              {feature.title}
+            </TypographyH5>
             <TypographyMuted>{feature.description}</TypographyMuted>
           </FadeInWhenVisible>
         ))}
