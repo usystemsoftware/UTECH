@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 # dist
+product-lifecycle-management
 dist-ssr
 *.local
 package-lock.json

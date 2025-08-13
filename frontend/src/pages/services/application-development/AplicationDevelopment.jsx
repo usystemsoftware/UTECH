@@ -1,7 +1,5 @@
 import PageLayout from "@/custom/PageLayout";
 import HeroSection from "@/components/HeroSection";
-
-// Typography components
 import {
   Headline,
   TypographyH4,
@@ -59,13 +57,13 @@ const ApplicationDevelopment = () => {
         {/* Cross-platform features and image */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 space-y-12 items-center">
           <div className="space-y-8 md:text-start text-center">
-            <FadeInWhenVisible className="">
+            <div>
               <TypographyH5>{crossPlatformText?.title}</TypographyH5>
               <TypographyMuted>
                 {crossPlatformText?.description}
               </TypographyMuted>
-            </FadeInWhenVisible>
-            <FeaturesList features={mobileAppPlatforms} />
+            </div>
+            <FeaturesList features={mobileAppPlatforms} iconAlign="horizontal" />
           </div>
 
           <FadeInWhenVisible>
@@ -73,7 +71,7 @@ const ApplicationDevelopment = () => {
               loading="lazy"
               src="/assets/services/application-development/developers.png"
               alt="Mobile App Devices"
-              className="w-64 mx-auto"
+              className="md:w-80 w-48 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
@@ -88,27 +86,23 @@ const ApplicationDevelopment = () => {
           />
 
           {/* Features split into 2 columns */}
-          <FeaturesList features={aiApplicationServices} grid />
+          <FeaturesList features={aiApplicationServices} grid3 center />
 
           {/* CTA button */}
-          <FadeInWhenVisible>
-            <Button variant="hover">
-              GET AI-POWERED CUSTOM APP DEVELOPMENT
-            </Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">
+            GET AI-POWERED CUSTOM APP DEVELOPMENT
+          </Button>
         </PageLayout>
       </section>
 
       {/* === APIaaS Feature Cards Section === */}
       <PageLayout className="py-16 text-center space-y-10">
-        <FeaturesList features={AiApiFeatures} grid3 />
+        <FeaturesList features={AiApiFeatures} grid3 center />
 
         {/* CTA button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">
-            GET LOAN MANAGEMENT SOFTWARE SOLUTIONS
-          </Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">
+          GET LOAN MANAGEMENT SOFTWARE SOLUTIONS
+        </Button>
       </PageLayout>
 
       {/* === ENTERPRISE-CLASS DEVELOPMENT SOLUTIONS SECTION === */}
@@ -127,7 +121,7 @@ const ApplicationDevelopment = () => {
                 loading="lazy"
                 src="/assets/services/application-development/solutions.png"
                 alt="Time Clock App"
-                className="w-48 mx-auto"
+                className="md:w-56 w-42 mx-auto"
               />
             </FadeInWhenVisible>
 
@@ -141,7 +135,7 @@ const ApplicationDevelopment = () => {
                   process...
                 </TypographyMuted>
               </FadeInWhenVisible>
-              <FeaturesList features={enterpriseSolutionsData} />
+              <FeaturesList features={enterpriseSolutionsData} iconAlign="horizontal" />
             </div>
           </div>
         </PageLayout>
@@ -149,11 +143,9 @@ const ApplicationDevelopment = () => {
 
       {/* === CUSTOM SERVICE SECTION === */}
       <PageLayout className="py-20 text-center space-y-10">
-        <FeaturesList features={CustomServices} grid3 />
+        <FeaturesList features={CustomServices} grid3 center/>
 
-        <FadeInWhenVisible>
-          <Button variant="hover">Create Your Custom App</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Create Your Custom App</Button>
       </PageLayout>
 
       {/* === COMPLIANCE VIDEO SECTION === */}
@@ -246,9 +238,7 @@ const ApplicationDevelopment = () => {
         </div>
 
         {/* CTA button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">HIRE DEDICATED APP DEVELOPERS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">HIRE DEDICATED APP DEVELOPERS</Button>
       </PageLayout>
 
       {/* === FAQ SECTION === */}

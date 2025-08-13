@@ -1,30 +1,42 @@
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { TypographyMuted, Headline } from "@/custom/Typography";
+import { FeaturesGrid } from "@/components/FeaturesGridCard";
+import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+import { Button } from "@/components/ui/button";
+import { FeaturesList } from "@/components/FeaturesList";
+import FaqSection from "@/custom/FaqSection";
 import {
   gamingSoftwareLeftFeatures,
   gamingSoftwareRightFeatures,
   gamingSolutions,
   gamingLoanServicingfeatures,
   gameEngineLogos,
+  gameFeatures,
+  gamingLoanServicing,
+  gameFeatureslist,
+  gameFeaturestitle,
+  gamingconceptServicing,
+  GammingMobile,
+  gameFantasy,
+  gammingSolutiondeveloper,
+  faqs,
+  gammingSupportApplication,
 } from "./Data";
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
-import { FeaturesList } from "@/components/FeaturesList";
 
 const Gaming = () => (
   <div>
-    {/* ===== HERO SECTION ===== */}
+    {/* === HERO SECTION === */}
     <HeroSection
       backgroundImage="/banner/blockchain-social-media-platform-banner.jpg"
       title="GAME DEVELOPMENT SERVICES"
-      description="Transforming Game Development With AI-Powered Innovation"
-      buttonText="GET API DEVELOPERS"
+      description="Game Development Company: Services That Transform Play"
+      buttonText="HIRE GAME DEVELOPERS"
       buttonLink="HIRE GAME DEVELOPERS"
       imageFit="cover"
     />
 
+    {/* === U Technology’s Game Development Services Section === */}
     <PageLayout className="text-center py-10">
       <Headline
         title="U Technology’s Game Development Services"
@@ -39,25 +51,19 @@ const Gaming = () => (
       />
     </PageLayout>
 
-    <div className="bg-secondary py-12">
-      <PageLayout className="py-8 text-center space-y-8">
+    {/* === Custom PixiJS Development Section === */}
+    <section className="bg-secondary py-16">
+      <PageLayout className="text-center space-y-10">
         <Headline
           title="Custom PixiJS Development"
           description="Are you looking to create impressive PixiJS examples or PixiJS games? At U Technology’s, we leverage the power of PixiJS, the HTML5 creation engine that offers the quickest and most adaptable 2D WebGL renderer."
         />
-
-        <div className="block md:hidden">
-          <FeaturesList features={gamingSolutions} grid />
-        </div>
-        <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <FeaturesList features={gamingSolutions.slice(0, 2)} />
-          <FeaturesList features={gamingSolutions.slice(2, 4)} />
-          <FeaturesList features={gamingSolutions.slice(4, 6)} />
-        </div>
+        <FeaturesList features={gamingSolutions} grid3 />
       </PageLayout>
-    </div>
+    </section>
 
-    <PageLayout className="py-8 text-center space-y-10">
+    {/* === Custom Loan Servicing & Origination Solutions Section === */}
+    <PageLayout className="py-12 text-center space-y-12">
       <Headline
         title="Custom Loan Servicing & Origination Solutions"
         description="U Technology’s custom loan servicing and origination personalized solutions handle underwriting, origination, disbursement, servicing, amortization, processing, and so much more for financial services and institutions."
@@ -83,7 +89,195 @@ const Gaming = () => (
         <Button variant="hover">HIRE VIDEO GAME DEVELOPER</Button>
       </FadeInWhenVisible>
     </PageLayout>
-  </div>
+
+    {/* === Mobile Game Development Services Section === */}
+    <section className="bg-secondary py-16">
+      <PageLayout className="text-center space-y-10">
+        <Headline
+          title="Mobile Game Development Services"
+          description="U Tech’s mobile game software solutions allow you to deliver engaging and highly immersive games to players worldwide, built with cutting-edge technology and monetization solutions."
+        />
+        <FeaturesList features={GammingMobile} fadeUp={fadeUp} grid3 />
+        <FadeInWhenVisible>
+          <Button variant="hover">HIRE MOBILE GAME DEVELOPERS</Button>
+        </FadeInWhenVisible>
+      </PageLayout>
+    </section>
+
+    {/* === AR & VR Development Game Services Section === */}
+    <PageLayout className="py-16 space-y-10 text-center">
+      <Headline
+        title="AR & VR Development Game Services"
+        description="U Tech provides full cycle of AR & VR game solutions and applications, engineering native, web, and hybrid platforms for tablets and other mobile devices."
+      />
+      <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
+        <FadeInWhenVisible className="hidden sm:block">
+          <img
+            loading="lazy"
+            src="/assets/industries/gaming/development.png"
+            alt="Migration Planning Dashboard"
+            className="mx-auto w-120"
+          />
+        </FadeInWhenVisible>
+        <FeaturesList features={gameFeatures} fadeUp={fadeUp} />
+      </div>
+      <FadeInWhenVisible className="py-10">
+        <Button variant="hover">GET AR/VR GAME SOLUTIONS</Button>
+      </FadeInWhenVisible>
+    </PageLayout>
+
+    {/* === iGaming Development Services Section === */}
+    <section className="bg-secondary py-12">
+      <PageLayout className="text-center space-y-10">
+        <Headline
+          title="iGaming Development Services"
+          description="We excel in developing cutting-edge iGaming solutions tailored to your specific needs. Our team of gaming development experts are here to deliver the ultimate AI-powered iGaming solutions with unparalleled functionality or quality, whether you’re looking to launch a new platform or enhance an existing one.."
+        />
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <FeaturesList
+            features={gamingLoanServicing}
+            fadeUp={fadeUp}
+            grid
+          />
+          <FadeInWhenVisible className="hidden md:block">
+            <img
+              loading="lazy"
+              src="/assets/industries/gaming/igaming.png"
+              alt="Migration Planning Dashboard"
+              className="mx-auto w-70"
+            />
+          </FadeInWhenVisible>
+        </div>
+        <FadeInWhenVisible>
+          <Button variant="hover">GET IGAMING SOFTWARE PROVIDER</Button>
+        </FadeInWhenVisible>
+      </PageLayout>
+    </section>
+
+    {/* === Social Gaming Development Services Section === */}
+    <PageLayout className="py-16 space-y-10 text-center">
+      <Headline
+        title="Social Gaming Development Services"
+        description="We specialize in creating engaging and immersive social gaming experiences. Our team of experts is dedicated to creating top-notch custom social gaming solutions that fit your needs. We develop social games of all kinds, from MMORPGs to social network games and online board games, creating new platforms or enhancing existing ones."
+      />
+      <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
+        <FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/gaming/social.png"
+            alt="Migration Planning Dashboard"
+            className="mx-auto"
+          />
+        </FadeInWhenVisible>
+        <FeaturesList features={gameFeatureslist} fadeUp={fadeUp} />
+      </div>
+      <FadeInWhenVisible>
+        <Button variant="hover">GET SOCIAL GAMING SOLUTIONS</Button>
+      </FadeInWhenVisible>
+    </PageLayout>
+
+    {/* === Unreal Engine Game Development Section === */}
+    <section className="bg-secondary py-16">
+      <PageLayout className="space-y-10 text-center">
+        <Headline
+          title="Unreal Engine Game Development"
+          description="U Tech’s Unreal Engine developers create stunning games and immersive cinematic experiences deployed on video game console, mobile, and IoT quality devices."
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
+          <FeaturesList features={gameFeaturestitle} fadeUp={fadeUp} />
+          <FadeInWhenVisible className="hidden sm:block">
+            <img
+              loading="lazy"
+              src="/assets/industries/gaming/animation.png"
+              alt="Migration Planning Dashboard"
+              className="mx-auto w-155"
+            />
+          </FadeInWhenVisible>
+        </div>
+        <FadeInWhenVisible>
+          <Button variant="hover">HIRE UNREAL ENGINE DEVELOPER</Button>
+        </FadeInWhenVisible>
+      </PageLayout>
+    </section>
+
+    {/* === Game Concept Art Software Development Services Section === */}
+    <PageLayout className="py-16 text-center space-y-10">
+      <Headline
+        title="Game Concept Art Software Development Services"
+        description="Our 2D & 3D game artists create original characters, complex storyboards, realistic environments, and creative mock-ups from pixel art to high-rez 2D and 2.5D illustrations."
+      />
+      <FeaturesList
+        features={gamingconceptServicing}
+        fadeUp={fadeUp}
+        iconSize={38}
+        image="/assets/industries/gaming/gameart.png"
+        grid
+        reverse
+      />
+      <FadeInWhenVisible>
+        <Button variant="hover">GET GAMING ART DEVELOPERS</Button>
+      </FadeInWhenVisible>
+    </PageLayout>
+
+    {/* === Fantasy Sports Software Development Section === */}
+    <section className="bg-secondary py-16">
+      <PageLayout className="text-center space-y-10">
+        <Headline
+          title="Fantasy Sports Software Development Services"
+          description="U Tech’s experts add new and updated functionalities to existing fantasy sports software, delivering streamlined solutions that enhance user experience all season long"
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
+          <FeaturesList features={gameFantasy} fadeUp={fadeUp} />
+          <FadeInWhenVisible className="hidden sm:block">
+            <img
+              loading="lazy"
+              src="/assets/industries/gaming/engagement.png"
+              alt="Migration Planning Dashboard"
+              className="mx-auto w-72 md:w-90"
+            />
+          </FadeInWhenVisible>
+        </div>
+        <FadeInWhenVisible>
+          <Button variant="hover">GET FANTASY SPORTS SOFTWARE SOLUTIONS</Button>
+        </FadeInWhenVisible>
+      </PageLayout>
+    </section>
+
+    {/* === AI-Powered Gaming Solutions Section === */}
+    <PageLayout className="py-16 text-center space-y-8">
+      <Headline
+        title="AI-Powered Gaming Solutions"
+        description="With gaming being one of the most lucrative industries in today’s world, Artificial Intelligence (AI) in games has become an increasingly important pillar of game development. Our experts have industry-specific technical experience for cutting-edge AI game development. Artificial Intelligence stands as an innovative tool that can level up the gaming experience."
+      />
+      <FeaturesList features={gammingSolutiondeveloper} fadeUp={fadeUp} grid3 />
+      <FadeInWhenVisible>
+        <Button variant="hover">GET AI IN GAME DEVELOPMENT</Button>
+      </FadeInWhenVisible>
+    </PageLayout>
+
+    {/* === Gaming Application Support Services Section === */}
+    <section className="bg-secondary py-16">
+      <PageLayout className="text-center space-y-8">
+        <Headline
+          title="Gaming Application Support Services"
+          description="Our experts provide comprehensive gaming application support to address the diverse needs of the gaming industry. We provide full support services for proprietary gaming applications and white-label support solutions enhancing gaming development and support teams.."
+        />
+        <FeaturesList
+          features={gammingSupportApplication}
+          fadeUp={fadeUp}
+          grid3
+        />
+        <FadeInWhenVisible>
+          <Button variant="hover">GET GAMING APPS SUPPORT</Button>
+        </FadeInWhenVisible>
+      </PageLayout>
+    </section>
+
+    {/* === FAQ Section === */}
+    <div className="py-6">
+      <FaqSection faqs={faqs} title="FAQ's" />
+    </div>
+  </div >
 );
 
 export default Gaming;

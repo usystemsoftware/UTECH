@@ -28,7 +28,7 @@ const ApplicationMaintenance = () => {
       />
 
       {/* === INTRODUCTION SECTION === */}
-      <PageLayout className="py-16 space-y-10">
+      <PageLayout className="py-16 space-y-10 text-center">
         <Headline
           title="U Technology: Your Comprehensive Solutions Provider"
           description="U Technology brings together the most reliable expertise, processes, technologies, and QA testing specialists to deliver high value-added and agile-aligned QA & software testing solutions that you can trust.."
@@ -38,28 +38,30 @@ const ApplicationMaintenance = () => {
         </TypographyH3>
         {/* === APPLICATION MAINTENANCE FEATURES SECTION === */}
         <div className="block md:hidden">
-          <FeaturesList features={Application} grid />
+          <FeaturesList
+            features={Application}
+            grid
+            center
+          />
         </div>
 
         <div className="md:grid hidden grid-cols-1 md:grid-cols-3 sm:grid-cols-2 mt-8 items-center gap-8 space-y-12">
-          <FeaturesList features={Application.slice(0, 3)} />
+          <FeaturesList features={Application.slice(0, 3)} center />
 
           <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/services/application-maintenanc/experts.jpg"
               alt="Mobile App Devices"
-              className="h-96 mx-auto"
+              className="h-110 mx-auto"
             />
           </FadeInWhenVisible>
 
-          <FeaturesList features={Application.slice(3, 6)} />
+          <FeaturesList features={Application.slice(3, 6)} center />
         </div>
 
         {/* === CTA BUTTON: APP SUPPORT === */}
-        <FadeInWhenVisible className="text-center">
-          <Button variant="hover">EXPERT APP SUPPORT</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">EXPERT APP SUPPORT</Button>
       </PageLayout>
 
       {/* === APPLICATION SUPPORT SERVICES SECTION === */}
@@ -70,12 +72,10 @@ const ApplicationMaintenance = () => {
             description="Applications are long-term investments, and U Technology's Application Support Services encompass technical expertise, software maintenance, extended support, and exceptional customer service, all aimed at keeping your applications running optimally."
           />
 
-          <FeaturesList features={ApplicationSupport} grid3 />
+          <FeaturesList features={ApplicationSupport} grid3 iconAlign="horizontal" />
 
           {/* === CTA BUTTON: SUPPORT === */}
-          <FadeInWhenVisible delay={0.4}>
-            <Button variant="hover">GET APPLICATION SUPPORT</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET APPLICATION SUPPORT</Button>
         </PageLayout>
       </section>
 
@@ -86,12 +86,10 @@ const ApplicationMaintenance = () => {
           description="Revolutionize your applications with our AI-powered solutions. Experience the future of application support services, where innovation meets intelligence for unparalleled performance and user satisfaction."
         />
 
-        <FeaturesList features={IntelligentSolutions} grid />
+        <FeaturesList features={IntelligentSolutions} grid center />
 
         {/* === CTA BUTTON: AI SUPPORT === */}
-        <FadeInWhenVisible>
-          <Button variant="hover">GET AI APP SUPPORT</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET AI APP SUPPORT</Button>
       </PageLayout>
 
       {/* === BLOCK OF HOURS SUPPORT SECTION === */}

@@ -10,6 +10,14 @@ import DataManagement from "@/pages/services/data-management/DataManagement";
 import DevOps from "@/pages/services/devops/DevOps";
 import CustomServices from "@/pages/services/customservices/CustomServices";
 import FinopsServices from "@/pages/services/finops-services/FinopsServices";
+import ImplementationDeployment from "@/pages/services/implementation-deployment/ImplementationDeployment";
+import InfrastructureSupport from "@/pages/services/infrastructure-support/InfrastructureSupport";
+import MigrationsUpgrades from "@/pages/services/migrations-upgrades/MigrationsUpgrades";
+import NocServices from "@/pages/services/noc-services/NocServices";
+import PartnerProductSupport from "@/pages/services/partner-product-support/PartnerProductSupport";
+import StartupMvp from "@/pages/services/startup-mvp/StartupMvp";
+import SystemsIntegration from "@/pages/services/systems-integration/SystemsIntegration";
+// import ProductLifecycleManagement from "@/pages/services/product-lifecycle-management/ProductLifecycleManagement";
 
 export const ServiceRoutes = [
   { path: "/services/api-development", element: <ApiDevelopment /> },
@@ -24,4 +32,12 @@ export const ServiceRoutes = [
   { path: "/services/devops", element: <DevOps /> },
   { path: "/services/custom-software", element: <CustomServices /> },
   { path: "/services/finops", element: <FinopsServices /> },
+  { path: "/services/implementation-deployment", element: <ImplementationDeployment /> },
+  { path: "/services/infrastructure-support", element: <InfrastructureSupport /> },
+  { path: "/services/migrations-upgrades", element: <MigrationsUpgrades /> },
+  { path: "/services/noc", element: <NocServices /> },
+  { path: "/services/partner-support", element: <PartnerProductSupport /> },
+  { path: "/services/startup-mvp", element: <StartupMvp /> },
+  { path: "/services/systems-integration", element: <SystemsIntegration /> },
+  // { path: "/services/plm", element: <ProductLifecycleManagement /> },
 ]

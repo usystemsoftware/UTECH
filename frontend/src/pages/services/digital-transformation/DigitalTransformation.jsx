@@ -46,11 +46,10 @@ const DigitalTransformation = () => {
           features={growthInnovationFeaturesData}
           fadeUp={fadeUp}
           grid
+          iconAlign="horizontal"
         />
 
-        <FadeInWhenVisible>
-          <Button variant="hover">WORK WITH TRASFORAMTION EXPERTS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">WORK WITH TRASFORAMTION EXPERTS</Button>
       </PageLayout>
 
       <section className="py-16 bg-secondary text-center">
@@ -64,29 +63,29 @@ const DigitalTransformation = () => {
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FeaturesList
-              features={digitalTransformationFeatures}
-              fadeUp={fadeUp}
-            />
             <FadeInWhenVisible>
               <img
                 loading="lazy"
                 src="/assets/services/digital-transformation/digital-services.jpg"
                 alt="Financial Planning Dashboard"
-                className="w-110 mx-auto"
+                className="w-130 mx-auto"
               />
             </FadeInWhenVisible>
+            <FeaturesList
+              features={digitalTransformationFeatures}
+              fadeUp={fadeUp}
+              iconAlign="horizontal"
+            />
           </div>
 
           <FeaturesList
             features={services}
             fadeUp={fadeUp}
             grid3
+            center
           />
 
-          <FadeInWhenVisible>
-            <Button variant="hover">GET DIGITAL TRANSFORMATION SERVICES</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET DIGITAL TRANSFORMATION SERVICES</Button>
         </PageLayout>
       </section>
 
@@ -98,12 +97,10 @@ const DigitalTransformation = () => {
           including finance, healthcare, and retail."
         />
 
-        <FeaturesList features={industrySolutions} fadeUp={fadeUp} grid />
+        <FeaturesList features={industrySolutions} fadeUp={fadeUp} grid iconAlign="horizontal" />
 
         {/* Button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">Get Industry DX Solution</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Get Industry DX Solution</Button>
       </PageLayout>
 
       <section className="py-16 bg-secondary">
@@ -124,11 +121,11 @@ const DigitalTransformation = () => {
                 className="w-72 mx-auto"
               />
             </FadeInWhenVisible>
-            <FeaturesList features={facilityHighlights} fadeUp={fadeUp} />
+            <FeaturesList features={facilityHighlights} fadeUp={fadeUp} iconAlign="horizontal" />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FeaturesList features={facilityAssurance} fadeUp={fadeUp} />
+            <FeaturesList features={facilityAssurance} fadeUp={fadeUp} iconAlign="horizontal" />
             <FadeInWhenVisible>
               <img
                 loading="lazy"
@@ -139,9 +136,7 @@ const DigitalTransformation = () => {
             </FadeInWhenVisible>
           </div>
 
-          <FadeInWhenVisible>
-            <Button variant="hover">Hire A Reliable DX Resource</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">Hire A Reliable DX Resource</Button>
         </PageLayout>
       </section>
 
@@ -156,7 +151,8 @@ const DigitalTransformation = () => {
         <FeaturesList
           features={features}
           fadeUp={fadeUp}
-          grid
+          grid4
+          center
         />
 
         <FadeInWhenVisible>
@@ -178,6 +174,7 @@ const DigitalTransformation = () => {
             features={dxFeatures}
             fadeUp={fadeUp}
             grid3
+            center
           />
           <FadeInWhenVisible>
             <Button variant="hover">HIRE A ONE-STOP SHOP</Button>

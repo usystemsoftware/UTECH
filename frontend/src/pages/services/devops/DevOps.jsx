@@ -31,12 +31,10 @@ export default function DevOps() {
                     description='Our software experts offer Cloud DevOps consulting services for careful project assessment and planning strategies, pilot framework creation, seamless process implementation, and CI/CD pipeline to automate processes of creating, testing and deploying new applications. U Tech’s consultants offer individualized end-to-end solutions within FinOps, SecOps, and AiOps, providing versatility and individualized support strategies.'
                 />
 
-                <FeaturesList features={devOpsSolutions} fadeUp={fadeUp} grid />
-                <FadeInWhenVisible>
-                    <Button variant='hover'>
-                        SPEAK TO A DEVOPS CONSULTANT
-                    </Button>
-                </FadeInWhenVisible>
+                <FeaturesList features={devOpsSolutions} fadeUp={fadeUp} grid iconAlign='horizontal' />
+                <Button variant='hover'>
+                    SPEAK TO A DEVOPS CONSULTANT
+                </Button>
 
                 <Headline
                     title='DevOps and Artificial Intelligence'
@@ -61,7 +59,7 @@ export default function DevOps() {
                     />
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-                        <FeaturesList features={devOpsConsultingServices.slice(0, 3)} />
+                        <FeaturesList features={devOpsConsultingServices.slice(0, 3)} iconAlign='horizontal' />
                         <FadeInWhenVisible>
                             <img
                                 loading="lazy"
@@ -81,14 +79,12 @@ export default function DevOps() {
                                 className="w-135 mx-auto"
                             />
                         </FadeInWhenVisible>
-                        <FeaturesList features={devOpsConsultingServices.slice(3, 6)} />
+                        <FeaturesList features={devOpsConsultingServices.slice(3, 6)} iconAlign='horizontal' />
                     </div>
 
-                    <FadeInWhenVisible>
-                        <Button variant='hover'>
-                            HIRE EXPERT DEVOPS DEVELOPERS
-                        </Button>
-                    </FadeInWhenVisible>
+                    <Button variant='hover'>
+                        HIRE EXPERT DEVOPS DEVELOPERS
+                    </Button>
                 </PageLayout>
             </section>
 
@@ -98,13 +94,11 @@ export default function DevOps() {
                     description='We understand the unique challenges each business faces, which is why we create and implement individualized strategies to transcend challenges and exceed project goals, delivering customized software solutions stringently adhering to DevOps processes and exceeding client expectations.'
                 />
 
-                <FeaturesList features={devOpsChallengesSolutions} grid />
+                <FeaturesList features={devOpsChallengesSolutions} grid iconAlign='horizontal' />
 
-                <FadeInWhenVisible>
-                    <Button variant='hover'>
-                        LET'S SOLVED YOUR DEVOPS CHALLENGES
-                    </Button>
-                </FadeInWhenVisible>
+                <Button variant='hover'>
+                    LET'S SOLVED YOUR DEVOPS CHALLENGES
+                </Button>
             </PageLayout>
 
             <section className="bg-secondary py-10">

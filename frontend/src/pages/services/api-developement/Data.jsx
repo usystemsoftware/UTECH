@@ -1,24 +1,24 @@
 export const features = [
     {
-        icon: "Brain",
+        icon: "/assets/services/api-development/icons/10001.svg",
         title: "Custom Artificial Intelligence API Solutions",
         description:
             "Our developers integrate artificial intelligence software using machine learning algorithms, natural language processing, computer vision, and other AI techniques to build web APIs that can be used for various applications, such as customer service chatbots, fraud detection, recommendation engines, and predictive analytics."
     },
     {
-        icon: "Puzzle",
+        icon: "/assets/services/api-development/icons/10002.svg",
         title: "Custom API Interface Integrations",
         description:
             "We specialize in building custom REST APIs to enhance your current off-the-shelf solution or integrate third-party public APIs that enables your software solution to seamlessly interface with other apps, devices, and business systems."
     },
     {
-        icon: "Code2",
+        icon: "/assets/services/api-development/icons/10003.svg",
         title: "Custom API Implementations",
         description:
             "We implement internal and external API documentation solutions that preemptively solve code issues regarding server communications, content creation & management, data sharing, business logic, and microservices."
     },
     {
-        icon: "CheckCheck",
+        icon: "/assets/services/api-development/icons/10004.svg",
         title: "Automated API Testing",
         description: (
             <>Our engineers and <span className="text-primary">quality assurance (QA) specialists</span> use automated unit testing, functional testing,
@@ -26,7 +26,7 @@ export const features = [
         )
     },
     {
-        icon: "Cog",
+        icon: "/assets/services/api-development/icons/10005.svg",
         title: "Custom API Application Solutions",
         description:
             "APIs are widely used in web applications, and there are four main types of APIs: public, partner, private, and composite. Our mobile, desktop, and cloud-build API application solutions incorporate developing service-oriented architectures (SOA), browsers, web sockets, operating systems, firmware/hardware, database resources, and more."
@@ -35,37 +35,37 @@ export const features = [
 
 export const AiApiFeatures = [
     {
-        icon: "Brain",
+        icon: "/assets/services/api-development/icons/10006.svg",
         title: "Deep Learning API",
         description:
             "Our engineers can make your applications smarter utilizing Machine Learning APIs, allowing you to automate services, reduce errors, and improve customer experience. Neural networks support classification, regression, forecasting, and more."
     },
     {
-        icon: "MonitorPlay",
+        icon: "/assets/services/api-development/icons/10007.svg",
         title: "Computer Vision API",
         description:
             "We build computer vision APIs to access and interpret images, videos, and other visual data. Our algorithms detect objects, faces, and differentiate shapes/colors from visual inputs."
     },
     {
-        icon: "Notebook",
+        icon: "/assets/services/api-development/icons/10008.svg",
         title: "Predictive Analytics API",
         description:
             "We create predictive analytics APIs using decision trees, neural networks, and regressions to help forecast trends and make data-driven decisions."
     },
     {
-        icon: "Speech",
+        icon: "/assets/services/api-development/icons/10009.svg",
         title: "Speech Recognition",
         description:
             "We implement AI-powered speech recognition APIs using NLP to detect words, analyze audio signals, and convert them into structured text output."
     },
     {
-        icon: "MessageCircle",
+        icon: "/assets/services/api-development/icons/10010.svg",
         title: "Chatbot API",
         description:
             "Using NLP and machine learning, our chatbot APIs power virtual agents that assist with booking, support, lead generation, and more."
     },
     {
-        icon: "ShieldCheck",
+        icon: "/assets/services/api-development/icons/10011.svg",
         title: "Fraud Detection",
         description:
             "We build APIs that detect anomalies and flag fraudulent behavior using AI-based predictive models and advanced machine learning techniques."
@@ -74,25 +74,25 @@ export const AiApiFeatures = [
 
 export const services = [
     {
-        icon: "Globe",
+        icon: "/assets/services/api-development/icons/10012.svg",
         title: "Third-Party API Integrations",
         description:
             "We harness the power of Microsoft platforms like Azure, Jitterbit, Dell Boomi, Anypoint, and Funnel to enhance web functionality and integrate systems with REST APIs and documentation."
     },
     {
-        icon: "ServerCog",
+        icon: "/assets/services/api-development/icons/10013.svg",
         title: "API Maintenance & Support",
         description:
             "We offer API maintenance solutions to ensure smooth operations with features like encryption, single sign-on, dashboard controls, and RBAC modules."
     },
     {
-        icon: "Cloud",
+        icon: "/assets/services/api-development/icons/10014.svg",
         title: "Cloud Application Programming Interface Solutions",
         description:
             "We build secure cloud APIs using SaaS, IaaS, PaaS, and APIaaS models to enable seamless platform and device access for users."
     },
     {
-        icon: "GitBranch",
+        icon: "/assets/services/api-development/icons/10015.svg",
         title: "Microservices Consulting",
         description:
             "We break down monolithic apps into microservices that operate independently, making them more scalable and easier to maintain."
@@ -101,25 +101,25 @@ export const services = [
 
 export const support = [
     {
-        icon: "CloudCog",
+        icon: "/assets/services/api-development/icons/10016.svg",
         title: "REST API Assistance",
         description:
             "U Tech leverages this fast and versatile resource to seamlessly enable XML, JSON, and HTML formatting, creating responsive performance on all IoT platforms and custom mobile app development projects. U Tech’s REST experts provide prompt assistance and troubleshooting for all your REST-powered API projects."
     },
     {
-        icon: "Cog",
+        icon: "/assets/services/api-development/icons/10017.svg",
         title: "SOAP API Guidance",
         description:
             "Our support services team offers expert troubleshooting and prompt resolution of all WSDL and XML-based issues. U Tech strives to provide reliable and secure communication between distributed systems, efficiently performing all SOAP-powered resources."
     },
     {
-        icon: "FileCode2",
+        icon: "/assets/services/api-development/icons/10018.svg",
         title: "XML API Support System",
         description:
             "U Tech creates a robust XML support system to provide expertise with accurate data validation, prompt schema error corrections, and efficient data exchange within all applications and systems. Our dedicated support services team is available to proactively monitor all XML API performance, ensuring consistency and accuracy."
     },
     {
-        icon: "Projector",
+        icon: "/assets/services/api-development/icons/10019.svg",
         title: "RPC API Implementation",
         description:
             "U Tech’s expertise and support are readily available to businesses working in remote environments. We optimize network communication for all remote and hybrid business structures and promptly resolve issues related to serialization and deserialization of RPC payloads."

@@ -1,21 +1,21 @@
 export const webDevCardData = [
     {
-        icon: "Laptop",
+        icon: "/assets/solutions/ui-ux/icons/1.svg",
         title: "Custom Web Application Development Services",
         description: "Our team has experience developing a wide range of web applications, from simple web apps to complex enterprise solutions. We can customize your existing applications for ERP, E-Commerce, Interactive Gaming, Online Training & Courses, CRM, and so much more.",
     },
     {
-        icon: "Monitor",
+        icon: "/assets/solutions/ui-ux/icons/10.svg",
         title: "Content Management Systems",
         description: "We help you integrate CMS capabilities or develop custom CMS systems. Our CMS solutions are user-friendly, reliable, and flexible—allowing you to update content without rewriting code.",
     },
     {
-        icon: "Settings",
+        icon: "/assets/solutions/ui-ux/icons/12.svg",
         title: "No Cookie-Cutter Solutions",
         description: "Our expert development teams build, integrate, and customize using the right tools and frameworks to match your business goals—never one-size-fits-all.",
     },
     {
-        icon: "Code2",
+        icon: "/assets/solutions/ui-ux/icons/16.svg",
         title: "Diverse Coding Experience",
         description: "From database design to full-stack web development, our team has experience across platforms to build efficient and scalable applications.",
     },
@@ -23,22 +23,22 @@ export const webDevCardData = [
 
 export const aiDevCardData = [
     {
-        icon: "DollarSign",
+        icon: "/assets/solutions/web-development/icons/3.svg",
         title: "Conversational Interfaces to Enhance UX",
         description: `We can implement AI algorithms to analyze user behavior and preferences to provide personalized content and recommendations. We drive conversational interfaces with chatbots and virtual assistants that leverage natural language processing to offer real-time assistance and enhance user interaction.`,
     },
     {
-        icon: "CheckCheck",
+        icon: "/assets/solutions/web-development/icons/7.svg",
         title: "AI-Generated Content Creation and Optimization",
         description: `We develop AI algorithms to streamline content creation by automatically generating articles, product descriptions, and image captions. AI optimizes content, product recommendations, and website interfaces by analyzing user behavior and demographics.`,
     },
     {
-        icon: "Bell",
+        icon: "/assets/solutions/web-development/icons/4.svg",
         title: "Development Process AI Automation",
         description: `Our AI-powered testing tools automate testing web applications, efficiently identifying bugs and security vulnerabilities. Our AI developers use TensorFlow/PyTorch development frameworks to build and deploy Machine Learning models for various web applications. We can integrate RPA bots into web workflows to streamline repetitive tasks and automate processes, improving efficiency.`,
     },
     {
-        icon: "Wallet",
+        icon: "/assets/solutions/web-development/icons/5.svg",
         title: "AI-Driven Insights and Analytics",
         description: `We implement AI algorithms that analyze data to identify patterns and trends, enabling informed decision-making and personalized marketing. AI operations streamline the deployment and management of Machine Learning and Artificial Intelligence Operations (MLOps/ALOps), ensuring reliability and scalability.`,
     },
@@ -46,85 +46,85 @@ export const aiDevCardData = [
 
 export const webDevelopmentServices = [
     {
-        icon: "Settings",
+        icon: "/assets/solutions/web-development/icons/6.svg",
         title: "Web App Integration Services",
-        description: "We always stay on top of the latest developments and leverage them to provide our clients with reliable Web App Integration Services.",
+        description: "We always stay on top of the latest developments in deployment, customization, and integration to design the perfect, seamless approach to how you utilize your software.",
     },
     {
-        icon: "MessagesSquare",
+        icon: "/assets/solutions/web-development/icons/9.svg",
         title: "Mobile App Development Services",
-        description: "With years of expertise under our belt, we create cross-platform mobile applications that are robust, scalable, and intuitive.",
+        description: "With years of expertise under our belt, our team specializing in custom mobile app development can assist you in creating seamless and fluid experiences across various mobile devices.",
     },
     {
-        icon: "Scale",
+        icon: "/assets/solutions/web-development/icons/4.svg",
         title: "Enterprise Web Design and Development",
-        description: "We use custom APIs and our vast knowledge of the latest web technologies to create robust, scalable, and high-performing enterprise websites.",
+        description: "We use custom APIs and our vast knowledge of web services to build Enterprise Web Applications for digital marketing, CRM, inventory control, expedited workflows, and so much more.",
     },
     {
-        icon: "LineChart",
+        icon: "/assets/solutions/web-development/icons/8.svg",
         title: "Full-Stack Web Development Solutions",
-        description: "Our expert Full-Stack website developers have the knowledge and experience to handle both front-end and back-end development efficiently.",
+        description: "Our expert Full-Stack website developers are highly skilled in Java and SQL programming languages with experience in leading 12-factor applications and cloud platform implementation.",
     },
     {
-        icon: "Search",
+        icon: "/assets/solutions/web-development/icons/10.svg",
         title: "Web Portal Development",
-        description: "Our Web Portal Developers have both the experience and the know-how to create custom web portals that meet your unique needs.",
+        description: "Our Web Portal Developers have both engineering expertise and a keen understanding of the business sector to create reliable and robust web solutions that help companies manage their workflows.",
     },
     {
-        icon: "CheckCircle",
+        icon: "/assets/solutions/web-development/icons/1.svg",
         title: "Animation & Graphics Web Design",
-        description: "Our award-winning animators and designers add a unique touch to your website, making it visually engaging and interactive.",
+        description: "Our award-winning animators and graphic designers create beautiful logos, branding materials, illustrations, infographics, motion graphics, and more to fulfill your branding vision.",
     },
     {
-        icon: "CheckCircle",
+        icon: "/assets/solutions/web-development/icons/2.svg",
         title: "Ecommerce Development Solutions",
-        description: "Our Ecommerce development services help you drive more traffic and boost sales through seamless and secure online shopping experiences.",
+        description: "Our Ecommerce development services can help you build an online store that drives sales and revenue. We have experience with various e-commerce platforms, including Magento, Shopify, and BigCommerce and we can help you choose the best for your business.",
     },
     {
-        icon: "CheckCircle",
+        icon: "/assets/solutions/web-development/icons/3.svg",
         title: "Web Integration Services",
-        description: "Comprehensive integration for seamless data flow and optimized system performance.",
+        description: "Our team of experienced web developers provides comprehensive web integration services, ensuring your software operates seamlessly across all platforms and devices for optimal performance and user experience.",
     },
     {
-        icon: "CheckCircle",
+        icon: "/assets/solutions/web-development/icons/4.svg",
         title: "CMS Integration",
-        description: "Add/edit web content easily without rewriting code or calling developers.",
+        description: "We integrate CMS capabilities into your existing website or application, enabling you to add and edit web content without needing to rewrite or update any code.",
     },
 ];
 
 export const supportServices = [
     {
-        icon: "Settings",
+        icon: "/assets/solutions/web-development/icons/5.svg",
         title: "Front-end Development Support",
         subtitle: "with AI-Powered Financial Services",
         description: "A crucial part of modern web and app development, our front-end development focuses on the user-facing aspects of a website or application. Our front-end programming facilitates all front-of-house operations, such as UI/UX support and client software support.",
     },
     {
-        icon: "Code2",
+        icon: "/assets/solutions/web-development/icons/6.svg",
         title: "Backend Development Support",
         subtitle: "Engagement with Chatbots",
         description: "On the flipside of front-end support, our development support services include server software support, backend programming, and framework implementation to ensure robust and scalable server-side software. We specialize in backend support, including backend API services, to optimize your applications and enhance performance and functionality.",
     },
     {
-        icon: "Link2",
+        icon: "/assets/solutions/web-development/icons/7.svg",
         title: "APIs Integration and Support",
         subtitle: "Responsibility and Innovation",
         description: "Our API development is meticulously programmed to facilitate seamless application communication and data transfer. Our API integration and API for front-end development ensure synergized connections through customized tools, protocols, and rules, demonstrating our deep technical understanding.",
     },
     {
-        icon: "GitBranch",
+        icon: "/assets/solutions/web-development/icons/8.svg",
         title: "Version Control with Git Repositories",
         subtitle: "with AI-Driven Investment",
         description: "At U Technology, our front-end design & development support services thrive from understanding the significance of fostering clear and organized workflows. Our team of developers will leverage their expertise within version control, specifically with the task of managing Git repositories.",
     },
     {
-        icon: "Bug",
+        icon: "/assets/solutions/web-development/icons/9.svg",
         title: "QA and Testing",
         subtitle: "Complexity of Financial Decision",
         description: "Our teams are dedicated to the in-depth development and QA of your needed solution, carrying an attentive eye to the evaluations of every feature and functionality to ensure that if issues are present, they can be resolved promptly.",
     },
     {
-        icon: "FileWarning",
+        icon: "/assets/solutions/web-development/icons/10.svg",
         title: "Debugging Javascript Code Errors",
         subtitle: "Efficiency and Compliance",
         description: "Our skills in debugging are the key to navigating the continuously evolving field of web development, especially when dealing with Javascript code errors. Our teams use browser-specific tools, Integrated Development Environments, and other error monitoring and logging tools such as Sentry and Rollbar.",

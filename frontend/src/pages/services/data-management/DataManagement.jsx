@@ -41,36 +41,30 @@ export default function DataManagement() {
                 {/* Desktop Grid with Center Images */}
                 <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-8">
                     {/* Left Features */}
-                    <FeaturesList features={dataManagementSolutions.slice(0, 4)} fadeUp={fadeUp} />
+                    <FeaturesList features={dataManagementSolutions.slice(0, 4)} fadeUp={fadeUp} center />
 
                     {/* Center Images */}
                     <div className="grid gap-8">
-                        <FadeInWhenVisible>
-                            <img
-                                loading="lazy"
-                                src="/assets/services/data-management/data-management-solutions-mobile.png"
-                                alt="Mobile Analytics App"
-                                className="w-56 mx-auto"
-                            />
-                        </FadeInWhenVisible>
-                        <FadeInWhenVisible>
-                            <img
-                                loading="lazy"
-                                src="/assets/services/data-management/data-management-solutions-tablet.png"
-                                alt="Tablet Analytics App"
-                                className="w-135 mx-auto"
-                            />
-                        </FadeInWhenVisible>
+                        <img
+                            loading="lazy"
+                            src="/assets/services/data-management/data-management-solutions-mobile.png"
+                            alt="Mobile Analytics App"
+                            className="w-56 mx-auto"
+                        />
+                        <img
+                            loading="lazy"
+                            src="/assets/services/data-management/data-management-solutions-tablet.png"
+                            alt="Tablet Analytics App"
+                            className="w-135 mx-auto"
+                        />
                     </div>
 
                     {/* Right Features */}
-                    <FeaturesList features={dataManagementSolutions.slice(4, 8)} fadeUp={fadeUp} />
+                    <FeaturesList features={dataManagementSolutions.slice(4, 8)} fadeUp={fadeUp} center />
                 </div>
 
                 {/* CTA */}
-                <FadeInWhenVisible>
-                    <Button variant="hover">GET DATA MANAGEMENT SERVICES</Button>
-                </FadeInWhenVisible>
+                <Button variant="hover">GET DATA MANAGEMENT SERVICES</Button>
             </PageLayout>
 
             {/* DATA LAKE MANAGED SERVICES SECTION */}
@@ -81,7 +75,7 @@ export default function DataManagement() {
                         description="U Tech provides comprehensive data lake support services that help businesses maintain their data lakes and optimize them for performance, scalability, and compliance. Our data lake professionals ensure seamless operations while providing the robust data flow and infrastructure that empowers real-time analytics and high-value insights."
                     />
                     <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-                        <FeaturesList features={dataLakeServices} />
+                        <FeaturesList features={dataLakeServices} iconAlign="horizontal" />
                         <FadeInWhenVisible>
                             <img
                                 loading="lazy"
@@ -93,9 +87,7 @@ export default function DataManagement() {
                     </div>
 
                     {/* CTA */}
-                    <FadeInWhenVisible>
-                        <Button variant="hover">GET DATA LAKE MANAGED SERVICES</Button>
-                    </FadeInWhenVisible>
+                    <Button variant="hover">GET DATA LAKE MANAGED SERVICES</Button>
                 </PageLayout>
             </section>
 
@@ -114,13 +106,11 @@ export default function DataManagement() {
                             className="w-135 mx-auto"
                         />
                     </FadeInWhenVisible>
-                    <FeaturesList features={dataLakeSolutions} />
+                    <FeaturesList features={dataLakeSolutions} iconAlign="horizontal" />
                 </div>
 
                 {/* CTA */}
-                <FadeInWhenVisible>
-                    <Button variant="hover">HIRE DATA LAKE EXPERTS</Button>
-                </FadeInWhenVisible>
+                <Button variant="hover">HIRE DATA LAKE EXPERTS</Button>
             </PageLayout>
 
             {/* VALUE PROPOSITION SECTION */}
@@ -130,12 +120,10 @@ export default function DataManagement() {
                         title="Why Choose U Tech"
                         description="Unmatched Expertise & Innovation Our experts bring decades of experience in data architecture, integration, and governance. Our scalable solutions deliver innovation that keeps your enterprise ahead."
                     />
-                    <FeaturesList features={dataValueProps} grid />
+                    <FeaturesList features={dataValueProps} grid iconAlign="horizontal" />
 
                     {/* CTA */}
-                    <FadeInWhenVisible>
-                        <Button variant="hover">CUNSULT A DATA MANAGEMENT EXPERTS</Button>
-                    </FadeInWhenVisible>
+                    <Button variant="hover">CUNSULT A DATA MANAGEMENT EXPERTS</Button>
                 </PageLayout>
             </section>
 

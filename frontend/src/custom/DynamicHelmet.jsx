@@ -1,15 +1,15 @@
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
-import { metaData } from "@/data/metaData";
 import { useEffect, useState } from "react";
+import { metaData } from "@/data/metaData";
 
-// Define base URLs
+// Detect if local
 const isLocal =
   typeof window !== "undefined" && window.location.hostname === "localhost";
+
+// Define base URL and image URL
 const baseUrl = isLocal ? "http://localhost:5173" : "https://usystem.software";
-const baseImageUrl = isLocal
-  ? "http://localhost:5173"
-  : "https://usystem.software";
+const baseImageUrl = baseUrl;
 
 const DynamicHelmet = () => {
   const location = useLocation();
@@ -17,7 +17,7 @@ const DynamicHelmet = () => {
 
   useEffect(() => {
     const findMetaData = () => {
-      // Combine all categories for searching
+      // Combine all metadata groups
       const allMetaData = [
         ...metaData.industries,
         ...metaData.services,
@@ -25,22 +25,22 @@ const DynamicHelmet = () => {
         ...metaData.company,
       ];
 
-      // Current full URL
+      // Full current URL
       const currentUrl = `${baseUrl}${location.pathname}`;
 
-      // Find exact match first
+      // Find exact match
       const exactMatch = allMetaData.find(
         (item) => item.canonical === currentUrl
       );
       if (exactMatch) return exactMatch;
 
-      // Find partial match if no exact match found
+      // Find partial match
       const partialMatch = allMetaData.find((item) =>
         currentUrl.startsWith(item.canonical)
       );
       if (partialMatch) return partialMatch;
 
-      // Default metadata if no match found
+      // Default metadata fallback
       return {
         title: "U Tech - Innovative Technology Solutions",
         description:
@@ -63,39 +63,25 @@ const DynamicHelmet = () => {
 
   if (!currentMeta) return null;
 
-  console.log(currentMeta)
+  // Clean thumbnail path to avoid double slashes
+  const cleanThumbnailPath = currentMeta.thumbnail.replace(/^\/+/, "");
+  const fullImageUrl = `${baseImageUrl}/${cleanThumbnailPath}`;
 
   return (
     <Helmet>
-      {/* Add key attributes to force updates on route change */}
+      {/* Basic Meta */}
       <title key="title">{currentMeta.title}</title>
       <meta
         key="description"
         name="description"
         content={currentMeta.description}
       />
-      <meta
-        key="keywords"
-        name="keywords"
-        content={currentMeta.keywords}
-      />
-      <link
-        key="canonical"
-        rel="canonical"
-        href={currentMeta.canonical}
-      />
+      <meta key="keywords" name="keywords" content={currentMeta.keywords} />
+      <link key="canonical" rel="canonical" href={currentMeta.canonical} />
 
       {/* Open Graph / Facebook */}
-      <meta
-        key="og:type"
-        property="og:type"
-        content="website"
-      />
-      <meta
-        key="og:url"
-        property="og:url"
-        content={currentMeta.canonical}
-      />
+      <meta key="og:type" property="og:type" content="website" />
+      <meta key="og:url" property="og:url" content={currentMeta.canonical} />
       <meta
         key="og:title"
         property="og:title"
@@ -106,31 +92,13 @@ const DynamicHelmet = () => {
         property="og:description"
         content={currentMeta.description}
       />
-      <meta
-        key="og:image"
-        property="og:image"
-        content={`https://usystem.software/${currentMeta.thumbnail}`}
-      />
-      <meta
-        property="og:image:width"
-        content="1200"
-      />
-      <meta
-        property="og:image:height"
-        content="630"
-      />
+      <meta key="og:image" property="og:image" content={fullImageUrl} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
 
       {/* Twitter */}
-      <meta
-        key="twitter:card"
-        name="twitter:card"
-        content="summary_large_image"
-      />
-      <meta
-        key="twitter:url"
-        name="twitter:url"
-        content={currentMeta.canonical}
-      />
+      <meta key="twitter:card" name="twitter:card" content="summary_large_image" />
+      <meta key="twitter:url" name="twitter:url" content={currentMeta.canonical} />
       <meta
         key="twitter:title"
         name="twitter:title"
@@ -141,11 +109,7 @@ const DynamicHelmet = () => {
         name="twitter:description"
         content={currentMeta.description}
       />
-      <meta
-        key="twitter:image"
-        name="twitter:image"
-        content={`https://usystem.software/${currentMeta.thumbnail}`}
-      />
+      <meta key="twitter:image" name="twitter:image" content={fullImageUrl} />
     </Helmet>
   );
 };

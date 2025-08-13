@@ -32,21 +32,10 @@ const DigitalMarketing = () => {
           description="Whether you require digital marketing software developers-for-hire to augment your existing in-house development team, or a newly developed digital marketing software solution to help your business drive more revenue, U Technology’s got you covered."
         />
 
-        <div className="block md:hidden">
-          <FeaturesList features={DriveMore} fadeUp={fadeUp} grid />
-        </div>
-
-        {/* === Features Grid: DriveMore Items === */}
-        <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <FeaturesList features={DriveMore.slice(0, 2)} />
-          <FeaturesList features={DriveMore.slice(2, 4)} />
-          <FeaturesList features={DriveMore.slice(4, 6)} />
-        </div>
+        <FeaturesList features={DriveMore} fadeUp={fadeUp} grid3 center />
 
         {/* === CTA Button: Marketing Experts === */}
-        <FadeInWhenVisible>
-          <Button variant="hover">SPEAK TO MARKETING EXPERTS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">SPEAK TO MARKETING EXPERTS</Button>
       </PageLayout>
 
       {/* === CUSTOM DIGITAL MARKETING SOFTWARE SECTION === */}
@@ -58,7 +47,7 @@ const DigitalMarketing = () => {
           />
 
           {/* === Features + Image Grid: CustomDigitalMarketing === */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 space-y-12 items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 space-y-12 items-center">
             {/* Left: Image */}
             <FadeInWhenVisible>
               <img
@@ -70,7 +59,7 @@ const DigitalMarketing = () => {
             </FadeInWhenVisible>
 
             {/* Right: Feature List */}
-            <FeaturesList features={CustomDigitalMarketing} />
+            <FeaturesList features={CustomDigitalMarketing} iconAlign="horizontal" />
           </div>
         </PageLayout>
       </section>
@@ -85,10 +74,10 @@ const DigitalMarketing = () => {
         {/* === Features + Image Grid: WebApps === */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-12 space-y-12 items-center">
           {/* Left: Feature List */}
-          <FeaturesList features={WebApps} />
+          <FeaturesList features={WebApps} iconAlign="horizontal" />
 
           {/* Right: Image */}
-          <FadeInWhenVisible>
+          <FadeInWhenVisible className="hidden sm:block">
             <img
               loading="lazy"
               src="/assets/solutions/digital-marketing/application.png"
@@ -99,9 +88,7 @@ const DigitalMarketing = () => {
         </div>
 
         {/* === CTA Button: Manage Marketing === */}
-        <FadeInWhenVisible>
-          <Button variant="hover">Manage Your Marketing Needs</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Manage Your Marketing Needs</Button>
       </PageLayout>
 
       {/* === SOFTWARE FEATURES & FUNCTIONS SECTION === */}
@@ -113,15 +100,16 @@ const DigitalMarketing = () => {
           />
 
           {/* === Features + Image + Features Split Grid === */}
-          <div className="md:grid hidden grid-cols-1 gap-8 sm:grid-cols-3 items-center">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 items-center">
             {/* Left Features List: TestingSolutions */}
             <FeaturesList
               features={TestingSolutions.slice(0, 3)}
               fadeUp={fadeUp}
+              center
             />
 
             {/* Center Image */}
-            <FadeInWhenVisible>
+            <FadeInWhenVisible className="hidden md:block">
               <img
                 loading="lazy"
                 src="/assets/solutions/digital-marketing/functions.png"
@@ -134,19 +122,14 @@ const DigitalMarketing = () => {
             <FeaturesList
               features={TestingSolutions.slice(3, 6)}
               fadeUp={fadeUp}
+              center
             />
           </div>
 
-          <div className="block md:hidden">
-            <FeaturesList features={TestingSolutions} fadeUp={fadeUp} grid />
-          </div>
-
-          <FeaturesList features={TestSolution} fadeUp={fadeUp} grid />
+          <FeaturesList features={TestSolution} fadeUp={fadeUp} grid center />
 
           {/* === CTA Button: Maximize Marketing === */}
-          <FadeInWhenVisible>
-            <Button variant="hover">MAXIMIZE YOUR MARKETING EFFORTS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">MAXIMIZE YOUR MARKETING EFFORTS</Button>
         </PageLayout>
       </section>
     </>

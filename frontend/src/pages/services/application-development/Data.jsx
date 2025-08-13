@@ -36,120 +36,97 @@ export const aiHeadline = {
 
 export const aiApplicationServices = [
   {
-    icon: "Smartphone",
+    icon: "/assets/services/application-development/icons/1.svg",
     title: "Mobile App AI Integration",
     description:
-      "Discover the impressive potential of custom mobile applications with AI integration. We blend AI capabilities to improve performance, decision-making, and deliver personalized user experiences.",
+      "Discover the impressive potential of custom mobile applications with U Tech’s AI integration. We’ll seamlessly blend artificial intelligence capabilities into your app, making it capable of intelligent decision-making, improving overall performance, and providing personalized user experiences. With expertise in mobile app development and AI technologies, we’ll create innovative apps that will help your business thrive in an era of intelligent mobility.",
   },
   {
-    icon: "ShoppingCart",
+    icon: "/assets/services/application-development/icons/2.svg",
     title: "E-Commerce ML Fraud Detection",
     description:
-      "Protect your e-commerce business with machine learning-powered fraud detection that identifies suspicious activity in real-time and ensures secure transactions.",
+      "Protect your e-commerce business with our contemporary and inventive machine learning (ML) fraud detection solutions. We’ll leverage advanced algorithms to detect and prevent fraudulent activities to bolster the security of online transactions. Our machine learning models analyze copious amounts of data in real time to ID suspicious behaviors and patterns, allowing you to take the proper proactive measures. As convenient and complex as e-commerce is, with U Tech’s ML fraud detection solutions, you can put your attention into growing your business while protecting your customers.",
   },
   {
-    icon: "Settings",
+    icon: "/assets/services/application-development/icons/3.svg",
     title: "Predictive Maintenance Applications",
     description:
-      "Use predictive analytics and machine learning to detect and resolve equipment failures before they occur, improving operational efficiency and reducing downtime.",
+      "Equipment failures can really affect the output and efficiency of a business. Our cutting-edge AI and machine learning solutions, driven by data science, help address that problem. With real-time data analysis, our machine learning algorithms can deliver accurate predictions of potential failures well before they occur. As a result, you can plan accordingly and implement proactive maintenance strategies, minimize downtime, and reduce costs. We’ll get the most out of this tech to allow you to maximize your operational efficiency and take advantage of predictive maintenance.",
   },
   {
-    icon: "Layers",
+    icon: "/assets/services/application-development/icons/4.svg",
     title: "AI Integrated Low-Code/No-Code Platforms",
     description:
-      "Enable rapid app development with AI-powered low-code/no-code tools like drag-and-drop interfaces, NLP, and image recognition without extensive coding knowledge.",
+      "Experience the power of Artificial Intelligence without the complexities of coding with our AI integrated low-code/no-code platforms. We can provide innovative solutions to empower your users through intuitive drag-and-drop interfaces, enabling rapid app development. AI functions like natural language processing (NLP), image recognition for augmented reality environments, and predictive analytics can be seamlessly integrated into your business without extensive coding knowledge. Unleash your creativity and build robust apps effortlessly.",
   },
   {
-    icon: "Cpu",
+    icon: "/assets/services/application-development/icons/5.svg",
     title: "AI-Powered Development Tools",
     description:
-      "Boost development workflows with AI tools that assist with code generation, testing, debugging, and automation—speeding up cycles and improving software quality.",
+      "Elevate your software development processes with our very own AI-powered tools. We have cutting-edge solutions that you can utilize to accelerate development cycles, automate repetitive tasks, and enhance code quality. With the latest strides in artificial intelligence you can cover a wide range of the workflow, from code generation to automatic testing and debugging. Our custom AI tools will help you better streamline the whole process, allowing your teams to focus on delivering your very own software solution and innovation.",
   },
   {
-    icon: "FileText",
+    icon: "/assets/services/application-development/icons/6.svg",
     title: "Large Language Model Integration",
     description:
-      "Integrate LLMs like ChatGPT for natural language understanding, chatbot enhancements, and content generation, enabling your apps to interpret and communicate effectively.",
+      "Leverage the strengths of large language models like ChatGPT seamlessly with our integration capabilities. Whether you want to enhance chatbots, improve your understanding of natural language, or automate content generation, our well-versed developers will implement contemporary language models into your application. We do this by leveraging the aspects of these models to enable your apps to understand, interpret, and create human-like text. Work with us and open up endless possibilities for efficient data processing and make engaging experiences.",
   },
 ];
+
 export const AiApiFeatures = [
   {
-    icon: "SatelliteDish", // better suited for IoT
+    icon: "/assets/services/application-development/icons/7.svg",
     title: "IoT App Solutions",
     description:
       "Unleash the power of IoT with U Technology’s expert developers. Seamlessly integrate IoT solutions into your systems via an API, revolutionizing aspects of your business like supply chain automation and real-time data analytics.",
   },
   {
-    icon: "CloudCog", // represents cloud + configuration
+    icon: "/assets/services/application-development/icons/8.svg",
     title: "Cloud App Development",
     description:
       "We conceptualize, design, and develop innovative Cloud Applications that deliver exceptional agility, performance, and interoperability with cloud-native architectures, microservices, and more.",
   },
   {
-    icon: "LayoutDashboard", // modern UI/UX metaphor
+    icon: "/assets/services/finops/icons/10011.svg",
     title: "UX/UI Design & Development",
     description:
       "We transform customer experiences across multiple digital devices and channels using best UX/UI technologies, configurations, and development practices.",
   },
   {
-    icon: "ShieldAlert", // strong security + compliance metaphor
+    icon: "/assets/services/finops/icons/10008.svg",
     title: "Security & Compliance",
     description:
       "We ensure compliance with data security regulations including PCI, HIPAA, FISMA, and financial services compliance for projects requiring strict security considerations.",
   },
   {
-    icon: "PlugZap", // dynamic for API integrations
+    icon: "/assets/services/finops/icons/10005.svg",
     title: "API Integrations",
     description:
       "We integrate third-party APIs and build custom APIs that extend your app’s functionality, improve performance, and enable powerful data sharing.",
   },
   {
-    icon: "DatabaseBackup", // clear representation for migration
+    icon: "/assets/services/finops/icons/10002.svg",
     title: "Data Migration & Consolidation Services",
     description:
       "We specialize in cloud, legacy, and big data migration services—consolidating critical data into a secure, centralized system with integrity and redundancy elimination.",
   },
 ];
-export const CustomLoanServicingfeatures = [
-  {
-    title: "Loan Servicing & Management Systems",
-    description:
-      "Our product development teams create custom loan servicing systems and Loan Management Systems (LMS) for banks, credit unions, and financial institutions.",
-    icon: "Laptop",
-    animation: "animate-bounce",
-  },
-  {
-    title: "Loan Origination Systems",
-    description:
-      "We program Loan Origination Systems (LOS), with modules for underwriting, credit pull, decision support, and more.",
-    icon: "FileText",
-    animation: "animate-pulse",
-  },
-  {
-    title: "Loan Settlement Software Platforms",
-    description:
-      "U Technology's programmers create payment and settlement platforms supporting ACH and EFT for all payment types.",
-    icon: "CheckCircle",
-    animation: "animate-spin",
-  },
-];
-// @/data/enterpriseSolutionsData.ts
 
 export const enterpriseSolutionsData = [
   {
-    icon: "BarChart2",
+    icon: "/assets/services/bpo/icons/10004.svg",
     title: "Employee Level",
     description:
       "We create feature-rich, robust, and reliable employee-facing enterprise apps for project management to help employees track and assign projects, statuses, employees, tasks, and so much more.",
   },
   {
-    icon: "Settings2",
+    icon: "/assets/services/bpo/icons/10005.svg",
     title: "Department Level",
     description:
       "We design Department-Level Enterprise Applications, with built-in modules for internal workflows, communications, accounting, sales, marketing, etc. for specific departments within an enterprise.",
   },
   {
-    icon: "LayoutDashboard",
+    icon: "/assets/services/bpo/icons/10003.svg",
     title: "Company Level",
     description:
       "We connect company departments by creating a centralized network on a Company-Level Enterprise Application, allowing users to access essential company resources like databases, documents, and more.",
@@ -157,37 +134,37 @@ export const enterpriseSolutionsData = [
 ];
 export const CustomServices = [
   {
-    icon: "TabletSmartphone", // Better than just Smartphone – implies multi-device support
+    icon: "/assets/services/bpo/icons/10001.svg",
     title: "Client-Facing Application Solutions",
     description:
       "U Technology’s agile app development practices allow us to create innovative, engaging, and highly scalable Client-Facing Application Solutions that offer more interoperability and flexibility than most off-the-shelf solutions currently on the market. At U Technology, we build powerful client app solutions to fuel business growth and maximize your ROI.",
   },
   {
-    icon: "AppWindow", // Implies mobile/web app interface
+    icon: "/assets/services/bpo/icons/10002.svg",
     title: "Mobile Development Solutions",
     description:
       "We offer custom mobile app development for B2B and B2C companies to drive competitive advantage and create new revenue streams. Our web development team can customize your application solution from the ground up or enhance your existing application with modifications and integrations for added functionality, flexibility, and scalability. Your mobile apps will be available for download on both Apple's App Store and Google Play for Android devices.",
   },
   {
-    icon: "CloudCog", // Represents SaaS well (cloud + configuration)
+    icon: "/assets/services/bpo/icons/10003.svg",
     title: "SaaS Web Application Solutions",
     description:
       "For users who require web and/or mobile access to the internet without hardware upgrades, we create Software-as-a-Service (SaaS) web applications. With custom integrations using third-party provider software, our custom SaaS web app development delivers the ideal application that best suits your business needs.",
   },
   {
-    icon: "ServerCog", // IaaS: infrastructure + config
+    icon: "/assets/services/bpo/icons/10004.svg",
     title: "IaaS Web Application Solutions",
     description:
       "We engineer Infrastructure-as-a-Service (IaaS) web apps to provide enhanced flexibility and scalability for organizations of all different sizes and industry verticals. Delivering high-performance cloud computing capabilities, users can access their network equipment, servers, data storage centers, and more on-demand!",
   },
   {
-    icon: "Code2", // Developer-focused → code representation
+    icon: "/assets/services/bpo/icons/10005.svg",
     title: "PaaS Web Application Solutions",
     description:
       "We develop Platform-as-a-Service (PaaS) web app solutions to provide an environment for testing, hosting, deploying, and maintaining applications through various development stages and enabling multiple users to manage a single account on a multitenant system and inbuilt scalability for data load balancing.",
   },
   {
-    icon: "MonitorSmartphone", // Desktop (monitor) and mobile → fits DaaS
+    icon: "/assets/services/bpo/icons/10010.svg",
     title: "DaaS Web Application Solutions",
     description:
       "Our software developers engineer Desktop-as-a-Service (DaaS) web app solutions to provide the same characteristics of back-end services provided by app software with added usability, customization, and migration capabilities for smaller organizations with limited resources requiring cloud computing functionality.",

@@ -2,10 +2,11 @@ import { Button } from "@/components/ui/button";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import { FeaturesList } from "@/components/FeaturesList";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+import { fadeUp } from "@/custom/FadeInWhenVisible";
 import PageLayout from "@/custom/PageLayout";
 import TechnologyStatCard from "@/components/TechnologyStatCard";
 import { Headline, TypographyH4 } from "@/custom/Typography";
+import ImageNearScreen from "@/custom/ImageNearScreen";
 import {
   aiDevCardData,
   backendTechDetails,
@@ -30,7 +31,7 @@ const WebDevelopment = () => {
       />
 
       {/* ====== Feature Section 1 ====== */}
-      <PageLayout className="space-y-12 py-16 text-center">
+      <section className="space-y-12 py-16 text-center">
         <Headline
           title="Our Website Development Company Can Build Your Dream Web Application"
           description="Our professional web development services can build a web
@@ -41,13 +42,16 @@ const WebDevelopment = () => {
         />
 
         {/* First two features */}
-        <FeaturesList features={webDevCardData} fadeUp={fadeUp} grid />
+        <ImageNearScreen
+          features={webDevCardData}
+          src="/assets/solutions/web-development/web-development-right.png"
+          imageAlign="right"
+          imgClass="w-96"
+        />
 
         {/* Call to action button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">HIRE WEB DEVELOPER</Button>
-        </FadeInWhenVisible>
-      </PageLayout>
+        <Button variant="hover">HIRE WEB DEVELOPER</Button>
+      </section>
 
       {/* ====== Services Section ====== */}
       <PageLayout className="py-16 space-y-10 text-center">
@@ -59,11 +63,9 @@ const WebDevelopment = () => {
         />
 
         {/* List of web development services */}
-        <FeaturesList features={webDevelopmentServices} fadeUp={fadeUp} grid3 />
+        <FeaturesList features={webDevelopmentServices} fadeUp={fadeUp} grid3 center />
 
-        <FadeInWhenVisible>
-          <Button variant="hover">HIRE FULL-STACK WEB DEVELOPERS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">HIRE FULL-STACK WEB DEVELOPERS</Button>
       </PageLayout>
 
       {/* ====== Tech Stack Section ====== */}
@@ -98,9 +100,7 @@ const WebDevelopment = () => {
             ))}
           </div>
 
-          <FadeInWhenVisible>
-            <Button variant="hover">REQUEST WEB DEVELOPMENT SERVICES</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">REQUEST WEB DEVELOPMENT SERVICES</Button>
         </PageLayout>
       </section>
 
@@ -115,11 +115,9 @@ const WebDevelopment = () => {
           to drive innovation and success."
         />
 
-        <FeaturesList features={aiDevCardData} fadeUp={fadeUp} grid />
+        <FeaturesList features={aiDevCardData} fadeUp={fadeUp} grid iconAlign="horizontal" />
 
-        <FadeInWhenVisible>
-          <Button variant="hover">HIRE WEB APP DEVELOPER</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">HIRE WEB APP DEVELOPER</Button>
       </PageLayout>
 
       {/* ====== Support Section ====== */}
@@ -133,11 +131,9 @@ const WebDevelopment = () => {
             your benefit."
           />
 
-          <FeaturesList features={supportServices} fadeUp={fadeUp} grid />
+          <FeaturesList features={supportServices} fadeUp={fadeUp} grid center />
 
-          <FadeInWhenVisible>
-            <Button variant="hover">GET WEB SUPPORT ON-DEMAND</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET WEB SUPPORT ON-DEMAND</Button>
         </PageLayout>
       </section>
 
