@@ -45,7 +45,7 @@ export default function BackupRecovery() {
                         </FadeInWhenVisible>
 
                         {/* Feature list: dataProtectionSolutions */}
-                        <FeaturesList features={dataProtectionSolutions} />
+                        <FeaturesList features={dataProtectionSolutions} iconAlign="horizontal" />
                     </div>
 
                     {/* Right-side image */}
@@ -61,17 +61,17 @@ export default function BackupRecovery() {
 
                 {/* Section 2: Cloud backup solutions with feature list and image */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <FadeInWhenVisible>
+                    <FadeInWhenVisible className="hidden sm:block">
                         <img
                             loading="lazy"
                             src="/assets/services/backup-recovery/data-backup-&-recovery-integrations.png"
                             alt="Mobile App Devices"
-                            className="w-48 mx-auto"
+                            className="w-56 mx-auto"
                         />
                     </FadeInWhenVisible>
 
                     {/* Feature list: cloudBackupSolutions (grid format) */}
-                    <FeaturesList features={cloudBackupSolutions} grid />
+                    <FeaturesList features={cloudBackupSolutions} grid center />
                 </div>
 
                 {/* CTA Button */}
@@ -102,7 +102,7 @@ export default function BackupRecovery() {
                             </FadeInWhenVisible>
 
                             {/* Feature list: dataManagementSolutions */}
-                            <FeaturesList features={dataManagementSolutions} />
+                            <FeaturesList features={dataManagementSolutions} iconAlign="horizontal" />
                         </div>
 
                         {/* Right-side image */}
@@ -118,7 +118,7 @@ export default function BackupRecovery() {
 
                     {/* Section 4: Security Backup Solutions with features and image */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                        <FadeInWhenVisible>
+                        <FadeInWhenVisible className="hidden sm:block">
                             <img
                                 loading="lazy"
                                 src="/assets/services/backup-recovery/data-replication-database.png"
@@ -128,7 +128,7 @@ export default function BackupRecovery() {
                         </FadeInWhenVisible>
 
                         {/* Feature list: securityBackupSolutions (grid format) */}
-                        <FeaturesList features={securityBackupSolutions} grid />
+                        <FeaturesList features={securityBackupSolutions} grid center />
                     </div>
 
                     {/* CTA Button */}
@@ -149,7 +149,7 @@ export default function BackupRecovery() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     {/* Feature list: enterpriseIntegrations */}
-                    <FeaturesList features={enterpriseIntegrations} grid />
+                    <FeaturesList features={enterpriseIntegrations} grid center />
 
                     {/* Right-side image with vendor logos */}
                     <FadeInWhenVisible>

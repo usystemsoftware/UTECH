@@ -42,11 +42,9 @@ const NocServices = () => {
               className="mx-auto w-155"
             />
           </FadeInWhenVisible>
-          <FeaturesList features={NocFeatures} fadeUp={fadeUp} />
+          <FeaturesList features={NocFeatures} fadeUp={fadeUp} iconAlign="horizontal" />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET NOC SERVICES</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET NOC SERVICES</Button>
       </PageLayout>
 
       {/* === Infrastructure Monitoring Services Section === */}
@@ -56,21 +54,19 @@ const NocServices = () => {
             title="Infrastructure Monitoring Services"
             description="Let U Tech’s software and IT specialists proactively monitor your infrastructure assets in real-time, proactively performing health checks to ensure optimum performance uptime, mitigating costly downtime."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <FeaturesList features={NocSolutions.slice(0, 2)} fadeUp={fadeUp} />
-            <FadeInWhenVisible className="md:block hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-4">
+            <FeaturesList features={NocSolutions.slice(0, 2)} fadeUp={fadeUp} center />
+            <FadeInWhenVisible>
               <img
                 loading="lazy"
                 src="/assets/services/noc-services/monitoring.png"
                 alt="Mobile Analytics App"
-                className="mx-auto w-96"
+                className="mx-auto md:w-80 w-62"
               />
             </FadeInWhenVisible>
-            <FeaturesList features={NocSolutions.slice(2, 4)} fadeUp={fadeUp} />
+            <FeaturesList features={NocSolutions.slice(2, 4)} fadeUp={fadeUp} center />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">HIRE OUR NOC SERVICE PROVIDERS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">HIRE OUR NOC SERVICE PROVIDERS</Button>
         </PageLayout>
       </section>
 
@@ -81,19 +77,17 @@ const NocServices = () => {
           description="U Tech offers comprehensive NOC support & management services to efficiently complete backup and disaster recovery tasks, ultimately ensuring optimal network performance and full protection of critical data assets and invaluable hardware."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-          <FeaturesList features={NocSupport} fadeUp={fadeUp} />
-          <FadeInWhenVisible className="hidden sm:block">
+          <FeaturesList features={NocSupport} fadeUp={fadeUp} iconAlign="horizontal" />
+          <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/services/noc-services/services.png"
               alt="Noc Planning Dashboard"
-              className="mx-auto w-145"
+              className="mx-auto w-135"
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET NOC SUPPORT SERVICES</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET NOC SUPPORT SERVICES</Button>
       </PageLayout>
 
       {/* === NOC Automation & AI-Powered Solutions Section === */}
@@ -104,7 +98,7 @@ const NocServices = () => {
             description="U Tech leverages modernized AI-driven NOC resources to automate tasks, efficiently monitor large data sets, and proactively improve performance utilizing cloud-based infrastructures."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FadeInWhenVisible className="hidden sm:block">
+            <FadeInWhenVisible>
               <img
                 loading="lazy"
                 src="/assets/services/noc-services/powered.png"
@@ -112,11 +106,9 @@ const NocServices = () => {
                 className="mx-auto w-155"
               />
             </FadeInWhenVisible>
-            <FeaturesList features={NocSupportservices} fadeUp={fadeUp} />
+            <FeaturesList features={NocSupportservices} fadeUp={fadeUp} iconAlign="horizontal" />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET AI-POWERED NOC SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET AI-POWERED NOC SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -126,10 +118,8 @@ const NocServices = () => {
           title="Why Choose U Tech for NOC Services?"
           description="U Tech’s certified NOC analysts enable efficient and proactive monitoring and troubleshooting of all cloud-based resources, professionally servicing hybrid and multi-cloud ecosystems. We leverage deep knowledge and versatile development to deliver exceptional client services, safeguarding your critical data assets."
         />
-        <FeaturesList features={NocServicesfedus} fadeUp={fadeUp} grid />
-        <FadeInWhenVisible delay={0.4}>
-          <Button variant="hover">SPEAK WITH A NOC EXPERT</Button>
-        </FadeInWhenVisible>
+        <FeaturesList features={NocServicesfedus} fadeUp={fadeUp} grid center />
+        <Button variant="hover">SPEAK WITH A NOC EXPERT</Button>
       </PageLayout>
 
       {/* === FAQ Section === */}

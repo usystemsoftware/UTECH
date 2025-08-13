@@ -1,36 +1,36 @@
 export const DriveMore = [
   {
-    icon: "Bot", // Better suited for automation
+    icon: "/assets/solutions/digital-marketing/icons/1.svg",
     title: "Marketing Automation Software",
     description:
       "We leverage our developers’ deep working knowledge of artificial intelligence, business intelligence, and machine learning to create unique marketing automation platforms, constructed as centralized databases that streamline workflows.",
   },
   {
-    icon: "BarChart3", // Better icon for analytics
+    icon: "/assets/solutions/digital-marketing/icons/2.svg",
     title: "Consumer-Centric Analytics Software",
     description:
       "We build analytics & reporting dashboards that integrate with your existing enterprise apps and your consolidated siloed data to create easily shareable KPI visualizations, giving you a holistic view of your marketing campaign success metrics.",
   },
   {
-    icon: "MessageCircleCode", // Chat + tech
+    icon: "/assets/solutions/digital-marketing/icons/3.svg",
     title: "Chatbot Software Development",
     description:
       "Our engineers develop and integrate custom chatbot software with personalized interactive voice response (IVR) technology to simplify the buying process and offer the ability to monitor the consumer journey to improve customer relationships.",
   },
   {
-    icon: "Link2", // Better for integration
+    icon: "/assets/solutions/digital-marketing/icons/4.svg",
     title: "Third-Party Integrations",
     description:
       "We integrate all of your systems together to create a unified, all-in-one digital marketing software solution, including your social media, SEO, DAM, email marketing campaigns, lead management, data management, and analytic dashboards.",
   },
   {
-    icon: "SatelliteDish", // Represents IoT/connected devices
+    icon: "/assets/solutions/digital-marketing/icons/5.svg",
     title: "IoT-Enabled Digital Marketing",
     description:
       "We seamlessly gather IoT data from wearables, watches, smart TVs, and other connected hardware devices and integrate it into your digital marketing software solution so you can visualize trends, augment strategies based on user behavior, and more.",
   },
   {
-    icon: "Presentation", // For reports/BI/visualization
+    icon: "/assets/solutions/digital-marketing/icons/6.svg",
     title: "BI-Supported Decision Making",
     description:
       "Designed for data-driven multichannel marketing attribution with interactive dashboards & customizable reports, our BI solutions help you open the door to a wealth of valuable insights on your marketing strategies to promote smarter business decisions.",
@@ -39,19 +39,19 @@ export const DriveMore = [
 
 export const CustomDigitalMarketing = [
   {
-    icon: "UserCog", // For CRM — managing users
+    icon: "/assets/solutions/digital-marketing/icons/7.svg",
     title: "Custom CRM Solutions",
     description:
       "We design integrated CRM modules and standalone solutions for generating, nurturing, scoring, and capturing qualified leads across all channels while providing full visibility of every client and information relative to their account.",
   },
   {
-    icon: "ServerCog", // For ERP/backend processes
+    icon: "/assets/solutions/digital-marketing/icons/8.svg",
     title: "Custom ERP Solutions",
     description:
       "Based on your preferences, we can integrate your custom digital marketing solution with your current ERP solution, allowing you to maintain daily workflow management, including accounting, project management, supply chain operations, and so much more.",
   },
   {
-    icon: "LayoutDashboard", // Represents landing page structure
+    icon: "/assets/solutions/digital-marketing/icons/9.svg",
     title: "Custom Landing Pages",
     description:
       "We develop portfolio-worthy, conversion-focused landing pages perfectly aligned with showcasing your marketing campaign or exciting new product launch in a way that brings users through a customer journey designed to drive traffic & increase sales.",
@@ -60,19 +60,19 @@ export const CustomDigitalMarketing = [
 
 export const WebApps = [
   {
-    icon: "MonitorSmartphone", // Represents mobile + web app development
+    icon: "/assets/solutions/digital-marketing/icons/10.svg",
     title: "Custom Mobile & Web Apps",
     description:
       "We build AI-powered apps that make it easier to analyze user behavior and market scenarios, built with custom widgets for websites & CMS, SEO tools, and social media management tools.",
   },
   {
-    icon: "BarChart4", // For digital analytics and performance monitoring
+    icon: "/assets/solutions/digital-marketing/icons/11.svg",
     title: "Digital Analysis Apps",
     description:
       "We implement digital marketing online tools that help businesses analyze high-ranking keywords, Google search rankings, website loading speed, website auditing results, and bounce rates.",
   },
   {
-    icon: "Workflow", // Represents workflow automation and enterprise apps
+    icon: "/assets/solutions/digital-marketing/icons/12.svg",
     title: "Enterprise Mobility Apps",
     description:
       "Our custom enterprise mobility applications are specifically designed for digital marketing companies to manage their daily operational workflows with the help of marketing automation.",

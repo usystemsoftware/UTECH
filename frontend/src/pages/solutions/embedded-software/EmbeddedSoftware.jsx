@@ -50,13 +50,11 @@ const EmbeddedSoftware = () => {
           </FadeInWhenVisible>
 
           {/* Right-side feature list */}
-          <FeaturesList features={robustSolutions} fadeUp={fadeUp} />
+          <FeaturesList features={robustSolutions} fadeUp={fadeUp} iconAlign="horizontal" />
         </div>
 
         {/* Call to action button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">Get Embedded Software Developers</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Get Embedded Software Developers</Button>
       </PageLayout>
 
       {/* ===== HMI (Human-Machine Interface) SOLUTIONS ===== */}
@@ -69,7 +67,7 @@ const EmbeddedSoftware = () => {
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
           {/* Left-side feature list */}
-          <FeaturesList features={hmiSolutions} fadeUp={fadeUp} />
+          <FeaturesList features={hmiSolutions} fadeUp={fadeUp} iconAlign="horizontal" />
 
           {/* Right-side image */}
           <FadeInWhenVisible delay={0.2}>
@@ -83,9 +81,7 @@ const EmbeddedSoftware = () => {
         </div>
 
         {/* CTA button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">Get Embedded Hmi Solutions</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Get Embedded Hmi Solutions</Button>
       </PageLayout>
 
       {/* ===== AI-POWERED EMBEDDED SOFTWARE SOLUTIONS ===== */}
@@ -98,7 +94,7 @@ const EmbeddedSoftware = () => {
               through advanced AI integration."
           />
           {/* Two-column grid for AI solution features */}
-          <FeaturesList features={aiEmbeddedSolutions} grid />
+          <FeaturesList features={aiEmbeddedSolutions} grid iconAlign="horizontal" />
         </PageLayout>
       </section>
 
@@ -122,13 +118,11 @@ const EmbeddedSoftware = () => {
           </FadeInWhenVisible>
 
           {/* Right-side feature list */}
-          <FeaturesList features={bspSolutions} fadeUp={fadeUp} />
+          <FeaturesList features={bspSolutions} fadeUp={fadeUp} iconAlign="horizontal" />
         </div>
 
         {/* CTA button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">Get Embedded Bsp Solutions</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Get Embedded Bsp Solutions</Button>
       </PageLayout>
 
       {/* ===== EMBEDDED DEVELOPMENT SOLUTIONS SECTION ===== */}
@@ -141,12 +135,10 @@ const EmbeddedSoftware = () => {
               Internet of Things, industrial automation, and beyond."
           />
           {/* Grid layout for two columns of feature lists */}
-          <FeaturesList features={embeddedDevSolutions} grid />
+          <FeaturesList features={embeddedDevSolutions} grid iconAlign="horizontal" />
 
           {/* CTA button */}
-          <FadeInWhenVisible>
-            <Button variant="hover">Get Embedded Solutions</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">Get Embedded Solutions</Button>
         </PageLayout>
       </section>
 
@@ -159,7 +151,7 @@ const EmbeddedSoftware = () => {
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
           {/* Left-side features */}
-          <FeaturesList features={industrySolutions} fadeUp={fadeUp} />
+          <FeaturesList features={industrySolutions} fadeUp={fadeUp} iconAlign="horizontal" />
 
           {/* Right-side image */}
           <FadeInWhenVisible delay={0.2}>
@@ -173,9 +165,7 @@ const EmbeddedSoftware = () => {
         </div>
 
         {/* CTA button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">Get Embedded Hmi Solutions</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Get Embedded Hmi Solutions</Button>
       </PageLayout>
 
       {/* ===== EMBEDDED SOFTWARE DEVELOPER TOOLS ===== */}

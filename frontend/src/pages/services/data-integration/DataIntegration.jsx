@@ -33,7 +33,7 @@ export default function DataIntegration() {
 
                 {/* Left: Features | Right: Image */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-                    <FeaturesList features={dataIntegrationSolutions} />
+                    <FeaturesList features={dataIntegrationSolutions} iconAlign="horizontal" />
                     <FadeInWhenVisible>
                         <img
                             loading="lazy"
@@ -55,15 +55,13 @@ export default function DataIntegration() {
                         />
                     </FadeInWhenVisible>
 
-                    <FeaturesList features={dataProcessingSolutions} />
+                    <FeaturesList features={dataProcessingSolutions} iconAlign="horizontal" />
                 </div>
 
                 {/* CTA Button */}
-                <FadeInWhenVisible>
-                    <Button variant='hover'>
-                        GET DATA INTEGRATION CONSULTING
-                    </Button>
-                </FadeInWhenVisible>
+                <Button variant='hover'>
+                    GET DATA INTEGRATION CONSULTING
+                </Button>
             </PageLayout>
 
             {/* Big Data Integration Section */}
@@ -76,18 +74,16 @@ export default function DataIntegration() {
                 <FadeInWhenVisible>
                     <img
                         loading="lazy"
-                        src="/assets/services/data-integration/our-5-step-guide-to-U Tech-big-data-sync-framework.gif"
+                        src="/assets/services/data-integration/our-5-step-guide-to-UTech-big-data-sync-framework.gif"
                         alt="Mobile App Devices"
                         className="md:max-w-5xl mx-auto"
                     />
                 </FadeInWhenVisible>
 
                 {/* CTA Button */}
-                <FadeInWhenVisible>
-                    <Button variant='hover'>
-                        EXPLORE THE FULL FRAMEWORK
-                    </Button>
-                </FadeInWhenVisible>
+                <Button variant='hover'>
+                    EXPLORE THE FULL FRAMEWORK
+                </Button>
             </PageLayout>
 
             {/* Additional Offerings Section */}
@@ -101,7 +97,7 @@ export default function DataIntegration() {
                     {/* Features with center image layout */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
                         {/* Left Features */}
-                        <FeaturesList features={dataGovernanceAndSecuritySolutions.slice(0, 2)} fadeUp={fadeUp} />
+                        <FeaturesList features={dataGovernanceAndSecuritySolutions.slice(0, 2)} fadeUp={fadeUp} center />
 
                         {/* Center Image */}
                         <FadeInWhenVisible className="md:block hidden">
@@ -114,7 +110,7 @@ export default function DataIntegration() {
                         </FadeInWhenVisible>
 
                         {/* Right Features */}
-                        <FeaturesList features={dataGovernanceAndSecuritySolutions.slice(2, 4)} fadeUp={fadeUp} />
+                        <FeaturesList features={dataGovernanceAndSecuritySolutions.slice(2, 4)} fadeUp={fadeUp} center />
                     </div>
 
                     {/* CTA Button */}
@@ -159,11 +155,9 @@ export default function DataIntegration() {
                 </div>
 
                 {/* CTA Button */}
-                <FadeInWhenVisible>
-                    <Button variant='hover'>
-                        GET DATA INTEGRETION SERVICES
-                    </Button>
-                </FadeInWhenVisible>
+                <Button variant='hover'>
+                    GET DATA INTEGRETION SERVICES
+                </Button>
             </PageLayout>
         </>
     )

@@ -24,7 +24,7 @@ const PartnerProductSupport = () => {
 
       {/* === CONTENT SECTIONS === */}
       <PageLayout className="text-center py-16 space-y-8">
-        <Headline title="Chetu's Strategic Partner Network" />
+        <Headline title="U Tech's Strategic Partner Network" />
         {PartnerProductSolutions.map((item, index) => (
           <div key={index} className="space-y-4">
             <div className="grid grid-cols-2 sm:grid-cols-4 items-center justify-items-center gap-4">
@@ -40,9 +40,7 @@ const PartnerProductSupport = () => {
             </div>
           </div>
         ))}
-        <FadeInWhenVisible>
-          <Button variant="hover">Build Your Product Support Package</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Build Your Product Support Package</Button>
       </PageLayout>
 
       <PageLayout className="text-center space-y-10 py-12">
@@ -50,7 +48,7 @@ const PartnerProductSupport = () => {
           title="Comprehensive Expertise & Technical Support"
           description="We have cultivated a vast ecosystem of strategic partnerships with industry and technology leaders including the ones displayed above. Through these partnerships, we offer full application support services for partner products, ensuring that you receive comprehensive assistance to get the most out of your software solutions."
         />
-        <FeaturesList features={PartnerProduct} fadeUp={fadeUp} grid />
+        <FeaturesList features={PartnerProduct} fadeUp={fadeUp} grid iconAlign="horizontal" />
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -65,9 +63,7 @@ const PartnerProductSupport = () => {
             grid3
             center
           />
-          <FadeInWhenVisible>
-            <Button variant="hover">Get Partner Product Support</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">Get Partner Product Support</Button>
         </PageLayout>
       </section>
     </>

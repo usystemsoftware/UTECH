@@ -42,7 +42,7 @@ const CustomServices = () => {
 
         {/* === Migration Solutions === */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-          <FadeInWhenVisible className="hidden sm:block">
+          <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/services/customservices/migrations.png"
@@ -50,40 +50,22 @@ const CustomServices = () => {
               className="mx-auto w-135"
             />
           </FadeInWhenVisible>
-          <div className="block md:hidden">
-            <FeaturesList
-              features={TelecomCustom.slice(0, 5)}
-              fadeUp={fadeUp}
-              reverse
-            />
-          </div>
-          <div className="md:block hidden">
-            <FeaturesList
-              features={TelecomCustom.slice(0, 5)}
-              fadeUp={fadeUp}
-              reverse
-              grid
-            />
-          </div>
+          <FeaturesList
+            features={TelecomCustom.slice(0, 5)}
+            fadeUp={fadeUp}
+            iconAlign="horizontal"
+            reverse
+          />
         </div>
 
         {/* === Integration Solutions === */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-          <div className="md:block hidden">
-            <FeaturesList
-              features={TelecomCustom.slice(5, 10)}
-              fadeUp={fadeUp}
-              reverse
-              grid
-            />
-          </div>
-          <div className="block md:hidden">
-            <FeaturesList
-              features={TelecomCustom.slice(5, 10)}
-              fadeUp={fadeUp}
-              reverse
-            />
-          </div>
+          <FeaturesList
+            features={TelecomCustom.slice(5, 10)}
+            fadeUp={fadeUp}
+            iconAlign="horizontal"
+            reverse
+          />
           <FadeInWhenVisible className="hidden sm:block">
             <img
               loading="lazy"
@@ -94,11 +76,9 @@ const CustomServices = () => {
           </FadeInWhenVisible>
         </div>
 
-        <FadeInWhenVisible delay={0.4}>
-          <Button variant="hover">
-            HIRE APPLICATION SOFTWARE DEVELOPMENT SERVICES
-          </Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">
+          HIRE APPLICATION SOFTWARE DEVELOPMENT SERVICES
+        </Button>
       </PageLayout>
 
       {/* === Product Engineering Section === */}
@@ -109,7 +89,7 @@ const CustomServices = () => {
             description="Augment your existing development team to complete a big project or build a new software solution or application from scratch with the best custom software development company, U Tech.."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FadeInWhenVisible className="hidden sm:block">
+            <FadeInWhenVisible>
               <img
                 loading="lazy"
                 src="/assets/services/customservices/product.png"
@@ -120,11 +100,10 @@ const CustomServices = () => {
             <FeaturesList
               features={CustomTransformationFeatures}
               fadeUp={fadeUp}
+              iconAlign="horizontal"
             />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET CUSTOM SOFTWARE SERVICES</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET CUSTOM SOFTWARE SERVICES</Button>
         </PageLayout>
       </section>
 
@@ -155,7 +134,7 @@ const CustomServices = () => {
           </div>
         </div>
 
-        <FadeInWhenVisible className="hidden sm:block">
+        <FadeInWhenVisible>
           <img
             loading="lazy"
             src="/assets/services/customservices/solutions.png"
@@ -172,23 +151,19 @@ const CustomServices = () => {
             title="Industry-Specific Software Solutions"
             description="Integrate scalable and customized industry-specific software with U Tech into workflows for industries such as healthcare, finance, and retail.."
           />
-          <FeaturesList features={CustomServicesgame} fadeUp={fadeUp} grid3 />
-          <FadeInWhenVisible>
-            <Button variant="hover">Get Your Telecom Software Audit</Button>
-          </FadeInWhenVisible>
+          <FeaturesList features={CustomServicesgame} fadeUp={fadeUp} grid3 center />
+          <Button variant="hover">Get Your Telecom Software Audit</Button>
         </PageLayout>
       </section>
 
       {/* === Software Support Services Section === */}
-      <PageLayout className="text-center space-y-10">
+      <PageLayout className="text-center space-y-10 py-16">
         <Headline
           title="Software Development Support"
           description="Discover comprehensive software support services, including consulting, optimization, maintenance, and patch management to enhance system performance."
         />
-        <FeaturesList features={Telecommunicationfedus} fadeUp={fadeUp} grid />
-        <FadeInWhenVisible delay={0.4}>
-          <Button variant="hover">GET RELIABLE SOFTWARE SUPPORT</Button>
-        </FadeInWhenVisible>
+        <FeaturesList features={Telecommunicationfedus} fadeUp={fadeUp} grid iconAlign='horizontal' />
+        <Button variant="hover">GET RELIABLE SOFTWARE SUPPORT</Button>
       </PageLayout>
 
       {/* === AI-Powered Custom Software Development Section === */}
@@ -198,10 +173,8 @@ const CustomServices = () => {
             title="AI-Powered Custom Software Development Services"
             description="We are a software development services company that also offers AI-powered custom software development services that are designed to align perfectly with your unique business requirements. Maximize the potential of your projects with intelligent automation, data-driven insights, personalized user interactions, and more."
           />
-          <FeaturesList features={CustomServiceAi} fadeUp={fadeUp} grid3 />
-          <FadeInWhenVisible>
-            <Button variant="hover">AI-POWERED CUSTOM SOFTWARE SERVICES</Button>
-          </FadeInWhenVisible>
+          <FeaturesList features={CustomServiceAi} fadeUp={fadeUp} grid3 center />
+          <Button variant="hover">AI-POWERED CUSTOM SOFTWARE SERVICES</Button>
         </PageLayout>
       </section>
 
@@ -212,14 +185,14 @@ const CustomServices = () => {
           description="Our agile, end-to-end product lifecycle management (PLM) model covers everything from conceptualization, concurrent front-end & back-end coding, deployment, QA, and more.."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-15">
-          <FadeInWhenVisible className="hidden sm:block">
+          <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/services/customservices/management.png"
               alt="Custom Planning Dashboard"
             />
           </FadeInWhenVisible>
-          <FeaturesList features={CustomTransformation} fadeUp={fadeUp} />
+          <FeaturesList features={CustomTransformation} fadeUp={fadeUp} iconAlign='horizontal' />
         </div>
       </PageLayout>
 
@@ -231,18 +204,16 @@ const CustomServices = () => {
             description="We are proud to employ over 2,800 in-house developers with many years of combined software development experience in a wide array of industries."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FadeInWhenVisible className="hidden sm:block">
+            <FadeInWhenVisible>
               <img
                 loading="lazy"
                 src="/assets/services/customservices/migrations.png"
                 alt="Custom Planning Dashboard"
               />
             </FadeInWhenVisible>
-            <FeaturesList features={CustomDeveloper} fadeUp={fadeUp} />
+            <FeaturesList features={CustomDeveloper} fadeUp={fadeUp} iconAlign='horizontal' />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">HIRE CUSTOM SOFTWARE DEVELOPERS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">HIRE CUSTOM SOFTWARE DEVELOPERS</Button>
         </PageLayout>
       </section>
 
@@ -282,7 +253,7 @@ const CustomServices = () => {
             </div>
           </div>
         </div>
-        <FadeInWhenVisible className="hidden sm:block">
+        <FadeInWhenVisible>
           <img
             loading="lazy"
             src="/assets/services/customservices/expertise.png"

@@ -1,42 +1,42 @@
 
 export const services = [
     {
-        icon: "Laptop2",
+        icon: "/assets/solutions/crm/icons/1.svg",
         title: "Call Center Integrations",
         description: "Expertly incorporate call center integrations like Twilio and RingCentral into your customized CRM to schedule inbound and outbound calls, automate routing and call recording, and reduce wait times, greatly elevating overall customer experience. Opportunity Management Enable users to view every critical detail in their client’s activity timeline, including what stage the deal is in, which products are part of the deal, and what moves need to be made to close the deal, and build customer relationships, tracking all activities as they happen in real-time.",
     },
     {
-        icon: "Monitor",
+        icon: "/assets/solutions/crm/icons/2.svg",
         title: "Opportunity Management",
         description: "Enable users to view every critical detail in their client’s activity timeline, including what stage the deal is in, which products are part of the deal, and what moves need to be made to close the deal, and build customer relationships, tracking all activities as they happen in real-time.",
     },
     {
-        icon: "Settings",
+        icon: "/assets/solutions/crm/icons/3.svg",
         title: "Sales Management",
         description: "Seamlessly integrate trusted third-party applications, extensions, and plugins to help businesses get the most accurate, up-to-date sales data directly from the custom CRM development so that your sales team can make better decisions faster and more efficiently.",
     },
     {
-        icon: "Laptop2",
+        icon: "/assets/solutions/crm/icons/4.svg",
         title: "Lead Capture",
         description: "Gain full visibility and control of the most up-to-date client contact information, managing and tracking all marketing campaigns across various channels, thus allowing businesses to implement successful lead management from capture to close.",
     },
     {
-        icon: "Mail",
+        icon: "/assets/solutions/crm/icons/5.svg",
         title: "Email Integrations",
         description: "Supercharge your custom CRM solutions platforms through seamless email integration, syncing current email channels, such as MS Outlook or Gmail, with the CRM to enable full visibility of emails, contacts, calendars, and more across both desktop and mobile.",
     },
     {
-        icon: "Monitor",
+        icon: "/assets/solutions/crm/icons/6.svg",
         title: "Workflow Management",
         description: "Build a point-and-click interface with drag-and-drop features that allow users to automate complex sales processes, including auto-assigning tasks, approving deal discounts, create customized email alerts, filling out orders, generating proposals, and more.",
     },
     {
-        icon: "Settings",
+        icon: "/assets/solutions/crm/icons/7.svg",
         title: "Reports & Dashboards",
         description: "Design and implement modules that enable users to get a real-time overview of the entire business, built with a drag-and-drop feature to create customized reports designed to track lead volume, conversion rates, and all other pipeline data.",
     },
     {
-        icon: "DollarSign",
+        icon: "/assets/solutions/crm/icons/8.svg",
         title: "Sales Forecasting",
         description: "Predict future sales based on current pipeline data with real-time viewing, allowing businesses to anticipate market changes and alter marketing campaigns accordingly to mitigate business risks and make better business decisions.",
     },
@@ -44,49 +44,49 @@ export const services = [
 
 export const aiFeatures = [
     {
-        icon: "DollarSign",
+        icon: "/assets/solutions/crm/icons/7.svg",
         title: "Data Analysis",
         description: "We can integrate AI to analyze large amounts of customer data collected from social media, email interactions, website behavior, and purchase history. Leveraging machine learning algorithms, AI can identify patterns and trends in data to make predictions about customer behavior, preferences, and churn prediction, enabling businesses to make data-driven decisions. Data entry automation can also help minimize the time spent on repetitive tasks.",
         align: "left",
     },
     {
-        icon: "CheckCheck",
+        icon: "/assets/solutions/crm/icons/8.svg",
         title: "Personalization and Customer Segmentation",
         description: "Our experts can develop AI that segments customers based on their preferences, behaviors, and demographics. Understanding individual customers’ needs enables AI-powered CRM systems to deliver personalized recommendations, offers, and content, leading to higher customer satisfaction and increased engagement.",
         align: "right",
     },
     {
-        icon: "Bell",
+        icon: "/assets/solutions/crm/icons/9.svg",
         title: "Chatbots and Virtual Assistants",
         description: "We can implement AI capabilities to power chatbots and virtual assistants. They can provide instant customer support by handling routine inquiries, addressing frequently asked questions, and resolving simple issues, improving customer service and reducing the workload on human agents, allowing them to focus on more complex tasks.",
         align: "left",
     },
     {
-        icon: "Wallet",
+        icon: "/assets/solutions/crm/icons/10.svg",
         title: "Sentiment Analysis",
         description: "Our experts can leverage AI that analyzes customer interactions, emails, chat transcripts, and social media posts to gauge customer sentiment. It helps businesses understand customers' feelings about their products and services, enabling them to respond appropriately to any negative feedback or issues.",
         align: "right",
     },
     {
-        icon: "DollarSign",
+        icon: "/assets/solutions/crm/icons/11.svg",
         title: "Automated Lead Scoring",
         description: "Our experts can develop AI that assesses the likelihood of a lead converting into a customer based on historical data and customer behavior. Assigning lead qualification scores allows sales teams to prioritize their efforts and focus on leads most likely to convert, increasing sales efficiency. This predictive lead scoring helps grow a customer base.",
         align: "left",
     },
     {
-        icon: "CheckCheck",
+        icon: "/assets/solutions/crm/icons/12.svg",
         title: "Automated Marketing Campaigns",
         description: "We can implement AI that automates marketing solutions by optimizing the process of content creation, email campaigns, and social media scheduling. AI analyzes customer behavior to determine the most appropriate time and channel to engage, improving customer retention and churn prediction within the effectiveness of targeted marketing campaigns.",
         align: "right",
     },
     {
-        icon: "Bell",
+        icon: "/assets/solutions/crm/icons/8.svg",
         title: "Cross-Selling and Upselling",
         description: "Our experts can develop AI that identifies opportunities for cross-selling and upselling by analyzing customer purchase history and behavior. It allows businesses to offer relevant products and services to customers, increasing revenue and customer loyalty.",
         align: "left",
     },
     {
-        icon: "Wallet",
+        icon: "/assets/solutions/crm/icons/13.svg",
         title: "Automated Lead Follow Up",
         description: "We can equip our CRM solutions with lead tracking and contact management abilities, leveraging AI tools to automate follow-up emails, phone calls, and text messages, convert leads into sales, and ultimately boost productivity.",
         align: "right",
@@ -95,22 +95,22 @@ export const aiFeatures = [
 
 export const crmSupportItems = [
     {
-        icon: "DollarSign",
+        icon: "/assets/solutions/crm/icons/17.svg",
         title: "CRM System Support",
         description: "At U Technology, we recognize the indispensable role that seamless CRM operation plays in the success of your business. Our expert team excels in troubleshooting and resolving issues, leaving no room for uncertainties that could disrupt your daily operations. Our dedicated team is committed to providing unparalleled support 24/7, ensuring your CRM system operates optimally to drive your success.",
     },
     {
-        icon: "CheckCheck",
+        icon: "/assets/solutions/crm/icons/18.svg",
         title: "CRM Integration & Migration",
         description: "U Technology specializes in CRM implementation, data migration, system auditing and server administration, making sure your CRM software stays up-to-date and seamlessly integrated with your other business systems. We provide support for Zoho CRM, Salesforce CRM Integration, Microsoft Dynamics CRM, and SAP CRM, ensuring your CRM portal is always at its peak.",
     },
     {
-        icon: "Bell",
+        icon: "/assets/solutions/crm/icons/19.svg",
         title: "Customized CRM Solutions",
         description: "Our CRM maintenance services go beyond just fixing bugs. We offer extended support to ensure long-term application reliability. We make sure that your CRM system remains resilient and secure by providing security updates and technology upgrades that align with the latest industry standards. Customized support solutions are designed to meet your specific needs.",
     },
     {
-        icon: "Wallet",
+        icon: "/assets/solutions/crm/icons/20.svg",
         title: "Reliable CRM Support Services",
         description: "Exceptional service is at the core of our CRM maintenance and support services. With our advanced ticketing system and transparent communication processes in place, our team provides you with the highest level of service, ensuring your queries and concerns are addressed promptly.",
     },
@@ -118,17 +118,17 @@ export const crmSupportItems = [
 
 export const crmSoftwares = [
     {
-        icon: "LineChart",
+        icon: "/assets/solutions/crm/icons/14.svg",
         title: "Industry Specific CRM",
         description: "Overcome unique challenges with a customizable CRM that meets needs across finance, e-commerce, supply chain industries, and more, maintaining consistent alignment with industry regulations to streamline operations and drive success.",
     },
     {
-        icon: "Smartphone",
+        icon: "/assets/solutions/crm/icons/15.svg",
         title: "CRM Mobile App Development",
         description: "Engineer custom mobile CRM applications, allowing users to view calendars, check & create emails, review account updates, join a video conference call, view dashboards & reports, and so much more to help businesses close more deals, and provide faster support.",
     },
     {
-        icon: "FileText",
+        icon: "/assets/solutions/crm/icons/16.svg",
         title: "Cloud Based CRM Software",
         description: "Develop custom cloud CRM solutions and provide hassle-free cloud based CRM system installation, enabling round-the-clock accessibility to all essential client information both in the office and remotely so that you’re always connected to your customers.",
     },
@@ -136,32 +136,26 @@ export const crmSoftwares = [
 
 export const crmPlatforms = [
     {
-        icon: "Network",
         title: "Salesforce",
         description: "U Technology is a certified partner with Salesforce, providing custom Salesforce CRM solutions, integrations, installations, implementations, customizations, and Salesforce IT support.",
     },
     {
-        icon: "MessageCircle",
         title: "Microsoft Dynamics",
         description: "U Technology is a certified Gold Partner, providing custom CRM software development services for Microsoft Dynamics for businesses of all sizes and professional industries.",
     },
     {
-        icon: "LineChart",
         title: "SugarCRM",
         description: "Expert programmers seamlessly integrate SugarCRM into existing business processes to empower marketing, sales, and customer service teams.",
     },
     {
-        icon: "BadgeIndianRupee",
         title: "Zoho",
         description: "We will implement Zoho CRM to enable users to automate every aspect of their business, trigger instant actions, and streamline lead nurturing processes.",
     },
     {
-        icon: "LineChart",
         title: "GoHighLevel",
         description: "We’ll implement the GoHighLevel CRM, designed with data replication technology, superior reporting functionality, elastic database, and robust transaction routing.",
     },
     {
-        icon: "TicketCheck",
         title: "SAP",
         description: "Our certified SAP developers deliver enterprise-class CRM solutions that elevate and empower businesses, using SAP ERP and HANA database technologies.",
     },

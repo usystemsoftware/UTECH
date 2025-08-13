@@ -39,7 +39,7 @@ const ApiDevelopment = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
           {/* Left Features List */}
-          <FeaturesList features={features.slice(0, 2)} fadeUp={fadeUp} />
+          <FeaturesList features={features.slice(0, 2)} fadeUp={fadeUp} iconAlign="horizontal" />
 
           {/* Center Animation */}
           <FadeInWhenVisible className="md:block hidden">
@@ -47,18 +47,18 @@ const ApiDevelopment = () => {
               loading="lazy"
               src="/assets/services/api-development/cellphone-animation.gif"
               alt="Mobile Analytics App"
-              className="w-48 mx-auto"
+              className="w-56 mx-auto"
             />
           </FadeInWhenVisible>
 
           {/* Right Features List */}
-          <FeaturesList features={features.slice(3, 6)} fadeUp={fadeUp} />
+          <FeaturesList features={features.slice(3, 6)} fadeUp={fadeUp} iconAlign="horizontal" />
         </div>
 
         {/* Call to Action Button */}
-        <FadeInWhenVisible>
+        {/* <FadeInWhenVisible> */}
           <Button variant="hover">CUSTOMIZE YOUR BANKING SOLUTION NOW</Button>
-        </FadeInWhenVisible>
+        {/* </FadeInWhenVisible> */}
       </PageLayout>
 
       {/* ===== AI API FEATURES SECTION ===== */}
@@ -69,12 +69,12 @@ const ApiDevelopment = () => {
         />
 
         {/* Feature Cards Grid */}
-        <FeaturesList features={AiApiFeatures} fadeUp={fadeUp} grid3 />
+        <FeaturesList features={AiApiFeatures} fadeUp={fadeUp} grid3 center />
 
         {/* Call to Action */}
-        <FadeInWhenVisible>
+        {/* <FadeInWhenVisible> */}
           <Button variant="hover">HIRE AI API DEVELOPER</Button>
-        </FadeInWhenVisible>
+        {/* </FadeInWhenVisible> */}
       </PageLayout>
 
       {/* ===== API-AS-A-SERVICE SECTION ===== */}
@@ -85,14 +85,24 @@ const ApiDevelopment = () => {
         />
 
         {/* APIaaS Image + Feature Grid */}
-        <FeaturesList features={services} fadeUp={fadeUp} grid />
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <FadeInWhenVisible className="md:block hidden">
+            <img
+              loading="lazy"
+              src="/assets/services/api-development/third-party-software-integration.png"
+              alt="Mobile Analytics App"
+              className="w-56 mx-auto"
+            />
+          </FadeInWhenVisible>
+          <FeaturesList features={services} fadeUp={fadeUp} grid />
+        </div>
 
         {/* CTA */}
-        <FadeInWhenVisible>
+        {/* <FadeInWhenVisible> */}
           <Button variant="hover">
             GET LOAN MANAGEMENT SOFTWARE SOLUTIONS
           </Button>
-        </FadeInWhenVisible>
+        {/* </FadeInWhenVisible> */}
       </PageLayout>
 
       {/* ===== THIRD-PARTY API FUNCTIONALITY ===== */}
@@ -106,9 +116,9 @@ const ApiDevelopment = () => {
         <FeaturesList features={apiFunctionality} fadeUp={fadeUp} grid />
 
         {/* CTA */}
-        <FadeInWhenVisible>
+        {/* <FadeInWhenVisible> */}
           <Button variant="hover">GET THIRD-PARTY API FUNCTIONALITY</Button>
-        </FadeInWhenVisible>
+        {/* </FadeInWhenVisible> */}
       </PageLayout>
 
       {/* ===== SUPPORT SERVICES SECTION ===== */}
@@ -119,7 +129,7 @@ const ApiDevelopment = () => {
         />
 
         {/* Support Cards */}
-        <FeaturesList features={support} fadeUp={fadeUp} grid />
+        <FeaturesList features={support} fadeUp={fadeUp} grid iconAlign="horizontal" />
       </PageLayout>
 
       {/* ===== FAQ SECTION ===== */}

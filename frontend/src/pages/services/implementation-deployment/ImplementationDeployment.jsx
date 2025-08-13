@@ -32,7 +32,7 @@ const ImplementationDeployment = () => {
           title="Augment Your IT Team with Low-Cost Software Developers"
           description="U Tech has over 2,800 dedicated software developers to augment your existing IT team."
         />
-        <FeaturesList features={implementationgame} fadeUp={fadeUp} grid3 />
+        <FeaturesList features={implementationgame} fadeUp={fadeUp} grid3 center />
         <FadeInWhenVisible>
           <Button variant="hover">Get Your Telecom Software Audit</Button>
         </FadeInWhenVisible>
@@ -54,7 +54,7 @@ const ImplementationDeployment = () => {
                 className="mx-auto"
               />
             </FadeInWhenVisible>
-            <FeaturesList2 features={implementationFeatures} fadeUp={fadeUp} />
+            <FeaturesList features={implementationFeatures} fadeUp={fadeUp} iconAlign="horizontal" />
           </div>
         </PageLayout>
       </section>
@@ -83,7 +83,7 @@ const ImplementationDeployment = () => {
               </div>
 
               {/* === Title + Description (FeaturesList) === */}
-              <FeaturesList fadeUp={fadeUp} features={[item]} />
+              <FeaturesList fadeUp={fadeUp} features={[item]} center/>
             </div>
           ))}
         </div>

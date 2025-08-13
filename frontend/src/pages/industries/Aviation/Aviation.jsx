@@ -3,6 +3,7 @@ import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
+import ImageNearScreen from "@/custom/ImageNearScreen";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
 import { TypographyH5, TypographyMuted, Headline } from "@/custom/Typography";
@@ -72,33 +73,20 @@ export default function Aviation() {
         </PageLayout>
       </section>
 
-      <PageLayout className="py-16 space-y-10 text-center">
+      <section className="py-16 space-y-10 text-center">
         <Headline
           title="Custom Airline Technology Solutions"
           description="U Tech provides custom airline management software for OEMs, MROs, Airports, and flight operators to streamline their operational workflows."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <FeaturesList
-            fadeUp={fadeUp}
-            features={airlineOperationsServices}
-            grid
-          />
-          <FadeInWhenVisible
-            delay={0.5}
-            className="md:block hidden"
-          >
-            <img
-              loading="lazy"
-              src="/assets/industries/aviation/custom-flight-operations-management-software-development.png"
-              alt="Portfolio"
-              className="w-96 mx-auto"
-            />
-          </FadeInWhenVisible>
-        </div>
+        <ImageNearScreen
+          features={airlineOperationsServices}
+          src="/assets/industries/aviation/custom-flight-operations-management-software-development.png"
+          imageAlign="right"
+        />
         <FadeInWhenVisible>
           <Button variant="hover">GET FLIGHT OPS SOFTWARE DEVELOPES</Button>
         </FadeInWhenVisible>
-      </PageLayout>
+      </section>
 
       <section className="py-16 bg-secondary">
         <PageLayout className="space-y-10 text-center">

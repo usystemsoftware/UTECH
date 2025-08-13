@@ -14,9 +14,10 @@ export const FeaturesList = ({
   image,
   imageClass = "",
   reverse = false,
+  iconAlign = "vertical",
 }) => {
   // Determine text alignment class
-  const textAlignClass = center ? "text-center" : "text-left";
+  const textAlignClass = center ? "text-center" : "sm:text-left text-center";
 
   // Determine layout class
   let contentClass;
@@ -27,8 +28,12 @@ export const FeaturesList = ({
   } else if (grid) {
     contentClass = `grid grid-cols-1 sm:grid-cols-2 gap-6 ${textAlignClass} w-full`;
   } else {
-    contentClass = `w-full space-y-4 ${textAlignClass}`;
+    contentClass = `w-full space-y-7 ${textAlignClass}`;
   }
+
+  // Helper: Check if icon is an SVG file path
+  const isSvgIcon = (icon) =>
+    typeof icon === "string" && icon.trim().toLowerCase().endsWith(".svg");
 
   return (
     <div
@@ -37,23 +42,40 @@ export const FeaturesList = ({
     >
       <div className={contentClass}>
         {features.map((feature, index) => (
-          <FadeInWhenVisible
+          <div
             key={index}
-            className={`flex flex-col gap-2 ${center ? "items-center" : "items-start"
+            className={`flex ${iconAlign === "horizontal"
+              ? `sm:flex-row flex-col gap-4 ${center ? "items-center" : "items-center sm:items-start"}`
+              : `flex-col gap-2 ${center ? "items-center" : "items-center sm:items-start"}`
               }`}
           >
+            {/* ICON */}
             <span className="flex-shrink-0">
-              <IconRenderer
-                name={feature.icon}
-                size={iconSize}
-                className="text-primary"
-              />
+              {isSvgIcon(feature.icon) ? (
+                <img
+                  src={feature.icon}
+                  alt={feature.title}
+                  width={iconSize}
+                  height={iconSize}
+                  className="object-contain w-14 h-14"
+                />
+              ) : (
+                <IconRenderer
+                  name={feature.icon}
+                  size={iconSize}
+                  className="text-primary"
+                />
+              )}
             </span>
-            <TypographyH5 className="font-extrabold text-base tracking-tight">
-              {feature.title}
-            </TypographyH5>
-            <TypographyMuted>{feature.description}</TypographyMuted>
-          </FadeInWhenVisible>
+
+            {/* TEXT */}
+            <div className={iconAlign === "horizontal" ? "flex-1" : ""}>
+              <TypographyH5 className="font-extrabold text-base tracking-tight">
+                {feature.title}
+              </TypographyH5>
+              <TypographyMuted className="sm:line-clamp-4 text-start">{feature.description}</TypographyMuted>
+            </div>
+          </div>
         ))}
       </div>
 

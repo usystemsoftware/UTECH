@@ -2,17 +2,17 @@
 
 export const robustSolutions = [
     {
-        icon: "LineChart",
+        icon: "/assets/solutions/embedded-software/icons/1.svg",
         title: "Web & Mobile Applications",
         description: "We develop user-centric embedded web, mobile, and software applications with innovative user interfaces that enable seamless data migration.",
     },
     {
-        icon: "Smartphone",
+        icon: "/assets/solutions/embedded-software/icons/2.svg",
         title: "Middleware & API Solutions",
         description: "We develop middleware and custom APIs to enable end application development and functional integrations between separate programs.",
     },
     {
-        icon: "FileText",
+        icon: "/assets/solutions/embedded-software/icons/3.svg",
         title: "Device Driver Development",
         description: "Our software engineering offers expert-level device-driver development services, adhering to strict embedded operating system interface and quality standards.",
     },
@@ -20,17 +20,17 @@ export const robustSolutions = [
 
 export const hmiSolutions = [
     {
-        icon: "LineChart",
+        icon: "/assets/solutions/embedded-software/icons/4.svg",
         title: "Hardware Design",
         description: "We carefully select the most fitting hardware components to design a turn-key hardware system that allows for seamless graphical software integration.",
     },
     {
-        icon: "Smartphone",
+        icon: "/assets/solutions/embedded-software/icons/5.svg",
         title: "Software Design",
         description: "We design HMI applications and system-level HMI software for industrial equipment management and wearables/device monitoring.",
     },
     {
-        icon: "FileText",
+        icon: "/assets/solutions/embedded-software/icons/6.svg",
         title: "Infrastructure & Ecosystem",
         description: "We design and upgrade web or cloud-based HMI systems to create secure data storage environments while ensuring fast data collection.",
     },
@@ -38,22 +38,22 @@ export const hmiSolutions = [
 
 export const aiEmbeddedSolutions = [
     {
-        icon: "DollarSign",
+        icon: "/assets/solutions/embedded-software/icons/2.svg",
         title: "AI for Predictive Maintenance and Process Optimization",
         description: "We enable predictive maintenance and process optimization through AI algorithm development in embedded systems. Our developers use real-time data analysis and anomaly detection techniques to avoid unexpected equipment failures. We refine our optimization strategies to leverage AI and enhance efficiency and productivity in industrial processes.",
     },
     {
-        icon: "CheckCheck",
+        icon: "/assets/solutions/embedded-software/icons/3.svg",
         title: "AI-Powered Wearable Health Devices",
         description: "We integrate AI algorithms into wearable health devices for real-time health monitoring and analysis. Edge AI capabilities enable on-device processing and interpretation of health data. This AI-accrued data provides early detection and personalized intervention, strengthening healthcare for all patients.",
     },
     {
-        icon: "Bell",
+        icon: "/assets/solutions/embedded-software/icons/4.svg",
         title: "AI-Optimized Hardware and Edge Computing",
         description: "Our team develops AI-optimized hardware platforms tailored for embedded systems. We harness the power of edge computing to perform AI inference locally on embedded devices, ensuring robust efficiency. We guarantee latency, privacy, and bandwidth optimization with AI integration in hardware and edge computing.",
     },
     {
-        icon: "Wallet",
+        icon: "/assets/solutions/embedded-software/icons/5.svg",
         title: "Frameworks and Tools for Embedded AI Development",
         description: "We recommend frameworks and tools like TensorFlow Lite, ONNX Runtime, and Intel’s AI solutions for their performance, compatibility, and optimization capabilities. We consider inference speed, hardware compatibility, optimization techniques, and community support to ensure our AI solutions are efficient, scalable, and tailored to each client’s needs.",
     },
@@ -61,17 +61,17 @@ export const aiEmbeddedSolutions = [
 
 export const bspSolutions = [
     {
-        icon: "LineChart",
+        icon: "/assets/solutions/embedded-software/icons/6.svg",
         title: "Bootloader & Linux Kernel Porting",
         description: "We offer bootloader development and adapt the Linux kernel to work on an embedded platform through architecture and board porting.",
     },
     {
-        icon: "Smartphone",
+        icon: "/assets/solutions/embedded-software/icons/7.svg",
         title: "Custom Device Driver Development",
         description: "We build custom device drivers to bring up a board, provide updates to support new hardware specifications, and customize drivers with new features.",
     },
     {
-        icon: "FileText",
+        icon: "/assets/solutions/embedded-software/icons/8.svg",
         title: "Root File Systems",
         description: "We generate root file system contents to build programs that run on embedded systems, enabling them to boot, restore, recover, and repair them.",
     },
@@ -79,32 +79,32 @@ export const bspSolutions = [
 
 export const embeddedDevSolutions = [
     {
-        icon: "DollarSign",
+        icon: "/assets/solutions/embedded-software/icons/4.svg",
         title: "Embedded System Programming",
         description: "We provide world-class, end-to-end embedded programming services for microprocessors & microcontrollers, device drivers, IoT devices, HIDs, M2Ms, and so much more.",
     },
     {
-        icon: "CheckCheck",
+        icon: "/assets/solutions/embedded-software/icons/5.svg",
         title: "Embedded Operating Systems",
         description: "Our experienced embedded software engineers customize popular real time operating systems (RTOS), including Linux, FreeRTOS, VxWorks, QNX, Android Open Source Project (AOSP), and more.",
     },
     {
-        icon: "Bell",
+        icon: "/assets/solutions/embedded-software/icons/6.svg",
         title: "Embedded Technology Expertise",
         description: "Our developers possess a strong working knowledge of programming languages, Embedded-C and Embedded C++, along with Java, Python, Rust, Ada, and more.",
     },
     {
-        icon: "Wallet",
+        icon: "/assets/solutions/embedded-software/icons/7.svg",
         title: "Linux Enterprise Expertise",
         description: "We develop IoT and M2M solutions, including smart home appliances, industrial automation equipment, robotics, consumer electronics, and other advanced systems.",
     },
     {
-        icon: "Bell",
+        icon: "/assets/solutions/embedded-software/icons/8.svg",
         title: "Internet of Things (IoT) Development",
         description: "We develop IoT and machine-to-machine (M2M) solutions, including smart home equipment, industrial automation mechanisms (IIoT), consumer electronics, wearables, and more.",
     },
     {
-        icon: "Wallet",
+        icon: "/assets/solutions/embedded-software/icons/9.svg",
         title: "Complex DSC & DSP Development",
         description: "We provide digital signal controller and processor (DSC/DSP) programming solutions for industrial automation, AI drone technology, surveillance systems, and more.",
     },
@@ -112,17 +112,17 @@ export const embeddedDevSolutions = [
 
 export const industrySolutions = [
     {
-        icon: "LineChart",
+        icon: "/assets/solutions/embedded-software/icons/2.svg",
         title: "Media Streaming & WebRTC Solutions",
         description: "We successfully combine mobile, web, cloud, middleware, and system levels to build media streaming solutions for large communication hubs.",
     },
     {
-        icon: "Smartphone",
+        icon: "/assets/solutions/embedded-software/icons/6.svg",
         title: "Embedded Security Solutions",
         description: "We build embedded security solutions, including cloud gateways, hardware/firmware validation & verification systems, security tokens, and more.",
     },
     {
-        icon: "FileText",
+        icon: "/assets/solutions/embedded-software/icons/1.svg",
         title: "Network Solutions",
         description: "We engineer scalable network solutions that maintain high availability and connectivity with user devices, business units, and industrial systems.",
     },

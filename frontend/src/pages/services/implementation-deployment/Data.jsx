@@ -1,18 +1,18 @@
 export const implementationgame = [
   {
-    icon: "Bot",
+    icon: "/assets/services/noc-services/icons/10006.svg",
     title: "Continuous Deployment",
     description:
       "Our software deployment specialists have cultivated an efficient continuous delivery process that emphasizes comprehensive, automated testing before any code is integrated or deployed. We catch code errors and deploy iterations much faster by establishing an organized central code repository with version control and rollback.",
   },
   {
-    icon: "BarChart3",
+    icon: "/assets/services/noc-services/icons/10013.svg",
     title: "Phased Implementation Solutions",
     description:
       "Our developers perform phased implementation services that roll out the software in increments to maintain data integrity. We assess your network's readiness and compatibility for implementation and work with you to design a phased plan. Our software developers will configure your network’s infrastructure based on your needs.",
   },
   {
-    icon: "MessageCircleCode",
+    icon: "/assets/services/noc-services/icons/10011.svg",
     title: "Compatibility and Configuration Solutions",
     description:
       "Our custom configuration solutions include tracking and controlling changes in applications before and after deployment, revision control, and establishment of baselines. We provide database compatibility solutions to ensure new software and features are not incompatible with earlier releases.",
@@ -21,19 +21,19 @@ export const implementationgame = [
 
 export const implementationFeatures = [
   {
-    icon: "LineChart",
+    icon: "/assets/services/noc-services/icons/10002.svg",
     title: "Deployment Planning Services",
     description:
       "Our expert software developers, programmers, and project managers deliver detailed deployment plans using the best structuring tools for cloud-based, on-premises, and hybrid environments.This lowers risks and costs will be meticulously monitored, ensuring complete configuration of the deployment process. We take the time to ensure that there is no system downtime and that your business workflows are improved.",
   },
   {
-    icon: "Smartphone",
+    icon: "/assets/services/noc-services/icons/10003.svg",
     title: "Custom Software Deployment Services",
     description:
       "We provide agile software deployments and implementation services using proven schemas and methodologies to ensure the most cost-effective application delivery process to end-users. Our development team utilizes custom software development best practices for configuration, installation, integration, QA testing, troubleshooting, project governance, and deployment.",
   },
   {
-    icon: "FileBarChart",
+    icon: "/assets/services/noc-services/icons/10008.svg",
     title: "Post-Deployment Services",
     description:
       "After our developers have developed your custom software solution, deployed your newly developed application, or performed a software integration, we ensure that your solution performs and operates smoothly through a series of QA/functionality testing, maintenance, and support. We work to identify and group end-users by optimal implementations, monitor users' post-deployment behavior to ensure success, and generate reports of user metrics, directly and indirectly, related to ROI.",

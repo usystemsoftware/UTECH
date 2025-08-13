@@ -36,7 +36,7 @@ export default function HeroSection({
         />
 
         {/* Foreground Text & Button */}
-        <FadeInWhenVisible
+        <div
           className="relative z-20 md:max-w-6xl w-full mx-auto text-center px-2 space-y-6 text-white"
           variants={animationVariants}
         >
@@ -52,7 +52,7 @@ export default function HeroSection({
               {buttonText}
             </Link>
           )}
-        </FadeInWhenVisible>
+        </div>
       </section>
 
       {/* Breadcrumbs Section */}

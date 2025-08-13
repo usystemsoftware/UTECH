@@ -15,6 +15,8 @@ import InfrastructureSupport from "@/pages/services/infrastructure-support/Infra
 import MigrationsUpgrades from "@/pages/services/migrations-upgrades/MigrationsUpgrades";
 import NocServices from "@/pages/services/noc-services/NocServices";
 import PartnerProductSupport from "@/pages/services/partner-product-support/PartnerProductSupport";
+import StartupMvp from "@/pages/services/startup-mvp/StartupMvp";
+import SystemsIntegration from "@/pages/services/systems-integration/SystemsIntegration";
 // import ProductLifecycleManagement from "@/pages/services/product-lifecycle-management/ProductLifecycleManagement";
 
 export const ServiceRoutes = [
@@ -35,5 +37,7 @@ export const ServiceRoutes = [
   { path: "/services/migrations-upgrades", element: <MigrationsUpgrades /> },
   { path: "/services/noc", element: <NocServices /> },
   { path: "/services/partner-support", element: <PartnerProductSupport /> },
+  { path: "/services/startup-mvp", element: <StartupMvp /> },
+  { path: "/services/systems-integration", element: <SystemsIntegration /> },
   // { path: "/services/plm", element: <ProductLifecycleManagement /> },
 ]

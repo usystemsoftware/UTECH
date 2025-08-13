@@ -35,16 +35,14 @@ const MigrationsUpgrades = () => {
           title="Hire Experienced Data Migration Experts"
           description="U Tech is a leading software development company providing expert data migration services. With years of experience, our skilled team migrates databases, servers, user accounts, agent jobs, and SSIS packages with minimal downtime. Our solutions ensure a smooth transition from outdated to modern systems, enhancing efficiency and reducing costs. Whether migrating to the cloud or upgrading platforms, U Tech's data migration solutions are tailored to meet your unique needs and ensure a successful outcome."
         />
-        <FeaturesList features={migrationServicesfedus} fadeUp={fadeUp} grid />
-        <FadeInWhenVisible delay={0.4}>
-          <Button variant="hover">REQUEST MIGRATION SERVICES</Button>
-        </FadeInWhenVisible>
+        <FeaturesList features={migrationServicesfedus} fadeUp={fadeUp} grid iconAlign="horizontal" />
+        <Button variant="hover">REQUEST MIGRATION SERVICES</Button>
         <FadeInWhenVisible delay={0.5}>
           <img
             loading="lazy"
             src="/assets/services/migration/dashboard.png"
             alt="Portfolio"
-            className="w-135 mx-auto"
+            className="sm:w-[65%] w-[90%] mx-auto"
           />
         </FadeInWhenVisible>
       </PageLayout>
@@ -56,20 +54,18 @@ const MigrationsUpgrades = () => {
             title="Artificial Intelligence Solutions for Data Migration"
             description="U Tech’s software specialists leverage Artificial Intelligence to streamline workflow and ensure seamless data transition to cloud-based and existing platforms. Our AI-enhanced data migration automates data management, report generation, and project monitoring to enable data-driven decisions and boost business intelligence."
           />
-          <FeaturesList features={migrationfedus} fadeUp={fadeUp} grid />
-          <FadeInWhenVisible delay={0.4}>
-            <Button variant="hover">GET AI SOLUTIONS FOR DATA MIGRATION</Button>
-          </FadeInWhenVisible>
+          <FeaturesList features={migrationfedus} fadeUp={fadeUp} grid iconAlign="horizontal" />
+          <Button variant="hover">GET AI SOLUTIONS FOR DATA MIGRATION</Button>
         </PageLayout>
       </section>
 
       {/* === Database Migration Automation === */}
-      <PageLayout className="py-16 text-center">
+      <PageLayout className="py-16 space-y-10 text-center">
         <Headline
           title="Database Migration Automation"
           description="We approach your data with more scalability in mind by creating automated data migration systems that process, analyze, and map unlimited fields to your new database."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-15">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
           <FadeInWhenVisible>
             <img
               loading="lazy"
@@ -84,23 +80,21 @@ const MigrationsUpgrades = () => {
               We leverage schema migration tools like AWS DMS, Azure, MySQL
               Workbench...
             </TypographyMuted>
-            <FeaturesList features={migrationFeatures} fadeUp={fadeUp} />
+            <FeaturesList features={migrationFeatures} fadeUp={fadeUp} iconAlign="horizontal" />
           </div>
         </div>
-        <FadeInWhenVisible className="py-10">
-          <Button variant="hover">AUTOMATE YOUR DATABASE MIGRATION</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">AUTOMATE YOUR DATABASE MIGRATION</Button>
       </PageLayout>
 
       {/* === Remote DBA Services Section === */}
       <section className="bg-secondary py-16">
-        <PageLayout className="text-center">
+        <PageLayout className="text-center space-y-10">
           <Headline
             title="Remote DBA Services From U Tech’s Experts"
             description="Whether you need to migrate to a new platform, move to the cloud, or upgrade your legacy systems, U Tech can augment your existing IT team to get the job done quickly and affordably."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-15">
-            <FeaturesList features={migrationRemote} fadeUp={fadeUp} />
+            <FeaturesList features={migrationRemote} fadeUp={fadeUp} iconAlign="horizontal" />
             <FadeInWhenVisible>
               <img
                 loading="lazy"
@@ -128,16 +122,16 @@ const MigrationsUpgrades = () => {
             <FeaturesList
               fadeUp={fadeUp}
               features={dicominMigration.slice(0, 2)}
+              center
             />
             <FeaturesList
               fadeUp={fadeUp}
               features={dicominMigration.slice(2, 4)}
+              center
             />
           </div>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">HIRE DATA MIGRATION EXPERTS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">HIRE DATA MIGRATION EXPERTS</Button>
       </PageLayout>
 
       {/* === Migration Tools Logos Section === */}
@@ -177,10 +171,8 @@ const MigrationsUpgrades = () => {
           title="Data Migration Support Services"
           description="Our highly skilled IT professionals provide expert data migration support services to ensure seamless transitions. We offer specialized assistance, timely troubleshooting and debugging, and active monitoring services."
         />
-        <FeaturesList features={migrationData} fadeUp={fadeUp} grid />
-        <FadeInWhenVisible delay={0.4}>
-          <Button variant="hover">GET DATA MIGRATION SUPPORT</Button>
-        </FadeInWhenVisible>
+        <FeaturesList features={migrationData} fadeUp={fadeUp} grid iconAlign="horizontal" />
+        <Button variant="hover">GET DATA MIGRATION SUPPORT</Button>
       </PageLayout>
 
       {/* === FAQ SECTION === */}

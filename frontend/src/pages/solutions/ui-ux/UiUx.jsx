@@ -61,25 +61,23 @@ const UiUx = () => {
               loading="lazy"
               src="/assets/solutions/ui-ux/mockup.png"
               alt="Tax Preparation"
-              className="w-62 mx-auto"
+              className="w-76 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList features={uiuxServices.slice(0, 3)} fadeUp={fadeUp} />
+          <FeaturesList features={uiuxServices.slice(0, 3)} fadeUp={fadeUp} iconAlign="horizontal" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-          <FeaturesList features={uiuxServices.slice(3, 6)} fadeUp={fadeUp} />
+          <FeaturesList features={uiuxServices.slice(3, 6)} fadeUp={fadeUp} iconAlign="horizontal" />
           <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/solutions/ui-ux/mobile-mockup.png"
               alt="Tax Preparation"
-              className="w-68 mx-auto"
+              className="w-82 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">Hire Experienced UI/UX Developer</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Hire Experienced UI/UX Developer</Button>
       </PageLayout>
 
       {/* AI BENEFITS SECTION */}
@@ -89,7 +87,7 @@ const UiUx = () => {
             title="AI-Powered UI UX Development Services"
             description="U Technology commitment to staying ahead of the technological curve is ushering in a new era of AI-powered innovation. Our commitment to seamless, intuitive design takes center stage as we harness the transformative capabilities of Artificial Intelligence."
           />
-          <FeaturesList features={aiBenefits} fadeUp={fadeUp} grid3 />
+          <FeaturesList features={aiBenefits} fadeUp={fadeUp} grid3 center />
 
         </PageLayout>
       </section>
@@ -103,7 +101,7 @@ const UiUx = () => {
             seamless, intuitive, and pleasurable user experience."
         />
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
-          <FeaturesList features={processSteps.slice(0, 2)} fadeUp={fadeUp} />
+          <FeaturesList features={processSteps.slice(0, 2)} fadeUp={fadeUp} center />
           <FadeInWhenVisible>
             <img
               loading="lazy"
@@ -112,11 +110,9 @@ const UiUx = () => {
               className="w-86 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList features={processSteps.slice(2, 4)} fadeUp={fadeUp} />
+          <FeaturesList features={processSteps.slice(2, 4)} fadeUp={fadeUp} center />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">CUSTOMIZE YOUR UX/UI DESIGN</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">CUSTOMIZE YOUR UX/UI DESIGN</Button>
       </PageLayout>
 
       {/* TECHNOLOGY STACK SECTION */}
@@ -142,11 +138,9 @@ const UiUx = () => {
           ))}
         </div>
 
-        <FadeInWhenVisible>
-          <Button variant="hover">
-            Hire Developers with UX/UI Design Experience
-          </Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">
+          Hire Developers with UX/UI Design Experience
+        </Button>
       </PageLayout>
 
       {/* TESTIMONIAL SECTION */}

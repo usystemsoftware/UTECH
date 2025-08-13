@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { useAccessibility } from "@/context/AccessibilityContext";
 
 const AccessibleText = ({ children, className, as: Component = 'div', ...props }) => {
@@ -207,7 +206,7 @@ export const Headline = ({ title, description, className }) => {
   const { settings } = useAccessibility();
 
   return (
-    <FadeInWhenVisible>
+    <div>
       <div className={cn(
         "space-y-4 w-full text-center sm:max-w-2xl md:max-w-4xl lg:max-w-[80%] mx-auto",
         settings.bigText && 'big-text',
@@ -220,7 +219,7 @@ export const Headline = ({ title, description, className }) => {
         <h1 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tighter">{title}</h1>
         <p className="text-sm sm:text-base">{description}</p>
       </div>
-    </FadeInWhenVisible>
+    </div>
   );
 };
 

@@ -48,6 +48,7 @@ const InfrastructureSupport = () => {
             <FeaturesList
               features={infrastructureCustom.slice(0, 3)}
               fadeUp={fadeUp}
+              iconAlign="horizontal"
             />
           </div>
           <FadeInWhenVisible>
@@ -79,12 +80,11 @@ const InfrastructureSupport = () => {
               features={infrastructureCustom.slice(3, 7)}
               fadeUp={fadeUp}
               reverse
+              iconAlign="horizontal"
             />
           </div>
         </div>
-        <FadeInWhenVisible delay={0.4}>
-          <Button variant="hover">GET IT SUPPORT & MAINTENANCE</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET IT SUPPORT & MAINTENANCE</Button>
       </PageLayout>
 
       {/* === SECURITY & MODERNIZATION SECTION === */}
@@ -100,7 +100,7 @@ const InfrastructureSupport = () => {
               <TypographyMuted>
                 We perform vulnerability scans, SSL/AES encryptions, and other server security best practices for SQL Server, MySQL, PostgreSQL, MongoDB, Oracle, Informix, Db2, and other databases.
               </TypographyMuted>
-              <FeaturesList features={infrastructureFeatures} fadeUp={fadeUp} />
+              <FeaturesList features={infrastructureFeatures} fadeUp={fadeUp} iconAlign="horizontal" />
             </div>
             <FadeInWhenVisible className='hidden sm:block'>
               <img
@@ -111,9 +111,7 @@ const InfrastructureSupport = () => {
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible className="py-10">
-            <Button variant="hover">MODERNIZE IT OPERATIONS NOW</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">MODERNIZE IT OPERATIONS NOW</Button>
         </PageLayout>
       </section>
 
@@ -127,6 +125,7 @@ const InfrastructureSupport = () => {
           <FeaturesList
             features={infrastructuresupportSolutions.slice(0, 2)}
             fadeUp={fadeUp}
+            center
           />
           <FadeInWhenVisible className="md:block hidden">
             <img
@@ -139,11 +138,10 @@ const InfrastructureSupport = () => {
           <FeaturesList
             features={infrastructuresupportSolutions.slice(2, 4)}
             fadeUp={fadeUp}
+            center
           />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET IT SUPPORT INTEGRATION NOW</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET IT SUPPORT INTEGRATION NOW</Button>
       </PageLayout>
 
       {/* === MONITORING TOOL INTEGRATIONS SECTION === */}
@@ -158,6 +156,7 @@ const InfrastructureSupport = () => {
               fadeUp={fadeUp}
               features={dicominfrastructure}
               grid
+              center
             />
             <FadeInWhenVisible delay={0.5}>
               <img
@@ -168,9 +167,7 @@ const InfrastructureSupport = () => {
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET IT INFRASTRUCTURE MONITORING NOW</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET IT INFRASTRUCTURE MONITORING NOW</Button>
         </PageLayout>
       </section>
 
@@ -184,10 +181,9 @@ const InfrastructureSupport = () => {
           features={Custominfrastructuregame}
           fadeUp={fadeUp}
           grid3
+          center
         />
-        <FadeInWhenVisible>
-          <Button variant="hover">Get AI-enabled It Infrastructure</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Get AI-enabled It Infrastructure</Button>
       </PageLayout>
 
       {/* === ENHANCED SUPPORT SERVICES SECTION === */}
@@ -201,10 +197,9 @@ const InfrastructureSupport = () => {
             features={infrastructureServicesfedus}
             fadeUp={fadeUp}
             grid
+            iconAlign="horizontal"
           />
-          <FadeInWhenVisible delay={0.4}>
-            <Button variant="hover">Enhance IT Infrastructure Now</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">Enhance IT Infrastructure Now</Button>
         </PageLayout>
       </section>
 
