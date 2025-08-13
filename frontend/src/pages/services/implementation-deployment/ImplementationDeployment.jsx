@@ -4,7 +4,6 @@ import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
 import { Button } from "@/components/ui/button";
 import { Headline } from "@/custom/Typography";
-import { FeaturesList2 } from "@/components/FeaturesList2";
 import FaqSection from "@/custom/FaqSection";
 import {
   implementationgame,

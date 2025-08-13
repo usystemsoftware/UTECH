@@ -1,6 +1,6 @@
 import React from 'react'
 
-const VideoPoster = ({ features }) => {
+const VideoPoster = ({ features, title }) => {
 
     return (
         <div>
@@ -16,7 +16,7 @@ const VideoPoster = ({ features }) => {
             {/* Overlay */}
             <div className="relative z-10 flex flex-col items-center text-center py-12 px-4">
                 <h2 className="text-white text-xl sm:text-2xl md:text-3xl font-bold mb-10">
-                    The Remote Healthcare Revolution has begun!
+                    {title}
                 </h2>
 
                 {/* Grid for desktop, stacked for mobile */}
@@ -31,12 +31,12 @@ const VideoPoster = ({ features }) => {
                             </div>
 
                             {/* Title */}
-                            <div className="bg-orange-500 text-white px-6 py-2 rounded font-semibold w-full text-center">
+                            <div className="bg-orange-500 text-white px-6 py-2 rounded text-sm font-semibold w-full text-center">
                                 {feature?.title}
                             </div>
 
                             {/* Learn More Button */}
-                            <button className="mt-3 bg-orange-500 hover:bg-orange-600 text-white px-5 py-1 rounded-full">
+                            <button className="mt-3 bg-orange-500 cursor-pointer hover:bg-orange-600 text-white px-5 py-1 rounded-full">
                                 Learn More
                             </button>
                         </div>

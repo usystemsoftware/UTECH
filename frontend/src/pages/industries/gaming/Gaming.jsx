@@ -1,7 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { TypographyMuted, Headline } from "@/custom/Typography";
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
 import { FeaturesList } from "@/components/FeaturesList";
@@ -42,11 +42,10 @@ const Gaming = () => (
         title="U Technology’s Game Development Services"
         description="Our certified gaming software development experts can create your video game project from scratch or revamp existing solutions with updates and integrations to stay in line with current gaming industry trends."
       />
-      <FeaturesGrid
+      <FeaturesGridnew
         leftFeatures={gamingSoftwareLeftFeatures}
         rightFeatures={gamingSoftwareRightFeatures}
         centerImage="/assets/industries/gaming/combo.png"
-        fadeUp={fadeUp}
         iconSize={38}
       />
     </PageLayout>
@@ -58,7 +57,11 @@ const Gaming = () => (
           title="Custom PixiJS Development"
           description="Are you looking to create impressive PixiJS examples or PixiJS games? At U Technology’s, we leverage the power of PixiJS, the HTML5 creation engine that offers the quickest and most adaptable 2D WebGL renderer."
         />
-        <FeaturesList features={gamingSolutions} grid3 />
+        <FeaturesList
+          features={gamingSolutions}
+          grid3
+          center
+        />
       </PageLayout>
     </section>
 
@@ -70,11 +73,11 @@ const Gaming = () => (
       />
       <FeaturesList
         features={gamingLoanServicingfeatures}
-        fadeUp={fadeUp}
         iconSize={38}
         image="/assets/industries/gaming/services.png"
         imageClass="w-135 mx-auto"
         grid
+        center
       />
       <TypographyMuted>
         We integrate with gaming industry-leading video game development tools
@@ -85,9 +88,7 @@ const Gaming = () => (
           <img key={idx} src={logo.src} alt={logo.alt} className="h-10" />
         ))}
       </div>
-      <FadeInWhenVisible>
-        <Button variant="hover">HIRE VIDEO GAME DEVELOPER</Button>
-      </FadeInWhenVisible>
+      <Button variant="hover">HIRE VIDEO GAME DEVELOPER</Button>
     </PageLayout>
 
     {/* === Mobile Game Development Services Section === */}
@@ -97,10 +98,12 @@ const Gaming = () => (
           title="Mobile Game Development Services"
           description="U Tech’s mobile game software solutions allow you to deliver engaging and highly immersive games to players worldwide, built with cutting-edge technology and monetization solutions."
         />
-        <FeaturesList features={GammingMobile} fadeUp={fadeUp} grid3 />
-        <FadeInWhenVisible>
-          <Button variant="hover">HIRE MOBILE GAME DEVELOPERS</Button>
-        </FadeInWhenVisible>
+        <FeaturesList
+          features={GammingMobile}
+          grid3
+          center
+        />
+        <Button variant="hover">HIRE MOBILE GAME DEVELOPERS</Button>
       </PageLayout>
     </section>
 
@@ -119,11 +122,12 @@ const Gaming = () => (
             className="mx-auto w-120"
           />
         </FadeInWhenVisible>
-        <FeaturesList features={gameFeatures} fadeUp={fadeUp} />
+        <FeaturesList
+          features={gameFeatures}
+          iconAlign="horizontal"
+        />
       </div>
-      <FadeInWhenVisible className="py-10">
-        <Button variant="hover">GET AR/VR GAME SOLUTIONS</Button>
-      </FadeInWhenVisible>
+      <Button variant="hover">GET AR/VR GAME SOLUTIONS</Button>
     </PageLayout>
 
     {/* === iGaming Development Services Section === */}
@@ -136,8 +140,8 @@ const Gaming = () => (
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
           <FeaturesList
             features={gamingLoanServicing}
-            fadeUp={fadeUp}
             grid
+            center
           />
           <FadeInWhenVisible className="hidden md:block">
             <img
@@ -148,9 +152,7 @@ const Gaming = () => (
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET IGAMING SOFTWARE PROVIDER</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET IGAMING SOFTWARE PROVIDER</Button>
       </PageLayout>
     </section>
 
@@ -169,11 +171,12 @@ const Gaming = () => (
             className="mx-auto"
           />
         </FadeInWhenVisible>
-        <FeaturesList features={gameFeatureslist} fadeUp={fadeUp} />
+        <FeaturesList
+          features={gameFeatureslist}
+          iconAlign="horizontal"
+        />
       </div>
-      <FadeInWhenVisible>
-        <Button variant="hover">GET SOCIAL GAMING SOLUTIONS</Button>
-      </FadeInWhenVisible>
+      <Button variant="hover">GET SOCIAL GAMING SOLUTIONS</Button>
     </PageLayout>
 
     {/* === Unreal Engine Game Development Section === */}
@@ -184,7 +187,10 @@ const Gaming = () => (
           description="U Tech’s Unreal Engine developers create stunning games and immersive cinematic experiences deployed on video game console, mobile, and IoT quality devices."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-          <FeaturesList features={gameFeaturestitle} fadeUp={fadeUp} />
+          <FeaturesList
+            features={gameFeaturestitle}
+            iconAlign="horizontal"
+          />
           <FadeInWhenVisible className="hidden sm:block">
             <img
               loading="lazy"
@@ -194,9 +200,7 @@ const Gaming = () => (
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">HIRE UNREAL ENGINE DEVELOPER</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">HIRE UNREAL ENGINE DEVELOPER</Button>
       </PageLayout>
     </section>
 
@@ -208,15 +212,13 @@ const Gaming = () => (
       />
       <FeaturesList
         features={gamingconceptServicing}
-        fadeUp={fadeUp}
         iconSize={38}
         image="/assets/industries/gaming/gameart.png"
         grid
         reverse
+        center
       />
-      <FadeInWhenVisible>
-        <Button variant="hover">GET GAMING ART DEVELOPERS</Button>
-      </FadeInWhenVisible>
+      <Button variant="hover">GET GAMING ART DEVELOPERS</Button>
     </PageLayout>
 
     {/* === Fantasy Sports Software Development Section === */}
@@ -227,7 +229,10 @@ const Gaming = () => (
           description="U Tech’s experts add new and updated functionalities to existing fantasy sports software, delivering streamlined solutions that enhance user experience all season long"
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-          <FeaturesList features={gameFantasy} fadeUp={fadeUp} />
+          <FeaturesList
+            features={gameFantasy}
+            iconAlign="horizontal"
+          />
           <FadeInWhenVisible className="hidden sm:block">
             <img
               loading="lazy"
@@ -237,9 +242,7 @@ const Gaming = () => (
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET FANTASY SPORTS SOFTWARE SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET FANTASY SPORTS SOFTWARE SOLUTIONS</Button>
       </PageLayout>
     </section>
 
@@ -249,10 +252,12 @@ const Gaming = () => (
         title="AI-Powered Gaming Solutions"
         description="With gaming being one of the most lucrative industries in today’s world, Artificial Intelligence (AI) in games has become an increasingly important pillar of game development. Our experts have industry-specific technical experience for cutting-edge AI game development. Artificial Intelligence stands as an innovative tool that can level up the gaming experience."
       />
-      <FeaturesList features={gammingSolutiondeveloper} fadeUp={fadeUp} grid3 />
-      <FadeInWhenVisible>
-        <Button variant="hover">GET AI IN GAME DEVELOPMENT</Button>
-      </FadeInWhenVisible>
+      <FeaturesList
+        features={gammingSolutiondeveloper}
+        grid3
+        center
+      />
+      <Button variant="hover">GET AI IN GAME DEVELOPMENT</Button>
     </PageLayout>
 
     {/* === Gaming Application Support Services Section === */}
@@ -264,12 +269,10 @@ const Gaming = () => (
         />
         <FeaturesList
           features={gammingSupportApplication}
-          fadeUp={fadeUp}
+          center
           grid3
         />
-        <FadeInWhenVisible>
-          <Button variant="hover">GET GAMING APPS SUPPORT</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET GAMING APPS SUPPORT</Button>
       </PageLayout>
     </section>
 

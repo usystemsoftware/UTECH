@@ -1,6 +1,11 @@
+// src/components/FeaturesList.jsx
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { TypographyH5, TypographyMuted } from "@/custom/Typography";
 import { IconRenderer } from "@/custom/IconRenderer";
+
+// Helper: Check if icon is an SVG file path
+const isSvgIcon = (icon) =>
+  typeof icon === "string" && icon.trim().toLowerCase().endsWith(".svg");
 
 export const FeaturesList = ({
   features = [],
@@ -29,10 +34,6 @@ export const FeaturesList = ({
   } else {
     contentClass = `w-full space-y-7 ${textAlignClass}`;
   }
-
-  // Helper: Check if icon is an SVG file path
-  const isSvgIcon = (icon) =>
-    typeof icon === "string" && icon.trim().toLowerCase().endsWith(".svg");
 
   return (
     <div
@@ -89,3 +90,60 @@ export const FeaturesList = ({
     </div>
   );
 };
+
+export const FeaturesListOpposite = ({ features }) => {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      {features.map(({ icon, iconSize, title, description }, index) => {
+        const isRightColumn = index % 2 !== 0; // Odd index → right column
+        return (
+          <div
+            key={index}
+            className={`flex items-center gap-5 text-center
+              ${isRightColumn
+                ? "flex-col md:flex-row-reverse md:text-right md:items-start"
+                : "flex-col md:flex-row md:text-left md:items-start"
+              }`}
+          >
+            {/* Icon */}
+            <div className="flex-shrink-0">
+              {isSvgIcon(icon) ? (
+                <img
+                  src={icon}
+                  alt={title}
+                  width={iconSize}
+                  height={iconSize}
+                  className="object-contain w-14 h-14"
+                />
+              ) : (
+                <IconRenderer
+                  name={icon}
+                  size={iconSize}
+                  className="text-primary"
+                />
+              )}
+            </div>
+
+            {/* Text */}
+            <div className="w-full">
+              <TypographyH5 className="font-extrabold text-base md:text-xl text-primary tracking-tight">
+                {title}
+              </TypographyH5>
+              <div
+                className={`max-w-sm border-b-2 border-gray-200 my-2 
+                    mx-auto md:mx-0 
+                    ${isRightColumn ? "md:ml-auto" : ""}`} />
+
+              <TypographyMuted className="sm:line-clamp-4 text-start" >
+                {description}
+              </TypographyMuted>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+
+

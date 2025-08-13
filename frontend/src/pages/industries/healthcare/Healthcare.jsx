@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
-import { TypographyH3, Headline, TypographyMuted, TypographyH5 } from "@/custom/Typography";
+import { TypographyH3, Headline, TypographyMuted } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 
@@ -14,7 +14,6 @@ import {
   healthcareAIFeatures,
   healthcareExtraFeatures,
   healthcareSoftwareFeatures,
-  hieFeatures,
   hospitalSystemFeatures,
   hl7IntegrationFeatures,
   limsFeatures,
@@ -45,61 +44,46 @@ export default function Healthcare() {
       />
 
       {/* <PageLayout className="py-12"> */}
-      <section className="py-12">
-        <Headline
-          title="FIND THE RIGHT HEALTHCARE SOFTWARE DEVELOPMENT"
-          description="We provide custom healthcare software development services in response to the evolving healthcare industry. Being a custom healthcare software development company, our goal is to improve efficiency and patient care at reduced cost and assist in healthcare management decisions."
-        />
-        <FeaturesGridnew
-          leftFeatures={healthcareSoftwareFeatures.slice(0, 7)}
-          rightFeatures={healthcareSoftwareFeatures.slice(7, 14)}
-          centerImage="/assets/industries/healthcare/desktop-combo-healthcare.png"
-          fadeUp={fadeUp}
-          iconSize={38}
-        />
+      <section className="py-16">
+        <PageLayout>
+          <Headline
+            title="FIND THE RIGHT HEALTHCARE SOFTWARE DEVELOPMENT"
+            description="We provide custom healthcare software development services in response to the evolving healthcare industry. Being a custom healthcare software development company, our goal is to improve efficiency and patient care at reduced cost and assist in healthcare management decisions."
+          />
+          <FeaturesGridnew
+            leftFeatures={healthcareSoftwareFeatures.slice(0, 7)}
+            rightFeatures={healthcareSoftwareFeatures.slice(7, 14)}
+            centerImage="/assets/industries/healthcare/desktop-combo-healthcare.png"
+            iconSize={38}
+          />
+        </PageLayout>
       </section>
+
       {/* </PageLayout> */}
       <section className="relative w-full overflow-hidden">
-        <VideoPoster features={features} />
+        <VideoPoster
+          features={features}
+          title="The Remote Healthcare Revolution has begun!"
+        />
       </section>
 
 
-      <section className=" pt-5">
+      <section className="py-16">
         <PageLayout className="space-y-16">
           <Headline
             title="AI-Powered Custom Healthcare Software Development Solutions"
             description="Our expert-level software developers leverage the power and versatility of Artificial Intelligence (AI) to design and implement innovative solutions to meet the healthcare industry’s evolving needs. Our transformative solutions enable healthcare providers and institutions to modernize medicine by deploying cutting-edge resources designed to improve workflows, processes, and optimize patient engagement and care."
           />
 
-          <div className="block md:hidden">
-            <FeaturesList
-              features={healthcareAIFeatures}
-              fadeUp={fadeUp}
-
-            />
-          </div>
-
-          <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            <FeaturesList
-              features={healthcareAIFeatures.slice(0, 2)}
-              fadeUp={fadeUp}
-              center
-            />
-            <FeaturesList
-              features={healthcareAIFeatures.slice(2, 4)}
-              fadeUp={fadeUp}
-              center
-            />
-            <FeaturesList
-              features={healthcareAIFeatures.slice(4, 6)}
-              fadeUp={fadeUp}
-              center
-            />
-          </div>
+          <FeaturesList
+            features={healthcareAIFeatures}
+            grid3
+            center
+          />
         </PageLayout>
       </section>
 
-      <PageLayout className="space-y-8 pt-15">
+      <PageLayout className="space-y-8 py-16">
         <Headline
           title="Custom Digital Health Platform Solutions"
           description="With Digital Health Platforms, medical professionals can take a different approach to their research, health management, and patient care, leading to significant improvements in efficiency and patient outcomes."
@@ -109,9 +93,7 @@ export default function Healthcare() {
           {/* Left Features List */}
           <FeaturesList
             features={digitalHelthSolutions.slice(0, 2)}
-            fadeUp={fadeUp}
             center
-
           />
 
           {/* Center Animation */}
@@ -120,16 +102,14 @@ export default function Healthcare() {
               loading="lazy"
               src="/assets/industries/healthcare/industry-leadin-telehealth.png"
               alt="Mobile Analytics App"
-              className="w-43 mx-auto"
+              className="w-52 mx-auto"
             />
           </FadeInWhenVisible>
 
           {/* Right Features List */}
           <FeaturesList
             features={digitalHelthSolutions.slice(2, 4)}
-            fadeUp={fadeUp}
             center
-
           />
         </div>
       </PageLayout>
@@ -147,21 +127,15 @@ export default function Healthcare() {
                 loading="lazy"
                 src="/assets/industries/healthcare/electronic-medical-records-with-laptop.png"
                 alt="Portfolio"
-                className="w-120 mx-auto"
+                className="w-135 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList features={healthcareExtraFeatures}
-              fadeUp={fadeUp}
               iconAlign="horizontal"
-
             />
-
-
           </div>
 
-          <FadeInWhenVisible>
-            <Button variant="hover">Cunsultation for EHR</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">Cunsultation for EHR</Button>
         </PageLayout>
       </section>
 
@@ -170,38 +144,33 @@ export default function Healthcare() {
           title="Industry-Leading Telehealth & Telemedicine Platforms"
           description="We build custom telehealth apps to deliver remote health services, education, and training for improved efficiency and quality of care."
         />
-
-        <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-6">
           {/* Left Features List */}
           <FeaturesList
             features={telemedicineFeatures.slice(0, 2)}
-            fadeUp={fadeUp}
             center
           />
 
           {/* Center Animation */}
-          <FadeInWhenVisible className="sm:block hidden">
+          <FadeInWhenVisible className="md:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/healthcare/cellphone.png"
               alt="Mobile Analytics App"
-              className="w-48 mx-auto"
+              className="w-52 mx-auto"
             />
           </FadeInWhenVisible>
 
           {/* Right Features List */}
           <FeaturesList
             features={telemedicineFeatures.slice(2, 4)}
-            fadeUp={fadeUp}
             center
-
           />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">Develop Your Telehelth Platform</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Develop Your Telehelth Platform</Button>
       </PageLayout>
-      <section className=" py-5">
+
+      <section className="py-12">
         <PageLayout className="space-y-10 text-center">
           <Headline
             title="Health Information Exchange (HIE) App Development"
@@ -209,23 +178,24 @@ export default function Healthcare() {
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
-            <FeaturesList features={healthInformation} iconAlign="horizontal"
-              fadeUp={fadeUp} />
+            <FeaturesList
+              features={healthInformation}
+              iconAlign="horizontal"
+            />
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
                 src="/assets/industries/healthcare/healthInformationExchange.png"
                 alt="Portfolio"
-                className="w-50 mx-auto"
+                className="w-52 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">DEVELOP LIMS PLATFORM SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">DEVELOP LIMS PLATFORM SOLUTIONS</Button>
         </PageLayout>
       </section>
-      <section className=" bg-white flex flex-col gap-3 justify-center items-center">
+
+      <section className="bg-white flex flex-col gap-3 justify-center items-center">
         <Headline
           title="PACS & DICOM Viewer platform"
           description="We deliver end-to-end PACS/DICOM platform designed for secure data and image sharing, archiving, viewing, and more."
@@ -233,6 +203,7 @@ export default function Healthcare() {
         <ImageNearScreen
           features={dicomFeatures}
           src="/assets/industries/construction/building-information-modeling-solutions-cut.png"
+          imgClass="w-135"
         />
 
         {/* CTA Button */}
@@ -240,9 +211,6 @@ export default function Healthcare() {
           START YOUR PACS/DICOM PROJECT TODAY
         </Button>
       </section>
-
-
-
 
       <section className="bg-secondary py-12">
         <PageLayout className="space-y-10 text-center">
@@ -252,19 +220,20 @@ export default function Healthcare() {
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
-            <FeaturesList features={limsFeatures} fadeUp={fadeUp} />
+            <FeaturesList
+              features={limsFeatures}
+              iconAlign="horizontal"
+            />
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
                 src="/assets/industries/healthcare/hl7-emr-ehr-software-integrations.png"
                 alt="Portfolio"
-                className="w-96 mx-auto"
+                className="w-105 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">DEVELOP LIMS PLATFORM SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">DEVELOP LIMS PLATFORM SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -274,28 +243,21 @@ export default function Healthcare() {
           description="We enhance existing pharmacy management systems with features that promote workflow automation, fully integrated payment processing, and real-time communication."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 md:gap-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={pharmacyFeatures.slice(0, 2)}
-            />
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={pharmacyFeatures.slice(2, 4)}
-            />
-          </div>
+          <FeaturesList
+            features={pharmacyFeatures}
+            center
+            grid
+          />
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
               src="/assets/industries/healthcare/cell-phone-animation.gif"
               alt="Portfolio"
-              className="w-48 mx-auto"
+              className="w-56 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET PHARMACY POS SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET PHARMACY POS SOLUTIONS</Button>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -311,18 +273,16 @@ export default function Healthcare() {
                 loading="lazy"
                 src="/assets/industries/healthcare/laptop.png"
                 alt="Portfolio"
-                className="w-110 mx-auto"
+                className="w-135 mx-auto"
               />
             </FadeInWhenVisible>
-            <FeaturesList features={eRxFeatures} fadeUp={fadeUp} />
+            <FeaturesList features={eRxFeatures} iconAlign="horizontal" />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET ERX SOFTWARE SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET ERX SOFTWARE SOLUTIONS</Button>
         </PageLayout>
       </section>
 
-      <PageLayout className="space-y-8 text-center">
+      <PageLayout className="space-y-8 py-16 text-center">
         <Headline
           title="Industry-Leading Telehealth & Telemedicine Platforms"
           description="We build custom telehealth apps to deliver remote health services, education, and training for improved efficiency and quality of care."
@@ -332,7 +292,7 @@ export default function Healthcare() {
           {/* Left Features List */}
           <FeaturesList
             features={hospitalSystemFeatures.slice(0, 2)}
-            fadeUp={fadeUp}
+            center
           />
 
           {/* Center Animation */}
@@ -348,12 +308,10 @@ export default function Healthcare() {
           {/* Right Features List */}
           <FeaturesList
             features={hospitalSystemFeatures.slice(2, 4)}
-            fadeUp={fadeUp}
+            center
           />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET HIS/PMS SOFTWARE SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET HIS/PMS SOFTWARE SOLUTIONS</Button>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -364,7 +322,10 @@ export default function Healthcare() {
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-            <FeaturesList features={rcmFeatures} fadeUp={fadeUp} />
+            <FeaturesList
+              features={rcmFeatures}
+              iconAlign="horizontal"
+            />
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
@@ -374,9 +335,7 @@ export default function Healthcare() {
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET RCM SOFTWARE SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET RCM SOFTWARE SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -385,7 +344,7 @@ export default function Healthcare() {
           title="HL7 Interface Software Solutions"
           description="We create custom HL7 interface solutions for optimal interfacing, interconnectivity, and interoperability of healthcare applications, data management, and workflows."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 md:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -396,18 +355,16 @@ export default function Healthcare() {
           </FadeInWhenVisible>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <FeaturesList
-              fadeUp={fadeUp}
               features={hl7IntegrationFeatures.slice(0, 2)}
+              center
             />
             <FeaturesList
-              fadeUp={fadeUp}
               features={hl7IntegrationFeatures.slice(2, 4)}
+              center
             />
           </div>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET HL7 INTERGRATION</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET HL7 INTERGRATION</Button>
       </PageLayout>
 
       <section className="bg-secondary py-16">
@@ -417,28 +374,12 @@ export default function Healthcare() {
             description="In the dynamic digital realm, robust healthcare application support, including FHIR integration support, ICD-10 support (diagnosis coding), and Healthcare IT help desk services, are essential for seamless business operations. U Tech stands out with an unwavering commitment to delivering comprehensive support, ensuring your applications—including third-party MEDITECH support and medical middleware support—thrive in today's complex healthcare landscape."
           />
 
-          <div className="block md:hidden">
-            <FeaturesList
-              features={healthcareSupportServices}
-              fadeUp={fadeUp}
-              grid
-            />
-          </div>
+          <FeaturesList
+            features={healthcareSupportServices}
+            center
+            grid3
+          />
 
-          <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            <FeaturesList
-              features={healthcareSupportServices.slice(0, 2)}
-              fadeUp={fadeUp}
-            />
-            <FeaturesList
-              features={healthcareSupportServices.slice(2, 4)}
-              fadeUp={fadeUp}
-            />
-            <FeaturesList
-              features={healthcareSupportServices.slice(4, 6)}
-              fadeUp={fadeUp}
-            />
-          </div>
         </PageLayout>
       </section>
 
@@ -480,17 +421,15 @@ export default function Healthcare() {
                 loading="lazy"
                 src="/assets/industries/healthcare/voice-recognition.gif"
                 alt="Portfolio"
-                className="w-38 mx-auto"
+                className="w-46 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList
               features={assistiveTechnologyFeatures}
-              fadeUp={fadeUp}
+              iconAlign="horizontal"
             />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">Get Assistive Tech Solutions</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">Get Assistive Tech Solutions</Button>
         </PageLayout>
       </section>
 
@@ -504,7 +443,7 @@ export default function Healthcare() {
           {/* Left Features List */}
           <FeaturesList
             features={veterinarySoftwareFeatures.slice(0, 2)}
-            fadeUp={fadeUp}
+            center
           />
           {/* Center Animation */}
           <FadeInWhenVisible className="sm:block hidden">
@@ -512,18 +451,16 @@ export default function Healthcare() {
               loading="lazy"
               src="/assets/industries/healthcare/veterinary-practice-management-software-solutions.png"
               alt="Mobile Analytics App"
-              className="w-48 mx-auto"
+              className="w-52 mx-auto"
             />
           </FadeInWhenVisible>
           {/* Right Features List */}
           <FeaturesList
             features={veterinarySoftwareFeatures.slice(2, 4)}
-            fadeUp={fadeUp}
+            center
           />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET VETERINITY SOFTWARE SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET VETERINITY SOFTWARE SOLUTIONS</Button>
       </PageLayout>
 
       <div className="py-12">

@@ -5,12 +5,13 @@ export const FeaturesGridnew = ({
     leftFeatures = [],
     rightFeatures = [],
     centerImage,
+    imgSize = "sm:w-[70%] md:w-[80%]",
     fadeUp,
     iconSize = 40,
 }) => (
-    <div className="flex flex-col lg:flex-row items-center w-full justify-center lg:justify-between gap-16 lg:gap-2 mt-10">
+    <div className="flex flex-col sm:flex-row items-center w-full justify-center gap-4 mt-10">
         {/* Left Column */}
-        <div className="flex flex-col gap-10 text-start sm:text-right w-full max-w-xs lg:max-w-sm">
+        <div className="flex flex-col gap-4 md:gap-12 text-start sm:text-right w-full">
             {leftFeatures.map((item, index) => (
                 <div
                     key={index}
@@ -18,9 +19,9 @@ export const FeaturesGridnew = ({
                 >
                     {/* Icon */}
                     <span className="flex-shrink-0 order-1 lg:order-2">
-                        {item?.img ? (
+                        {item?.icon ? (
                             <img
-                                src={item.img}
+                                src={item.icon}
                                 alt={item.label || "feature"}
                                 className="w-10 h-10 object-contain"
                                 style={{ width: iconSize, height: iconSize }}
@@ -29,7 +30,7 @@ export const FeaturesGridnew = ({
                     </span>
 
                     {/* Label */}
-                    <TypographyMuted className="leading-none border-b pb-2 border-foreground break-words order-2 sm:order-1">
+                    <TypographyMuted className="leading-none border-b-2 pb-2 border-gray-400 break-words order-2 sm:order-1">
                         {item.label}
                     </TypographyMuted>
                 </div>
@@ -39,23 +40,20 @@ export const FeaturesGridnew = ({
         {/* Center Image */}
         {centerImage && (
             <FadeInWhenVisible
-                className="flex-shrink-0 w-full max-w-md lg:max-w-xl my-8 lg:my-0 hidden lg:block"
+                className="flex-shrink-0 hidden md:block w-full max-w-md lg:max-w-3xl"
                 variants={fadeUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: false, amount: 0.2 }}
             >
                 <img
                     loading="lazy"
                     src={centerImage}
                     alt="Center Graphic"
-                    className="w-full h-auto mx-auto md:w-[80%]"
+                    className={`w-full ${imgSize} mx-auto object-contain`}
                 />
             </FadeInWhenVisible>
         )}
 
         {/* Right Column */}
-        <div className="flex flex-col gap-10 items-start text-left w-full max-w-xs lg:max-w-sm">
+        <div className="flex flex-col gap-4 md:gap-12 items-start text-left w-full">
             {rightFeatures.map((item, index) => (
                 <div
                     key={index}
@@ -63,9 +61,9 @@ export const FeaturesGridnew = ({
                 >
                     {/* Icon */}
                     <span className="flex-shrink-0 order-1 sm:order-1">
-                        {item?.img ? (
+                        {item?.icon ? (
                             <img
-                                src={item.img}
+                                src={item.icon}
                                 alt={item.label || "feature"}
                                 className="w-10 h-10 object-contain"
                                 style={{ width: iconSize, height: iconSize }}
@@ -74,7 +72,7 @@ export const FeaturesGridnew = ({
                     </span>
 
                     {/* Label */}
-                    <TypographyMuted className="leading-none border-b pb-2 border-foreground break-words order-2 sm:order-2">
+                    <TypographyMuted className="leading-none border-b-2 pb-2 border-gray-400 break-words order-2 sm:order-2">
                         {item.label}
                     </TypographyMuted>
                 </div>

@@ -1,5 +1,5 @@
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
-import { FeaturesList } from "@/components/FeaturesList";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
+import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import { TestimonialSection } from "@/components/TestimonialSection";
@@ -43,15 +43,12 @@ const Finance = () => {
           title="U Technology’s Financial Software Development Services"
           description="U Technology’s custom financial software development services cater to the finance industry, providing custom-tailored solutions for accounting, portfolio management, financial planning, insurance, and taxes."
         />
-        <FeaturesGrid
+        <FeaturesGridnew
           leftFeatures={leftFeatures}
           rightFeatures={rightFeatures}
           centerImage="/assets/industries/finance/combo-finance.png"
-          fadeUp={fadeUp}
         />
-        <FadeInWhenVisible>
-          <Button variant="hover">CUSTOMIZE YOUR BANKING SOLUTION NOW</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">CUSTOMIZE YOUR BANKING SOLUTION NOW</Button>
       </PageLayout>
 
       {/* AI Benefits */}
@@ -61,11 +58,9 @@ const Finance = () => {
             title="Optimizing Finance with Artificial Intelligence"
             description="With the ever-evolving landscape of financial services becoming increasingly complex and digital, AI is a game-changer. U Technology’s Financial Software Development Services are here to help you transform your operations, improve your customer experiences, and aid in strategic decision-making."
           />
-          <FeaturesList features={aiBenefits} fadeUp={fadeUp} grid3 />
+          <FeaturesList features={aiBenefits} grid3 center />
 
-          <FadeInWhenVisible delay={0.8}>
-            <Button variant="hover">GET AI-POWERED FINANCIAL SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET AI-POWERED FINANCIAL SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -84,7 +79,7 @@ const Finance = () => {
               className="w-120 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList features={accountingFeatures} fadeUp={fadeUp} />
+          <FeaturesList features={accountingFeatures} iconAlign="horizontal" />
         </div>
         <TypographyMuted>
           U Technology integrates your current accounting management system with
@@ -94,9 +89,7 @@ const Finance = () => {
           title="Integrate with Leading Accounting Platforms"
           description="Sync your financial data with top financial tools for better efficiency and accuracy."
         />
-        <FadeInWhenVisible>
-          <Button variant="hover">GET ACCOUNTING SOFTWARE SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET ACCOUNTING SOFTWARE SOLUTIONS</Button>
       </PageLayout>
 
       {/* Portfolio Section */}
@@ -108,8 +101,8 @@ const Finance = () => {
         <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8 md:gap-12">
           <FeaturesList
             features={portfolioFeatures}
-            fadeUp={fadeUp}
             iconSize={36}
+            iconAlign="horizontal"
           />
           <FadeInWhenVisible delay={0.5}>
             <img
@@ -120,9 +113,7 @@ const Finance = () => {
             />
           </FadeInWhenVisible>
         </PageLayout>
-        <FadeInWhenVisible delay={0.8}>
-          <Button variant="hover">GET PORTFOLIO MGMT SOFTWARE SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET PORTFOLIO MGMT SOFTWARE SOLUTIONS</Button>
       </section>
 
       {/* Planning Section */}
@@ -141,13 +132,11 @@ const Finance = () => {
                 className="w-110 mx-auto"
               />
             </FadeInWhenVisible>
-            <FeaturesList features={planningFeatures} fadeUp={fadeUp} grid />
+            <FeaturesList features={planningFeatures} grid center />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">
-              GET FINANCIAL PLANNING SOFTWARE SOLUTIONS
-            </Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">
+            GET FINANCIAL PLANNING SOFTWARE SOLUTIONS
+          </Button>
         </PageLayout>
       </section>
 
@@ -208,7 +197,7 @@ const Finance = () => {
             description="U Technology’s custom insurance software solutions ensures success-driven insurance automation to help insurance companies drive momentum and drive productivity."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <FeaturesList features={insuranceFeatures} fadeUp={fadeUp} grid />
+            <FeaturesList features={insuranceFeatures} grid center />
             <FadeInWhenVisible>
               <img
                 loading="lazy"
@@ -218,9 +207,7 @@ const Finance = () => {
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET INSURANCE SOFTWARE SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET INSURANCE SOFTWARE SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -239,11 +226,9 @@ const Finance = () => {
               className="w-145 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList features={taxFeatures} fadeUp={fadeUp} />
+          <FeaturesList features={taxFeatures} iconAlign="horizontal" />
         </PageLayout>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET TAX PREP SOFTWARE SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET TAX PREP SOFTWARE SOLUTIONS</Button>
       </section>
 
       {/* Factoring Section */}
@@ -252,21 +237,13 @@ const Finance = () => {
           title="Tailored Factoring Software Development Solutions"
           description="Leverage U Technology's profound financial software development expertise to drive your business forward with advanced factoring solutions. Our innovative services are meticulously designed to streamline your financial processes and set you apart in the competitive landscape."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <FeaturesList
-            features={factoringFeatures.slice(0, 4)}
-            fadeUp={fadeUp}
-            grid
-          />
-          <FeaturesList
-            features={factoringFeatures.slice(4, 8)}
-            fadeUp={fadeUp}
-            grid
-          />
-        </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET FACTORING SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <FeaturesListOpposite
+          features={factoringFeatures}
+
+          grid
+          center
+        />
+        <Button variant="hover">GET FACTORING SOLUTIONS</Button>
       </PageLayout>
 
       {/* Support Section */}
@@ -276,15 +253,12 @@ const Finance = () => {
             title="Tailored Factoring Software Development Solutions"
             description="Leverage U Technology's profound financial software development expertise to drive your business forward with advanced factoring solutions. Our innovative services are meticulously designed to streamline your financial processes and set you apart in the competitive landscape."
           />
-          <FeaturesList features={supportFeatures} fadeUp={fadeUp} grid />
-          <FadeInWhenVisible>
-            <Button variant="hover">GET FINANCE SOFTWARE SUPPORT</Button>
-          </FadeInWhenVisible>
+          <FeaturesListOpposite features={supportFeatures} grid />
+          <Button variant="hover">GET FINANCE SOFTWARE SUPPORT</Button>
         </PageLayout>
+
         {/* Testimonials */}
-        <FadeInWhenVisible>
-          <TestimonialSection testimonials={testimonials} />
-        </FadeInWhenVisible>
+        <TestimonialSection testimonials={testimonials} />
       </section>
 
       {/* FAQ Section */}

@@ -5,7 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
-import { TypographyH5, TypographyMuted, Headline, TypographyH3 } from "@/custom/Typography";
+import { TypographyMuted, Headline } from "@/custom/Typography";
 import {
   airlineAIandAutomationServices,
   airlineOperationsServices,

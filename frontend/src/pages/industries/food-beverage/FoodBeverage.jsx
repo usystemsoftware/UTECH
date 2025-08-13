@@ -3,8 +3,8 @@ import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
-
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
+import VideoPoster from "@/custom/VideoPoster";
 import {
   TypographyH5,
   TypographyMuted,
@@ -20,6 +20,7 @@ import {
   FoodBeverageSoftware,
   FoodBeverageInventory,
   FoodBeverageTraceability,
+  features,
 } from "./Data";
 
 // Main Component
@@ -42,14 +43,21 @@ const FoodBeverage = () => {
           title="Food & Beverage Software Development Solutions"
           description="We develop custom software solutions used in the food & beverage industry, designed and configured to boost delivery efficiency, drive sales, and maximize profitability."
         />
-        <FeaturesGrid
+        <FeaturesGridnew
           leftFeatures={FoodBeverageSoftwareLeftFeatures}
           rightFeatures={FoodBeverageSoftwareRightFeatures}
           centerImage="/assets/industries/food-beverage/foodbeverage.png"
-          fadeUp={fadeUp}
           iconSize={38}
         />
       </PageLayout>
+
+      <section className="relative w-full overflow-hidden">
+        <VideoPoster
+          features={features}
+          title="Food & Beverage Industry Is Evolving – Here’s the Tech You Need to Know"
+        />
+      </section>
+
 
       {/* Food & Beverage Service Management Software Section */}
       <section className="bg-secondary">
@@ -78,13 +86,11 @@ const FoodBeverage = () => {
               </TypographyMuted>
               <FeaturesList
                 features={FoodBeverageTransformationfedu}
-                fadeUp={fadeUp}
+                iconAlign="horizontal"
               />
             </div>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET F&B MGMT SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET F&B MGMT SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -95,7 +101,10 @@ const FoodBeverage = () => {
           description="We develop food service ordering software solutions..."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-          <FeaturesList features={FoodBeverageTransformation} fadeUp={fadeUp} />
+          <FeaturesList
+            features={FoodBeverageTransformation}
+            iconAlign="horizontal"
+          />
           <FadeInWhenVisible className='hidden sm:block'>
             <img
               loading="lazy"
@@ -105,9 +114,7 @@ const FoodBeverage = () => {
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET F&B ERP SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET F&B ERP SOLUTIONS</Button>
       </PageLayout>
 
       {/* Food & Beverage Quality Management Section */}
@@ -126,11 +133,12 @@ const FoodBeverage = () => {
                 className="w-145 mx-auto hidden sm:block"
               />
             </FadeInWhenVisible>
-            <FeaturesList features={FoodBeverageFeture} fadeUp={fadeUp} />
+            <FeaturesList
+              features={FoodBeverageFeture}
+              iconAlign="horizontal"
+            />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET F&B QA SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET F&B QA SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -141,7 +149,10 @@ const FoodBeverage = () => {
           description="Custom food distribution software streamlines inventory management..."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-          <FeaturesList features={FoodBeverageSoftware} fadeUp={fadeUp} />
+          <FeaturesList
+            features={FoodBeverageSoftware}
+            iconAlign="horizontal"
+          />
           <FadeInWhenVisible className='hidden sm:block'>
             <img
               loading="lazy"
@@ -151,9 +162,7 @@ const FoodBeverage = () => {
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET F&B DISTRIBUTION SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET F&B DISTRIBUTION SOLUTIONS</Button>
       </PageLayout>
 
       {/* Food & Beverage Inventory Management Section */}
@@ -172,11 +181,12 @@ const FoodBeverage = () => {
                 className="w-145 mx-auto"
               />
             </FadeInWhenVisible>
-            <FeaturesList features={FoodBeverageInventory} fadeUp={fadeUp} />
+            <FeaturesList
+              features={FoodBeverageInventory}
+              iconAlign="horizontal"
+            />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET F&B INVENTORY MGMT SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET F&B INVENTORY MGMT SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -242,7 +252,10 @@ const FoodBeverage = () => {
           description="Food traceability software solutions empower F&B producers to track-and-trace food..."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-          <FeaturesList features={FoodBeverageTraceability} fadeUp={fadeUp} />
+          <FeaturesList
+            features={FoodBeverageTraceability}
+            iconAlign="horizontal"
+          />
           <FadeInWhenVisible className='hidden sm:block'>
             <img
               loading="lazy"
@@ -252,9 +265,7 @@ const FoodBeverage = () => {
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET F&B TRACEABILITY SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET F&B TRACEABILITY SOLUTIONS</Button>
       </PageLayout>
     </>
   );
