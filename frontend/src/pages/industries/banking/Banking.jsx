@@ -7,6 +7,7 @@ import { TypographyH4, TypographyMuted, Headline } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import {
+  AIPoweredSolutions,
   BankingACHfeatures,
   BankingAtmFeatures,
   BankingCoreFeatures,
@@ -45,6 +46,7 @@ export const Banking = () => (
         centerImage="/assets/industries/banking/contentBanking.png"
         fadeUp={fadeUp}
         iconSize={38}
+        center
       />
       <FadeInWhenVisible>
         <Button variant="hover" className="mt-8">
@@ -53,45 +55,39 @@ export const Banking = () => (
       </FadeInWhenVisible>
     </PageLayout>
 
-    {/* AI Features */}
-    <section className="py-16 bg-secondary text-center">
-      <PageLayout className="space-y-8">
-        <Headline
-          title="Transforming the Banking Industry with AI-Powered Solutions"
-          description="Following best practices, we harness the power of Artificial Intelligence (AI) in our financial software development process to build transformative solutions for the Banking industry. Our AI-driven software solution experts develop cutting-edge capabilities such as advanced fraud detection, AI-enhanced credit assessment, and AI-enhanced financial forecasting."
+    <PageLayout className="py-3 space-y-10 text-center">
+      <Headline
+        title="Transforming the Banking Industry with AI-Powered Solutions"
+        description="Following best practices, we harness the power of Artificial Intelligence (AI) in our financial software development process to build transformative solutions for the Banking industry. Our AI-driven software solution experts develop cutting-edge capabilities such as advanced fraud detection, AI-enhanced credit assessment, and AI-enhanced financial forecasting."
+      />
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <FeaturesList
+          features={AIPoweredSolutions.slice(0, 2)}
+          fadeUp={fadeUp}
+          iconSize={36}
+          center
         />
-        <div className="block md:hidden">
-          <FeaturesList
-            features={BankingSoftwareAIFeatures}
-            fadeUp={fadeUp}
-            iconSize={40}
-            grid
+        <FadeInWhenVisible delay={0.4} className="md:block hidden">
+          <img
+            loading="lazy"
+            src="/assets/industries/banking/BankingPhone.png"
+            alt="Loan Software"
+            className="w-57 mx-auto"
           />
-        </div>
-        <div className="md:grid grid-cols-1 hidden sm:grid-cols-3 md:gap-6 xl:gap-16 items-center mt-8">
-          <FeaturesList
-            features={BankingSoftwareAIFeatures.slice(0, 2)}
-            fadeUp={fadeUp}
-            iconSize={40}
-          />
-          <FeaturesList
-            features={BankingSoftwareAIFeatures.slice(2, 4)}
-            fadeUp={fadeUp}
-            iconSize={40}
-          />
-          <FeaturesList
-            features={BankingSoftwareAIFeatures.slice(4, 6)}
-            fadeUp={fadeUp}
-            iconSize={40}
-          />
-        </div>
-        <FadeInWhenVisible>
-          <Button variant="hover" className="mt-8">
-            Get AI-Powered Banking Software Solutions
-          </Button>
         </FadeInWhenVisible>
-      </PageLayout>
-    </section>
+        <FeaturesList
+          features={AIPoweredSolutions.slice(2, 4)}
+          fadeUp={fadeUp}
+          iconSize={36}
+          center
+        />
+      </div>
+      <FadeInWhenVisible>
+        <Button variant="hover">Get ATM Software Solutions</Button>
+      </FadeInWhenVisible>
+    </PageLayout>
+
+
 
     {/* Loan Servicing Section */}
     <PageLayout className="my-10 text-center space-y-8">
@@ -106,10 +102,11 @@ export const Banking = () => (
         image="/assets/industries/banking/softwareSolutions.png"
         imageClass="w-135"
         reverse
+        iconAlign="horizontal"
       />
-      <FadeInWhenVisible>
-        <Button variant="hover">Get Loan Management Software Solutions</Button>
-      </FadeInWhenVisible>
+      {/* <FadeInWhenVisible> */}
+      <Button variant="hover">Get Loan Management Software Solutions</Button>
+      {/* </FadeInWhenVisible> */}
     </PageLayout>
 
     {/* Mobile Banking Section */}
@@ -123,6 +120,8 @@ export const Banking = () => (
           features={GetMobileBankingSoftwareSolutions}
           fadeUp={fadeUp}
           iconSize={36}
+          iconAlign="horizontal"
+
         />
         <FadeInWhenVisible delay={0.4} className="hidden sm:block">
           <img
@@ -133,9 +132,9 @@ export const Banking = () => (
           />
         </FadeInWhenVisible>
       </PageLayout>
-      <FadeInWhenVisible>
-        <Button variant="hover">Get Mobile Banking Software Solutions</Button>
-      </FadeInWhenVisible>
+      {/* <FadeInWhenVisible> */}
+      <Button variant="hover">Get Mobile Banking Software Solutions</Button>
+      {/* </FadeInWhenVisible> */}
     </section>
 
     {/* Online Banking Section */}
@@ -149,8 +148,10 @@ export const Banking = () => (
         fadeUp={fadeUp}
         iconSize={36}
         image="/assets/industries/banking/softwareSolutions.png"
-        imageClass="w-135 "
+        imageClass="w-135"
         reverse
+        iconAlign="horizontal"
+
       />
       <FadeInWhenVisible>
         <Button variant="hover" className="mt-8">

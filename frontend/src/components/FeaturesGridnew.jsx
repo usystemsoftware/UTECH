@@ -1,7 +1,7 @@
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { TypographyMuted } from "@/custom/Typography";
 
-export const FeaturesGridtest = ({
+export const FeaturesGridnew = ({
     leftFeatures = [],
     rightFeatures = [],
     centerImage,
@@ -14,9 +14,9 @@ export const FeaturesGridtest = ({
             {leftFeatures.map((item, index) => (
                 <div
                     key={index}
-                    className="flex items-center lg:justify-end justify-start  gap-4 sm:gap-6"
+                    className="flex items-center lg:justify-end justify-start gap-4 sm:gap-6"
                 >
-                    {/* Icon on mobile first, desktop last */}
+                    {/* Icon */}
                     <span className="flex-shrink-0 order-1 lg:order-2">
                         {item?.img ? (
                             <img
@@ -28,9 +28,8 @@ export const FeaturesGridtest = ({
                         ) : null}
                     </span>
 
-
                     {/* Label */}
-                    <TypographyMuted className="leading-none border-b pb-2 border-foreground whitespace-nowrap order-2 sm:order-1">
+                    <TypographyMuted className="leading-none border-b pb-2 border-foreground break-words order-2 sm:order-1">
                         {item.label}
                     </TypographyMuted>
                 </div>
@@ -62,7 +61,7 @@ export const FeaturesGridtest = ({
                     key={index}
                     className="flex items-center justify-start gap-4 sm:gap-6"
                 >
-                    {/* Icon always first on desktop, second on mobile */}
+                    {/* Icon */}
                     <span className="flex-shrink-0 order-1 sm:order-1">
                         {item?.img ? (
                             <img
@@ -75,7 +74,7 @@ export const FeaturesGridtest = ({
                     </span>
 
                     {/* Label */}
-                    <TypographyMuted className="leading-none border-b pb-2 border-foreground whitespace-nowrap order-2 sm:order-2">
+                    <TypographyMuted className="leading-none border-b pb-2 border-foreground break-words order-2 sm:order-2">
                         {item.label}
                     </TypographyMuted>
                 </div>

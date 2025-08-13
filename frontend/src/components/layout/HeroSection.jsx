@@ -47,9 +47,9 @@ export const HeroSection = () => {
             </FadeInWhenVisible>
 
             <FadeInWhenVisible delay={0.4}>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 <Link to="/contact-us">
-                  <Button size="lg" className="w-full sm:w-auto">
+                  <Button className="w-full">
                     Contact Us <Phone />
                   </Button>
                 </Link>

@@ -196,7 +196,7 @@ export default function MediaEntertainment() {
             description="Our pro audio software developers are committed to engineering world-class audio apps and building software to expand the creative freedom of today’s music pros."
           />
 
-          <div className="flex flex-col sm:flex-row items-center justify-baseline gap-8 md:gap-26">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
             {/* Left and Right Feature Columns */}
             <FeaturesList
               features={musicSolutions.slice(0, 2)}
@@ -207,7 +207,7 @@ export default function MediaEntertainment() {
                 loading="lazy"
                 src="/assets/industries/media-entertainment/custom-music-software-solutins.png"
                 alt="Mobile Analytics App"
-                className="w-52"
+                className="w-52 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList
@@ -334,14 +334,14 @@ export default function MediaEntertainment() {
             title="Digital Asset Management Solutions"
             description="We design digital asset management (DAM) systems to specifically address the needs of the entertainment industry."
           />
-          <div className="flex flex-col sm:flex-row items-center justify-baseline gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-8">
             <FeaturesList features={damSolutions.slice(0, 2)} fadeUp={fadeUp} />
             <FadeInWhenVisible className="hidden md:block">
               <img
                 loading="lazy"
                 src="/assets/industries/media-entertainment/dropbox-developer.png"
                 alt="Mobile Analytics App"
-                className="sm:w-135 w-96"
+                className="sm:w-135 mx-auto w-96"
               />
             </FadeInWhenVisible>
             <FeaturesList features={damSolutions.slice(2, 4)} fadeUp={fadeUp} />

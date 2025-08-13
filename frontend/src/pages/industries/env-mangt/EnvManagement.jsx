@@ -58,7 +58,7 @@ export default function EnvManagement() {
                 loading="lazy"
                 src="/assets/industries/env-mng/environmental-management-system-solutions.png"
                 alt="Portfolio"
-                className="w-135 mx-auto"
+                className="w-145 mx-auto"
               />
             </FadeInWhenVisible>
             <div className="text-start space-y-8">
@@ -115,13 +115,13 @@ export default function EnvManagement() {
           title="Environmental Risk Management Assessment Database Software"
           description="We develop Enterprise Resource Planning (ERP)..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/env-mng/environmental-risk-management-assessment-database-software.png"
               alt="Portfolio"
-              className="w-135 mx-auto"
+              className="w-145 mx-auto"
             />
           </FadeInWhenVisible>
           <FeaturesList fadeUp={fadeUp} features={internalSolutions} />
@@ -148,7 +148,7 @@ export default function EnvManagement() {
                 loading="lazy"
                 src="/assets/industries/env-mng/environmental-compliance-software-systems-for-audits-inspections-permits.png"
                 alt="Portfolio"
-                className="w-48 md:w-52 mx-auto"
+                className="w-48 md:w-62 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
@@ -166,7 +166,7 @@ export default function EnvManagement() {
           title="Environmental Inventory Management & Waste Tracking Solutions"
           description="Our inventory management systems comply with the U.S. EPA..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
               loading="lazy"
@@ -204,7 +204,7 @@ export default function EnvManagement() {
                 loading="lazy"
                 src="/assets/industries/env-mng/environmental-operational-database-systems.png"
                 alt="Portfolio"
-                className="W-84 mx-auto"
+                className="W-96 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
@@ -220,13 +220,13 @@ export default function EnvManagement() {
           title="Hire Experienced Weather Management Software Developers"
           description="We develop custom weather management software solutions..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
           <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/env-mng/information-and-location-based-weather-app-integrations.png"
               alt="Portfolio"
-              className="w-96 mx-auto"
+              className="w-135 mx-auto"
             />
           </FadeInWhenVisible>
           <FeaturesList fadeUp={fadeUp} features={weatherTrackingSolutions} />

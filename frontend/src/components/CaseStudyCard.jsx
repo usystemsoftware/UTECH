@@ -22,19 +22,19 @@ export default function CaseStudyCard({
 
   return (
     <FadeInWhenVisible delay={delay} direction={direction}>
-      <Card className="cursor-pointer shadow-none p-0 hover:scale-[1.02] transition-transform hover:translate-y-1 rounded-xl overflow-hidden w-full max-w-sm flex flex-col justify-start">
+      <Card className="cursor-pointer shadow-none p-3 hover:scale-[1.02] transition-transform hover:translate-y-1 rounded-xl overflow-hidden w-full max-w-sm flex flex-col justify-start">
         {image && (
           <img
             src={image}
             alt={title}
-            className="w-full h-40 object-cover transition-transform duration-300 hover:scale-105"
+            className="w-full h-40 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
           />
         )}
 
         <div className="space-y-3 flex-1 flex flex-col">
           {icon && (
             <div
-              className={`w-11 h-11 mx-3 rounded-2xl px-3 bg-gradient-to-r ${color} flex items-center justify-center z-10 mt-3`}
+              className={`w-11 h-11 mx-3 rounded-2xl bg-gradient-to-r ${color} flex items-center justify-center z-10 mt-3`}
             >
               <IconRenderer
                 name={icon}
@@ -52,11 +52,11 @@ export default function CaseStudyCard({
           </TypographyMuted>
 
           {year && (
-            <p className="text-sm text-gray-500 italic px-3">Year: {year}</p>
+            <p className="text-sm text-gray-500 italic">Year: {year}</p>
           )}
 
           {features?.length > 0 && (
-            <div className="space-y-2 px-3">
+            <div className="space-y-2">
               {features.map((feature) => (
                 <div key={feature} className="flex items-center space-x-3">
                   <div
@@ -71,7 +71,7 @@ export default function CaseStudyCard({
           )}
 
           {link && (
-            <div className="px-3 pb-4">
+            <div className="pb-4">
               <Link to={link}>
                 <Button size="sm" className="w-full">
                   Learn More

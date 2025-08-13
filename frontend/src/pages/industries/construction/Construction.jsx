@@ -219,12 +219,12 @@ export default function Construction() {
       </PageLayout>
 
       {/* Equipment Management Section */}
-      <section className="py-16 bg-secondary space-y-10">
+      <PageLayout className="py-16 space-y-10">
         <Headline
           title="Construction Equipment Management Software"
           description="U Tech’s construction equipment management software enables construction crews..."
         />
-        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <FeaturesList
             fadeUp={fadeUp}
             features={equipmentManagementSoftware}
@@ -237,8 +237,8 @@ export default function Construction() {
               className="w-64 mx-auto"
             />
           </FadeInWhenVisible>
-        </PageLayout>
-      </section>
+        </div>
+      </PageLayout>
 
       {/* Scheduling Software Section */}
       <PageLayout className="py-16 space-y-10">

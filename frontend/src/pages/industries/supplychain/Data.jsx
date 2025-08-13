@@ -31,24 +31,6 @@ export const SupplyChainSoftwarerightFeatures = [
     icon: "Users", // Checkbox icon
   },
 ];
-// export const SupplyTransformationFeatures = [
-//     {
-//         label: "Supply Chain Transformation",
-//         icon: "Truck", // Truck icon
-//     },
-//     {
-//         label: "Supply Chain Analytics",
-//         icon: "BarChart", // Bar chart icon
-//     },
-//     {
-//         label: "Supply Chain Optimization",
-//         icon: "Settings", // Settings/gear icon
-//     },
-//     {
-//         label: "Supply Chain Visibility",
-//         icon: "Eye", // Eye icon
-//     },
-// ]
 
 export const SupplyTransformationFeatures = [
   {

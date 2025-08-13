@@ -83,6 +83,12 @@ export const industries = [
         image: "leadspace-consumer-tech",
         path: "/solutions/digital-marketing",
     },
+    {
+        name: "Web Development",
+        color: "bg-cyan-400",
+        image: "web-development",
+        path: "/solutions/digital-marketing",
+    },
 ];
 
 //  Services
@@ -92,7 +98,7 @@ export const services = [
         description: "Robust and scalable API development for seamless integration and communication between applications.",
         color: "from-blue-600 to-indigo-600",
         features: ["RESTful & GraphQL APIs", "Third-party API Integration", "Secure Authentication"],
-        link: 'services/api-development',
+        link: "/services/api-development",
         img: "/banner/api-development-banner.jpg"
     },
     {
@@ -100,7 +106,7 @@ export const services = [
         description: "Custom software applications built for web, mobile, and desktop platforms tailored to business needs.",
         color: "from-green-500 to-emerald-500",
         features: ["Web & Mobile Apps", "Cross-platform Solutions", "Custom Business Applications"],
-        link: 'services/application-development',
+        link: "/services/application-development",
         img: "/banner/application-development-banner.jpg"
     },
     {
@@ -108,7 +114,7 @@ export const services = [
         description: "Ongoing support and maintenance to ensure optimal performance, security, and upgrades of software systems.",
         color: "from-yellow-500 to-orange-500",
         features: ["Bug Fixing & Patching", "System Monitoring", "Performance Optimization"],
-        link: 'services/application-maintenance',
+        link: "/services/application-maintenance",
         img: "/banner/app-maintanance-banner.jpg"
     },
     {
@@ -116,7 +122,7 @@ export const services = [
         description: "End-to-end digital strategy execution to modernize processes, customer experiences, and business models.",
         color: "from-cyan-600 to-blue-500",
         features: ["Business Process Digitization", "Customer Experience Design", "Agile Transformation"],
-        link: 'services/digital-transformation',
+        link: "/services/digital-transformation",
         img: "/banner/digital-transformation-banner.jpg"
     },
     {
@@ -124,7 +130,7 @@ export const services = [
         description: "Comprehensive software testing services to ensure functionality, security, and usability.",
         color: "from-red-500 to-pink-500",
         features: ["Manual & Automated Testing", "Performance Testing", "Security & Compliance QA"],
-        link: 'services/qa-testing',
+        link: "/services/qa-testing",
         img: "/banner/quality-assurance-banner.jpg"
     },
     {
@@ -132,7 +138,7 @@ export const services = [
         description: "Organized, secure, and scalable data systems to power your analytics and operational needs.",
         color: "from-purple-500 to-indigo-500",
         features: ["Data Governance", "ETL & Data Warehousing", "Master Data Management"],
-        link: "services/data-management",
+        link: "/services/data-management",
         img: "/banner/data-management-banner.jpg"
     },
     {
@@ -140,7 +146,7 @@ export const services = [
         description: "CI/CD automation, infrastructure management, and monitoring for faster and safer software delivery.",
         color: "from-teal-500 to-green-500",
         features: ["CI/CD Pipelines", "Infrastructure as Code", "Monitoring & Logging"],
-        link: 'services/devops',
+        link: "/services/devops",
         img: "/banner/hero-img-banner-devops.jpg"
     },
     {
@@ -148,7 +154,7 @@ export const services = [
         description: "Unify disparate systems and software to ensure seamless data exchange and workflow efficiency.",
         color: "from-blue-700 to-sky-500",
         features: ["Middleware Development", "ERP/CRM Integration", "Legacy System Integration"],
-        link: "services/data-integration",
+        link: "/services/data-integration",
         img: "/banner/api-development-banner.jpg"
     },
     {
@@ -156,8 +162,32 @@ export const services = [
         description: "Streamline your operations by outsourcing non-core processes to expert-managed service teams.",
         color: "from-gray-600 to-gray-800",
         features: ["Customer Support", "Finance & Accounting", "IT Help Desk Services"],
-        link: 'services/bpo',
+        link: "/services/bpo",
         img: "/banner/business-process-outsourcing-banner.jpg"
+    },
+    {
+        title: "Backup & Disaster Recovery",
+        description: "Reliable data backup and disaster recovery solutions to minimize downtime and data loss.",
+        color: "from-blue-500 to-gray-500",
+        features: ["Automated Backups", "Disaster Recovery Planning", "Data Restoration"],
+        link: "/services/backup-disaster-recovery",
+        img: "/banner/application-development-banner.jpg"
+    },
+    {
+        title: "Custom Software Services",
+        description: "Tailored software solutions crafted for unique business challenges and workflows.",
+        color: "from-fuchsia-500 to-purple-600",
+        features: ["Custom Platforms", "Workflow Automation", "End-to-End Development"],
+        link: "/services/custom-software",
+        img: "/banner/customservices.jpg"
+    },
+    {
+        title: "FinOps Services",
+        description: "Financial operations services to optimize cloud spending and improve cost efficiency.",
+        color: "from-amber-600 to-yellow-500",
+        features: ["Cloud Cost Optimization", "Budgeting & Forecasting", "Usage Monitoring"],
+        link: "/services/finops",
+        img: "/banner/finops.jpg"
     },
 ];
 

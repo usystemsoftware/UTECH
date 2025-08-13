@@ -81,7 +81,7 @@ const Finance = () => {
               src="/assets/industries/finance/accounting-development.png"
               alt="Accounting Dashboard"
               loading="lazy"
-              className="w-110 mx-auto"
+              className="w-120 mx-auto"
             />
           </FadeInWhenVisible>
           <FeaturesList features={accountingFeatures} fadeUp={fadeUp} />
@@ -132,13 +132,13 @@ const Finance = () => {
             title="Custom Financial Planning Software Development"
             description="U Technology’s custom financial planning software solutions streamline day-to-day processes, including invoicing, payment processing, audit archiving, report generation, and more."
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
             <FadeInWhenVisible>
               <img
                 loading="lazy"
                 src="/assets/industries/finance/planning-development.png"
                 alt="Financial Planning Dashboard"
-                className="w-96 mx-auto"
+                className="w-110 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList features={planningFeatures} fadeUp={fadeUp} grid />
@@ -207,14 +207,14 @@ const Finance = () => {
             title="Custom Insurance Software Development"
             description="U Technology’s custom insurance software solutions ensures success-driven insurance automation to help insurance companies drive momentum and drive productivity."
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <FeaturesList features={insuranceFeatures} fadeUp={fadeUp} grid />
             <FadeInWhenVisible>
               <img
                 loading="lazy"
                 src="/assets/industries/finance/insurance-development.png"
                 alt="Insurance Dashboard"
-                className="w-135 mx-auto"
+                className="w-120 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
@@ -236,7 +236,7 @@ const Finance = () => {
               loading="lazy"
               src="/assets/industries/finance/preparation-development.png"
               alt="Tax Preparation"
-              className="w-135 mx-auto"
+              className="w-145 mx-auto"
             />
           </FadeInWhenVisible>
           <FeaturesList features={taxFeatures} fadeUp={fadeUp} />

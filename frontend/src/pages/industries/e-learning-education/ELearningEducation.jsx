@@ -126,7 +126,7 @@ export default function ELearningEducation() {
       </PageLayout>
 
       {/* LMS Solutions Features */}
-      <section className="bg-secondary py-10">
+      <section className="bg-secondary pt-10">
         <PageLayout className="text-center space-y-12">
           <div className="grid grid-cols-1 sm:grid-cols-2">
             <FeaturesList features={lmsSolutions.slice(0, 3)} fadeUp={fadeUp} />
@@ -228,7 +228,7 @@ export default function ELearningEducation() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <FeaturesList fadeUp={fadeUp} features={sisSolutions} grid />
             <FadeInWhenVisible delay={0.5} className="md:block hidden">
               <img
@@ -258,7 +258,7 @@ export default function ELearningEducation() {
               loading="lazy"
               src="/assets/industries/e-learning-education/lectora-software-development-phone.png"
               alt="Portfolio"
-              className="w-48 mx-auto"
+              className="w-56 mx-auto"
             />
           </FadeInWhenVisible>
           <div className="text-start">

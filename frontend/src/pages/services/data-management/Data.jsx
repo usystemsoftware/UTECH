@@ -137,7 +137,7 @@ export const portfolioItems = [
     },
     {
         title: "Accelerate Growth with Custom Database Solutions",
-        img: "/banner/accelerate-growth-with-custom-database-2023-banner.jpg",
+        img: "/banner/blockchain-social-media-platform-banner.jpg",
     },
     {
         title: "Digital Marketing Data Insights",

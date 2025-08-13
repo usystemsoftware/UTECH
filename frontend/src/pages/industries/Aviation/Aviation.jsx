@@ -5,7 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
-import { TypographyH5, TypographyMuted, Headline } from "@/custom/Typography";
+import { TypographyH5, TypographyMuted, Headline, TypographyH3 } from "@/custom/Typography";
 import {
   airlineAIandAutomationServices,
   airlineOperationsServices,
@@ -16,7 +16,10 @@ import {
   aviationMroSolutions,
   dronePartner,
   droneSoftwareSolutions,
+  tvpoasterDescription,
 } from "./Data";
+import ImageNearScreen from "@/custom/ImageNearScreen";
+import VideoTvPoster from "@/custom/VideoTvPoster";
 
 export default function Aviation() {
   return (
@@ -29,7 +32,6 @@ export default function Aviation() {
         buttonText="GET AIRLINE SOFTWARE DEVELOPERS"
         buttonLink="#"
         imageFit="cover"
-        overlayOpacity={0.2}
       />
 
       <PageLayout className="text-center my-12">
@@ -56,6 +58,7 @@ export default function Aviation() {
             <FeaturesList
               features={airlineAIandAutomationServices.slice(0, 3)}
               fadeUp={fadeUp}
+              center
             />
             <FadeInWhenVisible className="hidden md:block">
               <img
@@ -68,40 +71,28 @@ export default function Aviation() {
             <FeaturesList
               features={airlineAIandAutomationServices.slice(3, 6)}
               fadeUp={fadeUp}
+              center
             />
           </div>
         </PageLayout>
       </section>
 
-      <PageLayout className="py-16 space-y-10 text-center">
+      <section className="py-16 bg-white flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Custom Airline Technology Solutions"
           description="U Tech provides custom airline management software for OEMs, MROs, Airports, and flight operators to streamline their operational workflows."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <FeaturesList
-            fadeUp={fadeUp}
-            features={airlineOperationsServices}
-            grid
-          />
-          <FadeInWhenVisible
-            delay={0.5}
-            className="md:block hidden"
-          >
-            <img
-              loading="lazy"
-              src="/assets/industries/aviation/custom-flight-operations-management-software-development.png"
-              alt="Portfolio"
-              className="w-96 mx-auto"
-            />
-          </FadeInWhenVisible>
-        </div>
+        <ImageNearScreen
+          features={airlineOperationsServices}
+          src="/assets/industries/aviation/custom-flight-operations-management-software-development.png"
+          imageAlign="right"
+        />
         <FadeInWhenVisible>
           <Button variant="hover">GET FLIGHT OPS SOFTWARE DEVELOPES</Button>
         </FadeInWhenVisible>
-      </PageLayout>
+      </section>
 
-      <section className="py-16 bg-secondary">
+      <section className="py-5 ">
         <PageLayout className="space-y-10 text-center">
           <Headline
             title="Custom Airline Reservation & Ticketing Software Development"
@@ -113,7 +104,7 @@ export default function Aviation() {
                 loading="lazy"
                 src="/assets/industries/aviation/sabre-travel-network-solutions-gif.gif"
                 alt="Portfolio"
-                className="w-48 mx-auto"
+                className="w-65 mx-auto"
               />
             </FadeInWhenVisible>
             <div className="space-y-8">
@@ -121,13 +112,14 @@ export default function Aviation() {
                 fadeUp={fadeUp}
                 features={airlineReservationSolutions}
                 grid
+                center
               />
-              <TypographyMuted>
+              {/* <TypographyMuted>
                 Integrate with leading GDSs and airline reservation system
                 providers, such as Sabre, Galileo, Amadeus, and FlightsLogic, to
                 create a unified platform for airline operators.
-              </TypographyMuted>
-              <div className="flex items-center justify-center gap-6 flex-wrap mt-8">
+              </TypographyMuted> */}
+              <div className="flex items-center justify-center gap-6 flex-wrap mt-10">
                 {airlinePartner?.map((item, index) => (
                   <FadeInWhenVisible key={index} delay={0.5}>
                     <img
@@ -141,77 +133,56 @@ export default function Aviation() {
               </div>
             </div>
           </div>
+          {/* <FadeInWhenVisible> */}
+          <Button variant="hover">GET AIRLINE SOFTWARE DEVELOPES</Button>
+          {/* </FadeInWhenVisible> */}
+        </PageLayout>
+      </section>
+
+      <VideoTvPoster
+        information={tvpoasterDescription}
+      />
+
+      <PageLayout className="space-y-8 py-12">
+        <Headline
+          title="Custom Maintenance, Repair, & Overhaul (MRO) Solutions"
+          description="U Tech delivers aviation maintenance, repair, and overhaul (MRO) software solutions to aircraft maintenance directors, flight schedulers & dispatchers, inventory parts managers, and more."
+        />
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
+          <FeaturesList
+            features={aviationMroSolutions.slice(0, 2)}
+            fadeUp={fadeUp}
+            center
+          />
           <FadeInWhenVisible>
-            <Button variant="hover">GET AIRLINE SOFTWARE DEVELOPES</Button>
+            <img
+              src="/assets/industries/aviation/mro-aviation-software-developers.png"
+              alt="Accounting Dashboard"
+              loading="lazy"
+              className="w-64 mx-auto"
+            />
           </FadeInWhenVisible>
-        </PageLayout>
-      </section>
-
-      <PageLayout className="my-16 py-16 grid grid-cols-1 sm:grid-cols-2 items-center space-y-10 bg-cyan-50">
-        <div className="space-y-8">
-          <TypographyH5>
-            U Tech ENSURES COMPLIANCE WITH AVIATION INDUSTRY REGULATORY
-            STANDARDS
-          </TypographyH5>
-          <TypographyMuted>
-            U Tech’s Custom MRO solutions meets regulatory safety-related
-            standards and requirements of the Federal Aviation Administration
-            (FAA), Civil Aeronautics Board (CAB), Occupational Safety & Health
-            Administration (OSHA), Airworthiness Directives (AD), Temporary
-            Flight Restrictions (TFR), Advisory Circulars (AC), and other
-            standards associated with the industry.
-          </TypographyMuted>
+          <FeaturesList
+            features={aviationMroSolutions.slice(2, 4)}
+            fadeUp={fadeUp}
+            center
+          />
         </div>
-        <FadeInWhenVisible delay={0.5}>
-          <img
-            loading="lazy"
-            src="/assets/industries/healthcare/get-hl7-solutions.png"
-            alt="Portfolio"
-            className="w-135 mx-auto"
-          />
-        </FadeInWhenVisible>
       </PageLayout>
-
-      <section className="bg-secondary py-12">
-        <PageLayout className="space-y-8">
-          <Headline
-            title="Custom Maintenance, Repair, & Overhaul (MRO) Solutions"
-            description="U Tech delivers aviation maintenance, repair, and overhaul (MRO) software solutions to aircraft maintenance directors, flight schedulers & dispatchers, inventory parts managers, and more."
-          />
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
-            <FeaturesList
-              features={aviationMroSolutions.slice(0, 2)}
-              fadeUp={fadeUp}
-            />
-            <FadeInWhenVisible>
-              <img
-                src="/assets/industries/aviation/mro-aviation-software-developers.png"
-                alt="Accounting Dashboard"
-                loading="lazy"
-                className="w-64 mx-auto"
-              />
-            </FadeInWhenVisible>
-            <FeaturesList
-              features={aviationMroSolutions.slice(2, 4)}
-              fadeUp={fadeUp}
-            />
-          </div>
-        </PageLayout>
-      </section>
 
       <PageLayout className="py-12 space-y-12 text-center">
         <Headline
           title="Custom Drone Software Development"
           description="U Tech develops custom drone software for agriculture, construction, cinematography, indoor/outdoor inspections, search-and-rescue, and many other industry sectors."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <FadeInWhenVisible>
             <img
               src="/assets/industries/aviation/custom-drone-software-development.png"
               alt="Accounting Dashboard"
               loading="lazy"
-              className="w-110 mx-auto"
+              className="md:w-120 w-72 mx-auto"
             />
           </FadeInWhenVisible>
           <div className="grid gap-9">
@@ -219,6 +190,7 @@ export default function Aviation() {
               features={droneSoftwareSolutions}
               fadeUp={fadeUp}
               grid
+              center
             />
             <TypographyMuted>
               Leverage ArcGIS by ESRI, along with other leading drone software
@@ -249,5 +221,5 @@ export default function Aviation() {
         <FaqSection faqs={aviationFaqs} title="FAQ's" />
       </div>
     </>
-  );
+  )
 }

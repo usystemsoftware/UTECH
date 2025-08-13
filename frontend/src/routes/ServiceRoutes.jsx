@@ -8,6 +8,8 @@ import BackupRecovery from "@/pages/services/backup-recovery/BackupRecovery";
 import DataIntegration from "@/pages/services/data-integration/DataIntegration";
 import DataManagement from "@/pages/services/data-management/DataManagement";
 import DevOps from "@/pages/services/devops/DevOps";
+import CustomServices from "@/pages/services/customservices/CustomServices";
+import FinopsServices from "@/pages/services/finops-services/FinopsServices";
 
 export const ServiceRoutes = [
   { path: "/services/api-development", element: <ApiDevelopment /> },
@@ -20,4 +22,6 @@ export const ServiceRoutes = [
   { path: "/services/data-integration", element: <DataIntegration /> },
   { path: "/services/data-management", element: <DataManagement /> },
   { path: "/services/devops", element: <DevOps /> },
+  { path: "/services/custom-software", element: <CustomServices /> },
+  { path: "/services/finops", element: <FinopsServices /> },
 ]

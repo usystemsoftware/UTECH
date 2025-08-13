@@ -8,6 +8,17 @@ export const metaData = {
       title: "Contact Us | U Tech",
       description: "Get in touch with our team for inquiries and support.",
       keywords: "contact, support, help, U Tech",
+      thumbnail: "thumbnil.png",
+      canonical: `${baseUrl}`,
+      breadcrumbs: [
+        { label: "/", href: baseUrl },
+        { label: "Contact", href: `${baseUrl}/contact` },
+      ],
+    },
+    {
+      title: "Contact Us | U Tech",
+      description: "Get in touch with our team for inquiries and support.",
+      keywords: "contact, support, help, U Tech",
       thumbnail: "banner/contact-us.jpg",
       canonical: `${baseUrl}/contact`,
       breadcrumbs: [

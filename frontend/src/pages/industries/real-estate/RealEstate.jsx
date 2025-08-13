@@ -77,7 +77,7 @@ const RealEstate = () => {
             solutions using our specialized, multi-purpose technologies and
             industry-specific experience."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-1 space-y-6 md:grid-cols-3 gap-6 items-center mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-1 space-y-6 md:grid-cols-3 gap-6 items-center">
             <FeaturesList
               features={realEstateServices.slice(0, 2)}
               fadeUp={fadeUp}

@@ -1,7 +1,7 @@
 export const BankingSoftwareLeftFeatures = [
   {
     label: "ACH & Check 21",
-    icon: "Banknote",
+    icon: "/assets/industries/aviation/icons/10003.svg",
   },
   {
     label: "ATM",
@@ -33,7 +33,7 @@ export const BankingSoftwareAIFeatures = [
     title: "AI-Driven Fraud Detection",
     description:
       "Our AI systems analyze transaction patterns in real-time using machine learning to proactively detect and prevent fraudulent activities.",
-    icon: "ShieldAlert",
+    icon: "/assets/industries/banking/icons/10001.svg",
   },
   {
     title: "The Future of Credit Scoring",
@@ -72,21 +72,21 @@ export const CustomLoanServicingfeatures = [
     title: "Loan Servicing & Management Systems",
     description:
       "Our product development teams create custom loan servicing systems and Loan Management Systems (LMS) for banks, credit unions, and financial institutions.",
-    icon: "Laptop",
+    icon: "/assets/industries/banking/icons/10005.svg",
     animation: "animate-bounce",
   },
   {
     title: "Loan Origination Systems",
     description:
       "We program Loan Origination Systems (LOS), with modules for underwriting, credit pull, decision support, and more.",
-    icon: "FileText",
+    icon: "/assets/industries/banking/icons/10006.svg",
     animation: "animate-pulse",
   },
   {
     title: "Loan Settlement Software Platforms",
     description:
       "U Technology's programmers create payment and settlement platforms supporting ACH and EFT for all payment types.",
-    icon: "CheckCircle",
+    icon: "/assets/industries/banking/icons/10007.svg",
     animation: "animate-spin",
   },
 ];
@@ -96,19 +96,19 @@ export const GetMobileBankingSoftwareSolutions = [
     title: "Custom Mobile Banking App Development",
     description:
       "We develop native mobile apps for banking services on iOS & Android, utilizing cross-platform development tools such as Xamarin & Apache Cordova to feature easily navigable and speedy UI/UX that’s responsive on smartphones, tablets, and wearable devices.",
-    icon: "Smartphone",
+    icon: "/assets/industries/banking/icons/10008.svg",
   },
   {
     title: "Core Banking System Integrations",
     description:
       "We integrate mobile banking apps with a financial institution’s existing back-end CORE banking system, using RESTful APIs, which allow seamless cross-channel interactions and the ability to transfer funds between various accounts in real-time.",
-    icon: "Banknote",
+    icon: "/assets/industries/banking/icons/10009.svg",
   },
   {
     title: "Check Remote Deposit Capture",
     description:
       "Our developers implement Remote Deposit Capture (RDC) modules integrated with your device’s camera function to allow for check truncation and conversion of checks into ACH transactions in compliance with Check 21 mandates.",
-    icon: "Camera",
+    icon: "/assets/industries/banking/icons/10005.svg",
   },
 ];
 
@@ -117,19 +117,46 @@ export const GetMobileBankingOnlineSoftwareSolutions = [
     title: "Custom Mobile Banking App Development",
     description:
       "We develop native mobile apps for banking services on iOS & Android...",
-    icon: "Smartphone",
+    icon: "/assets/industries/banking/icons/10002.svg",
   },
   {
     title: "Core Banking System Integrations",
     description:
       "We integrate mobile banking apps with a financial institution’s existing CORE banking system...",
-    icon: "Banknote",
+    icon: "/assets/industries/banking/icons/10001.svg",
   },
   {
     title: "Check Remote Deposit Capture",
     description:
       "Our developers implement Remote Deposit Capture (RDC) modules...",
-    icon: "BadgeDollarSign",
+    icon: "/assets/industries/banking/icons/10005.svg",
+  },
+];
+
+export const AIPoweredSolutions = [
+  {
+    icon: "/assets/industries/banking/icons/10001.svg",
+    title: "Banking Fraud Detection",
+    description:
+      "We provide advanced fraud analytics in banking, which can help detect fraud and safeguard data from unusual conduct in real time. Our solutions enable financial organizations to improve safety and help protect customer trust.",
+  },
+  {
+    icon: "/assets/industries/banking/icons/10005.svg",
+    title: "Predictive Analytics in the Banking Industry",
+    description:
+      "We deliver cutting-edge predictive analytics for banking and financial services, empowering smarter decisions. From investment banking to retail banking, our solutions use predictive analysis to improve risk management and provide efficient client insights in operations.",
+  },
+  {
+    icon: "/assets/industries/banking/icons/10006.svg",
+    title: "Banking and Risk Management",
+    description:
+      "We provide customized banking risk management software solutions, supporting financial organizations in improving performance, managing risks, and optimizing compliance. Our tools support risk management services in banking and the broader banking industry with security.",
+  },
+  {
+    icon: "/assets/industries/banking/icons/10002.svg",
+    title: "Wealth Management Banking Services",
+    description:
+      "We deliver cutting-edge banking and wealth management solutions, streamlining operations across retail and wealth management sectors. Our custom platforms empower more intelligent financial planning, investment methods, and client involvement in the banking sector.",
   },
 ];
 

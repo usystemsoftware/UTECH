@@ -108,7 +108,7 @@ export default function EnergyUtilities() {
             title="Electric Utility Software Solutions"
             description="U Tech delivers custom electric utility software solutions designed for grid modernization, automating and simplifying the management of electrical power sources and all other electric operations management workflows."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
             <FeaturesList
               fadeUp={fadeUp}
               features={electricSoftwareSolutions}
@@ -118,7 +118,7 @@ export default function EnergyUtilities() {
                 loading="lazy"
                 src="/assets/industries/energy-utilities/electric-management-solutions.png"
                 alt="Portfolio"
-                className="w-42 mx-auto"
+                className="w-52 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
@@ -140,7 +140,7 @@ export default function EnergyUtilities() {
               loading="lazy"
               src="/assets/industries/energy-utilities/custom-water-management-solutions.png"
               alt="Portfolio"
-              className="w-110 mx-auto"
+              className="w-135 mx-auto"
             />
           </FadeInWhenVisible>
           <FeaturesList fadeUp={fadeUp} features={waterSoftwareSolutions} />
@@ -164,7 +164,7 @@ export default function EnergyUtilities() {
                 loading="lazy"
                 src="/assets/industries/energy-utilities/custom-smart-grid-technology-services.png"
                 alt="Portfolio"
-                className="w-110 mx-auto"
+                className="w-135 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
@@ -186,7 +186,7 @@ export default function EnergyUtilities() {
               loading="lazy"
               src="/assets/industries/energy-utilities/custom-heat-software-solutions.png"
               alt="Portfolio"
-              className="w-48 mx-auto"
+              className="w-64 mx-auto"
             />
           </FadeInWhenVisible>
           <FeaturesList fadeUp={fadeUp} features={heatSoftwareSolutions} />
@@ -210,7 +210,7 @@ export default function EnergyUtilities() {
                 loading="lazy"
                 src="/assets/industries/energy-utilities/custom-solar-software-solutions.png"
                 alt="Portfolio"
-                className="w-72 sm:w-86 mx-auto"
+                className="w-72 sm:w-96 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
@@ -232,7 +232,7 @@ export default function EnergyUtilities() {
               loading="lazy"
               src="/assets/industries/energy-utilities/custom-waste-management-software-solutions.png"
               alt="Portfolio"
-              className="w-135 mx-auto"
+              className="w-145 mx-auto"
             />
           </FadeInWhenVisible>
           <FeaturesList fadeUp={fadeUp} features={wasteManagementSolutions} />
@@ -268,7 +268,7 @@ export default function EnergyUtilities() {
               loading="lazy"
               src="/assets/industries/energy-utilities/custom-wind-software-development.png"
               alt="Portfolio"
-              className="w-110 mx-auto"
+              className="w-135 mx-auto"
             />
           </FadeInWhenVisible>
           <FeaturesList fadeUp={fadeUp} features={windSolutions} />
@@ -292,7 +292,7 @@ export default function EnergyUtilities() {
                 loading="lazy"
                 src="/assets/industries/energy-utilities/custom-nuclear-energy-software.png"
                 alt="Portfolio"
-                className="w-86 mx-auto"
+                className="w-110 mx-auto"
               />
             </FadeInWhenVisible>
           </div>

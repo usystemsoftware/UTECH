@@ -1,9 +1,9 @@
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
-import { FeaturesGridtest } from "@/components/FeaturesGridtest";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
-import { TypographyH3, Headline, TypographyMuted } from "@/custom/Typography";
+import { TypographyH3, Headline, TypographyMuted, TypographyH5 } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 
@@ -26,8 +26,10 @@ import {
   veterinarySoftwareFeatures,
   healthcareFAQs,
   features,
+  healthInformation,
 } from "./Data";
 import VideoPoster from "@/custom/VideoPoster";
+import ImageNearScreen from "@/custom/ImageNearScreen";
 
 
 export default function Healthcare() {
@@ -48,7 +50,7 @@ export default function Healthcare() {
           title="FIND THE RIGHT HEALTHCARE SOFTWARE DEVELOPMENT"
           description="We provide custom healthcare software development services in response to the evolving healthcare industry. Being a custom healthcare software development company, our goal is to improve efficiency and patient care at reduced cost and assist in healthcare management decisions."
         />
-        <FeaturesGridtest
+        <FeaturesGridnew
           leftFeatures={healthcareSoftwareFeatures.slice(0, 7)}
           rightFeatures={healthcareSoftwareFeatures.slice(7, 14)}
           centerImage="/assets/industries/healthcare/desktop-combo-healthcare.png"
@@ -62,7 +64,7 @@ export default function Healthcare() {
       </section>
 
 
-      <section className="bg-secondary py-16">
+      <section className=" pt-5">
         <PageLayout className="space-y-16">
           <Headline
             title="AI-Powered Custom Healthcare Software Development Solutions"
@@ -73,7 +75,7 @@ export default function Healthcare() {
             <FeaturesList
               features={healthcareAIFeatures}
               fadeUp={fadeUp}
-              grid
+
             />
           </div>
 
@@ -81,20 +83,23 @@ export default function Healthcare() {
             <FeaturesList
               features={healthcareAIFeatures.slice(0, 2)}
               fadeUp={fadeUp}
+              center
             />
             <FeaturesList
               features={healthcareAIFeatures.slice(2, 4)}
               fadeUp={fadeUp}
+              center
             />
             <FeaturesList
               features={healthcareAIFeatures.slice(4, 6)}
               fadeUp={fadeUp}
+              center
             />
           </div>
         </PageLayout>
       </section>
 
-      <PageLayout className="space-y-8 py-12">
+      <PageLayout className="space-y-8 pt-15">
         <Headline
           title="Custom Digital Health Platform Solutions"
           description="With Digital Health Platforms, medical professionals can take a different approach to their research, health management, and patient care, leading to significant improvements in efficiency and patient outcomes."
@@ -105,6 +110,8 @@ export default function Healthcare() {
           <FeaturesList
             features={digitalHelthSolutions.slice(0, 2)}
             fadeUp={fadeUp}
+            center
+
           />
 
           {/* Center Animation */}
@@ -113,7 +120,7 @@ export default function Healthcare() {
               loading="lazy"
               src="/assets/industries/healthcare/industry-leadin-telehealth.png"
               alt="Mobile Analytics App"
-              className="w-48 mx-auto"
+              className="w-43 mx-auto"
             />
           </FadeInWhenVisible>
 
@@ -121,11 +128,13 @@ export default function Healthcare() {
           <FeaturesList
             features={digitalHelthSolutions.slice(2, 4)}
             fadeUp={fadeUp}
+            center
+
           />
         </div>
       </PageLayout>
 
-      <section className="bg-secondary py-12">
+      <section className="py-12">
         <PageLayout className="space-y-10 text-center">
           <Headline
             title="Electronic Health Record / Medical Record App Development"
@@ -141,7 +150,13 @@ export default function Healthcare() {
                 className="w-120 mx-auto"
               />
             </FadeInWhenVisible>
-            <FeaturesList features={healthcareExtraFeatures} fadeUp={fadeUp} />
+            <FeaturesList features={healthcareExtraFeatures}
+              fadeUp={fadeUp}
+              iconAlign="horizontal"
+
+            />
+
+
           </div>
 
           <FadeInWhenVisible>
@@ -161,6 +176,7 @@ export default function Healthcare() {
           <FeaturesList
             features={telemedicineFeatures.slice(0, 2)}
             fadeUp={fadeUp}
+            center
           />
 
           {/* Center Animation */}
@@ -177,63 +193,56 @@ export default function Healthcare() {
           <FeaturesList
             features={telemedicineFeatures.slice(2, 4)}
             fadeUp={fadeUp}
+            center
+
           />
         </div>
         <FadeInWhenVisible>
           <Button variant="hover">Develop Your Telehelth Platform</Button>
         </FadeInWhenVisible>
       </PageLayout>
-
-      <section className="bg-secondary py-12">
+      <section className=" py-5">
         <PageLayout className="space-y-10 text-center">
           <Headline
             title="Health Information Exchange (HIE) App Development"
             description="Our engineers build feature-rich and powerful HIE platforms to streamline information exchanges between doctors, patients, and other health practitioners."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2">
-            <FeaturesList features={hieFeatures} fadeUp={fadeUp} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
+            <FeaturesList features={healthInformation} iconAlign="horizontal"
+              fadeUp={fadeUp} />
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
-                src="/assets/industries/healthcare/telehealth-phone.png"
+                src="/assets/industries/healthcare/healthInformationExchange.png"
                 alt="Portfolio"
-                className="w-48 mx-auto"
+                className="w-50 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
+          <FadeInWhenVisible>
+            <Button variant="hover">DEVELOP LIMS PLATFORM SOLUTIONS</Button>
+          </FadeInWhenVisible>
         </PageLayout>
       </section>
-
-      <PageLayout className="py-16 space-y-10 text-center">
+      <section className=" bg-white flex flex-col gap-3 justify-center items-center">
         <Headline
           title="PACS & DICOM Viewer platform"
           description="We deliver end-to-end PACS/DICOM platform designed for secure data and image sharing, archiving, viewing, and more."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 md:gap-8">
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/construction/building-information-modeling-solutions-cut.png"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={dicomFeatures.slice(0, 2)}
-            />
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={dicomFeatures.slice(2, 4)}
-            />
-          </div>
-        </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">START YOUR PACS/DICOM PROJECT TODAY</Button>
-        </FadeInWhenVisible>
-      </PageLayout>
+        <ImageNearScreen
+          features={dicomFeatures}
+          src="/assets/industries/construction/building-information-modeling-solutions-cut.png"
+        />
+
+        {/* CTA Button */}
+        <Button variant="hover" className="mt-8">
+          START YOUR PACS/DICOM PROJECT TODAY
+        </Button>
+      </section>
+
+
+
 
       <section className="bg-secondary py-12">
         <PageLayout className="space-y-10 text-center">
@@ -313,13 +322,13 @@ export default function Healthcare() {
         </PageLayout>
       </section>
 
-      <PageLayout className="space-y-8 py-12 text-center">
+      <PageLayout className="space-y-8 text-center">
         <Headline
           title="Industry-Leading Telehealth & Telemedicine Platforms"
           description="We build custom telehealth apps to deliver remote health services, education, and training for improved efficiency and quality of care."
         />
 
-        <div className="flex flex-col sm:flex-row justify-baseline gap-8 md:gap-26">
+        <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-6">
           {/* Left Features List */}
           <FeaturesList
             features={hospitalSystemFeatures.slice(0, 2)}

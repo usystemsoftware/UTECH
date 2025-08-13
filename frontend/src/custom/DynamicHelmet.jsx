@@ -47,7 +47,7 @@ const DynamicHelmet = () => {
           "U Tech provides cutting-edge technology solutions for various industries.",
         keywords: "technology solutions, software development, U Tech",
         canonical: currentUrl,
-        thumbnail: "logo.png",
+        thumbnail: "thumbnil.png",
         breadcrumbs: [
           { label: "Home", href: baseUrl },
           {
@@ -63,10 +63,7 @@ const DynamicHelmet = () => {
 
   if (!currentMeta) return null;
 
-  // Construct the full image URL
-  const imageUrl = currentMeta.thumbnail.startsWith("http")
-    ? currentMeta.thumbnail
-    : `${baseImageUrl}/${currentMeta.thumbnail}`;
+  console.log(currentMeta)
 
   return (
     <Helmet>
@@ -112,7 +109,7 @@ const DynamicHelmet = () => {
       <meta
         key="og:image"
         property="og:image"
-        content={imageUrl}
+        content={`https://usystem.software/${currentMeta.thumbnail}`}
       />
       <meta
         property="og:image:width"
@@ -147,7 +144,7 @@ const DynamicHelmet = () => {
       <meta
         key="twitter:image"
         name="twitter:image"
-        content={imageUrl}
+        content={`https://usystem.software/${currentMeta.thumbnail}`}
       />
     </Helmet>
   );
