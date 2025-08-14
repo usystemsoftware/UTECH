@@ -9,59 +9,59 @@ export const features = [
 export const healthcareSoftwareFeatures = [
     {
         label: "AI Consulting",
-        img: "/assets/industries/healthcare/icons/10007.svg",
+        icon: "/assets/industries/healthcare/icons/10007.svg",
     },
     {
         label: "Veradigm Integration",
-        img: "/assets/industries/healthcare/icons/10008.svg",
+        icon: "/assets/industries/healthcare/icons/10008.svg",
     },
     {
         label: "Assistive Technology",
-        img: "/assets/industries/healthcare/icons/10009.svg",
+        icon: "/assets/industries/healthcare/icons/10009.svg",
     },
     {
         label: "DICOM / PACS",
-        img: "/assets/industries/healthcare/icons/10010.svg",
+        icon: "/assets/industries/healthcare/icons/10010.svg",
     },
     {
         label: "E-prescribing (eRx)",
-        img: "/assets/industries/healthcare/icons/10011.svg",
+        icon: "/assets/industries/healthcare/icons/10011.svg",
     },
     {
         label: "Health Information Exchange",
-        img: "/assets/industries/healthcare/icons/10012.svg",
+        icon: "/assets/industries/healthcare/icons/10012.svg",
     },
     {
         label: "HIS & Practice Management System",
-        img: "/assets/industries/healthcare/icons/10020.svg",
+        icon: "/assets/industries/healthcare/icons/10020.svg",
     },
     {
         label: "HL7 Interface",
-        img: "/assets/industries/healthcare/icons/10013.svg",
+        icon: "/assets/industries/healthcare/icons/10013.svg",
     },
     {
         label: "Laboratory Information",
-        img: "/assets/industries/healthcare/icons/10014.svg",
+        icon: "/assets/industries/healthcare/icons/10014.svg",
     },
     {
         label: "Mirth Connect",
-        img: "/assets/industries/healthcare/icons/10015.svg",
+        icon: "/assets/industries/healthcare/icons/10015.svg",
     },
     {
         label: "Pharmacy Management System",
-        img: "/assets/industries/healthcare/icons/10016.svg",
+        icon: "/assets/industries/healthcare/icons/10016.svg",
     },
     {
         label: "RCM & Medical Billing",
-        img: "/assets/industries/healthcare/icons/10017.svg",
+        icon: "/assets/industries/healthcare/icons/10017.svg",
     },
     {
         label: "Telemedicine / Telehealth",
-        img: "/assets/industries/healthcare/icons/10018.svg",
+        icon: "/assets/industries/healthcare/icons/10018.svg",
     },
     {
         label: "Veterinary",
-        img: "/assets/industries/healthcare/icons/10019.svg",
+        icon: "/assets/industries/healthcare/icons/10019.svg",
     },
 ];
 
@@ -206,19 +206,19 @@ export const hieFeatures = [
         title: "HIE Interoperability",
         description:
             "Enhance your existing eRx, EHR/EMR, LIMS, medical IoT, billing & RCM, and other networks by integrating interoperable HIE functionalities.",
-        img: "/assets/industries/healthcare/icons/10038.svg",
+        icon: "/assets/industries/healthcare/icons/10038.svg",
     },
     {
         title: "HIE Mobile Application",
         description:
             "Build cross-platform mobile apps designed to access HIE healthcare data analysis and improve primary care by utilizing C-CDA for optimized medical data sharing.",
-        img: "/assets/industries/healthcare/icons/10039.svg",
+        icon: "/assets/industries/healthcare/icons/10039.svg",
     },
     {
         title: "HIE Standards",
         description:
             "HIE solutions adhere to IHE, HL7, CDA, CCD, QRDA, DICOM, NwHIN, and other regulatory healthcare technology communication standards.",
-        img: "/assets/industries/healthcare/icons/10040.svg",
+        icon: "/assets/industries/healthcare/icons/10040.svg",
     },
 ];
 

@@ -1,6 +1,5 @@
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import { TypographyH2, Headline } from "@/custom/Typography";
@@ -28,6 +27,8 @@ import {
   supportServices,
   testimonials,
 } from "./Data";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
+import { FeaturesListOpposite } from "@/components/FeaturesList";
 
 export default function Construction() {
   return (
@@ -48,7 +49,7 @@ export default function Construction() {
           title="Construction Software Development Services"
           description="U Tech’s construction management software development services cater to the AEC (architecture, engineering, and construction) industry, delivering custom solutions that facilitate all construction-related business process."
         />
-        <FeaturesGrid
+        <FeaturesGridnew
           leftFeatures={ConstructionSoftwareLeftFeatures}
           rightFeatures={ConstructionSoftwareRightFeatures}
           centerImage="/assets/industries/construction/construction-software-services.png"
@@ -58,34 +59,26 @@ export default function Construction() {
       </PageLayout>
 
       {/* AI-Powered Features Section */}
-      <div className="bg-secondary py-12">
-        <PageLayout className="text-center space-y-12">
-          <Headline
-            title="AI-Powered Smart Construction Software"
-            description="U Tech is at the forefront of AI-driven smart construction solutions, dedicated to transforming the AEC industry..."
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8">
-            <FeaturesList
-              features={AIPoweredConstructionFeatures.slice(0, 4)}
-              grid
-            />
-            <FeaturesList
-              features={AIPoweredConstructionFeatures.slice(4, 8)}
-              grid
-            />
-          </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">
-              Get AI Powered Construction Solutions
-            </Button>
-          </FadeInWhenVisible>
-        </PageLayout>
-      </div>
+      <PageLayout className="py-16 space-y-8 text-center">
+        <Headline
+          title="AI-Powered Smart Construction Software"
+          description="U Tech is at the forefront of AI-driven smart construction solutions, dedicated to transforming the AEC industry..."
+        />
+        <FeaturesListOpposite
+          features={AIPoweredConstructionFeatures}
+
+        />
+        {/* <FadeInWhenVisible delay={0.4}> */}
+        <Button variant="hover">
+          Get AI Powered Construction Solutions
+        </Button>      {/* </FadeInWhenVisible> */}
+      </PageLayout>
+
 
       {/* Construction Automation Tools */}
       <PageLayout className="text-center py-10 space-y-10">
         <TypographyH2>Construction Automation Tools</TypographyH2>
-        <FeaturesList features={constructionSolutions} grid />
+        <FeaturesList features={constructionSolutions} center grid />
       </PageLayout>
 
       {/* Testimonial Section */}
@@ -94,12 +87,15 @@ export default function Construction() {
       </FadeInWhenVisible>
 
       {/* Support Services Section */}
-      <PageLayout className="py-16 space-y-10">
+      <PageLayout className="py-16 space-y-8 text-center">
         <Headline
           title="Construction Software Support Services"
           description="U Tech enhances the latest construction software resources to elevate designs..."
         />
-        <FeaturesList features={supportServices} grid />
+        <FeaturesListOpposite
+          features={supportServices}
+
+        />
       </PageLayout>
 
       {/* Accounting Solutions */}

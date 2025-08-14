@@ -1,11 +1,13 @@
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
 import { FeaturesGrid } from "@/components/FeaturesGridCard";
-import { FeaturesList } from "@/components/FeaturesList";
+import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import { TypographyH4, TypographyMuted, Headline } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+import VideoTvPoster from "@/custom/VideoTvPoster";
+
 import {
   AIPoweredSolutions,
   BankingACHfeatures,
@@ -20,7 +22,9 @@ import {
   CustomLoanServicingfeatures,
   GetMobileBankingOnlineSoftwareSolutions,
   GetMobileBankingSoftwareSolutions,
+  tvpoasterDescription,
 } from "./Data";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 
 export const Banking = () => (
   <>
@@ -40,7 +44,7 @@ export const Banking = () => (
         title="Custom Banking Software Development"
         description="U Technology’s team of expert developers cater to the technical needs of the ever-evolving banking sector by offering high quality software solutions that transform your core environment to streamline banking & financial workflows."
       />
-      <FeaturesGrid
+      <FeaturesGridnew
         leftFeatures={BankingSoftwareLeftFeatures}
         rightFeatures={BankingSoftwareRightFeatures}
         centerImage="/assets/industries/banking/contentBanking.png"
@@ -48,6 +52,7 @@ export const Banking = () => (
         iconSize={38}
         center
       />
+
       <FadeInWhenVisible>
         <Button variant="hover" className="mt-8">
           CUSTOMIZE YOUR BANKING SOLUTION NOW
@@ -89,25 +94,26 @@ export const Banking = () => (
 
 
 
-    {/* Loan Servicing Section */}
-    <PageLayout className="my-10 text-center space-y-8">
+    <section className="py-16 bg-secondary space-y-10 text-center">
       <Headline
         title="Custom Loan Servicing & Origination Solutions"
         description="U Technology’s custom loan servicing and origination personalized solutions handle underwriting, origination, disbursement, servicing, amortization, processing, and so much more for financial services and institutions."
       />
-      <FeaturesList
-        features={CustomLoanServicingfeatures}
-        fadeUp={fadeUp}
-        iconSize={38}
-        image="/assets/industries/banking/softwareSolutions.png"
-        imageClass="w-135"
-        reverse
-        iconAlign="horizontal"
-      />
-      {/* <FadeInWhenVisible> */}
+      <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center">
+        <FadeInWhenVisible delay={0.4}>
+          <img
+            loading="lazy"
+            src="/assets/industries/banking/softwareSolutions.png"
+            alt="Mobile Banking App"
+            className="w-140 mx-auto hidden sm:block"
+          />
+        </FadeInWhenVisible>
+        <FeaturesList features={CustomLoanServicingfeatures} iconAlign="horizontal"
+          fadeUp={fadeUp} />
+      </PageLayout>
       <Button variant="hover">Get Loan Management Software Solutions</Button>
-      {/* </FadeInWhenVisible> */}
-    </PageLayout>
+
+    </section>
 
     {/* Mobile Banking Section */}
     <section className="py-12 space-y-10 bg-secondary text-center">
@@ -138,79 +144,32 @@ export const Banking = () => (
     </section>
 
     {/* Online Banking Section */}
-    <PageLayout className="py-10 text-center space-y-10">
+    <section className="py-16 bg-secondary space-y-10 text-center">
       <Headline
         title="Custom Online Banking Software Systems"
         description="U Technology’s financial software development services create robust, straightforward customizations to online banking systems for brick-and-mortar and FinTech companies of any size, built with incorporated branding for enhanced consistency & visibility."
       />
-      <FeaturesList
-        features={GetMobileBankingOnlineSoftwareSolutions}
-        fadeUp={fadeUp}
-        iconSize={36}
-        image="/assets/industries/banking/softwareSolutions.png"
-        imageClass="w-135"
-        reverse
-        iconAlign="horizontal"
-
+      <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center">
+        <FadeInWhenVisible delay={0.4}>
+          <img
+            loading="lazy"
+            src="/assets/industries/banking/10001.png"
+            alt="Mobile Banking App"
+            className="w-130 mx-auto  hidden sm:block"
+          />
+        </FadeInWhenVisible>
+        <FeaturesList features={GetMobileBankingOnlineSoftwareSolutions} iconAlign="horizontal"
+          fadeUp={fadeUp} />
+      </PageLayout>
+      <Button variant="hover" className="mt-8">
+        Get Online Banking Software Solution
+      </Button>
+    </section>
+    <section>
+      <VideoTvPoster
+        information={tvpoasterDescription}
       />
-      <FadeInWhenVisible>
-        <Button variant="hover" className="mt-8">
-          Get Online Banking Software Solution
-        </Button>
-      </FadeInWhenVisible>
-    </PageLayout>
-
-    {/* Compliance Section */}
-    <PageLayout className="flex flex-col sm:flex-row bg-cyan-50 p-6 items-center justify-between md:gap-12">
-      <div className="flex-1 space-y-3">
-        <TypographyH4>
-          U Technology ENSURES 100% PCI-DSS COMPLIANCE
-        </TypographyH4>
-        <TypographyMuted>
-          U Technology’s banking software developers ensure your software
-          complies with the strict regulatory standards on anti-money laundering
-          and consumer protection standards. This includes the Payment Card
-          Industry Security Standards Council (PCI SSC), Payment Card Industry
-          Data Security Standard (PCI-DSS), and Payment Application Data
-          Security Standard (PA-DSS). Also, Payment Application-Qualified
-          Security Accessors (PA-QSA), SOX, Dodd-Frank, Check 21, and the
-          Securities Act of 1933.
-        </TypographyMuted>
-      </div>
-      <FadeInWhenVisible>
-        <div className="flex-1 relative flex items-center justify-center ml-0 md:ml-20">
-          <video
-            controls
-            className="w-full max-w-md rounded-lg shadow-lg"
-            poster="https://via.placeholder.com/600x400?text=Video+Thumbnail"
-          >
-            <source src="your-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          {/* Labels */}
-          {["PCI-DSS", "PA-DSS", "PCI SSC", "SOX", "PA-QSA"].map((label, i) => (
-            <div
-              key={label}
-              className={`absolute ${i === 0
-                ? "-left-10 top-5"
-                : i === 1
-                  ? "-left-10 bottom-5"
-                  : i === 2
-                    ? "-right-10 top-5"
-                    : i === 3
-                      ? "-right-10 top-24"
-                      : "-right-10 bottom-5"
-                } hidden md:block`}
-            >
-              <div className="mb-6 px-4 py-1 bg-white rounded-full shadow text-sm font-semibold">
-                {label}
-              </div>
-            </div>
-          ))}
-        </div>
-      </FadeInWhenVisible>
-    </PageLayout>
-
+    </section>
     {/* ATM Software Section */}
     <PageLayout className="py-12 space-y-10 text-center">
       <Headline
@@ -222,6 +181,7 @@ export const Banking = () => (
           features={BankingAtmFeatures.slice(0, 2)}
           fadeUp={fadeUp}
           iconSize={36}
+          center
         />
         <FadeInWhenVisible delay={0.4} className="md:block hidden">
           <img
@@ -229,12 +189,14 @@ export const Banking = () => (
             src="/assets/industries/banking/customatm.png"
             alt="Loan Software"
             className="w-64 mx-auto"
+
           />
         </FadeInWhenVisible>
         <FeaturesList
           features={BankingAtmFeatures.slice(2, 4)}
           fadeUp={fadeUp}
           iconSize={36}
+          center
         />
       </div>
       <FadeInWhenVisible>
@@ -253,6 +215,7 @@ export const Banking = () => (
           features={BankingCoreFeatures}
           fadeUp={fadeUp}
           iconSize={36}
+          iconAlign="horizontal"
         />
         <FadeInWhenVisible delay={0.4} className="hidden md:block">
           <img
@@ -263,9 +226,7 @@ export const Banking = () => (
           />
         </FadeInWhenVisible>
       </PageLayout>
-      <FadeInWhenVisible>
-        <Button variant="hover">Get Online Banking Software Solutions</Button>
-      </FadeInWhenVisible>
+      <Button variant="hover">Get Online Banking Software Solutions</Button>
     </section>
 
     {/* EMV Software Section */}
@@ -279,6 +240,7 @@ export const Banking = () => (
           features={BankingCustomEMVServices.slice(0, 2)}
           fadeUp={fadeUp}
           iconSize={36}
+          center
         />
         <FadeInWhenVisible delay={0.4} className="hidden md:block">
           <img
@@ -292,6 +254,7 @@ export const Banking = () => (
           features={BankingCustomEMVServices.slice(2, 4)}
           fadeUp={fadeUp}
           iconSize={36}
+          center
         />
       </div>
       <FadeInWhenVisible>
@@ -314,7 +277,7 @@ export const Banking = () => (
             className="w-52 mx-auto hidden sm:block"
           />
         </FadeInWhenVisible>
-        <FeaturesList features={BankingACHfeatures} fadeUp={fadeUp} />
+        <FeaturesList features={BankingACHfeatures} iconAlign="horizontal" fadeUp={fadeUp} />
       </PageLayout>
       <FadeInWhenVisible>
         <Button variant="hover">Get Check 21 & ACH Processing Solutions</Button>
@@ -327,14 +290,13 @@ export const Banking = () => (
         title="Banking Software Support"
         description="Banking and fiscal services have seen a significant transformation because of the use of new software solutions and apps. U Technology’s banking software support enhances efficiency, reliability, and regulatory compliance while improving the customer experience."
       />
-      <FeaturesList
+      <FeaturesListOpposite
         features={BankingSupportItems}
-        fadeUp={fadeUp}
-        grid4
+
       />
-      <FadeInWhenVisible delay={0.4}>
-        <Button variant="hover">Get Finance Software Support</Button>
-      </FadeInWhenVisible>
+      {/* <FadeInWhenVisible delay={0.4}> */}
+      <Button variant="hover">Get Finance Software Support</Button>
+      {/* </FadeInWhenVisible> */}
     </PageLayout>
 
     {/* FAQ Section */}

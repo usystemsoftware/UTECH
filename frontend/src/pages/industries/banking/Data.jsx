@@ -1,30 +1,30 @@
 export const BankingSoftwareLeftFeatures = [
   {
     label: "ACH & Check 21",
-    icon: "/assets/industries/aviation/icons/10003.svg",
+    icon: "/assets/industries/banking/icons/10015.png",
   },
   {
     label: "ATM",
-    icon: "CreditCard",
+    icon: "/assets/industries/banking/icons/10016.png",
   },
   {
     label: "Core Banking Systems",
-    icon: "Building",
+    icon: "/assets/industries/banking/icons/10017.png",
   },
 ];
 
 export const BankingSoftwareRightFeatures = [
   {
     label: "EMV",
-    icon: "BanknoteArrowDown",
+    icon: "/assets/industries/banking/icons/10018.png",
   },
   {
     label: "Mobile Banking App",
-    icon: "Smartphone",
+    icon: "/assets/industries/banking/icons/10019.png",
   },
   {
     label: "Loan Servicing & Origination",
-    icon: "HandCoins",
+    icon: "/assets/industries/banking/icons/10020.png",
   },
 ];
 
@@ -162,48 +162,53 @@ export const AIPoweredSolutions = [
 
 export const BankingAtmFeatures = [
   {
-    icon: "Monitor",
+    icon: "/assets/industries/aviation/icons/10003.svg",
     title: "ATM Hardware Integrations",
     description:
       "Our developers program multi-vendor software with integrations to various hardware platforms, including credit and debit card readers (MagTek, ID TECH, VeriFone, and Ingenico), card dispensers, and bill dispensers (LG, Fujitsu).",
   },
   {
-    icon: "Cog",
+    icon: "/assets/industries/aviation/icons/10005.svg",
     title: "ATM Management Solutions",
     description:
       "We revamp CORE banking systems with modern interface solutions across an extensive network of ATMs, self-service kiosks, and mobile devices, designed to enhance the user experience by providing personalized options.",
   },
   {
-    icon: "Eye",
+    icon: "/assets/industries/banking/icons/10002.svg",
     title: "ATM Monitoring Systems",
     description:
       "Our developers implement enterprise-wide ATM management software for remote diagnostics and monitoring, including back-end and admin portal programming, as well as automatic system updates within a self-service network.",
   },
   {
-    icon: "Network",
+    icon: "/assets/industries/banking/icons/10004.svg",
     title: "ATM Migration Solutions",
     description:
       "Our skilled data migration experts custom-code software for EMV migrations, as well as integrations for banking CRMs with Business Intelligence (BI) software, multi-fraud protection features, and improved overall transaction capabilities.",
   },
 ];
 
+export const tvpoasterDescription = {
+  title: "U Technology ENSURES 100% PCI-DSS COMPLIANCE",
+  src: "/assets/industries/banking/10002.png",
+  description: "U Technology’s banking software developers ensure your software complies with the strict regulatory standards on anti-money laundering and consumer protection standards. This includes the Payment Card Industry Security Standards Council (PCI SSC), Payment Card Industry Data Security Standard (PCI-DSS), and Payment Application Data Security Standard (PA-DSS). Also, Payment Application-Qualified Security Accessors (PA-QSA), SOX, Dodd-Frank, Check 21, and the Securities Act of 1933."
+}
 export const BankingCoreFeatures = [
   {
-    icon: "Laptop",
+    icon: "/assets/industries/aviation/icons/10001.svg",
     title: "CORE Banking Software Solutions",
     description:
       "Our programmers fully automate all banking system operations with customizable CORE system platforms that utilize Java-based architectures and Service-Oriented Architectures (SOA) compatible with existing software and external networks.",
     animation: "animate-bounce",
   },
   {
-    icon: "FileText",
+    icon: "/assets/industries/aviation/icons/10005.svg",
     title: "CORE Security & Compliance",
     description:
       "We develop secure, modular CORE banking systems to protect customers, meet government & industry standards, aid in security auditing, and avoid data breaches with recovery capabilities compliant with Anti-Money Laundering (AML) regulations.",
     animation: "animate-pulse",
   },
   {
-    icon: "CheckCircle",
+    icon: "/assets/industries/banking/icons/10002.svg",
     title: "CORE API Integrations",
     description:
       "We develop secure API components that integrate with online, mobile, SMS, ATM, and other banking distribution channels, as well as integrating user-friendly interfaces with third-party APIs to adopt real-time processing and remote capture capabilities.",
@@ -213,25 +218,25 @@ export const BankingCoreFeatures = [
 
 export const BankingCustomEMVServices = [
   {
-    icon: "Network",
+    icon: "/assets/industries/aviation/icons/10002.svg",
     title: "EMV Software Development",
     description:
       "U Technology offers professional end-to-end EMV migration services including EMV compliant software programming, testing, and validation for full and semi-integrated solutions.",
   },
   {
-    icon: "Code",
+    icon: "/assets/industries/aviation/icons/10003.svg",
     title: "EMV Programming Services",
     description:
       "We build EMV Levels 1, 2, and 3, EMV Level 2 Kernels, and PCI PTS 3.x/4.x certified card reader solutions including Verifone VX/MX/UX series, Ingenico iPP/iCT/ISC/iWL series, and more.",
   },
   {
-    icon: "Landmark",
+    icon: "/assets/industries/aviation/icons/10005.svg",
     title: "EMV Security Solutions",
     description:
       "We develop custom embedded software with tokenization data security protocols, including End-to-End (E2E) & Point-to-Point (P2P) encryption, and 3-D Secure (3DS) authentication.",
   },
   {
-    icon: "ShieldCheck",
+    icon: "/assets/industries/aviation/icons/10004.svg",
     title: "EMV Testing & Certification",
     description:
       "We test and certify with MasterCard Terminal Integration Process (M-TIP), Terminal Quality Management (TQM), Visa Acquirer Device Validation Toolkit (ADVT), and much more.",
@@ -243,19 +248,19 @@ export const BankingACHfeatures = [
     title: "ACH eCheck Solutions",
     description:
       "We build custom programming platforms for processing ACH payments with modules to automate ACH file creation, check verification and transmissions to various financial institutions, and create Remotely Created Check (RCC) images for deposits.",
-    icon: "Smartphone",
+    icon: "/assets/industries/finance/icons/10001.svg",
   },
   {
     title: "Check 21 & Electronic Check Processing Services",
     description:
       "Our developers customize Check 21 truncation solutions to integrate with MICR check scanner hardware, such as RDM, Panini, Canon, Epson, and Burroughs, and develop custom check imaging platforms for e-payment processing integrations.",
-    icon: "Banknote",
+    icon: "/assets/industries/finance/icons/10003.svg",
   },
   {
     title: "ACH Payment System Integration",
     description:
       "We offer secure ACH database development integrated with CRM platforms to store accounts, routing numbers, check imaging remittance, automated clearing, and all other essential customer information via the cloud and/or mobile devices.",
-    icon: "CreditCard",
+    icon: "/assets/industries/finance/icons/10004.svg",
   },
 ];
 
@@ -264,61 +269,61 @@ export const BankingSupportItems = [
     title: "Currency Exchange Support",
     description:
       "Currency Exchange Support enables real-time currency conversion. U Technology’s engineers can enable your software or app to integrate and maintain data exchanges with international banking systems while monitoring and updating exchange rates.",
-    icon: "Banknote",
+    icon: "/assets/industries/banking/icons/10003.svg",
   },
   {
     title: "Check Processing Assistance",
     description:
       "U Technology’s software developers can include check processing assistance in your software to help users automate the verification, capture, and clearance of checks with check processing, OCR, and digital imaging.",
-    icon: "CheckCheck",
+    icon: "/assets/industries/banking/icons/10003.svg",
   },
   {
     title: "Automated Alerts Configuration",
     description:
       "Our engineers can program automated alert configurations for your banking software to aid users in receiving fully automated alerts for potential fraud, fiscal updates, or regular account activities.",
-    icon: "BellRing",
+    icon: "/assets/industries/banking/icons/10003.svg",
   },
   {
     title: "Virtual Wallet Support",
     description:
       "With our virtual wallet support, our coders enable virtual wallets to function seamlessly in your banking software.",
-    icon: "Wallet",
+    icon: "/assets/industries/banking/icons/10009.svg",
   },
   {
     title: "Electronic Statement Issues",
     description:
       "Our software experts write code that enables your software users to avoid electronic statement issues. They can be assured of secure access to track balances, transactions, deposits, withdrawals, and account health with online banking.",
-    icon: "FileText",
+    icon: "/assets/industries/banking/icons/10004.svg",
   },
   {
     title: "Investment Portfolio Troubleshooting",
     description:
       "Our team designs software algorithms that help with investment portfolio troubleshooting so that users can use tools that help both customers and financial advisors track and monitor their investment accounts and portfolios.",
-    icon: "LineChart",
+    icon: "/assets/industries/banking/icons/10010.svg",
   },
   {
     title: "Tax Reporting Guidance",
     description:
       "Our engineers help with tax reporting guidance for your banking software. This includes generating reports for interest, income, category, or other tax-related information. Automation keeps your software in compliance with complex financial reporting and tax requirements.",
-    icon: "IndianRupee",
+    icon: "/assets/industries/banking/icons/10011.svg",
   },
   {
     title: "SWIFT Code Configuration",
     description:
       "Our software engineers help support and configure SWIFT codes (BIC) inside your software for secure international wire transfers and cross-border payments, ensuring strict compliance with global financial standards.",
-    icon: "Landmark",
+    icon: "/assets/industries/banking/icons/10012.svg",
   },
   {
     title: "Online Account Opening Support",
     description:
       "U Technology’s online account opening support guides your software users through a streamlined, secure process to open new accounts, including compliance checks, ID verification, and document submission.",
-    icon: "Smartphone",
+    icon: "/assets/industries/banking/icons/10013.svg",
   },
   {
     title: "Automatic Bill Pay Assistance",
     description:
       "Our software team supports automatic bill pay assistance for recurring payments, including scheduling, processing, and confirming payments for utilities, subscriptions, and verified vendors.",
-    icon: "HandCoins",
+    icon: "/assets/industries/banking/icons/10014.svg",
   },
 ];
 
