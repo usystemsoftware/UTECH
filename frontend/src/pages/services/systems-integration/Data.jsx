@@ -36,3 +36,88 @@ export const dataIntegrationServices = [
             "The hard work involved in the complex processes of system integration must be protected with regular maintenance, ensuring the necessary interactions stay fully functional without interruptions. Chetu offers ongoing integration support services in the form of maintenance, customer support, and software security."
     }
 ];
+
+export const features = [
+    {
+        title: "Event Pattern Publishing",
+        description:
+            "System integration services company, Chetu houses expert developers that can figure specific options that send messages to and from the server and trigger responses easily, and seamlessly.",
+        icon: "/assets/services/systems-integration/icons/7.svg",
+    },
+    {
+        title: "Bi-directional Data Exchange and Transfer",
+        description:
+            "We transmit data in both directions simultaneously through a single connection instead of two, ultimately reducing unnecessary network traffic and delay.",
+        icon: "/assets/services/systems-integration/icons/8.svg",
+    },
+    {
+        title: "Upstream and Downstream Communication",
+        description:
+            "We design automated integration services that support two-way stream and downstream communication, as well as facilitate streaming through proxies and firewall.",
+        icon: "/assets/services/systems-integration/icons/9.svg",
+    },
+    {
+        title: "Backwards Compatible with HTTP Connections",
+        description:
+            "We develop backwards compatible connections between WebSocket and HTTP, focusing on optimizing the flow of content between servers and clients.",
+        icon: "/assets/services/systems-integration/icons/10.svg",
+    }
+];
+
+export const webSocketData = [
+    {
+        title: "Chat App",
+        description:
+            "Our developers build complex features like ephemeral chat, encrypted messages, online presence, or typing indicators into your group chat to private real-time messaging apps.",
+        icon: "/assets/services/systems-integration/icons/11.svg",
+    },
+    {
+        title: "Collaboration Features",
+        description:
+            "We implement live text collaborations and real-time comment feeds into mobile and web applications, allowing multiple users to work simultaneously on a single document.",
+        icon: "/assets/services/systems-integration/icons/12.svg",
+    },
+    {
+        title: "Realtime Maps",
+        description:
+            "We use WebSockets to develop mapping apps that display sharer dynamic geolocation, as well as creating geofences that trigger customized alerts.",
+        icon: "/assets/services/systems-integration/icons/13.svg",
+    }
+]
+
+export const faqs = [
+    {
+        question: "What is software integration?",
+        answer:
+            "Software integration is the process of combining different software applications, systems, or components so they work together seamlessly as a unified system. It ensures data flows smoothly between systems, reduces manual work, and improves overall efficiency."
+    },
+    {
+        question: "What is integration testing in software?",
+        answer:
+            "Integration testing is a phase in software testing where individual modules are combined and tested as a group to ensure they work together correctly. It focuses on detecting interface issues, data flow errors, and integration defects."
+    },
+    {
+        question: "What are the benefits of installing integration services?",
+        answer:
+            "Installing integration services can streamline business processes, improve data consistency, enhance communication between different systems, and reduce operational costs by automating workflows."
+    },
+    {
+        question: "What are three advantages of the data integration service?",
+        answer:
+            "Three advantages of data integration services are: 1) Real-time access to unified data for better decision-making, 2) Reduced data redundancy and improved accuracy, and 3) Faster business operations through automated data flows."
+    }
+];
+
+export const softwareDevelopmentSolutions = [
+    { icon: "/assets/services/systems-integration/icons/14.png", label: "Custom Software Development" },
+    { icon: "/assets/services/systems-integration/icons/15.png", label: "API Development" },
+    { icon: "/assets/services/systems-integration/icons/16.png", label: "Application Maintenance" },
+    { icon: "/assets/services/systems-integration/icons/17.png", label: "Backup and Disaster Recovery" },
+    { icon: "/assets/services/systems-integration/icons/18.png", label: "Implementation and Deployment" },
+    { icon: "/assets/services/systems-integration/icons/19.png", label: "Infrastructure Support" },
+    { icon: "/assets/services/systems-integration/icons/20.png", label: "Migrations and Upgrades" },
+    { icon: "/assets/services/systems-integration/icons/21.png", label: "Product Lifecycle Management" },
+    { icon: "/assets/services/systems-integration/icons/22.png", label: "Quality Assurance" },
+    { icon: "/assets/services/systems-integration/icons/16.png", label: "SLA Support" },
+    { icon: "/assets/services/systems-integration/icons/14.png", label: "Software Security" }
+];

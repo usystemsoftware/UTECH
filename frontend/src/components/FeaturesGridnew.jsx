@@ -5,13 +5,13 @@ export const FeaturesGridnew = ({
     leftFeatures = [],
     rightFeatures = [],
     centerImage,
-    imgSize = " md:w-[80%]",
+    imgSize = "sm:w-[70%] md:w-[80%]",
     fadeUp,
     iconSize = 40,
 }) => (
-    <div className="flex flex-col lg:flex-row items-center w-full justify-center gap-4 mt-10">
+    <div className="flex flex-col sm:flex-row items-center w-full justify-center gap-4 mt-10">
         {/* Left Column */}
-        <div className="flex flex-col gap-12 text-start sm:text-right w-full">
+        <div className="flex flex-col gap-4 md:gap-12 text-start sm:text-right w-full">
             {leftFeatures.map((item, index) => (
                 <div
                     key={index}
@@ -40,7 +40,7 @@ export const FeaturesGridnew = ({
         {/* Center Image */}
         {centerImage && (
             <FadeInWhenVisible
-                className="flex-shrink-0 w-full max-w-md lg:max-w-3xl"
+                className="flex-shrink-0 hidden md:block w-full max-w-md lg:max-w-3xl"
                 variants={fadeUp}
             >
                 <img
@@ -53,7 +53,7 @@ export const FeaturesGridnew = ({
         )}
 
         {/* Right Column */}
-        <div className="flex flex-col gap-12 items-start text-left w-full">
+        <div className="flex flex-col gap-4 md:gap-12 items-start text-left w-full">
             {rightFeatures.map((item, index) => (
                 <div
                     key={index}

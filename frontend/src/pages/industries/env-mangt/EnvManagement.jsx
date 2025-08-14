@@ -1,5 +1,5 @@
 import { FeaturesList } from "@/components/FeaturesList";
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import FaqSection from "@/custom/FaqSection";
@@ -36,11 +36,10 @@ export default function EnvManagement() {
           title="Environmental Management Software Solutions"
           description="U Tech developers create custom environmental management software built with custom database reporting platforms that track, store, and manage essential environmental compliance requirements for air, water, and waste emissions."
         />
-        <FeaturesGrid
+        <FeaturesGridnew
           leftFeatures={environmentalFeatures?.slice(0, 3)}
           rightFeatures={environmentalFeatures?.slice(3, 6)}
           centerImage="/assets/industries/env-mng/environmental-management-software-solutions-new.png"
-          fadeUp={fadeUp}
           iconSize={38}
         />
       </PageLayout>
@@ -58,7 +57,7 @@ export default function EnvManagement() {
                 loading="lazy"
                 src="/assets/industries/env-mng/environmental-management-system-solutions.png"
                 alt="Portfolio"
-                className="w-145 mx-auto"
+                className="w-155 mx-auto"
               />
             </FadeInWhenVisible>
             <div className="text-start space-y-8">
@@ -103,9 +102,7 @@ export default function EnvManagement() {
               </TypographySmall>
             </div>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">CALL EMS DEVELOPERS NOW</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">CALL EMS DEVELOPERS NOW</Button>
         </PageLayout>
       </section>
 
@@ -121,14 +118,15 @@ export default function EnvManagement() {
               loading="lazy"
               src="/assets/industries/env-mng/environmental-risk-management-assessment-database-software.png"
               alt="Portfolio"
-              className="w-145 mx-auto"
+              className="w-155 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} features={internalSolutions} />
+          <FeaturesList
+            features={internalSolutions}
+            iconAlign="horizontal"
+          />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">ACCESS ENVIRONMENATAL RISKS WITH EASE</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">ACCESS ENVIRONMENATAL RISKS WITH EASE</Button>
       </PageLayout>
 
       {/* Uses: environmentalSoftwareSolutions */}
@@ -140,8 +138,8 @@ export default function EnvManagement() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
             <FeaturesList
-              fadeUp={fadeUp}
               features={environmentalSoftwareSolutions}
+              iconAlign="horizontal"
             />
             <FadeInWhenVisible delay={0.5} className="sm:block hidden">
               <img
@@ -152,11 +150,9 @@ export default function EnvManagement() {
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">
-              ENSURE 100% ENVIRONMENATAL COMPLIANCE NOW
-            </Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">
+            ENSURE 100% ENVIRONMENATAL COMPLIANCE NOW
+          </Button>
         </PageLayout>
       </section>
 
@@ -172,19 +168,17 @@ export default function EnvManagement() {
               loading="lazy"
               src="/assets/industries/env-mng/environmental-inventory-management-waste-tracking-solutions.png"
               alt="Portfolio"
-              className="w-72 mx-auto"
+              className="w-80 mx-auto"
             />
           </FadeInWhenVisible>
           <FeaturesList
-            fadeUp={fadeUp}
             features={inventoryWasteAssetSolutions}
+            iconAlign="horizontal"
           />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">
-            KEEP TRACK OF ENVIRONMENATAL ASSETS NOW
-          </Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">
+          KEEP TRACK OF ENVIRONMENATAL ASSETS NOW
+        </Button>
       </PageLayout>
 
       {/* Uses: environmentalUtilitySolutions */}
@@ -196,21 +190,19 @@ export default function EnvManagement() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
             <FeaturesList
-              fadeUp={fadeUp}
               features={environmentalUtilitySolutions}
+              iconAlign="horizontal"
             />
             <FadeInWhenVisible delay={0.5} className="sm:block hidden">
               <img
                 loading="lazy"
                 src="/assets/industries/env-mng/environmental-operational-database-systems.png"
                 alt="Portfolio"
-                className="W-96 mx-auto"
+                className="W-135 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">MANAGE OPERATIONAL WORKFLOWS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">MANAGE OPERATIONAL WORKFLOWS</Button>
         </PageLayout>
       </section>
 
@@ -229,11 +221,9 @@ export default function EnvManagement() {
               className="w-135 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} features={weatherTrackingSolutions} />
+          <FeaturesList features={weatherTrackingSolutions} iconAlign="horizontal" />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">BUILD YOUR WEATHER TRACKING APP</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">BUILD YOUR WEATHER TRACKING APP</Button>
       </PageLayout>
 
       {/* Uses: faqData */}
