@@ -20,6 +20,7 @@ import {
 } from "./Data";
 import ImageNearScreen from "@/custom/ImageNearScreen";
 import VideoTvPoster from "@/custom/VideoTvPoster";
+import GlobalShareButton from "../../../custom/GlobalShareButton";
 
 export default function Aviation() {
   return (
@@ -33,7 +34,7 @@ export default function Aviation() {
         buttonLink="#"
         imageFit="cover"
       />
-
+      <GlobalShareButton />
       <PageLayout className="text-center my-12">
         <Headline
           title="Hire Experienced and Dedicated Airline Software Developers"
