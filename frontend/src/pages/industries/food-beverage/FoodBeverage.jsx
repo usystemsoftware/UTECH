@@ -1,4 +1,4 @@
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
 import { FeaturesList } from "@/components/FeaturesList";
@@ -57,7 +57,6 @@ const FoodBeverage = () => {
           title="Food & Beverage Industry Is Evolving – Here’s the Tech You Need to Know"
         />
       </section>
-
 
       {/* Food & Beverage Service Management Software Section */}
       <section className="bg-secondary">

@@ -1,7 +1,8 @@
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
-import { FeaturesList } from "@/components/FeaturesList";
+import ImageNearScreen from "@/custom/ImageNearScreen";
+import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import {
   TypographyH5,
@@ -30,13 +31,13 @@ const Legal = () => (
       imageFit="cover"
     />
 
-    <PageLayout className="space-y-8 py-12">
+    <section className="space-y-8 py-16">
       <Headline
         title="Hire Developers with Custom Legal Software Development Experience"
         description="U Technology's, a legal software development company has extensive legal industry experience providing best-in-class Legal Software Development Services from the ground up and revamping existing solutions through custom-tailored integrations."
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
         <div className="space-y-4 md:text-start text-center">
           <TypographyH5>Law Firm Management Software</TypographyH5>
           <TypographyMuted>
@@ -45,29 +46,30 @@ const Legal = () => (
             and invoices, optimizing greater spend control, and empowering legal
             operations.
           </TypographyMuted>
+
           <FeaturesList
             features={LegalTransformationFeatures}
-            fadeUp={fadeUp}
             grid
+            center
           />
         </div>
-        <FadeInWhenVisible>
+        <FadeInWhenVisible className="hidden md:block">
           <img
             loading="lazy"
             src="/assets/industries/legal/phone.png"
             alt="Financial Planning Dashboard"
-            className="w-48 mx-auto hidden md:block"
+            className="w-56 mx-auto"
           />
         </FadeInWhenVisible>
-      </div>
+      </PageLayout>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
-        <FadeInWhenVisible>
+      <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+        <FadeInWhenVisible className="md:block hidden">
           <img
             loading="lazy"
             src="/assets/industries/legal/software.png"
             alt="Financial Planning Dashboard"
-            className="w-145 hidden md:block"
+            className="w-155"
           />
         </FadeInWhenVisible>
         <div className="space-y-4 md:text-start text-center">
@@ -80,11 +82,21 @@ const Legal = () => (
             manage billing information, locate essential case notes, and
             schedule appointments.
           </TypographyMuted>
-          <FeaturesList features={LegalTransformation} fadeUp={fadeUp} grid />
+          <FeaturesList
+            features={LegalTransformation}
+            grid
+            center
+          />
         </div>
-      </div>
-      <FeaturesList features={legalFeatures} fadeUp={fadeUp} grid />
-    </PageLayout>
+      </PageLayout>
+
+      <ImageNearScreen
+        features={legalFeatures}
+        src="/assets/industries/legal/legel.png"
+        imageAlign="right"
+        imgClass="w-115"
+      />
+    </section>
 
     <section className="py-16 bg-secondary">
       <PageLayout className="space-y-6 text-center">
@@ -92,7 +104,7 @@ const Legal = () => (
           title="AI-Powered Legal Software Development Services"
           description="Enhance legal workflows with U Technology's’s AI-driven software, enhancing accuracy, automation, and compliance across processes."
         />
-        <FeaturesList features={legalgSupportItems} fadeUp={fadeUp} grid />
+        <FeaturesListOpposite features={legalgSupportItems} grid />
       </PageLayout>
     </section>
 
@@ -118,12 +130,10 @@ const Legal = () => (
             & control, and comprehensive insights to increase legal
             productivity.
           </TypographyMuted>
-          <FeaturesList features={LegalTransformationfedu} fadeUp={fadeUp} />
+          <FeaturesList features={LegalTransformationfedu} iconAlign="horizontal" />
         </div>
       </div>
-      <FadeInWhenVisible>
-        <Button variant="hover">HIRE LEGAL SOFTWARE DEVELOPERS</Button>
-      </FadeInWhenVisible>
+      <Button variant="hover">HIRE LEGAL SOFTWARE DEVELOPERS</Button>
     </PageLayout>
 
     <section className="bg-secondary py-12">
@@ -133,19 +143,13 @@ const Legal = () => (
           description="We engineer custom-tailored Legal Management Software Solutions to help legal practices automate repetitive tasks, streamline workflows, and store legal documentation in an all-in-one platform."
         />
 
-        <div className="block md:hidden">
-          <FeaturesList features={gamingLegal} fadeUp={fadeUp} grid />
-        </div>
+        <FeaturesList
+          features={gamingLegal}
+          grid3
+          center
+        />
 
-        <FadeInWhenVisible className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <FeaturesList features={gamingLegal.slice(0, 2)} />
-          <FeaturesList features={gamingLegal.slice(2, 4)} />
-          <FeaturesList features={gamingLegal.slice(4, 6)} />
-        </FadeInWhenVisible>
-
-        <FadeInWhenVisible>
-          <Button variant="hover">Get Legal Software Solutions</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Get Legal Software Solutions</Button>
       </PageLayout>
     </section>
 
@@ -155,11 +159,11 @@ const Legal = () => (
         description="U Technology's designs and deploys customized legal practice software to augment research, streamline workflow, and enable data-driven decisions with powerful analytics. This intuitive software addresses the unique needs of various legal fields, such as immigration law, estate law, family law, and personal injury."
       />
 
-      <FeaturesList features={legalgSupportIsecound} grid />
+      <FeaturesListOpposite
+        features={legalgSupportIsecound}
+      />
 
-      <FadeInWhenVisible>
-        <Button variant="hover">Get Started with Custom Legal Software</Button>
-      </FadeInWhenVisible>
+      <Button variant="hover">Get Started with Custom Legal Software</Button>
     </PageLayout>
 
     {/* === THIRD-PARTY API FUNCTIONALITY SECTION === */}
@@ -188,10 +192,7 @@ const Legal = () => (
           </div>
         ))}
       </div>
-
-      <FadeInWhenVisible>
-        <Button variant="hover">GET YOUR LEGAL SOFTWARE INTEGRATION</Button>
-      </FadeInWhenVisible>
+      <Button variant="hover">GET YOUR LEGAL SOFTWARE INTEGRATION</Button>
     </PageLayout>
   </>
 );
