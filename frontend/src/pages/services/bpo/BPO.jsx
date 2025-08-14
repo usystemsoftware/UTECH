@@ -133,7 +133,7 @@ export default function BPO() {
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
-                src="/assets/services/bpo/infrastructure-1.png"
+                src="/assets/services/bpo/infrastructure-1.avif"
                 alt="Portfolio"
                 className="w-135 mx-auto"
               />
@@ -154,14 +154,14 @@ export default function BPO() {
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
-                src="/assets/services/bpo/infrastructure-2.png"
+                src="/assets/services/bpo/infrastructure-2.avif"
                 alt="Portfolio"
                 className="w-135 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
         </PageLayout>
-      </section>
+      </section >
 
       <PageLayout className="space-y-10 py-16 text-center">
         <Headline

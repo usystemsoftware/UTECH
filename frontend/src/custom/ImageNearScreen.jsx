@@ -21,7 +21,7 @@ const ImageNearScreen = ({ features, src, imageAlign = "left", imgClass = "" }) 
                             loading="lazy"
                             src={src}
                             alt="Portfolio"
-                            className={`h-auto object-contain ${imgClass ? imgClass : "w-110"}`}
+                            className={`h-auto object-contain ${imgClass || "w-120"}`}
                         />
                     </FadeInWhenVisible>
                 </div>

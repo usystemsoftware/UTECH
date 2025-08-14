@@ -90,25 +90,25 @@ export const aiHospitalitySolutions = [
         icon: "/assets/industries/hospital-travel/icons/17.svg",
         title: "AI-Powered Guest Experience",
         description:
-            "We help hotels improve their operations by using AI to deliver the best possible guest experiences. Chetu designs virtual concierge services and voice assistants to simplify service requests and automate 24/7 support. Our AI engines tailor upselling opportunities and loyalty offers to real-time customer preferences and behavior."
+            "We help hotels improve their operations by using AI to deliver the best possible guest experiences. U Tech designs virtual concierge services and voice assistants to simplify service requests and automate 24/7 support. Our AI engines tailor upselling opportunities and loyalty offers to real-time customer preferences and behavior."
     },
     {
         icon: "/assets/industries/hospital-travel/icons/18.svg",
         title: "Smart Revenue & Demand Forecasting",
         description:
-            "Increase your revenue by allowing your prices to adjust to the latest changes in local demand and prices. Chetu's tailored solutions enable hospitality companies with advanced occupancy and demand anticipation models. Maximize rates through direct bookings and OTA channels to produce revenue and sustain the competitive advantage."
+            "Increase your revenue by allowing your prices to adjust to the latest changes in local demand and prices. U Tech's tailored solutions enable hospitality companies with advanced occupancy and demand anticipation models. Maximize rates through direct bookings and OTA channels to produce revenue and sustain the competitive advantage."
     },
     {
         icon: "/assets/industries/hospital-travel/icons/19.svg",
         title: "Front Desk & Check-in Automation",
         description:
-            "Chetu's AI solutions allow guests to check-in by using contactless options or face or QR code identification. Our mobile-first user interfaces and smart kiosks provide an efficient and secure onboarding process, boosting guest satisfaction from check-in."
+            "U Tech's AI solutions allow guests to check-in by using contactless options or face or QR code identification. Our mobile-first user interfaces and smart kiosks provide an efficient and secure onboarding process, boosting guest satisfaction from check-in."
     },
     {
         icon: "/assets/industries/hospital-travel/icons/14.svg",
         title: "Back-of-House Automation",
         description:
-            "With AI-driven solutions built specifically for the hotel sector, increase operational efficiency. By using AI and IoT, Chetu can forecast items for food, amenities, and supplies, assign housekeeping teams based on live occupancy numbers and predictive maintenance to reduce costs and perform effectively."
+            "With AI-driven solutions built specifically for the hotel sector, increase operational efficiency. By using AI and IoT, U Tech can forecast items for food, amenities, and supplies, assign housekeeping teams based on live occupancy numbers and predictive maintenance to reduce costs and perform effectively."
     },
     {
         icon: "/assets/industries/hospital-travel/icons/20.svg",
@@ -120,19 +120,19 @@ export const aiHospitalitySolutions = [
         icon: "/assets/industries/hospital-travel/icons/22.svg",
         title: "Operations Intelligence",
         description:
-            "Let AI-driven dashboards direct your hotel's success by delivering live performance metrics, guest satisfaction, and KPIs. Chetu offers solutions to spot booking mistakes and handle unsettling customer reviews and smart assistants help employees with standard routine directions, reminders and details as needed."
+            "Let AI-driven dashboards direct your hotel's success by delivering live performance metrics, guest satisfaction, and KPIs. U Tech offers solutions to spot booking mistakes and handle unsettling customer reviews and smart assistants help employees with standard routine directions, reminders and details as needed."
     },
     {
         icon: "/assets/industries/hospital-travel/icons/23.svg",
         title: "AI Travel Booking Enhancements",
         description:
-            "Chetu provides modern AI travel booking tools that make hotel and hospitality experiences better. Among our services are itinerary planning, voice search for bookings and analyzing traveller feedback, helping property managers boost the satisfaction of their customers and improve their operations. Make your travel platform more innovative and easier to use."
+            "U Tech provides modern AI travel booking tools that make hotel and hospitality experiences better. Among our services are itinerary planning, voice search for bookings and analyzing traveller feedback, helping property managers boost the satisfaction of their customers and improve their operations. Make your travel platform more innovative and easier to use."
     },
     {
         icon: "/assets/industries/hospital-travel/icons/24.svg",
         title: "Security & Compliance Automation",
         description:
-            "Increase safety at your hotel by following regulations with the help of AI. Chetu offers new surveillance technology that identifies suspicious behaviors, verifies guest IDs automatically and stops fraud. We cover data governance by imposing standards and building accurate logs for compliance, helping your operations pass audits."
+            "Increase safety at your hotel by following regulations with the help of AI. U Tech offers new surveillance technology that identifies suspicious behaviors, verifies guest IDs automatically and stops fraud. We cover data governance by imposing standards and building accurate logs for compliance, helping your operations pass audits."
     }
 ];
 

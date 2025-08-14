@@ -131,11 +131,11 @@ export const backgroundScreeningSolutions = [
 
 export const testimonials = [
     {
-        text: "I appreciate how the Chetu team always takes the time to understand the process and specific needs within their partner’s process(s). They are always approachable and friendly!",
+        text: "I appreciate how the U Tech team always takes the time to understand the process and specific needs within their partner’s process(s). They are always approachable and friendly!",
         author: "Brittany W., Director of Operations (DO)"
     },
     {
-        text: "We want to THANK EVERYONE at Chetu and your team for an EXCELLENT and OUTSTANDING job. The team consistently demonstrated a high level of professionalism, maintaining a positive attitude, and handling my inquiries with courtesy.",
+        text: "We want to THANK EVERYONE at U Tech and your team for an EXCELLENT and OUTSTANDING job. The team consistently demonstrated a high level of professionalism, maintaining a positive attitude, and handling my inquiries with courtesy.",
         author: "Vince D., VP of Sales"
     }
 ];

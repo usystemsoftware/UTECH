@@ -207,19 +207,19 @@ export const hieFeatures = [
         title: "HIE Interoperability",
         description:
             "Enhance your existing eRx, EHR/EMR, LIMS, medical IoT, billing & RCM, and other networks by integrating interoperable HIE functionalities.",
-        img: "/assets/industries/healthcare/icons/10038.svg",
+        icon: "/assets/industries/healthcare/icons/10038.svg",
     },
     {
         title: "HIE Mobile Application",
         description:
             "Build cross-platform mobile apps designed to access HIE healthcare data analysis and improve primary care by utilizing C-CDA for optimized medical data sharing.",
-        img: "/assets/industries/healthcare/icons/10039.svg",
+        icon: "/assets/industries/healthcare/icons/10039.svg",
     },
     {
         title: "HIE Standards",
         description:
             "HIE solutions adhere to IHE, HL7, CDA, CCD, QRDA, DICOM, NwHIN, and other regulatory healthcare technology communication standards.",
-        img: "/assets/industries/healthcare/icons/10040.svg",
+        icon: "/assets/industries/healthcare/icons/10040.svg",
     },
 ];
 

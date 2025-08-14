@@ -27,13 +27,13 @@ export const dataIntegrationServices = [
         icon: "/assets/services/systems-integration/icons/5.svg",
         title: "AI Integration Services",
         description:
-            "By reducing human involvement, AI enhances efficiency and accuracy, accelerating the complex processes of software integration. Data exchanges can be streamlined, and conflicts efficiently resolved with the involvement of AI. Chetu’s developers can integrate AI into custom or existing systems, to increase productivity and reduce errors."
+            "By reducing human involvement, AI enhances efficiency and accuracy, accelerating the complex processes of software integration. Data exchanges can be streamlined, and conflicts efficiently resolved with the involvement of AI. U Tech’s developers can integrate AI into custom or existing systems, to increase productivity and reduce errors."
     },
     {
         icon: "/assets/services/systems-integration/icons/6.svg",
         title: "Integration Support Services",
         description:
-            "The hard work involved in the complex processes of system integration must be protected with regular maintenance, ensuring the necessary interactions stay fully functional without interruptions. Chetu offers ongoing integration support services in the form of maintenance, customer support, and software security."
+            "The hard work involved in the complex processes of system integration must be protected with regular maintenance, ensuring the necessary interactions stay fully functional without interruptions. U Tech offers ongoing integration support services in the form of maintenance, customer support, and software security."
     }
 ];
 
@@ -41,7 +41,7 @@ export const features = [
     {
         title: "Event Pattern Publishing",
         description:
-            "System integration services company, Chetu houses expert developers that can figure specific options that send messages to and from the server and trigger responses easily, and seamlessly.",
+            "System integration services company, U Tech houses expert developers that can figure specific options that send messages to and from the server and trigger responses easily, and seamlessly.",
         icon: "/assets/services/systems-integration/icons/7.svg",
     },
     {

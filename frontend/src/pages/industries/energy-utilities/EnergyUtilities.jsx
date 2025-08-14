@@ -1,8 +1,8 @@
 import { FeaturesList } from "@/components/FeaturesList";
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
 import { TypographyMuted, Headline, TypographyH5 } from "@/custom/Typography";
 
@@ -40,12 +40,11 @@ export default function EnergyUtilities() {
           title="Custom Energy And Utilities Software Solutions"
           description="Our experts produce cutting-edge energy management solutions that cater to the growing technical needs of the energy & utilities industry."
         />
-        <FeaturesGrid
+
+        <FeaturesGridnew
           leftFeatures={utilityFeatures.slice(0, 4)}
           rightFeatures={utilityFeatures.slice(4, 8)}
           centerImage="/assets/industries/energy-utilities/desktop-combo-utilities.png"
-          fadeUp={fadeUp}
-          iconSize={38}
         />
       </PageLayout>
 
@@ -66,13 +65,11 @@ export default function EnergyUtilities() {
               />
             </FadeInWhenVisible>
             <FeaturesList
-              fadeUp={fadeUp}
               features={utilityManagementSolutions}
+              iconAlign="horizontal"
             />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET AI ENERGY DEVELOPERS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET AI ENERGY DEVELOPERS</Button>
         </PageLayout>
       </section>
 
@@ -82,23 +79,11 @@ export default function EnergyUtilities() {
           title="AI-Powered Energy and Utilities Solutions"
           description="AI-Powered Energy and Utilities Solutions U Tech’s experts design powerful AI solutions for energy and utility companies that want more efficiency, productivity, and resourcefulness. Let U Tech’s AI technology help your staff maximize their efforts to benefit loyal customers."
         />
-        <div className="block md:hidden">
-          <FeaturesList features={aiUtilitySolutions} fadeUp={fadeUp} grid />
-        </div>
-        <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-10">
-          <FeaturesList
-            features={aiUtilitySolutions.slice(0, 2)}
-            fadeUp={fadeUp}
-          />
-          <FeaturesList
-            features={aiUtilitySolutions.slice(2, 4)}
-            fadeUp={fadeUp}
-          />
-          <FeaturesList
-            features={aiUtilitySolutions.slice(4, 6)}
-            fadeUp={fadeUp}
-          />
-        </div>
+        <FeaturesList
+          features={aiUtilitySolutions}
+          grid3
+          center
+        />
       </PageLayout>
 
       {/* Electric utility section */}
@@ -110,21 +95,19 @@ export default function EnergyUtilities() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
             <FeaturesList
-              fadeUp={fadeUp}
               features={electricSoftwareSolutions}
+              iconAlign="horizontal"
             />
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
                 src="/assets/industries/energy-utilities/electric-management-solutions.png"
                 alt="Portfolio"
-                className="w-52 mx-auto"
+                className="md:w-52 w-46 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET ELECTRIC MANAGEMENT DEVELOPERS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET ELECTRIC MANAGEMENT DEVELOPERS</Button>
         </PageLayout>
       </section>
 
@@ -143,11 +126,12 @@ export default function EnergyUtilities() {
               className="w-135 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} features={waterSoftwareSolutions} />
+          <FeaturesList
+            features={waterSoftwareSolutions}
+            iconAlign="horizontal"
+          />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET WATER MANAGEMENT SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET WATER MANAGEMENT SOLUTIONS</Button>
       </PageLayout>
 
       {/* Smart Grid section */}
@@ -158,7 +142,10 @@ export default function EnergyUtilities() {
             description="Our developers can either augment existing systems or provide custom solutions to fit specific business needs, engineering advanced technologies for grid distribution, transmission, consumption processes and more."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 items-center">
-            <FeaturesList fadeUp={fadeUp} features={smartGridSolutions} />
+            <FeaturesList
+              features={smartGridSolutions}
+              iconAlign="horizontal"
+            />
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
@@ -168,9 +155,7 @@ export default function EnergyUtilities() {
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">HIRE SMART GRID DEVELOPERS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">HIRE SMART GRID DEVELOPERS</Button>
         </PageLayout>
       </section>
 
@@ -186,14 +171,15 @@ export default function EnergyUtilities() {
               loading="lazy"
               src="/assets/industries/energy-utilities/custom-heat-software-solutions.png"
               alt="Portfolio"
-              className="w-64 mx-auto"
+              className="md:w-56 w-46 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} features={heatSoftwareSolutions} />
+          <FeaturesList
+            features={heatSoftwareSolutions}
+            iconAlign="horizontal"
+          />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">HIRE HEAT SOFTWARE DEVELOPERS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">HIRE HEAT SOFTWARE DEVELOPERS</Button>
       </PageLayout>
 
       {/* Solar asset software section */}
@@ -204,19 +190,20 @@ export default function EnergyUtilities() {
             description="U Tech’s expert developers utilize a wide range of technologies, such as solar heating, artificial photosynthesis, photovoltaics, and more to customize solar asset management software solutions engineered to improve the design, construction, and management of solar power as a sustainable, renewable energy source."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-2 md:gap-8">
-            <FeaturesList fadeUp={fadeUp} features={solarSoftwareSolutions} />
+            <FeaturesList
+              features={solarSoftwareSolutions}
+              iconAlign="horizontal"
+            />
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
                 src="/assets/industries/energy-utilities/custom-solar-software-solutions.png"
                 alt="Portfolio"
-                className="w-72 sm:w-96 mx-auto"
+                className="w-72 md:w-105 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET SOLAR SOFTWARE DEVELOPERS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET SOLAR SOFTWARE DEVELOPERS</Button>
         </PageLayout>
       </section>
 
@@ -235,11 +222,12 @@ export default function EnergyUtilities() {
               className="w-145 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} features={wasteManagementSolutions} />
+          <FeaturesList
+            features={wasteManagementSolutions}
+            iconAlign="horizontal"
+          />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET STARTES WITH WASTE TRACKING APP</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET STARTES WITH WASTE TRACKING APP</Button>
       </PageLayout>
 
       {/* Compliance highlight section */}
@@ -271,11 +259,12 @@ export default function EnergyUtilities() {
               className="w-135 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} features={windSolutions} />
+          <FeaturesList
+            features={windSolutions}
+            iconAlign="horizontal"
+          />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">HIRE WIND SOFTWARTE DEVELOPERS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">HIRE WIND SOFTWARTE DEVELOPERS</Button>
       </PageLayout>
 
       {/* Nuclear software section */}
@@ -286,7 +275,10 @@ export default function EnergyUtilities() {
             description="At U Tech, we deliver comprehensive nuclear energy software solutions to help businesses with nuclear facilities to automate & streamline their workflows regarding their nuclear power plant planning, power plant equipment design, spent fuel analysis & safety management monitoring, and operations management & analysis."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 md:gap-8">
-            <FeaturesList fadeUp={fadeUp} features={nuclearSolutions} />
+            <FeaturesList
+              features={nuclearSolutions}
+              iconAlign="horizontal"
+            />
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
@@ -296,11 +288,9 @@ export default function EnergyUtilities() {
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">
-              HIRE NUCLEAR ENERGY SOFTWARE DEVELOPERS
-            </Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">
+            HIRE NUCLEAR ENERGY SOFTWARE DEVELOPERS
+          </Button>
         </PageLayout>
       </section>
     </>

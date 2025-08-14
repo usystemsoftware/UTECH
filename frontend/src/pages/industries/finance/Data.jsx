@@ -23,35 +23,35 @@ export const aiBenefits = [
     title: "Leveling Up Customer Engagement with Chatbots",
     subtitle: "Engagement with Chatbots",
     description:
-      "With technology advancing to provide more sophisticated functions, chatbots have evolved from dependence on basic customer interactions. While our chatbots can still answer queries and provide account updates, we’ve also empowered them to engage with customers with real-time information and even assist in making financial decisions using historical and actualized data. Chetu can help you create a seamless user experience alongside receiving accurate and quick assistance.",
+      "With technology advancing to provide more sophisticated functions, chatbots have evolved from dependence on basic customer interactions. While our chatbots can still answer queries and provide account updates, we’ve also empowered them to engage with customers with real-time information and even assist in making financial decisions using historical and actualized data. U Tech can help you create a seamless user experience alongside receiving accurate and quick assistance.",
   },
   {
     icon: "/assets/industries/finance/icons/8.svg",
     title: "Balance Responsibility and Innovation",
     subtitle: "Responsibility and Innovation",
     description:
-      "Artificial Intelligence and its implementation represent an ethical dilemma. However, Chetu is committed to delivering and maintaining the highest standards of ethical AI usage. With our AI implementation for Financial Data Analysis capable of processing large amounts of data precisely and swiftly, your business can make informed decisions, all while protecting sensitive data and maintaining regulatory compliance.",
+      "Artificial Intelligence and its implementation represent an ethical dilemma. However, U Tech is committed to delivering and maintaining the highest standards of ethical AI usage. With our AI implementation for Financial Data Analysis capable of processing large amounts of data precisely and swiftly, your business can make informed decisions, all while protecting sensitive data and maintaining regulatory compliance.",
   },
   {
     icon: "/assets/industries/finance/icons/9.svg",
     title: "Shifting Wealth with AI-Driven Investment",
     subtitle: "with AI-Driven Investment",
     description:
-      "Investment strategies can experience a paradigm shift with the integration of AI and result in improved wealth management. With Chetu’s AI-enhanced customer personalization, financial institutions can easily create tailor-made investment portfolios. Our solutions enable this curated approach to investment strategies by analyzing market trends, financial goals, and the client’s risk profile, aligning with the individual’s objectives and preferences.",
+      "Investment strategies can experience a paradigm shift with the integration of AI and result in improved wealth management. With U Tech’s AI-enhanced customer personalization, financial institutions can easily create tailor-made investment portfolios. Our solutions enable this curated approach to investment strategies by analyzing market trends, financial goals, and the client’s risk profile, aligning with the individual’s objectives and preferences.",
   },
   {
     icon: "/assets/industries/finance/icons/10.svg",
     title: "Navigating Complexity of Financial Decision",
     subtitle: "Complexity of Financial Decision",
     description:
-      "Financial decision-making demands intricate solutions. Luckily, Chetu’s AI-driven investment tools offer impressive depth, like quantitative financial models that can improve decision support systems. By leveraging the predictive capabilities of AI, you can be given insights into potential risks and rewards through the assessment of multiple scenarios and stress-testing portfolios. With comprehensive data at the ready, our solutions strengthen proactive risk management and strategic planning.",
+      "Financial decision-making demands intricate solutions. Luckily, U Tech’s AI-driven investment tools offer impressive depth, like quantitative financial models that can improve decision support systems. By leveraging the predictive capabilities of AI, you can be given insights into potential risks and rewards through the assessment of multiple scenarios and stress-testing portfolios. With comprehensive data at the ready, our solutions strengthen proactive risk management and strategic planning.",
   },
   {
     icon: "/assets/industries/finance/icons/11.svg",
     title: "Unlock Efficiency and Compliance",
     subtitle: "Efficiency and Compliance",
     description:
-      "We’re aiming to revolutionize financial reporting with AI-driven automation! With Chetu’s Automated Financial Reporting solutions, your organization can create complex financial reports with unrivaled accuracy and speed. Save time and resources; plus, you can ensure industrial regulations are being complied with.",
+      "We’re aiming to revolutionize financial reporting with AI-driven automation! With U Tech’s Automated Financial Reporting solutions, your organization can create complex financial reports with unrivaled accuracy and speed. Save time and resources; plus, you can ensure industrial regulations are being complied with.",
   },
 ];
 

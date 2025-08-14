@@ -20,7 +20,7 @@ const VideoPoster = ({ features, title }) => {
                 </h2>
 
                 {/* Grid for desktop, stacked for mobile */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 max-w-6xl w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-10 max-w-6xl w-full">
                     {features.map((feature, i) => (
                         <div
                             key={i}
