@@ -151,19 +151,19 @@ export const supportServices = [
 export const accountingSolutions = [
     {
         title: "Job Cost Accounting",
-        icon: "HandCoins",
+        icon: "/assets/industries/construction/icons/10026.svg",
         description:
             "Develop centralized constructions budgeting modules that track purchase orders, cost-to-completion, order changes, subcontracts, earned revenue, and committed costs.",
     },
     {
         title: "Asset Accounting Software",
-        icon: "Building2",
+        icon: "/assets/industries/construction/icons/10027.svg",
         description:
             "Seamlessly integrate asset tracking software with third-party accounting programs with features like depreciation calculators and audit trail modules.",
     },
     {
         title: "Payroll Software",
-        icon: "CreditCard",
+        icon: "/assets/industries/construction/icons/10028.svg",
         description:
             "Provide payroll software integration with human capital management (HCM) systems, mobile timecard APIs, and features such as FUTA/SUTA calculators and banking APIs.",
     },
@@ -172,19 +172,19 @@ export const accountingSolutions = [
 export const bimSolutions = [
     {
         title: "BIM Coordination",
-        icon: "Users",
+        icon: "/assets/industries/construction/icons/10020.svg",
         description:
             "Includes custom software development configurations of clash detection protocols to help prevent design conflicts caused by building materials, physical overlaps, building codes, and workflows.",
     },
     {
         title: "BIM Integrations",
-        icon: "MonitorSmartphone",
+        icon: "/assets/industries/construction/icons/10021.svg",
         description:
             "Integrate 3D, 4D, 5D, 6D, and CAD BIM apps with project management systems (PMS) and various constructions software systems, such as Autodesk, Unity, Revit, Rhino, and many.",
     },
     {
         title: "BIM Facility Management",
-        icon: "UserCog",
+        icon: "/assets/industries/construction/icons/10022.svg",
         description:
             "Integrate BIM facility management software application with IWMS & CAFM programs for building managers to maintain a database of accounting info, vendor contacts, licenses, and more.",
     },
@@ -193,19 +193,19 @@ export const bimSolutions = [
 export const revitSolutions = [
     {
         title: "Revit 3D Modeling",
-        icon: "Box",
+        icon: "/assets/industries/construction/icons/10009.svg",
         description:
             "Skilled 3D modeling software design team leverages Revit BIM software to create high-quality 3D visualizations and automate repetitive workflow tasks.",
     },
     {
         title: "Revit VR Rendering",
-        icon: "Camera",
+        icon: "/assets/industries/construction/icons/10006.svg",
         description:
             "Harness the power of Revit’s fast, high-resolution cloud rendering capabilities to transform CAD data into dynamic virtual reality experiences in real-time.",
     },
     {
         title: "Revit Plugin Development",
-        icon: "PlugZap",
+        icon: "/assets/industries/construction/icons/10005.svg",
         description:
             "Develop services custom software Revit add-ins written in VB.NET, C#, and other languages, designed to deliver expanded search capabilities, automate workflows, and simplify editing.",
     },
@@ -215,19 +215,19 @@ export const revitSolutions = [
 export const erpSolutions = [
     {
         title: "CRM Development",
-        icon: "UserCog",
+        icon: "/assets/industries/construction/icons/10007.svg",
         description:
             "Customize ERP CRM software to include contact databases, HR/HCM, marketing automation, leads management, customer service portals, Salesforce integrations, and more.",
     },
     {
         title: "Construction Inventory Management",
-        icon: "Boxes",
+        icon: "/assets/industries/aviation/icons/10003.svg",
         description:
             "Design robust fleet, tool, and equipment inventory databases to simplify asset requisitioning, transportation, real-time tracking, and distribution scheduling processes.",
     },
     {
         title: "Construction Contract Software",
-        icon: "FileText",
+        icon: "/assets/industries/aviation/icons/10005.svg",
         description:
             "Create custom-tailored construction contractor Software administration systems, designed as modules or standalone programs, with built-in CRM, ERP, and document management apps.",
     },
@@ -257,19 +257,19 @@ export const estimationSolutions = [
 export const bidManagementSoftware = [
     {
         title: "Construction Bid Management",
-        icon: "ClipboardList",
+        icon: "/assets/industries/aviation/icons/10005.svg",
         description:
             "Integrate business intelligence (BI) engines and database management systems to facilitate bid cost analysis, estimated completion time, labor/subcontractor specs, and more.",
     },
     {
         title: "Construction Bidding Apps",
-        icon: "FileText",
+        icon: "/assets/industries/aviation/icons/10006.svg",
         description:
             "Build custom construction bidding apps that facilitate secure transmission and coordination of features such as CAD docs, material takeoffs, proposal requirements, and permits.",
     },
     {
         title: "Contractor CRM Solution",
-        icon: "UserCheck",
+        icon: "/assets/industries/construction/icons/10005.svg",
         description:
             "Integrated with bid solicitation dashboards, our custom CRM solutions incorporate in-depth client profile databases, client communication trackers, and marketing automation.",
     }
@@ -278,19 +278,19 @@ export const bidManagementSoftware = [
 export const equipmentManagementSoftware = [
     {
         title: "GPS Tracking",
-        icon: "MapPin",
+        icon: "/assets/industries/construction/icons/10020.svg",
         description:
             "Build centralized platforms for locating all equipment in real-time, integrated with popular third-party GPS/GIS platforms, including Google Maps, Apple Maps, and Waze application.",
     },
     {
         title: "Tool Tracking",
-        icon: "RailSymbol",
+        icon: "/assets/industries/construction/icons/10029.svg",
         description:
             "Cloud-based systems & apps streamline on-site/off-site processes for tool tracking with built-in barcode utilization, IoT technology, and tool assigning capabilities.",
     },
     {
         title: "Equipment Telematics",
-        icon: "BarChart2",
+        icon: "/assets/industries/construction/icons/10011.svg",
         description:
             "Fleet telematics and KPI reports are tracked by real-time analytics dashboards, offering BI telematics, performance analysis, and maintenance scheduling functionalities.",
     }
@@ -299,19 +299,19 @@ export const equipmentManagementSoftware = [
 export const schedulingSolutions = [
     {
         title: "Appointment & Shift Scheduling",
-        icon: "CalendarCheck2",
+        icon: "/assets/industries/aviation/icons/10001.svg",
         description:
             "Program automated appointment & shift scheduling functionalities based on staff requirements, plus manual, group, and recurring scheduling capabilities.",
     },
     {
         title: "Time & Attendance Tracking",
-        icon: "Clock",
+        icon: "/assets/industries/aviation/icons/10003.svg",
         description:
             "Program time & attendance tracking apps with automatic time capture, real-time attendance tracking (geolocation/geofencing), electronic timesheets, and more.",
     },
     {
         title: "Payroll & Accounting Integrations",
-        icon: "FileText",
+        icon: "/assets/industries/aviation/icons/10006.svg",
         description:
             "Seamlessly integrate payroll and accounting software with human capital management (HCM), HRIS, HRMS, ERP, and other third-party systems and APIs.",
     }
@@ -321,19 +321,19 @@ export const schedulingSolutions = [
 export const submittalSolutions = [
     {
         title: "Submittal Exchange",
-        icon: "Repeat",
+        icon: "/assets/industries/healthcare/icons/10010.svg",
         description:
             "Deliver real-time construction submittal and transmittal exchange creation, tracking, editing, approval, and execution for desktop and mobile apps.",
     },
     {
         title: "Submittal Management",
-        icon: "FilePlus2",
+        icon: "/assets/industries/healthcare/icons/10014.svg",
         description:
             "Program submittal document management systems that share and generate shop drawings, material data sheets, OEM specs, RFI/RFPs, and more.",
     },
     {
         title: "Submittal Logs",
-        icon: "ListChecks",
+        icon: "/assets/industries/healthcare/icons/10019.svg",
         description:
             "Custom construction submittal scheduling logs ensure ordering & delivery processes and enable easy acceptance, review, and approvals of all submittals.",
     }
@@ -342,19 +342,19 @@ export const submittalSolutions = [
 export const projectManagementSolutions = [
     {
         title: "AEC Project Management Software",
-        icon: "Settings",
+        icon: "/assets/industries/healthcare/icons/10017.svg",
         description:
             "Unique project management software is made for construction managers, architects, and engineers, using custom workflow and workroom tools.",
     },
     {
         title: "Construction Project Management Apps",
-        icon: "Smartphone",
+        icon: "/assets/industries/healthcare/icons/10020.svg",
         description:
             "Mobile app is programmed for daily logs and other features like voice recognition commands and automated time-stamping. Cloud-based software reducing costs and optimizing process, improving results to the AEC industries.",
     },
     {
         title: "Construction Safety Apps",
-        icon: "ShieldCheck",
+        icon: "/assets/industries/healthcare/icons/10021.svg",
         description:
             "Our software is OSHA (Occupational Safety and Health Administration) compliant, facilitating submissions for site inspection reports.",
     }

@@ -29,6 +29,7 @@ import {
 } from "./Data";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FeaturesListOpposite } from "@/components/FeaturesList";
+import ImageNearScreen from "@/custom/ImageNearScreen";
 
 export default function Construction() {
   return (
@@ -106,7 +107,12 @@ export default function Construction() {
             description="U Tech designs construction accounting software systems integrated with business intelligence engines, ERP tools..."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-            <FeaturesList fadeUp={fadeUp} features={accountingSolutions} />
+            <FeaturesList
+              fadeUp={fadeUp}
+              features={accountingSolutions}
+              iconAlign="horizontal"
+
+            />
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
@@ -120,41 +126,29 @@ export default function Construction() {
       </section>
 
       {/* BIM Software Section */}
-      <PageLayout className="py-16 space-y-10">
+      <section className="py-16 bg-white flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Building Information Modeling (BIM) Software"
           description="Building Information Modeling (BIM) Software U Tech is a software development company..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/construction/building-information-modeling-solutions-cut.png"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} features={bimSolutions} />
-        </div>
-      </PageLayout>
-
+        <ImageNearScreen
+          features={bimSolutions}
+          src="/assets/industries/construction/building-information-modeling-solutions-cut.png"
+          imageAlign="left"
+        />
+      </section>
       {/* Revit Software Section */}
-      <section className="py-16 bg-secondary space-y-10">
+
+      <section className="py-5 bg-white flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Revit Software Solutions"
           description="U Tech’s Revit software include app development & plugin development..."
         />
-        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-          <FeaturesList fadeUp={fadeUp} features={revitSolutions} />
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/construction/revit-software-solutions-cut.png"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
-        </PageLayout>
+        <ImageNearScreen
+          features={revitSolutions}
+          src="/assets/industries/construction/revit-software-solutions-cut.png"
+          imageAlign="right"
+        />
       </section>
 
       {/* ERP Software Section */}
@@ -169,53 +163,40 @@ export default function Construction() {
               loading="lazy"
               src="/assets/industries/construction/construction-erp-software-solutions.png"
               alt="Portfolio"
-              className="w-135 mx-auto"
+              className="w-150 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} features={erpSolutions} />
+          <FeaturesList fadeUp={fadeUp} iconAlign="horizontal" features={erpSolutions} />
         </div>
       </PageLayout>
 
-      {/* Cost Estimation Software Section */}
-      <section className="py-16 bg-secondary space-y-10">
+      <section className="py-16 bg-white flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Cost Estimation Software"
           description="U Tech’s construction cost estimation software solutions save time and money..."
         />
-        <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-          <FeaturesList fadeUp={fadeUp} features={estimationSolutions} />
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/construction/construction-cost-estimation-software-cut.png"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
-        </PageLayout>
+        <ImageNearScreen
+          features={estimationSolutions}
+          src="/assets/industries/construction/construction-cost-estimation-software-cut.png"
+          imageAlign="right"
+        />
       </section>
-
       {/* Bid Management Section */}
-      <PageLayout className="py-16 space-y-10">
+
+      <section className="py-5 bg-white flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Construction Bid Management Software"
           description="U Tech’s construction bid management software solutions enable companies to simplify..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/construction/construction-bid-management-software-solutions-cut.png"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} features={bidManagementSoftware} />
-        </div>
-      </PageLayout>
+        <ImageNearScreen
+          features={bidManagementSoftware}
+          src="/assets/industries/construction/construction-bid-management-software-solutions-cut.png"
+          imageAlign="left"
+        />
+      </section>
 
       {/* Equipment Management Section */}
-      <PageLayout className="py-16 space-y-10">
+      <PageLayout className="py-10 space-y-10">
         <Headline
           title="Construction Equipment Management Software"
           description="U Tech’s construction equipment management software enables construction crews..."
@@ -224,6 +205,8 @@ export default function Construction() {
           <FeaturesList
             fadeUp={fadeUp}
             features={equipmentManagementSoftware}
+            iconAlign="horizontal"
+
           />
           <FadeInWhenVisible delay={0.5}>
             <img
@@ -237,23 +220,19 @@ export default function Construction() {
       </PageLayout>
 
       {/* Scheduling Software Section */}
-      <PageLayout className="py-16 space-y-10">
+
+      <section className="py-5 bg-white flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Scheduling Software Solution"
           description="U Tech’s scheduling software solutions facilitate fast schedule generation..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/construction/scheduling-software-solutions-cut.png"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} features={schedulingSolutions} />
-        </div>
-      </PageLayout>
+        <ImageNearScreen
+          features={schedulingSolutions}
+          src="/assets/industries/construction/scheduling-software-solutions-cut.png"
+          imageAlign="left"
+        />
+      </section>
+
 
       {/* Submittal Solutions Section */}
       <section className="py-16 bg-secondary space-y-10">
@@ -262,7 +241,8 @@ export default function Construction() {
           description="U Tech’s construction submittal software solutions enable quick and easy verification..."
         />
         <PageLayout className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <FeaturesList fadeUp={fadeUp} features={submittalSolutions} />
+          <FeaturesList fadeUp={fadeUp} iconAlign="horizontal"
+            features={submittalSolutions} />
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
@@ -289,7 +269,8 @@ export default function Construction() {
               className="w-110 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} features={projectManagementSolutions} />
+          <FeaturesList fadeUp={fadeUp} iconAlign="horizontal"
+            features={projectManagementSolutions} />
         </div>
       </PageLayout>
 
