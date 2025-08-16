@@ -47,7 +47,7 @@ export default function App() {
       </Routes>
 
       <Chat />
-      <ShareButtons />
+      {/* <ShareButtons /> */}
       <Footer />
     </>
   );
