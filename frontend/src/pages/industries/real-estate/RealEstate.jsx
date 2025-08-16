@@ -3,20 +3,24 @@ import FaqSection from "@/custom/FaqSection";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
-import { FeaturesList } from "@/components/FeaturesList";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
+import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
-import { Headline } from "@/custom/Typography";
+import VideoPoster from "@/custom/VideoPoster";
+import { Headline, TypographyH5, TypographyMuted } from "@/custom/Typography";
 
 import {
   appDevFeatures,
   developeAppRealEstatePartner,
   leftFeatureIcons,
   realEstateFaqs,
-  realEstateFeatures,
+  propertyManagementSolutions,
   realEstateServices,
   realEstateSolutions,
   rightFeatureIcons,
+  realEstateITSolutions,
+  idxSolutions,
+  features,
 } from "./Data";
 import IntigrateWith from "@/custom/IntigrateWith";
 
@@ -55,19 +59,24 @@ const RealEstate = () => {
           title="Custom Banking Software Development"
           description="U Technology’s team of expert developers cater to the technical needs of the ever-evolving banking sector by offering high quality software solutions that transform your core environment to streamline banking & financial workflows."
         />
-        <FeaturesGrid
+
+        <FeaturesGridnew
           leftFeatures={leftFeatureIcons}
           rightFeatures={rightFeatureIcons}
           centerImage="/assets/industries/real-estate/solutions.png"
-          fadeUp={fadeUp}
-          iconSize={38}
         />
-        <FadeInWhenVisible>
-          <Button variant="hover" className="mt-8">
-            CUSTOMIZE YOUR BANKING SOLUTION NOW
-          </Button>
-        </FadeInWhenVisible>
+
+        <Button variant="hover" className="mt-8">
+          CUSTOMIZE YOUR BANKING SOLUTION NOW
+        </Button>
       </PageLayout>
+
+      <section className="relative w-full overflow-hidden">
+        <VideoPoster
+          features={features}
+          title="Real Estate Is Being Revolutionized! Discover the New Tech You Can’t Ignore"
+        />
+      </section>
 
       <section className="py-16 bg-secondary text-center">
         <PageLayout className="space-y-10">
@@ -77,24 +86,19 @@ const RealEstate = () => {
             solutions using our specialized, multi-purpose technologies and
             industry-specific experience."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-1 space-y-6 md:grid-cols-3 gap-6 items-center">
-            <FeaturesList
-              features={realEstateServices.slice(0, 2)}
-              fadeUp={fadeUp}
-              iconSize={40}
-            />
+          <div className="grid grid-cols-1 sm:grid-cols-2 space-y-6 gap-6 items-center">
+
             <FadeInWhenVisible delay={0.4}>
               <img
                 loading="lazy"
                 src="/assets/industries/real-estate/laptop.png"
                 alt="AI-powered banking analytics"
-                className="w-132 mx-auto"
+                className="w-145 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList
-              features={realEstateServices.slice(2)}
-              fadeUp={fadeUp}
-              iconSize={40}
+              features={realEstateServices}
+              iconAlign="horizontal"
             />
           </div>
           <IntigrateWith
@@ -111,12 +115,10 @@ const RealEstate = () => {
         are transforming the real estate industry with intelligent, data-driven
         tools."
         />
-        <FeaturesList features={realEstateSolutions} fadeUp={fadeUp} grid />
-        <FadeInWhenVisible delay={0.4}>
-          <Button variant="hover">
-            Get Real Estate Solutions integrated with AI
-          </Button>
-        </FadeInWhenVisible>
+        <FeaturesListOpposite features={realEstateSolutions} />
+        <Button variant="hover">
+          Get Real Estate Solutions integrated with AI
+        </Button>
       </PageLayout>
 
       <section className="py-16 bg-secondary space-y-10 text-center">
@@ -132,37 +134,92 @@ const RealEstate = () => {
               loading="lazy"
               src="/assets/industries/real-estate/mobile.png"
               alt="Mobile real estate App"
-              className="h-96 mx-auto"
+              className="h-110 mx-auto"
             />
           </FadeInWhenVisible>
           <div>
             <FeaturesList
               features={appDevFeatures}
-              fadeUp={fadeUp}
-              iconSize={36}
+              iconAlign="horizontal"
             />
             <AppDevelopPartner />
           </div>
         </PageLayout>
-        <FadeInWhenVisible>
-          <Button variant="hover">Get Your Custom App</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Get Your Custom App</Button>
       </section>
 
       {/* === Banking Software Support Section ==g= */}
       <PageLayout className="py-16 space-y-8 text-center">
         <Headline
-          title="Banking Software Support"
-          description="Banking and fiscal services have seen a significant transformation
-          because of the use of new software solutions and apps. U Technology
-          banking software support enhances efficiency, reliability, and
-          regulatory compliance while improving the customer experience."
+          title="Get Custom Property Management Software Solutions"
+          description="We engineer bespoke property management solutions for real estate agents, brokers, property owners, leasing companies, and tenants."
         />
-        <FeaturesList features={realEstateFeatures} fadeUp={fadeUp} grid />
-        <FadeInWhenVisible delay={0.4}>
-          <Button variant="hover">Get Real Estate Software Support</Button>
-        </FadeInWhenVisible>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+          <div className="text-start space-y-4">
+            <TypographyH5 className="font-extrabold">
+              Rental Property Management Solutions
+            </TypographyH5>
+            <TypographyMuted>
+              We provide best-in-class rental property management and tenant onboarding solutions to automate essential business processes and simplify the workflows within property management.
+            </TypographyMuted>
+            <FeaturesList
+              features={propertyManagementSolutions}
+              iconAlign="horizontal"
+            />
+          </div>
+          <FadeInWhenVisible delay={0.4}>
+            <img
+              loading="lazy"
+              src="/assets/industries/real-estate/virtual-tour.png"
+              alt="AI-powered banking analytics"
+              className="w-145 mx-auto"
+            />
+          </FadeInWhenVisible>
+        </div>
+        <Button variant="hover">STREAMLINE PROPERTY MANAGEMENT</Button>
       </PageLayout>
+
+      <section className="bg-secondary py-16">
+        <PageLayout className="space-y-10 text-center">
+          <Headline
+            title="Elevate Your Real Estate Business with Custom Solutions and Support from U Tech"
+            description="At U Tech, our goal is to transform your real estate operations via customized software solutions are designed suit your unique requirements. We comprehend the challenges faced by real estate professionals and we offer a wide range of assistance to streamline workflows and improve productivity."
+          />
+
+          <FeaturesListOpposite features={realEstateITSolutions} />
+        </PageLayout>
+      </section>
+
+      <PageLayout className="py-16 space-y-8 text-center">
+        <Headline
+          title="IDX Technology Integration Solutions"
+          description="Enhance lead generation efficiency of digital media solution with quantitative metrics and quality indicators for property decisions. Our IDX technology offerings includes connectivity, automates content, adds intelligence to the CRM databases and uses search engine analytics to populate its products in prospects’ hands."
+        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+          <FadeInWhenVisible delay={0.4}>
+            <img
+              loading="lazy"
+              src="/assets/industries/real-estate/idx-technology-integration-solutions-tab.png"
+              alt="AI-powered banking analytics"
+              className="w-110 mx-auto"
+            />
+          </FadeInWhenVisible>
+          <div className="text-start space-y-4">
+            <TypographyH5 className="font-extrabold">
+              Internet Data Exchange (IDX)
+            </TypographyH5>
+            <TypographyMuted>
+              We help you boost online visibility while giving your business a clear competitive edge and equip buyers with up-to-date property information while protecting seller data, which drives stronger engagement and builds trust. Our tailor-made IDX solutions allow MLS listings to appear directly on agents’ websites in a format that is visually compelling and data-secure.
+            </TypographyMuted>
+            <FeaturesList
+              features={idxSolutions}
+              iconAlign="horizontal"
+            />
+          </div>
+        </div>
+        <Button variant="hover">GET IDX SOLUTIONS</Button>
+      </PageLayout>
+
 
       {/* FAQ Section */}
       <div className="mb-16 mt-2">

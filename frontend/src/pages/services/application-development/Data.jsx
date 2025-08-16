@@ -10,19 +10,19 @@ export const crossPlatformText = {
 
 export const mobileAppPlatforms = [
   {
-    icon: "Smartphone", // Lucide icon for Android
+    icon: "/assets/services/digital-transformation/icons/10009.svg",
     title: "Android Mobile App Development Platform",
     description:
       "We develop web & mobile Android apps delivered across various devices using top Android app development tools, such as Android Studio, Eclipse, and IntelliJ IDEA.",
   },
   {
-    icon: "Apple", // Lucide-compatible
+    icon: "/assets/services/digital-transformation/icons/10006.svg",
     title: "iOS Mobile App Development Platform",
     description:
       "Our iOS app development builds high quality web & mobile apps delivered across iOS devices designed for the app store using XCode, AppCode, CodeRunner, RxSwift, Mockingbird, CocoaPods, Applyzer, Alcatraz, Marvel, and more.",
   },
   {
-    icon: "Laptop", // Lucide-compatible substitute for Windows
+    icon: "/assets/services/digital-transformation/icons/10023.svg",
     title: "Windows App Development Platform",
     description:
       "We offer Windows apps development services that include creating highly immersive experiences using .NET frameworks accompanied with Microsoft Visual Studio.",

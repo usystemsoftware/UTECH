@@ -1,7 +1,7 @@
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
-import { FeaturesList } from "@/components/FeaturesList";
+import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import FaqSection from "@/custom/FaqSection";
 import { FeaturesList2 } from "@/components/FeaturesList2";
@@ -13,6 +13,7 @@ import {
   telcommunicationSoftwareSolutions,
   telecommunicationFaqs,
   TelecomSolutions,
+  telecomSolutions,
 } from "./Data";
 
 const Telecommunications = () => {
@@ -37,47 +38,43 @@ const Telecommunications = () => {
 
         <FeaturesList2
           features={TelecomSolutions.slice(0, 1)}
-          fadeUp={fadeUp}
           image="/assets/industries/telecommunications/operations.png"
         />
 
         <FeaturesList2
           features={TelecomSolutions.slice(1, 2)}
-          fadeUp={fadeUp}
           image="/assets/industries/telecommunications/online.png"
           reverse
         />
 
         <FeaturesList2
           features={TelecomSolutions.slice(2, 3)}
-          fadeUp={fadeUp}
           image="/assets/industries/telecommunications/interface.png"
         />
 
         <FeaturesList2
           features={TelecomSolutions.slice(3, 4)}
-          fadeUp={fadeUp}
           image="/assets/industries/telecommunications/telecom.png"
           reverse
         />
-        <FadeInWhenVisible delay={0.4}>
-          <Button variant="hover">
-            Book a Demo of Our Telecom Software Solutions
-          </Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">
+          Book a Demo of Our Telecom Software Solutions
+        </Button>
       </PageLayout>
 
       {/* Section: AI-Powered Telecommunications Solutions */}
       <section className="bg-secondary py-16">
-        <PageLayout className="space-y-6 text-center">
+        <PageLayout className="space-y-10 text-center">
           <Headline
             title="AI-Powered Telecommunications Solutions"
             description="Leverage AI-driven telecom software to cut costs, boost efficiency, and future-proof your operations..."
           />
-          <FeaturesList2 features={AITelecomFeatures} fadeUp={fadeUp} grid />
-          <FadeInWhenVisible delay={0.4}>
-            <Button variant="hover">GET AI-POWERED TELECOM SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <FeaturesList2
+            features={AITelecomFeatures}
+            grid
+            center
+          />
+          <Button variant="hover">GET AI-POWERED TELECOM SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -90,13 +87,11 @@ const Telecommunications = () => {
 
         <FeaturesList
           features={gamingtelecommunication}
-          fadeUp={fadeUp}
           grid3
+          center
         />
 
-        <FadeInWhenVisible>
-          <Button variant="hover">Get Your Telecom Software Audit</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Get Your Telecom Software Audit</Button>
       </PageLayout>
 
       {/* Section: Telecom Software Support Services */}
@@ -106,14 +101,10 @@ const Telecommunications = () => {
             title="Telecom Software Support Services"
             description="We deliver end-to-end support services for telecom applications..."
           />
-          <FeaturesList
+          <FeaturesListOpposite
             features={TelecommunicationSolutions}
-            fadeUp={fadeUp}
-            grid
           />
-          <FadeInWhenVisible delay={0.4}>
-            <Button variant="hover">GET TELECOM APPLICATION SUPPORT</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET TELECOM APPLICATION SUPPORT</Button>
         </PageLayout>
       </section>
 
@@ -125,8 +116,8 @@ const Telecommunications = () => {
         />
         <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-6 items-center">
           <FeaturesList
-            features={TelecommunicationSolutions.slice(0, 2)}
-            fadeUp={fadeUp}
+            features={telecomSolutions.slice(0, 2)}
+            center
           />
           <FadeInWhenVisible className="md:block hidden">
             <img
@@ -137,13 +128,11 @@ const Telecommunications = () => {
             />
           </FadeInWhenVisible>
           <FeaturesList
-            features={TelecommunicationSolutions.slice(2, 4)}
-            fadeUp={fadeUp}
+            features={telecomSolutions.slice(2, 4)}
+            center
           />
         </div>
-        <FadeInWhenVisible delay={0.4}>
-          <Button variant="hover">GET TELECOM IOT SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET TELECOM IOT SOLUTIONS</Button>
       </PageLayout>
 
       {/* Section: Custom Telecom Integration Services with Partner Logos */}
@@ -156,7 +145,10 @@ const Telecommunications = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 text-center">
             {telcommunicationSoftwareSolutions?.map((item, index) => (
               <div key={index} className="grid mt-10 ">
-                <FeaturesList fadeUp={fadeUp} features={[item]} />
+                <FeaturesList
+                  features={[item]}
+                  center
+                />
 
                 <div className="flex items-center flex-wrap justify-center gap-8 text-center mt-6">
                   {item?.partners.map((partner, pIndex) => (
@@ -173,9 +165,7 @@ const Telecommunications = () => {
               </div>
             ))}
           </div>
-          <FadeInWhenVisible delay={0.4}>
-            <Button variant="hover">GET INTEGRATED TELECOM SOFTWARE</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET INTEGRATED TELECOM SOFTWARE</Button>
         </PageLayout>
       </section>
 

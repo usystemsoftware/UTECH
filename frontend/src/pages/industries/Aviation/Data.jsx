@@ -1,19 +1,19 @@
 export const airlineSoftwareServices = [
   {
     label: "Flight Operations Software Development",
-    icon: "Plane",
+    icon: "/assets/industries/aviation/icons/10001.svg",
   },
   {
     label: "Airline Reservation and Booking Software Development",
-    icon: "Ticket",
+    icon: "/assets/industries/aviation/icons/10002.svg",
   },
   {
     label: "MRO Software Development",
-    icon: "Wrench",
+    icon: "/assets/industries/aviation/icons/10003.svg",
   },
   {
     label: "Drone Software Development",
-    icon: "RadioTower",
+    icon: "/assets/industries/aviation/icons/10004.svg",
   },
 ];
 

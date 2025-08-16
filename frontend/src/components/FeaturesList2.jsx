@@ -3,6 +3,19 @@ import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { TypographyH5, TypographyMuted } from "@/custom/Typography";
 import { IconRenderer } from "@/custom/IconRenderer";
 
+// Helper: Check if icon is an image file path (.svg, .png, .jpg, .jpeg, .webp)
+const isImageIcon = (icon) => {
+  if (typeof icon !== "string") return false;
+  const lower = icon.trim().toLowerCase();
+  return (
+    lower.endsWith(".svg") ||
+    lower.endsWith(".png") ||
+    lower.endsWith(".jpg") ||
+    lower.endsWith(".jpeg") ||
+    lower.endsWith(".webp")
+  );
+};
+
 export const FeaturesList2 = ({
   features = [],
   fadeUp,
@@ -30,9 +43,8 @@ export const FeaturesList2 = ({
 
   return (
     <div
-      className={`flex flex-col ${
-        reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-      } items-center justify-center gap-10`}
+      className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+        } items-center justify-center gap-10`}
     >
       <div className={contentClass}>
         {features.map((feature, index) => (
@@ -40,17 +52,29 @@ export const FeaturesList2 = ({
             key={index}
             className="flex items-start flex-col gap-2"
           >
-            <span className="flex-shrink-0">
-              <IconRenderer
-                name={feature.icon}
-                size={iconSize}
-                className="text-primary"
-              />
-            </span>
+            <div className="flex items-center gap-4">
+              <span className="flex-shrink-0">
+                {isImageIcon(feature.icon) ? (
+                  <img
+                    src={feature.icon}
+                    alt={feature.title}
+                    width={iconSize}
+                    height={iconSize}
+                    className="object-contain w-14 h-14"
+                  />
+                ) : (
+                  <IconRenderer
+                    name={feature.icon}
+                    size={iconSize}
+                    className="text-primary"
+                  />
+                )}
+              </span>
 
-            <TypographyH5 className="font-extrabold text-base tracking-tight">
-              {feature?.title}
-            </TypographyH5>
+              <TypographyH5 className="font-extrabold text-base tracking-tight">
+                {feature?.title}
+              </TypographyH5>
+            </div>
 
             {feature?.description && (
               <TypographyMuted>{feature?.description}</TypographyMuted>

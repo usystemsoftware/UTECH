@@ -1,4 +1,4 @@
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
@@ -39,12 +39,14 @@ export default function Aviation() {
           title="Hire Experienced and Dedicated Airline Software Developers"
           description="U Tech’s engineers have many years of industry experience programming a scalable management software solution for airlines, airports, and independent vendors."
         />
-        <FeaturesGrid
+
+        <FeaturesGridnew
           leftFeatures={airlineSoftwareServices.slice(0, 2)}
           rightFeatures={airlineSoftwareServices.slice(2, 4)}
           centerImage="/assets/industries/aviation/desktop-combo-aviation.png"
-          fadeUp={fadeUp}
+          iconGap="md:gap-32"
         />
+
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -70,7 +72,6 @@ export default function Aviation() {
             </FadeInWhenVisible>
             <FeaturesList
               features={airlineAIandAutomationServices.slice(3, 6)}
-              fadeUp={fadeUp}
               center
             />
           </div>
@@ -87,9 +88,7 @@ export default function Aviation() {
           src="/assets/industries/aviation/custom-flight-operations-management-software-development.png"
           imageAlign="right"
         />
-        <FadeInWhenVisible>
-          <Button variant="hover">GET FLIGHT OPS SOFTWARE DEVELOPES</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET FLIGHT OPS SOFTWARE DEVELOPES</Button>
       </section>
 
       <section className="py-5 ">
@@ -109,7 +108,6 @@ export default function Aviation() {
             </FadeInWhenVisible>
             <div className="space-y-8">
               <FeaturesList
-                fadeUp={fadeUp}
                 features={airlineReservationSolutions}
                 grid
                 center
@@ -133,9 +131,7 @@ export default function Aviation() {
               </div>
             </div>
           </div>
-          {/* <FadeInWhenVisible> */}
           <Button variant="hover">GET AIRLINE SOFTWARE DEVELOPES</Button>
-          {/* </FadeInWhenVisible> */}
         </PageLayout>
       </section>
 
@@ -152,7 +148,6 @@ export default function Aviation() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 items-center">
           <FeaturesList
             features={aviationMroSolutions.slice(0, 2)}
-            fadeUp={fadeUp}
             center
           />
           <FadeInWhenVisible>
@@ -165,7 +160,6 @@ export default function Aviation() {
           </FadeInWhenVisible>
           <FeaturesList
             features={aviationMroSolutions.slice(2, 4)}
-            fadeUp={fadeUp}
             center
           />
         </div>
@@ -188,7 +182,6 @@ export default function Aviation() {
           <div className="grid gap-9">
             <FeaturesList
               features={droneSoftwareSolutions}
-              fadeUp={fadeUp}
               grid
               center
             />
@@ -211,9 +204,7 @@ export default function Aviation() {
             </div>
           </div>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET DRONE SOFTWARE DEVELOPES</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET DRONE SOFTWARE DEVELOPES</Button>
       </PageLayout>
 
       {/* FAQ Section */}

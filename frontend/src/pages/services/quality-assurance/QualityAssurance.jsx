@@ -45,7 +45,10 @@ const QualityAssurance = () => {
               harness the power of innovative AI, IoT, and RPA technologies to
               perform advanced QA web & mobile app testing.
             </TypographyMuted>
-            <FeaturesList features={mobileAppPlatforms} />
+            <FeaturesList
+              features={mobileAppPlatforms}
+              iconAlign="horizontal"
+            />
           </FadeInWhenVisible>
 
           <FadeInWhenVisible>
@@ -69,24 +72,22 @@ const QualityAssurance = () => {
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <FeaturesList
               features={qualityPlatforms.slice(0, 2)}
-              fadeUp={fadeUp}
+              center
             />
             <FadeInWhenVisible className="md:block hidden">
               <img
                 loading="lazy"
                 src="/assets/services/quality-assurance/solution.png"
                 alt="Tax Preparation"
-                className="w-48 mx-auto"
+                className="w-54 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList
-              features={qualityPlatforms.slice(0, 2)}
-              fadeUp={fadeUp}
+              features={qualityPlatforms.slice(2, 4)}
+              center
             />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">Get QA Testing Solutions</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">Get QA Testing Solutions</Button>
         </PageLayout>
       </section>
 
@@ -117,7 +118,10 @@ const QualityAssurance = () => {
               regression, performance, usability security, and compatibility
               testing..
             </TypographyMuted>
-            <FeaturesList features={CustomQuality} />
+            <FeaturesList
+              features={CustomQuality}
+              iconAlign="horizontal"
+            />
           </div>
         </div>
       </PageLayout>
@@ -130,11 +134,13 @@ const QualityAssurance = () => {
             description="Elevate your IT efforts to new heights by leveraging our custom QA Testing Solutions designed specifically for your website or application."
           />
 
-          <FeaturesList features={supportServices} grid3 />
+          <FeaturesList
+            features={supportServices}
+            grid3
+            center
+          />
 
-          <FadeInWhenVisible>
-            <Button variant="hover">GET WEB SUPPORT ON-DEMAND</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET WEB SUPPORT ON-DEMAND</Button>
         </PageLayout>
       </section>
 
@@ -170,9 +176,7 @@ const QualityAssurance = () => {
         </div>
 
         {/* CTA button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">Test Your Software Now</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Test Your Software Now</Button>
       </PageLayout>
     </div>
   );

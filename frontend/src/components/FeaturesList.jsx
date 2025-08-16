@@ -3,9 +3,19 @@ import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { TypographyH5, TypographyMuted } from "@/custom/Typography";
 import { IconRenderer } from "@/custom/IconRenderer";
 
-// Helper: Check if icon is an SVG file path
-const isSvgIcon = (icon) =>
-  typeof icon === "string" && icon.trim().toLowerCase().endsWith(".svg");
+// Helper: Check if icon is an image file path (svg, png, jpg, jpeg, webp, gif)
+const isImageIcon = (icon) => {
+  if (typeof icon !== "string") return false;
+  const ext = icon.trim().toLowerCase();
+  return (
+    ext.endsWith(".svg") ||
+    ext.endsWith(".png") ||
+    ext.endsWith(".jpg") ||
+    ext.endsWith(".jpeg") ||
+    ext.endsWith(".webp") ||
+    ext.endsWith(".gif")
+  );
+};
 
 export const FeaturesList = ({
   features = [],
@@ -45,13 +55,15 @@ export const FeaturesList = ({
           <div
             key={index}
             className={`flex ${iconAlign === "horizontal"
-              ? `sm:flex-row flex-col gap-4 ${center ? "items-center" : "items-center sm:items-start"}`
-              : `flex-col gap-2 ${center ? "items-center" : "items-center sm:items-start"}`
+                ? `sm:flex-row flex-col gap-4 ${center ? "items-center" : "items-center sm:items-start"
+                }`
+                : `flex-col gap-2 ${center ? "items-center" : "items-center sm:items-start"
+                }`
               }`}
           >
             {/* ICON */}
             <span className="flex-shrink-0">
-              {isSvgIcon(feature.icon) ? (
+              {isImageIcon(feature.icon) ? (
                 <img
                   src={feature.icon}
                   alt={feature.title}
@@ -73,7 +85,9 @@ export const FeaturesList = ({
               <TypographyH5 className="font-extrabold text-base tracking-tight">
                 {feature.title}
               </TypographyH5>
-              <TypographyMuted className="sm:line-clamp-4 text-start">{feature.description}</TypographyMuted>
+              <TypographyMuted className="sm:line-clamp-4 text-start">
+                {feature.description}
+              </TypographyMuted>
             </div>
           </div>
         ))}
@@ -94,7 +108,7 @@ export const FeaturesList = ({
 export const FeaturesListOpposite = ({ features }) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-      {features.map(({ icon, iconSize, title, description }, index) => {
+      {features.map(({ icon, iconSize = 40, title, description }, index) => {
         const isRightColumn = index % 2 !== 0; // Odd index → right column
         return (
           <div
@@ -107,7 +121,7 @@ export const FeaturesListOpposite = ({ features }) => {
           >
             {/* Icon */}
             <div className="flex-shrink-0">
-              {isSvgIcon(icon) ? (
+              {isImageIcon(icon) ? (
                 <img
                   src={icon}
                   alt={title}
@@ -132,9 +146,9 @@ export const FeaturesListOpposite = ({ features }) => {
               <div
                 className={`max-w-sm border-b-2 border-gray-200 my-2 
                     mx-auto md:mx-0 
-                    ${isRightColumn ? "md:ml-auto" : ""}`} />
-
-              <TypographyMuted className="sm:line-clamp-4 text-start" >
+                    ${isRightColumn ? "md:ml-auto" : ""}`}
+              />
+              <TypographyMuted className="sm:line-clamp-4 text-start">
                 {description}
               </TypographyMuted>
             </div>

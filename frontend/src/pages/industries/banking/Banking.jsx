@@ -1,9 +1,8 @@
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
-import { TypographyH4, TypographyMuted, Headline } from "@/custom/Typography";
+import { Headline } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import VideoTvPoster from "@/custom/VideoTvPoster";
@@ -15,7 +14,6 @@ import {
   BankingCoreFeatures,
   BankingCustomEMVServices,
   BankingFaqs,
-  BankingSoftwareAIFeatures,
   BankingSoftwareLeftFeatures,
   BankingSoftwareRightFeatures,
   BankingSupportItems,
@@ -48,19 +46,15 @@ export const Banking = () => (
         leftFeatures={BankingSoftwareLeftFeatures}
         rightFeatures={BankingSoftwareRightFeatures}
         centerImage="/assets/industries/banking/contentBanking.png"
-        fadeUp={fadeUp}
-        iconSize={38}
-        center
+        iconGap="md:gap-26"
       />
 
-      <FadeInWhenVisible>
-        <Button variant="hover" className="mt-8">
-          CUSTOMIZE YOUR BANKING SOLUTION NOW
-        </Button>
-      </FadeInWhenVisible>
+      <Button variant="hover" className="mt-8">
+        CUSTOMIZE YOUR BANKING SOLUTION NOW
+      </Button>
     </PageLayout>
 
-    <PageLayout className="py-3 space-y-10 text-center">
+    <PageLayout className="py-12 space-y-10 text-center">
       <Headline
         title="Transforming the Banking Industry with AI-Powered Solutions"
         description="Following best practices, we harness the power of Artificial Intelligence (AI) in our financial software development process to build transformative solutions for the Banking industry. Our AI-driven software solution experts develop cutting-edge capabilities such as advanced fraud detection, AI-enhanced credit assessment, and AI-enhanced financial forecasting."
@@ -68,7 +62,6 @@ export const Banking = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <FeaturesList
           features={AIPoweredSolutions.slice(0, 2)}
-          fadeUp={fadeUp}
           iconSize={36}
           center
         />
@@ -82,17 +75,12 @@ export const Banking = () => (
         </FadeInWhenVisible>
         <FeaturesList
           features={AIPoweredSolutions.slice(2, 4)}
-          fadeUp={fadeUp}
           iconSize={36}
           center
         />
       </div>
-      <FadeInWhenVisible>
-        <Button variant="hover">Get ATM Software Solutions</Button>
-      </FadeInWhenVisible>
+      <Button variant="hover">Get ATM Software Solutions</Button>
     </PageLayout>
-
-
 
     <section className="py-16 bg-secondary space-y-10 text-center">
       <Headline
@@ -108,11 +96,12 @@ export const Banking = () => (
             className="w-140 mx-auto hidden sm:block"
           />
         </FadeInWhenVisible>
-        <FeaturesList features={CustomLoanServicingfeatures} iconAlign="horizontal"
-          fadeUp={fadeUp} />
+        <FeaturesList
+          features={CustomLoanServicingfeatures}
+          iconAlign="horizontal"
+        />
       </PageLayout>
       <Button variant="hover">Get Loan Management Software Solutions</Button>
-
     </section>
 
     {/* Mobile Banking Section */}
@@ -124,8 +113,6 @@ export const Banking = () => (
       <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center">
         <FeaturesList
           features={GetMobileBankingSoftwareSolutions}
-          fadeUp={fadeUp}
-          iconSize={36}
           iconAlign="horizontal"
 
         />
@@ -138,9 +125,7 @@ export const Banking = () => (
           />
         </FadeInWhenVisible>
       </PageLayout>
-      {/* <FadeInWhenVisible> */}
       <Button variant="hover">Get Mobile Banking Software Solutions</Button>
-      {/* </FadeInWhenVisible> */}
     </section>
 
     {/* Online Banking Section */}
@@ -158,18 +143,22 @@ export const Banking = () => (
             className="w-130 mx-auto  hidden sm:block"
           />
         </FadeInWhenVisible>
-        <FeaturesList features={GetMobileBankingOnlineSoftwareSolutions} iconAlign="horizontal"
-          fadeUp={fadeUp} />
+        <FeaturesList
+          features={GetMobileBankingOnlineSoftwareSolutions}
+          iconAlign="horizontal"
+        />
       </PageLayout>
       <Button variant="hover" className="mt-8">
         Get Online Banking Software Solution
       </Button>
     </section>
+
     <section>
       <VideoTvPoster
         information={tvpoasterDescription}
       />
     </section>
+
     {/* ATM Software Section */}
     <PageLayout className="py-12 space-y-10 text-center">
       <Headline
@@ -179,8 +168,6 @@ export const Banking = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <FeaturesList
           features={BankingAtmFeatures.slice(0, 2)}
-          fadeUp={fadeUp}
-          iconSize={36}
           center
         />
         <FadeInWhenVisible delay={0.4} className="md:block hidden">
@@ -194,14 +181,10 @@ export const Banking = () => (
         </FadeInWhenVisible>
         <FeaturesList
           features={BankingAtmFeatures.slice(2, 4)}
-          fadeUp={fadeUp}
-          iconSize={36}
           center
         />
       </div>
-      <FadeInWhenVisible>
-        <Button variant="hover">Get ATM Software Solutions</Button>
-      </FadeInWhenVisible>
+      <Button variant="hover">Get ATM Software Solutions</Button>
     </PageLayout>
 
     {/* CORE Banking Section */}
@@ -213,8 +196,6 @@ export const Banking = () => (
       <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
         <FeaturesList
           features={BankingCoreFeatures}
-          fadeUp={fadeUp}
-          iconSize={36}
           iconAlign="horizontal"
         />
         <FadeInWhenVisible delay={0.4} className="hidden md:block">
@@ -238,8 +219,6 @@ export const Banking = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         <FeaturesList
           features={BankingCustomEMVServices.slice(0, 2)}
-          fadeUp={fadeUp}
-          iconSize={36}
           center
         />
         <FadeInWhenVisible delay={0.4} className="hidden md:block">
@@ -252,14 +231,10 @@ export const Banking = () => (
         </FadeInWhenVisible>
         <FeaturesList
           features={BankingCustomEMVServices.slice(2, 4)}
-          fadeUp={fadeUp}
-          iconSize={36}
           center
         />
       </div>
-      <FadeInWhenVisible>
-        <Button variant="hover">Get EMV Software Solutions</Button>
-      </FadeInWhenVisible>
+      <Button variant="hover">Get EMV Software Solutions</Button>
     </PageLayout>
 
     {/* ACH Processing Section */}
@@ -277,11 +252,12 @@ export const Banking = () => (
             className="w-52 mx-auto hidden sm:block"
           />
         </FadeInWhenVisible>
-        <FeaturesList features={BankingACHfeatures} iconAlign="horizontal" fadeUp={fadeUp} />
+        <FeaturesList
+          features={BankingACHfeatures}
+          iconAlign="horizontal"
+        />
       </PageLayout>
-      <FadeInWhenVisible>
-        <Button variant="hover">Get Check 21 & ACH Processing Solutions</Button>
-      </FadeInWhenVisible>
+      <Button variant="hover">Get Check 21 & ACH Processing Solutions</Button>
     </section>
 
     {/* Banking Software Support */}
@@ -292,11 +268,8 @@ export const Banking = () => (
       />
       <FeaturesListOpposite
         features={BankingSupportItems}
-
       />
-      {/* <FadeInWhenVisible delay={0.4}> */}
       <Button variant="hover">Get Finance Software Support</Button>
-      {/* </FadeInWhenVisible> */}
     </PageLayout>
 
     {/* FAQ Section */}

@@ -143,7 +143,7 @@ const ApplicationDevelopment = () => {
 
       {/* === CUSTOM SERVICE SECTION === */}
       <PageLayout className="py-20 text-center space-y-10">
-        <FeaturesList features={CustomServices} grid3 center/>
+        <FeaturesList features={CustomServices} grid3 center />
 
         <Button variant="hover">Create Your Custom App</Button>
       </PageLayout>

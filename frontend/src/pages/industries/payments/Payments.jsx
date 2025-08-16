@@ -1,4 +1,4 @@
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
 import { FeaturesList } from "@/components/FeaturesList";

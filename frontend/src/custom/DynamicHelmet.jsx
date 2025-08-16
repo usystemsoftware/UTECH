@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { metaData } from "@/data/metaData";
+import { metaData } from "@/data/MetaData";
 
 // Detect if local
 const isLocal =

@@ -7,11 +7,11 @@ export const FeaturesGridnew = ({
     centerImage,
     imgSize = "sm:w-[70%] md:w-[80%]",
     fadeUp,
-    iconSize = 40,
+    iconGap,
 }) => (
     <div className="flex flex-col sm:flex-row items-center w-full justify-center gap-4 mt-10">
         {/* Left Column */}
-        <div className="flex flex-col gap-4 md:gap-12 text-start sm:text-right w-full">
+        <div className={`flex flex-col gap-4 md:gap-12 ${iconGap} text-start sm:text-right w-full`}>
             {leftFeatures.map((item, index) => (
                 <div
                     key={index}
@@ -52,7 +52,7 @@ export const FeaturesGridnew = ({
         )}
 
         {/* Right Column */}
-        <div className="flex flex-col gap-4 md:gap-12 items-start text-left w-full">
+        <div className={`flex flex-col gap-4 md:gap-12 ${iconGap} items-start text-left w-full`}>
             {rightFeatures.map((item, index) => (
                 <div
                     key={index}

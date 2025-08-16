@@ -42,7 +42,10 @@ const NocServices = () => {
               className="mx-auto w-155"
             />
           </FadeInWhenVisible>
-          <FeaturesList features={NocFeatures} fadeUp={fadeUp} iconAlign="horizontal" />
+          <FeaturesList
+            features={NocFeatures}
+            iconAlign="horizontal"
+          />
         </div>
         <Button variant="hover">GET NOC SERVICES</Button>
       </PageLayout>

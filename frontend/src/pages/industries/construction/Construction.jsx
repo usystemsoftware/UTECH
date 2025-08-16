@@ -54,9 +54,8 @@ export default function Construction() {
           leftFeatures={ConstructionSoftwareLeftFeatures}
           rightFeatures={ConstructionSoftwareRightFeatures}
           centerImage="/assets/industries/construction/construction-software-services.png"
-          fadeUp={fadeUp}
-          iconSize={38}
         />
+
       </PageLayout>
 
       {/* AI-Powered Features Section */}
@@ -67,25 +66,24 @@ export default function Construction() {
         />
         <FeaturesListOpposite
           features={AIPoweredConstructionFeatures}
-
         />
-        {/* <FadeInWhenVisible delay={0.4}> */}
         <Button variant="hover">
           Get AI Powered Construction Solutions
-        </Button>      {/* </FadeInWhenVisible> */}
+        </Button>
       </PageLayout>
 
 
       {/* Construction Automation Tools */}
       <PageLayout className="text-center py-10 space-y-10">
         <TypographyH2>Construction Automation Tools</TypographyH2>
-        <FeaturesList features={constructionSolutions} center grid />
+        <FeaturesList
+          features={constructionSolutions}
+          center grid
+        />
       </PageLayout>
 
       {/* Testimonial Section */}
-      <FadeInWhenVisible>
-        <TestimonialSection testimonials={testimonials} />
-      </FadeInWhenVisible>
+      <TestimonialSection testimonials={testimonials} />
 
       {/* Support Services Section */}
       <PageLayout className="py-16 space-y-8 text-center">
@@ -95,7 +93,6 @@ export default function Construction() {
         />
         <FeaturesListOpposite
           features={supportServices}
-
         />
       </PageLayout>
 
@@ -108,7 +105,6 @@ export default function Construction() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
             <FeaturesList
-              fadeUp={fadeUp}
               features={accountingSolutions}
               iconAlign="horizontal"
 
@@ -137,6 +133,7 @@ export default function Construction() {
           imageAlign="left"
         />
       </section>
+
       {/* Revit Software Section */}
 
       <section className="py-5 bg-white flex flex-col gap-3 justify-center items-center">
@@ -166,7 +163,10 @@ export default function Construction() {
               className="w-150 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} iconAlign="horizontal" features={erpSolutions} />
+          <FeaturesList
+            iconAlign="horizontal"
+            features={erpSolutions}
+          />
         </div>
       </PageLayout>
 
@@ -203,10 +203,8 @@ export default function Construction() {
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <FeaturesList
-            fadeUp={fadeUp}
             features={equipmentManagementSoftware}
             iconAlign="horizontal"
-
           />
           <FadeInWhenVisible delay={0.5}>
             <img
@@ -241,14 +239,16 @@ export default function Construction() {
           description="U Tech’s construction submittal software solutions enable quick and easy verification..."
         />
         <PageLayout className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <FeaturesList fadeUp={fadeUp} iconAlign="horizontal"
-            features={submittalSolutions} />
+          <FeaturesList
+            iconAlign="horizontal"
+            features={submittalSolutions}
+          />
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
               src="/assets/industries/construction/construction-submittal-solutions.png"
               alt="Portfolio"
-              className="w-46 mx-auto"
+              className="w-52 mx-auto"
             />
           </FadeInWhenVisible>
         </PageLayout>
@@ -269,8 +269,10 @@ export default function Construction() {
               className="w-110 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} iconAlign="horizontal"
-            features={projectManagementSolutions} />
+          <FeaturesList
+            iconAlign="horizontal"
+            features={projectManagementSolutions}
+          />
         </div>
       </PageLayout>
 

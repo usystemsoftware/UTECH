@@ -1,5 +1,5 @@
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
-import { FeaturesList } from "@/components/FeaturesList";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
+import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
@@ -38,12 +38,14 @@ export default function Sports() {
           title="Hire Experienced Sports Software Developers"
           description="U Tech has a strong history of developing custom sports management software solutions for fitness clubs, athletic programs, and sports medicine practices. We have on-demand developers to help you navigate your sports management technology challenges."
         />
-        <FeaturesGrid
+
+        <FeaturesGridnew
           leftFeatures={sportsAndFitnessSolutions.slice(0, 3)}
           rightFeatures={sportsAndFitnessSolutions.slice(3, 6)}
           centerImage="/assets/industries/sports/desktop-combo-sports.png"
-          fadeUp={fadeUp}
+          iconGap="md:gap-18"
         />
+
       </PageLayout>
 
       {/* === AI-Powered Sports Solutions Section === */}
@@ -53,10 +55,10 @@ export default function Sports() {
             title="Artificial Intelligence Solutions for Sports Management"
             description="U Tech leverages cutting-edge AI analytics to modernize sports management by designing intuitive wearables for customized training, personalized nutrition, and performance monitoring."
           />
-          <FeaturesList features={aiSportsSolutions} fadeUp={fadeUp} grid />
-          <FadeInWhenVisible>
-            <Button variant="hover">OPTIMIZE SPORTS SOFTWARE WITH AI</Button>
-          </FadeInWhenVisible>
+          <FeaturesListOpposite
+            features={aiSportsSolutions}
+          />
+          <Button variant="hover">OPTIMIZE SPORTS SOFTWARE WITH AI</Button>
         </PageLayout>
       </section>
 
@@ -66,8 +68,8 @@ export default function Sports() {
           title="Sports Analytics & Athlete Performance Solutions"
           description="Our sports software developers build a suite of sports analytics tools designed for ultimate performance intelligence with tailor-made data capture modules for training, injury monitoring, and tactical game analysis. "
         />
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <FadeInWhenVisible delay={0.5} className="md:block hidden">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
+          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/sports/sports-analytics-and-athlete-performance-solutions-1.png"
@@ -76,14 +78,11 @@ export default function Sports() {
             />
           </FadeInWhenVisible>
           <FeaturesList
-            fadeUp={fadeUp}
             features={performanceTrackingSolutions}
-            grid
+            iconAlign="horizontal"
           />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">DEVELOP SPORT ANALYTICS SOFTWARE</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">DEVELOP SPORT ANALYTICS SOFTWARE</Button>
       </PageLayout>
 
       {/* === Fitness Club & Gym Management Section === */}
@@ -93,26 +92,27 @@ export default function Sports() {
             title="Fitness Club and Gym Management Web Platform"
             description="We engineer custom fitness & gym management software solutions from scratch at a low cost, as well as integrate, modify, and implement specific features to your existing off-the-shelf solutions."
           />
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
             <FeaturesList
-              fadeUp={fadeUp}
-              features={fitnessManagementSolutions}
-              grid
+              center
+              features={fitnessManagementSolutions.slice(0, 2)}
             />
-            <FadeInWhenVisible delay={0.5}>
+            <FadeInWhenVisible delay={0.5} className="md:block hidden">
               <img
                 loading="lazy"
                 src="/assets/industries/sports/fitness-club-and-gym-management-software.png"
                 alt="Portfolio"
-                className="w-135 mx-auto"
+                className="w-145 mx-auto"
               />
             </FadeInWhenVisible>
+            <FeaturesList
+              center
+              features={fitnessManagementSolutions.slice(2, 4)}
+            />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">
-              HIRE GYM MANAGEMENT SOFTWARE DEVELOPES
-            </Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">
+            HIRE GYM MANAGEMENT SOFTWARE DEVELOPES
+          </Button>
         </PageLayout>
       </section>
 
@@ -128,16 +128,18 @@ export default function Sports() {
               loading="lazy"
               src="/assets/industries/sports/golf-cource-management-software-development.png"
               alt="Portfolio"
-              className="w-96 mx-auto"
+              className="md:w-110 w-96 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} features={golfSoftwareSolutions} grid />
+          <FeaturesList
+            features={golfSoftwareSolutions}
+            grid
+            center
+          />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">
-            HIRE GOLF MANAGEMENT SOFTWARE DEVELOPER
-          </Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">
+          HIRE GOLF MANAGEMENT SOFTWARE DEVELOPER
+        </Button>
       </PageLayout>
 
       {/* === Sports Training Section === */}
@@ -148,7 +150,10 @@ export default function Sports() {
             description="Our robust, feature-rich, and custom-tailored sports training and management software solutions capture, organize, and translate data into valuable knowledge for coaches, athletes, teams, and sporting organizations."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-            <FeaturesList fadeUp={fadeUp} features={sportsTrainingSolutions} />
+            <FeaturesList
+              features={sportsTrainingSolutions}
+              iconAlign="horizontal"
+            />
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
@@ -158,11 +163,9 @@ export default function Sports() {
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">
-              HIRE SPORT TRANNING SOFTWARE DEVELOPER
-            </Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">
+            HIRE SPORT TRANNING SOFTWARE DEVELOPER
+          </Button>
         </PageLayout>
       </section>
 
@@ -172,22 +175,23 @@ export default function Sports() {
           title="Sports Kinesiology & Motion Analysis Software"
           description="We engineer cutting-edge motion & muscle movement kinesiology software solutions to support sports institutions, educators, course curriculums, and health-related programs."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-          <FadeInWhenVisible delay={0.5} className="md:block hidden">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
+          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/sports/sports-kinesiology-and-motion-analysis-software.png"
               alt="Portfolio"
-              className="w-48 mx-auto"
+              className="w-52 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList fadeUp={fadeUp} features={kinesiologySolutions} grid />
+          <FeaturesList
+            features={kinesiologySolutions}
+            iconAlign="horizontal"
+          />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">
-            OPTIMIZE SPORTS KINESIOLOGY SOFTWARE DEVELOPER
-          </Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">
+          OPTIMIZE SPORTS KINESIOLOGY SOFTWARE DEVELOPER
+        </Button>
       </PageLayout>
 
       {/* === Sports Medicine Section === */}
@@ -198,21 +202,22 @@ export default function Sports() {
             description="We fully integrate custom sports medicine systems and build sports injury tracking software to better evaluate injury statuses and overall fitness levels."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-2">
-            <FeaturesList fadeUp={fadeUp} features={sportsHealthSolutions} />
+            <FeaturesList
+              features={sportsHealthSolutions}
+              iconAlign="horizontal"
+            />
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"
                 src="/assets/industries/sports/sports-medicine-management-software-solutions.png"
                 alt="Portfolio"
-                className="md:w-96 w-80 mx-auto"
+                className="md:w-110 w-80 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">
-              DEVELOP SPORT MEDICINE MANAGEMENT SOFTWARE
-            </Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">
+            DEVELOP SPORT MEDICINE MANAGEMENT SOFTWARE
+          </Button>
         </PageLayout>
       </section>
 

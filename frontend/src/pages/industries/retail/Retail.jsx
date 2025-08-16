@@ -1,4 +1,4 @@
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
@@ -31,11 +31,11 @@ export default function Retail() {
       />
 
       {/* === Core Retail Solutions Overview with Center Image === */}
-      <FeaturesGrid
+      <FeaturesGridnew
         leftFeatures={retailSolutions.slice(0, 3)}
         rightFeatures={retailSolutions.slice(3, 6)}
         centerImage="/assets/industries/retail/retail-banner-3.png"
-        fadeUp={fadeUp}
+        iconGap="md:gap-18"
       />
 
       {/* === Experienced Retail Developers Section === */}
@@ -46,34 +46,14 @@ export default function Retail() {
             description="U Tech, an retail software development company provides custom retail software development solutions for brick and mortar, e-commerce, c-store & grocery, dealerships, shopping cart, and mobile systems."
           />
 
-          <div className="block md:hidden">
-            <FeaturesList
-              features={retailSoftwareSolutions}
-              fadeUp={fadeUp}
-              grid
-            />
-          </div>
-
-          {/* Retail Software Capabilities Grid */}
-          <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <FeaturesList
-              features={retailSoftwareSolutions.slice(0, 2)}
-              fadeUp={fadeUp}
-            />
-            <FeaturesList
-              features={retailSoftwareSolutions.slice(2, 4)}
-              fadeUp={fadeUp}
-            />
-            <FeaturesList
-              features={retailSoftwareSolutions.slice(4, 6)}
-              fadeUp={fadeUp}
-            />
-          </div>
+          <FeaturesList
+            features={retailSoftwareSolutions}
+            center
+            grid3
+          />
 
           {/* CTA Button */}
-          <FadeInWhenVisible>
-            <Button variant="hover">GET RETAIL SOFTWARE SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET RETAIL SOFTWARE SOLUTIONS</Button>
 
           {/* Developer Experience Image */}
           <FadeInWhenVisible className="hidden md:block">
@@ -81,7 +61,7 @@ export default function Retail() {
               src="/assets/industries/retail/we-have-software-developers-with-retail-industry-experience.png"
               alt="Accounting Dashboard"
               loading="lazy"
-              className="w-[50%] mx-auto"
+              className="sm:w-[50%] w-full mx-auto"
             />
           </FadeInWhenVisible>
         </PageLayout>
@@ -94,30 +74,15 @@ export default function Retail() {
           description="We leverage the power of artificial intelligence (AI) to develop innovative solutions for all sectors of retail. These AI-powered technology solutions provide powerful avenues for modernization and optimization."
         />
 
-        <div className="block md:hidden">
-          <FeaturesList features={retailAiSolutions} fadeUp={fadeUp} grid />
-        </div>
+        <FeaturesList
+          features={retailAiSolutions}
+          center
+          grid3
+        />
 
-        {/* AI Retail Features */}
-        <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <FeaturesList
-            features={retailAiSolutions.slice(0, 2)}
-            fadeUp={fadeUp}
-          />
-          <FeaturesList
-            features={retailAiSolutions.slice(2, 4)}
-            fadeUp={fadeUp}
-          />
-          <FeaturesList
-            features={retailAiSolutions.slice(4, 6)}
-            fadeUp={fadeUp}
-          />
-        </div>
 
         {/* CTA Button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">GET AI-POWERED RETAIL SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET AI-POWERED RETAIL SOLUTIONS</Button>
       </PageLayout>
 
       {/* === Retail & Wholesale Software Section === */}
@@ -134,21 +99,19 @@ export default function Retail() {
               loading="lazy"
               src="/assets/industries/retail/ar-software-development.png"
               alt="Portfolio"
-              className="w-48 mx-auto"
+              className="w-52 mx-auto"
             />
           </FadeInWhenVisible>
 
           <FeaturesList
-            fadeUp={fadeUp}
+            center
             features={retailCustomerSolutions}
             grid
           />
         </div>
 
         {/* CTA Button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">HIRE RETAIL SOFTWARE DEVELOPES</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">HIRE RETAIL SOFTWARE DEVELOPES</Button>
       </PageLayout>
 
       {/* === E-Commerce Software Section === */}
@@ -160,7 +123,7 @@ export default function Retail() {
           />
 
           {/* Text + Feature List + Image */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             {/* Features */}
             <div className="text-start space-y-6">
               <TypographyH5>E-Commerce Software Solutions</TypographyH5>
@@ -170,7 +133,7 @@ export default function Retail() {
                 your e-commerce store.
               </TypographyMuted>
               <FeaturesList
-                fadeUp={fadeUp}
+                iconAlign="horizontal"
                 features={retailEcommerceSolutions}
               />
             </div>
@@ -181,15 +144,13 @@ export default function Retail() {
                 loading="lazy"
                 src="/assets/industries/retail/custom-e-commerce-software-solutions.png"
                 alt="Portfolio"
-                className="w-110 mx-auto"
+                className="w-130 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
 
           {/* CTA Button */}
-          <FadeInWhenVisible>
-            <Button variant="hover">GET RETAIL E-COMMERCE SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET RETAIL E-COMMERCE SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -218,7 +179,10 @@ export default function Retail() {
               all types of retail businesses, focusing on providing the ultimate
               shopping experience.
             </TypographyMuted>
-            <FeaturesList fadeUp={fadeUp} features={shoppingCartSolutions} />
+            <FeaturesList
+              features={shoppingCartSolutions}
+              iconAlign="horizontal"
+            />
             <TypographyMuted>
               We leverage top shopping cart software solutions, like ZenCart,
               OpenCart, and Weebly, and integrate them into your current
@@ -246,9 +210,7 @@ export default function Retail() {
         </div>
 
         {/* CTA Button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">GET SHOPPING CARD SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET SHOPPING CARD SOLUTIONS</Button>
       </PageLayout>
 
       {/* === Mobile Retail Software Section === */}
@@ -268,22 +230,23 @@ export default function Retail() {
                 distributors, and retail companies, mobilizing enterprises with
                 advanced automation & streamlined approaches.
               </TypographyMuted>
-              <FeaturesList fadeUp={fadeUp} features={mobileRetailSolutions} />
+              <FeaturesList
+                iconAlign="horizontal"
+                features={mobileRetailSolutions}
+              />
             </div>
             <FadeInWhenVisible delay={0.5} className="sm:block hidden">
               <img
                 loading="lazy"
                 src="/assets/industries/retail/e-commerce-automation.png"
                 alt="Portfolio"
-                className="w-48 mx-auto"
+                className="w-52 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
 
           {/* CTA Button */}
-          <FadeInWhenVisible>
-            <Button variant="hover">GET MOBILE RETAIL SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET MOBILE RETAIL SOLUTIONS</Button>
         </PageLayout>
       </section>
 

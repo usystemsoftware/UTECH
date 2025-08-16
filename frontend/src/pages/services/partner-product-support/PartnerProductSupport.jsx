@@ -1,6 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+import { fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
 import { Button } from "@/components/ui/button";
 import { Headline } from "@/custom/Typography";

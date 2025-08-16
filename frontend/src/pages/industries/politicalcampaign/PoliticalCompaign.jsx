@@ -1,9 +1,9 @@
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import FaqSection from "@/custom/FaqSection";
 import {
   Headline,
@@ -38,13 +38,13 @@ const PoliticalCompaign = () => {
           title="Hire Experienced and Dedicated Campaign Management Systems Developers"
           description="U Tech caters to the technical needs of the political industry by delivering world-class political campaign software with integrated features for mobile voter outreach, online donation management, voter database systems, and more to improve political marketing efforts and help win more elections.."
         />
-        <FeaturesGrid
+        <FeaturesGridnew
           leftFeatures={politicalSoftwareLeftFeatures}
           rightFeatures={politicalSoftwareRightFeatures}
           centerImage="/assets/industries/political-campaign/combo.png"
-          fadeUp={fadeUp}
-          iconSize={48}
+          iconGap="md:gap-48"
         />
+
       </PageLayout>
 
       {/* Section: AI Solutions for Political Campaigns */}
@@ -53,11 +53,13 @@ const PoliticalCompaign = () => {
           title="AI Solutions for Political Campaigns"
           description="Our custom AI solutions empower political campaigns with predictive modeling, chatbots, virtual assistants, fundraising optimization, and more to enhance political marketing efforts for electoral success. Discover the transformative power of AI for political campaigning."
         />
-        <FeaturesList features={gamingPoliticalCompaign} grid3 />
+        <FeaturesList
+          features={gamingPoliticalCompaign}
+          grid3
+          center
+        />
 
-        <FadeInWhenVisible>
-          <Button variant="hover">SPEAK TO MARKETING EXPERTS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">SPEAK TO MARKETING EXPERTS</Button>
       </PageLayout>
 
       {/* Section: Marketing Automation System */}
@@ -67,19 +69,20 @@ const PoliticalCompaign = () => {
           description="U Tech’s marketing automation system solutions enable political campaign managers, PACs, advocacy & government affairs teams, grassroots organizations, and political fundraising managers to automate their interactions with voters and political donors through multiple digital channels."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-          <FeaturesList features={featTerminalPolitical} fadeUp={fadeUp} />
+          <FeaturesList
+            features={featTerminalPolitical}
+            iconAlign="horizontal"
+          />
           <FadeInWhenVisible>
             <img
               loading="lazy"
               src="/assets/industries/political-campaign/automation.png"
               alt="Payment Planning Dashboard"
-              className="w-130 mx-auto hidden sm:block"
+              className="w-135 mx-auto hidden sm:block"
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET MARKETING AUTOMATION SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET MARKETING AUTOMATION SOLUTIONS</Button>
       </PageLayout>
 
       {/* Section: Event & Resource Management Software */}
@@ -91,7 +94,7 @@ const PoliticalCompaign = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-4">
           <FeaturesList
             features={PoliticalManagement.slice(0, 2)}
-            fadeUp={fadeUp}
+            center
           />
           <FadeInWhenVisible className="md:block hidden">
             <img
@@ -103,12 +106,10 @@ const PoliticalCompaign = () => {
           </FadeInWhenVisible>
           <FeaturesList
             features={PoliticalManagement.slice(2, 4)}
-            fadeUp={fadeUp}
+            center
           />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET EVENT & RESOURCE MGMT SOFTWARE</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET EVENT & RESOURCE MGMT SOFTWARE</Button>
       </PageLayout>
 
       {/* Section: Campaigns Management & Analysis System */}
@@ -120,7 +121,7 @@ const PoliticalCompaign = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-4">
           <FeaturesList
             features={PoliticalManagementCampaign.slice(0, 2)}
-            fadeUp={fadeUp}
+            center
           />
           <FadeInWhenVisible className="md:block hidden">
             <img
@@ -132,12 +133,10 @@ const PoliticalCompaign = () => {
           </FadeInWhenVisible>
           <FeaturesList
             features={PoliticalManagementCampaign.slice(2, 4)}
-            fadeUp={fadeUp}
+            center
           />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">VIEW YOUR CAMPAIGN ANALYTICS NOW</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">VIEW YOUR CAMPAIGN ANALYTICS NOW</Button>
       </PageLayout>
 
       {/* Section: Demographic Data Management Software */}
@@ -147,19 +146,20 @@ const PoliticalCompaign = () => {
           description="U Tech’s custom demographic data software is built with tools that enable campaigners to access the most up-to-date national voter list data, mover list data, and national donor list data, all corresponding with demographic info for more accurate targeting.."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-          <FeaturesList features={politicalExtraFeatures} fadeUp={fadeUp} />
+          <FeaturesList
+            features={politicalExtraFeatures}
+            iconAlign="horizontal"
+          />
           <FadeInWhenVisible delay={0.5}>
             <img
               loading="lazy"
               src="/assets/industries/political-campaign/automation.png"
               alt="Portfolio"
-              className="w-135 mx-auto"
+              className="w-145 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET DEMOGRAPHIC INSIGHTS NOW</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET DEMOGRAPHIC INSIGHTS NOW</Button>
       </PageLayout>
 
       {/* FAQ Section at the bottom */}

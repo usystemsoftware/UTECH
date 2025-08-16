@@ -1,9 +1,10 @@
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
-import { FeaturesList } from "@/components/FeaturesList";
+import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
+import VideoPoster from "@/custom/VideoPoster";
 import FaqSection from "@/custom/FaqSection";
 import { Headline } from "@/custom/Typography";
 import {
@@ -20,6 +21,8 @@ import {
   pharmacyFeaturesChain,
   aiDrivenCorrectionalSupplyChain,
   faqs,
+  features,
+  trackingSolutions,
 } from "./Data";
 
 const SupplyChain = () => {
@@ -38,14 +41,22 @@ const SupplyChain = () => {
       {/* Features grid for general SCM solutions */}
       <PageLayout className="text-center py-10">
         <Headline title="Supply Chain Software Development" />
-        <FeaturesGrid
+
+        <FeaturesGridnew
           leftFeatures={SupplyChainSoftwareLeftFeatures}
           rightFeatures={SupplyChainSoftwarerightFeatures}
           centerImage="/assets/industries/supplychain/supplychain.png"
-          fadeUp={fadeUp}
-          iconSize={52}
+          iconGap="md:gap-16"
         />
+
       </PageLayout>
+
+      <section className="relative w-full overflow-hidden">
+        <VideoPoster
+          features={features}
+          title="The Supply Chain Industry Is Changing! Must-Know New Tech"
+        />
+      </section>
 
       {/* SCM software core functions section */}
       <section className="bg-secondary py-4">
@@ -57,20 +68,18 @@ const SupplyChain = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             <FeaturesList
               features={SupplyTransformationFeatures}
-              fadeUp={fadeUp}
+              iconAlign="horizontal"
             />
             <FadeInWhenVisible className='hidden sm:block'>
               <img
                 loading="lazy"
                 src="/assets/industries/supplychain/distribution.gif"
                 alt="Financial Planning Dashboard"
-                className="w-135 mx-auto"
+                className="w-145 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">Get SCM Solutions</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">Get SCM Solutions</Button>
         </PageLayout>
       </section>
 
@@ -81,11 +90,13 @@ const SupplyChain = () => {
           description="U Tech’s AI experts can create custom software solutions that leverage AI in supply chain and logistics..."
         />
 
-        <FeaturesList features={gamingSupplyChain} grid3 />
+        <FeaturesList
+          features={gamingSupplyChain}
+          grid3
+          center
+        />
 
-        <FadeInWhenVisible>
-          <Button variant="hover">GET AI ENABLED SCM SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET AI ENABLED SCM SOLUTIONS</Button>
       </PageLayout>
 
       {/* Inventory management software solutions */}
@@ -101,14 +112,15 @@ const SupplyChain = () => {
                 loading="lazy"
                 src="/assets/industries/supplychain/weighbridg.png"
                 alt="Financial Planning Dashboard"
-                className="w-135 mx-auto"
+                className="w-145 mx-auto"
               />
             </FadeInWhenVisible>
-            <FeaturesList features={SupplyTransformations} fadeUp={fadeUp} />
+            <FeaturesList
+              features={SupplyTransformations}
+              iconAlign="horizontal"
+            />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">Manage Inventory Now</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">Manage Inventory Now</Button>
         </PageLayout>
       </section>
 
@@ -119,19 +131,20 @@ const SupplyChain = () => {
           description="We deliver AI-driven shipping & logistics software solutions..."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-          <FeaturesList features={SupplyTransfoods} fadeUp={fadeUp} />
+          <FeaturesList
+            features={SupplyTransfoods}
+            iconAlign="horizontal"
+          />
           <FadeInWhenVisible className='hidden sm:block'>
             <img
               loading="lazy"
               src="/assets/industries/supplychain/food.png"
               alt="Financial Planning Dashboard"
-              className="w-135 mx-auto"
+              className="w-145 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">Get Shipping Solutions</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Get Shipping Solutions</Button>
       </PageLayout>
 
       {/* Mile delivery solutions section */}
@@ -142,13 +155,15 @@ const SupplyChain = () => {
             description="U Tech is at the forefront of AI-driven smart construction solutions..."
           />
           <div className="grid grid-row-1 sm:grid-row-3 gap-4">
-            <FeaturesList features={gamingSupplychain} grid3 />
+            <FeaturesList
+              features={gamingSupplychain}
+              grid3
+              center
+            />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">
-              Get AI Powered Construction Solutions
-            </Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">
+            Get AI Powered Construction Solutions
+          </Button>
         </PageLayout>
       </section>
 
@@ -167,11 +182,12 @@ const SupplyChain = () => {
               className="w-135 mx-auto hidden sm:block"
             />
           </FadeInWhenVisible>
-          <FeaturesList features={SupplyTransTracking} fadeUp={fadeUp} />
+          <FeaturesList
+            features={trackingSolutions}
+            iconAlign="horizontal"
+          />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">Track SCM Assets Now</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Track SCM Assets Now</Button>
       </PageLayout>
 
       {/* EDI software solutions */}
@@ -182,19 +198,20 @@ const SupplyChain = () => {
             description="Our engineers provide custom EDI platform integrations..."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FeaturesList features={SupplyTransTracking} fadeUp={fadeUp} />
+            <FeaturesList
+              features={SupplyTransTracking}
+              iconAlign="horizontal"
+            />
             <FadeInWhenVisible className="hidden sm:block">
               <img
                 loading="lazy"
                 src="/assets/industries/supplychain/interchange.png"
                 alt="Financial Planning Dashboard"
-                className="w-110 mx-auto"
+                className="md:w-115 w-84 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">Track SCM Assets Now</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">Track SCM Assets Now</Button>
         </PageLayout>
       </section>
 
@@ -210,14 +227,15 @@ const SupplyChain = () => {
               loading="lazy"
               src="/assets/industries/supplychain/planning.png"
               alt="supplyChain Planning Dashboard"
-              className="w-110 mx-auto hidden sm:block"
+              className="md:w-115 w-84 mx-auto hidden sm:block"
             />
           </FadeInWhenVisible>
-          <FeaturesList features={SupplyTransTrackingdata} fadeUp={fadeUp} />
+          <FeaturesList
+            features={SupplyTransTrackingdata}
+            iconAlign="horizontal"
+          />
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">Track SCM Assets Now</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Track SCM Assets Now</Button>
       </PageLayout>
 
       {/* SCM mobile/web application development */}
@@ -228,19 +246,20 @@ const SupplyChain = () => {
             description="We develop advanced, feature-rich supply chain management web & mobile apps..."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-            <FeaturesList features={SupplyChainTransTracking} fadeUp={fadeUp} />
+            <FeaturesList
+              features={SupplyChainTransTracking}
+              iconAlign="horizontal"
+            />
             <FadeInWhenVisible className='hidden sm:block'>
               <img
                 loading="lazy"
                 src="/assets/industries/supplychain/data.png"
                 alt="supplyChain Planning Dashboard"
-                className="w-135 mx-auto"
+                className="w-145 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">Get An SCM App</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">Get An SCM App</Button>
         </PageLayout>
       </section>
 
@@ -252,12 +271,12 @@ const SupplyChain = () => {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-8">
           <FeaturesList
-            fadeUp={fadeUp}
+            center
             features={pharmacyFeaturesChain}
             grid
           />
 
-          <FadeInWhenVisible delay={0.5}>
+          <FadeInWhenVisible delay={0.5} className="md:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/supplychain/mobile.gif"
@@ -266,9 +285,7 @@ const SupplyChain = () => {
             />
           </FadeInWhenVisible>
         </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">Get SCM Solutions</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">Get SCM Solutions</Button>
       </PageLayout>
 
       {/* SCM software support services */}
@@ -278,10 +295,8 @@ const SupplyChain = () => {
             title="Supply Chain Management Software Support"
             description="U Tech’s supply chain management software experts are committed to..."
           />
-          <FeaturesList
+          <FeaturesListOpposite
             features={aiDrivenCorrectionalSupplyChain}
-            fadeUp={fadeUp}
-            grid
           />
         </PageLayout>
       </section>
