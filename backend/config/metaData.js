@@ -1,4 +1,21 @@
 export const metaData = {
+
+    "/": {
+        "slug": "/",
+        "title": "Software Engineering | U Technology",
+        "description":
+            "We provide expert software engineering, IoT Product Development and IT Consultancy services.",
+        "keywords": [
+            "software",
+            "IoT",
+            "product engineering",
+            "consultancy"
+        ],
+        "image": "https://usystem.software/thumbnil.png",
+        "url": "https://usystem.software",
+        "category": "Homepage",
+        "published": "August 2025"
+    },
     "contact": {
         "slug": "contact",
         "title": "Contact Us | U Tech",
