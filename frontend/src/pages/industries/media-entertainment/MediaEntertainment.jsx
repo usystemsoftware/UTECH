@@ -1,8 +1,8 @@
-// === Component Imports ===
-import { FeaturesList } from "@/components/FeaturesList";
+import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import HeroSection from "@/components/HeroSection";
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import PageLayout from "@/custom/PageLayout";
+import VideoPoster from "@/custom/VideoPoster";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
 import FaqSection from "@/custom/FaqSection";
@@ -16,6 +16,8 @@ import {
   digitalServices,
   drmSolutions,
   faqs,
+  features,
+  filmVideoSolutions,
   mediaSolutions,
   musicSolutions,
   photographySolutions,
@@ -46,14 +48,19 @@ export default function MediaEntertainment() {
           title="Custom Media and Entertainment Software Services"
           description="We are a media and entertainment software development company that specializes in creating innovative software for the entertainment industry. Click below to learn more about our media & entertainment software solutions."
         />
-        <FeaturesGrid
-          leftFeatures={digitalServices.slice(0, 3)}
-          rightFeatures={digitalServices.slice(3, 6)}
+        <FeaturesGridnew
+          leftFeatures={digitalServices.slice(0, 4)}
+          rightFeatures={digitalServices.slice(4, 8)}
           centerImage="/assets/industries/media-entertainment/desktop-conbo-banner-media.png"
-          fadeUp={fadeUp}
-          iconSize={38}
         />
       </PageLayout>
+
+      <section className="relative w-full overflow-hidden">
+        <VideoPoster
+          features={features}
+          title="Transforming Marketing and Publishing: Here’s What's New in Tech is"
+        />
+      </section>
 
       {/* === Streaming Solutions Section === */}
       <PageLayout className="py-16 space-y-10 text-center">
@@ -82,7 +89,10 @@ export default function MediaEntertainment() {
               multi-camera operations and web streaming support to deliver
               high-quality streaming for any audience.
             </TypographyMuted>
-            <FeaturesList fadeUp={fadeUp} features={streamingSolutions} />
+            <FeaturesList
+              features={streamingSolutions}
+              iconAlign="horizontal"
+            />
             <TypographyMuted>
               Our custom live video streaming solutions compare closely to
               industry-leading tools, including:
@@ -109,9 +119,7 @@ export default function MediaEntertainment() {
         </div>
 
         {/* CTA Button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">GET LIVE STREAMING SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET LIVE STREAMING SOLUTIONS</Button>
       </PageLayout>
 
       {/* === Video Production Section === */}
@@ -132,7 +140,10 @@ export default function MediaEntertainment() {
                 enables filmmakers to produce stunning videos with the highest
                 degree of precision and control.
               </TypographyMuted>
-              <FeaturesList fadeUp={fadeUp} features={streamingSolutions} />
+              <FeaturesList
+                features={filmVideoSolutions}
+                iconAlign="horizontal"
+              />
               <TypographyMuted>
                 Our custom video production solutions compare closely to
                 industry-leading tools, including:
@@ -165,9 +176,7 @@ export default function MediaEntertainment() {
           </div>
 
           {/* CTA Button */}
-          <FadeInWhenVisible>
-            <Button variant="hover">GET VIDEO PRODUCTION SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET VIDEO PRODUCTION SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -178,14 +187,12 @@ export default function MediaEntertainment() {
           description="We specialize in custom media software, interactive media, VR and AR applications, and animation tools tailored for entertainment industry needs."
         />
 
-        <FeaturesList fadeUp={fadeUp} features={mediaSolutions} grid />
+        <FeaturesListOpposite features={mediaSolutions} grid />
 
         {/* CTA Button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">
-            GET STAERTED WITH CUSTOM MEDIA SOLUTIONS
-          </Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">
+          GET STAERTED WITH CUSTOM MEDIA SOLUTIONS
+        </Button>
       </PageLayout>
 
       {/* === Music Software Development Section === */}
@@ -200,7 +207,7 @@ export default function MediaEntertainment() {
             {/* Left and Right Feature Columns */}
             <FeaturesList
               features={musicSolutions.slice(0, 2)}
-              fadeUp={fadeUp}
+              center
             />
             <FadeInWhenVisible className="md:block hidden">
               <img
@@ -212,14 +219,12 @@ export default function MediaEntertainment() {
             </FadeInWhenVisible>
             <FeaturesList
               features={musicSolutions.slice(2, 4)}
-              fadeUp={fadeUp}
+              center
             />
           </div>
 
           {/* CTA Button */}
-          <FadeInWhenVisible>
-            <Button variant="hover">HIRE MUSIC SOFTWARE DEVELOPER</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">HIRE MUSIC SOFTWARE DEVELOPER</Button>
         </PageLayout>
       </section>
 
@@ -230,20 +235,12 @@ export default function MediaEntertainment() {
           description="We develop custom digital publishing software solutions, including content management systems (CMS), social media tools, DRM software, and more."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <FeaturesList
-            features={publishingSolutions.slice(0, 3)}
-            fadeUp={fadeUp}
-          />
-          <FeaturesList
-            features={publishingSolutions.slice(3, 6)}
-            fadeUp={fadeUp}
-          />
-        </div>
+        <FeaturesListOpposite
+          features={publishingSolutions}
+          grid
+        />
 
-        <FadeInWhenVisible>
-          <Button variant="hover">GET DIGITAL PUBLISHING SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET DIGITAL PUBLISHING SOLUTIONS</Button>
 
         {/* Center Image */}
         <FadeInWhenVisible className="md:block hidden">
@@ -283,7 +280,10 @@ export default function MediaEntertainment() {
                 tools to help you organize, optimize, and edit all your digital
                 photos in one centralized platform.
               </TypographyMuted>
-              <FeaturesList fadeUp={fadeUp} features={photographySolutions} />
+              <FeaturesList
+                features={photographySolutions}
+                iconAlign="horizontal"
+              />
               <TypographyMuted>
                 Our custom photography software compare closely to
                 industry-leading tools, including:
@@ -306,9 +306,7 @@ export default function MediaEntertainment() {
           </div>
 
           {/* CTA Button */}
-          <FadeInWhenVisible>
-            <Button variant="hover">GET PHOTOGRAPHY SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET PHOTOGRAPHY SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -318,13 +316,15 @@ export default function MediaEntertainment() {
           title="Enhance Media & Entertainment with Cutting-Edge AI Solutions"
           description="U Tech’s extensive industry experience allows us to deliver cutting-edge AI solutions that enable businesses to enhance content creation, personalization, audience engagement, and operational efficiency, transforming the media and entertainment landscape."
         />
-        <FeaturesList features={aiMediaSolutions} fadeUp={fadeUp} grid />
+        <FeaturesList
+          features={aiMediaSolutions}
+          grid
+          center
+        />
 
-        <FadeInWhenVisible>
-          <Button variant="hover">
-            GET AI-POWERED MEDIA & ENTERTAINMENT SOLUTIONS
-          </Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">
+          GET AI-POWERED MEDIA & ENTERTAINMENT SOLUTIONS
+        </Button>
       </PageLayout>
 
       {/* === Digital Asset Management (DAM) Section === */}
@@ -335,7 +335,7 @@ export default function MediaEntertainment() {
             description="We design digital asset management (DAM) systems to specifically address the needs of the entertainment industry."
           />
           <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-8">
-            <FeaturesList features={damSolutions.slice(0, 2)} fadeUp={fadeUp} />
+            <FeaturesList features={damSolutions.slice(0, 2)} center />
             <FadeInWhenVisible className="hidden md:block">
               <img
                 loading="lazy"
@@ -344,11 +344,9 @@ export default function MediaEntertainment() {
                 className="sm:w-135 mx-auto w-96"
               />
             </FadeInWhenVisible>
-            <FeaturesList features={damSolutions.slice(2, 4)} fadeUp={fadeUp} />
+            <FeaturesList features={damSolutions.slice(2, 4)} center />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">GET DAM SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET DAM SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -362,7 +360,7 @@ export default function MediaEntertainment() {
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
           {/* Left: DRM Features */}
           <div className="text-start space-y-6">
-            <FeaturesList fadeUp={fadeUp} features={drmSolutions} />
+            <FeaturesList features={drmSolutions} iconAlign="horizontal" />
             <TypographyMuted>
               Our custom DRM solutions compare closely to industry-leading
               tools, including:
@@ -396,9 +394,7 @@ export default function MediaEntertainment() {
           </FadeInWhenVisible>
         </div>
 
-        <FadeInWhenVisible>
-          <Button variant="hover">GET DRM SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET DRM SOLUTIONS</Button>
       </PageLayout>
 
       {/* === FAQ Section === */}

@@ -1,6 +1,7 @@
-import { FeaturesList } from "@/components/FeaturesList";
+import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
+import ImageNearScreen from "@/custom/ImageNearScreen";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
 import { TypographyMuted, Headline, TypographyH5 } from "@/custom/Typography";
@@ -36,7 +37,7 @@ export default function Correction() {
           description="We develop custom Jail Management Software that provides a comprehensive set of capabilities to manage the entire jail management lifecycle from booking to release."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           {/* Features List */}
           <div className="text-start">
             <TypographyH5>Jail Management System Development</TypographyH5>
@@ -46,11 +47,14 @@ export default function Correction() {
               features within your existing solution to streamline workflows and
               optimize jailhouse operations.
             </TypographyMuted>
-            <FeaturesList fadeUp={fadeUp} features={jailManagementSolutions} grid />
+            <FeaturesList
+              features={jailManagementSolutions}
+              iconAlign="horizontal"
+            />
           </div>
 
           {/* Left Image */}
-          <FadeInWhenVisible delay={0.5} className="md:block hidden">
+          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/correction/jail-mgmt-systems.png"
@@ -60,9 +64,9 @@ export default function Correction() {
           </FadeInWhenVisible>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
           {/* Left Image */}
-          <FadeInWhenVisible delay={0.5} className="md:block hidden">
+          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
             <img
               loading="lazy"
               src="/assets/industries/correction/workflow-mgmt.png"
@@ -81,72 +85,49 @@ export default function Correction() {
               one centralized platform.
             </TypographyMuted>
             <FeaturesList
-              fadeUp={fadeUp}
               features={facilityOperationsSolutions}
-              grid
+              iconAlign="horizontal"
             />
           </div>
         </div>
 
         {/* CTA Button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">OPTIMIZE JAIL OPERATIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">OPTIMIZE JAIL OPERATIONS</Button>
       </PageLayout>
 
       <section className="bg-secondary pt-10 space-y-6">
         <PageLayout>
-          <div className="grid grid-cols-1 sm:grid-cols-2">
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={correctionalAdminSolutions.slice(0, 2)}
-            />
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={correctionalAdminSolutions.slice(2, 4)}
-            />
-          </div>
-        </PageLayout>
-        <FadeInWhenVisible delay={0.5}>
-          <img
-            loading="lazy"
-            src="/assets/industries/correction/logistics-software-developers.png"
-            alt="Portfolio"
-            className="w-[60%] mx-auto"
+          <FeaturesList
+            features={correctionalAdminSolutions}
+            grid
+            center
           />
-        </FadeInWhenVisible>
+          <FadeInWhenVisible delay={0.5}>
+            <img
+              loading="lazy"
+              src="/assets/industries/correction/logistics-software-developers.png"
+              alt="Portfolio"
+              className="w-[60%] mx-auto"
+            />
+          </FadeInWhenVisible>
+        </PageLayout>
       </section>
 
-      <PageLayout className="py-16 space-y-8 text-center">
+      <section className="py-16 space-y-8 text-center">
         <Headline
           title="Commissary & Visitation Management Solutions"
           description="We build robust Commissary Management & Visitation Management Solutions with a suite of tools designed for streamlining correctional facility operations."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/healthcare/laptop.png"
-              alt="Portfolio"
-              className="w-145 mx-auto"
-            />
-          </FadeInWhenVisible>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={inmateServicesSolutions.slice(0, 2)}
-            />
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={inmateServicesSolutions.slice(2, 4)}
-            />
-          </div>
-        </div>
-        <FadeInWhenVisible>
-          <Button variant="hover">GET STARTED</Button>
-        </FadeInWhenVisible>
-      </PageLayout>
+        <ImageNearScreen
+          features={inmateServicesSolutions}
+          src="/assets/industries/construction/building-information-modeling-solutions-cut.png"
+          imageAlign="left"
+          imgClass="w-145"
+        />
+
+        <Button variant="hover">GET STARTED</Button>
+      </section>
 
       <section className="bg-secondary py-16">
         <PageLayout className="space-y-10">
@@ -155,105 +136,69 @@ export default function Correction() {
             description="Our AI algorithms for correctional management software assist in effective operation and resource management. Our Artificial intelligence algorithms contribute to robust security measures through real-time surveillance and risk assessment."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={aiDrivenCorrectionalSolutions.slice(0, 2)}
-            />
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={aiDrivenCorrectionalSolutions.slice(2, 4)}
-            />
-          </div>
+          <FeaturesListOpposite
+            features={aiDrivenCorrectionalSolutions}
+          />
+
         </PageLayout>
       </section>
 
-      <PageLayout className="py-16 space-y-8 text-center">
+      <section className="py-16 space-y-8 text-center">
         <Headline
           title="Correctional Medical Management Solutions"
           description="We develop and integrate Inmate EMR, EHR, EMAR, and other medical data into existing Jail Management Solutions for optimized interoperability and flexibility."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={inmateHealthcareSolutions.slice(0, 2)}
-            />
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={inmateHealthcareSolutions.slice(2, 4)}
-            />
-          </div>
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/healthcare/laptop.png"
-              alt="Portfolio"
-              className="w-145 mx-auto"
-            />
-          </FadeInWhenVisible>
-        </div>
-      </PageLayout>
+        <ImageNearScreen
+          features={inmateHealthcareSolutions}
+          src="/assets/industries/correction/task-laptop.png"
+          imageAlign="right"
+          imgClass="w-115"
+        />
+      </section>
 
       <section className="py-12 bg-secondary">
-        <PageLayout className="space-y-8 text-center">
+        <PageLayout className="space-y-10 text-center">
           <Headline
             title="Inmate Tracking & Security Software Solutions"
             description="Our custom Inmate Tracking & Security Software Solutions allow correctional facilities to track all inmate movements and measure employee performances in real-time."
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
             {/* Left Features List */}
             <FeaturesList
               features={inmateManagementSolutions.slice(0, 2)}
-              fadeUp={fadeUp}
+              center
             />
 
             {/* Center Animation */}
-            <FadeInWhenVisible className="md:block hidden">
+            <FadeInWhenVisible className="sm:block hidden">
               <img
                 loading="lazy"
                 src="/assets/industries/correction/immate-tracking-mobile.png"
                 alt="Mobile Analytics App"
-                className="w-52 mx-auto"
+                className="md:w-52 w-46 mx-auto"
               />
             </FadeInWhenVisible>
 
             {/* Right Features List */}
             <FeaturesList
               features={inmateManagementSolutions.slice(2, 4)}
-              fadeUp={fadeUp}
+              center
             />
           </div>
-          <FadeInWhenVisible>
-            <Button variant="hover">UPGRADE TRACKING SYSTEMS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">UPGRADE TRACKING SYSTEMS</Button>
         </PageLayout>
       </section>
 
-      <PageLayout className="py-8 space-y-8 text-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={jailSecuritySolutions.slice(0, 2)}
-            />
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={jailSecuritySolutions.slice(2, 4)}
-            />
-          </div>
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/correction/istockphoto-1334591614-612x612.webp"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
-        </div>
-      </PageLayout>
+      <section className="py-8 space-y-8 text-center">
+        <ImageNearScreen
+          features={jailSecuritySolutions}
+          src="/assets/industries/correction/jail-security-solutions.png"
+          imageAlign="right"
+          imgClass="w-120"
+        />
+      </section>
 
       <section className="py-12 bg-secondary">
         <PageLayout className="py-8 space-y-8 text-center">
@@ -267,20 +212,17 @@ export default function Correction() {
                 loading="lazy"
                 src="/assets/industries/correction/jail-management-solutions-laptop.png"
                 alt="Mobile Analytics App"
-                className="w-110 mx-auto"
+                className="md:w-110 w-96 mx-auto"
               />
             </FadeInWhenVisible>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <FeaturesList
-                fadeUp={fadeUp}
-                features={inmateReleaseSolutions.slice(0, 2)}
-              />
-              <FeaturesList
-                fadeUp={fadeUp}
-                features={inmateReleaseSolutions.slice(2, 4)}
-              />
-            </div>
+            <FeaturesList
+              features={inmateReleaseSolutions}
+              grid
+              center
+            />
           </div>
+
+          <Button variant="hover">GET INMATE REENTRY SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -301,8 +243,8 @@ export default function Correction() {
               security rounds & headcount performance.
             </TypographyMuted>
             <FeaturesList
-              fadeUp={fadeUp}
               features={correctionalHrSecuritySolutions}
+              iconAlign="horizontal"
             />
           </div>
 
@@ -312,14 +254,12 @@ export default function Correction() {
               loading="lazy"
               src="/assets/industries/correction/hrms-solutions.png"
               alt="Portfolio"
-              className="w-64 mx-auto"
+              className="md:w-64 w-52 mx-auto"
             />
           </FadeInWhenVisible>
         </div>
         {/* CTA Button */}
-        <FadeInWhenVisible>
-          <Button variant="hover">GET HRMS SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET HRMS SOLUTIONS</Button>
       </PageLayout>
 
       <section className="bg-secondary py-16">

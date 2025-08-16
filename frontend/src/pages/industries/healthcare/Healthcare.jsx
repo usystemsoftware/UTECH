@@ -415,7 +415,7 @@ export default function Healthcare() {
             description="We build custom-tailored assistive technology software solutions to improve the quality of care for those with disabilities."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
             <FadeInWhenVisible delay={0.5}>
               <img
                 loading="lazy"

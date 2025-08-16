@@ -23,8 +23,7 @@ export const FeaturesGridnew = ({
                             <img
                                 src={item.icon}
                                 alt={item.label || "feature"}
-                                className="w-10 h-10 object-contain"
-                                style={{ width: iconSize, height: iconSize }}
+                                className="w-12 h-12 object-contain"
                             />
                         ) : null}
                     </span>
@@ -65,8 +64,7 @@ export const FeaturesGridnew = ({
                             <img
                                 src={item.icon}
                                 alt={item.label || "feature"}
-                                className="w-10 h-10 object-contain"
-                                style={{ width: iconSize, height: iconSize }}
+                                className="w-12 h-12 object-contain"
                             />
                         ) : null}
                     </span>

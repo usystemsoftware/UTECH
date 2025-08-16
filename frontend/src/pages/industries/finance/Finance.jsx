@@ -4,7 +4,7 @@ import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
 import { TypographyH3, TypographyMuted, Headline } from "@/custom/Typography";
 import {

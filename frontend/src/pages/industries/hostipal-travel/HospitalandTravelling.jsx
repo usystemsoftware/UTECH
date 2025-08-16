@@ -1,13 +1,16 @@
-import { FeaturesList } from "@/components/FeaturesList";
+import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
 import { Headline } from "@/custom/Typography";
+import VideoPoster from "@/custom/VideoPoster";
 
 // Importing data arrays for different service categories
 import {
+  aiHospitalitySolutions,
+  features,
   hospitalityAdditionalServices,
   hospitalityFaqs,
   hospitalityServices,
@@ -35,30 +38,21 @@ export default function HospitalandTravelling() {
           description="Our Hospitality Management System software solutions are tailored to your hospitality technology needs..."
         />
 
-        <div className="block md:hidden">
-          <FeaturesList features={hospitalityServices} fadeUp={fadeUp} grid />
-        </div>
+        <FeaturesList
+          features={hospitalityServices}
+          grid3
+          center
+        />
 
-        {/* Service features split into 3 columns */}
-        <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-          <FeaturesList
-            features={hospitalityServices.slice(0, 2)}
-            fadeUp={fadeUp}
-          />
-          <FeaturesList
-            features={hospitalityServices.slice(2, 4)}
-            fadeUp={fadeUp}
-          />
-          <FeaturesList
-            features={hospitalityServices.slice(4, 6)}
-            fadeUp={fadeUp}
-          />
-        </div>
-
-        <FadeInWhenVisible>
-          <Button variant="hover">GET HOSPITILITY MGMT SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET HOSPITILITY MGMT SOLUTIONS</Button>
       </PageLayout>
+
+      <section className="relative w-full overflow-hidden">
+        <VideoPoster
+          features={features}
+          title="The Hospitality Industry Is Changing! Must-Know New Tech"
+        />
+      </section>
 
       {/* === ADDITIONAL SERVICES SECTION === */}
       <section className="bg-secondary py-16 text-center">
@@ -68,34 +62,25 @@ export default function HospitalandTravelling() {
             description="Our team of developers unlock the full potential of property management systems..."
           />
 
-          <div className="block md:hidden">
-            <FeaturesList
-              features={hospitalityAdditionalServices}
-              fadeUp={fadeUp}
-              grid
-            />
-          </div>
+          <FeaturesList
+            features={hospitalityAdditionalServices}
+            grid3
+            center
+          />
 
-          <div className="md:grid hidden grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            <FeaturesList
-              features={hospitalityAdditionalServices.slice(0, 2)}
-              fadeUp={fadeUp}
-            />
-            <FeaturesList
-              features={hospitalityAdditionalServices.slice(2, 4)}
-              fadeUp={fadeUp}
-            />
-            <FeaturesList
-              features={hospitalityAdditionalServices.slice(4, 6)}
-              fadeUp={fadeUp}
-            />
-          </div>
-
-          <FadeInWhenVisible>
-            <Button variant="hover">GET HOSPITILITY MGMT SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET HOSPITILITY MGMT SOLUTIONS</Button>
         </PageLayout>
       </section>
+
+      <PageLayout className="space-y-16 py-16 text-center">
+        <Headline
+          title="Revolutionizing Hospitality & Travel Software with AI-Driven Solutions"
+          description="U Tech AI technology improves many operations and guest experiences in hospitality."
+        />
+
+        <FeaturesListOpposite features={aiHospitalitySolutions} grid />
+        <Button variant="hover">GET HOSPITILITY & TRAVEL SOFTWARE</Button>
+      </PageLayout>
 
       {/* === SUPPORT SERVICES SECTION === */}
       <PageLayout className="space-y-16 py-16 text-center">
@@ -104,15 +89,9 @@ export default function HospitalandTravelling() {
           description="U Tech empowers the booming hospitality industry with customized solutions..."
         />
 
-        <FeaturesList
-          features={hospitalitySupportServices}
-          fadeUp={fadeUp}
-          grid
-        />
+        <FeaturesListOpposite features={hospitalitySupportServices} grid />
 
-        <FadeInWhenVisible>
-          <Button variant="hover">GET HOSPITILITY & TRAVEL SOFTWARE</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET HOSPITILITY & TRAVEL SOFTWARE</Button>
       </PageLayout>
 
       {/* === TRAVELPORT INTEGRATION SECTION === */}
@@ -130,18 +109,16 @@ export default function HospitalandTravelling() {
                 loading="lazy"
                 src="/assets/industries/hospital-travel/flight-planning-software-solutions.png"
                 alt="Portfolio"
-                className="w-120 mx-auto"
+                className="w-145 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList
               features={travelportIntegrationServices}
-              fadeUp={fadeUp}
+              iconAlign="horizontal"
             />
           </div>
 
-          <FadeInWhenVisible>
-            <Button variant="hover">GET TRAVEL PORT SOFTWARE SOLUTIONS</Button>
-          </FadeInWhenVisible>
+          <Button variant="hover">GET TRAVEL PORT SOFTWARE SOLUTIONS</Button>
         </PageLayout>
       </section>
 
@@ -158,15 +135,16 @@ export default function HospitalandTravelling() {
               loading="lazy"
               src="/assets/industries/hospital-travel/custom-sabre-development-and-integration-solutions-new.png"
               alt="Portfolio"
-              className="w-56 mx-auto"
+              className="w-62 mx-auto"
             />
           </FadeInWhenVisible>
-          <FeaturesList features={sabreSoftwareSolutions} fadeUp={fadeUp} />
+          <FeaturesList
+            features={sabreSoftwareSolutions}
+            iconAlign="horizontal"
+          />
         </div>
 
-        <FadeInWhenVisible>
-          <Button variant="hover">GET SABRE SOFTWARE SOLUTIONS</Button>
-        </FadeInWhenVisible>
+        <Button variant="hover">GET SABRE SOFTWARE SOLUTIONS</Button>
       </PageLayout>
 
       {/* === FAQ SECTION === */}

@@ -93,7 +93,7 @@ export const FeaturesList = ({
 
 export const FeaturesListOpposite = ({ features }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
       {features.map(({ icon, iconSize, title, description }, index) => {
         const isRightColumn = index % 2 !== 0; // Odd index → right column
         return (
