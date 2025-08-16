@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
+import { FaFacebook, FaTwitter, FaLinkedin, FaPinterest, FaWhatsapp, FaEnvelope, FaLink } from "react-icons/fa";
+import { PiShareNetworkThin } from "react-icons/pi";
 
-const ShareButtons = ({ slug }) => {
-    const shareUrl = `http://localhost:5002/share/${slug}`;
+const ShareButtons = () => {
+    const location = useLocation();
+    const [open, setOpen] = useState(false);
+
+    const pathname = location.pathname;
+    const slug = pathname.split("/").filter(Boolean).pop();
+    const shareUrl = `http://staging.usystem.software/share/${slug}`; // backend url
 
     const isMobile = () => /Mobi|Android|iPhone/i.test(navigator.userAgent);
 
     const handleNativeShare = async () => {
         try {
             await navigator.share({
-                title: "Check this out!",
-                text: "I thought you might find this interesting.",
+                title: "Explore IT Solutions with U Tech",
+                text: "Discover innovative IT services and solutions designed to help your business grow. Check out U Tech today!",
                 url: shareUrl,
             });
         } catch (err) {
@@ -18,75 +26,110 @@ const ShareButtons = ({ slug }) => {
     };
 
     return (
-        <div
-            style={{
-                position: "fixed",
-                bottom: "20px",
-                right: "20px",
-                zIndex: 9999,
-            }}
-        >
+        <div className="absolute bottom-5 right-5 z-30">
             {navigator.share && isMobile() ? (
-                // Mobile: Single native share button
+                // Mobile: Native share API
                 <button
                     onClick={handleNativeShare}
-                    style={{
-                        background: "#007bff",
-                        color: "white",
-                        border: "none",
-                        padding: "10px 15px",
-                        borderRadius: "6px",
-                        cursor: "pointer",
-                    }}
+                    className="bg-blue-500 text-white p-3 rounded-full cursor-pointer shadow-md"
                 >
-                    📱 Share
+                    <PiShareNetworkThin />
                 </button>
             ) : (
-                // Desktop: Show social media buttons
-                <div style={{ display: "flex", gap: "10px" }}>
-                    {/* Facebook */}
-                    <a
-                        href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-                            shareUrl
-                        )}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                // Desktop: Toggle button + dropdown list
+                <div className="relative">
+                    {/* Main Share Button */}
+                    <button
+                        onClick={() => setOpen(!open)}
+                        className="bg-blue-500 text-white p-3 rounded-full cursor-pointer shadow-md"
                     >
-                        <img src="/icons/facebook.svg" alt="Facebook" width={32} />
-                    </a>
+                        <PiShareNetworkThin />
+                    </button>
 
-                    {/* LinkedIn */}
-                    <a
-                        href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-                            shareUrl
-                        )}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img src="/icons/linkedin.svg" alt="LinkedIn" width={32} />
-                    </a>
+                    {/* Dropdown with share options */}
+                    {open && (
+                        <div className="absolute bottom-12 right-0 bg-white border border-gray-200 rounded-lg shadow-lg p-3 flex flex-col gap-3 min-w-[160px]">
+                            {/* Email */}
+                            {/* <a
+                                href={`mailto:?subject=Check this out!&body=${shareUrl}`}
+                                className="flex items-center gap-2 text-sm text-gray-700 hover:text-blue-600"
+                            >
+                                <FaEnvelope /> Email
+                            </a> */}
 
-                    {/* Twitter */}
-                    <a
-                        href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
-                            shareUrl
-                        )}&text=${encodeURIComponent("Check this out!")}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img src="/icons/twitter.svg" alt="Twitter" width={32} />
-                    </a>
+                            {/* LinkedIn */}
+                            <a
+                                href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
+                                    shareUrl
+                                )}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-sm text-gray-700 hover:text-blue-600"
+                            >
+                                <FaLinkedin /> LinkedIn
+                            </a>
 
-                    {/* WhatsApp */}
-                    <a
-                        href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
-                            "Check this out! " + shareUrl
-                        )}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img src="/icons/whatsapp.svg" alt="WhatsApp" width={32} />
-                    </a>
+                            {/* Facebook */}
+                            <a
+                                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                                    shareUrl
+                                )}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-sm text-gray-700 hover:text-blue-600"
+                            >
+                                <FaFacebook /> Facebook
+                            </a>
+
+                            {/* Twitter / X */}
+                            {/* <a
+                                href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
+                                    shareUrl
+                                )}&text=${encodeURIComponent("Check this out!")}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-sm text-gray-700 hover:text-blue-600"
+                            >
+                                <FaTwitter /> X
+                            </a> */}
+
+                            {/* Pinterest */}
+                            <a
+                                href={`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(
+                                    shareUrl
+                                )}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-sm text-gray-700 hover:text-blue-600"
+                            >
+                                <FaPinterest /> Pinterest
+                            </a>
+
+                            {/* WhatsApp */}
+                            <a
+                                href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
+                                    "Check this out! " + shareUrl
+                                )}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 text-sm text-gray-700 hover:text-green-600"
+                            >
+                                <FaWhatsapp /> WhatsApp
+                            </a>
+
+                            {/* Copy Link */}
+                            <button
+                                onClick={() => {
+                                    navigator.clipboard.writeText(shareUrl);
+                                    // alert("Link copied!");
+                                    setOpen(false);
+                                }}
+                                className="flex items-center gap-2 text-sm text-gray-700 hover:text-blue-600 text-left"
+                            >
+                                <FaLink /> Copy Link
+                            </button>
+                        </div>
+                    )}
                 </div>
             )}
         </div>
