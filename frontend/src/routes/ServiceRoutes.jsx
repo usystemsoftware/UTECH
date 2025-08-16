@@ -18,6 +18,7 @@ import PartnerProductSupport from "@/pages/services/partner-product-support/Part
 import StartupMvp from "@/pages/services/startup-mvp/StartupMvp";
 import SystemsIntegration from "@/pages/services/systems-integration/SystemsIntegration";
 import ProductLifecycleManagement from "@/pages/services/product-lifecycle-management/ProductLifecycleManagement";
+import SLASupport from "@/pages/services/sla-support/SLASupport";
 
 export const ServiceRoutes = [
   { path: "/services/api-development", element: <ApiDevelopment /> },
@@ -40,4 +41,5 @@ export const ServiceRoutes = [
   { path: "/services/startup-mvp", element: <StartupMvp /> },
   { path: "/services/systems-integration", element: <SystemsIntegration /> },
   { path: "/services/plm", element: <ProductLifecycleManagement /> },
+  { path: "/services/sla-support", element: <SLASupport /> },
 ]
