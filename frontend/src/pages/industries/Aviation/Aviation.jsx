@@ -33,7 +33,6 @@ export default function Aviation() {
         buttonLink="#"
         imageFit="cover"
       />
-
       <PageLayout className="text-center my-12">
         <Headline
           title="Hire Experienced and Dedicated Airline Software Developers"
