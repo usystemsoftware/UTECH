@@ -1,6 +1,6 @@
 import React from "react";
 
-const GlobalShareButton = ({ slug }) => {
+const ShareButtons = ({ slug }) => {
     const shareUrl = `https://your-backend.com/share/${slug}`;
 
     const isMobile = () => /Mobi|Android|iPhone/i.test(navigator.userAgent);
@@ -18,7 +18,14 @@ const GlobalShareButton = ({ slug }) => {
     };
 
     return (
-        <div>
+        <div
+            style={{
+                position: "fixed",
+                bottom: "20px",
+                right: "20px",
+                zIndex: 9999,
+            }}
+        >
             {navigator.share && isMobile() ? (
                 // Mobile: Single native share button
                 <button
@@ -86,4 +93,4 @@ const GlobalShareButton = ({ slug }) => {
     );
 };
 
-export default GlobalShareButton;
+export default ShareButtons;

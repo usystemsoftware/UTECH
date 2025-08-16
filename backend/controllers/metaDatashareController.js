@@ -3,10 +3,10 @@ const { metaData } = require("../config/metaData");
 
 
 exports.shareMetaData = async (req, res) => {
-    const { slug } = req.params;
-    const data = metaData[slug] || metaData["/"];
-    console.log(data)
-    const html = `
+  const { slug } = req.params;
+  const data = metaData[slug] || metaData["/"];
+  console.log(data)
+  const html = `
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -90,5 +90,5 @@ exports.shareMetaData = async (req, res) => {
     </html>
   `;
 
-    res.send(html);
+  res.send(html);
 }
