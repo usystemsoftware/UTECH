@@ -1,7 +1,7 @@
 import React from "react";
 
 const ShareButtons = ({ slug }) => {
-    const shareUrl = `https://your-backend.com/share/${slug}`;
+    const shareUrl = `http://localhost:5002/share/${slug}`;
 
     const isMobile = () => /Mobi|Android|iPhone/i.test(navigator.userAgent);
 

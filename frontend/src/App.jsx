@@ -10,7 +10,7 @@ import { DefaultRoutes } from "@/routes/DefaultRoutes";
 // import DynamicHelmet from "@/custom/DynamicHelmet";
 import CookieConsentBanner from "@/components/layout/CookieConsentBanner";
 import { useAnalytics } from "@/hooks/useAnalytics";
-import ShareButtons from "./custom/ShareButtons";
+// import ShareButtons from "./custom/ShareButtons";
 
 export default function App() {
 
