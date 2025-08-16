@@ -1,4 +1,5 @@
 import Banking from "@/pages/industries/banking/Banking";
+import Aviation from "@/pages/industries/aviation/Aviation";
 import Finance from "@/pages/industries/finance/Finance";
 import RealEstate from "@/pages/industries/real-estate/RealEstate";
 import Construction from "@/pages/industries/construction/Construction";
@@ -16,7 +17,6 @@ import FoodBeverage from "@/pages/industries/food-beverage/FoodBeverage";
 import MeetingEvents from "@/pages/industries/meeting-events/MeetingEvents";
 import Retail from "@/pages/industries/retail/Retail";
 import Sports from "@/pages/industries/sports/Sports";
-import Aviation from "@/pages/industries/aviation/Aviation";
 import Payments from "@/pages/industries/payments/Payments";
 import PoliticalCompaign from "@/pages/industries/politicalcampaign/PoliticalCompaign";
 import SupplyChain from "@/pages/industries/supplychain/SupplyChain";

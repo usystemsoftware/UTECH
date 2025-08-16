@@ -3,6 +3,7 @@ import { TypographyH1, TypographyP } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import Breadcrumbs from "./Breadcrumbs";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+import ShareButtons from "@/custom/ShareButtons";
 
 export default function HeroSection({
   backgroundImage,
@@ -53,6 +54,7 @@ export default function HeroSection({
             </Link>
           )}
         </div>
+        <ShareButtons />
       </section>
 
       {/* Breadcrumbs Section */}

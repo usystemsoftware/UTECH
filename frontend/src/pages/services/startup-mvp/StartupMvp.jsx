@@ -5,7 +5,15 @@ import { TestimonialSection } from "@/components/TestimonialSection";
 import { FeaturesList } from "@/components/FeaturesList";
 import { Button } from "@/components/ui/button";
 import { Headline, TypographyMuted, TypographyH3 } from "@/custom/Typography";
-import { mvpDevelopmentSteps, mvpProcess, mvpServices, mvpTechStack, testimonials } from "./Data";
+import PortfolioGrid from "@/components/PortfolioGrid";
+import {
+    mvpDevelopmentSteps,
+    mvpProcess,
+    mvpServices,
+    mvpTechStack,
+    portfolioItems,
+    testimonials
+} from "./Data";
 
 export default function StartupMvp() {
     return (
@@ -36,7 +44,6 @@ export default function StartupMvp() {
                         />
                     </FadeInWhenVisible>
                 </div>
-
                 <Button variant="hover">DESIGN YOUR MVP APP NOW</Button>
             </PageLayout>
 
@@ -61,7 +68,6 @@ export default function StartupMvp() {
                             className="w-135 mx-auto"
                         />
                     </FadeInWhenVisible>
-
                     {/* Right Features */}
                     <FeaturesList features={mvpProcess.slice(2, 4)} fadeUp={fadeUp} center />
                 </div>
@@ -77,9 +83,7 @@ export default function StartupMvp() {
                     </FadeInWhenVisible>
                     <FeaturesList features={mvpDevelopmentSteps} iconAlign="horizontal" />
                 </div>
-
                 <Button variant="hover">GET MVP APP SOLUTIONS</Button>
-
             </PageLayout>
 
             <section className="bg-secondary py-16">
@@ -108,10 +112,12 @@ export default function StartupMvp() {
                             </div>
                         ))}
                     </div>
-
                     <Button variant="hover">BUILD YOUR MVP APP</Button>
                 </PageLayout>
             </section>
+
+            {/* PORTFOLIO GRID SECTION WITH ANIMATION */}
+            <PortfolioGrid items={portfolioItems} />
 
         </>
     )

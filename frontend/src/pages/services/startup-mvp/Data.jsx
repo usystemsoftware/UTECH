@@ -132,3 +132,17 @@ export const mvpTechStack = [
     }
 ];
 
+export const portfolioItems = [
+    {
+        title: "Magento Platform and MySQL Database Solutions to Improve E-Commerce Experience",
+        img: "/assets/services/startup-mvp/1.jpg",
+    },
+    {
+        title: "Fighting Security Vulnerabilities with Multi-Factor Authentication Facial Recognition App",
+        img: "/assets/services/startup-mvp/2.jpg",
+    },
+    {
+        title: "Elevating Energy (Trade) Efficiency with Dedicated System Augmentation",
+        img: "/assets/services/startup-mvp/3.jpg",
+    },
+];

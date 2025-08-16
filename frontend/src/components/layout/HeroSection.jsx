@@ -8,6 +8,7 @@ import {
 } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
+import ShareButtons from "@/custom/ShareButtons";
 
 export const HeroSection = () => {
   return (
@@ -78,6 +79,7 @@ export const HeroSection = () => {
           </FadeInWhenVisible>
         </div>
       </PageLayout>
+      <ShareButtons />
     </div>
   );
 };
