@@ -9,7 +9,7 @@ export const metaData = {
             "help",
             "U Tech"
         ],
-        "image": "banner/contact-us.jpg",
+        "image": "https://usystem.software/banner/contact-us.jpg",
         "url": "https://usystem.software/contact",
         "category": "Contact",
         "published": "August 2025"
@@ -25,7 +25,7 @@ export const metaData = {
             "meeting",
             "U Tech"
         ],
-        "image": "banner/bookcall-banner.jpg",
+        "image": "https://usystem.software/banner/bookcall-banner.jpg",
         "url": "https://usystem.software/bookcall",
         "category": "Contact",
         "published": "August 2025"
@@ -40,7 +40,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/aviation-banner.jpg",
+        "image": "https://usystem.software/banner/aviation-banner.jpg",
         "url": "https://usystem.software/industries/aviation",
         "category": "Industries",
         "published": "August 2025"
@@ -54,7 +54,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/new-banking-banner.jpg",
+        "image": "https://usystem.software/banner/new-banking-banner.jpg",
         "url": "https://usystem.software/industries/banking",
         "category": "Industries",
         "published": "August 2025"
@@ -68,7 +68,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/industries/construction",
         "category": "Industries",
         "published": "August 2025"
@@ -82,7 +82,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/correction-banner.jpg",
+        "image": "https://usystem.software/banner/correction-banner.jpg",
         "url": "https://usystem.software/industries/corrections",
         "category": "Industries",
         "published": "August 2025"
@@ -97,7 +97,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/e-learning-banner.jpg",
+        "image": "https://usystem.software/banner/e-learning-banner.jpg",
         "url": "https://usystem.software/industries/e-learning-education",
         "category": "Industries",
         "published": "August 2025"
@@ -112,7 +112,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/utilities-banner.jpg",
+        "image": "https://usystem.software/banner/utilities-banner.jpg",
         "url": "https://usystem.software/industries/energy-utilities",
         "category": "Industries",
         "published": "August 2025"
@@ -126,7 +126,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/env-mang-banner.jpg",
+        "image": "https://usystem.software/banner/env-mang-banner.jpg",
         "url": "https://usystem.software/industries/environmental-management",
         "category": "Industries",
         "published": "August 2025"
@@ -140,7 +140,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/finance-banner.jpg",
+        "image": "https://usystem.software/banner/finance-banner.jpg",
         "url": "https://usystem.software/industries/finance",
         "category": "Industries",
         "published": "August 2025"
@@ -155,7 +155,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/food-and-beverage-banner.jpg",
+        "image": "https://usystem.software/banner/food-and-beverage-banner.jpg",
         "url": "https://usystem.software/industries/food-beverage",
         "category": "Industries",
         "published": "August 2025"
@@ -169,7 +169,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/blockchain-social-media-platform-banner.jpg",
+        "image": "https://usystem.software/banner/blockchain-social-media-platform-banner.jpg",
         "url": "https://usystem.software/industries/gaming",
         "category": "Industries",
         "published": "August 2025"
@@ -183,7 +183,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/healthcare-banner.jpg",
+        "image": "https://usystem.software/banner/healthcare-banner.jpg",
         "url": "https://usystem.software/industries/healthcare",
         "category": "Industries",
         "published": "August 2025"
@@ -198,7 +198,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/hospitality-banner2.jpg",
+        "image": "https://usystem.software/banner/hospitality-banner2.jpg",
         "url": "https://usystem.software/industries/hospitality-travel",
         "category": "Industries",
         "published": "August 2025"
@@ -213,7 +213,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/hcm-banner.jpg",
+        "image": "https://usystem.software/banner/hcm-banner.jpg",
         "url": "https://usystem.software/industries/hcm",
         "category": "Industries",
         "published": "August 2025"
@@ -227,7 +227,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/legel-banner.jpg",
+        "image": "https://usystem.software/banner/legel-banner.jpg",
         "url": "https://usystem.software/industries/legal",
         "category": "Industries",
         "published": "August 2025"
@@ -242,7 +242,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/media-enterntainment-banner.jpg",
+        "image": "https://usystem.software/banner/media-enterntainment-banner.jpg",
         "url": "https://usystem.software/industries/media-entertainment",
         "category": "Industries",
         "published": "August 2025"
@@ -257,7 +257,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/meetings-events-banner.jpg",
+        "image": "https://usystem.software/banner/meetings-events-banner.jpg",
         "url": "https://usystem.software/industries/meetings-events",
         "category": "Industries",
         "published": "August 2025"
@@ -271,7 +271,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/payment-banner.jpg",
+        "image": "https://usystem.software/banner/payment-banner.jpg",
         "url": "https://usystem.software/industries/payments",
         "category": "Industries",
         "published": "August 2025"
@@ -285,7 +285,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/political-campaigns-banner.jpg",
+        "image": "https://usystem.software/banner/political-campaigns-banner.jpg",
         "url": "https://usystem.software/industries/political-campaigns",
         "category": "Industries",
         "published": "August 2025"
@@ -299,7 +299,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/real-banner.jpg",
+        "image": "https://usystem.software/banner/real-banner.jpg",
         "url": "https://usystem.software/industries/real-estate",
         "category": "Industries",
         "published": "August 2025"
@@ -313,7 +313,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/retail-banner.jpg",
+        "image": "https://usystem.software/banner/retail-banner.jpg",
         "url": "https://usystem.software/industries/retail",
         "category": "Industries",
         "published": "August 2025"
@@ -327,7 +327,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/sport-banner.jpg",
+        "image": "https://usystem.software/banner/sport-banner.jpg",
         "url": "https://usystem.software/industries/sports",
         "category": "Industries",
         "published": "August 2025"
@@ -341,7 +341,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/supply-chain-management-banner.jpg",
+        "image": "https://usystem.software/banner/supply-chain-management-banner.jpg",
         "url": "https://usystem.software/industries/supply-chain",
         "category": "Industries",
         "published": "August 2025"
@@ -355,7 +355,7 @@ export const metaData = {
             "industry solutions",
             "U Tech"
         ],
-        "image": "banner/telecom-hero-banner.jpg",
+        "image": "https://usystem.software/banner/telecom-hero-banner.jpg",
         "url": "https://usystem.software/industries/telecommunications",
         "category": "Industries",
         "published": "August 2025"
@@ -371,7 +371,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/api-development-banner.jpg",
+        "image": "https://usystem.software/banner/api-development-banner.jpg",
         "url": "https://usystem.software/services/api-development",
         "category": "Services",
         "published": "August 2025"
@@ -385,7 +385,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/application-development-banner.jpg",
+        "image": "https://usystem.software/banner/application-development-banner.jpg",
         "url": "https://usystem.software/services/application-development",
         "category": "Services",
         "published": "August 2025"
@@ -399,7 +399,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/app-maintanance-banner.jpg",
+        "image": "https://usystem.software/banner/app-maintanance-banner.jpg",
         "url": "https://usystem.software/services/application-maintenance",
         "category": "Services",
         "published": "August 2025"
@@ -414,7 +414,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/backup-recovery-banner.jpg",
+        "image": "https://usystem.software/banner/backup-recovery-banner.jpg",
         "url": "https://usystem.software/services/backup-disaster-recovery",
         "category": "Services",
         "published": "August 2025"
@@ -429,7 +429,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/business-process-outsourcing-banner.jpg",
+        "image": "https://usystem.software/banner/business-process-outsourcing-banner.jpg",
         "url": "https://usystem.software/services/bpo",
         "category": "Services",
         "published": "August 2025"
@@ -443,7 +443,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/services/custom-software",
         "category": "Services",
         "published": "August 2025"
@@ -457,7 +457,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/backup-recovery-banner.jpg",
+        "image": "https://usystem.software/banner/backup-recovery-banner.jpg",
         "url": "https://usystem.software/services/data-integration",
         "category": "Services",
         "published": "August 2025"
@@ -471,7 +471,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/data-management-banner.jpg",
+        "image": "https://usystem.software/banner/data-management-banner.jpg",
         "url": "https://usystem.software/services/data-management",
         "category": "Services",
         "published": "August 2025"
@@ -485,7 +485,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/hero-img-banner-devops.jpg",
+        "image": "https://usystem.software/banner/hero-img-banner-devops.jpg",
         "url": "https://usystem.software/services/devops",
         "category": "Services",
         "published": "August 2025"
@@ -499,7 +499,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/digital-transformation-banner.jpg",
+        "image": "https://usystem.software/banner/digital-transformation-banner.jpg",
         "url": "https://usystem.software/services/digital-transformation",
         "category": "Services",
         "published": "August 2025"
@@ -514,7 +514,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/services/finops",
         "category": "Services",
         "published": "August 2025"
@@ -529,7 +529,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/services/implementation-deployment",
         "category": "Services",
         "published": "August 2025"
@@ -543,7 +543,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/services/infrastructure-support",
         "category": "Services",
         "published": "August 2025"
@@ -558,7 +558,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/services/migrations-upgrades",
         "category": "Services",
         "published": "August 2025"
@@ -573,7 +573,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/services/noc",
         "category": "Services",
         "published": "August 2025"
@@ -587,7 +587,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/services/partner-support",
         "category": "Services",
         "published": "August 2025"
@@ -602,7 +602,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/services/plm",
         "category": "Services",
         "published": "August 2025"
@@ -617,7 +617,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/quality-assurance-banner.jpg",
+        "image": "https://usystem.software/banner/quality-assurance-banner.jpg",
         "url": "https://usystem.software/services/qa-testing",
         "category": "Services",
         "published": "August 2025"
@@ -631,7 +631,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/services/sla-support",
         "category": "Services",
         "published": "August 2025"
@@ -645,7 +645,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/services/software-security",
         "category": "Services",
         "published": "August 2025"
@@ -660,7 +660,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/services/startup-mvp",
         "category": "Services",
         "published": "August 2025"
@@ -674,7 +674,7 @@ export const metaData = {
             "services",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/services/systems-integration",
         "category": "Services",
         "published": "August 2025"
@@ -689,7 +689,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/animation-graphic-design",
         "category": "Solutions",
         "published": "August 2025"
@@ -703,7 +703,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/ai",
         "category": "Solutions",
         "published": "August 2025"
@@ -717,7 +717,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/asset-tracking",
         "category": "Solutions",
         "published": "August 2025"
@@ -732,7 +732,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/ar-vr",
         "category": "Solutions",
         "published": "August 2025"
@@ -746,7 +746,7 @@ export const metaData = {
             "cloud solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/aws",
         "category": "Solutions",
         "published": "August 2025"
@@ -760,7 +760,7 @@ export const metaData = {
             "design solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/autodesk",
         "category": "Solutions",
         "published": "August 2025"
@@ -774,7 +774,7 @@ export const metaData = {
             "security solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/biometrics",
         "category": "Solutions",
         "published": "August 2025"
@@ -788,7 +788,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/blockchain",
         "category": "Solutions",
         "published": "August 2025"
@@ -803,7 +803,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/bi-analytics",
         "category": "Solutions",
         "published": "August 2025"
@@ -818,7 +818,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/cms",
         "category": "Solutions",
         "published": "August 2025"
@@ -833,7 +833,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/crm-development-services-banner.jpg",
+        "image": "https://usystem.software/banner/crm-development-services-banner.jpg",
         "url": "https://usystem.software/solutions/crm",
         "category": "Solutions",
         "published": "August 2025"
@@ -847,7 +847,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/cloud",
         "category": "Solutions",
         "published": "August 2025"
@@ -861,7 +861,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/database",
         "category": "Solutions",
         "published": "August 2025"
@@ -876,7 +876,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/digital-asset-management",
         "category": "Solutions",
         "published": "August 2025"
@@ -890,7 +890,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/digital-marketing-banner.jpg",
+        "image": "https://usystem.software/banner/digital-marketing-banner.jpg",
         "url": "https://usystem.software/solutions/digital-marketing",
         "category": "Solutions",
         "published": "August 2025"
@@ -904,7 +904,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/document-management",
         "category": "Solutions",
         "published": "August 2025"
@@ -918,7 +918,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/embedded-software-banner.jpg",
+        "image": "https://usystem.software/banner/embedded-software-banner.jpg",
         "url": "https://usystem.software/solutions/embedded-software",
         "category": "Solutions",
         "published": "August 2025"
@@ -933,7 +933,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/erp",
         "category": "Solutions",
         "published": "August 2025"
@@ -947,7 +947,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/facilities-management",
         "category": "Solutions",
         "published": "August 2025"
@@ -961,7 +961,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/fraud-protection",
         "category": "Solutions",
         "published": "August 2025"
@@ -976,7 +976,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/gis",
         "category": "Solutions",
         "published": "August 2025"
@@ -990,7 +990,7 @@ export const metaData = {
             "cloud solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/google-cloud",
         "category": "Solutions",
         "published": "August 2025"
@@ -1004,7 +1004,7 @@ export const metaData = {
             "enterprise solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/ibm",
         "category": "Solutions",
         "published": "August 2025"
@@ -1019,7 +1019,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/iot",
         "category": "Solutions",
         "published": "August 2025"
@@ -1033,7 +1033,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/kiosk",
         "category": "Solutions",
         "published": "August 2025"
@@ -1048,7 +1048,7 @@ export const metaData = {
             "design solutions",
             "U Tech"
         ],
-        "image": "banner/ui-ux-banner.jpg",
+        "image": "https://usystem.software/banner/ui-ux-banner.jpg",
         "url": "https://usystem.software/solutions/ui-ux",
         "category": "Solutions",
         "published": "August 2025"
@@ -1062,7 +1062,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/microsoft",
         "category": "Solutions",
         "published": "August 2025"
@@ -1076,7 +1076,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/netsuite",
         "category": "Solutions",
         "published": "August 2025"
@@ -1090,7 +1090,7 @@ export const metaData = {
             "enterprise solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/oracle",
         "category": "Solutions",
         "published": "August 2025"
@@ -1104,7 +1104,7 @@ export const metaData = {
             "CRM solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/salesforce",
         "category": "Solutions",
         "published": "August 2025"
@@ -1118,7 +1118,7 @@ export const metaData = {
             "ERP solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/sap",
         "category": "Solutions",
         "published": "August 2025"
@@ -1132,7 +1132,7 @@ export const metaData = {
             "automation solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/uipath",
         "category": "Solutions",
         "published": "August 2025"
@@ -1147,7 +1147,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/solutions/ukg",
         "category": "Solutions",
         "published": "August 2025"
@@ -1161,7 +1161,7 @@ export const metaData = {
             "solutions",
             "U Tech"
         ],
-        "image": "banner/web-development-banner.jpg",
+        "image": "https://usystem.software/banner/web-development-banner.jpg",
         "url": "https://usystem.software/solutions/web-development",
         "category": "Solutions",
         "published": "August 2025"
@@ -1175,7 +1175,7 @@ export const metaData = {
             "U Tech",
             "company information"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/company/about-us",
         "category": "Company",
         "published": "August 2025"
@@ -1189,7 +1189,7 @@ export const metaData = {
             "recognitions",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/company/awards",
         "category": "Company",
         "published": "August 2025"
@@ -1203,7 +1203,7 @@ export const metaData = {
             "jobs",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/company/careers",
         "category": "Company",
         "published": "August 2025"
@@ -1217,7 +1217,7 @@ export const metaData = {
             "U Tech",
             "company events"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/company/events",
         "category": "Company",
         "published": "August 2025"
@@ -1231,7 +1231,7 @@ export const metaData = {
             "U Tech",
             "company milestones"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/company/history",
         "category": "Company",
         "published": "August 2025"
@@ -1245,7 +1245,7 @@ export const metaData = {
             "U Tech",
             "company offices"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/company/locations",
         "category": "Company",
         "published": "August 2025"
@@ -1259,7 +1259,7 @@ export const metaData = {
             "press releases",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/company/newsroom",
         "category": "Company",
         "published": "August 2025"
@@ -1273,7 +1273,7 @@ export const metaData = {
             "affiliations",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/company/partners-affiliations",
         "category": "Company",
         "published": "August 2025"
@@ -1287,7 +1287,7 @@ export const metaData = {
             "culture",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/company/people-and-culture",
         "category": "Company",
         "published": "August 2025"
@@ -1301,7 +1301,7 @@ export const metaData = {
             "customer feedback",
             "U Tech"
         ],
-        "image": "banner/aec-banner.jpg",
+        "image": "https://usystem.software/banner/aec-banner.jpg",
         "url": "https://usystem.software/company/reviews",
         "category": "Company",
         "published": "August 2025"
