@@ -3,90 +3,90 @@ const { metaData } = require("../config/metaData");
 exports.shareMetaData = async (req, res) => {
   const { slug } = req.params;
   const data = metaData[slug] || metaData["/"];
-  console.log(data)
+
+  if (!data) {
+    return res.status(404).send("Not Found");
+  }
+
+  // Always use FRONTEND URL from metaData
+  const frontendUrl = data.url;
+
   const html = `
     <!DOCTYPE html>
     <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>${data.title}</title>
-        <meta name="description" content="${data.description}" />
-        <meta name="keywords" content="${data.keywords.join(", ")}" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>${data.title}</title>
 
-        <!-- Open Graph / Facebook / LinkedIn -->
-        <meta property="og:site_name" content="U Tech" />
-        <meta property="og:title" content="${data.title}" />
-        <meta property="og:description" content="${data.description}" />
-        <meta property="og:image" content="${data.image}" />
-        <meta property="og:image:secure_url" content="${data.image}" />
-        <meta property="og:image:alt" content="${data.title}" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="${data.url}" />
-        <meta property="og:locale" content="en_IN" />
+      <!-- Basic Meta -->
+      <meta name="title" content="${data.title}" />
+      <meta name="description" content="${data.description}" />
+      <meta name="keywords" content="${data.keywords}" />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="${frontendUrl}" />
 
-        <!-- Twitter -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@utech" />
-        <meta name="twitter:creator" content="@utech" />
-        <meta name="twitter:title" content="${data.title}" />
-        <meta name="twitter:description" content="${data.description}" />
-        <meta name="twitter:image" content="${data.image}" />
-        <meta name="twitter:image:alt" content="${data.title}" />
-        <meta name="twitter:label1" content="Category" />
-        <meta name="twitter:data1" content="${data.category || 'General'}" />
-        <meta name="twitter:label2" content="Published" />
-        <meta name="twitter:data2" content="${data.published || ''}" />
+      <!-- Open Graph (Facebook / LinkedIn) -->
+      <meta property="og:title" content="${data.title}" />
+      <meta property="og:description" content="${data.description}" />
+      <meta property="og:image" content="${data.image}" />
+      <meta property="og:image:secure_url" content="${data.image}" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="627" />
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:alt" content="${data.title}" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="${frontendUrl}" />
+      <meta property="og:site_name" content="U Tech" />
 
-        <!-- Schema.org Structured Data -->
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "${data.title}",
-          "description": "${data.description}",
-          "url": "${data.url}",
-          "keywords": "${data.keywords.join(", ")}",
-          "image": {
+      <!-- Article Metadata -->
+      <meta property="article:published_time" content="${data.published}" />
+      <meta property="article:author" content="U Tech" />
+
+      <!-- Twitter -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="${data.title}" />
+      <meta name="twitter:description" content="${data.description}" />
+      <meta name="twitter:image" content="${data.image}" />
+      <meta name="twitter:site" content="@U_Tech" />
+      <meta name="twitter:creator" content="@U_Tech" />
+
+      <!-- Structured Data (JSON-LD) -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "${data.title}",
+        "description": "${data.description}",
+        "url": "${frontendUrl}",
+        "image": {
+          "@type": "ImageObject",
+          "url": "${data.image}",
+          "width": 1200,
+          "height": 627
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "U Tech",
+          "logo": {
             "@type": "ImageObject",
-            "url": "${data.image}",
-            "width": 1200,
-            "height": 630
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "U Tech",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "${process.env.FRONTENDURL}/logo.png"
-            }
+            "url": "https://usystem.software/logo.png"
           }
         }
-        </script>
+      }
+      </script>
 
-        <!-- Favicon & Theming -->
-        <link rel="icon" href="${process.env.FRONTENDURL}/favicon.ico" />
-        <meta name="theme-color" content="#0f172a" />
-        <meta name="application-name" content="U Tech" />
-        <meta name="apple-mobile-web-app-title" content="U Tech" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-
-        <!-- Preload Image -->
-        <link rel="preload" as="image" href="${data.image}" />
-
-        <!-- Canonical -->
-        <link rel="canonical" href="${data.url}" />
+      <!-- Favicon -->
+      <link rel="icon" href="https://usystem.software/favicon.ico" type="image/x-icon" />
     </head>
     <body>
-        <script>
-            window.location.replace("${data.url}");
-        </script>
+      <script>
+        // Redirect users (not bots) to frontend page
+        window.location.replace("${frontendUrl}");
+      </script>
     </body>
     </html>
   `;
 
   res.send(html);
-}
+};
