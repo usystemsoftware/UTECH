@@ -18,6 +18,6 @@ app.use('/auth', require('./routes/authRoutes'));
 app.use('/chatbot', require('./routes/chatbotRoutes'));
 app.use('/share', require('./routes/metaShareRoutes'))
 
-connectDB();
+// connectDB();
 
 app.listen(process.env.PORT, () => console.log(` Server running on http://localhost:${process.env.PORT}`));
