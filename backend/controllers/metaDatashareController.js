@@ -3,7 +3,7 @@ const { metaData } = require("../config/metaData");
 exports.shareMetaData = async (req, res) => {
   const { slug } = req.params;
   const data = metaData[slug] || metaData["/"];
-  console.log(data)
+
   const html = `
     <!DOCTYPE html>
     <html lang="en">
@@ -79,14 +79,17 @@ exports.shareMetaData = async (req, res) => {
 
         <!-- Canonical -->
         <link rel="canonical" href="${data.url}" />
+
+        <!-- Redirect (works for LinkedIn, Facebook, Twitter) -->
+        <meta http-equiv="refresh" content="0; url=${data.url}" />
     </head>
     <body>
-        <script>
-            window.location.replace("${data.url}");
-        </script>
+        <noscript>
+          <a href="${data.url}">Continue to ${data.title}</a>
+        </noscript>
     </body>
     </html>
   `;
 
   res.send(html);
-}
+};
