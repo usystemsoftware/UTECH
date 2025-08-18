@@ -1,10 +1,15 @@
-export const shareMetaData = async (req, res) => {
+const { metaData } = require("../config/metaData");
+
+exports.shareMetaData = async (req, res) => {
   const { slug } = req.params;
-  const data = metaData[slug];
+  const data = metaData[slug] || metaData["/"];
 
   if (!data) {
     return res.status(404).send("Not Found");
   }
+
+  // Always use FRONTEND URL from metaData
+  const frontendUrl = data.url;
 
   const html = `
     <!DOCTYPE html>
@@ -19,7 +24,7 @@ export const shareMetaData = async (req, res) => {
       <meta name="description" content="${data.description}" />
       <meta name="keywords" content="${data.keywords}" />
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="${data.url}" />
+      <link rel="canonical" href="${frontendUrl}" />
 
       <!-- Open Graph (Facebook / LinkedIn) -->
       <meta property="og:title" content="${data.title}" />
@@ -31,11 +36,11 @@ export const shareMetaData = async (req, res) => {
       <meta property="og:image:type" content="image/jpeg" />
       <meta property="og:image:alt" content="${data.title}" />
       <meta property="og:type" content="article" />
-      <meta property="og:url" content="${data.url}" />
+      <meta property="og:url" content="${frontendUrl}" />
       <meta property="og:site_name" content="U Tech" />
 
       <!-- Article Metadata -->
-      <meta property="article:published_time" content="2025-08-01T12:00:00Z" />
+      <meta property="article:published_time" content="${data.published}" />
       <meta property="article:author" content="U Tech" />
 
       <!-- Twitter -->
@@ -53,7 +58,7 @@ export const shareMetaData = async (req, res) => {
         "@type": "WebPage",
         "name": "${data.title}",
         "description": "${data.description}",
-        "url": "${data.url}",
+        "url": "${frontendUrl}",
         "image": {
           "@type": "ImageObject",
           "url": "${data.image}",
@@ -76,7 +81,8 @@ export const shareMetaData = async (req, res) => {
     </head>
     <body>
       <script>
-        window.location.replace("${data.url}");
+        // Redirect users (not bots) to frontend page
+        window.location.replace("${frontendUrl}");
       </script>
     </body>
     </html>
