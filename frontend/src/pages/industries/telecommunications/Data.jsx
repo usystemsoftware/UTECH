@@ -297,7 +297,7 @@ export const telcommunicationSoftwareSolutions = [
     title: "Business Messaging Integration",
     description:
       "We bridge WhatsApp Business, RCS and enterprise chat apps with your support systems for secure, auditable messaging across sales, service and operations teams..",
-    icon: "/assets/industries/telecommunications/icons/8  .svg",
+    icon: "/assets/industries/telecommunications/icons/8.svg",
     partners: ["messaging"],
   },
 ];

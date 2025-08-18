@@ -4,9 +4,9 @@ import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import { Headline } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
+import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import VideoTvPoster from "@/custom/VideoTvPoster";
-
+import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import {
   AIPoweredSolutions,
   BankingACHfeatures,
@@ -22,7 +22,6 @@ import {
   GetMobileBankingSoftwareSolutions,
   tvpoasterDescription,
 } from "./Data";
-import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 
 export const Banking = () => (
   <>
@@ -87,7 +86,7 @@ export const Banking = () => (
         title="Custom Loan Servicing & Origination Solutions"
         description="U Technology’s custom loan servicing and origination personalized solutions handle underwriting, origination, disbursement, servicing, amortization, processing, and so much more for financial services and institutions."
       />
-      <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center">
+      <PageLayout className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
         <FadeInWhenVisible delay={0.4}>
           <img
             loading="lazy"

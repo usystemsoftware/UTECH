@@ -9,9 +9,9 @@ export const FeaturesGridnew = ({
     fadeUp,
     iconGap,
 }) => (
-    <div className="flex flex-col sm:flex-row items-center w-full justify-center gap-4 mt-10">
+    <div className="flex flex-col md:flex-row items-center w-full justify-center gap-4 mt-10">
         {/* Left Column */}
-        <div className={`flex flex-col gap-4 md:gap-12 ${iconGap} text-start sm:text-right w-full`}>
+        <div className={`flex flex-col gap-4 sm:gap-12 ${iconGap} text-start sm:text-right w-full`}>
             {leftFeatures.map((item, index) => (
                 <div
                     key={index}
@@ -39,7 +39,7 @@ export const FeaturesGridnew = ({
         {/* Center Image */}
         {centerImage && (
             <FadeInWhenVisible
-                className="flex-shrink-0 hidden md:block w-full max-w-md lg:max-w-3xl"
+                className="flex-shrink-0 w-full sm:max-w-3xl"
                 variants={fadeUp}
             >
                 <img

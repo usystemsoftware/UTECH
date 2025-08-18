@@ -156,6 +156,7 @@ export const webdesignintegrations = [
         ],
     },
 ];
+
 export const artificialIntelligencesolutions = [
     {
         icon: "/assets/solutions/animation-graphic-design-banner/icons/10032.svg",
@@ -173,7 +174,7 @@ export const artificialIntelligencesolutions = [
         icon: "/assets/solutions/animation-graphic-design-banner/icons/10034.svg",
         title: "Enhanced Animation User Experience with AI",
         description:
-            "Chetu completely revolutionizes animation design and user experiences through AI, streamlining development processes and modernizing UI/UX for deploying incredibly realistic and engaging animation and gaming titles. This effectively gives you a powerful competitive edge with personalized user insights.",
+            "U Tech completely revolutionizes animation design and user experiences through AI, streamlining development processes and modernizing UI/UX for deploying incredibly realistic and engaging animation and gaming titles. This effectively gives you a powerful competitive edge with personalized user insights.",
     },
     {
         icon: "/assets/solutions/animation-graphic-design-banner/icons/10035.svg",
@@ -198,7 +199,7 @@ export const aviationFaqs = [
     {
         question: "What Software is Used for 3D Animation?",
         answer:
-            "Autodesk Maya remains an industry standard for creating intuitive 3D animation assets. Its interfaces enable easy, customizable design options for 3D scenes, games, presentations, special effects, and movies. Chetu leverages Maya to create customized animation for maximum engagement.",
+            "Autodesk Maya remains an industry standard for creating intuitive 3D animation assets. Its interfaces enable easy, customizable design options for 3D scenes, games, presentations, special effects, and movies. U Tech leverages Maya to create customized animation for maximum engagement.",
     },
     {
         question: "What is the difference between 2D and 3D animation?",
@@ -208,13 +209,13 @@ export const aviationFaqs = [
     {
         question: "Does Game Development Include 3D Animation?",
         answer:
-            "3D animation is crucial for creating engaging game titles. Chetu’s game development experts enhance software frameworks, modernize Unreal Engine resources, and utilize Unity and Godot to elevate a game world's depth and realism, giving you a competitive edge in game development."
+            "3D animation is crucial for creating engaging game titles. U Tech’s game development experts enhance software frameworks, modernize Unreal Engine resources, and utilize Unity and Godot to elevate a game world's depth and realism, giving you a competitive edge in game development."
 
     },
     {
         question: "How Do I Choose Between 2D and 3D Animations for my Project?",
         answer:
-            "Budget, deadlines, and artistic preference all play roles in determining if 2D or 3D animation is suited for your project. Chetu’s software specialists are well-versed in all 2D and 3D animation development facets, but 3D animation enables the creation of more intuitive, modernized assets.",
+            "Budget, deadlines, and artistic preference all play roles in determining if 2D or 3D animation is suited for your project. U Tech’s software specialists are well-versed in all 2D and 3D animation development facets, but 3D animation enables the creation of more intuitive, modernized assets.",
     },
 ];
 

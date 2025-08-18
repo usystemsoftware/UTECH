@@ -38,17 +38,17 @@ export default function HeroSection({
 
         {/* Foreground Text & Button */}
         <div
-          className="relative z-20 md:max-w-6xl w-full mx-auto text-center px-2 space-y-6 text-white"
+          className="relative z-20 md:max-w-5xl mt-12 sm:mt-0 w-full mx-auto text-center px-2 space-y-6 text-white"
           variants={animationVariants}
         >
-          <TypographyH1 className="text-xl">{title}</TypographyH1>
+          <TypographyH1 className="md:text-5xl text-2xl uppercase">{title}</TypographyH1>
 
           {description && <TypographyP className="text-sm">{description}</TypographyP>}
 
           {buttonText && (
             <Link
               to={buttonLink}
-              className="inline-block border-3 border-orange-500 md:text-md hover:bg-orange-500 hover:text-white transition-colors duration-300 py-2  px-6 text-sm rounded-full"
+              className="inline-block border-3 uppercase border-orange-500 md:text-md hover:bg-orange-500 hover:text-white transition-colors duration-300 py-3 px-6 text-sm sm:text-lg rounded-full"
             >
               {buttonText}
             </Link>

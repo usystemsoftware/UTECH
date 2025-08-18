@@ -66,9 +66,9 @@ const DigitalTransformation = () => {
             <FadeInWhenVisible>
               <img
                 loading="lazy"
-                src="/assets/services/digital-transformation/digital-services.jpg"
+                src="/assets/services/digital-transformation/digital-transformation-team.jpg"
                 alt="Financial Planning Dashboard"
-                className="w-130 mx-auto"
+                className="w-155 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList
@@ -116,9 +116,9 @@ const DigitalTransformation = () => {
             <FadeInWhenVisible>
               <img
                 loading="lazy"
-                src="/assets/services/digital-transformation/images.png"
+                src="/assets/services/digital-transformation/unique-threat-prevention-strategies.png"
                 alt="Financial Planning Dashboard"
-                className="w-72 mx-auto"
+                className="w-135 mx-auto"
               />
             </FadeInWhenVisible>
             <FeaturesList features={facilityHighlights} fadeUp={fadeUp} iconAlign="horizontal" />
@@ -129,9 +129,9 @@ const DigitalTransformation = () => {
             <FadeInWhenVisible>
               <img
                 loading="lazy"
-                src="/assets/services/digital-transformation/vector.jpg"
+                src="/assets/services/digital-transformation/remote-workforce-network-security-protection.png"
                 alt="Financial Planning Dashboard"
-                className="w-72 mx-auto"
+                className="w-145 mx-auto"
               />
             </FadeInWhenVisible>
           </div>
