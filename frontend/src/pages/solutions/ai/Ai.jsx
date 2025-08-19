@@ -10,7 +10,7 @@ import { TypographyMuted, Headline, TypographyH5 } from "@/custom/Typography";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import Iconrender from '@/components/Iconrender';
 import PortfolioGrid from "@/components/PortfolioGrid";
-import { artificialintelligencedeveloper, solutions, advancedartificialintelligencesolutions, artificialintelligenceusecases, aitoolsandframeworks, videosection, features, industryspecificsisolutions } from './Data';
+import { artificialintelligencedeveloper, solutions, advancedartificialintelligencesolutions, artificialintelligenceusecases, aitoolsandframeworks, videosection, features, industryspecificsisolutions, industryspecificsisolutionssection2, integratedaisolutions, Faqs, portfolioItems } from './Data';
 import VideoPoster from "@/custom/VideoPoster";
 
 const Ai = () => {
@@ -190,7 +190,7 @@ const Ai = () => {
                     title="Smarter Tech, Bigger Impact: Explore the Latest in AI"
                 />
             </section>
-            <section className="py-10 ">
+            <section className="py-5 ">
                 <PageLayout className="space-y-10 text-center">
                     <Headline
                         title="Industry Specific AI Solutions"
@@ -221,7 +221,55 @@ const Ai = () => {
                 </PageLayout>
 
             </section>
+            <section className="py-5 ">
+                <PageLayout className="space-y-10 text-center">
+                    <Headline
+                        title="Hire An Experienced Artificial Intelligence Developer"
+                        description="Our expert developers help businesses optimize their operations, create advanced software, and develop innovative products as part of your existing in-house team or on a turnkey basis to help you complete your project quickly and affordably."
+                    />
+                    <div className="grid grid-cols-1 items-center md:grid-cols-2">
+                        <FadeInWhenVisible delay={0.5} className="md:block hidden">
+                            <img
+                                loading="lazy"
+                                src="/assets/solutions/ai/10032.png"
+                                alt="Portfolio"
+                                className="w-130 mx-auto"
+                            />
+                        </FadeInWhenVisible>
+                        <div className="space-y-8">
+                            <FeaturesList
+                                fadeUp={fadeUp}
+                                features={industryspecificsisolutionssection2}
+                                iconAlign="horizontal"
 
+                            />
+                        </div>
+                    </div>
+                    <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+
+                </PageLayout>
+
+            </section>
+
+            <section>
+
+                <PageLayout className="py-16 space-y-8 text-center">
+                    <Iconrender center webdesignintegrations={integratedaisolutions} />
+                    <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+
+                </PageLayout>
+            </section>
+
+
+            <section>
+                <div className="mb-16 mt-2">
+                    <FaqSection faqs={Faqs} title="Frequently Asked Questions for 3D Animation Services" />
+                </div>
+            </section>
+            <section>
+                <PortfolioGrid items={portfolioItems} />
+
+            </section>
 
         </>
     )

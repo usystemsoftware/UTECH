@@ -182,27 +182,171 @@ export const features = [
 
 export const industryspecificsisolutions = [
     {
-        title: "Mobile Application Solutions",
+        title: "Healthcare",
         description:
-            "Our software engineering offers highly advanced mobile application solutions that incorporate speech, image, and facial recognition, plus cloud computing, machine learning, and automatic analysis programming to bring mobility to companies working on AI of all industry types.",
-        icon: "/assets/solutions/ai/icons/10008.svg",
+            "From advanced diagnosis and precision medicine to personalized patient care, we develop AI solutions to enable healthcare providers to collect and analyze vast amounts of medical data, identify patterns, and detect anomalies that can help in early disease detection and treatment planning. Other tailored solutions such as chatbots aid in patient communication, improving engagement and reducing the workload on healthcare providers.",
+        icon: "/assets/solutions/ai/icons/10034.svg",
     },
     {
-        title: "IoT Solutions",
+        title: "Retail",
         description:
-            "We harness the power of the Internet of Things (IoT), developing IoT platforms, IoT edge processing, and IoT sensors to safeguard assets and help the top AI companies achieve business goals while establishing interconnectivity between employees, customers, and vendors.",
-        icon: "/assets/solutions/ai/icons/10009.svg",
+            "We can implement AI in retail to improve customer engagement, streamline operations, and increase revenue through AI-powered chatbots, recommendation engines, and personalized marketing campaigns. These development tools provide customers with a seamless and personalized shopping experience. On top of this, AI can optimize inventory management, supply chain, and pricing strategies, reducing costs and improving efficiency, making it a practical choice for merchants.",
+        icon: "/assets/solutions/ai/icons/10035.svg",
     },
     {
-        title: "Predictive Data Science Solutions",
+        title: "Finance",
         description:
-            "We build predictive, problem solving solutions for the data scientist, including custom machine learning-based large language models and end-to-end prospective data discovery artificial intelligence programming with Java to help organizations anticipate customer behaviors and predict business outcomes.",
-        icon: "/assets/solutions/ai/icons/10010.svg",
+            "Our experts can leverage AI technology solutions for the finance industry to automate manual processes, improve fraud detection, and enhance risk management. Additional advancements help financial institutions in credit scoring, underwriting, and investment management, minimizing risks and increasing returns. Plus, we can develop virtual assistants capable of providing personalized and round-the-clock support, enhancing the customer experience.",
+        icon: "/assets/solutions/ai/icons/10036.svg",
     },
     {
-        title: "AI Security Solutions",
+        title: "Hospitality & Tourism",
         description:
-            "We design AI-driven solutions that counteract security threats using anti-fraud ML models for fraud detection, biometric identification & recognition techniques, and theft & misuse detection methods to protect data, user identity, and physical perimeters.",
-        icon: "/assets/solutions/ai/icons/10011.svg",
+            "We’re using AI technology to make powerful industry solutions for the hospitality and tourism sector, including personalized recommendations, chatbots, and smart room management. It enables hotels and resorts to provide a personalized experience to guests by analyzing their preferences and behaviors. Additionally, with AI-powered virtual assistants providing instant and accurate responses to guests’ queries, you’ll see improvements in customer satisfaction.",
+        icon: "/assets/solutions/ai/icons/10037.svg",
+    },
+];
+export const industryspecificsisolutionssection2 = [
+    {
+        title: "E-learning & Education",
+        description:
+            "We’re using the transformative nature of AI in the e-learning & education industry by providing personalized learning experiences, improving student engagement, and automating administrative tasks. It offers adaptive learning, customized assessments, and intelligent tutoring, improving learning outcomes and reducing dropout rates. Plus, AI-powered chatbots and virtual assistants can provide instant and personalized support to students, reducing the workload on educators.",
+        icon: "/assets/solutions/ai/icons/10039.svg",
+    },
+    {
+        title: "Transportation",
+        description:
+            "Our expert developers build AI-powered solutions with capabilities such as route optimization, demand forecasting, and predictive maintenance to help transform the transportation industry. We aim to enable transportation companies to reduce operational costs, improve service quality, and enhance customer experience significantly. Additionally, AI-powered autonomous vehicles and drones can provide safe and efficient transportation, reducing accidents and traffic congestion.",
+        icon: "/assets/solutions/ai/icons/10040.svg",
+    },
+    {
+        title: "Food & Beverage",
+        description:
+            "Chetu uses AI technology to enhance the food and beverage industry by improving menu optimization, inventory management, and supply chain management. These solutions can analyze customer preferences, help optimize pricing strategies, and reduce food waste, increasing revenue and reducing costs. Moreover, AI-powered chatbots and virtual assistants can provide personalized recommendations and instant customer support, improving the customer experience.",
+        icon: "/assets/solutions/ai/icons/10041.svg",
+    },
+    {
+        title: "Human Capital Management",
+        description:
+            "We develop AI-powered solutions for the human capital management industry to optimize workflows and administrative processes. Our AI experts can help you automate recruitment, improve employee engagement, and enhance workforce diversity. AI-powered HCM solutions include features such as predictive analytics, automated resume screening, and intelligent interview scheduling, reducing the workload on HR managers and improving the quality of hires. Additionally, with AI chatbots, employee satisfaction increases as it can provide instant and personalized support.",
+        icon: "/assets/solutions/ai/icons/10042.svg",
+    },
+];
+
+
+
+export const integratedaisolutions = [
+    {
+        title: "Robotic Process Automation API",
+        description:
+            "We integrate industry-leading RPA APIs, including UIPath, Automation Anywhere, BluePrism, and Pega Platform to help businesses automate time-consuming and repetitive tasks.",
+        tools: [
+            { icon: "/assets/solutions/ai/icons/10039.png" },
+            { icon: "/assets/solutions/ai/icons/10040.png" },
+            { icon: "/assets/solutions/ai/icons/10041.png" },
+            { icon: "/assets/solutions/ai/icons/10042.png" },
+        ],
+    },
+    {
+        title: "Machine Learning & AI API",
+        description:
+            "We integrate top machine learning APIs, such as IBM Watson, TensorFlow, Mahout, and Weka within your existing IT infrastructure to facilitate mission-critical business processes.",
+        tools: [
+            { icon: "/assets/solutions/ai/icons/10043.png" },
+            { icon: "/assets/solutions/ai/icons/10044.png" },
+            { icon: "/assets/solutions/ai/icons/10045.png" },
+            { icon: "/assets/solutions/ai/icons/10046.png" },
+        ],
+    },
+    {
+        title: "Chatbot Program API",
+        description:
+            "We integrate highly advanced chatbot program APIs, including large language models such as ChatGPT, Engati, FreshChat, and ManyChat within your existing website or application to automate customer service inquiries.",
+        tools: [
+            { icon: "/assets/solutions/ai/icons/10047.png" },
+            { icon: "/assets/solutions/ai/icons/10048.png" },
+            { icon: "/assets/solutions/ai/icons/10049.png" },
+            { icon: "/assets/solutions/ai/icons/10050.png" },
+        ],
+    },
+    {
+        title: "Facial Recognition API",
+        description:
+            "We integrate facial recognition APIs, such as Deep Vision AI, FaceFirst, Trueface, and Amazon Rekognition to detect/recognize facial features for security and user authentication.",
+        tools: [
+            { icon: "/assets/solutions/ai/icons/10051.png" },
+            { icon: "/assets/solutions/ai/icons/10052.png" },
+            { icon: "/assets/solutions/ai/icons/10053.png" },
+            { icon: "/assets/solutions/ai/icons/10054.png" },
+        ],
+    },
+];
+export const Faqs = [
+    {
+        question: "What is AI software development?",
+        answer:
+            "Artificial Intelligence software development refers to creating and implementing software applications that utilize artificial intelligence techniques, algorithms, and machine learning models to perform specific tasks, make decisions, and improve their performance over time. It involves various steps such as data collection, preprocessing, model training, and deployment.",
+    },
+    {
+        question: "What programming languages are commonly used in AI software development?",
+        answer:
+            "Python is the most popular and widely used programming language for AI software. Its extensive libraries like TensorFlow, PyTorch, and scikit-learn make it convenient for tasks such as data manipulation, machine learning, and deep learning. Other languages like Java, C++, and R are also used, depending on the specific requirements of the project.",
+    },
+    {
+        question: "What are the typical challenges in AI software development?",
+        answer:
+            "AI software development presents several challenges, such as data quality and availability, model selection and tuning, handling overfitting, understanding complex algorithms, dealing with computational resource constraints, and ensuring the ethical use of AI. Keeping up with rapidly evolving AI technologies and frameworks is also a challenge.",
+    },
+    {
+        question: "How to Develop AI Software?",
+        answer:
+            "Our time-tested AI development services analyze company needs and incorporate ML model development. We leverage actionable output to optimize custom-tailored software, driving AI development company evolution, increasing revenue, and propelling market domination.",
+    },
+    {
+        question: "What are the different types of AI models used in software development?",
+        answer:
+            "AI software development involves the use of various types of models, each tailored to specific tasks. One common type is supervised learning, where models learn from labeled data to make predictions or classifications. On the other hand, unsupervised learning focuses on identifying patterns and relationships in unlabeled data. Reinforcement learning enables models to learn through trial and error in an environment to maximize rewards. Deep learning, a subset of machine learning, utilizes neural networks for complex tasks like image recognition and natural language processing. These diverse AI models play a vital role in creating intelligent software applications with capabilities ranging from simple data processing to complex decision-making.",
+    },
+    {
+        question: "What is the role of data in AI software development?",
+        answer:
+            "Data is a critical component in AI software development. The performance and accuracy of AI models heavily depend on the quality, quantity, and diversity of the data used for training. Data must be collected, cleaned, and preprocessed before feeding it into the AI model. It is essential to have a well-curated and representative dataset to achieve reliable results.",
+    },
+    {
+        question: "What are the advantages of implementing AI technology in business?",
+        answer:
+            "Artificial intelligence can improve efficiency, accuracy, and productivity across various industries, from healthcare and finance to manufacturing and retail. It can also help businesses make more informed decisions and offer more personalized customer experiences.",
+    },
+    {
+        question: "What is an AI Model?",
+        answer:
+            "AI models are trained on datasets to make autonomous decisions. Our specialists integrate real-world data and Machine Learning capabilities to maximize autonomous prediction and decision-making, optimize function performance, and elevate AI development company operations.",
+    },
+];
+export const portfolioItems = [
+    {
+        title: "Our Portfolio",
+        img: "/assets/solutions/ai/10055.jpg",
+
+    },
+    {
+        title: "THE REAL DIFFERENCE BETWEEN RPA AND AI",
+        img: "/assets/solutions/ai/10056.jpg",
+    },
+    {
+        title: "UNLEASHING THE POWER OF AI IN EVENT MANAGEMENT: A COMPREHENSIVE GUIDE",
+        img: "/assets/solutions/ai/10057.jpg",
+    },
+    {
+        title: "Maximize Data Capture Through Data Scraping in RPA",
+        img: "/assets/solutions/ai/10058.jpg",
+    },
+    {
+        title: "The Future of Computer Vision: Key Advancements and Industry Impact",
+        img: "/assets/solutions/ai/10059.jpg",
+    },
+    {
+        title: "Maximizing Customer Engagement with AI Personalization",
+        img: "/assets/solutions/ai/10060.jpg",
     },
 ];
