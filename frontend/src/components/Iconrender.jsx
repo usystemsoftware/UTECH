@@ -28,7 +28,7 @@ const Iconrender = ({ webdesignintegrations = [], center = false, grid = 2 }) =>
                                 <img
                                     src={tool.icon}
                                     alt={tool.name}
-                                    className="w-10 h-10 mb-2"
+                                    className="w-full h-9 mb-2"
                                 />
                                 <span className="text-sm font-medium">
                                     {tool.name}
