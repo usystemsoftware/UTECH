@@ -55,10 +55,10 @@ export const FeaturesList = ({
           <div
             key={index}
             className={`flex ${iconAlign === "horizontal"
-                ? `sm:flex-row flex-col gap-4 ${center ? "items-center" : "items-center sm:items-start"
-                }`
-                : `flex-col gap-2 ${center ? "items-center" : "items-center sm:items-start"
-                }`
+              ? `sm:flex-row flex-col gap-4 ${center ? "items-center" : "items-center sm:items-start"
+              }`
+              : `flex-col gap-2 ${center ? "items-center" : "items-center sm:items-start"
+              }`
               }`}
           >
             {/* ICON */}

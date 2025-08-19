@@ -158,7 +158,7 @@ export const aitoolsandframeworks = [
     {
         title: "Track2Ai",
         description:
-            "Track2Ai is Chetu's proven 8-step framework—designed to help you adopt AI into your business easily, effectively, and efficiently. We take the guesswork out of AI implementation, ensuring your business has exactly what it needs to go from zero to AI. It’s AI adoption—made easy.",
+            "Track2Ai is U Tech's proven 8-step framework—designed to help you adopt AI into your business easily, effectively, and efficiently. We take the guesswork out of AI implementation, ensuring your business has exactly what it needs to go from zero to AI. It’s AI adoption—made easy.",
         icon: "/assets/solutions/ai/icons/10030.png",
     },
 ];
@@ -167,7 +167,7 @@ export const videosection = [
     {
         title: "MCP/A2A Protocol Integration",
         description:
-            "Discover the MCP/A2A protocol—a next-generation framework that combines the Agent2Agent Protocol with Model Context Protocols, including MCP for LLM applications, to seamlessly connect external tools with AI Agents. Chetu employs this breakthrough to enhance your AI and ML workflows by improving interoperability and scalability, redefining intelligent operations.",
+            "Discover the MCP/A2A protocol—a next-generation framework that combines the Agent2Agent Protocol with Model Context Protocols, including MCP for LLM applications, to seamlessly connect external tools with AI Agents. U Tech employs this breakthrough to enhance your AI and ML workflows by improving interoperability and scalability, redefining intelligent operations.",
     },
     {
         title: "Our Engagement Models",
@@ -222,7 +222,7 @@ export const industryspecificsisolutionssection2 = [
     {
         title: "Food & Beverage",
         description:
-            "Chetu uses AI technology to enhance the food and beverage industry by improving menu optimization, inventory management, and supply chain management. These solutions can analyze customer preferences, help optimize pricing strategies, and reduce food waste, increasing revenue and reducing costs. Moreover, AI-powered chatbots and virtual assistants can provide personalized recommendations and instant customer support, improving the customer experience.",
+            "U Tech uses AI technology to enhance the food and beverage industry by improving menu optimization, inventory management, and supply chain management. These solutions can analyze customer preferences, help optimize pricing strategies, and reduce food waste, increasing revenue and reducing costs. Moreover, AI-powered chatbots and virtual assistants can provide personalized recommendations and instant customer support, improving the customer experience.",
         icon: "/assets/solutions/ai/icons/10041.svg",
     },
     {

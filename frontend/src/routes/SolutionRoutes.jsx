@@ -10,6 +10,8 @@ import Cloud from "@/pages/solutions/cloud/Cloud";
 import Database from "@/pages/solutions/database/Database";
 import DigitalAssetManagement from "@/pages/solutions/digital-asset-mngt/DigitalAssetManagement";
 import DocumentManagement from "@/pages/solutions/document-management/DocumentManagement";
+import Assettracking from "@/pages/solutions/asset-tracking/Assettracking";
+import Arvr from "@/pages/solutions/ar-vr/Arvr";
 
 export const SolutionRoutes = [
   { path: "/solutions/web-development", element: <WebDevelopment /> },
@@ -24,5 +26,10 @@ export const SolutionRoutes = [
   { path: "/solutions/database", element: <Database /> },
   { path: "/solutions/digital-asset-management", element: <DigitalAssetManagement /> },
   { path: "/solutions/document-management", element: <DocumentManagement /> },
+  { path: "/solutions/asset-tracking", element: <Assettracking /> },
+  { path: "/solutions/ar-vr", element: <Arvr /> },
+
+
+
 
 ];

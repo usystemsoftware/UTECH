@@ -1,13 +1,11 @@
 import React from 'react'
 import HeroSection from "@/components/HeroSection";
-import { FeaturesGrid } from "@/components/FeaturesGridCard";
-import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
+import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
-import { TypographyMuted, Headline, TypographyH5 } from "@/custom/Typography";
-import { TestimonialSection } from "@/components/TestimonialSection";
+import { Headline, } from "@/custom/Typography";
 import Iconrender from '@/components/Iconrender';
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { artificialintelligencedeveloper, solutions, advancedartificialintelligencesolutions, artificialintelligenceusecases, aitoolsandframeworks, videosection, features, industryspecificsisolutions, industryspecificsisolutionssection2, integratedaisolutions, Faqs, portfolioItems } from './Data';
@@ -128,7 +126,7 @@ const Ai = () => {
                 <PageLayout className="space-y-10 text-center">
                     <Headline
                         title="Artificial Intelligence Use Cases"
-                        description="Explore diverse Artificial Intelligence use cases with Chetu, empowering businesses to automate tasks, optimize decision-making, and drive innovative digital transformation."
+                        description="Explore diverse Artificial Intelligence use cases with U Tech, empowering businesses to automate tasks, optimize decision-making, and drive innovative digital transformation."
                     />
                     <FeaturesList features={artificialintelligenceusecases} grid3 fadeUp={fadeUp} center />
                     <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
@@ -142,7 +140,7 @@ const Ai = () => {
                 <PageLayout className="space-y-10 text-center">
                     <Headline
                         title="AI Tools and Frameworks"
-                        description="Discover AI tools and frameworks – LangChain, Kernel, Open AI, Gemini, LLM and Chetu’s Track2Ai – empowering rapid, intelligent development."
+                        description="Discover AI tools and frameworks – LangChain, Kernel, Open AI, Gemini, LLM and U Tech’s Track2Ai – empowering rapid, intelligent development."
                     />
                     <FeaturesList features={aitoolsandframeworks} grid3 fadeUp={fadeUp} center />
                     <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
