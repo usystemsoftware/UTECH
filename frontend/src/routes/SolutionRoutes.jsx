@@ -12,6 +12,7 @@ import DigitalAssetManagement from "@/pages/solutions/digital-asset-mngt/Digital
 import DocumentManagement from "@/pages/solutions/document-management/DocumentManagement";
 import Assettracking from "@/pages/solutions/asset-tracking/Assettracking";
 import Arvr from "@/pages/solutions/ar-vr/Arvr";
+import Aws from "@/pages/solutions/aws/Aws";
 
 export const SolutionRoutes = [
   { path: "/solutions/web-development", element: <WebDevelopment /> },
@@ -28,6 +29,8 @@ export const SolutionRoutes = [
   { path: "/solutions/document-management", element: <DocumentManagement /> },
   { path: "/solutions/asset-tracking", element: <Assettracking /> },
   { path: "/solutions/ar-vr", element: <Arvr /> },
+  { path: "/solutions/aws", element: <Aws /> },
+
 
 
 
