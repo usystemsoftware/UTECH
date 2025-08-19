@@ -3,10 +3,10 @@ import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 
 export default function PortfolioGrid({ items = [] }) {
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 auto-rows-min">
             {items.map((item, index) => (
                 <FadeInWhenVisible key={index}>
-                    <div className="relative group text-center cursor-pointer overflow-hidden">
+                    <div className="relative group text-center cursor-pointer overflow-hidden w-full">
                         {/* Portfolio Image */}
                         <img
                             src={item.img}
@@ -14,12 +14,33 @@ export default function PortfolioGrid({ items = [] }) {
                             className="w-full h-[200px] md:h-[270px] object-cover transition-transform duration-500 group-hover:scale-105"
                         />
 
-                        {/* Hover Text Overlay with Animation */}
+                        {/* Hover Text Overlay */}
                         {item.title && (
-                            <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
-                                <div className="text-white text-base font-bold translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                            <div
+                                className={`
+                  absolute inset-0 bg-black/40 flex flex-col items-center justify-center gap-3
+                  transition-all duration-500
+                  ${index === 0 ? "opacity-100" : "opacity-0 group-hover:opacity-100"}
+                `}
+                            >
+                                <div
+                                    className={`
+                    text-white text-base font-bold transition-all duration-500
+                    ${index === 0 ? "translate-y-0" : "translate-y-4 group-hover:translate-y-0"}
+                  `}
+                                >
                                     {item.title}
                                 </div>
+                                {item.description && (
+                                    <div
+                                        className={`
+                      text-white text-base font-normal transition-all duration-500
+                      ${index === 0 ? "translate-y-0" : "translate-y-4 group-hover:translate-y-0"}
+                    `}
+                                    >
+                                        {item.description}
+                                    </div>
+                                )}
                             </div>
                         )}
                     </div>

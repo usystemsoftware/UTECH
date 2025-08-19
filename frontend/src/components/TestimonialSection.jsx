@@ -3,44 +3,45 @@ import {
   TypographySmall,
   TypographyMuted,
 } from "@/custom/Typography";
-import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 
-export function TestimonialSection({
-  testimonials = [],
-  title = "Hear What Our Clients Have to Say",
-}) {
+export function TestimonialSection({ testimonials = [] }) {
   return (
-    <section className="py-20 bg-secondary">
-      <PageLayout className="space-y-12 text-center">
-        <TypographyH3>{title}</TypographyH3>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <section className="py-16">
+      <div className="max-w-6xl mx-auto px-4">
+        <TypographyH3 className="text-center">
+          Hear What Our Clients Have to Say
+        </TypographyH3>
+        <div className="grid grid-cols-1 mt-16 md:grid-cols-2 gap-12">
           {testimonials.map((t, i) => (
             <div
               key={i}
-              delay={i * 0.2}
-              className="relative bg-card shadow-xl rounded-2xl p-8 flex flex-col gap-6 text-left"
+              className="relative p-8"
             >
-              <span className="absolute top-4 left-4 text-5xl text-primary font-serif">
-                “
+              {/* Top-left quote */}
+              <span className="absolute -top-4 -left-4 text-4xl px-4 text-teal-700 font-bold">
+                &ldquo;
               </span>
 
-              <TypographyMuted className="relative z-10">
-                {t.text}
-              </TypographyMuted>
+              {/* Testimonial text */}
+              <p className="text-gray-700 text-base leading-relaxed">{t.text}</p>
 
-              <span className="absolute bottom-4 right-4 text-5xl text-primary font-serif">
-                ”
-              </span>
-
-              <TypographySmall className="mt-4 relative z-10 font-medium">
+              {/* Author */}
+              <p className="mt-6 text-right text-sm italic text-gray-900">
                 — {t.author}
-              </TypographySmall>
+              </p>
+
+              {/* Bottom-right quote */}
+              <span className="absolute -bottom-3 -right-4 px-4 text-4xl text-teal-700 font-bold">
+                &rdquo;
+              </span>
+
+              {/* Optional corner lines */}
+              <span className="absolute top-0 left-4 w-[70%] h-1 bg-teal-700 rounded"></span>
+              <span className="absolute bottom-3 right-4 w-[70%] h-1 bg-teal-700 rounded"></span>
             </div>
           ))}
         </div>
-      </PageLayout>
+      </div>
     </section>
   );
 }

@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Bot, X, Send, User } from "lucide-react";
 import { TypographyH5 } from "@/custom/Typography";
 import { Button } from "@/components/ui/button";
-import { version } from "../../../package.json";
 
 const chatVariants = {
   hidden: { opacity: 0, y: 50, scale: 0.8 },
@@ -101,8 +100,8 @@ export default function ChatUI() {
                   <motion.div
                     key={message.id}
                     className={`flex items-start space-x-3 ${message.type === "user"
-                        ? "flex-row-reverse space-x-reverse"
-                        : ""
+                      ? "flex-row-reverse space-x-reverse"
+                      : ""
                       }`}
                     initial="hidden"
                     animate="visible"
@@ -110,8 +109,8 @@ export default function ChatUI() {
                   >
                     <div
                       className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${message.type === "bot"
-                          ? "bg-primary text-white"
-                          : "bg-gray-600 text-white"
+                        ? "bg-primary text-white"
+                        : "bg-gray-600 text-white"
                         }`}
                     >
                       {message.type === "bot" ? (
@@ -122,8 +121,8 @@ export default function ChatUI() {
                     </div>
                     <div
                       className={`max-w-[75%] px-4 py-2 rounded-lg text-sm ${message.type === "bot"
-                          ? "bg-gray-100 text-gray-800 shadow-sm border"
-                          : "bg-primary text-white"
+                        ? "bg-gray-100 text-gray-800 shadow-sm border"
+                        : "bg-primary text-white"
                         }`}
                     >
                       <p>{message.text}</p>
@@ -162,17 +161,12 @@ export default function ChatUI() {
       {!isOpen && (
         <motion.div
           onClick={toggleChat}
-          className="fixed bottom-10 hover:scale-105 shadow-lg rounded-full bg-primary p-4 text-white cursor-pointer right-5 z-40 flex items-center gap-2"
+          className="fixed bottom-16 hover:scale-105 shadow-lg rounded-full bg-primary p-4 text-white cursor-pointer right-5 z-40 flex items-center gap-2"
           whileHover={{ scale: 1.05 }}
         >
           <Bot size={26} />
         </motion.div>
       )}
-
-      {/* Version */}
-      <span className="fixed bottom-3 right-4 z-40 text-sm text-gray-500">
-        Version: {version}
-      </span>
     </>
   );
 }

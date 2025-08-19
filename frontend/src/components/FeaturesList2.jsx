@@ -81,7 +81,7 @@ export const FeaturesList2 = ({
             )}
 
             {feature?.list && (
-              <ul className="list-disc pl-5 mt-2 space-y-1 text-muted-foreground">
+              <ul className="list-disc pl-5 mt-2 text-muted-foreground">
                 {feature.list.map((point, idx) => (
                   <li key={idx}>{point}</li>
                 ))}

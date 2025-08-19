@@ -218,7 +218,7 @@ export default function WorkWithUs() {
                     <div className="space-y-4 md:col-span-5">
                         <Card className="border-none">
                             <TypographyH4>
-                                M/s U Tech (India) PVT LTD
+                                M/s Umbarakar Tech (India) PVT LTD
                             </TypographyH4>
                             <TypographyMuted>
                                 Office no.02,15, Zeroboyz Chowk, Nehru Nagar, Pune, Pimpri-Chinchwad, Pune, Maharashtra - 411018
