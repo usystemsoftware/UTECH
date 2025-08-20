@@ -3,7 +3,7 @@ import PageLayout from "@/custom/PageLayout";
 import { TypographyMuted, TypographyH3 } from "@/custom/Typography";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 
-const VideoTvPoster = ({ information }) => {
+const VideoTvPoster = ({ information, imageHeight }) => {
     return (
         <PageLayout className="my-16 py-16 grid grid-cols-1 sm:grid-cols-2 items-center space-y-10 bg-[url('/assets/industries/aviation/we-develop-elearning-background.jpg')] bg-cover bg-center bg-no-repeat">
             <div className="space-y-4">
@@ -19,7 +19,9 @@ const VideoTvPoster = ({ information }) => {
                     loading="lazy"
                     src={information?.src || "/assets/solutions/gis/custom-gis-software-solutions.png"}
                     alt="Portfolio"
-                    className="w-96 mx-auto"
+                    className={`mx-auto ${imageHeight ? '' : 'w-96'}`}
+                    style={imageHeight ? { height: imageHeight } : {}}
+
                 />
             </FadeInWhenVisible>
         </PageLayout>

@@ -19,6 +19,8 @@ import Kiosks from "@/pages/solutions/kiosks/Kiosks";
 import Assettracking from "@/pages/solutions/asset-tracking/Assettracking";
 import Arvr from "@/pages/solutions/ar-vr/Arvr";
 import Aws from "@/pages/solutions/aws/Aws";
+import Autodesk from "@/pages/solutions/autodesk/Autodesk";
+import Biometrics from "@/pages/solutions/biometrics/Biometrics";
 
 export const SolutionRoutes = [
   { path: "/solutions/web-development", element: <WebDevelopment /> },
@@ -42,6 +44,10 @@ export const SolutionRoutes = [
   { path: "/solutions/asset-tracking", element: <Assettracking /> },
   { path: "/solutions/ar-vr", element: <Arvr /> },
   { path: "/solutions/aws", element: <Aws /> },
+  { path: "/solutions/autodesk", element: <Autodesk /> },
+  { path: "/solutions/biometrics", element: <Biometrics /> },
+
+
 
 
 

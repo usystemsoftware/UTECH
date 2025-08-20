@@ -6,7 +6,6 @@ import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
 import { Headline, } from "@/custom/Typography";
-import Iconrender from '@/components/Iconrender';
 import PortfolioGrid from "@/components/PortfolioGrid";
 import {
     awsServices,
@@ -16,26 +15,32 @@ import {
     awsAiMlSolutions,
     awsDevOpsServices,
     awsPerformanceOptimization,
-    awsNetworkingServices
+    awsNetworkingServices,
+    awsServiceslist,
+    supportServices,
+    Faqs,
+    portfolioItems
 
 } from './Data';
+import { TypographyList2 } from '@/custom/Typography';
 const Aws = () => {
     return (
         <>
             <HeroSection
                 backgroundImage="/banner/aws.jpg"
                 title="AWS DEVELOPMENT SERVICES"
-                buttonText="HIRE AWS DEVELOPERS"
+                description="As a certified Autodesk partner, a member of Autodesk Developer Network & Forge Systems Integrator, Chetu provide Autodesk implementation including consulting, design, integration, customization, and AI enhancement."
+                buttonText="HIRE AUTODESK EXPERTS NOW"
                 buttonLink="#"
                 imageFit="cover"
             />
             <section className="py-10 ">
                 <PageLayout className="space-y-10 text-center">
                     <Headline
-                        title="CHire Our Industry Leading AWS Development Company"
+                        title="Hire Our Industry Leading AWS Development Company"
                         description="As an AWS certified partner, Chetu’s team of experts provide AWS configurations, migrations, integrations, and consulting services to help enterprises scale their business applications up or down to match with high or low-velocity demand."
                     />
-                    <div className="grid grid-cols-1 items-center md:grid-cols-2">
+                    <div className="grid grid-cols-1 items-center gap-y-7 md:grid-cols-2">
                         <div className="space-y-8">
                             <FeaturesList
                                 fadeUp={fadeUp}
@@ -44,7 +49,7 @@ const Aws = () => {
 
                             />
                         </div>
-                        <FadeInWhenVisible delay={0.5} className="md:block hidden">
+                        <FadeInWhenVisible delay={0.5} className="">
                             <img
                                 loading="lazy"
                                 src="/assets/solutions/aws/10002.png"
@@ -60,9 +65,9 @@ const Aws = () => {
 
             <section className="py-10 ">
                 <PageLayout className="space-y-10 text-center">
-                    <div className="grid grid-cols-1 items-center md:grid-cols-2">
+                    <div className="grid grid-cols-1 items-center gap-y-7 md:grid-cols-2">
 
-                        <FadeInWhenVisible delay={0.5} className="md:block hidden">
+                        <FadeInWhenVisible delay={0.5} className="">
                             <img
                                 loading="lazy"
                                 src="/assets/solutions/aws/10032.png"
@@ -129,16 +134,14 @@ const Aws = () => {
                         title="AWS DevOps Services"
                         description="Chetu implements the best AWS solutions for DevOps services including process automation, streamlining CI/CD pipelines, and infrastructure management to deliver faster and more reliable application deployment on AWS."
                     />
-                    <div className="grid grid-cols-1 items-center md:grid-cols-2">
-                        <div className="space-y-8">
-                            <FeaturesList
-                                fadeUp={fadeUp}
-                                features={awsDevOpsServices}
-                                iconAlign="horizontal"
+                    <div className="grid grid-cols-1 items-center gap-y-7 md:grid-cols-2 ">
+                        <FeaturesList
+                            fadeUp={fadeUp}
+                            features={awsDevOpsServices}
+                            iconAlign="horizontal"
 
-                            />
-                        </div>
-                        <FadeInWhenVisible delay={0.5} className="md:block hidden">
+                        />
+                        <FadeInWhenVisible delay={0.5}>
                             <img
                                 loading="lazy"
                                 src="/assets/solutions/aws/10033.png"
@@ -160,8 +163,8 @@ const Aws = () => {
                         title="AWS Application Deployment & Monitoring"
                         description="Chetu, a certified AWS partner, deploys applications, websites, and e-commerce stores on AWS, providing detailed insights into CPU, server, memory, and web traffic metrics to help optimize resource costs."
                     />
-                    <div className="grid grid-cols-1 items-center md:grid-cols-2">
-                        <FadeInWhenVisible delay={0.5} className="md:block hidden">
+                    <div className="grid grid-cols-1 items-center gap-y-7 md:grid-cols-2">
+                        <FadeInWhenVisible delay={0.5}>
                             <img
                                 loading="lazy"
                                 src="/assets/solutions/aws/10035.png"
@@ -190,7 +193,7 @@ const Aws = () => {
                         title="Implement Custom AWS Networking Services"
                         description="Our AWS services support companies with setting up, securing, and monitoring your network to ensure that you’re able to manage your growing number of VPCs, simplify your network, secure your traffic, and provide hybrid connectivity between your on-premise & AWS networks."
                     />
-                    <div className="grid grid-cols-1 items-center md:grid-cols-2">
+                    <div className="grid grid-cols-1 items-center  gap-y-7 md:grid-cols-2">
 
                         <FeaturesList
                             fadeUp={fadeUp}
@@ -198,7 +201,7 @@ const Aws = () => {
                             iconAlign="horizontal"
 
                         />
-                        <FadeInWhenVisible delay={0.5} className="md:block hidden">
+                        <FadeInWhenVisible delay={0.5}>
                             <img
                                 loading="lazy"
                                 src="/assets/solutions/aws/10034.png"
@@ -210,6 +213,73 @@ const Aws = () => {
                     <Button variant="hover">CHECK METRICS ON AWS NOW</Button>
 
                 </PageLayout>
+
+            </section>
+
+
+            <section className="py-10 ">
+                <PageLayout className="space-y-10 text-center">
+                    <Headline
+                        title="AWS Tools & Technologies"
+                        description="Chetu will customize, test, and deploy your custom web or mobile applications to AWS using top-of-the-line AWS products, tools, & technologies throughout the entire project lifecycle."
+                    />
+                    <div className="grid grid-cols-1 items-center gap-y-7 md:grid-cols-2">
+                        <div className="grid grid-cols-2 justify-items-center">
+                            <TypographyList2 className="text-slate-800 text-left" items={awsServiceslist.slice(0, 7)} />
+                            <TypographyList2 className="text-slate-800 text-left" items={awsServiceslist.slice(7, 15)} />
+                        </div>
+
+
+
+                        <FadeInWhenVisible delay={0.5}>
+                            <img
+                                loading="lazy"
+                                src="/assets/solutions/aws/10036.png"
+                                alt="Portfolio"
+                                className="w-132 mx-auto"
+                            />
+                        </FadeInWhenVisible>
+                    </div>
+                    <Button variant="hover">CUSTOMIZE YOUR AWS APPLICATION</Button>
+
+                </PageLayout>
+
+            </section>
+
+
+            <section className="py-10 ">
+                <PageLayout className="space-y-10 text-center">
+                    <Headline
+                        title="AWS Tools & Technologies"
+                        description="Chetu will customize, test, and deploy your custom web or mobile applications to AWS using top-of-the-line AWS products, tools, & technologies throughout the entire project lifecycle."
+                    />
+                    <div className="grid grid-cols-1 gap-y-7 md:grid-cols-2">
+
+                        <FadeInWhenVisible delay={0.5}>
+                            <img
+                                loading="lazy"
+                                src="/assets/solutions/aws/10037.png"
+                                alt="Portfolio"
+                                className="w-132 mx-auto"
+                            />
+                        </FadeInWhenVisible>
+                        <div className="grid justify-center">
+                            <TypographyList2 className="text-slate-800 text-left [&>li]:mt-3" items={supportServices} />
+                        </div>
+                    </div>
+                    <Button variant="hover">CUSTOMIZE YOUR AWS APPLICATION</Button>
+
+                </PageLayout>
+
+            </section>
+            <section>
+                <div className="py-8">
+                    <FaqSection faqs={Faqs} title="Frequently Asked Questions for XR / AR VR Solutions" />
+                </div>
+            </section>
+
+            <section>
+                <PortfolioGrid items={portfolioItems} />
 
             </section>
         </>

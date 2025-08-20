@@ -213,6 +213,85 @@ export const awsNetworkingServices = [
     }
 ];
 
+export const awsServiceslist = [
+    "Amazon Elastic Container Service",
+    "AWS Elastic Beanstalk",
+    "Amazon Simple Email Service (Amazon SES)",
+    "Amazon Redshift",
+    "Elastic Load Balancing",
+    "AWS CodePipeline",
+    "AWS DMS",
+    "Amazon Connect",
+    "Amazon Aurora",
+    "Amazon Route 53",
+    "AWS Communication Tools",
+    "AWS Fargate",
+    "Amazon CloudWatch",
+    "Amazon DynamoDB",
+];
 
+export const supportServices = [
+    "Programming (Technical) Support",
+    "Non-Programming (Functional) Support",
+    "Implementations & Integrations",
+    "DevOps Support",
+    "Setup & Configuration",
+    "Bug Fixes & Troubleshooting",
+    "Migration & Updates",
+    "Application Support",
+];
+
+export const Faqs = [
+    {
+        question: "What are the challenges businesses face when migrating to AWS?",
+        answer:
+            "Businesses face AWS migration challenges, including data transfer complexities, legacy integration difficulties, cost management concerns, and data security risks. A strategic plan is crucial to address these issues effectively.",
+    },
+    {
+        question: "What is AWS implementation?",
+        answer:
+            "AWS implementation involves configuring and deploying AWS cloud infrastructure to address business requirements. This includes integrating systems seamlessly, deploying resources efficiently, and optimizing them to enhance performance and manage costs effectively.",
+    },
+    {
+        question: "What is AWS and what are its advantages?",
+        answer:
+            "AWS provides flexible, cost-effective cloud services, improving security and performance. Chetu relies on AWS for reliable, innovative solutions.",
+    },
+    {
+        question: "What role does automation play in AWS infrastructure management?",
+        answer:
+            "Automation boosts AWS infrastructure efficiency by reducing manual work, enhancing cloud security through security monitoring, patch automation, and dynamically scaling workloads to adapt to changing demands.",
+    },
+];
+
+export const portfolioItems = [
+    {
+        title: "Our Portfolio",
+        img: "/assets/solutions/aws/10003.jpg",
+
+    },
+    {
+        title: "AWS DynamoDB vs MongoDB: Choosing a NoSQL Database for your business",
+        img: "/assets/solutions/aws/10004.jpg",
+    },
+    {
+        title: "Bringing Security to Your AWS DevOps Applications with DevSecOps",
+        img: "/assets/solutions/aws/10005.jpg",
+    },
+    {
+        title: "Deciding Between Oracle Cloud vs AWS",
+        img: "/assets/solutions/aws/10006.jpg",
+
+    },
+    {
+        title: "Top AWS DevOps Tools for Cloud Orchestration",
+        img: "/assets/solutions/aws/10007.jpg",
+    },
+    {
+        title: "CHETU ANNOUNCES AWS SELECT PARTNER STATUS",
+        img: "/assets/solutions/aws/10008.jpg",
+    },
+
+];
 
 
