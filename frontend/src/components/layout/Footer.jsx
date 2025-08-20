@@ -89,7 +89,7 @@ export const Footer = () => {
           <Link to="/" className="flex items-center">
             <img src="/logo.png" alt="Logo" className="w-36" loading="lazy" />
           </Link>
-          <p className="text-sm text-gray-300">
+          <p className="text-sm md:text-base text-gray-300">
             Subscribe to get the latest updates, articles, and inspiration.
           </p>
           <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2">
@@ -99,7 +99,7 @@ export const Footer = () => {
             </Button>
           </form>
           {subscribed && (
-            <p className="text-green-400 text-sm">Thank you for subscribing! 🎉</p>
+            <p className="text-green-400 text-sm md:text-base">Thank you for subscribing! 🎉</p>
           )}
           <div className="flex items-center gap-2 mt-4">
             {socialIcons.map((item, i) => (
@@ -120,8 +120,8 @@ export const Footer = () => {
         {/* Links Sections */}
         {footerLinks.map((section, i) => (
           <div key={i}>
-            <TypographyH4 className="text-base mb-3">{section.title}</TypographyH4>
-            <ul className="space-y-2 text-[13px] text-gray-300">
+            <TypographyH4 className="text-base sm:text-xl mb-3">{section.title}</TypographyH4>
+            <ul className="space-y-2 sm:space-y-3 text-[13px] md:text-sm text-gray-300">
               {section.links.map((link, j) => (
                 <li key={j}>
                   <Link to={link.to} className="hover:text-primary">
@@ -136,7 +136,7 @@ export const Footer = () => {
 
       {/* Legal Notices */}
       <PageLayout>
-        <ul className="my-4 list-disc px-4 text-[13px] text-gray-300 grid gap-2 [&>li]:mt-2">
+        <ul className="my-4 list-disc px-4 text-[13px] sm:text-sm text-gray-300 grid gap-2 [&>li]:mt-2">
           {legalNotices.map((notice, index) => (
             <li key={index}>{notice}</li>
           ))}
@@ -155,7 +155,7 @@ export const Footer = () => {
             </React.Fragment>
           ))}
         </div>
-        <div>
+        <div className="sm:text-base text-sm">
           © {new Date().getFullYear()} Umbarakar Technology (India) Pvt Ltd. All rights reserved.
         </div>
       </div>

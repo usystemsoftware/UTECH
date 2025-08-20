@@ -18,7 +18,7 @@ export default function HeroSection({
   return (
     <>
       {/* Hero Section Container */}
-      <section className="relative w-full min-h-[70vh] md:min-h-[80vh] flex items-center md:justify-center overflow-hidden">
+      <section className="relative w-full min-h-[70vh] md:min-h-[100vh] flex items-center md:justify-center overflow-hidden">
         {/* Background Image Layer */}
         <div
           className="absolute inset-0 z-0"

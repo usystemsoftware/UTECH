@@ -20,7 +20,7 @@ export default function FaqSection({ faqs = [], title, hightlight }) {
           <div key={index} delay={index * 0.1}>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value={`item-${index}`}>
-                <AccordionTrigger className="border-b-2 rounded-none border-[#009698] text-sm md:text-base font-semibold tracking-normal">
+                <AccordionTrigger className="border-b-2 rounded-none cursor-pointer border-[#009698] text-sm md:text-base font-semibold tracking-normal">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent>

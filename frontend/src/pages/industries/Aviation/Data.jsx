@@ -88,6 +88,7 @@ export const tvpoasterDescription = {
   src: "/assets/industries/healthcare/get-hl7-solutions.png",
   description: "U Tech’s Custom MRO solutions meets regulatory safety-related standards and requirements of the Federal Aviation Administration (FAA), Civil Aeronautics Board (CAB), Occupational Safety & Health Administration (OSHA), Airworthiness Directives (AD), Temporary Flight Restrictions (TFR), Advisory Circulars (AC), and other standards associated with the industry."
 }
+
 export const airlineReservationSolutions = [
   {
     title: "Airline Reservation Software Development",

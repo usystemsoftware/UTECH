@@ -117,17 +117,17 @@ const CustomServices = () => {
             Our dedicated team of in-house software developers has extensive industry-specific experience building custom software solutions and applications for:
           </TypographyMuted>
           <div className="flex items-center mt-4 gap-12">
-            <div className="flex flex-col text-blue-700 space-y-2">
+            <div className="flex flex-col text-blue-900 space-y-2">
               {TelecomCustomservices.slice(0, 6).map((item, idx) => (
                 <Link to={item?.path} key={idx}>
-                  {item.title}
+                  •  {item.title}
                 </Link>
               ))}
             </div>
-            <div className="flex flex-col text-blue-700 space-y-2">
+            <div className="flex flex-col text-blue-900 space-y-2">
               {TelecomCustomservices.slice(6, 12).map((item, idx) => (
                 <Link to={item?.path} key={idx}>
-                  {item.title}
+                  •  {item.title}
                 </Link>
               ))}
             </div>
@@ -139,14 +139,14 @@ const CustomServices = () => {
             loading="lazy"
             src="/assets/services/customservices/solutions.png"
             alt="Custom Planning Dashboard"
-            className="w-145"
+            className="w-145 md:w-165"
           />
         </FadeInWhenVisible>
       </PageLayout>
 
       {/* === Industry-Specific Software Section === */}
-      <section className="bg-secondary">
-        <PageLayout className="text-center space-y-6 py-12">
+      <section className="bg-secondary  py-12">
+        <PageLayout className="text-center space-y-6">
           <Headline
             title="Industry-Specific Software Solutions"
             description="Integrate scalable and customized industry-specific software with U Tech into workflows for industries such as healthcare, finance, and retail.."
@@ -234,7 +234,7 @@ const CustomServices = () => {
               {ProgrammerCustomservices.slice(0, 6).map((item, idx) => (
                 <>
                   <Link to={item?.path} key={idx} className="flex flex-col text-blue-700 space-y-2">
-                    {item.title}
+                    •  {item.title}
                   </Link>
                 </>
               ))}
@@ -246,7 +246,7 @@ const CustomServices = () => {
               {ProgrammerCustomservices.slice(6, 12).map((item, idx) => (
                 <>
                   <Link to={item?.path} key={idx} className="flex flex-col text-blue-700 space-y-2">
-                    {item.title}
+                    •  {item.title}
                   </Link>
                 </>
               ))}

@@ -71,7 +71,7 @@ export default function Aviation() {
       </section>
 
       {/* Custom Airline Technology */}
-      <section className="py-16 bg-white flex flex-col gap-6 justify-center items-center">
+      <section className="py-16 flex flex-col gap-6 justify-center items-center">
         <Headline
           title="Custom Airline Technology Solutions"
           description="U Tech provides custom airline management software for OEMs, MROs, Airports, and flight operators to streamline their operational workflows."
