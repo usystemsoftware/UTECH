@@ -40,8 +40,4 @@ export const SolutionRoutes = [
   { path: "/solutions/kiosk", element: <Kiosks /> },
   { path: "/solutions/asset-tracking", element: <Assettracking /> },
   { path: "/solutions/ar-vr", element: <Arvr /> },
-
-
-
-
 ];
