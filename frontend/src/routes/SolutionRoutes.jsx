@@ -21,6 +21,7 @@ import Arvr from "@/pages/solutions/ar-vr/Arvr";
 import Aws from "@/pages/solutions/aws/Aws";
 import Autodesk from "@/pages/solutions/autodesk/Autodesk";
 import Biometrics from "@/pages/solutions/biometrics/Biometrics";
+import Blockchain from "@/pages/solutions/blockchain/Blockchain";
 
 export const SolutionRoutes = [
   { path: "/solutions/web-development", element: <WebDevelopment /> },
@@ -46,6 +47,8 @@ export const SolutionRoutes = [
   { path: "/solutions/aws", element: <Aws /> },
   { path: "/solutions/autodesk", element: <Autodesk /> },
   { path: "/solutions/biometrics", element: <Biometrics /> },
+  { path: "/solutions/blockchain", element: <Blockchain /> },
+
 
 
 
