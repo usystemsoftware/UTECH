@@ -94,7 +94,7 @@ const ApplicationMaintenance = () => {
 
       {/* === BLOCK OF HOURS SUPPORT SECTION === */}
       <section className="bg-secondary py-12">
-        <PageLayout>
+        <PageLayout className="space-y-10">
           <div className="flex justify-between gap-8 md:flex-row flex-col">
             <Headline
               title="Block of Hours Support Services"

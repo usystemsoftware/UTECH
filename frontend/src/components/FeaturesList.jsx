@@ -42,7 +42,7 @@ export const FeaturesList = ({
   } else if (grid) {
     contentClass = `grid grid-cols-1 sm:grid-cols-2 gap-6 ${textAlignClass} w-full`;
   } else {
-    contentClass = `w-full space-y-7 ${textAlignClass}`;
+    contentClass = `w-full space-y-8 ${textAlignClass}`;
   }
 
   return (
@@ -57,7 +57,7 @@ export const FeaturesList = ({
             className={`flex ${iconAlign === "horizontal"
               ? `sm:flex-row flex-col gap-4 ${center ? "items-center" : "items-center sm:items-start"
               }`
-              : `flex-col gap-2 ${center ? "items-center" : "items-center sm:items-start"
+              : `flex-col gap-4 ${center ? "items-center" : "items-center sm:items-start"
               }`
               }`}
           >
@@ -69,7 +69,7 @@ export const FeaturesList = ({
                   alt={feature.title}
                   width={iconSize}
                   height={iconSize}
-                  className="object-contain w-14 h-14"
+                  className="object-contain w-16 h-16"
                 />
               ) : (
                 <IconRenderer
@@ -81,7 +81,7 @@ export const FeaturesList = ({
             </span>
 
             {/* TEXT */}
-            <div className={iconAlign === "horizontal" ? "flex-1" : ""}>
+            <div className={iconAlign === "horizontal" ? "flex-1 ml-4" : ""}>
               <TypographyH5 className="font-extrabold text-base tracking-tight">
                 {feature.title}
               </TypographyH5>

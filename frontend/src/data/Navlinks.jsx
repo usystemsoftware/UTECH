@@ -2,6 +2,7 @@ export const Navlinks = [
   {
     title: "Industries",
     items: [
+      { label: "Agriculture", href: "/industries/agriculture", image: "/images/industries/agriculture.png", icon: "Tractor" },
       { label: "Aviation", href: "/industries/aviation", image: "/images/industries/aviation.png", icon: "Plane" },
       { label: "Banking", href: "/industries/banking", image: "/images/industries/banking.png", icon: "Banknote" },
       { label: "Construction", href: "/industries/construction", image: "/images/industries/construction.png", icon: "Hammer" },
@@ -83,12 +84,12 @@ export const Navlinks = [
       { label: "IOT & M2M", href: "/solutions/iot", image: "/images/solutions/iot.png", icon: "SatelliteDish" },
       { label: "Kiosk", href: "/solutions/kiosk", image: "/images/solutions/kiosk.png", icon: "Touchpad" },
       { label: "Layout / UI / UX", href: "/solutions/ui-ux", image: "/images/solutions/uiux.png", icon: "LayoutDashboard" },
-      { label: "Microsoft", href: "/solutions/microsoft", image: "/images/partners/microsoft.png", icon: "Laptop" },
-      { label: "NetSuite", href: "/solutions/netsuite", image: "/images/partners/netsuite.png", icon: "Network" },
+      // { label: "Microsoft", href: "/solutions/microsoft", image: "/images/partners/microsoft.png", icon: "Laptop" },
+      // { label: "NetSuite", href: "/solutions/netsuite", image: "/images/partners/netsuite.png", icon: "Network" },
       { label: "Oracle", href: "/solutions/oracle", image: "/images/partners/oracle.png", icon: "CircleDashed" },
       { label: "Salesforce", href: "/solutions/salesforce", image: "/images/partners/salesforce.png", icon: "Activity" },
       { label: "SAP", href: "/solutions/sap", image: "/images/partners/sap.png", icon: "LayoutGrid" },
-      { label: "UiPath", href: "/solutions/uipath", image: "/images/partners/uipath.png", icon: "Bot" },
+      // { label: "UiPath", href: "/solutions/uipath", image: "/images/partners/uipath.png", icon: "Bot" },
       { label: "UKG", href: "/solutions/ukg", image: "/images/partners/ukg.png", icon: "Users" },
       { label: "Web Development", href: "/solutions/web-development", image: "/images/solutions/webdev.png", icon: "Code" },
     ],
