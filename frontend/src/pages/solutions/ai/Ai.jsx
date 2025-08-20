@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroSection from "@/components/HeroSection";
 import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
@@ -8,8 +7,22 @@ import { Button } from "@/components/ui/button";
 import { Headline, } from "@/custom/Typography";
 import Iconrender from '@/components/Iconrender';
 import PortfolioGrid from "@/components/PortfolioGrid";
-import { artificialintelligencedeveloper, solutions, advancedartificialintelligencesolutions, artificialintelligenceusecases, aitoolsandframeworks, videosection, features, industryspecificsisolutions, industryspecificsisolutionssection2, integratedaisolutions, Faqs, portfolioItems } from './Data';
 import VideoPoster from "@/custom/VideoPoster";
+import {
+    artificialintelligencedeveloper,
+    solutions,
+    advancedartificialintelligencesolutions,
+    artificialintelligenceusecases,
+    aitoolsandframeworks,
+    videosection,
+    features,
+    industryspecificsisolutions,
+    industryspecificsisolutionssection2,
+    integratedaisolutions,
+    Faqs,
+    portfolioItems
+
+} from './Data';
 
 const Ai = () => {
     return (
@@ -23,149 +36,130 @@ const Ai = () => {
                 imageFit="cover"
             />
 
-            <section className="py-5 ">
-                <PageLayout className="space-y-10 text-center">
-                    <Headline
-                        title="Hire An Experienced Artificial Intelligence Developer"
-                        description="Our expert developers help businesses optimize their operations, create advanced software, and develop innovative products as part of your existing in-house team or on a turnkey basis to help you complete your project quickly and affordably."
-                    />
-                    <div className="grid grid-cols-1 items-center md:grid-cols-2">
-                        <FadeInWhenVisible delay={0.5} className="md:block hidden">
-                            <img
-                                loading="lazy"
-                                src="/assets/solutions/ai/10002.png"
-                                alt="Portfolio"
-                                className="w-130 mx-auto"
-                            />
-                        </FadeInWhenVisible>
-                        <div className="space-y-8">
-                            <FeaturesList
-                                fadeUp={fadeUp}
-                                features={artificialintelligencedeveloper}
-                                iconAlign="horizontal"
-
-                            />
-                        </div>
-                    </div>
-
-                </PageLayout>
-
-            </section>
-
-            <section>
-                <PageLayout className="mt-20 text-center space-y-10">
-
+            <PageLayout className="space-y-10 py-16 text-center">
+                <Headline
+                    title="Hire An Experienced Artificial Intelligence Developer"
+                    description="Our expert developers help businesses optimize their operations, create advanced software, and develop innovative products as part of your existing in-house team or on a turnkey basis to help you complete your project quickly and affordably."
+                />
+                <div className="grid grid-cols-1 items-center sm:grid-cols-2 gap-6">
                     <FadeInWhenVisible delay={0.5}>
                         <img
                             loading="lazy"
-                            src="/assets/solutions/ai/10006.gif"
+                            src="/assets/solutions/ai/10002.png"
                             alt="Portfolio"
-                            className="mx-auto"
+                            className="w-135 mx-auto"
                         />
                     </FadeInWhenVisible>
-                    <Button variant="hover">Explore The Full Track2AI Framework</Button>
+                    <FeaturesList
+                        features={artificialintelligencedeveloper}
+                        iconAlign="horizontal"
+                    />
+                </div>
+            </PageLayout>
 
-                </PageLayout>
-            </section>
-            <section className="py-10 ">
+            <PageLayout className="py-6 text-center space-y-10">
+                <img
+                    loading="lazy"
+                    src="/assets/solutions/ai/10006.gif"
+                    alt="Portfolio"
+                    className="mx-auto"
+                />
+                <Button variant="hover">Explore The Full Track2AI Framework</Button>
+            </PageLayout>
+
+            <section className="bg-secondary py-12">
                 <PageLayout className="space-y-10 text-center">
                     <Headline
                         title="Custom Web Design & Animation Solutions"
                         description="We develop, integrate, and customize attention-grabbing 2D and 3D animations with CRO in mind, capturing real-time interactions, and providing live data analytics to improve user experience and increase ROI."
                     />
-                    <div className="grid grid-cols-1 items-center md:grid-cols-2">
-                        <div className="space-y-8">
+                    <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-6">
+                        <div className="order-2 sm:order-1">
                             <FeaturesList
-                                fadeUp={fadeUp}
                                 features={solutions}
                                 grid
                                 center
                             />
                         </div>
-                        <FadeInWhenVisible delay={0.5} className="md:block hidden">
+                        <FadeInWhenVisible delay={0.5} className="order-1 md:block hidden sm:order-2">
                             <img
                                 loading="lazy"
                                 src="/assets/solutions/ai/10007.png"
                                 alt="Portfolio"
-                                className="w-125 mx-auto"
+                                className="w-78 md:w-105 mx-auto"
                             />
                         </FadeInWhenVisible>
-
                     </div>
                     <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
-
                 </PageLayout>
-
             </section>
 
-            <section className="bg-secondary py-12">
-                <PageLayout className="space-y-8 text-center">
-                    <Headline
-                        title="AI Solutions for the Airline Industry"
-                        description="U Tech's advanced AI solutions revolutionize the airline industry by optimizing revenue management, flight management, predictive maintenance, and more. With cutting-edge technology and industry expertise, our AI-driven systems provide real-time insights, streamline workflows, and ensure regulatory compliance."
+            <PageLayout className="space-y-8 py-16 text-center">
+                <Headline
+                    title="AI Solutions for the Airline Industry"
+                    description="U Tech's advanced AI solutions revolutionize the airline industry by optimizing revenue management, flight management, predictive maintenance, and more. With cutting-edge technology and industry expertise, our AI-driven systems provide real-time insights, streamline workflows, and ensure regulatory compliance."
+                />
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
+                    <FeaturesList
+                        features={advancedartificialintelligencesolutions.slice(0, 3)}
+                        center
                     />
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
-                        <FeaturesList features={advancedartificialintelligencesolutions.slice(0, 3)} fadeUp={fadeUp} center />
-                        <FadeInWhenVisible className="hidden md:block">
-                            <img
-                                src="/assets/solutions/ai/10012.png"
-                                alt="img"
-                                loading="lazy"
-                                className="w-110 mx-auto"
-                            />
-                        </FadeInWhenVisible>
-                        <FeaturesList features={advancedartificialintelligencesolutions.slice(3, 6)} center />
-                    </div>
-                    <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+                    <FadeInWhenVisible className="hidden md:block">
+                        <img
+                            src="/assets/solutions/ai/10012.png"
+                            alt="img"
+                            loading="lazy"
+                            className="w-110 mx-auto"
+                        />
+                    </FadeInWhenVisible>
+                    <FeaturesList
+                        features={advancedartificialintelligencesolutions.slice(3, 6)}
+                        center
+                    />
+                </div>
+                <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+            </PageLayout>
 
-                </PageLayout>
-
-            </section>
-
-            <section className="bg-secondary py-5">
+            <section className="bg-secondary py-16">
                 <PageLayout className="space-y-10 text-center">
                     <Headline
                         title="Artificial Intelligence Use Cases"
                         description="Explore diverse Artificial Intelligence use cases with U Tech, empowering businesses to automate tasks, optimize decision-making, and drive innovative digital transformation."
                     />
-                    <FeaturesList features={artificialintelligenceusecases} grid3 fadeUp={fadeUp} center />
-                    <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
-
-
-                </PageLayout>
-
-            </section>
-
-            <section className="bg-secondary py-5">
-                <PageLayout className="space-y-10 text-center">
-                    <Headline
-                        title="AI Tools and Frameworks"
-                        description="Discover AI tools and frameworks – LangChain, Kernel, Open AI, Gemini, LLM and U Tech’s Track2Ai – empowering rapid, intelligent development."
+                    <FeaturesList
+                        features={artificialintelligenceusecases}
+                        grid3
+                        center
                     />
-                    <FeaturesList features={aitoolsandframeworks} grid3 fadeUp={fadeUp} center />
                     <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
-
-
                 </PageLayout>
-
             </section>
-            <section className="py-5">
+
+            <PageLayout className="space-y-10 py-12 text-center">
+                <Headline
+                    title="AI Tools and Frameworks"
+                    description="Discover AI tools and frameworks – LangChain, Kernel, Open AI, Gemini, LLM and U Tech’s Track2Ai – empowering rapid, intelligent development."
+                />
+                <FeaturesList
+                    features={aitoolsandframeworks}
+                    grid3
+                    center
+                />
+                <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+            </PageLayout>
+
+            <section className="py-16 bg-secondary">
                 <PageLayout className="space-y-10 space-x-2 text-center">
                     <Headline
                         title="Hire An Experienced Artificial Intelligence Developer"
                         description="Our expert developers help businesses optimize their operations, create advanced software, and develop innovative products as part of your existing in-house team or on a turnkey basis to help you complete your project quickly and affordably."
                     />
 
-                    <div className="grid grid-cols-1 space-y-10 items-center lg:grid-cols-2">
-                        {/* Features List */}
-                        <div className="space-y-8">
-                            <FeaturesList
-                                fadeUp={fadeUp}
-                                features={videosection}
-                                iconAlign="horizontal"
-                            />
-                        </div>
-
+                    <div className="grid grid-cols-1 space-y-10 items-center sm:grid-cols-2 gap-6">
+                        <FeaturesList
+                            features={videosection}
+                            iconAlign="horizontal"
+                        />
                         {/* Video Section */}
                         <div className="flex justify-center items-center">
                             <div className="relative w-full lg:max-w-lg aspect-video rounded-2xl shadow-lg border-12 border-black">
@@ -182,92 +176,67 @@ const Ai = () => {
                     </div>
                 </PageLayout>
             </section>
+
             <section className="relative w-full overflow-hidden">
                 <VideoPoster
                     features={features}
                     title="Smarter Tech, Bigger Impact: Explore the Latest in AI"
                 />
             </section>
-            <section className="py-5 ">
+
+            <section className="py-16 bg-secondary">
                 <PageLayout className="space-y-10 text-center">
                     <Headline
                         title="Industry Specific AI Solutions"
                         description="We develop, integrate, and customize attention-grabbing 2D and 3D animations with CRO in mind, capturing real-time interactions, and providing live data analytics to improve user experience and increase ROI."
                     />
-                    <div className="grid grid-cols-1 items-center md:grid-cols-2">
-                        <div className="space-y-8">
+                    <div className="grid grid-cols-1 items-center sm:grid-cols-2 gap-6">
+                        <div className="order-2 sm:order-1">
                             <FeaturesList
-                                fadeUp={fadeUp}
                                 features={industryspecificsisolutions}
                                 iconAlign="horizontal"
-
-
                             />
                         </div>
-                        <FadeInWhenVisible delay={0.5} className="md:block hidden">
+                        <FadeInWhenVisible delay={0.5} className="order-1 sm:order-2">
                             <img
                                 loading="lazy"
                                 src="/assets/solutions/ai/10031.png"
                                 alt="Portfolio"
-                                className="w-70 mx-auto"
+                                className="w-42 sm:w-48 md:w-56 mx-auto"
                             />
                         </FadeInWhenVisible>
 
                     </div>
                     <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
-
-                </PageLayout>
-
-            </section>
-            <section className="py-5 ">
-                <PageLayout className="space-y-10 text-center">
-                    <Headline
-                        title="Hire An Experienced Artificial Intelligence Developer"
-                        description="Our expert developers help businesses optimize their operations, create advanced software, and develop innovative products as part of your existing in-house team or on a turnkey basis to help you complete your project quickly and affordably."
-                    />
-                    <div className="grid grid-cols-1 items-center md:grid-cols-2">
-                        <FadeInWhenVisible delay={0.5} className="md:block hidden">
+                    
+                    <div className="grid grid-cols-1 items-center sm:grid-cols-2 gap-6">
+                        <FadeInWhenVisible delay={0.5}>
                             <img
                                 loading="lazy"
                                 src="/assets/solutions/ai/10032.png"
                                 alt="Portfolio"
-                                className="w-130 mx-auto"
+                                className="w-135 mx-auto"
                             />
                         </FadeInWhenVisible>
-                        <div className="space-y-8">
-                            <FeaturesList
-                                fadeUp={fadeUp}
-                                features={industryspecificsisolutionssection2}
-                                iconAlign="horizontal"
-
-                            />
-                        </div>
+                        <FeaturesList
+                            features={industryspecificsisolutionssection2}
+                            iconAlign="horizontal"
+                        />
                     </div>
                     <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
-
-                </PageLayout>
-
-            </section>
-
-            <section>
-
-                <PageLayout className="py-16 space-y-8 text-center">
-                    <Iconrender center webdesignintegrations={integratedaisolutions} />
-                    <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
-
                 </PageLayout>
             </section>
 
+            <PageLayout className="py-16 space-y-8 text-center">
+                <Iconrender center webdesignintegrations={integratedaisolutions} />
+                <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+            </PageLayout>
 
-            <section>
-                <div className="mb-16 mt-2">
-                    <FaqSection faqs={Faqs} title="Frequently Asked Questions for 3D Animation Services" />
-                </div>
-            </section>
-            <section>
-                <PortfolioGrid items={portfolioItems} />
+            <div className="py-8">
+                <FaqSection faqs={Faqs} title="Frequently Asked Questions for 3D Animation Services" />
+            </div>
 
-            </section>
+            <PortfolioGrid items={portfolioItems} />
 
         </>
     )

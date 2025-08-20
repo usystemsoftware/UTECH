@@ -81,7 +81,7 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
               >
                 <div className="flex items-center gap-1 cursor-pointer">
                   <TypographySmall
-                    className={`font-semibold tracking-wide transition-colors duration-200 ${hoveredIndex === index
+                    className={`font-semibold tracking-wide uppercase transition-colors duration-200 ${hoveredIndex === index
                       ? "text-primary border-b-2 border-primary"
                       : "hover:text-primary"
                       }`}

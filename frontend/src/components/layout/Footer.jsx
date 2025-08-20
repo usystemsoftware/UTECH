@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
+import { version } from "../../../package.json";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { TypographyH4 } from "@/custom/Typography";
@@ -68,7 +68,7 @@ export const footerLinks = [
 ];
 
 export const legalNotices = [
-  "U Technology (India) Pvt Ltd CIN: U72900PN2020PTC193410 Registered Office no.02,15, Zeroboyz Chowk, Nehru Nagar, Pune, Pimpri-Chinchwad, Pune, Maharashtra - 411018 Email ID: enquiry@usystem.software",
+  "U Technology (India) Pvt Ltd CIN: U72900PN2020PTC193410 Registered Office no.02,15, Zeroboyz Chowk, Nehru Nagar, Pune, Pimpri-Chinchwad, Pune, Maharashtra - 411018 , Email ID: enquiry@usystem.software",
   "Visitors are hereby informed that their information submitted on the website may be shared with relevant service providers. Product and service information is accurate based on the latest company data.",
   "We do not solicit or promote services through unsolicited calls or messages. Any such interactions should be reported to our support team immediately.",
 ];
@@ -82,7 +82,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#213448] text-white pt-10 pb-6">
+    <footer className="bg-[#213448] relative text-white pt-10 pb-6">
       <PageLayout className="grid gap-10 md:grid-cols-4 lg:grid-cols-5">
         {/* Brand & Subscribe */}
         <div className="col-span-2 space-y-4">
@@ -156,9 +156,13 @@ export const Footer = () => {
           ))}
         </div>
         <div>
-          © {new Date().getFullYear()} U Technology (India) Pvt Ltd. All rights reserved.
+          © {new Date().getFullYear()} Umbarakar Technology (India) Pvt Ltd. All rights reserved.
         </div>
       </div>
+      {/* Version */}
+      <span className="absolute bottom-0 right-4 z-40 text-sm">
+        Version: {version}
+      </span>
     </footer>
   );
 };
