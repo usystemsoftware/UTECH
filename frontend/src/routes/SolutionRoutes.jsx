@@ -24,6 +24,10 @@ import Oracle from "@/pages/solutions/oracle/Oracle";
 import Salesforce from "@/pages/solutions/salesforce/Salesforce";
 import SAP from "@/pages/solutions/sap/SAP";
 import UKG from "@/pages/solutions/ukg/UKG";
+import Aws from "@/pages/solutions/aws/Aws";
+import Autodesk from "@/pages/solutions/autodesk/Autodesk";
+import Biometrics from "@/pages/solutions/biometrics/Biometrics";
+import Blockchain from "@/pages/solutions/blockchain/Blockchain";
 
 export const SolutionRoutes = [
   { path: "/solutions/web-development", element: <WebDevelopment /> },
@@ -52,5 +56,16 @@ export const SolutionRoutes = [
   { path: "/solutions/salesforce", element: <Salesforce /> },
   { path: "/solutions/sap", element: <SAP /> },
   { path: "/solutions/ukg", element: <UKG /> },
+  { path: "/solutions/aws", element: <Aws /> },
+  { path: "/solutions/autodesk", element: <Autodesk /> },
+  { path: "/solutions/biometrics", element: <Biometrics /> },
+  { path: "/solutions/blockchain", element: <Blockchain /> },
+
+
+
+
+
+
+
 
 ];
