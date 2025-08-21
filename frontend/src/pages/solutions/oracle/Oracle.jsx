@@ -3,7 +3,7 @@ import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { Check } from "lucide-react";
 import {
@@ -45,9 +45,9 @@ export default function Oracle() {
                     center
                 />
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     HIRE AN ORACLE PARTNER
-                </Button>
+                </ContactUsButton>
             </PageLayout >
 
             <section className="bg-secondary py-16 text-center">
@@ -64,9 +64,9 @@ export default function Oracle() {
                         center
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET ORACLE INDUSTRY SOLUTIONS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -91,9 +91,9 @@ export default function Oracle() {
                     </FadeInWhenVisible>
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET ORACLE AND AI SOLUTIONS
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-12">
@@ -135,9 +135,9 @@ export default function Oracle() {
                         </div>
                     </div>
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         THIRD PARTY ORACLE SUPPORT
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 

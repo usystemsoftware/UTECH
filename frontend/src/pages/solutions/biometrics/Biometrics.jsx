@@ -3,7 +3,7 @@ import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, } from "@/custom/Typography";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import {
@@ -32,9 +32,9 @@ const Biometrics = () => {
                     description="U Tech’s custom biometric software ensures secure identity verification and access control, meeting industry standards for encryption, privacy, and trust."
                 />
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET BIOMETRIC SOLUTIONS
-                </Button>
+                </ContactUsButton>
 
                 <div className="grid grid-cols-1 items-center gap-6 sm:grid-cols-2">
                     <FadeInWhenVisible delay={0.5} className="">
@@ -57,7 +57,7 @@ const Biometrics = () => {
                         grid
                         iconAlign="horizontal"
                     />
-                    <Button variant="hover">Hire Industry Tech Experts</Button>
+                    <ContactUsButton variant="hover">Hire Industry Tech Experts</ContactUsButton>
                 </div>
             </PageLayout>
 
@@ -72,7 +72,7 @@ const Biometrics = () => {
                         grid3
                         center
                     />
-                    <Button variant="hover">Get Biometric Solutions</Button>
+                    <ContactUsButton variant="hover">Get Biometric Solutions</ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -86,9 +86,9 @@ const Biometrics = () => {
                     grid
                     iconAlign="horizontal"
                 />
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     Hire a Reliable Biometric System Developer
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <div className="py-8">

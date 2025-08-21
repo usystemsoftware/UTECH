@@ -3,7 +3,7 @@ import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, TypographyMuted, TypographyH3 } from "@/custom/Typography";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import {
@@ -44,7 +44,7 @@ export default function StartupMvp() {
                         />
                     </FadeInWhenVisible>
                 </div>
-                <Button variant="hover">DESIGN YOUR MVP APP NOW</Button>
+                <ContactUsButton variant="hover">DESIGN YOUR MVP APP NOW</ContactUsButton>
             </PageLayout>
 
             <TestimonialSection testimonials={testimonials} />
@@ -83,7 +83,7 @@ export default function StartupMvp() {
                     </FadeInWhenVisible>
                     <FeaturesList features={mvpDevelopmentSteps} iconAlign="horizontal" />
                 </div>
-                <Button variant="hover">GET MVP APP SOLUTIONS</Button>
+                <ContactUsButton variant="hover">GET MVP APP SOLUTIONS</ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16">
@@ -112,7 +112,7 @@ export default function StartupMvp() {
                             </div>
                         ))}
                     </div>
-                    <Button variant="hover">BUILD YOUR MVP APP</Button>
+                    <ContactUsButton variant="hover">BUILD YOUR MVP APP</ContactUsButton>
                 </PageLayout>
             </section>
 

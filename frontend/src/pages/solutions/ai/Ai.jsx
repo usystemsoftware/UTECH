@@ -3,7 +3,7 @@ import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, } from "@/custom/Typography";
 import Iconrender from '@/components/Iconrender';
 import PortfolioGrid from "@/components/PortfolioGrid";
@@ -64,7 +64,7 @@ const Ai = () => {
                     alt="Portfolio"
                     className="mx-auto"
                 />
-                <Button variant="hover">Explore The Full Track2AI Framework</Button>
+                <ContactUsButton variant="hover">Explore The Full Track2AI Framework</ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-12">
@@ -90,7 +90,7 @@ const Ai = () => {
                             />
                         </FadeInWhenVisible>
                     </div>
-                    <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+                    <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -117,7 +117,7 @@ const Ai = () => {
                         center
                     />
                 </div>
-                <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+                <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16">
@@ -131,7 +131,7 @@ const Ai = () => {
                         grid3
                         center
                     />
-                    <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+                    <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -145,7 +145,7 @@ const Ai = () => {
                     grid3
                     center
                 />
-                <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+                <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
             </PageLayout>
 
             <section className="py-16 bg-secondary">
@@ -207,8 +207,8 @@ const Ai = () => {
                         </FadeInWhenVisible>
 
                     </div>
-                    <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
-                    
+                    <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
+
                     <div className="grid grid-cols-1 items-center sm:grid-cols-2 gap-6">
                         <FadeInWhenVisible delay={0.5}>
                             <img
@@ -223,13 +223,13 @@ const Ai = () => {
                             iconAlign="horizontal"
                         />
                     </div>
-                    <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+                    <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
                 </PageLayout>
             </section>
 
             <PageLayout className="py-16 space-y-8 text-center">
                 <Iconrender center webdesignintegrations={integratedaisolutions} />
-                <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+                <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
             </PageLayout>
 
             <div className="py-8">

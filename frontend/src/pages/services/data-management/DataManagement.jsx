@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import {
@@ -64,7 +64,7 @@ export default function DataManagement() {
                 </div>
 
                 {/* CTA */}
-                <Button variant="hover">GET DATA MANAGEMENT SERVICES</Button>
+                <ContactUsButton variant="hover">GET DATA MANAGEMENT SERVICES</ContactUsButton>
             </PageLayout>
 
             {/* DATA LAKE MANAGED SERVICES SECTION */}
@@ -87,7 +87,7 @@ export default function DataManagement() {
                     </div>
 
                     {/* CTA */}
-                    <Button variant="hover">GET DATA LAKE MANAGED SERVICES</Button>
+                    <ContactUsButton variant="hover">GET DATA LAKE MANAGED SERVICES</ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -110,7 +110,7 @@ export default function DataManagement() {
                 </div>
 
                 {/* CTA */}
-                <Button variant="hover">HIRE DATA LAKE EXPERTS</Button>
+                <ContactUsButton variant="hover">HIRE DATA LAKE EXPERTS</ContactUsButton>
             </PageLayout>
 
             {/* VALUE PROPOSITION SECTION */}
@@ -123,7 +123,7 @@ export default function DataManagement() {
                     <FeaturesList features={dataValueProps} grid iconAlign="horizontal" />
 
                     {/* CTA */}
-                    <Button variant="hover">CUNSULT A DATA MANAGEMENT EXPERTS</Button>
+                    <ContactUsButton variant="hover">CUNSULT A DATA MANAGEMENT EXPERTS</ContactUsButton>
                 </PageLayout>
             </section>
 

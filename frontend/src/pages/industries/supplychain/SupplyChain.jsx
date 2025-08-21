@@ -1,6 +1,6 @@
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
@@ -79,7 +79,7 @@ const SupplyChain = () => {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">Get SCM Solutions</Button>
+          <ContactUsButton variant="hover">Get SCM Solutions</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -96,7 +96,7 @@ const SupplyChain = () => {
           center
         />
 
-        <Button variant="hover">GET AI ENABLED SCM SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET AI ENABLED SCM SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* Inventory management software solutions */}
@@ -120,7 +120,7 @@ const SupplyChain = () => {
               iconAlign="horizontal"
             />
           </div>
-          <Button variant="hover">Manage Inventory Now</Button>
+          <ContactUsButton variant="hover">Manage Inventory Now</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -144,7 +144,7 @@ const SupplyChain = () => {
             />
           </FadeInWhenVisible>
         </div>
-        <Button variant="hover">Get Shipping Solutions</Button>
+        <ContactUsButton variant="hover">Get Shipping Solutions</ContactUsButton>
       </PageLayout>
 
       {/* Mile delivery solutions section */}
@@ -161,9 +161,9 @@ const SupplyChain = () => {
               center
             />
           </div>
-          <Button variant="hover">
+          <ContactUsButton variant="hover">
             Get AI Powered Construction Solutions
-          </Button>
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -187,7 +187,7 @@ const SupplyChain = () => {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">Track SCM Assets Now</Button>
+        <ContactUsButton variant="hover">Track SCM Assets Now</ContactUsButton>
       </PageLayout>
 
       {/* EDI software solutions */}
@@ -211,7 +211,7 @@ const SupplyChain = () => {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">Track SCM Assets Now</Button>
+          <ContactUsButton variant="hover">Track SCM Assets Now</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -235,7 +235,7 @@ const SupplyChain = () => {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">Track SCM Assets Now</Button>
+        <ContactUsButton variant="hover">Track SCM Assets Now</ContactUsButton>
       </PageLayout>
 
       {/* SCM mobile/web application development */}
@@ -259,7 +259,7 @@ const SupplyChain = () => {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">Get An SCM App</Button>
+          <ContactUsButton variant="hover">Get An SCM App</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -285,7 +285,7 @@ const SupplyChain = () => {
             />
           </FadeInWhenVisible>
         </div>
-        <Button variant="hover">Get SCM Solutions</Button>
+        <ContactUsButton variant="hover">Get SCM Solutions</ContactUsButton>
       </PageLayout>
 
       {/* SCM software support services */}

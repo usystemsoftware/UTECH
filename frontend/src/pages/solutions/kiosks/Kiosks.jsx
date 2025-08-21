@@ -3,7 +3,7 @@ import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { Headline } from "@/custom/Typography";
 import {
@@ -50,9 +50,9 @@ export default function Kiosks() {
                     />
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     SPEAK WITH OUR KIOSK CONSULTANTS
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16 text-center">
@@ -66,9 +66,9 @@ export default function Kiosks() {
                         features={aiKioskServices}
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET AI-POWERED KIOSK SOLUTIONS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section >
 
@@ -129,9 +129,9 @@ export default function Kiosks() {
                     features={kioskSupportServices}
                 />
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET SPEAK WITH OUR KIOSK CONSULTANTS
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16 text-center">
@@ -145,9 +145,9 @@ export default function Kiosks() {
                         features={industryKioskSolutions}
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET INDUSTRY-SPECIFIC KIOSK SOLUTIONS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section >
 

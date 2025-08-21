@@ -5,7 +5,7 @@ import PageLayout from "@/custom/PageLayout";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import Iconrender from '@/components/Iconrender';
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, } from "@/custom/Typography";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import {
@@ -52,7 +52,7 @@ const Blockchain = () => {
                         />
                     </FadeInWhenVisible>
                 </div>
-                <Button variant="hover">CHECK METRICS ON AWS NOW</Button>
+                <ContactUsButton variant="hover">CHECK METRICS ON AWS NOW</ContactUsButton>
             </PageLayout>
 
             <TestimonialSection testimonials={testimonials} />
@@ -96,7 +96,7 @@ const Blockchain = () => {
                         />
                     </FadeInWhenVisible>
                 </div>
-                <Button variant="hover">HIRE APP DEVELOPER</Button>
+                <ContactUsButton variant="hover">HIRE APP DEVELOPER</ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16">
@@ -110,7 +110,7 @@ const Blockchain = () => {
                         grid3
                         center
                     />
-                    <Button variant="hover">Get Biometric Solutions</Button>
+                    <ContactUsButton variant="hover">Get Biometric Solutions</ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -129,7 +129,7 @@ const Blockchain = () => {
                         />
                     </FadeInWhenVisible>
                 </div>
-                <Button variant="hover">GET CUSTOM NFT SOFTWARE</Button>
+                <ContactUsButton variant="hover">GET CUSTOM NFT SOFTWARE</ContactUsButton>
             </PageLayout>
 
             <section className="py-16 bg-secondary">

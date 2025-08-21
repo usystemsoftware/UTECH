@@ -1,7 +1,7 @@
 import { Headline } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import TechnologyStatCard from "@/components/TechnologyStatCard";
@@ -54,7 +54,7 @@ const EmbeddedSoftware = () => {
         </div>
 
         {/* Call to action button */}
-        <Button variant="hover">Get Embedded Software Developers</Button>
+        <ContactUsButton variant="hover">Get Embedded Software Developers</ContactUsButton>
       </PageLayout>
 
       {/* ===== HMI (Human-Machine Interface) SOLUTIONS ===== */}
@@ -81,7 +81,7 @@ const EmbeddedSoftware = () => {
         </div>
 
         {/* CTA button */}
-        <Button variant="hover">Get Embedded Hmi Solutions</Button>
+        <ContactUsButton variant="hover">Get Embedded Hmi Solutions</ContactUsButton>
       </PageLayout>
 
       {/* ===== AI-POWERED EMBEDDED SOFTWARE SOLUTIONS ===== */}
@@ -122,7 +122,7 @@ const EmbeddedSoftware = () => {
         </div>
 
         {/* CTA button */}
-        <Button variant="hover">Get Embedded Bsp Solutions</Button>
+        <ContactUsButton variant="hover">Get Embedded Bsp Solutions</ContactUsButton>
       </PageLayout>
 
       {/* ===== EMBEDDED DEVELOPMENT SOLUTIONS SECTION ===== */}
@@ -138,7 +138,7 @@ const EmbeddedSoftware = () => {
           <FeaturesList features={embeddedDevSolutions} grid iconAlign="horizontal" />
 
           {/* CTA button */}
-          <Button variant="hover">Get Embedded Solutions</Button>
+          <ContactUsButton variant="hover">Get Embedded Solutions</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -165,7 +165,7 @@ const EmbeddedSoftware = () => {
         </div>
 
         {/* CTA button */}
-        <Button variant="hover">Get Embedded Hmi Solutions</Button>
+        <ContactUsButton variant="hover">Get Embedded Hmi Solutions</ContactUsButton>
       </PageLayout>
 
       {/* ===== EMBEDDED SOFTWARE DEVELOPER TOOLS ===== */}

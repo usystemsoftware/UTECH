@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import { Headline } from "@/custom/Typography";
@@ -48,9 +48,9 @@ export const Banking = () => (
         iconGap="md:gap-26"
       />
 
-      <Button variant="hover" className="mt-8">
+      <ContactUsButton variant="hover" className="mt-8">
         CUSTOMIZE YOUR BANKING SOLUTION NOW
-      </Button>
+      </ContactUsButton>
     </PageLayout>
 
     <PageLayout className="py-12 space-y-10 text-center">
@@ -78,7 +78,7 @@ export const Banking = () => (
           center
         />
       </div>
-      <Button variant="hover">Get ATM Software Solutions</Button>
+      <ContactUsButton variant="hover">Get ATM Software Solutions</ContactUsButton>
     </PageLayout>
 
     <section className="py-16 bg-secondary space-y-10 text-center">
@@ -100,7 +100,7 @@ export const Banking = () => (
           iconAlign="horizontal"
         />
       </PageLayout>
-      <Button variant="hover">Get Loan Management Software Solutions</Button>
+      <ContactUsButton variant="hover">Get Loan Management Software Solutions</ContactUsButton>
     </section>
 
     {/* Mobile Banking Section */}
@@ -124,7 +124,7 @@ export const Banking = () => (
           />
         </FadeInWhenVisible>
       </PageLayout>
-      <Button variant="hover">Get Mobile Banking Software Solutions</Button>
+      <ContactUsButton variant="hover">Get Mobile Banking Software Solutions</ContactUsButton>
     </section>
 
     {/* Online Banking Section */}
@@ -147,9 +147,9 @@ export const Banking = () => (
           iconAlign="horizontal"
         />
       </PageLayout>
-      <Button variant="hover" className="mt-8">
+      <ContactUsButton variant="hover" className="mt-8">
         Get Online Banking Software Solution
-      </Button>
+      </ContactUsButton>
     </section>
 
     <section>
@@ -183,7 +183,7 @@ export const Banking = () => (
           center
         />
       </div>
-      <Button variant="hover">Get ATM Software Solutions</Button>
+      <ContactUsButton variant="hover">Get ATM Software Solutions</ContactUsButton>
     </PageLayout>
 
     {/* CORE Banking Section */}
@@ -206,7 +206,7 @@ export const Banking = () => (
           />
         </FadeInWhenVisible>
       </PageLayout>
-      <Button variant="hover">Get Online Banking Software Solutions</Button>
+      <ContactUsButton variant="hover">Get Online Banking Software Solutions</ContactUsButton>
     </section>
 
     {/* EMV Software Section */}
@@ -233,7 +233,7 @@ export const Banking = () => (
           center
         />
       </div>
-      <Button variant="hover">Get EMV Software Solutions</Button>
+      <ContactUsButton variant="hover">Get EMV Software Solutions</ContactUsButton>
     </PageLayout>
 
     {/* ACH Processing Section */}
@@ -256,7 +256,7 @@ export const Banking = () => (
           iconAlign="horizontal"
         />
       </PageLayout>
-      <Button variant="hover">Get Check 21 & ACH Processing Solutions</Button>
+      <ContactUsButton variant="hover">Get Check 21 & ACH Processing Solutions</ContactUsButton>
     </section>
 
     {/* Banking Software Support */}
@@ -268,7 +268,7 @@ export const Banking = () => (
       <FeaturesListOpposite
         features={BankingSupportItems}
       />
-      <Button variant="hover">Get Finance Software Support</Button>
+      <ContactUsButton variant="hover">Get Finance Software Support</ContactUsButton>
     </PageLayout>
 
     {/* FAQ Section */}

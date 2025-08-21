@@ -7,6 +7,8 @@ import { Headline } from "@/custom/Typography";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import Iconrender from '@/components/Iconrender';
 import PortfolioGrid from "@/components/PortfolioGrid";
+import ContactUsButton from "@/custom/ContactUsButton";
+
 import {
     webanimationAndgraphicdesign,
     testimonials,
@@ -55,8 +57,12 @@ const AnimationGraphicDesign = () => {
                     </div>
                 </PageLayout>
             </section>
+            <section>
 
-            <TestimonialSection testimonials={testimonials} />
+                <TestimonialSection testimonials={testimonials} />
+
+
+            </section>
 
             <section className="py-5">
                 <PageLayout className="space-y-10 text-center">
@@ -64,6 +70,8 @@ const AnimationGraphicDesign = () => {
                         title="Custom Web Design & Animation Solutions"
                         description="We develop, integrate, and customize attention-grabbing 2D and 3D animations with CRO in mind, capturing real-time interactions, and providing live data analytics to improve user experience and increase ROI."
                     />
+                    <ContactUsButton variant="hover">Get Animation Solutions</ContactUsButton>
+
                     <div className="grid grid-cols-1 items-center md:grid-cols-2">
                         <div className="space-y-8">
                             <FeaturesList
@@ -119,6 +127,13 @@ const AnimationGraphicDesign = () => {
             </PageLayout>
 
             <PageLayout className="py-16 space-y-8 text-center">
+                <Headline
+                    title="Web Design Integrations"
+                    description="Seamlessly integrate third-party software with robust features to help users manage, maintain, and update their current website or application."
+
+                />
+                <ContactUsButton variant="hover">Integrate Animated Designs</ContactUsButton>
+
                 <Iconrender webdesignintegrations={webdesignintegrations} />
             </PageLayout>
 

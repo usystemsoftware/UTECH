@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import {
@@ -50,9 +50,9 @@ export default function Cloud() {
                         />
                     </FadeInWhenVisible>
                 </div>
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     BUILD YOUR CLOUD APP TODAY
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16 text-center">
@@ -68,9 +68,9 @@ export default function Cloud() {
                         center
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         SCALE YOUR BUSSINESS WITH THE CLOUD NOW
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -82,9 +82,9 @@ export default function Cloud() {
                 <FeaturesListOpposite
                     features={cloudMigrationServices}
                 />
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET STARTED WITH OUR CLOUD SERVICES TODAY
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16 text-center">
@@ -100,9 +100,9 @@ export default function Cloud() {
                         center
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET CLOUD APPLICATION SUPPORT
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -114,9 +114,9 @@ export default function Cloud() {
                 <FeaturesListOpposite
                     features={cloudCostGovernanceServices}
                 />
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     HIRE CLOUD DEVELOPERS FOR FINOPS SOLUTIONS
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16 text-center">
@@ -139,9 +139,9 @@ export default function Cloud() {
                             iconAlign="horizontal"
                         />
                     </div>
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET CUSTOM CLOUD APP SOLUTIONS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -155,9 +155,9 @@ export default function Cloud() {
                     grid3
                     center
                 />
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     AI-POWERED CLOUD APP DEVELOPMENT
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16 text-center">
@@ -173,9 +173,9 @@ export default function Cloud() {
                         center
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         UPGRADE YOUR OPERATIONS WITH AI
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -189,9 +189,9 @@ export default function Cloud() {
                     grid3
                     center
                 />
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET STARTED WITH OUR CLOUD DEVELOPS SERVICES TODAY
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16 text-center">
@@ -207,9 +207,9 @@ export default function Cloud() {
                         center
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET CLOUD CYBERSECURITY SERVICES
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -221,9 +221,9 @@ export default function Cloud() {
                 <FeaturesListOpposite
                     features={advancedCloudSecurity}
                 />
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     PROTECT YOUR CLOUD INFRASTRUCTURE
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16 text-center">
@@ -246,9 +246,9 @@ export default function Cloud() {
                             />
                         </FadeInWhenVisible>
                     </div>
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         INTEGRATE THE CLOUD WITH YOUR BUSSINESS PROCESSES
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 

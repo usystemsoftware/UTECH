@@ -28,6 +28,7 @@ import Aws from "@/pages/solutions/aws/Aws";
 import Autodesk from "@/pages/solutions/autodesk/Autodesk";
 import Biometrics from "@/pages/solutions/biometrics/Biometrics";
 import Blockchain from "@/pages/solutions/blockchain/Blockchain";
+import Bianalytics from "@/pages/solutions/bi-analytics/Bianalytics";
 
 export const SolutionRoutes = [
   { path: "/solutions/web-development", element: <WebDevelopment /> },
@@ -60,6 +61,8 @@ export const SolutionRoutes = [
   { path: "/solutions/autodesk", element: <Autodesk /> },
   { path: "/solutions/biometrics", element: <Biometrics /> },
   { path: "/solutions/blockchain", element: <Blockchain /> },
+  { path: "/solutions/bi-analytics", element: <Bianalytics /> },
+
 
 
 

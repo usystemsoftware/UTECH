@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import {
@@ -36,9 +36,9 @@ export default function ProductLifecycleManagement() {
           center
         />
 
-        <Button variant="hover">
+        <ContactUsButton variant="hover">
           IMPLEMENT PML SOFTWARE NOW
-        </Button>
+        </ContactUsButton>
 
         <FadeInWhenVisible>
           <img
@@ -107,9 +107,9 @@ export default function ProductLifecycleManagement() {
             />
           </div>
 
-          <Button variant="hover">
+          <ContactUsButton variant="hover">
             HIRE PML DEVELOPER NOW
-          </Button>
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -125,9 +125,9 @@ export default function ProductLifecycleManagement() {
           center
         />
 
-        <Button variant="hover">
+        <ContactUsButton variant="hover">
           INTERGRADES PML TOOLS NOW
-        </Button>
+        </ContactUsButton>
 
       </PageLayout>
 

@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import { TypographyH2, Headline } from "@/custom/Typography";
@@ -67,9 +67,9 @@ export default function Construction() {
         <FeaturesListOpposite
           features={AIPoweredConstructionFeatures}
         />
-        <Button variant="hover">
+        <ContactUsButton variant="hover">
           Get AI Powered Construction Solutions
-        </Button>
+        </ContactUsButton>
       </PageLayout>
 
 

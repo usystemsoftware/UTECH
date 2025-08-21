@@ -3,7 +3,7 @@ import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, } from "@/custom/Typography";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { TypographyList2 } from '@/custom/Typography';
@@ -49,7 +49,7 @@ const Autodesk = () => {
                         className="md:w-125 w-96 mx-auto"
                     />
                 </FadeInWhenVisible>
-                <Button variant="hover">CONTACT FOR AUTODESK CONSULTING SERVICES</Button>
+                <ContactUsButton variant="hover">CONTACT FOR AUTODESK CONSULTING SERVICES</ContactUsButton>
             </PageLayout>
 
             <section className="py-16 bg-secondary">
@@ -73,7 +73,7 @@ const Autodesk = () => {
                         />
 
                     </div>
-                    <Button variant="hover">CHECK METRICS ON AWS NOW</Button>
+                    <ContactUsButton variant="hover">CHECK METRICS ON AWS NOW</ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -87,9 +87,9 @@ const Autodesk = () => {
                     grid3
                     center
                 />
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     Get AI-Powered Autodesk Solutions
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section>
@@ -105,9 +105,9 @@ const Autodesk = () => {
                     <FeaturesListOpposite
                         features={autodeskSupportData}
                     />
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         Seamless Autodesk Support – Let’s Talks
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -121,9 +121,9 @@ const Autodesk = () => {
                     grid3
                     center
                 />
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     Get AI-Powered Autodesk Solutions
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <PageLayout className="space-y-10 py-16 text-center">
@@ -144,7 +144,7 @@ const Autodesk = () => {
                         <TypographyList2 className="text-slate-800 text-left [&>li]:mt-3" items={consultingServices} />
                     </div>
                 </div>
-                <Button variant="hover">GET AUTODESK BOH SUPPORT</Button>
+                <ContactUsButton variant="hover">GET AUTODESK BOH SUPPORT</ContactUsButton>
             </PageLayout>
 
             <div className="py-10">

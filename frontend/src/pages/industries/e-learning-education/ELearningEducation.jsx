@@ -4,7 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import FaqSection from "@/custom/FaqSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import {
   TypographyMuted,
   Headline,
@@ -67,7 +67,7 @@ export default function ELearningEducation() {
             grid3
             center
           />
-          <Button variant="hover">GET A-POWERED eLEARNING TOOLS</Button>
+          <ContactUsButton variant="hover">GET A-POWERED eLEARNING TOOLS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -111,7 +111,7 @@ export default function ELearningEducation() {
             features={lmsSolutions}
           />
 
-          <Button variant="hover">HIRE LMS DEVELOPERS</Button>
+          <ContactUsButton variant="hover">HIRE LMS DEVELOPERS</ContactUsButton>
 
           <FadeInWhenVisible delay={0.5} className="md:block hidden">
             <img
@@ -171,7 +171,7 @@ export default function ELearningEducation() {
           />
         </div>
 
-        <Button variant="hover">Get Content Authoring Solutions</Button>
+        <ContactUsButton variant="hover">Get Content Authoring Solutions</ContactUsButton>
       </PageLayout>
 
       {/* SIS Development Section */}
@@ -223,7 +223,7 @@ export default function ELearningEducation() {
             </FadeInWhenVisible>
           </div>
 
-          <Button variant="hover">GET SIS SOFTWARE</Button>
+          <ContactUsButton variant="hover">GET SIS SOFTWARE</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -277,7 +277,7 @@ export default function ELearningEducation() {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">GET WEB BASED TRAINING SOFTWARE</Button>
+          <ContactUsButton variant="hover">GET WEB BASED TRAINING SOFTWARE</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -291,7 +291,7 @@ export default function ELearningEducation() {
           features={elearningSupportServices}
           grid
         />
-        <Button variant="hover">HIRE eLEARNING DEVELOPERS</Button>
+        <ContactUsButton variant="hover">HIRE eLEARNING DEVELOPERS</ContactUsButton>
       </PageLayout>
 
       {/* Enterprise LMS Platform Features */}

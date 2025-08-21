@@ -4,7 +4,7 @@ import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { Check } from "lucide-react";
 import {
@@ -47,9 +47,9 @@ export default function Salesforce() {
                     features={salesforceServices}
                 />
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET CUSTOM SALESFORCE SERVICES
-                </Button>
+                </ContactUsButton>
             </PageLayout >
 
             <section className="py-16 bg-secondary">
@@ -63,9 +63,9 @@ export default function Salesforce() {
                         features={salesforceSolutions}
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET SALESFORCE CLOUD SOLUTIONS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout >
             </section>
 
@@ -77,7 +77,7 @@ export default function Salesforce() {
 
                 <section className="bg-secondary py-12 rounded-2xl shadow-md">
                     <div className="container mx-auto text-center">
-                        {/* Industry Buttons */}
+                        {/* Industry ContactUsButtons */}
                         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 mb-8">
                             {industries?.map((industry, index) => (
                                 <button
@@ -103,9 +103,9 @@ export default function Salesforce() {
                         <TypographyMuted className="max-w-2xl mb-6 mx-auto">
                             {industries[activeIndex]?.description}
                         </TypographyMuted>
-                        <Button variant="hover">
+                        <ContactUsButton variant="hover">
                             GET SALESFORCE INDUSTRY SOLUTIONS
-                        </Button>
+                        </ContactUsButton>
                     </div>
                 </section>
 
@@ -135,9 +135,9 @@ export default function Salesforce() {
                         </FadeInWhenVisible>
                     </div>
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         TALK TO AN AGENTFORCE EXPERT TODAY
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -175,9 +175,9 @@ export default function Salesforce() {
                     </div>
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET SALESFORCE SUPPORT SERVICES
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             {/* === FAQ SECTION === */}

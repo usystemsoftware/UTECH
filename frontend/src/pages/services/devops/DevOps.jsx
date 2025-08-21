@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import {
@@ -32,9 +32,9 @@ export default function DevOps() {
                 />
 
                 <FeaturesList features={devOpsSolutions} fadeUp={fadeUp} grid iconAlign='horizontal' />
-                <Button variant='hover'>
+                <ContactUsButton variant='hover'>
                     SPEAK TO A DEVOPS CONSULTANT
-                </Button>
+                </ContactUsButton>
 
                 <Headline
                     title='DevOps and Artificial Intelligence'
@@ -82,9 +82,9 @@ export default function DevOps() {
                         <FeaturesList features={devOpsConsultingServices.slice(3, 6)} iconAlign='horizontal' />
                     </div>
 
-                    <Button variant='hover'>
+                    <ContactUsButton variant='hover'>
                         HIRE EXPERT DEVOPS DEVELOPERS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -96,9 +96,9 @@ export default function DevOps() {
 
                 <FeaturesList features={devOpsChallengesSolutions} grid iconAlign='horizontal' />
 
-                <Button variant='hover'>
+                <ContactUsButton variant='hover'>
                     LET'S SOLVED YOUR DEVOPS CHALLENGES
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-10">

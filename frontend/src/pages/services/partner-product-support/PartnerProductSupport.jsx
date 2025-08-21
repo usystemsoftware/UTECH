@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 import {
   PartnerProductSolutions,
@@ -40,7 +40,7 @@ const PartnerProductSupport = () => {
             </div>
           </div>
         ))}
-        <Button variant="hover">Build Your Product Support Package</Button>
+        <ContactUsButton variant="hover">Build Your Product Support Package</ContactUsButton>
       </PageLayout>
 
       <PageLayout className="text-center space-y-10 py-12">
@@ -63,7 +63,7 @@ const PartnerProductSupport = () => {
             grid3
             center
           />
-          <Button variant="hover">Get Partner Product Support</Button>
+          <ContactUsButton variant="hover">Get Partner Product Support</ContactUsButton>
         </PageLayout>
       </section>
     </>

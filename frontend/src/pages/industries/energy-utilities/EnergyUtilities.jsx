@@ -3,7 +3,7 @@ import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographyMuted, Headline, TypographyH5 } from "@/custom/Typography";
 
 import {
@@ -69,7 +69,7 @@ export default function EnergyUtilities() {
               iconAlign="horizontal"
             />
           </div>
-          <Button variant="hover">GET AI ENERGY DEVELOPERS</Button>
+          <ContactUsButton variant="hover">GET AI ENERGY DEVELOPERS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -107,7 +107,7 @@ export default function EnergyUtilities() {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">GET ELECTRIC MANAGEMENT DEVELOPERS</Button>
+          <ContactUsButton variant="hover">GET ELECTRIC MANAGEMENT DEVELOPERS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -131,7 +131,7 @@ export default function EnergyUtilities() {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">GET WATER MANAGEMENT SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET WATER MANAGEMENT SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* Smart Grid section */}
@@ -155,7 +155,7 @@ export default function EnergyUtilities() {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">HIRE SMART GRID DEVELOPERS</Button>
+          <ContactUsButton variant="hover">HIRE SMART GRID DEVELOPERS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -179,7 +179,7 @@ export default function EnergyUtilities() {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">HIRE HEAT SOFTWARE DEVELOPERS</Button>
+        <ContactUsButton variant="hover">HIRE HEAT SOFTWARE DEVELOPERS</ContactUsButton>
       </PageLayout>
 
       {/* Solar asset software section */}
@@ -203,7 +203,7 @@ export default function EnergyUtilities() {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">GET SOLAR SOFTWARE DEVELOPERS</Button>
+          <ContactUsButton variant="hover">GET SOLAR SOFTWARE DEVELOPERS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -227,7 +227,7 @@ export default function EnergyUtilities() {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">GET STARTES WITH WASTE TRACKING APP</Button>
+        <ContactUsButton variant="hover">GET STARTES WITH WASTE TRACKING APP</ContactUsButton>
       </PageLayout>
 
       {/* Compliance highlight section */}
@@ -264,7 +264,7 @@ export default function EnergyUtilities() {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">HIRE WIND SOFTWARTE DEVELOPERS</Button>
+        <ContactUsButton variant="hover">HIRE WIND SOFTWARTE DEVELOPERS</ContactUsButton>
       </PageLayout>
 
       {/* Nuclear software section */}
@@ -288,9 +288,9 @@ export default function EnergyUtilities() {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">
+          <ContactUsButton variant="hover">
             HIRE NUCLEAR ENERGY SOFTWARE DEVELOPERS
-          </Button>
+          </ContactUsButton>
         </PageLayout>
       </section>
     </>

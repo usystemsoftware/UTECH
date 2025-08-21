@@ -1,6 +1,6 @@
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import FaqSection from "@/custom/FaqSection";
@@ -57,9 +57,9 @@ const Telecommunications = () => {
           image="/assets/industries/telecommunications/telecom.png"
           reverse
         />
-        <Button variant="hover">
+        <ContactUsButton variant="hover">
           Book a Demo of Our Telecom Software Solutions
-        </Button>
+        </ContactUsButton>
       </PageLayout>
 
       {/* Section: AI-Powered Telecommunications Solutions */}
@@ -74,7 +74,7 @@ const Telecommunications = () => {
             grid
             center
           />
-          <Button variant="hover">GET AI-POWERED TELECOM SOLUTIONS</Button>
+          <ContactUsButton variant="hover">GET AI-POWERED TELECOM SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -91,7 +91,7 @@ const Telecommunications = () => {
           center
         />
 
-        <Button variant="hover">Get Your Telecom Software Audit</Button>
+        <ContactUsButton variant="hover">Get Your Telecom Software Audit</ContactUsButton>
       </PageLayout>
 
       {/* Section: Telecom Software Support Services */}
@@ -104,7 +104,7 @@ const Telecommunications = () => {
           <FeaturesListOpposite
             features={TelecommunicationSolutions}
           />
-          <Button variant="hover">GET TELECOM APPLICATION SUPPORT</Button>
+          <ContactUsButton variant="hover">GET TELECOM APPLICATION SUPPORT</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -132,7 +132,7 @@ const Telecommunications = () => {
             center
           />
         </div>
-        <Button variant="hover">GET TELECOM IOT SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET TELECOM IOT SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* Section: Custom Telecom Integration Services with Partner Logos */}
@@ -165,7 +165,7 @@ const Telecommunications = () => {
               </div>
             ))}
           </div>
-          <Button variant="hover">GET INTEGRATED TELECOM SOFTWARE</Button>
+          <ContactUsButton variant="hover">GET INTEGRATED TELECOM SOFTWARE</ContactUsButton>
         </PageLayout>
       </section>
 

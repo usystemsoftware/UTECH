@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import ImageNearScreen from "@/custom/ImageNearScreen";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographyMuted, Headline, TypographyH5 } from "@/custom/Typography";
 import {
   aiDrivenCorrectionalSolutions,
@@ -91,8 +91,8 @@ export default function Correction() {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <Button variant="hover">OPTIMIZE JAIL OPERATIONS</Button>
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">OPTIMIZE JAIL OPERATIONS</ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary pt-10 space-y-6">
@@ -126,7 +126,7 @@ export default function Correction() {
           imgClass="w-145"
         />
 
-        <Button variant="hover">GET STARTED</Button>
+        <ContactUsButton variant="hover">GET STARTED</ContactUsButton>
       </section>
 
       <section className="bg-secondary py-16">
@@ -187,7 +187,7 @@ export default function Correction() {
               center
             />
           </div>
-          <Button variant="hover">UPGRADE TRACKING SYSTEMS</Button>
+          <ContactUsButton variant="hover">UPGRADE TRACKING SYSTEMS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -222,7 +222,7 @@ export default function Correction() {
             />
           </div>
 
-          <Button variant="hover">GET INMATE REENTRY SOLUTIONS</Button>
+          <ContactUsButton variant="hover">GET INMATE REENTRY SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -258,8 +258,8 @@ export default function Correction() {
             />
           </FadeInWhenVisible>
         </div>
-        {/* CTA Button */}
-        <Button variant="hover">GET HRMS SOLUTIONS</Button>
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">GET HRMS SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-16">

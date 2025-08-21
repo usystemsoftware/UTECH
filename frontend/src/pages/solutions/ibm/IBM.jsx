@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import {
     Headline,
@@ -43,9 +43,9 @@ export default function IBM() {
                     center
                 />
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     EXPLORE OUR IBM SERVICES
-                </Button>
+                </ContactUsButton>
             </PageLayout >
 
             <section className="bg-secondary py-16 text-center">
@@ -138,9 +138,9 @@ export default function IBM() {
                             />
                         </div>
                     </div>
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         DISCOVER OUR IBM MANAGED SERVICES
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout >
             </section>
 

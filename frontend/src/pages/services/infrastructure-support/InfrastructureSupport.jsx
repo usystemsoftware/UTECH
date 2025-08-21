@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import {
   Headline,
   TypographyMuted,
@@ -84,7 +84,7 @@ const InfrastructureSupport = () => {
             />
           </div>
         </div>
-        <Button variant="hover">GET IT SUPPORT & MAINTENANCE</Button>
+        <ContactUsButton variant="hover">GET IT SUPPORT & MAINTENANCE</ContactUsButton>
       </PageLayout>
 
       {/* === SECURITY & MODERNIZATION SECTION === */}
@@ -111,7 +111,7 @@ const InfrastructureSupport = () => {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">MODERNIZE IT OPERATIONS NOW</Button>
+          <ContactUsButton variant="hover">MODERNIZE IT OPERATIONS NOW</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -141,7 +141,7 @@ const InfrastructureSupport = () => {
             center
           />
         </div>
-        <Button variant="hover">GET IT SUPPORT INTEGRATION NOW</Button>
+        <ContactUsButton variant="hover">GET IT SUPPORT INTEGRATION NOW</ContactUsButton>
       </PageLayout>
 
       {/* === MONITORING TOOL INTEGRATIONS SECTION === */}
@@ -167,7 +167,7 @@ const InfrastructureSupport = () => {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">GET IT INFRASTRUCTURE MONITORING NOW</Button>
+          <ContactUsButton variant="hover">GET IT INFRASTRUCTURE MONITORING NOW</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -183,7 +183,7 @@ const InfrastructureSupport = () => {
           grid3
           center
         />
-        <Button variant="hover">Get AI-enabled It Infrastructure</Button>
+        <ContactUsButton variant="hover">Get AI-enabled It Infrastructure</ContactUsButton>
       </PageLayout>
 
       {/* === ENHANCED SUPPORT SERVICES SECTION === */}
@@ -199,7 +199,7 @@ const InfrastructureSupport = () => {
             grid
             iconAlign="horizontal"
           />
-          <Button variant="hover">Enhance IT Infrastructure Now</Button>
+          <ContactUsButton variant="hover">Enhance IT Infrastructure Now</ContactUsButton>
         </PageLayout>
       </section>
 

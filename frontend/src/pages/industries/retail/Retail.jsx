@@ -4,7 +4,7 @@ import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographyH5, TypographyMuted, Headline } from "@/custom/Typography";
 import {
   mobileRetailSolutions,
@@ -52,8 +52,8 @@ export default function Retail() {
             grid3
           />
 
-          {/* CTA Button */}
-          <Button variant="hover">GET RETAIL SOFTWARE SOLUTIONS</Button>
+          {/* CTA ContactUsButton */}
+          <ContactUsButton variant="hover">GET RETAIL SOFTWARE SOLUTIONS</ContactUsButton>
 
           {/* Developer Experience Image */}
           <FadeInWhenVisible className="hidden md:block">
@@ -81,8 +81,8 @@ export default function Retail() {
         />
 
 
-        {/* CTA Button */}
-        <Button variant="hover">GET AI-POWERED RETAIL SOLUTIONS</Button>
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">GET AI-POWERED RETAIL SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* === Retail & Wholesale Software Section === */}
@@ -110,8 +110,8 @@ export default function Retail() {
           />
         </div>
 
-        {/* CTA Button */}
-        <Button variant="hover">HIRE RETAIL SOFTWARE DEVELOPES</Button>
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">HIRE RETAIL SOFTWARE DEVELOPES</ContactUsButton>
       </PageLayout>
 
       {/* === E-Commerce Software Section === */}
@@ -149,8 +149,8 @@ export default function Retail() {
             </FadeInWhenVisible>
           </div>
 
-          {/* CTA Button */}
-          <Button variant="hover">GET RETAIL E-COMMERCE SOLUTIONS</Button>
+          {/* CTA ContactUsButton */}
+          <ContactUsButton variant="hover">GET RETAIL E-COMMERCE SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -209,8 +209,8 @@ export default function Retail() {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <Button variant="hover">GET SHOPPING CARD SOLUTIONS</Button>
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">GET SHOPPING CARD SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* === Mobile Retail Software Section === */}
@@ -245,8 +245,8 @@ export default function Retail() {
             </FadeInWhenVisible>
           </div>
 
-          {/* CTA Button */}
-          <Button variant="hover">GET MOBILE RETAIL SOLUTIONS</Button>
+          {/* CTA ContactUsButton */}
+          <ContactUsButton variant="hover">GET MOBILE RETAIL SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 

@@ -4,7 +4,7 @@ import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographyMuted, Headline } from "@/custom/Typography";
 import {
   airlineAIandAutomationServices,
@@ -81,7 +81,7 @@ export default function Aviation() {
           src="/assets/industries/aviation/custom-flight-operations-management-software-development.png"
           imageAlign="right"
         />
-        <Button variant="hover">GET FLIGHT OPS SOFTWARE DEVELOPERS</Button>
+        <ContactUsButton variant="hover">GET FLIGHT OPS SOFTWARE DEVELOPERS</ContactUsButton>
       </section>
 
       {/* Reservation Software */}
@@ -116,7 +116,7 @@ export default function Aviation() {
               </div>
             </div>
           </div>
-          <Button variant="hover">GET AIRLINE SOFTWARE DEVELOPERS</Button>
+          <ContactUsButton variant="hover">GET AIRLINE SOFTWARE DEVELOPERS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -177,7 +177,7 @@ export default function Aviation() {
             </div>
           </div>
         </div>
-        <Button variant="hover">GET DRONE SOFTWARE DEVELOPERS</Button>
+        <ContactUsButton variant="hover">GET DRONE SOFTWARE DEVELOPERS</ContactUsButton>
       </PageLayout>
 
       {/* FAQ Section */}

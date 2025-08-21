@@ -4,6 +4,8 @@ import PageLayout from "@/custom/PageLayout";
 import Breadcrumbs from "./Breadcrumbs";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import ShareButtons from "@/custom/ShareButtons";
+import { motion } from "framer-motion";
+import ContactUsButton from "@/custom/ContactUsButton";
 
 export default function HeroSection({
   backgroundImage,
@@ -20,15 +22,18 @@ export default function HeroSection({
       {/* Hero Section Container */}
       <section className="relative w-full min-h-[70vh] md:min-h-[100vh] flex items-center md:justify-center overflow-hidden">
         {/* Background Image Layer */}
-        <div
+        <motion.div
           className="absolute inset-0 z-0"
           style={{
             backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: imageFit, // Controls image fit (e.g., 'cover' or 'contain')
+            backgroundSize: imageFit,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
+          animate={{ scale: [1, 1.1, 1] }} // zoom in/out
+          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
         />
+
 
         {/* Dark Overlay */}
         <div
@@ -44,23 +49,26 @@ export default function HeroSection({
           <TypographyH1 className="md:text-5xl text-2xl uppercase">{title}</TypographyH1>
 
           {description && <TypographyP className="text-sm">{description}</TypographyP>}
-
           {buttonText && (
-            <Link
-              to={buttonLink}
-              className="inline-block border-3 uppercase border-orange-500 md:text-md hover:bg-orange-500 hover:text-white transition-colors duration-300 py-3 px-6 text-sm sm:text-lg rounded-full"
+            <ContactUsButton
+              variant="herosection"
             >
-              {buttonText}
-            </Link>
+              <span
+                className="inline-block border-3 uppercase border-orange-500 md:text-md hover:bg-orange-500 hover:text-white transition-colors duration-300 py-3 px-6 text-sm sm:text-lg rounded-full"
+              >
+                {buttonText}
+              </span>
+            </ContactUsButton>
           )}
+
         </div>
         <ShareButtons />
-      </section>
+      </section >
 
       {/* Breadcrumbs Section */}
-      <PageLayout className="mt-4 dark:border-t-2 pt-4">
+      <PageLayout PageLayout className="mt-4 dark:border-t-2 pt-4" >
         <Breadcrumbs />
-      </PageLayout>
+      </PageLayout >
     </>
   );
 }

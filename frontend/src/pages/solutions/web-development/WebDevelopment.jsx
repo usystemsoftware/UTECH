@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import { FeaturesList } from "@/components/FeaturesList";
@@ -50,7 +50,7 @@ const WebDevelopment = () => {
         />
 
         {/* Call to action button */}
-        <Button variant="hover">HIRE WEB DEVELOPER</Button>
+        <ContactUsButton variant="hover">HIRE WEB DEVELOPER</ContactUsButton>
       </section>
 
       {/* ====== Services Section ====== */}
@@ -65,7 +65,7 @@ const WebDevelopment = () => {
         {/* List of web development services */}
         <FeaturesList features={webDevelopmentServices} fadeUp={fadeUp} grid3 center />
 
-        <Button variant="hover">HIRE FULL-STACK WEB DEVELOPERS</Button>
+        <ContactUsButton variant="hover">HIRE FULL-STACK WEB DEVELOPERS</ContactUsButton>
       </PageLayout>
 
       {/* ====== Tech Stack Section ====== */}
@@ -100,7 +100,7 @@ const WebDevelopment = () => {
             ))}
           </div>
 
-          <Button variant="hover">REQUEST WEB DEVELOPMENT SERVICES</Button>
+          <ContactUsButton variant="hover">REQUEST WEB DEVELOPMENT SERVICES</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -117,7 +117,7 @@ const WebDevelopment = () => {
 
         <FeaturesList features={aiDevCardData} fadeUp={fadeUp} grid iconAlign="horizontal" />
 
-        <Button variant="hover">HIRE WEB APP DEVELOPER</Button>
+        <ContactUsButton variant="hover">HIRE WEB APP DEVELOPER</ContactUsButton>
       </PageLayout>
 
       {/* ====== Support Section ====== */}
@@ -133,7 +133,7 @@ const WebDevelopment = () => {
 
           <FeaturesList features={supportServices} fadeUp={fadeUp} grid center />
 
-          <Button variant="hover">GET WEB SUPPORT ON-DEMAND</Button>
+          <ContactUsButton variant="hover">GET WEB SUPPORT ON-DEMAND</ContactUsButton>
         </PageLayout>
       </section>
 

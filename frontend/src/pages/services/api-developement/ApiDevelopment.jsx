@@ -1,7 +1,7 @@
 import { Headline, TypographyH3 } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
@@ -55,9 +55,9 @@ const ApiDevelopment = () => {
           <FeaturesList features={features.slice(3, 6)} fadeUp={fadeUp} iconAlign="horizontal" />
         </div>
 
-        {/* Call to Action Button */}
+        {/* Call to Action ContactUsButton */}
         {/* <FadeInWhenVisible> */}
-          <Button variant="hover">CUSTOMIZE YOUR BANKING SOLUTION NOW</Button>
+        <ContactUsButton variant="hover">CUSTOMIZE YOUR BANKING SOLUTION NOW</ContactUsButton>
         {/* </FadeInWhenVisible> */}
       </PageLayout>
 
@@ -73,7 +73,7 @@ const ApiDevelopment = () => {
 
         {/* Call to Action */}
         {/* <FadeInWhenVisible> */}
-          <Button variant="hover">HIRE AI API DEVELOPER</Button>
+        <ContactUsButton variant="hover">HIRE AI API DEVELOPER</ContactUsButton>
         {/* </FadeInWhenVisible> */}
       </PageLayout>
 
@@ -99,9 +99,9 @@ const ApiDevelopment = () => {
 
         {/* CTA */}
         {/* <FadeInWhenVisible> */}
-          <Button variant="hover">
-            GET LOAN MANAGEMENT SOFTWARE SOLUTIONS
-          </Button>
+        <ContactUsButton variant="hover">
+          GET LOAN MANAGEMENT SOFTWARE SOLUTIONS
+        </ContactUsButton>
         {/* </FadeInWhenVisible> */}
       </PageLayout>
 
@@ -117,7 +117,7 @@ const ApiDevelopment = () => {
 
         {/* CTA */}
         {/* <FadeInWhenVisible> */}
-          <Button variant="hover">GET THIRD-PARTY API FUNCTIONALITY</Button>
+        <ContactUsButton variant="hover">GET THIRD-PARTY API FUNCTIONALITY</ContactUsButton>
         {/* </FadeInWhenVisible> */}
       </PageLayout>
 
