@@ -11,7 +11,7 @@ app.use(cors());
 
 app.use(express.json());
 app.get('/', (req, res) => {
-  res.send("this is u_tech server")
+  res.send("this is u_tech server v1")
 })
 
 app.use('/auth', require('./routes/authRoutes'));
