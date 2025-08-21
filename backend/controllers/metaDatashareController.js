@@ -8,8 +8,8 @@ exports.shareMetaData = async (req, res) => {
     return res.status(404).send("Not Found");
   }
 
-  // Always use FRONTEND URL from metaData
-  const frontendUrl = data.url;
+  const frontendUrl = data.url; // full frontend URL
+  const imageUrl = data.image;  // must be absolute HTTPS URL, >=1200x627px
 
   const html = `
     <!DOCTYPE html>
@@ -22,58 +22,56 @@ exports.shareMetaData = async (req, res) => {
       <!-- Basic Meta -->
       <meta name="title" content="${data.title}" />
       <meta name="description" content="${data.description}" />
-      <meta name="keywords" content="${data.keywords}" />
+      <meta name="keywords" content="${data.keywords || ''}" />
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="${frontendUrl}" />
+<link rel="canonical" href="https://staging.usystem.software/share/${slug}" />
 
-      <!-- Open Graph (Facebook / LinkedIn) -->
+      <!-- Open Graph / Facebook / LinkedIn -->
       <meta property="og:title" content="${data.title}" />
       <meta property="og:description" content="${data.description}" />
-      <meta property="og:image" content="${data.image}" />
-      <meta property="og:image:secure_url" content="${data.image}" />
+      <meta property="og:image" content="${imageUrl}" />
+      <meta property="og:image:secure_url" content="${imageUrl}" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="627" />
-      <meta property="og:image:type" content="image/jpeg" />
-      <meta property="og:image:alt" content="${data.title}" />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="${frontendUrl}" />
       <meta property="og:site_name" content="U Tech" />
 
       <!-- Article Metadata -->
-      <meta property="article:published_time" content="${data.published}" />
+      <meta property="article:published_time" content="${data.published || ''}" />
       <meta property="article:author" content="U Tech" />
 
       <!-- Twitter -->
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="${data.title}" />
       <meta name="twitter:description" content="${data.description}" />
-      <meta name="twitter:image" content="${data.image}" />
+      <meta name="twitter:image" content="${imageUrl}" />
       <meta name="twitter:site" content="@U_Tech" />
       <meta name="twitter:creator" content="@U_Tech" />
 
       <!-- Structured Data (JSON-LD) -->
       <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "${data.title}",
-        "description": "${data.description}",
-        "url": "${frontendUrl}",
-        "image": {
-          "@type": "ImageObject",
-          "url": "${data.image}",
-          "width": 1200,
-          "height": 627
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "U Tech",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://usystem.software/logo.png"
-          }
-        }
+      ${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": data.title,
+    "description": data.description,
+    "url": frontendUrl,
+    "image": {
+      "@type": "ImageObject",
+      "url": imageUrl,
+      "width": 1200,
+      "height": 627
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "U Tech",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://usystem.software/logo.png"
       }
+    }
+  })}
       </script>
 
       <!-- Favicon -->
@@ -81,7 +79,7 @@ exports.shareMetaData = async (req, res) => {
     </head>
     <body>
       <script>
-        // Redirect users (not bots) to frontend page
+        // Redirect users to frontend page
         window.location.replace("${frontendUrl}");
       </script>
     </body>
