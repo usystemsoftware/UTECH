@@ -3,7 +3,7 @@ import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { Headline, TypographySmall } from "@/custom/Typography";
 import { Check } from "lucide-react";
@@ -52,9 +52,9 @@ export default function GoogleCloud() {
                     />
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     HIRE GOOGLE CLOUD DEVELOPERS
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16">
@@ -81,9 +81,9 @@ export default function GoogleCloud() {
                         </FadeInWhenVisible>
                     </div>
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET GOOGLE CLOUD DEVOPS SERVICES
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -122,9 +122,9 @@ export default function GoogleCloud() {
                         />
                     </div>
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         HIRE GCP DEVELOPERS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -149,9 +149,9 @@ export default function GoogleCloud() {
                     />
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     HIRE GOOGLE CLOUD DEVELOPERS
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16">
@@ -178,9 +178,9 @@ export default function GoogleCloud() {
                         </FadeInWhenVisible>
                     </div>
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         WORK WITH TOP GOOGLE CLOUD DEVELOPERS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -208,9 +208,9 @@ export default function GoogleCloud() {
                     />
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     HIRE GOOGLE CLOUD DEVELOPERS
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16">
@@ -244,9 +244,9 @@ export default function GoogleCloud() {
                         </div>
                     </div>
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET GOOGLE CLOUD BOH SUPPORT
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 

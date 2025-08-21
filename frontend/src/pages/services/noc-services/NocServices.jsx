@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import {
@@ -47,7 +47,7 @@ const NocServices = () => {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">GET NOC SERVICES</Button>
+        <ContactUsButton variant="hover">GET NOC SERVICES</ContactUsButton>
       </PageLayout>
 
       {/* === Infrastructure Monitoring Services Section === */}
@@ -69,7 +69,7 @@ const NocServices = () => {
             </FadeInWhenVisible>
             <FeaturesList features={NocSolutions.slice(2, 4)} fadeUp={fadeUp} center />
           </div>
-          <Button variant="hover">HIRE OUR NOC SERVICE PROVIDERS</Button>
+          <ContactUsButton variant="hover">HIRE OUR NOC SERVICE PROVIDERS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -90,7 +90,7 @@ const NocServices = () => {
             />
           </FadeInWhenVisible>
         </div>
-        <Button variant="hover">GET NOC SUPPORT SERVICES</Button>
+        <ContactUsButton variant="hover">GET NOC SUPPORT SERVICES</ContactUsButton>
       </PageLayout>
 
       {/* === NOC Automation & AI-Powered Solutions Section === */}
@@ -111,7 +111,7 @@ const NocServices = () => {
             </FadeInWhenVisible>
             <FeaturesList features={NocSupportservices} fadeUp={fadeUp} iconAlign="horizontal" />
           </div>
-          <Button variant="hover">GET AI-POWERED NOC SOLUTIONS</Button>
+          <ContactUsButton variant="hover">GET AI-POWERED NOC SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -122,7 +122,7 @@ const NocServices = () => {
           description="U Tech’s certified NOC analysts enable efficient and proactive monitoring and troubleshooting of all cloud-based resources, professionally servicing hybrid and multi-cloud ecosystems. We leverage deep knowledge and versatile development to deliver exceptional client services, safeguarding your critical data assets."
         />
         <FeaturesList features={NocServicesfedus} fadeUp={fadeUp} grid center />
-        <Button variant="hover">SPEAK WITH A NOC EXPERT</Button>
+        <ContactUsButton variant="hover">SPEAK WITH A NOC EXPERT</ContactUsButton>
       </PageLayout>
 
       {/* === FAQ Section === */}

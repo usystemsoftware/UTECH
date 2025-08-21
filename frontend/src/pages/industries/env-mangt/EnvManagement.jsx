@@ -4,7 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import FaqSection from "@/custom/FaqSection";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographySmall, Headline } from "@/custom/Typography";
 import { Check } from "lucide-react";
 import {
@@ -102,7 +102,7 @@ export default function EnvManagement() {
               </TypographySmall>
             </div>
           </div>
-          <Button variant="hover">CALL EMS DEVELOPERS NOW</Button>
+          <ContactUsButton variant="hover">CALL EMS DEVELOPERS NOW</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -126,7 +126,7 @@ export default function EnvManagement() {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">ACCESS ENVIRONMENATAL RISKS WITH EASE</Button>
+        <ContactUsButton variant="hover">ACCESS ENVIRONMENATAL RISKS WITH EASE</ContactUsButton>
       </PageLayout>
 
       {/* Uses: environmentalSoftwareSolutions */}
@@ -150,9 +150,9 @@ export default function EnvManagement() {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">
+          <ContactUsButton variant="hover">
             ENSURE 100% ENVIRONMENATAL COMPLIANCE NOW
-          </Button>
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -176,9 +176,9 @@ export default function EnvManagement() {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">
+        <ContactUsButton variant="hover">
           KEEP TRACK OF ENVIRONMENATAL ASSETS NOW
-        </Button>
+        </ContactUsButton>
       </PageLayout>
 
       {/* Uses: environmentalUtilitySolutions */}
@@ -202,7 +202,7 @@ export default function EnvManagement() {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">MANAGE OPERATIONAL WORKFLOWS</Button>
+          <ContactUsButton variant="hover">MANAGE OPERATIONAL WORKFLOWS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -223,7 +223,7 @@ export default function EnvManagement() {
           </FadeInWhenVisible>
           <FeaturesList features={weatherTrackingSolutions} iconAlign="horizontal" />
         </div>
-        <Button variant="hover">BUILD YOUR WEATHER TRACKING APP</Button>
+        <ContactUsButton variant="hover">BUILD YOUR WEATHER TRACKING APP</ContactUsButton>
       </PageLayout>
 
       {/* Uses: faqData */}

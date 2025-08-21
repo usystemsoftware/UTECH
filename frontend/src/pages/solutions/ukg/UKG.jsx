@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { Check } from "lucide-react";
 import {
@@ -43,9 +43,9 @@ export default function UKG() {
                     center
                 />
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     REQUEST A QUOTE NOW
-                </Button>
+                </ContactUsButton>
             </PageLayout >
 
             <section className="py-16 bg-secondary text-center">
@@ -122,9 +122,9 @@ export default function UKG() {
                             </div>
                         </div>
                     </div>
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET UKG READY SOLUTIONS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -152,9 +152,9 @@ export default function UKG() {
                     />
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET UKG 24/7 SUPPORTS
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             {/* PORTFOLIO GRID SECTION WITH ANIMATION */}

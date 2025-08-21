@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Check } from "lucide-react";
 import FaqSection from "@/custom/FaqSection";
 import { Headline, TypographyH3, TypographyMuted } from "@/custom/Typography";
@@ -61,7 +61,7 @@ const ApplicationMaintenance = () => {
         </div>
 
         {/* === CTA BUTTON: APP SUPPORT === */}
-        <Button variant="hover">EXPERT APP SUPPORT</Button>
+        <ContactUsButton variant="hover">EXPERT APP SUPPORT</ContactUsButton>
       </PageLayout>
 
       {/* === APPLICATION SUPPORT SERVICES SECTION === */}
@@ -75,7 +75,7 @@ const ApplicationMaintenance = () => {
           <FeaturesList features={ApplicationSupport} grid3 iconAlign="horizontal" />
 
           {/* === CTA BUTTON: SUPPORT === */}
-          <Button variant="hover">GET APPLICATION SUPPORT</Button>
+          <ContactUsButton variant="hover">GET APPLICATION SUPPORT</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -89,7 +89,7 @@ const ApplicationMaintenance = () => {
         <FeaturesList features={IntelligentSolutions} grid center />
 
         {/* === CTA BUTTON: AI SUPPORT === */}
-        <Button variant="hover">GET AI APP SUPPORT</Button>
+        <ContactUsButton variant="hover">GET AI APP SUPPORT</ContactUsButton>
       </PageLayout>
 
       {/* === BLOCK OF HOURS SUPPORT SECTION === */}

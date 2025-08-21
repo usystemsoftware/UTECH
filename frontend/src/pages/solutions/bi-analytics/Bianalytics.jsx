@@ -5,7 +5,7 @@ import { TypographyList2 } from '@/custom/Typography';
 import FaqSection from "@/custom/FaqSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, } from "@/custom/Typography";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import {
@@ -60,8 +60,8 @@ const Bianalytics = () => {
 
                 <PageLayout className="space-y-10 py-12 text-center">
                     <FeaturesList features={biNewServices} grid3 fadeUp={fadeUp} center />
-                    <Button variant="hover">HIRE BI SOFTWARE DEVELOPERS
-                    </Button>
+                    <ContactUsButton variant="hover">HIRE BI SOFTWARE DEVELOPERS
+                    </ContactUsButton>
                 </PageLayout>
 
             </section>
@@ -88,9 +88,9 @@ const Bianalytics = () => {
                         />
 
                     </div>
-                    <Button variant="hover">GET BI CLOUD SOLUTIONS
+                    <ContactUsButton variant="hover">GET BI CLOUD SOLUTIONS
 
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -117,7 +117,7 @@ const Bianalytics = () => {
                             />
                         </FadeInWhenVisible>
                     </div>
-                    <Button variant="hover">GET AI-ENABLED BI SOLUTIONS</Button>
+                    <ContactUsButton variant="hover">GET AI-ENABLED BI SOLUTIONS</ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -125,9 +125,9 @@ const Bianalytics = () => {
             <section>
                 <PageLayout className="space-y-10 py-12 text-center">
                     <FeaturesList features={biAnalyticsSolutions} grid3 fadeUp={fadeUp} center />
-                    <Button variant="hover">GET CUSTOM BI SOLUTIONS
+                    <ContactUsButton variant="hover">GET CUSTOM BI SOLUTIONS
 
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -154,14 +154,14 @@ const Bianalytics = () => {
 
 
                     </div>
-                    <Button variant="hover">GET AI-ENABLED BI SOLUTIONS</Button>
+                    <ContactUsButton variant="hover">GET AI-ENABLED BI SOLUTIONS</ContactUsButton>
                 </PageLayout>
             </section>
 
             <section>
                 <PageLayout className="space-y-10 py-12 text-center">
                     <FeaturesList features={biAdvancedSolutions} grid3 fadeUp={fadeUp} center />
-                    <Button variant="hover">CUSTOMIZE YOUR BI FEAUTURES NOW</Button>
+                    <ContactUsButton variant="hover">CUSTOMIZE YOUR BI FEAUTURES NOW</ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -173,7 +173,7 @@ const Bianalytics = () => {
                         description="At Chetu, we are dedicated to empowering your business with strategic insights and data-driven decision-making. With our customized business intelligence outsourcing, we commit to delivering comprehensive solutions that propel your organization toward success."
                     />
                     <FeaturesListOpposite features={biOutsourcingServices} />
-                    <Button variant="hover">BI SOFTWARE SUPPORT SERVICES</Button>
+                    <ContactUsButton variant="hover">BI SOFTWARE SUPPORT SERVICES</ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -184,7 +184,7 @@ const Bianalytics = () => {
                         description="At Chetu, we are dedicated to empowering your business with strategic insights and data-driven decision-making. With our customized business intelligence outsourcing, we commit to delivering comprehensive solutions that propel your organization toward success."
                     />
                     <FeaturesList features={biPlatformIntegrations} grid3 fadeUp={fadeUp} center />
-                    <Button variant="hover">INTEGRATE YOUR BI SOLUTIONS</Button>
+                    <ContactUsButton variant="hover">INTEGRATE YOUR BI SOLUTIONS</ContactUsButton>
                 </PageLayout>
             </section>
             <section className='py-10'>

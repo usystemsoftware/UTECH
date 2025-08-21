@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, TypographyH3 } from "@/custom/Typography";
 import {
     certifiedTools,
@@ -58,10 +58,10 @@ export default function DataIntegration() {
                     <FeaturesList features={dataProcessingSolutions} iconAlign="horizontal" />
                 </div>
 
-                {/* CTA Button */}
-                <Button variant='hover'>
+                {/* CTA ContactUsButton */}
+                <ContactUsButton variant='hover'>
                     GET DATA INTEGRATION CONSULTING
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             {/* Big Data Integration Section */}
@@ -80,10 +80,10 @@ export default function DataIntegration() {
                     />
                 </FadeInWhenVisible>
 
-                {/* CTA Button */}
-                <Button variant='hover'>
+                {/* CTA ContactUsButton */}
+                <ContactUsButton variant='hover'>
                     EXPLORE THE FULL FRAMEWORK
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             {/* Additional Offerings Section */}
@@ -113,9 +113,9 @@ export default function DataIntegration() {
                         <FeaturesList features={dataGovernanceAndSecuritySolutions.slice(2, 4)} fadeUp={fadeUp} center />
                     </div>
 
-                    {/* CTA Button */}
+                    {/* CTA ContactUsButton */}
                     <FadeInWhenVisible>
-                        <Button variant="hover">HIRE DATA INTEGRETION EXPERTS</Button>
+                        <ContactUsButton variant="hover">HIRE DATA INTEGRETION EXPERTS</ContactUsButton>
                     </FadeInWhenVisible>
                 </PageLayout>
             </section>
@@ -154,10 +154,10 @@ export default function DataIntegration() {
                     </FadeInWhenVisible>
                 </div>
 
-                {/* CTA Button */}
-                <Button variant='hover'>
+                {/* CTA ContactUsButton */}
+                <ContactUsButton variant='hover'>
                     GET DATA INTEGRETION SERVICES
-                </Button>
+                </ContactUsButton>
             </PageLayout>
         </>
     )

@@ -3,7 +3,7 @@ import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { Check } from "lucide-react";
 import {
@@ -43,9 +43,9 @@ export default function SAP() {
                     features={sapServices}
                 />
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     HIRE SAP PARTNERS
-                </Button>
+                </ContactUsButton>
             </PageLayout >
 
             <section className="py-16 bg-secondary">
@@ -61,9 +61,9 @@ export default function SAP() {
                         features={sapIndustrySolutions}
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET SAP SOLUTIONS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout >
             </section>
 
@@ -91,9 +91,9 @@ export default function SAP() {
                     </FadeInWhenVisible>
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     INTEGRATE AI IN SAP
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary text-center py-16">
@@ -144,9 +144,9 @@ export default function SAP() {
                             ))}
                         </div>
                     </div>
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         SPEAK WITH SAP IMPLEMENTATION PARTNERS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -190,9 +190,9 @@ export default function SAP() {
                     </div>
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET SAP SUPPORT SERVICES
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             {/* === FAQ SECTION === */}

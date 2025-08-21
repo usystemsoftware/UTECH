@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesList } from "@/components/FeaturesList";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, TypographyH3, TypographyMuted } from "@/custom/Typography";
 import {
   mobileAppPlatforms,
@@ -87,7 +87,7 @@ const QualityAssurance = () => {
               center
             />
           </div>
-          <Button variant="hover">Get QA Testing Solutions</Button>
+          <ContactUsButton variant="hover">Get QA Testing Solutions</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -140,7 +140,7 @@ const QualityAssurance = () => {
             center
           />
 
-          <Button variant="hover">GET WEB SUPPORT ON-DEMAND</Button>
+          <ContactUsButton variant="hover">GET WEB SUPPORT ON-DEMAND</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -176,7 +176,7 @@ const QualityAssurance = () => {
         </div>
 
         {/* CTA button */}
-        <Button variant="hover">Test Your Software Now</Button>
+        <ContactUsButton variant="hover">Test Your Software Now</ContactUsButton>
       </PageLayout>
     </div>
   );

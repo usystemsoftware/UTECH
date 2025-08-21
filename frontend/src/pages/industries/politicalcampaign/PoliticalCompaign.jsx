@@ -1,6 +1,6 @@
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
@@ -59,7 +59,7 @@ const PoliticalCompaign = () => {
           center
         />
 
-        <Button variant="hover">SPEAK TO MARKETING EXPERTS</Button>
+        <ContactUsButton variant="hover">SPEAK TO MARKETING EXPERTS</ContactUsButton>
       </PageLayout>
 
       {/* Section: Marketing Automation System */}
@@ -82,7 +82,7 @@ const PoliticalCompaign = () => {
             />
           </FadeInWhenVisible>
         </div>
-        <Button variant="hover">GET MARKETING AUTOMATION SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET MARKETING AUTOMATION SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* Section: Event & Resource Management Software */}
@@ -109,7 +109,7 @@ const PoliticalCompaign = () => {
             center
           />
         </div>
-        <Button variant="hover">GET EVENT & RESOURCE MGMT SOFTWARE</Button>
+        <ContactUsButton variant="hover">GET EVENT & RESOURCE MGMT SOFTWARE</ContactUsButton>
       </PageLayout>
 
       {/* Section: Campaigns Management & Analysis System */}
@@ -136,7 +136,7 @@ const PoliticalCompaign = () => {
             center
           />
         </div>
-        <Button variant="hover">VIEW YOUR CAMPAIGN ANALYTICS NOW</Button>
+        <ContactUsButton variant="hover">VIEW YOUR CAMPAIGN ANALYTICS NOW</ContactUsButton>
       </PageLayout>
 
       {/* Section: Demographic Data Management Software */}
@@ -159,7 +159,7 @@ const PoliticalCompaign = () => {
             />
           </FadeInWhenVisible>
         </div>
-        <Button variant="hover">GET DEMOGRAPHIC INSIGHTS NOW</Button>
+        <ContactUsButton variant="hover">GET DEMOGRAPHIC INSIGHTS NOW</ContactUsButton>
       </PageLayout>
 
       {/* FAQ Section at the bottom */}

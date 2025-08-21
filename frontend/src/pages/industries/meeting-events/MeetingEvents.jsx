@@ -1,6 +1,6 @@
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import FaqSection from "@/custom/FaqSection";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
@@ -99,7 +99,7 @@ const MeetingEvents = () => {
             </div>
           ))}
 
-          <Button variant="hover">Get Event Mgmt Solutions</Button>
+          <ContactUsButton variant="hover">Get Event Mgmt Solutions</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -126,7 +126,7 @@ const MeetingEvents = () => {
             center
           />
         </div>
-        <Button variant="hover">Get Meeting Mgmt Software</Button>
+        <ContactUsButton variant="hover">Get Meeting Mgmt Software</ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -158,7 +158,7 @@ const MeetingEvents = () => {
               />
             </div>
           </div>
-          <Button variant="hover">Get Event Registration Solutions</Button>
+          <ContactUsButton variant="hover">Get Event Registration Solutions</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -198,7 +198,7 @@ const MeetingEvents = () => {
               center
             />
           </div>
-          <Button variant="hover">Customize Your Dating App</Button>
+          <ContactUsButton variant="hover">Customize Your Dating App</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -232,7 +232,7 @@ const MeetingEvents = () => {
           </FadeInWhenVisible>
         </div>
 
-        <Button variant="hover">Get Trade Show Solutions</Button>
+        <ContactUsButton variant="hover">Get Trade Show Solutions</ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -261,7 +261,7 @@ const MeetingEvents = () => {
             </FadeInWhenVisible>
 
           </div>
-          <Button variant="hover">Retrieve Leads Now</Button>
+          <ContactUsButton variant="hover">Retrieve Leads Now</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -294,7 +294,7 @@ const MeetingEvents = () => {
           </div>
         </div>
 
-        <Button variant="hover">Get Association Mgmt Software</Button>
+        <ContactUsButton variant="hover">Get Association Mgmt Software</ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -327,7 +327,7 @@ const MeetingEvents = () => {
               center
             />
           </div>
-          <Button variant="hover">Get Event Touch Solutions</Button>
+          <ContactUsButton variant="hover">Get Event Touch Solutions</ContactUsButton>
         </PageLayout>
       </section>
 

@@ -4,7 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographyMuted, Headline } from "@/custom/Typography";
 
 // Importing dynamic content arrays
@@ -103,8 +103,8 @@ export default function HCM() {
           </FadeInWhenVisible>
         </div>
 
-        {/* CTA Button */}
-        <Button variant="hover">GET HRMS/HRIS SOLUTIONS</Button>
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">GET HRMS/HRIS SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* =================== Payroll & Benefits Section =================== */}
@@ -157,8 +157,8 @@ export default function HCM() {
           />
         </div>
 
-        {/* CTA Button */}
-        <Button variant="hover">GET BACKGROUND SCREENING SOLUTIONS</Button>
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">GET BACKGROUND SCREENING SOLUTIONS</ContactUsButton>
 
 
         <TestimonialSection testimonials={testimonials} />

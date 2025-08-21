@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import { FeaturesList } from "@/components/FeaturesList";
@@ -54,7 +54,7 @@ const CRM = () => {
           imgClass="w-96"
         />
 
-        <Button variant="hover">GET FACTORING SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET FACTORING SOLUTIONS</ContactUsButton>
       </section>
 
       {/* ====== AI-Powered CRM Solutions Section ====== */}
@@ -69,7 +69,7 @@ const CRM = () => {
               improve their work operations."
           />
           <FeaturesList features={aiFeatures} fadeUp={fadeUp} grid iconAlign="horizontal" />
-          <Button variant="hover">DEVELOP CRM WITH AI</Button>
+          <ContactUsButton variant="hover">DEVELOP CRM WITH AI</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -94,7 +94,7 @@ const CRM = () => {
           </FadeInWhenVisible>
           <FeaturesList features={crmSoftwares} fadeUp={fadeUp} iconAlign="horizontal" />
         </div>
-        <Button variant="hover">DEVELOP CUSTOM CRM SOLUTIONS</Button>
+        <ContactUsButton variant="hover">DEVELOP CUSTOM CRM SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* ====== CRM Support & Maintenance Section ====== */}
@@ -109,7 +109,7 @@ const CRM = () => {
               unparalleled."
           />
           <FeaturesList features={crmSupportItems} fadeUp={fadeUp} grid iconAlign="horizontal" />
-          <Button variant="hover">HIRE CRM CONSULTING SERVICES</Button>
+          <ContactUsButton variant="hover">HIRE CRM CONSULTING SERVICES</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -134,7 +134,7 @@ const CRM = () => {
           </FadeInWhenVisible>
           <FeaturesList features={crmPlatforms.slice(3, 6)} fadeUp={fadeUp} center />
         </div>
-        <Button variant="hover">HIRE CRM INTEGRATION DEVELOPMENT</Button>
+        <ContactUsButton variant="hover">HIRE CRM INTEGRATION DEVELOPMENT</ContactUsButton>
       </PageLayout>
 
       {/* ====== Testimonials Section ====== */}

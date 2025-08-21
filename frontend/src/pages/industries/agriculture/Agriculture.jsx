@@ -4,11 +4,12 @@ import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
-import { Button } from "@/components/ui/button";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { Headline } from "@/custom/Typography";
 import ImageNearScreen from "@/custom/ImageNearScreen";
 import VideoTvPoster from "@/custom/VideoTvPoster";
+import ContactUsButton from "@/custom/ContactUsButton";
+
 import {
     agricultureFaq,
     agricultureSolutions,
@@ -61,9 +62,9 @@ export default function Agriculture() {
                         grid3
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET AI-POWERED AGRICULTURE SOLUTIONS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -107,9 +108,9 @@ export default function Agriculture() {
                     />
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET LAND MGMT SOFTWARE DEVELOPERS
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16">
@@ -150,9 +151,9 @@ export default function Agriculture() {
                             iconAlign="horizontal"
                         />
                     </div>
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET SEED-TO-SALE SOFTWARE DEVELOPERS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -166,9 +167,9 @@ export default function Agriculture() {
                     src="/assets//industries/agriculture/precision-agriculture-software.png"
                     imageAlign="left"
                 />
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET PRECISION AGRICULATURE SOFTWARE DEVELOPERS
-                </Button>
+                </ContactUsButton>
             </section>
 
             <section className="bg-secondary py-16">
@@ -210,9 +211,9 @@ export default function Agriculture() {
                             grid
                         />
                     </div>
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET DRONE SOFTWARE DEVELOPERS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -256,9 +257,9 @@ export default function Agriculture() {
                             iconAlign="horizontal"
                         />
                     </div>
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET FOOD SAFETY SOFTWARE DEVELOPERS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -293,9 +294,9 @@ export default function Agriculture() {
                     imageAlign="left"
                 />
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET AQUACULTURE SOFTWARE DEVELOPERS
-                </Button>
+                </ContactUsButton>
             </section>
 
             <section className="bg-secondary py-16">

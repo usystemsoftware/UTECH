@@ -11,7 +11,7 @@ import {
 
 // Features list & cards
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import FaqSection from "@/custom/FaqSection";
 
@@ -89,9 +89,9 @@ const ApplicationDevelopment = () => {
           <FeaturesList features={aiApplicationServices} grid3 center />
 
           {/* CTA button */}
-          <Button variant="hover">
+          <ContactUsButton variant="hover">
             GET AI-POWERED CUSTOM APP DEVELOPMENT
-          </Button>
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -100,9 +100,9 @@ const ApplicationDevelopment = () => {
         <FeaturesList features={AiApiFeatures} grid3 center />
 
         {/* CTA button */}
-        <Button variant="hover">
+        <ContactUsButton variant="hover">
           GET LOAN MANAGEMENT SOFTWARE SOLUTIONS
-        </Button>
+        </ContactUsButton>
       </PageLayout>
 
       {/* === ENTERPRISE-CLASS DEVELOPMENT SOLUTIONS SECTION === */}
@@ -145,7 +145,7 @@ const ApplicationDevelopment = () => {
       <PageLayout className="py-20 text-center space-y-10">
         <FeaturesList features={CustomServices} grid3 center />
 
-        <Button variant="hover">Create Your Custom App</Button>
+        <ContactUsButton variant="hover">Create Your Custom App</ContactUsButton>
       </PageLayout>
 
       {/* === COMPLIANCE VIDEO SECTION === */}
@@ -238,7 +238,7 @@ const ApplicationDevelopment = () => {
         </div>
 
         {/* CTA button */}
-        <Button variant="hover">HIRE DEDICATED APP DEVELOPERS</Button>
+        <ContactUsButton variant="hover">HIRE DEDICATED APP DEVELOPERS</ContactUsButton>
       </PageLayout>
 
       {/* === FAQ SECTION === */}

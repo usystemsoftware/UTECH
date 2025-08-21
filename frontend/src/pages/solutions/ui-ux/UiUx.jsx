@@ -1,6 +1,6 @@
 import { TypographyMuted, TypographyH3, Headline } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
@@ -77,7 +77,7 @@ const UiUx = () => {
             />
           </FadeInWhenVisible>
         </div>
-        <Button variant="hover">Hire Experienced UI/UX Developer</Button>
+        <ContactUsButton variant="hover">Hire Experienced UI/UX Developer</ContactUsButton>
       </PageLayout>
 
       {/* AI BENEFITS SECTION */}
@@ -112,7 +112,7 @@ const UiUx = () => {
           </FadeInWhenVisible>
           <FeaturesList features={processSteps.slice(2, 4)} fadeUp={fadeUp} center />
         </div>
-        <Button variant="hover">CUSTOMIZE YOUR UX/UI DESIGN</Button>
+        <ContactUsButton variant="hover">CUSTOMIZE YOUR UX/UI DESIGN</ContactUsButton>
       </PageLayout>
 
       {/* TECHNOLOGY STACK SECTION */}
@@ -138,9 +138,9 @@ const UiUx = () => {
           ))}
         </div>
 
-        <Button variant="hover">
+        <ContactUsButton variant="hover">
           Hire Developers with UX/UI Design Experience
-        </Button>
+        </ContactUsButton>
       </PageLayout>
 
       {/* TESTIMONIAL SECTION */}

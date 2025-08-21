@@ -3,7 +3,7 @@ import PageLayout from "@/custom/PageLayout";
 import { TypographyMuted, Headline } from "@/custom/Typography";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import {
@@ -88,7 +88,7 @@ const Gaming = () => (
           <img key={idx} src={logo.src} alt={logo.alt} className="h-10" />
         ))}
       </div>
-      <Button variant="hover">HIRE VIDEO GAME DEVELOPER</Button>
+      <ContactUsButton variant="hover">HIRE VIDEO GAME DEVELOPER</ContactUsButton>
     </PageLayout>
 
     {/* === Mobile Game Development Services Section === */}
@@ -103,7 +103,7 @@ const Gaming = () => (
           grid3
           center
         />
-        <Button variant="hover">HIRE MOBILE GAME DEVELOPERS</Button>
+        <ContactUsButton variant="hover">HIRE MOBILE GAME DEVELOPERS</ContactUsButton>
       </PageLayout>
     </section>
 
@@ -127,7 +127,7 @@ const Gaming = () => (
           iconAlign="horizontal"
         />
       </div>
-      <Button variant="hover">GET AR/VR GAME SOLUTIONS</Button>
+      <ContactUsButton variant="hover">GET AR/VR GAME SOLUTIONS</ContactUsButton>
     </PageLayout>
 
     {/* === iGaming Development Services Section === */}
@@ -152,7 +152,7 @@ const Gaming = () => (
             />
           </FadeInWhenVisible>
         </div>
-        <Button variant="hover">GET IGAMING SOFTWARE PROVIDER</Button>
+        <ContactUsButton variant="hover">GET IGAMING SOFTWARE PROVIDER</ContactUsButton>
       </PageLayout>
     </section>
 
@@ -176,7 +176,7 @@ const Gaming = () => (
           iconAlign="horizontal"
         />
       </div>
-      <Button variant="hover">GET SOCIAL GAMING SOLUTIONS</Button>
+      <ContactUsButton variant="hover">GET SOCIAL GAMING SOLUTIONS</ContactUsButton>
     </PageLayout>
 
     {/* === Unreal Engine Game Development Section === */}
@@ -200,7 +200,7 @@ const Gaming = () => (
             />
           </FadeInWhenVisible>
         </div>
-        <Button variant="hover">HIRE UNREAL ENGINE DEVELOPER</Button>
+        <ContactUsButton variant="hover">HIRE UNREAL ENGINE DEVELOPER</ContactUsButton>
       </PageLayout>
     </section>
 
@@ -218,7 +218,7 @@ const Gaming = () => (
         reverse
         center
       />
-      <Button variant="hover">GET GAMING ART DEVELOPERS</Button>
+      <ContactUsButton variant="hover">GET GAMING ART DEVELOPERS</ContactUsButton>
     </PageLayout>
 
     {/* === Fantasy Sports Software Development Section === */}
@@ -242,7 +242,7 @@ const Gaming = () => (
             />
           </FadeInWhenVisible>
         </div>
-        <Button variant="hover">GET FANTASY SPORTS SOFTWARE SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET FANTASY SPORTS SOFTWARE SOLUTIONS</ContactUsButton>
       </PageLayout>
     </section>
 
@@ -257,7 +257,7 @@ const Gaming = () => (
         grid3
         center
       />
-      <Button variant="hover">GET AI IN GAME DEVELOPMENT</Button>
+      <ContactUsButton variant="hover">GET AI IN GAME DEVELOPMENT</ContactUsButton>
     </PageLayout>
 
     {/* === Gaming Application Support Services Section === */}
@@ -272,7 +272,7 @@ const Gaming = () => (
           center
           grid3
         />
-        <Button variant="hover">GET GAMING APPS SUPPORT</Button>
+        <ContactUsButton variant="hover">GET GAMING APPS SUPPORT</ContactUsButton>
       </PageLayout>
     </section>
 
