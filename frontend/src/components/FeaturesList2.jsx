@@ -1,9 +1,6 @@
-// src/components/FeaturesList2.jsx
-import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { TypographyH5, TypographyMuted } from "@/custom/Typography";
 import { IconRenderer } from "@/custom/IconRenderer";
 
-// Helper: Check if icon is an image file path (.svg, .png, .jpg, .jpeg, .webp)
 const isImageIcon = (icon) => {
   if (typeof icon !== "string") return false;
   const lower = icon.trim().toLowerCase();
@@ -43,15 +40,13 @@ export const FeaturesList2 = ({
 
   return (
     <div
-      className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-        } items-center justify-center gap-10`}
+      className={`flex flex-col ${
+        reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+      } items-center justify-center gap-10`}
     >
       <div className={contentClass}>
         {features.map((feature, index) => (
-          <FadeInWhenVisible
-            key={index}
-            className="flex items-start flex-col gap-2"
-          >
+          <div key={index} className="flex items-start flex-col gap-2">
             <div className="flex items-center gap-4">
               <span className="flex-shrink-0">
                 {isImageIcon(feature.icon) ? (
@@ -81,23 +76,25 @@ export const FeaturesList2 = ({
             )}
 
             {feature?.list && (
-              <ul className="list-disc pl-5 mt-2 text-muted-foreground">
+              <ul className="list-disc text-sm pl-5 mt-2 space-y-4 text-muted-foreground">
                 {feature.list.map((point, idx) => (
                   <li key={idx}>{point}</li>
                 ))}
               </ul>
             )}
-          </FadeInWhenVisible>
+          </div>
         ))}
       </div>
 
       {image && (
-        <FadeInWhenVisible
-          className={`flex-shrink-0 ${imageClass} w-full max-w-xs sm:max-w-md`}
-          variants={fadeUp}
-        >
-          <img loading="lazy" src={image} alt="feature" className="w-135" />
-        </FadeInWhenVisible>
+        <div className={`flex-shrink-0 ${imageClass} w-135`} variants={fadeUp}>
+          <img
+            loading="lazy"
+            src={image}
+            alt="feature"
+            className={imageClass || "w-135"}
+          />
+        </div>
       )}
     </div>
   );

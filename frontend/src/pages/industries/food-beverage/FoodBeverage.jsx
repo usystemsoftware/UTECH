@@ -1,4 +1,3 @@
-import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList } from "@/components/FeaturesList";
@@ -65,16 +64,14 @@ const FoodBeverage = () => {
             title="Food & Beverage Service Management Software"
             description="We develop food service ordering software solutions built to facilitate menu, inventory, food cost, kitchen, catering, report tracking, and more."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
             {/* Left Image */}
-            <FadeInWhenVisible className='hidden sm:block'>
-              <img
-                loading="lazy"
-                src="/assets/industries/food-beverage/software.png"
-                alt="Food & Beverage Service Management"
-                className="w-145 mx-auto"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/food-beverage/software.png"
+              alt="Food & Beverage Service Management"
+              className="w-135 md:w-145 xl:w-155 2xl:w-165 mx-auto"
+            />
 
             {/* Right Content with Features */}
             <div className="text-start space-y-4">
@@ -104,14 +101,12 @@ const FoodBeverage = () => {
             features={FoodBeverageTransformation}
             iconAlign="horizontal"
           />
-          <FadeInWhenVisible className='hidden sm:block'>
-            <img
-              loading="lazy"
-              src="/assets/industries/food-beverage/systems.png"
-              alt="Food & Beverage ERP System"
-              className="w-52 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/food-beverage/systems.png"
+            alt="Food & Beverage ERP System"
+            className="w-42 sm:w-48 md:w-52 xl:w-54 2xl:w-56 mx-auto"
+          />
         </div>
         <ContactUsButton variant="hover">GET F&B ERP SOLUTIONS</ContactUsButton>
       </PageLayout>
@@ -123,15 +118,13 @@ const FoodBeverage = () => {
             title="Food & Beverage Quality Management Software"
             description="Utilize trigger-based automation to monitor moisture, acidity..."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/industries/food-beverage/management.png"
-                alt="Food & Beverage Quality Management"
-                className="w-145 mx-auto hidden sm:block"
-              />
-            </FadeInWhenVisible>
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+            <img
+              loading="lazy"
+              src="/assets/industries/food-beverage/management.png"
+              alt="Food & Beverage Quality Management"
+              className="w-135 md:w-145 xl:w-155 2xl:w-165 mx-auto"
+            />
             <FeaturesList
               features={FoodBeverageFeture}
               iconAlign="horizontal"
@@ -147,19 +140,17 @@ const FoodBeverage = () => {
           title="Food & Beverage Distribution Software"
           description="Custom food distribution software streamlines inventory management..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
           <FeaturesList
             features={FoodBeverageSoftware}
             iconAlign="horizontal"
           />
-          <FadeInWhenVisible className='hidden sm:block'>
-            <img
-              loading="lazy"
-              src="/assets/industries/food-beverage/distribution.png"
-              alt="Food & Beverage Distribution"
-              className="w-145 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/food-beverage/distribution.png"
+            alt="Food & Beverage Distribution"
+            className="w-135 md:w-145 xl:w-155 2xl:w-165 mx-auto"
+          />
         </div>
         <ContactUsButton variant="hover">GET F&B DISTRIBUTION SOLUTIONS</ContactUsButton>
       </PageLayout>
@@ -171,15 +162,13 @@ const FoodBeverage = () => {
             title="Food & Beverage Inventory Management Software"
             description="Custom food & beverage inventory management solutions offer detailed SKU..."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-            <FadeInWhenVisible className="hidden sm:block">
-              <img
-                loading="lazy"
-                src="/assets/industries/food-beverage/inventory.png"
-                alt="Food & Beverage Inventory Management"
-                className="w-145 mx-auto"
-              />
-            </FadeInWhenVisible>
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
+            <img
+              loading="lazy"
+              src="/assets/industries/food-beverage/inventory.png"
+              alt="Food & Beverage Inventory Management"
+              className="w-135 md:w-145 xl:w-155 2xl:w-165 mx-auto"
+            />
             <FeaturesList
               features={FoodBeverageInventory}
               iconAlign="horizontal"
@@ -203,7 +192,7 @@ const FoodBeverage = () => {
         </div>
 
         {/* Compliance Video with Labels */}
-        <FadeInWhenVisible>
+        <div>
           <div className="flex-1 relative flex items-center justify-center sm:ml-20">
             <video
               controls
@@ -241,7 +230,7 @@ const FoodBeverage = () => {
               </div>
             </div>
           </div>
-        </FadeInWhenVisible>
+        </div>
       </PageLayout>
 
       {/* Food Traceability Section */}
@@ -250,19 +239,17 @@ const FoodBeverage = () => {
           title="Food Traceability Software Services"
           description="Food traceability software solutions empower F&B producers to track-and-trace food..."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
           <FeaturesList
             features={FoodBeverageTraceability}
             iconAlign="horizontal"
           />
-          <FadeInWhenVisible className='hidden sm:block'>
-            <img
-              loading="lazy"
-              src="/assets/industries/food-beverage/development.png"
-              alt="Food & Beverage Traceability"
-              className="w-145 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/food-beverage/development.png"
+            alt="Food & Beverage Traceability"
+            className="w-145 xl:w-155 2xl:w-165 mx-auto"
+          />
         </div>
         <ContactUsButton variant="hover">GET F&B TRACEABILITY SOLUTIONS</ContactUsButton>
       </PageLayout>

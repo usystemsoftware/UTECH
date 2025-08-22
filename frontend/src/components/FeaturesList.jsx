@@ -30,10 +30,12 @@ export const FeaturesList = ({
   reverse = false,
   iconAlign = "vertical",
 }) => {
-  // Determine text alignment class
-  const textAlignClass = center ? "text-center" : "sm:text-left text-center";
+  // Alignment classes
+  const textAlignClass = center
+    ? "text-center items-center"
+    : "text-center md:text-left md:items-start";
 
-  // Determine layout class
+  // Layout classes
   let contentClass;
   if (grid3) {
     contentClass = `grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ${textAlignClass} w-full`;
@@ -47,19 +49,23 @@ export const FeaturesList = ({
 
   return (
     <div
-      className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-        } items-center justify-center gap-8`}
+      className={`flex flex-col ${
+        reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+      } items-center justify-center gap-8`}
     >
       <div className={contentClass}>
         {features.map((feature, index) => (
           <div
             key={index}
-            className={`flex ${iconAlign === "horizontal"
-              ? `sm:flex-row flex-col gap-4 ${center ? "items-center" : "items-center sm:items-start"
-              }`
-              : `flex-col gap-4 ${center ? "items-center" : "items-center sm:items-start"
-              }`
-              }`}
+            className={`flex ${
+              iconAlign === "horizontal"
+                ? `md:flex-row flex-col gap-4 ${
+                    center ? "items-center" : "items-center md:items-start"
+                  }`
+                : `flex-col gap-4 ${
+                    center ? "items-center" : "items-center md:items-start"
+                  }`
+            } ${center ? "text-center" : "text-center md:text-left"}`}
           >
             {/* ICON */}
             <span className="flex-shrink-0">
@@ -69,7 +75,7 @@ export const FeaturesList = ({
                   alt={feature.title}
                   width={iconSize}
                   height={iconSize}
-                  className="object-contain w-16 h-16"
+                  className="object-contain lg:w-17 lg:h-17 w-15 h-15"
                 />
               ) : (
                 <IconRenderer
@@ -81,11 +87,15 @@ export const FeaturesList = ({
             </span>
 
             {/* TEXT */}
-            <div className={iconAlign === "horizontal" ? "flex-1 ml-4" : ""}>
+            <div
+              className={
+                iconAlign === "horizontal" && !center ? "flex-1 md:ml-4" : ""
+              }
+            >
               <TypographyH5 className="font-extrabold text-base tracking-tight">
                 {feature.title}
               </TypographyH5>
-              <TypographyMuted className="sm:line-clamp-4 text-start">
+              <TypographyMuted className="text-start">
                 {feature.description}
               </TypographyMuted>
             </div>
@@ -95,10 +105,15 @@ export const FeaturesList = ({
 
       {image && (
         <FadeInWhenVisible
-          className={`flex-shrink-0 ${imageClass} w-full max-w-xs sm:max-w-md`}
+          className={`flex-shrink-0 ${imageClass} w-full`}
           variants={fadeUp}
         >
-          <img loading="lazy" src={image} alt="feature" className="w-135" />
+          <img
+            loading="lazy"
+            src={image}
+            alt="feature"
+            className={`w-135 mx-auto ${imageClass} `}
+          />
         </FadeInWhenVisible>
       )}
     </div>
@@ -114,9 +129,10 @@ export const FeaturesListOpposite = ({ features }) => {
           <div
             key={index}
             className={`flex items-center gap-5 text-center
-              ${isRightColumn
-                ? "flex-col md:flex-row-reverse md:text-right md:items-start"
-                : "flex-col md:flex-row md:text-left md:items-start"
+              ${
+                isRightColumn
+                  ? "flex-col md:flex-row-reverse md:text-right md:items-start"
+                  : "flex-col md:flex-row md:text-left md:items-start"
               }`}
           >
             {/* Icon */}

@@ -2,7 +2,6 @@ import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 import VideoPoster from "@/custom/VideoPoster";
@@ -38,13 +37,11 @@ export default function HospitalandTravelling() {
           description="Our Hospitality Management System software solutions are tailored to your hospitality technology needs..."
         />
 
-        <FeaturesList
-          features={hospitalityServices}
-          grid3
-          center
-        />
+        <FeaturesList features={hospitalityServices} grid3 center />
 
-        <ContactUsButton variant="hover">GET HOSPITILITY MGMT SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET HOSPITILITY MGMT SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       <section className="relative w-full overflow-hidden">
@@ -62,13 +59,11 @@ export default function HospitalandTravelling() {
             description="Our team of developers unlock the full potential of property management systems..."
           />
 
-          <FeaturesList
-            features={hospitalityAdditionalServices}
-            grid3
-            center
-          />
+          <FeaturesList features={hospitalityAdditionalServices} grid3 center />
 
-          <ContactUsButton variant="hover">GET HOSPITILITY MGMT SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET HOSPITILITY MGMT SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -79,7 +74,9 @@ export default function HospitalandTravelling() {
         />
 
         <FeaturesListOpposite features={aiHospitalitySolutions} grid />
-        <ContactUsButton variant="hover">GET HOSPITILITY & TRAVEL SOFTWARE</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET HOSPITILITY & TRAVEL SOFTWARE
+        </ContactUsButton>
       </PageLayout>
 
       {/* === SUPPORT SERVICES SECTION === */}
@@ -91,7 +88,9 @@ export default function HospitalandTravelling() {
 
         <FeaturesListOpposite features={hospitalitySupportServices} grid />
 
-        <ContactUsButton variant="hover">GET HOSPITILITY & TRAVEL SOFTWARE</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET HOSPITILITY & TRAVEL SOFTWARE
+        </ContactUsButton>
       </PageLayout>
 
       {/* === TRAVELPORT INTEGRATION SECTION === */}
@@ -103,22 +102,22 @@ export default function HospitalandTravelling() {
           />
 
           {/* Layout: Image left, features right */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/industries/hospital-travel/flight-planning-software-solutions.png"
-                alt="Portfolio"
-                className="w-145 mx-auto"
-              />
-            </FadeInWhenVisible>
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
+            <img
+              loading="lazy"
+              src="/assets/industries/hospital-travel/flight-planning-software-solutions.png"
+              alt="Portfolio"
+              className="w-145 xl:w-155 2xl:w-165 mx-auto"
+            />
             <FeaturesList
               features={travelportIntegrationServices}
               iconAlign="horizontal"
             />
           </div>
 
-          <ContactUsButton variant="hover">GET TRAVEL PORT SOFTWARE SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET TRAVEL PORT SOFTWARE SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -130,21 +129,21 @@ export default function HospitalandTravelling() {
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/hospital-travel/custom-sabre-development-and-integration-solutions-new.png"
-              alt="Portfolio"
-              className="w-62 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/hospital-travel/custom-sabre-development-and-integration-solutions-new.png"
+            alt="Portfolio"
+            className="w-52 sm:w-62 xl:w-68 2xl:w-72 mx-auto"
+          />
           <FeaturesList
             features={sabreSoftwareSolutions}
             iconAlign="horizontal"
           />
         </div>
 
-        <ContactUsButton variant="hover">GET SABRE SOFTWARE SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET SABRE SOFTWARE SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       {/* === FAQ SECTION === */}

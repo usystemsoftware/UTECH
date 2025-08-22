@@ -2,7 +2,6 @@ import { FeaturesList } from "@/components/FeaturesList";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographyMuted, Headline, TypographyH5 } from "@/custom/Typography";
 
@@ -55,15 +54,13 @@ export default function EnergyUtilities() {
             title="Custom Energy Management Software Solutions"
             description="U Tech developers engineer custom energy management solutions built to streamline, automate, and simplify energy management workflows, providing resolutions for utility asset management, billing services and much more."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 items-center">
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/industries/energy-utilities/custom-energy-mamagement-software.png"
-                alt="Portfolio"
-                className="w-110 mx-auto"
-              />
-            </FadeInWhenVisible>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <img
+              loading="lazy"
+              src="/assets/industries/energy-utilities/custom-energy-mamagement-software.png"
+              alt="Portfolio"
+              className="sm:w-110 w-86 xl:w-130 2xl:w-145 mx-auto"
+            />
             <FeaturesList
               features={utilityManagementSolutions}
               iconAlign="horizontal"
@@ -79,11 +76,7 @@ export default function EnergyUtilities() {
           title="AI-Powered Energy and Utilities Solutions"
           description="AI-Powered Energy and Utilities Solutions U Tech’s experts design powerful AI solutions for energy and utility companies that want more efficiency, productivity, and resourcefulness. Let U Tech’s AI technology help your staff maximize their efforts to benefit loyal customers."
         />
-        <FeaturesList
-          features={aiUtilitySolutions}
-          grid3
-          center
-        />
+        <FeaturesList features={aiUtilitySolutions} grid3 center />
       </PageLayout>
 
       {/* Electric utility section */}
@@ -93,19 +86,17 @@ export default function EnergyUtilities() {
             title="Electric Utility Software Solutions"
             description="U Tech delivers custom electric utility software solutions designed for grid modernization, automating and simplifying the management of electrical power sources and all other electric operations management workflows."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             <FeaturesList
               features={electricSoftwareSolutions}
               iconAlign="horizontal"
             />
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/industries/energy-utilities/electric-management-solutions.png"
-                alt="Portfolio"
-                className="md:w-52 w-46 mx-auto"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/energy-utilities/electric-management-solutions.png"
+              alt="Portfolio"
+              className="sm:w-52 xl:w-56 2xl:w-62 w-42 mx-auto"
+            />
           </div>
           <ContactUsButton variant="hover">GET ELECTRIC MANAGEMENT DEVELOPERS</ContactUsButton>
         </PageLayout>
@@ -117,15 +108,13 @@ export default function EnergyUtilities() {
           title="Custom Water Management Solutions"
           description="We develop custom water quality monitoring solutions to help businesses manage and meet all of their water and wastewater management needs, tracking sampling activities, producing region-specific discharge monitoring reports (DMRs) and ensuring continual compliance with all water and wastewater requirements."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:gap-8 items-center">
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/energy-utilities/custom-water-management-solutions.png"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <img
+            loading="lazy"
+            src="/assets/industries/energy-utilities/custom-water-management-solutions.png"
+            alt="Portfolio"
+            className="w-135 xl:w-145 2xl:w-150 mx-auto"
+          />
           <FeaturesList
             features={waterSoftwareSolutions}
             iconAlign="horizontal"
@@ -141,19 +130,19 @@ export default function EnergyUtilities() {
             title="Custom Smart Grid Technology Software"
             description="Our developers can either augment existing systems or provide custom solutions to fit specific business needs, engineering advanced technologies for grid distribution, transmission, consumption processes and more."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 items-center">
-            <FeaturesList
-              features={smartGridSolutions}
-              iconAlign="horizontal"
-            />
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/industries/energy-utilities/custom-smart-grid-technology-services.png"
-                alt="Portfolio"
-                className="w-135 mx-auto"
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+            <div className="order-2 md:order-1">
+              <FeaturesList
+                features={smartGridSolutions}
+                iconAlign="horizontal"
               />
-            </FadeInWhenVisible>
+            </div>
+            <img
+              loading="lazy"
+              src="/assets/industries/energy-utilities/custom-smart-grid-technology-services.png"
+              alt="Portfolio"
+              className="w-125 md:w-135 xl:w-145 2xl:w-150 mx-auto order-1 md:order-2"
+            />
           </div>
           <ContactUsButton variant="hover">HIRE SMART GRID DEVELOPERS</ContactUsButton>
         </PageLayout>
@@ -165,15 +154,15 @@ export default function EnergyUtilities() {
           title="Custom Heat Software Solutions"
           description="At U Tech, our software developers are well-versed in the energy & utilities industry along with developing comprehensive heat monitoring software, creating all-in-one solutions for district heating systems, individual heating systems, heating plants, heat monitoring software, and much more."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 items-center">
-          <FadeInWhenVisible delay={0.5}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
+          <div>
             <img
               loading="lazy"
               src="/assets/industries/energy-utilities/custom-heat-software-solutions.png"
               alt="Portfolio"
-              className="md:w-56 w-46 mx-auto"
+              className="sm:w-56 xl:w-58 2xl:w-62 w-42 mx-auto"
             />
-          </FadeInWhenVisible>
+          </div>
           <FeaturesList
             features={heatSoftwareSolutions}
             iconAlign="horizontal"
@@ -189,19 +178,19 @@ export default function EnergyUtilities() {
             title="Custom Solar Asset Management Software Solutions"
             description="U Tech’s expert developers utilize a wide range of technologies, such as solar heating, artificial photosynthesis, photovoltaics, and more to customize solar asset management software solutions engineered to improve the design, construction, and management of solar power as a sustainable, renewable energy source."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-2 md:gap-8">
-            <FeaturesList
-              features={solarSoftwareSolutions}
-              iconAlign="horizontal"
-            />
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/industries/energy-utilities/custom-solar-software-solutions.png"
-                alt="Portfolio"
-                className="w-72 md:w-105 mx-auto"
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-2 md:gap-8">
+            <div className="order-2 md:order-1">
+              <FeaturesList
+                features={solarSoftwareSolutions}
+                iconAlign="horizontal"
               />
-            </FadeInWhenVisible>
+            </div>
+            <img
+              loading="lazy"
+              src="/assets/industries/energy-utilities/custom-solar-software-solutions.png"
+              alt="Portfolio"
+              className="w-72 sm:w-86 md:w-105 xl:w-120 2xl:w-125 mx-auto order-1 md:order-2"
+            />
           </div>
           <ContactUsButton variant="hover">GET SOLAR SOFTWARE DEVELOPERS</ContactUsButton>
         </PageLayout>
@@ -213,15 +202,13 @@ export default function EnergyUtilities() {
           title="Waste Management Software Solutions"
           description="Our software developers have a vast amount of knowledge and experience building custom software for the waste industry, aumenting existing IT teams and optimizing solutions through custom integrations to create a more interoperable system that encompasses all aspects of waste management."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 items-center">
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/energy-utilities/custom-waste-management-software-solutions.png"
-              alt="Portfolio"
-              className="w-145 mx-auto"
-            />
-          </FadeInWhenVisible>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+          <img
+            loading="lazy"
+            src="/assets/industries/energy-utilities/custom-waste-management-software-solutions.png"
+            alt="Portfolio"
+            className="w-145 xl:w-155 2xl:w-185 mx-auto"
+          />
           <FeaturesList
             features={wasteManagementSolutions}
             iconAlign="horizontal"
@@ -250,19 +237,14 @@ export default function EnergyUtilities() {
           title="Custom Wind Software Solutions"
           description="U Tech delivers custom-developed wind software solutions and applications designed to assist in the operation and development of wind farms, as well as monitoring wind speed forecasting, utilizing 3D farm modeling & visualization, monitoring wind flow/energy output window simulations, and more."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center md:gap-8">
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/energy-utilities/custom-wind-software-development.png"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
-          <FeaturesList
-            features={windSolutions}
-            iconAlign="horizontal"
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center md:gap-8">
+          <img
+            loading="lazy"
+            src="/assets/industries/energy-utilities/custom-wind-software-development.png"
+            alt="Portfolio"
+            className="w-125 md:w-135 xl:w-145 2xl:w-150 mx-auto"
           />
+          <FeaturesList features={windSolutions} iconAlign="horizontal" />
         </div>
         <ContactUsButton variant="hover">HIRE WIND SOFTWARTE DEVELOPERS</ContactUsButton>
       </PageLayout>
@@ -274,19 +256,14 @@ export default function EnergyUtilities() {
             title="Custom Nuclear Energy Software Solutions"
             description="At U Tech, we deliver comprehensive nuclear energy software solutions to help businesses with nuclear facilities to automate & streamline their workflows regarding their nuclear power plant planning, power plant equipment design, spent fuel analysis & safety management monitoring, and operations management & analysis."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 md:gap-8">
-            <FeaturesList
-              features={nuclearSolutions}
-              iconAlign="horizontal"
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-8">
+            <FeaturesList features={nuclearSolutions} iconAlign="horizontal" />
+            <img
+              loading="lazy"
+              src="/assets/industries/energy-utilities/custom-nuclear-energy-software.png"
+              alt="Portfolio"
+              className="sm:w-110 w-86 xl:w-120 2xl:w-135 mx-auto"
             />
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/industries/energy-utilities/custom-nuclear-energy-software.png"
-                alt="Portfolio"
-                className="w-110 mx-auto"
-              />
-            </FadeInWhenVisible>
           </div>
           <ContactUsButton variant="hover">
             HIRE NUCLEAR ENERGY SOFTWARE DEVELOPERS

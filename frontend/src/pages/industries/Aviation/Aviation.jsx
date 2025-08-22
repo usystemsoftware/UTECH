@@ -3,7 +3,6 @@ import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographyMuted, Headline } from "@/custom/Typography";
 import {
@@ -56,16 +55,22 @@ export default function Aviation() {
             description="U Tech's advanced AI solutions revolutionize the airline industry by optimizing revenue management, flight management, predictive maintenance, and more. With cutting-edge technology and industry expertise, our AI-driven systems provide real-time insights, streamline workflows, and ensure regulatory compliance."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
-            <FeaturesList features={airlineAIandAutomationServices.slice(0, 3)} fadeUp={fadeUp} center />
-            <FadeInWhenVisible className="hidden md:block">
+            <FeaturesList
+              features={airlineAIandAutomationServices.slice(0, 3)}
+              center
+            />
+            <div className="hidden md:block">
               <img
                 src="/assets/industries/aviation/flightaware-custom-integration.png"
                 alt="AI-driven flight management system"
                 loading="lazy"
-                className="w-110 mx-auto"
+                className="w-110 lg:w-135 2xl:w-200 mx-auto"
               />
-            </FadeInWhenVisible>
-            <FeaturesList features={airlineAIandAutomationServices.slice(3, 6)} center />
+            </div>
+            <FeaturesList
+              features={airlineAIandAutomationServices.slice(3, 6)}
+              center
+            />
           </div>
         </PageLayout>
       </section>
@@ -80,8 +85,11 @@ export default function Aviation() {
           features={airlineOperationsServices}
           src="/assets/industries/aviation/custom-flight-operations-management-software-development.png"
           imageAlign="right"
+          imgClass="2xl:w-145"
         />
-        <ContactUsButton variant="hover">GET FLIGHT OPS SOFTWARE DEVELOPERS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET FLIGHT OPS SOFTWARE DEVELOPERS
+        </ContactUsButton>
       </section>
 
       {/* Reservation Software */}
@@ -92,31 +100,37 @@ export default function Aviation() {
             description="U Tech provides reservation & ticketing software for airlines, call centers, OTAs, internet booking & ticket vendors, and more."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <FadeInWhenVisible delay={0.5} className="md:block hidden">
+            <div delay={0.5} className="md:block hidden">
               <img
                 loading="lazy"
                 src="/assets/industries/aviation/sabre-travel-network-solutions-gif.gif"
                 alt="Airline reservation system integration"
-                className="w-52 mx-auto"
+                className="w-52 xl:w-58 2xl:w-72 mx-auto"
               />
-            </FadeInWhenVisible>
+            </div>
             <div className="space-y-8">
-              <FeaturesList features={airlineReservationSolutions} grid center />
-              <div className="flex items-center justify-center gap-6 flex-wrap mt-10">
+              <FeaturesList
+                features={airlineReservationSolutions}
+                grid
+                center
+              />
+              <div className="flex items-center justify-center gap-6 xl:gap-10 flex-wrap mt-10">
                 {airlinePartner?.map((item, index) => (
-                  <FadeInWhenVisible key={index} delay={0.5}>
+                  <div key={index}>
                     <img
                       loading="lazy"
                       src={`/assets/industries/aviation/airline/${item?.img}.png`}
                       alt={`${item?.name || "Airline partner"} logo`}
-                      className="w-32 hover:scale-105 cursor-pointer mx-auto"
+                      className="w-auto h-auto hover:scale-105 cursor-pointer mx-auto"
                     />
-                  </FadeInWhenVisible>
+                  </div>
                 ))}
               </div>
             </div>
           </div>
-          <ContactUsButton variant="hover">GET AIRLINE SOFTWARE DEVELOPERS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET AIRLINE SOFTWARE DEVELOPERS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -131,14 +145,14 @@ export default function Aviation() {
         />
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
           <FeaturesList features={aviationMroSolutions.slice(0, 2)} center />
-          <FadeInWhenVisible>
+          <div>
             <img
               src="/assets/industries/aviation/mro-aviation-software-developers.png"
               alt="MRO aviation software interface"
               loading="lazy"
-              className="w-64 mx-auto"
+              className="md:w-64 w-52 xl:w-72 mx-auto"
             />
-          </FadeInWhenVisible>
+          </div>
           <FeaturesList features={aviationMroSolutions.slice(2, 4)} center />
         </div>
       </PageLayout>
@@ -150,34 +164,37 @@ export default function Aviation() {
           description="U Tech develops drone software for agriculture, construction, cinematography, inspections, search-and-rescue, and more."
         />
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-          <FadeInWhenVisible>
+          <div>
             <img
               src="/assets/industries/aviation/custom-drone-software-development.png"
               alt="Drone software for agriculture and construction"
               loading="lazy"
-              className="md:w-120 w-72 mx-auto"
+              className="md:w-120 sm:w-96 2xl:w-145 w-72 mx-auto"
             />
-          </FadeInWhenVisible>
+          </div>
           <div className="grid gap-9">
             <FeaturesList features={droneSoftwareSolutions} grid center />
             <TypographyMuted>
-              Leverage ArcGIS by ESRI, FlytBase, DroneDeploy, and Pix4DMapper to transform drone image capture and analysis.
+              Leverage ArcGIS by ESRI, FlytBase, DroneDeploy, and Pix4DMapper to
+              transform drone image capture and analysis.
             </TypographyMuted>
             <div className="flex items-center gap-6 justify-center flex-wrap mt-8">
               {dronePartner?.map((item, index) => (
-                <FadeInWhenVisible key={index} delay={0.5}>
+                <div key={index} delay={0.5}>
                   <img
                     loading="lazy"
                     src={`/assets/industries/aviation/drone/${item?.img}.png`}
                     alt={`${item?.name || "Drone partner"} logo`}
                     className="w-32 hover:scale-105 cursor-pointer mx-auto"
                   />
-                </FadeInWhenVisible>
+                </div>
               ))}
             </div>
           </div>
         </div>
-        <ContactUsButton variant="hover">GET DRONE SOFTWARE DEVELOPERS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET DRONE SOFTWARE DEVELOPERS
+        </ContactUsButton>
       </PageLayout>
 
       {/* FAQ Section */}
