@@ -25,22 +25,25 @@ const PartnerProductSupport = () => {
       {/* === CONTENT SECTIONS === */}
       <PageLayout className="text-center py-16 space-y-8">
         <Headline title="U Tech's Strategic Partner Network" />
+
         {PartnerProductSolutions.map((item, index) => (
-          <div key={index} className="space-y-4">
-            <div className="grid grid-cols-2 sm:grid-cols-4 items-center justify-items-center gap-4">
-              {item.partners.map((partner, pIndex) => (
+          <div key={index} className="flex flex-wrap justify-center gap-8">
+            {item.partners.map((partner, pIndex) => (
+              <div key={pIndex} className="flex items-center justify-center">
                 <img
-                  key={pIndex}
                   loading="lazy"
                   src={`/assets/services/partner-product/${partner}.png`}
                   alt={partner}
-                  className="w-60 h-22 hover:scale-110 cursor-pointer shadow-xl p-6 object-contain mx-auto"
+                  className="w-60 h-24 hover:scale-110 transition-transform duration-300 cursor-pointer shadow-xl p-6 object-contain"
                 />
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
         ))}
-        <ContactUsButton variant="hover">Build Your Product Support Package</ContactUsButton>
+
+        <ContactUsButton variant="hover">
+          Build Your Product Support Package
+        </ContactUsButton>
       </PageLayout>
 
       <PageLayout className="text-center space-y-10 py-12">
@@ -48,7 +51,12 @@ const PartnerProductSupport = () => {
           title="Comprehensive Expertise & Technical Support"
           description="We have cultivated a vast ecosystem of strategic partnerships with industry and technology leaders including the ones displayed above. Through these partnerships, we offer full application support services for partner products, ensuring that you receive comprehensive assistance to get the most out of your software solutions."
         />
-        <FeaturesList features={PartnerProduct} fadeUp={fadeUp} grid iconAlign="horizontal" />
+        <FeaturesList
+          features={PartnerProduct}
+          fadeUp={fadeUp}
+          grid
+          iconAlign="horizontal"
+        />
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -63,7 +71,9 @@ const PartnerProductSupport = () => {
             grid3
             center
           />
-          <ContactUsButton variant="hover">Get Partner Product Support</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Get Partner Product Support
+          </ContactUsButton>
         </PageLayout>
       </section>
     </>

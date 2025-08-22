@@ -1,4 +1,3 @@
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
 import { Headline, TypographyH4, TypographyH1 } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
@@ -44,12 +43,13 @@ const DigitalTransformation = () => {
 
         <FeaturesList
           features={growthInnovationFeaturesData}
-          fadeUp={fadeUp}
           grid
           iconAlign="horizontal"
         />
 
-        <ContactUsButton variant="hover">WORK WITH TRASFORAMTION EXPERTS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          WORK WITH TRASFORAMTION EXPERTS
+        </ContactUsButton>
       </PageLayout>
 
       <section className="py-16 bg-secondary text-center">
@@ -62,30 +62,24 @@ const DigitalTransformation = () => {
             staff augmentation to help you fulfill your core objectives."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/services/digital-transformation/digital-transformation-team.jpg"
-                alt="Financial Planning Dashboard"
-                className="w-155 mx-auto"
-              />
-            </FadeInWhenVisible>
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+            <img
+              loading="lazy"
+              src="/assets/services/digital-transformation/digital-transformation-team.jpg"
+              alt="Financial Planning Dashboard"
+              className="w-145 xl:w-155 2xl:w-175 mx-auto"
+            />
             <FeaturesList
               features={digitalTransformationFeatures}
-              fadeUp={fadeUp}
               iconAlign="horizontal"
             />
           </div>
 
-          <FeaturesList
-            features={services}
-            fadeUp={fadeUp}
-            grid3
-            center
-          />
+          <FeaturesList features={services} grid3 center />
 
-          <ContactUsButton variant="hover">GET DIGITAL TRANSFORMATION SERVICES</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET DIGITAL TRANSFORMATION SERVICES
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -97,10 +91,16 @@ const DigitalTransformation = () => {
           including finance, healthcare, and retail."
         />
 
-        <FeaturesList features={industrySolutions} fadeUp={fadeUp} grid iconAlign="horizontal" />
+        <FeaturesList
+          features={industrySolutions}
+          grid
+          iconAlign="horizontal"
+        />
 
         {/* ContactUsButton */}
-        <ContactUsButton variant="hover">Get Industry DX Solution</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Get Industry DX Solution
+        </ContactUsButton>
       </PageLayout>
 
       <section className="py-16 bg-secondary">
@@ -112,31 +112,37 @@ const DigitalTransformation = () => {
             outsourcing. Our facilities and resources are secure and reliable."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/services/digital-transformation/unique-threat-prevention-strategies.png"
-                alt="Financial Planning Dashboard"
-                className="w-135 mx-auto"
-              />
-            </FadeInWhenVisible>
-            <FeaturesList features={facilityHighlights} fadeUp={fadeUp} iconAlign="horizontal" />
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+            <img
+              loading="lazy"
+              src="/assets/services/digital-transformation/unique-threat-prevention-strategies.png"
+              alt="Financial Planning Dashboard"
+              className="w-145 xl:w-155 2xl:w-175 mx-auto"
+            />
+            <FeaturesList
+              features={facilityHighlights}
+              iconAlign="horizontal"
+            />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FeaturesList features={facilityAssurance} fadeUp={fadeUp} iconAlign="horizontal" />
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/services/digital-transformation/remote-workforce-network-security-protection.png"
-                alt="Financial Planning Dashboard"
-                className="w-145 mx-auto"
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+            <div className="order-2 md:order-1">
+              <FeaturesList
+                features={facilityAssurance}
+                iconAlign="horizontal"
               />
-            </FadeInWhenVisible>
+            </div>
+            <img
+              loading="lazy"
+              src="/assets/services/digital-transformation/remote-workforce-network-security-protection.png"
+              alt="Financial Planning Dashboard"
+              className="w-145 xl:w-155 2xl:w-175 mx-auto order-1 md:order-2"
+            />
           </div>
 
-          <ContactUsButton variant="hover">Hire A Reliable DX Resource</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Hire A Reliable DX Resource
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -148,20 +154,13 @@ const DigitalTransformation = () => {
           optimal service."
         />
 
-        <FeaturesList
-          features={features}
-          fadeUp={fadeUp}
-          grid4
-          center
-        />
+        <FeaturesList features={features} grid4 center />
 
-        <FadeInWhenVisible>
-          <ContactUsButton variant="hover">WORK WITH TOP TALENT</ContactUsButton>
-        </FadeInWhenVisible>
+        <ContactUsButton variant="hover">WORK WITH TOP TALENT</ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-16">
-        <PageLayout className="py-20 text-center space-y-10">
+        <PageLayout className="text-center space-y-10">
           <Headline
             title="One-Stop Digital Transformation Solution Provider"
             description="Our specialized industry-specific teams provide skill, intelligence,
@@ -169,20 +168,14 @@ const DigitalTransformation = () => {
             resources, we will help you increase operational flexibility."
           />
 
-
-          <FeaturesList
-            features={dxFeatures}
-            fadeUp={fadeUp}
-            grid3
-            center
-          />
-          <FadeInWhenVisible>
-            <ContactUsButton variant="hover">HIRE A ONE-STOP SHOP</ContactUsButton>
-          </FadeInWhenVisible>
+          <FeaturesList features={dxFeatures} grid3 center />
+          <ContactUsButton variant="hover">
+            HIRE A ONE-STOP SHOP
+          </ContactUsButton>
         </PageLayout>
       </section>
 
-      <PageLayout className="py-12">
+      <PageLayout className="py-12 space-y-10">
         <Headline
           title="Compliance Measures"
           description="Our expert management team will help you make business process
@@ -191,14 +184,12 @@ const DigitalTransformation = () => {
         />
 
         <div className="flex justify-center space-y-10 sm:flex-row flex-col items-center gap-6">
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/services/digital-transformation/newsroom.png"
-              alt="Financial Planning Dashboard"
-              className="w-84 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/services/digital-transformation/newsroom.png"
+            alt="Financial Planning Dashboard"
+            className="w-84 xl:w-96 2xl:w-120 mx-auto"
+          />
 
           <ul className="text-left space-y-4">
             {points.map((point, index) => (
@@ -221,18 +212,17 @@ const DigitalTransformation = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
             {readingData?.map((item, index) => (
               <div key={index} className="space-y-4 text-start">
-                <FadeInWhenVisible>
-                  <img
-                    loading="lazy"
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full h-48 object-cover rounded-sm"
-                  />
-                </FadeInWhenVisible>
+                <img
+                  loading="lazy"
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-48 object-cover"
+                />
                 <TypographyH4>{item.title}</TypographyH4>
-                <FadeInWhenVisible>
-                  <ContactUsButton className="w-full">READ MORE</ContactUsButton>
-                </FadeInWhenVisible>
+
+                <ContactUsButton variant="hover" className="rounded-none">
+                  READ MORE
+                </ContactUsButton>
               </div>
             ))}
           </div>

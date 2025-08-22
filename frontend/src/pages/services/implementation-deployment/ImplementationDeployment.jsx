@@ -1,6 +1,5 @@
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
@@ -31,10 +30,10 @@ const ImplementationDeployment = () => {
           title="Augment Your IT Team with Low-Cost Software Developers"
           description="U Tech has over 2,800 dedicated software developers to augment your existing IT team."
         />
-        <FeaturesList features={implementationgame} fadeUp={fadeUp} grid3 center />
-        <FadeInWhenVisible>
-          <ContactUsButton variant="hover">Get Your Telecom Software Audit</ContactUsButton>
-        </FadeInWhenVisible>
+        <FeaturesList features={implementationgame} grid3 center />
+        <ContactUsButton variant="hover">
+          Get Your Telecom Software Audit
+        </ContactUsButton>
       </PageLayout>
 
       {/* === Deployment & Implementation Process Overview Section === */}
@@ -44,16 +43,17 @@ const ImplementationDeployment = () => {
             title="We Make Software Deployment and Implementation Easy and Cost-Effective"
             description="Without an exhaustive and carefully considered plan for custom deployment and implementation, launching an application can be a nightmare. U Tech's software deployment specialists assess and assemble apps for all environments, effortlessly delivering new technology to end-users without the headache."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FadeInWhenVisible className="hidden sm:block">
-              <img
-                loading="lazy"
-                src="/assets/services/implementation-deployment/deployment.png"
-                alt="Custom Planning Dashboard"
-                className="mx-auto"
-              />
-            </FadeInWhenVisible>
-            <FeaturesList features={implementationFeatures} fadeUp={fadeUp} iconAlign="horizontal" />
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+            <img
+              loading="lazy"
+              src="/assets/services/implementation-deployment/deployment.png"
+              alt="Custom Planning Dashboard"
+              className="w-155 xl:w-175 2xl:w-200 mx-auto"
+            />
+            <FeaturesList
+              features={implementationFeatures}
+              iconAlign="horizontal"
+            />
           </div>
         </PageLayout>
       </section>
@@ -70,19 +70,19 @@ const ImplementationDeployment = () => {
               {/* === Partner Logos Above Title === */}
               <div className="flex items-center flex-wrap justify-center gap-8 text-center mb-6">
                 {item?.partners.map((partner, pIndex) => (
-                  <FadeInWhenVisible key={pIndex} delay={0.5}>
+                  <div key={pIndex}>
                     <img
                       loading="lazy"
                       src={`/assets/services/implementation-deployment/images/${partner}.png`}
                       alt={`${item.title} - ${partner}`}
                       className="mx-auto"
                     />
-                  </FadeInWhenVisible>
+                  </div>
                 ))}
               </div>
 
               {/* === Title + Description (FeaturesList) === */}
-              <FeaturesList fadeUp={fadeUp} features={[item]} center />
+              <FeaturesList features={[item]} center />
             </div>
           ))}
         </div>

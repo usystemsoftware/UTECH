@@ -1,6 +1,5 @@
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
@@ -10,7 +9,7 @@ import {
   plmSolutions,
   plmSolutionsExtended,
   portfolioItems,
-  sdlcPhases
+  sdlcPhases,
 } from "./Data";
 
 export default function ProductLifecycleManagement() {
@@ -30,25 +29,18 @@ export default function ProductLifecycleManagement() {
           description="U Tech offers product lifecycle management (PLM) services to support small, mid-size, and enterprise-size business needs, connecting people, processes, and data vital to your production and manufacturing workflows."
         />
 
-        <FeaturesList
-          features={sdlcPhases}
-          grid3
-          center
-        />
+        <FeaturesList features={sdlcPhases} grid3 center />
 
         <ContactUsButton variant="hover">
           IMPLEMENT PML SOFTWARE NOW
         </ContactUsButton>
 
-        <FadeInWhenVisible>
-          <img
-            loading="lazy"
-            src="/assets/services/product-lifecycle-management/product-lifecycle-management-services.png"
-            alt="Migration Planning Dashboard"
-            className="mx-auto w-full md:w-[65%]"
-          />
-        </FadeInWhenVisible>
-
+        <img
+          loading="lazy"
+          src="/assets/services/product-lifecycle-management/product-lifecycle-management-services.png"
+          alt="Migration Planning Dashboard"
+          className="mx-auto w-full md:w-[65%]"
+        />
       </PageLayout>
 
       <section className="py-16 bg-secondary text-center">
@@ -58,49 +50,39 @@ export default function ProductLifecycleManagement() {
             description="U Tech’s custom PLM software solutions deliver supply chain agility, business continuity, data governance, traceability, and the highest standard of quality and compliance, seamlessly integrated with existing ERP systems."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-center">
-            <FeaturesList
-              features={plmSolutions.slice(0, 2)}
-              center
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
+            <FeaturesList features={plmSolutions.slice(0, 2)} center />
+            <img
+              loading="lazy"
+              src="/assets/services/product-lifecycle-management/custom-plm-software-capabilities.png"
+              alt="Mobile Analytics App"
+              className="w-145 xl:w-155 2xl:w-175 mx-auto"
             />
-            <FadeInWhenVisible className="md:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/services/product-lifecycle-management/custom-plm-software-capabilities.png"
-                alt="Mobile Analytics App"
-                className="mx-auto w-145"
+            <FeaturesList features={plmSolutions.slice(2, 4)} center />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 mt-16 items-center gap-6">
+            <div className="order-2 md:order-1">
+              <FeaturesList
+                features={plmSolutionsExtended.slice(0, 3)}
+                iconAlign="horizontal"
               />
-            </FadeInWhenVisible>
-            <FeaturesList
-              features={plmSolutions.slice(2, 4)}
-              center
+            </div>
+            <img
+              loading="lazy"
+              src="/assets/services/product-lifecycle-management/offers-autodesk-global-consulting-services.gif"
+              alt="Migration Planning Dashboard"
+              className="mx-auto w-86 sm:w-115 2xl:w-145 order-1 md:order-2"
             />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 mt-16 items-center gap-6">
-            <FeaturesList
-              features={plmSolutionsExtended.slice(0, 3)}
-              iconAlign="horizontal"
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+            <img
+              loading="lazy"
+              src="/assets/services/product-lifecycle-management/project-design-collaboration.png"
+              alt="Migration Planning Dashboard"
+              className="w-145 xl:w-155 2xl:w-175 mx-auto"
             />
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/services/product-lifecycle-management/offers-autodesk-global-consulting-services.gif"
-                alt="Migration Planning Dashboard"
-                className="mx-auto w-115"
-              />
-            </FadeInWhenVisible>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/services/product-lifecycle-management/project-design-collaboration.png"
-                alt="Migration Planning Dashboard"
-                className="mx-auto w-135"
-              />
-            </FadeInWhenVisible>
             <FeaturesList
               features={plmSolutionsExtended.slice(3, 6)}
               iconAlign="horizontal"
@@ -119,21 +101,15 @@ export default function ProductLifecycleManagement() {
           description="U Tech’s expert developers leverage the latest technologies and integrate popular PLM software tools with your existing business systems to streamline development, implementation, and deployment processes."
         />
 
-        <FeaturesList
-          features={plmIntegrations}
-          grid3
-          center
-        />
+        <FeaturesList features={plmIntegrations} grid3 center />
 
         <ContactUsButton variant="hover">
           INTERGRADES PML TOOLS NOW
         </ContactUsButton>
-
       </PageLayout>
 
       {/* PORTFOLIO GRID SECTION WITH ANIMATION */}
       <PortfolioGrid items={portfolioItems} />
-
     </>
-  )
+  );
 }
