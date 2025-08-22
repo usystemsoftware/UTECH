@@ -5,7 +5,6 @@ import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import { TypographyH3, Headline, TypographyMuted } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 
 import {
   dicomFeatures,
@@ -29,7 +28,6 @@ import {
 } from "./Data";
 import VideoPoster from "@/custom/VideoPoster";
 import ImageNearScreen from "@/custom/ImageNearScreen";
-
 
 export default function Healthcare() {
   return (
@@ -67,7 +65,6 @@ export default function Healthcare() {
         />
       </section>
 
-
       <section className="py-16">
         <PageLayout className="space-y-16">
           <Headline
@@ -75,11 +72,7 @@ export default function Healthcare() {
             description="Our expert-level software developers leverage the power and versatility of Artificial Intelligence (AI) to design and implement innovative solutions to meet the healthcare industry’s evolving needs. Our transformative solutions enable healthcare providers and institutions to modernize medicine by deploying cutting-edge resources designed to improve workflows, processes, and optimize patient engagement and care."
           />
 
-          <FeaturesList
-            features={healthcareAIFeatures}
-            grid3
-            center
-          />
+          <FeaturesList features={healthcareAIFeatures} grid3 center />
         </PageLayout>
       </section>
 
@@ -89,28 +82,20 @@ export default function Healthcare() {
           description="With Digital Health Platforms, medical professionals can take a different approach to their research, health management, and patient care, leading to significant improvements in efficiency and patient outcomes."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center  gap-6">
           {/* Left Features List */}
-          <FeaturesList
-            features={digitalHelthSolutions.slice(0, 2)}
-            center
-          />
+          <FeaturesList features={digitalHelthSolutions.slice(0, 2)} center />
 
           {/* Center Animation */}
-          <FadeInWhenVisible className="md:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/healthcare/industry-leadin-telehealth.png"
-              alt="Mobile Analytics App"
-              className="w-52 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/healthcare/industry-leadin-telehealth.png"
+            alt="Mobile Analytics App"
+            className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto block sm:hidden md:block"
+          />
 
           {/* Right Features List */}
-          <FeaturesList
-            features={digitalHelthSolutions.slice(2, 4)}
-            center
-          />
+          <FeaturesList features={digitalHelthSolutions.slice(2, 4)} center />
         </div>
       </PageLayout>
 
@@ -121,16 +106,15 @@ export default function Healthcare() {
             description="We engineer custom web, desktop or mobile apps that promote enhanced interoperability, streamline clinical workflows, and improve doctor-patient communications. Healthcare IT software implementation is useful for tracking critical information in the medical system."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/industries/healthcare/electronic-medical-records-with-laptop.png"
-                alt="Portfolio"
-                className="w-135 mx-auto"
-              />
-            </FadeInWhenVisible>
-            <FeaturesList features={healthcareExtraFeatures}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <img
+              loading="lazy"
+              src="/assets/industries/healthcare/electronic-medical-records-with-laptop.png"
+              alt="Portfolio"
+              className="w-135 xl:w-145 2xl:w-165 mx-auto"
+            />
+            <FeaturesList
+              features={healthcareExtraFeatures}
               iconAlign="horizontal"
             />
           </div>
@@ -146,26 +130,18 @@ export default function Healthcare() {
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-6">
           {/* Left Features List */}
-          <FeaturesList
-            features={telemedicineFeatures.slice(0, 2)}
-            center
-          />
+          <FeaturesList features={telemedicineFeatures.slice(0, 2)} center />
 
           {/* Center Animation */}
-          <FadeInWhenVisible className="md:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/healthcare/cellphone.png"
-              alt="Mobile Analytics App"
-              className="w-52 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/healthcare/cellphone.png"
+            alt="Mobile Analytics App"
+            className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto block sm:hidden md:block"
+          />
 
           {/* Right Features List */}
-          <FeaturesList
-            features={telemedicineFeatures.slice(2, 4)}
-            center
-          />
+          <FeaturesList features={telemedicineFeatures.slice(2, 4)} center />
         </div>
         <Button variant="hover">Develop Your Telehelth Platform</Button>
       </PageLayout>
@@ -178,18 +154,13 @@ export default function Healthcare() {
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
-            <FeaturesList
-              features={healthInformation}
-              iconAlign="horizontal"
+            <FeaturesList features={healthInformation} iconAlign="horizontal" />
+            <img
+              loading="lazy"
+              src="/assets/industries/healthcare/healthInformationExchange.png"
+              alt="Portfolio"
+              className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto"
             />
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/industries/healthcare/healthInformationExchange.png"
-                alt="Portfolio"
-                className="w-52 mx-auto"
-              />
-            </FadeInWhenVisible>
           </div>
           <Button variant="hover">DEVELOP LIMS PLATFORM SOLUTIONS</Button>
         </PageLayout>
@@ -203,7 +174,7 @@ export default function Healthcare() {
         <ImageNearScreen
           features={dicomFeatures}
           src="/assets/industries/construction/building-information-modeling-solutions-cut.png"
-          imgClass="w-135"
+          imgClass="w-135 xl:w-145 2xl:w-165"
         />
 
         {/* CTA Button */}
@@ -220,18 +191,13 @@ export default function Healthcare() {
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
-            <FeaturesList
-              features={limsFeatures}
-              iconAlign="horizontal"
+            <FeaturesList features={limsFeatures} iconAlign="horizontal" />
+            <img
+              loading="lazy"
+              src="/assets/industries/healthcare/hl7-emr-ehr-software-integrations.png"
+              alt="Portfolio"
+              className="w-72 sm:w-105 xl:w-115 2xl:w-130 mx-auto"
             />
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/industries/healthcare/hl7-emr-ehr-software-integrations.png"
-                alt="Portfolio"
-                className="w-105 mx-auto"
-              />
-            </FadeInWhenVisible>
           </div>
           <Button variant="hover">DEVELOP LIMS PLATFORM SOLUTIONS</Button>
         </PageLayout>
@@ -242,20 +208,14 @@ export default function Healthcare() {
           title="Pharmacy Management System"
           description="We enhance existing pharmacy management systems with features that promote workflow automation, fully integrated payment processing, and real-time communication."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4 md:gap-8">
-          <FeaturesList
-            features={pharmacyFeatures}
-            center
-            grid
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4 md:gap-8">
+          <FeaturesList features={pharmacyFeatures} center grid />
+          <img
+            loading="lazy"
+            src="/assets/industries/healthcare/cell-phone-animation.gif"
+            alt="Portfolio"
+            className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto block sm:hidden md:block"
           />
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/healthcare/cell-phone-animation.gif"
-              alt="Portfolio"
-              className="w-56 mx-auto"
-            />
-          </FadeInWhenVisible>
         </div>
         <Button variant="hover">GET PHARMACY POS SOLUTIONS</Button>
       </PageLayout>
@@ -267,15 +227,13 @@ export default function Healthcare() {
             description="We engineer advanced eRx application solutions to automate clinical decision support, optimize visibility, and streamline prescription processes."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/industries/healthcare/laptop.png"
-                alt="Portfolio"
-                className="w-135 mx-auto"
-              />
-            </FadeInWhenVisible>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <img
+              loading="lazy"
+              src="/assets/industries/healthcare/laptop.png"
+              alt="Portfolio"
+              className="w-135 xl:w-145 2xl:w-165 mx-auto"
+            />
             <FeaturesList features={eRxFeatures} iconAlign="horizontal" />
           </div>
           <Button variant="hover">GET ERX SOFTWARE SOLUTIONS</Button>
@@ -288,28 +246,20 @@ export default function Healthcare() {
           description="We build custom telehealth apps to deliver remote health services, education, and training for improved efficiency and quality of care."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-6">
           {/* Left Features List */}
-          <FeaturesList
-            features={hospitalSystemFeatures.slice(0, 2)}
-            center
-          />
+          <FeaturesList features={hospitalSystemFeatures.slice(0, 2)} center />
 
           {/* Center Animation */}
-          <FadeInWhenVisible className="md:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/healthcare/custom-hl7-interface-software-solutions.png"
-              alt="Mobile Analytics App"
-              className="w-62 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/healthcare/custom-hl7-interface-software-solutions.png"
+            alt="Mobile Analytics App"
+            className="w-54 sm:w-64 xl:w-68 2xl:w-72 mx-auto block sm:hidden md:block"
+          />
 
           {/* Right Features List */}
-          <FeaturesList
-            features={hospitalSystemFeatures.slice(2, 4)}
-            center
-          />
+          <FeaturesList features={hospitalSystemFeatures.slice(2, 4)} center />
         </div>
         <Button variant="hover">GET HIS/PMS SOFTWARE SOLUTIONS</Button>
       </PageLayout>
@@ -321,19 +271,14 @@ export default function Healthcare() {
             description="Our custom-tailored RCM software solutions offer a single, centralized platform that enables faster and more efficient payment cycle organization."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-            <FeaturesList
-              features={rcmFeatures}
-              iconAlign="horizontal"
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <FeaturesList features={rcmFeatures} iconAlign="horizontal" />
+            <img
+              loading="lazy"
+              src="/assets/industries/healthcare/hl7-fhir-interface-software-development.png"
+              alt="Portfolio"
+              className="w-135 xl:w-145 2xl:w-165 mx-auto"
             />
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/industries/healthcare/hl7-fhir-interface-software-development.png"
-                alt="Portfolio"
-                className="w-135 mx-auto"
-              />
-            </FadeInWhenVisible>
           </div>
           <Button variant="hover">GET RCM SOFTWARE SOLUTIONS</Button>
         </PageLayout>
@@ -344,25 +289,14 @@ export default function Healthcare() {
           title="HL7 Interface Software Solutions"
           description="We create custom HL7 interface solutions for optimal interfacing, interconnectivity, and interoperability of healthcare applications, data management, and workflows."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/healthcare/hl7-fhir-interface-software-development.png"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <FeaturesList
-              features={hl7IntegrationFeatures.slice(0, 2)}
-              center
-            />
-            <FeaturesList
-              features={hl7IntegrationFeatures.slice(2, 4)}
-              center
-            />
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img
+            loading="lazy"
+            src="/assets/industries/healthcare/hl7-fhir-interface-software-development.png"
+            alt="Portfolio"
+            className="w-135 xl:w-145 2xl:w-165 mx-auto"
+          />
+          <FeaturesList features={hl7IntegrationFeatures} center grid />
         </div>
         <Button variant="hover">GET HL7 INTERGRATION</Button>
       </PageLayout>
@@ -374,16 +308,11 @@ export default function Healthcare() {
             description="In the dynamic digital realm, robust healthcare application support, including FHIR integration support, ICD-10 support (diagnosis coding), and Healthcare IT help desk services, are essential for seamless business operations. U Tech stands out with an unwavering commitment to delivering comprehensive support, ensuring your applications—including third-party MEDITECH support and medical middleware support—thrive in today's complex healthcare landscape."
           />
 
-          <FeaturesList
-            features={healthcareSupportServices}
-            center
-            grid3
-          />
-
+          <FeaturesList features={healthcareSupportServices} center grid3 />
         </PageLayout>
       </section>
 
-      <PageLayout className="my-16 py-16 grid grid-cols-1 items-center sm:grid-cols-2 space-y-10 bg-cyan-50">
+      <PageLayout className="my-16 py-16 grid grid-cols-1 items-center md:grid-cols-2 space-y-10 bg-cyan-50">
         <div className="space-y-8">
           <TypographyH3>
             WE ENSURE YOUR SOLUTIONS ARE COMPLIANT WITH REGULATORY STANDARDS
@@ -398,14 +327,12 @@ export default function Healthcare() {
             Level 7 International (HL7), and the 21st Century Cures Act.
           </TypographyMuted>
         </div>
-        <FadeInWhenVisible delay={0.5}>
-          <img
-            loading="lazy"
-            src="/assets/industries/healthcare/get-hl7-solutions.png"
-            alt="Portfolio"
-            className="w-135 mx-auto"
-          />
-        </FadeInWhenVisible>
+        <img
+          loading="lazy"
+          src="/assets/industries/healthcare/get-hl7-solutions.png"
+          alt="Portfolio"
+          className="w-135 xl:w-175 2xl:w-200 mx-auto"
+        />
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -416,14 +343,12 @@ export default function Healthcare() {
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/industries/healthcare/voice-recognition.gif"
-                alt="Portfolio"
-                className="w-46 mx-auto"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/healthcare/voice-recognition.gif"
+              alt="Portfolio"
+              className="w-42 sm:w-48 xl:w-54 2xl:w-58 mx-auto"
+            />
             <FeaturesList
               features={assistiveTechnologyFeatures}
               iconAlign="horizontal"
@@ -446,14 +371,12 @@ export default function Healthcare() {
             center
           />
           {/* Center Animation */}
-          <FadeInWhenVisible className="sm:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/healthcare/veterinary-practice-management-software-solutions.png"
-              alt="Mobile Analytics App"
-              className="w-52 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/healthcare/veterinary-practice-management-software-solutions.png"
+            alt="Mobile Analytics App"
+            className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto"
+          />
           {/* Right Features List */}
           <FeaturesList
             features={veterinarySoftwareFeatures.slice(2, 4)}

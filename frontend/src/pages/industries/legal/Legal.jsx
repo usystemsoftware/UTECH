@@ -1,4 +1,3 @@
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
 import ImageNearScreen from "@/custom/ImageNearScreen";
@@ -47,31 +46,23 @@ const Legal = () => (
             operations.
           </TypographyMuted>
 
-          <FeaturesList
-            features={LegalTransformationFeatures}
-            grid
-            center
-          />
+          <FeaturesList features={LegalTransformationFeatures} grid center />
         </div>
-        <FadeInWhenVisible className="hidden md:block">
-          <img
-            loading="lazy"
-            src="/assets/industries/legal/phone.png"
-            alt="Financial Planning Dashboard"
-            className="w-56 mx-auto"
-          />
-        </FadeInWhenVisible>
+        <img
+          loading="lazy"
+          src="/assets/industries/legal/phone.png"
+          alt="Financial Planning Dashboard"
+          className="w-56 sm:w-62 xl:w-64 2xl:w-66 mx-auto hidden md:block"
+        />
       </PageLayout>
 
       <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
-        <FadeInWhenVisible className="md:block hidden">
-          <img
-            loading="lazy"
-            src="/assets/industries/legal/software.png"
-            alt="Financial Planning Dashboard"
-            className="w-155"
-          />
-        </FadeInWhenVisible>
+        <img
+          loading="lazy"
+          src="/assets/industries/legal/software.png"
+          alt="Financial Planning Dashboard"
+          className="w-155 xl:w-175 2xl:w-185 mx-auto"
+        />
         <div className="space-y-4 md:text-start text-center">
           <TypographyH5>
             Case & Matter Management Software Development
@@ -82,11 +73,7 @@ const Legal = () => (
             manage billing information, locate essential case notes, and
             schedule appointments.
           </TypographyMuted>
-          <FeaturesList
-            features={LegalTransformation}
-            grid
-            center
-          />
+          <FeaturesList features={LegalTransformation} grid center />
         </div>
       </PageLayout>
 
@@ -94,7 +81,7 @@ const Legal = () => (
         features={legalFeatures}
         src="/assets/industries/legal/legel.png"
         imageAlign="right"
-        imgClass="w-115"
+        imgClass="w-115 xl:w-165 2xl:w-175"
       />
     </section>
 
@@ -114,14 +101,12 @@ const Legal = () => (
         description="We develop Legal Management Software that streamlines workflows through advanced automation, real-time integrations, full visibility & control, and comprehensive insights to increase legal productivity."
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-        <FadeInWhenVisible>
-          <img
-            loading="lazy"
-            src="/assets/industries/legal/automation.png"
-            alt="Financial Planning Dashboard"
-            className="w-60 mx-auto hidden sm:block"
-          />
-        </FadeInWhenVisible>
+        <img
+          loading="lazy"
+          src="/assets/industries/legal/automation.png"
+          alt="Financial Planning Dashboard"
+          className="w-42 sm:w-62 xl:w-64 2xl:w-66 mx-auto"
+        />
         <div className="text-start space-y-4">
           <TypographyH5>Legal Management Workflow Automation</TypographyH5>
           <TypographyMuted>
@@ -130,7 +115,10 @@ const Legal = () => (
             & control, and comprehensive insights to increase legal
             productivity.
           </TypographyMuted>
-          <FeaturesList features={LegalTransformationfedu} iconAlign="horizontal" />
+          <FeaturesList
+            features={LegalTransformationfedu}
+            iconAlign="horizontal"
+          />
         </div>
       </div>
       <Button variant="hover">HIRE LEGAL SOFTWARE DEVELOPERS</Button>
@@ -143,11 +131,7 @@ const Legal = () => (
           description="We engineer custom-tailored Legal Management Software Solutions to help legal practices automate repetitive tasks, streamline workflows, and store legal documentation in an all-in-one platform."
         />
 
-        <FeaturesList
-          features={gamingLegal}
-          grid3
-          center
-        />
+        <FeaturesList features={gamingLegal} grid3 center />
 
         <Button variant="hover">Get Legal Software Solutions</Button>
       </PageLayout>
@@ -159,9 +143,7 @@ const Legal = () => (
         description="U Technology's designs and deploys customized legal practice software to augment research, streamline workflow, and enable data-driven decisions with powerful analytics. This intuitive software addresses the unique needs of various legal fields, such as immigration law, estate law, family law, and personal injury."
       />
 
-      <FeaturesListOpposite
-        features={legalgSupportIsecound}
-      />
+      <FeaturesListOpposite features={legalgSupportIsecound} />
 
       <Button variant="hover">Get Started with Custom Legal Software</Button>
     </PageLayout>
@@ -184,7 +166,7 @@ const Legal = () => (
                   key={idx}
                   loading="lazy"
                   src={`/assets/industries/legal/images/${logo}.png`}
-                  className="h-8 cursor-pointer hover:scale-105 transition-transform"
+                  className="cursor-pointer hover:scale-105 transition-transform"
                   alt={logo}
                 />
               ))}

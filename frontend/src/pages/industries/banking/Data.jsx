@@ -112,27 +112,6 @@ export const GetMobileBankingSoftwareSolutions = [
   },
 ];
 
-export const GetMobileBankingOnlineSoftwareSolutions = [
-  {
-    title: "Custom Mobile Banking App Development",
-    description:
-      "We develop native mobile apps for banking services on iOS & Android...",
-    icon: "/assets/industries/banking/icons/10002.svg",
-  },
-  {
-    title: "Core Banking System Integrations",
-    description:
-      "We integrate mobile banking apps with a financial institution’s existing CORE banking system...",
-    icon: "/assets/industries/banking/icons/10001.svg",
-  },
-  {
-    title: "Check Remote Deposit Capture",
-    description:
-      "Our developers implement Remote Deposit Capture (RDC) modules...",
-    icon: "/assets/industries/banking/icons/10005.svg",
-  },
-];
-
 export const AIPoweredSolutions = [
   {
     icon: "/assets/industries/banking/icons/10001.svg",
@@ -190,8 +169,9 @@ export const BankingAtmFeatures = [
 export const tvpoasterDescription = {
   title: "U Technology ENSURES 100% PCI-DSS COMPLIANCE",
   src: "/assets/industries/banking/10002.png",
-  description: "U Technology’s banking software developers ensure your software complies with the strict regulatory standards on anti-money laundering and consumer protection standards. This includes the Payment Card Industry Security Standards Council (PCI SSC), Payment Card Industry Data Security Standard (PCI-DSS), and Payment Application Data Security Standard (PA-DSS). Also, Payment Application-Qualified Security Accessors (PA-QSA), SOX, Dodd-Frank, Check 21, and the Securities Act of 1933."
-}
+  description:
+    "U Technology’s banking software developers ensure your software complies with the strict regulatory standards on anti-money laundering and consumer protection standards. This includes the Payment Card Industry Security Standards Council (PCI SSC), Payment Card Industry Data Security Standard (PCI-DSS), and Payment Application Data Security Standard (PA-DSS). Also, Payment Application-Qualified Security Accessors (PA-QSA), SOX, Dodd-Frank, Check 21, and the Securities Act of 1933.",
+};
 export const BankingCoreFeatures = [
   {
     icon: "/assets/industries/aviation/icons/10001.svg",

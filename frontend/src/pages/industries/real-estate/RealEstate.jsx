@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import FaqSection from "@/custom/FaqSection";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
@@ -34,7 +33,6 @@ export const AppDevelopPartner = () => {
           src={option.logo}
           alt={`Logo ${option?.label}`}
           className="h-10 cursor-pointer hover:scale-120"
-          variants={fadeUp}
           transition={{ delay: idx * 0.1 }}
         />
       ))}
@@ -86,16 +84,13 @@ const RealEstate = () => {
             solutions using our specialized, multi-purpose technologies and
             industry-specific experience."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 space-y-6 gap-6 items-center">
-
-            <FadeInWhenVisible delay={0.4}>
-              <img
-                loading="lazy"
-                src="/assets/industries/real-estate/laptop.png"
-                alt="AI-powered banking analytics"
-                className="w-145 mx-auto"
-              />
-            </FadeInWhenVisible>
+          <div className="grid grid-cols-1 md:grid-cols-2 space-y-6 gap-6 items-center">
+            <img
+              loading="lazy"
+              src="/assets/industries/real-estate/laptop.png"
+              alt="AI-powered banking analytics"
+              className="w-145 xl:w-155 2xl:w-175 mx-auto"
+            />
             <FeaturesList
               features={realEstateServices}
               iconAlign="horizontal"
@@ -129,19 +124,14 @@ const RealEstate = () => {
             tasks, and ensure easy access to market information."
         />
         <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-          <FadeInWhenVisible delay={0.4} className="sm:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/real-estate/mobile.png"
-              alt="Mobile real estate App"
-              className="h-110 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/real-estate/mobile.png"
+            alt="Mobile real estate App"
+            className="w-42 sm:w-52 xl:w-62 2xl:w-66 mx-auto"
+          />
           <div>
-            <FeaturesList
-              features={appDevFeatures}
-              iconAlign="horizontal"
-            />
+            <FeaturesList features={appDevFeatures} iconAlign="horizontal" />
             <AppDevelopPartner />
           </div>
         </PageLayout>
@@ -154,27 +144,27 @@ const RealEstate = () => {
           title="Get Custom Property Management Software Solutions"
           description="We engineer bespoke property management solutions for real estate agents, brokers, property owners, leasing companies, and tenants."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           <div className="text-start space-y-4">
             <TypographyH5 className="font-extrabold">
               Rental Property Management Solutions
             </TypographyH5>
             <TypographyMuted>
-              We provide best-in-class rental property management and tenant onboarding solutions to automate essential business processes and simplify the workflows within property management.
+              We provide best-in-class rental property management and tenant
+              onboarding solutions to automate essential business processes and
+              simplify the workflows within property management.
             </TypographyMuted>
             <FeaturesList
               features={propertyManagementSolutions}
               iconAlign="horizontal"
             />
           </div>
-          <FadeInWhenVisible delay={0.4}>
-            <img
-              loading="lazy"
-              src="/assets/industries/real-estate/virtual-tour.png"
-              alt="AI-powered banking analytics"
-              className="w-145 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/real-estate/virtual-tour.png"
+            alt="AI-powered banking analytics"
+            className="w-145 xl:w-155 2xl:w-175 mx-auto"
+          />
         </div>
         <Button variant="hover">STREAMLINE PROPERTY MANAGEMENT</Button>
       </PageLayout>
@@ -196,30 +186,29 @@ const RealEstate = () => {
           description="Enhance lead generation efficiency of digital media solution with quantitative metrics and quality indicators for property decisions. Our IDX technology offerings includes connectivity, automates content, adds intelligence to the CRM databases and uses search engine analytics to populate its products in prospects’ hands."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-          <FadeInWhenVisible delay={0.4}>
-            <img
-              loading="lazy"
-              src="/assets/industries/real-estate/idx-technology-integration-solutions-tab.png"
-              alt="AI-powered banking analytics"
-              className="w-110 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/real-estate/idx-technology-integration-solutions-tab.png"
+            alt="AI-powered banking analytics"
+            className="w-86 xl:w-115 2xl:w-135 mx-auto"
+          />
           <div className="text-start space-y-4">
             <TypographyH5 className="font-extrabold">
               Internet Data Exchange (IDX)
             </TypographyH5>
             <TypographyMuted>
-              We help you boost online visibility while giving your business a clear competitive edge and equip buyers with up-to-date property information while protecting seller data, which drives stronger engagement and builds trust. Our tailor-made IDX solutions allow MLS listings to appear directly on agents’ websites in a format that is visually compelling and data-secure.
+              We help you boost online visibility while giving your business a
+              clear competitive edge and equip buyers with up-to-date property
+              information while protecting seller data, which drives stronger
+              engagement and builds trust. Our tailor-made IDX solutions allow
+              MLS listings to appear directly on agents’ websites in a format
+              that is visually compelling and data-secure.
             </TypographyMuted>
-            <FeaturesList
-              features={idxSolutions}
-              iconAlign="horizontal"
-            />
+            <FeaturesList features={idxSolutions} iconAlign="horizontal" />
           </div>
         </div>
         <Button variant="hover">GET IDX SOLUTIONS</Button>
       </PageLayout>
-
 
       {/* FAQ Section */}
       <div className="mb-16 mt-2">

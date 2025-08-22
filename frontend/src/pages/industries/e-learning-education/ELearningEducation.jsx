@@ -3,7 +3,6 @@ import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import HeroSection from "@/components/HeroSection";
 import FaqSection from "@/custom/FaqSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
 import {
   TypographyMuted,
@@ -62,11 +61,7 @@ export default function ELearningEducation() {
             title="Custom AI-Powered eLearning Solutions"
             description="With eLearning representing an interesting facet of modern education, Artificial Intelligence represents a revolutionary path to make the learning experience more engaging and fruitful for learners!"
           />
-          <FeaturesList
-            features={aiPoweredELearningSolutions}
-            grid3
-            center
-          />
+          <FeaturesList features={aiPoweredELearningSolutions} grid3 center />
           <Button variant="hover">GET A-POWERED eLEARNING TOOLS</Button>
         </PageLayout>
       </section>
@@ -77,20 +72,20 @@ export default function ELearningEducation() {
           title="We Have Experienced Jail Management Software Developers "
           description="Our industry-experienced e-learning software developers create custom LMS software solutions to manage, track, and achieve your corporate learning goals."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           {/* Image */}
-          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/e-learning-education/medical-video-conferencing-software.png"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/e-learning-education/medical-video-conferencing-software.png"
+            alt="Portfolio"
+            className="w-135 xl:w-145 2xl:w-165 mx-auto"
+          />
 
           {/* Feature List */}
           <div className="text-start">
-            <TypographyH5 className="font-extrabold">Custom LMS Software Solutions</TypographyH5>
+            <TypographyH5 className="font-extrabold">
+              Custom LMS Software Solutions
+            </TypographyH5>
             <TypographyMuted className="mb-8">
               Our development team delivers custom LMS development, integration,
               and implementation for academic establishments ranging from public
@@ -98,7 +93,7 @@ export default function ELearningEducation() {
             </TypographyMuted>
             <FeaturesList
               features={customELearningSolutions}
-              iconAlign='horizontal'
+              iconAlign="horizontal"
             />
           </div>
         </div>
@@ -107,20 +102,9 @@ export default function ELearningEducation() {
       {/* LMS Solutions Features */}
       <section className="bg-secondary pt-10">
         <PageLayout className="text-center space-y-12">
-          <FeaturesListOpposite
-            features={lmsSolutions}
-          />
+          <FeaturesListOpposite features={lmsSolutions} />
 
           <Button variant="hover">HIRE LMS DEVELOPERS</Button>
-
-          <FadeInWhenVisible delay={0.5} className="md:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/e-learning-education/lms-software--development-dashboard-800-width-files-assignment.png"
-              alt="Portfolio"
-              className="w-[65%] mx-auto"
-            />
-          </FadeInWhenVisible>
         </PageLayout>
       </section>
 
@@ -133,8 +117,10 @@ export default function ELearningEducation() {
 
         {/* First Set */}
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
-          <div className="text-start">
-            <TypographyH5 className="font-extrabold">Content Authoring Software Development</TypographyH5>
+          <div className="text-start order-2 md:order-1">
+            <TypographyH5 className="font-extrabold">
+              Content Authoring Software Development
+            </TypographyH5>
             <TypographyMuted className="mb-8">
               We develop responsive web and mobile applications to help
               streamline real estate business operations, automate routine
@@ -142,32 +128,28 @@ export default function ELearningEducation() {
             </TypographyMuted>
             <FeaturesList
               features={elearningFeatures.slice(0, 2)}
-              iconAlign='horizontal'
+              iconAlign="horizontal"
             />
           </div>
-          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/e-learning-education/get-lms-solutions-mobile-ai2.png"
-              alt="Portfolio"
-              className="w-52 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/e-learning-education/get-lms-solutions-mobile-ai2.png"
+            alt="Portfolio"
+            className="w-42 sm:w-52 xl:w-56 2xl:w-62 mx-auto order-1 md:order-2"
+          />
         </div>
 
         {/* Second Set */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center md:gap-12">
-          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/e-learning-education/gamification-of-content.png"
-              alt="Portfolio"
-              className="w-52 mx-auto"
-            />
-          </FadeInWhenVisible>
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8 ">
+          <img
+            loading="lazy"
+            src="/assets/industries/e-learning-education/gamification-of-content.png"
+            alt="Portfolio"
+            className="w-42 sm:w-52 xl:w-56 2xl:w-62 mx-auto"
+          />
           <FeaturesList
             features={elearningFeatures.slice(2, 4)}
-            iconAlign='horizontal'
+            iconAlign="horizontal"
           />
         </div>
 
@@ -181,15 +163,13 @@ export default function ELearningEducation() {
             title="Student Information System (SIS) Solutions"
             description="Our knowledgeable e-learning software developers build SISs and perform seamless SIS integrations that enable bilateral communication & interoperability."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center md:gap-12">
-            <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/industries/e-learning-education/personalized-student-information-system-sis-solutions.png"
-                alt="Portfolio"
-                className="w-135 mx-auto"
-              />
-            </FadeInWhenVisible>
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center md:gap-12">
+            <img
+              loading="lazy"
+              src="/assets/industries/e-learning-education/personalized-student-information-system-sis-solutions.png"
+              alt="Portfolio"
+              className="w-135 xl:w-145 2xl:w-150 mx-auto"
+            />
             <div className="text-start">
               <TypographyH5 className="font-extrabold">
                 Custom Student Information System (SIS) Development
@@ -200,27 +180,18 @@ export default function ELearningEducation() {
                 tracking, course registration, academic grade results,
                 transcripts, and communications.
               </TypographyMuted>
-              <FeaturesList
-                features={sisFeatures}
-                iconAlign='horizontal'
-              />
+              <FeaturesList features={sisFeatures} iconAlign="horizontal" />
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <FeaturesList
-              features={sisSolutions}
-              grid
-              center
+            <FeaturesList features={sisSolutions} grid center />
+            <img
+              loading="lazy"
+              src="/assets/industries/e-learning-education/laptop-01.png"
+              alt="Portfolio"
+              className="w-135 xl:w-145 2xl:w-150 mx-auto"
             />
-            <FadeInWhenVisible delay={0.5} className="md:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/industries/e-learning-education/laptop-01.png"
-                alt="Portfolio"
-                className="w-135 mx-auto"
-              />
-            </FadeInWhenVisible>
           </div>
 
           <Button variant="hover">GET SIS SOFTWARE</Button>
@@ -233,15 +204,13 @@ export default function ELearningEducation() {
           title="Customized Web-Based Training (WBT) Software Development"
           description="We create custom-tailored web-based training (WBT) systems that give businesses, academic institutions, and other organizations a chance to improve job performances."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center md:gap-12">
-          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/e-learning-education/lectora-software-development-phone.png"
-              alt="Portfolio"
-              className="w-56 mx-auto"
-            />
-          </FadeInWhenVisible>
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
+          <img
+            loading="lazy"
+            src="/assets/industries/e-learning-education/lectora-software-development-phone.png"
+            alt="Portfolio"
+            className="lg:w-56 w-42 sm:w-54 mx-auto"
+          />
           <div className="text-start">
             <TypographyH5 className="font-extrabold">
               Web-Based Training (WBT) Software Solutions
@@ -254,7 +223,7 @@ export default function ELearningEducation() {
             </TypographyMuted>
             <FeaturesList
               features={trainingSolutionsFeatures}
-              iconAlign='horizontal'
+              iconAlign="horizontal"
             />
           </div>
         </div>
@@ -263,19 +232,19 @@ export default function ELearningEducation() {
       {/* WBT Features */}
       <section className="bg-secondary py-8">
         <PageLayout className="space-y-8 text-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
-            <FeaturesList
-              features={webBasedTrainingFeatures}
-              iconAlign='horizontal'
-            />
-            <FadeInWhenVisible className="sm:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/industries/e-learning-education/credentials-&-digital-badges1.png"
-                alt="Mobile Analytics App"
-                className="w-135 mx-auto"
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <div className="order-2 md:order-1">
+              <FeaturesList
+                features={webBasedTrainingFeatures}
+                iconAlign="horizontal"
               />
-            </FadeInWhenVisible>
+            </div>
+            <img
+              loading="lazy"
+              src="/assets/industries/e-learning-education/credentials-&-digital-badges1.png"
+              alt="Mobile Analytics App"
+              className="w-135 xl:w-145 2xl:w-150 mx-auto order-1 md:order-2"
+            />
           </div>
           <Button variant="hover">GET WEB BASED TRAINING SOFTWARE</Button>
         </PageLayout>
@@ -287,10 +256,7 @@ export default function ELearningEducation() {
           title="eLearning Software Support Services"
           description="Our support services team provides responsive around-the-clock eLearning software support. We troubleshoot issues and carefully monitor the performance of all e-learning resources to eliminate latency and costly workflow interruption and ensure high-performing education materials that are SCORM compliant."
         />
-        <FeaturesListOpposite
-          features={elearningSupportServices}
-          grid
-        />
+        <FeaturesListOpposite features={elearningSupportServices} grid />
         <Button variant="hover">HIRE eLEARNING DEVELOPERS</Button>
       </PageLayout>
 
@@ -301,7 +267,7 @@ export default function ELearningEducation() {
             title="Enterprise Learning Management Software"
             description="We also create corporate LMS software tailored for enterprises, offering features like employee training automation. Here are additional features provided below."
           />
-          <div className="grid sm:grid-cols-2 gap-8 grid-cols-1">
+          <div className="grid md:grid-cols-2 gap-8 grid-cols-1">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="space-y-4">
                 {elearningPlatformFeatures?.slice(0, 8).map((item, index) => (
@@ -331,14 +297,12 @@ export default function ELearningEducation() {
               </div>
             </div>
 
-            <FadeInWhenVisible className="sm:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/industries/e-learning-education/enterprise-learning-management-software.jpg"
-                alt="Mobile Analytics App"
-                className="w-96 mx-auto"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/e-learning-education/enterprise-learning-management-software.jpg"
+              alt="Mobile Analytics App"
+              className="w-96 xl:w-145 2xl:w-150 mx-auto"
+            />
           </div>
         </PageLayout>
       </section>

@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
 import AccessibilityWidget from "@/components/layout/AccessibilityWidget";
 import PageLayout from "@/custom/PageLayout";
 import { TypographyP, TypographySmall } from "@/custom/Typography";
@@ -11,10 +10,16 @@ import { IconRenderer } from "@/custom/IconRenderer";
 
 const NavbarDesktop = ({ setIsCommandOpen }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [showNavbar, setShowNavbar] = useState(true);
   const [scrolled, setScrolled] = useState(false);
-  const lastScrollY = useRef(0);
   const timeoutRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const chunkArray = (arr, size) => {
     const res = [];
@@ -24,24 +29,6 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
     return res;
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentY = window.scrollY;
-      setScrolled(currentY > 100);
-
-      if (currentY > lastScrollY.current && currentY > 100) {
-        setShowNavbar(false);
-      } else {
-        setShowNavbar(true);
-      }
-
-      lastScrollY.current = currentY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   const handleMouseEnter = (index) => {
     clearTimeout(timeoutRef.current);
     setHoveredIndex(index);
@@ -50,24 +37,29 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setHoveredIndex(null);
-    }, 100);
+    }, 200);
   };
 
   return (
     <motion.div
-      initial={{ y: -120 }}
-      animate={{ y: showNavbar ? 0 : -120 }}
       transition={{ duration: 0.3 }}
-      className={`fixed top-0 left-0 w-full z-50 hover:bg-white hover:text-black transition-all duration-300 ${scrolled ? "bg-white/40 backdrop-blur-2xl shadow-md" : "bg-transparent text-white"
-        }`}
+      className={`fixed top-0 left-0 w-full mx-auto z-50 ${
+        scrolled ? "bg-white/40 backdrop-blur-xs shadow-md" : "bg-transparent"
+      }`}
+      style={{ right: 0, left: 0, margin: "0 auto" }}
     >
       <AccessibilityWidget />
 
-      <div className="h-20">
+      <div className="h-22 xl:h-24">
         <PageLayout className="flex justify-between items-center h-full max-w-[1440px] mx-auto px-6">
           {/* Logo */}
           <Link to="/" className="flex items-center relative z-40">
-            <img src="/logo.png" alt="Logo" className="w-28" loading="lazy" />
+            <img
+              src="/logo.png"
+              alt="Logo"
+              className="w-28 md:w-42 xl:w-46"
+              loading="lazy"
+            />
           </Link>
 
           {/* Nav Links */}
@@ -75,16 +67,17 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
             {Navlinks.map((item, index) => (
               <div
                 key={index}
-                className="group relative"
+                className={`group relative ${!scrolled && "text-white"}`}
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
               >
                 <div className="flex items-center gap-1 cursor-pointer">
                   <TypographySmall
-                    className={`font-semibold tracking-wide uppercase transition-colors duration-200 ${hoveredIndex === index
-                      ? "text-primary border-b-2 border-primary"
-                      : "hover:text-primary"
-                      }`}
+                    className={`font-semibold tracking-wide uppercase transition-colors duration-200 ${
+                      hoveredIndex === index
+                        ? "text-primary  underline-offset-6 underline"
+                        : "hover:text-primary"
+                    }`}
                   >
                     {item.title}
                   </TypographySmall>
@@ -92,8 +85,9 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
                     name="ChevronDown"
                     strokeWidth={2}
                     size={20}
-                    className={`transition-transform duration-200 ${hoveredIndex === index ? "rotate-180 text-primary" : ""
-                      }`}
+                    className={`transition-transform duration-200 ${
+                      hoveredIndex === index ? "rotate-180 text-primary" : ""
+                    }`}
                   />
                 </div>
               </div>
@@ -101,14 +95,28 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
           </nav>
 
           {/* Right Side Buttons */}
-          <div className="flex items-center gap-4">
-            <button onClick={() => setIsCommandOpen(true)}>
-              <IconRenderer name="Search" size={22} strokeWidth={2} />
+          <div className="flex items-center gap-4 lg:gap-8">
+            <button
+              className="cursor-pointer"
+              onClick={() => setIsCommandOpen(true)}
+            >
+              <IconRenderer
+                name="Search"
+                className={`${!scrolled && "text-white"}`}
+                size={22}
+                strokeWidth={2}
+              />
             </button>
-            <Link to="/book-call">
-              <Button size="sm">
-                <IconRenderer name="HelpCircle" strokeWidth={2} />
-                Help
+            <Link to="/contact-us">
+              <Button
+                size="sm"
+                className={`rounded font-bold ${
+                  !scrolled
+                    ? "bg-white text-black hover:bg-white hover:text-black"
+                    : ""
+                }`}
+              >
+                CONTACT US
               </Button>
             </Link>
           </div>
@@ -119,7 +127,7 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
       {hoveredIndex !== null &&
         (Navlinks[hoveredIndex].items || Navlinks[hoveredIndex].groups) && (
           <div
-            className="absolute top-24 left-0 w-full bg-white z-30 shadow-xl"
+            className="absolute top-24 xl:top-32 left-0 w-full bg-white z-30 shadow-xl"
             onMouseEnter={() => handleMouseEnter(hoveredIndex)}
             onMouseLeave={handleMouseLeave}
           >
@@ -142,10 +150,7 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
                               onClick={() => setHoveredIndex(null)}
                               className="flex items-center gap-2 hover:text-primary p-2 rounded-md transition-all"
                             >
-                              <IconRenderer
-                                name={link.icon}
-                                strokeWidth={2}
-                              />
+                              <IconRenderer name={link.icon} strokeWidth={2} />
                               <TypographyP className="md:text-sm">
                                 {link.label}
                               </TypographyP>

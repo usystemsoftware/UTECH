@@ -1,4 +1,3 @@
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import { Button } from "@/components/ui/button";
 import FaqSection from "@/custom/FaqSection";
@@ -43,7 +42,6 @@ const MeetingEvents = () => {
           rightFeatures={MeetingEventSoftwareRightFeatures}
           centerImage="/assets/industries/meeting-events/events.png"
         />
-
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -55,7 +53,9 @@ const MeetingEvents = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             <div className="text-start space-y-4">
-              <TypographyH5 className="font-extrabold">Event Management Software</TypographyH5>
+              <TypographyH5 className="font-extrabold">
+                Event Management Software
+              </TypographyH5>
               <TypographyMuted>
                 We create custom event planning solutions with event
                 registration tools that integrate with venue and hotel apps,
@@ -66,14 +66,12 @@ const MeetingEvents = () => {
                 iconAlign="horizontal"
               />
             </div>
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/industries/meeting-events/phone.png"
-                alt="Financial Planning Dashboard"
-                className="md:w-56 w-48 mx-auto hidden sm:block"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/meeting-events/phone.png"
+              alt="Financial Planning Dashboard"
+              className="w-40 sm:w-52 xl:w-56 2xl:w-58 mx-auto"
+            />
           </div>
           <TypographyMuted className="text-start">
             We integrate with industry-leading event management solutions to{" "}
@@ -103,28 +101,20 @@ const MeetingEvents = () => {
         </PageLayout>
       </section>
 
-      <PageLayout className="space-y-10  text-center py-12">
+      <PageLayout className="space-y-10 text-center py-12">
         <Headline
           title="Meetings & Web Conferencing Software Development"
           description="We build online meeting & web conferencing software solutions to provide effective communication & collaboration, multi-device support, and enhanced interoperability.."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-6">
-          <FeaturesList
-            features={MeetingFeatures.slice(0, 2)}
-            center
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-6">
+          <FeaturesList features={MeetingFeatures.slice(0, 2)} center />
+          <img
+            loading="lazy"
+            src="/assets/industries/meeting-events/conferencing.png"
+            alt="Trading Dashboard"
+            className="w-135 xl:w-145 2xl:w-165 mx-auto"
           />
-          <FadeInWhenVisible className="hidden md:block">
-            <img
-              loading="lazy"
-              src="/assets/industries/meeting-events/conferencing.png"
-              alt="Trading Dashboard"
-              className="w-155"
-            />
-          </FadeInWhenVisible>
-          <FeaturesList
-            features={MeetingFeatures.slice(2, 4)}
-            center
-          />
+          <FeaturesList features={MeetingFeatures.slice(2, 4)} center />
         </div>
         <Button variant="hover">Get Meeting Mgmt Software</Button>
       </PageLayout>
@@ -136,16 +126,16 @@ const MeetingEvents = () => {
             description="We develop smart, flexible, and powerful event registration software solutions custom-tailored to your specific business and event management needs.."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/industries/meeting-events/registration.png"
-                alt="Food & Beverage Service Management"
-                className="w-50 mx-auto hidden sm:block"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/meeting-events/registration.png"
+              alt="Food & Beverage Service Management"
+              className="w-40 sm:w-52 xl:w-56 2xl:w-58 mx-auto"
+            />
             <div className="text-start space-y-4">
-              <TypographyH5 className="font-extrabold">Event Registration Software</TypographyH5>
+              <TypographyH5 className="font-extrabold">
+                Event Registration Software
+              </TypographyH5>
               <TypographyMuted>
                 We engineer on-site, kiosk, online, and mobile registration
                 applications with built-in customizable reporting modules and
@@ -153,7 +143,6 @@ const MeetingEvents = () => {
               </TypographyMuted>
               <FeaturesList
                 features={FoodBeverageTransformation}
-                fadeUp={fadeUp}
                 iconAlign="horizontal"
               />
             </div>
@@ -167,11 +156,7 @@ const MeetingEvents = () => {
           title="Smart Event Planning Software with AI"
           description="Our expert team develops AI Event solutions to enhance your events and meetings for improved functionality. Features include event planner virtual assistants, Machine Learning in event planning, and an event planning and coordination system."
         />
-        <FeaturesList
-          features={AIPoweredConstructionMeeting}
-          grid
-          center
-        />
+        <FeaturesList features={AIPoweredConstructionMeeting} grid center />
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -180,23 +165,15 @@ const MeetingEvents = () => {
             title="Custom Dating App Solutions"
             description="We implement custom features, functions, and capabilities into existing or newly developed dating app solutions to create a more immersive online dating experience.."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-8">
-            <FeaturesList
-              features={MeetingFeaturesgive.slice(0, 2)}
-              center
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8">
+            <FeaturesList features={MeetingFeaturesgive.slice(0, 2)} center />
+            <img
+              loading="lazy"
+              src="/assets/industries/meeting-events/developers.png"
+              alt="Trading Dashboard"
+              className="w-135 xl:w-145 2xl:w-165 mx-auto"
             />
-            <FadeInWhenVisible className="hidden md:block">
-              <img
-                loading="lazy"
-                src="/assets/industries/meeting-events/developers.png"
-                alt="Trading Dashboard"
-                className="w-145"
-              />
-            </FadeInWhenVisible>
-            <FeaturesList
-              features={MeetingFeaturesgive.slice(2, 4)}
-              center
-            />
+            <FeaturesList features={MeetingFeaturesgive.slice(2, 4)} center />
           </div>
           <Button variant="hover">Customize Your Dating App</Button>
         </PageLayout>
@@ -208,9 +185,11 @@ const MeetingEvents = () => {
           description="We create custom trade show planning and management software solutions to enable attendee tracking, lead retrieval, and entry badge security verification."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
           <div className="space-y-4 text-center sm:text-start">
-            <TypographyH5 className="font-extrabold">Trade Show Management Software</TypographyH5>
+            <TypographyH5 className="font-extrabold">
+              Trade Show Management Software
+            </TypographyH5>
             <TypographyMuted>
               We develop and integrate robust, feature-rich trade show
               management software solutions designed for organizing conferences,
@@ -218,18 +197,15 @@ const MeetingEvents = () => {
             </TypographyMuted>
             <FeaturesList
               features={MeetingEventTransformationFeatures}
-              fadeUp={fadeUp}
               iconAlign="horizontal"
             />
           </div>
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/industries/meeting-events/trade.png"
-              alt="Financial Planning Dashboard"
-              className="w-135 mx-auto hidden sm:block"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/meeting-events/trade.png"
+            alt="Financial Planning Dashboard"
+            className="w-135 xl:w-145 2xl:w-165 mx-auto"
+          />
         </div>
 
         <Button variant="hover">Get Trade Show Solutions</Button>
@@ -244,22 +220,15 @@ const MeetingEvents = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
             {/* Left Features List */}
-            <FeaturesList
-              features={meetngManagementSolutions}
-              grid
-              center
-            />
+            <FeaturesList features={meetngManagementSolutions} grid center />
 
             {/* Center Animation */}
-            <FadeInWhenVisible className="md:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/industries/meeting-events/laptop.png"
-                alt="Mobile Analytics App"
-                className="w-135"
-              />
-            </FadeInWhenVisible>
-
+            <img
+              loading="lazy"
+              src="/assets/industries/meeting-events/laptop.png"
+              alt="Mobile Analytics App"
+              className="w-135 xl:w-145 2xl:w-165 mx-auto"
+            />
           </div>
           <Button variant="hover">Retrieve Leads Now</Button>
         </PageLayout>
@@ -272,16 +241,16 @@ const MeetingEvents = () => {
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/industries/meeting-events/confrence.png"
-              alt="Association Planning Dashboard"
-              className="w-90 mx-auto hidden sm:block"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/meeting-events/confrence.png"
+            alt="Association Planning Dashboard"
+            className="w-66 sm:w-88 xl:w-94 2xl:w-105 mx-auto"
+          />
           <div className="space-y-4 text-center sm:text-start">
-            <TypographyH5 className="font-extrabold">Association Management Solutions</TypographyH5>
+            <TypographyH5 className="font-extrabold">
+              Association Management Solutions
+            </TypographyH5>
             <TypographyMuted>
               We develop association management solutions that include
               configurations of dues, financial reporting capabilities,
@@ -304,7 +273,7 @@ const MeetingEvents = () => {
             description="We engineer and program event technology solutions to create AR/VR experiences, integrate with wearable technologies, and produce digital presentations."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
             {/* Left Features List */}
             <FeaturesList
               features={eventTechnologySolutions.slice(0, 2)}
@@ -312,14 +281,12 @@ const MeetingEvents = () => {
             />
 
             {/* Center Animation */}
-            <FadeInWhenVisible className="md:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/industries/meeting-events/event-technology-solutions.png"
-                alt="Mobile Analytics App"
-                className="w-200"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/meeting-events/event-technology-solutions.png"
+              alt="Mobile Analytics App"
+              className="w-135 xl:w-145 2xl:w-165 mx-auto"
+            />
 
             {/* Right Features List */}
             <FeaturesList
@@ -337,28 +304,21 @@ const MeetingEvents = () => {
           description="U Tech’s developers offer the best technical support for meeting software, event feedback software, and virtual meeting software. Our AI enabled mobile event apps ensure seamlessness for users, and our integration capabilities will enhance your event and meetings.."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/industries/meeting-events/powers-up-your-events-and-meetings.png"
-              alt="Association Planning Dashboard"
-              className="w-145 mx-auto hidden sm:block"
-            />
-          </FadeInWhenVisible>
-          <FeaturesList
-            features={eventAppSolutions}
-            iconAlign="horizontal"
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img
+            loading="lazy"
+            src="/assets/industries/meeting-events/powers-up-your-events-and-meetings.png"
+            alt="Association Planning Dashboard"
+            className="w-135 xl:w-145 2xl:w-165 mx-auto"
           />
+          <FeaturesList features={eventAppSolutions} iconAlign="horizontal" />
         </div>
-
       </PageLayout>
 
       {/* Uses: faqData */}
       <div className="py-10">
         <FaqSection faqs={eventPlanningFAQ} title="FAQ's" />
       </div>
-
     </>
   );
 };
