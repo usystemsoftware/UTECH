@@ -36,6 +36,7 @@ export default function Retail() {
           rightFeatures={retailSolutions.slice(3, 6)}
           centerImage="/assets/industries/retail/retail-banner-3.png"
           iconGap="md:gap-18"
+          imgSize="xl:w-175 2xl:w-195"
         />
       </PageLayout>
 

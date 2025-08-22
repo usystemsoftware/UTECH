@@ -51,7 +51,9 @@ const PoliticalCompaign = () => {
         />
         <FeaturesList features={gamingPoliticalCompaign} grid3 center />
 
-        <ContactUsButton variant="hover">SPEAK TO MARKETING EXPERTS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          SPEAK TO MARKETING EXPERTS
+        </ContactUsButton>
       </PageLayout>
 
       {/* Section: Marketing Automation System */}
@@ -72,7 +74,9 @@ const PoliticalCompaign = () => {
             className="w-145 xl:w-155 2xl:w-165 mx-auto"
           />
         </div>
-        <ContactUsButton variant="hover">GET MARKETING AUTOMATION SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET MARKETING AUTOMATION SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       {/* Section: Event & Resource Management Software */}
@@ -91,7 +95,9 @@ const PoliticalCompaign = () => {
           />
           <FeaturesList features={PoliticalManagement.slice(2, 4)} center />
         </div>
-        <ContactUsButton variant="hover">GET EVENT & RESOURCE MGMT SOFTWARE</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET EVENT & RESOURCE MGMT SOFTWARE
+        </ContactUsButton>
       </PageLayout>
 
       {/* Section: Campaigns Management & Analysis System */}
@@ -116,7 +122,9 @@ const PoliticalCompaign = () => {
             center
           />
         </div>
-        <ContactUsButton variant="hover">VIEW YOUR CAMPAIGN ANALYTICS NOW</ContactUsButton>
+        <ContactUsButton variant="hover">
+          VIEW YOUR CAMPAIGN ANALYTICS NOW
+        </ContactUsButton>
       </PageLayout>
 
       {/* Section: Demographic Data Management Software */}
@@ -137,7 +145,9 @@ const PoliticalCompaign = () => {
             className="w-145 xl:w-155 2xl:w-165 mx-auto"
           />
         </div>
-        <ContactUsButton variant="hover">GET DEMOGRAPHIC INSIGHTS NOW</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET DEMOGRAPHIC INSIGHTS NOW
+        </ContactUsButton>
       </PageLayout>
 
       {/* FAQ Section at the bottom */}

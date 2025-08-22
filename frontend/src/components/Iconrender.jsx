@@ -34,11 +34,7 @@ const Iconrender = ({
                 key={toolIndex}
                 className="flex flex-col items-center text-center"
               >
-                <img
-                  src={tool.icon}
-                  alt={tool.name}
-                  className="w-full h-9 mb-2"
-                />
+                <img src={tool.icon} alt={tool.name} className="mb-2" />
                 <span className="text-sm font-medium">{tool.name}</span>
               </div>
             ))}

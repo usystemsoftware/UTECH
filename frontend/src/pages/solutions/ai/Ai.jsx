@@ -2,244 +2,239 @@ import HeroSection from "@/components/HeroSection";
 import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import ContactUsButton from "@/custom/ContactUsButton";
-import { Headline, } from "@/custom/Typography";
-import Iconrender from '@/components/Iconrender';
+import { Headline } from "@/custom/Typography";
+import Iconrender from "@/components/Iconrender";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import VideoPoster from "@/custom/VideoPoster";
 import {
-    artificialintelligencedeveloper,
-    solutions,
-    advancedartificialintelligencesolutions,
-    artificialintelligenceusecases,
-    aitoolsandframeworks,
-    videosection,
-    features,
-    industryspecificsisolutions,
-    industryspecificsisolutionssection2,
-    integratedaisolutions,
-    Faqs,
-    portfolioItems
-
-} from './Data';
+  artificialintelligencedeveloper,
+  solutions,
+  advancedartificialintelligencesolutions,
+  artificialintelligenceusecases,
+  aitoolsandframeworks,
+  videosection,
+  features,
+  industryspecificsisolutions,
+  industryspecificsisolutionssection2,
+  integratedaisolutions,
+  Faqs,
+  portfolioItems,
+} from "./Data";
 
 const Ai = () => {
-    return (
-        <>
-            <HeroSection
-                backgroundImage="/banner/ai.jpg"
-                title="CUSTOM AI SOFTWARE DEVELOPMENT"
-                description="Let’s explore how a tailored AI solution can revolutionize your workflows, boost performance, and maximize ROI—giving you the ultimate competitive edge."
-                buttonText="BOOK YOUR FREE AI CONSULTATION"
-                buttonLink="#"
-                imageFit="cover"
-            />
+  return (
+    <>
+      <HeroSection
+        backgroundImage="/banner/ai.jpg"
+        title="CUSTOM AI SOFTWARE DEVELOPMENT"
+        description="Let’s explore how a tailored AI solution can revolutionize your workflows, boost performance, and maximize ROI—giving you the ultimate competitive edge."
+        buttonText="BOOK YOUR FREE AI CONSULTATION"
+        buttonLink="#"
+        imageFit="cover"
+      />
 
-            <PageLayout className="space-y-10 py-16 text-center">
-                <Headline
-                    title="Hire An Experienced Artificial Intelligence Developer"
-                    description="Our expert developers help businesses optimize their operations, create advanced software, and develop innovative products as part of your existing in-house team or on a turnkey basis to help you complete your project quickly and affordably."
-                />
-                <div className="grid grid-cols-1 items-center sm:grid-cols-2 gap-6">
-                    <FadeInWhenVisible delay={0.5}>
-                        <img
-                            loading="lazy"
-                            src="/assets/solutions/ai/10002.png"
-                            alt="Portfolio"
-                            className="w-135 mx-auto"
-                        />
-                    </FadeInWhenVisible>
-                    <FeaturesList
-                        features={artificialintelligencedeveloper}
-                        iconAlign="horizontal"
-                    />
-                </div>
-            </PageLayout>
+      <PageLayout className="space-y-10 py-16 text-center">
+        <Headline
+          title="Hire An Experienced Artificial Intelligence Developer"
+          description="Our expert developers help businesses optimize their operations, create advanced software, and develop innovative products as part of your existing in-house team or on a turnkey basis to help you complete your project quickly and affordably."
+        />
+        <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-6">
+          <img
+            loading="lazy"
+            src="/assets/solutions/ai/10002.png"
+            alt="Portfolio"
+            className="w-145 xl:w-155 2xl:w-175 mx-auto"
+          />
+          <FeaturesList
+            features={artificialintelligencedeveloper}
+            iconAlign="horizontal"
+          />
+        </div>
+      </PageLayout>
 
-            <PageLayout className="py-6 text-center space-y-10">
-                <img
-                    loading="lazy"
-                    src="/assets/solutions/ai/10006.gif"
-                    alt="Portfolio"
-                    className="mx-auto"
-                />
-                <ContactUsButton variant="hover">Explore The Full Track2AI Framework</ContactUsButton>
-            </PageLayout>
+      <PageLayout className="py-6 text-center space-y-10">
+        <img
+          loading="lazy"
+          src="/assets/solutions/ai/10006.gif"
+          alt="Portfolio"
+          className="mx-auto"
+        />
+        <ContactUsButton variant="hover">
+          Explore The Full Track2AI Framework
+        </ContactUsButton>
+      </PageLayout>
 
-            <section className="bg-secondary py-12">
-                <PageLayout className="space-y-10 text-center">
-                    <Headline
-                        title="Custom Web Design & Animation Solutions"
-                        description="We develop, integrate, and customize attention-grabbing 2D and 3D animations with CRO in mind, capturing real-time interactions, and providing live data analytics to improve user experience and increase ROI."
-                    />
-                    <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-6">
-                        <div className="order-2 sm:order-1">
-                            <FeaturesList
-                                features={solutions}
-                                grid
-                                center
-                            />
-                        </div>
-                        <FadeInWhenVisible delay={0.5} className="order-1 md:block hidden sm:order-2">
-                            <img
-                                loading="lazy"
-                                src="/assets/solutions/ai/10007.png"
-                                alt="Portfolio"
-                                className="w-78 md:w-105 mx-auto"
-                            />
-                        </FadeInWhenVisible>
-                    </div>
-                    <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
-                </PageLayout>
-            </section>
-
-            <PageLayout className="space-y-8 py-16 text-center">
-                <Headline
-                    title="AI Solutions for the Airline Industry"
-                    description="U Tech's advanced AI solutions revolutionize the airline industry by optimizing revenue management, flight management, predictive maintenance, and more. With cutting-edge technology and industry expertise, our AI-driven systems provide real-time insights, streamline workflows, and ensure regulatory compliance."
-                />
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
-                    <FeaturesList
-                        features={advancedartificialintelligencesolutions.slice(0, 3)}
-                        center
-                    />
-                    <FadeInWhenVisible className="hidden md:block">
-                        <img
-                            src="/assets/solutions/ai/10012.png"
-                            alt="img"
-                            loading="lazy"
-                            className="w-110 mx-auto"
-                        />
-                    </FadeInWhenVisible>
-                    <FeaturesList
-                        features={advancedartificialintelligencesolutions.slice(3, 6)}
-                        center
-                    />
-                </div>
-                <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
-            </PageLayout>
-
-            <section className="bg-secondary py-16">
-                <PageLayout className="space-y-10 text-center">
-                    <Headline
-                        title="Artificial Intelligence Use Cases"
-                        description="Explore diverse Artificial Intelligence use cases with U Tech, empowering businesses to automate tasks, optimize decision-making, and drive innovative digital transformation."
-                    />
-                    <FeaturesList
-                        features={artificialintelligenceusecases}
-                        grid3
-                        center
-                    />
-                    <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
-                </PageLayout>
-            </section>
-
-            <PageLayout className="space-y-10 py-12 text-center">
-                <Headline
-                    title="AI Tools and Frameworks"
-                    description="Discover AI tools and frameworks – LangChain, Kernel, Open AI, Gemini, LLM and U Tech’s Track2Ai – empowering rapid, intelligent development."
-                />
-                <FeaturesList
-                    features={aitoolsandframeworks}
-                    grid3
-                    center
-                />
-                <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
-            </PageLayout>
-
-            <section className="py-16 bg-secondary">
-                <PageLayout className="space-y-10 space-x-2 text-center">
-                    <Headline
-                        title="Hire An Experienced Artificial Intelligence Developer"
-                        description="Our expert developers help businesses optimize their operations, create advanced software, and develop innovative products as part of your existing in-house team or on a turnkey basis to help you complete your project quickly and affordably."
-                    />
-
-                    <div className="grid grid-cols-1 space-y-10 items-center sm:grid-cols-2 gap-6">
-                        <FeaturesList
-                            features={videosection}
-                            iconAlign="horizontal"
-                        />
-                        {/* Video Section */}
-                        <div className="flex justify-center items-center">
-                            <div className="relative w-full lg:max-w-lg aspect-video rounded-2xl shadow-lg border-12 border-black">
-                                <video
-                                    className="w-full h-full"
-                                    controls
-                                // poster="/assets/solutions/ai/10002.png"
-                                >
-                                    <source src="/assets/videos/ai-demo.mp4" type="video/mp4" />
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </PageLayout>
-            </section>
-
-            <section className="relative w-full overflow-hidden">
-                <VideoPoster
-                    features={features}
-                    title="Smarter Tech, Bigger Impact: Explore the Latest in AI"
-                />
-            </section>
-
-            <section className="py-16 bg-secondary">
-                <PageLayout className="space-y-10 text-center">
-                    <Headline
-                        title="Industry Specific AI Solutions"
-                        description="We develop, integrate, and customize attention-grabbing 2D and 3D animations with CRO in mind, capturing real-time interactions, and providing live data analytics to improve user experience and increase ROI."
-                    />
-                    <div className="grid grid-cols-1 items-center sm:grid-cols-2 gap-6">
-                        <div className="order-2 sm:order-1">
-                            <FeaturesList
-                                features={industryspecificsisolutions}
-                                iconAlign="horizontal"
-                            />
-                        </div>
-                        <FadeInWhenVisible delay={0.5} className="order-1 sm:order-2">
-                            <img
-                                loading="lazy"
-                                src="/assets/solutions/ai/10031.png"
-                                alt="Portfolio"
-                                className="w-42 sm:w-48 md:w-56 mx-auto"
-                            />
-                        </FadeInWhenVisible>
-
-                    </div>
-                    <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
-
-                    <div className="grid grid-cols-1 items-center sm:grid-cols-2 gap-6">
-                        <FadeInWhenVisible delay={0.5}>
-                            <img
-                                loading="lazy"
-                                src="/assets/solutions/ai/10032.png"
-                                alt="Portfolio"
-                                className="w-135 mx-auto"
-                            />
-                        </FadeInWhenVisible>
-                        <FeaturesList
-                            features={industryspecificsisolutionssection2}
-                            iconAlign="horizontal"
-                        />
-                    </div>
-                    <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
-                </PageLayout>
-            </section>
-
-            <PageLayout className="py-16 space-y-8 text-center">
-                <Iconrender center webdesignintegrations={integratedaisolutions} />
-                <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
-            </PageLayout>
-
-            <div className="py-8">
-                <FaqSection faqs={Faqs} title="Frequently Asked Questions for 3D Animation Services" />
+      <section className="bg-secondary py-12">
+        <PageLayout className="space-y-10 text-center">
+          <Headline
+            title="Custom Web Design & Animation Solutions"
+            description="We develop, integrate, and customize attention-grabbing 2D and 3D animations with CRO in mind, capturing real-time interactions, and providing live data analytics to improve user experience and increase ROI."
+          />
+          <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-6">
+            <div className="order-2 sm:order-1">
+              <FeaturesList features={solutions} grid center />
             </div>
 
-            <PortfolioGrid items={portfolioItems} />
+            <img
+              loading="lazy"
+              src="/assets/solutions/ai/10007.png"
+              alt="Portfolio"
+              className="w-78 md:w-105 xl:w-110 2xl:w-120 mx-auto order-1 sm:order-2 block sm:hidden md:block"
+            />
+          </div>
+          <ContactUsButton variant="hover">
+            BOOK YOUR FREE AI CONSULTATION
+          </ContactUsButton>
+        </PageLayout>
+      </section>
 
-        </>
-    )
-}
+      <PageLayout className="space-y-8 py-16 text-center">
+        <Headline
+          title="AI Solutions for the Airline Industry"
+          description="U Tech's advanced AI solutions revolutionize the airline industry by optimizing revenue management, flight management, predictive maintenance, and more. With cutting-edge technology and industry expertise, our AI-driven systems provide real-time insights, streamline workflows, and ensure regulatory compliance."
+        />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
+          <FeaturesList
+            features={advancedartificialintelligencesolutions.slice(0, 3)}
+            center
+          />
+          <img
+            src="/assets/solutions/ai/10012.png"
+            alt="img"
+            loading="lazy"
+            className="w-78 md:w-105 xl:w-110 2xl:w-120 mx-auto"
+          />
+          <FeaturesList
+            features={advancedartificialintelligencesolutions.slice(3, 6)}
+            center
+          />
+        </div>
+        <ContactUsButton variant="hover">
+          BOOK YOUR FREE AI CONSULTATION
+        </ContactUsButton>
+      </PageLayout>
 
-export default Ai
+      <section className="bg-secondary py-16">
+        <PageLayout className="space-y-10 text-center">
+          <Headline
+            title="Artificial Intelligence Use Cases"
+            description="Explore diverse Artificial Intelligence use cases with U Tech, empowering businesses to automate tasks, optimize decision-making, and drive innovative digital transformation."
+          />
+          <FeaturesList
+            features={artificialintelligenceusecases}
+            grid3
+            center
+          />
+          <ContactUsButton variant="hover">
+            BOOK YOUR FREE AI CONSULTATION
+          </ContactUsButton>
+        </PageLayout>
+      </section>
+
+      <PageLayout className="space-y-10 py-12 text-center">
+        <Headline
+          title="AI Tools and Frameworks"
+          description="Discover AI tools and frameworks – LangChain, Kernel, Open AI, Gemini, LLM and U Tech’s Track2Ai – empowering rapid, intelligent development."
+        />
+        <FeaturesList features={aitoolsandframeworks} grid3 center />
+        <ContactUsButton variant="hover">
+          BOOK YOUR FREE AI CONSULTATION
+        </ContactUsButton>
+      </PageLayout>
+
+      <section className="py-16 bg-secondary">
+        <PageLayout className="space-y-10 space-x-2 text-center">
+          <Headline
+            title="Hire An Experienced Artificial Intelligence Developer"
+            description="Our expert developers help businesses optimize their operations, create advanced software, and develop innovative products as part of your existing in-house team or on a turnkey basis to help you complete your project quickly and affordably."
+          />
+
+          <div className="grid grid-cols-1 space-y-10 items-center md:grid-cols-2 gap-6">
+            <FeaturesList features={videosection} iconAlign="horizontal" />
+            {/* Video Section */}
+            <div className="flex justify-center items-center">
+              <div className="relative w-full sm:max-w-md lg:max-w-lg xl:max-w-xl aspect-video rounded-2xl shadow-lg border-12 border-black">
+                <video
+                  className="w-full h-full"
+                  controls
+                  // poster="/assets/solutions/ai/10002.png"
+                >
+                  <source src="/assets/videos/ai-demo.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </PageLayout>
+      </section>
+
+      <section className="relative w-full overflow-hidden">
+        <VideoPoster
+          features={features}
+          title="Smarter Tech, Bigger Impact: Explore the Latest in AI"
+        />
+      </section>
+
+      <section className="py-16 bg-secondary">
+        <PageLayout className="space-y-10 text-center">
+          <Headline
+            title="Industry Specific AI Solutions"
+            description="We develop, integrate, and customize attention-grabbing 2D and 3D animations with CRO in mind, capturing real-time interactions, and providing live data analytics to improve user experience and increase ROI."
+          />
+          <div className="grid grid-cols-1 items-center sm:grid-cols-2 gap-6">
+            <div className="order-2 sm:order-1">
+              <FeaturesList
+                features={industryspecificsisolutions}
+                iconAlign="horizontal"
+              />
+            </div>
+            <img
+              loading="lazy"
+              src="/assets/solutions/ai/10031.png"
+              alt="Portfolio"
+              className="w-42 sm:w-48 md:w-56 xl:w-62 2xl:w-66 mx-auto order-1 sm:order-2"
+            />
+          </div>
+          <ContactUsButton variant="hover">
+            BOOK YOUR FREE AI CONSULTATION
+          </ContactUsButton>
+
+          <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-6">
+            <img
+              loading="lazy"
+              src="/assets/solutions/ai/10032.png"
+              alt="Portfolio"
+              className="w-145 xl:w-155 2xl:w-175 mx-auto"
+            />
+            <FeaturesList
+              features={industryspecificsisolutionssection2}
+              iconAlign="horizontal"
+            />
+          </div>
+          <ContactUsButton variant="hover">
+            BOOK YOUR FREE AI CONSULTATION
+          </ContactUsButton>
+        </PageLayout>
+      </section>
+
+      <PageLayout className="py-16 space-y-8 text-center">
+        <Iconrender center webdesignintegrations={integratedaisolutions} />
+        <ContactUsButton variant="hover">
+          BOOK YOUR FREE AI CONSULTATION
+        </ContactUsButton>
+      </PageLayout>
+
+      <div className="py-8">
+        <FaqSection
+          faqs={Faqs}
+          title="Frequently Asked Questions for 3D Animation Services"
+        />
+      </div>
+
+      <PortfolioGrid items={portfolioItems} />
+    </>
+  );
+};
+
+export default Ai;

@@ -46,42 +46,43 @@ export const FeaturesList2 = ({
     >
       <div className={contentClass}>
         {features.map((feature, index) => (
-          <div key={index} className="flex items-start flex-col gap-2">
-            <div className="flex items-center gap-4">
-              <span className="flex-shrink-0">
-                {isImageIcon(feature.icon) ? (
-                  <img
-                    src={feature.icon}
-                    alt={feature.title}
-                    width={iconSize}
-                    height={iconSize}
-                    className="object-contain w-14 h-14"
-                  />
-                ) : (
-                  <IconRenderer
-                    name={feature.icon}
-                    size={iconSize}
-                    className="text-primary"
-                  />
-                )}
-              </span>
+          <div key={index} className="flex items-start gap-8 ">
+            <span className="flex-shrink-0">
+              {isImageIcon(feature.icon) ? (
+                <img
+                  src={feature.icon}
+                  alt={feature.title}
+                  width={iconSize}
+                  height={iconSize}
+                  className="object-contain lg:w-17 lg:h-17 w-14 h-14"
+                />
+              ) : (
+                <IconRenderer
+                  name={feature.icon}
+                  size={iconSize}
+                  className="text-primary"
+                />
+              )}
+            </span>
+            <div>
+              <div className="flex items-center gap-4">
+                <TypographyH5 className="font-extrabold text-base 2xl:text-xl tracking-tight">
+                  {feature?.title}
+                </TypographyH5>
+              </div>
 
-              <TypographyH5 className="font-extrabold text-base tracking-tight">
-                {feature?.title}
-              </TypographyH5>
+              {feature?.description && (
+                <TypographyMuted>{feature?.description}</TypographyMuted>
+              )}
+
+              {feature?.list && (
+                <ul className="list-disc text-sm pl-5 mt-2 space-y-4 text-muted-foreground">
+                  {feature.list.map((point, idx) => (
+                    <li key={idx}>{point}</li>
+                  ))}
+                </ul>
+              )}
             </div>
-
-            {feature?.description && (
-              <TypographyMuted>{feature?.description}</TypographyMuted>
-            )}
-
-            {feature?.list && (
-              <ul className="list-disc text-sm pl-5 mt-2 space-y-4 text-muted-foreground">
-                {feature.list.map((point, idx) => (
-                  <li key={idx}>{point}</li>
-                ))}
-              </ul>
-            )}
           </div>
         ))}
       </div>

@@ -1,6 +1,5 @@
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";

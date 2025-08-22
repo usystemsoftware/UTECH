@@ -92,7 +92,7 @@ export const FeaturesList = ({
                 iconAlign === "horizontal" && !center ? "flex-1 md:ml-4" : ""
               }
             >
-              <TypographyH5 className="font-extrabold text-base tracking-tight">
+              <TypographyH5 className="font-extrabold text-base 2xl:text-xl tracking-tight">
                 {feature.title}
               </TypographyH5>
               <TypographyMuted className="text-start">
@@ -143,7 +143,7 @@ export const FeaturesListOpposite = ({ features }) => {
                   alt={title}
                   width={iconSize}
                   height={iconSize}
-                  className="object-contain w-14 h-14"
+                  className="object-contain lg:w-17 lg:h-17 w-15 h-15"
                 />
               ) : (
                 <IconRenderer

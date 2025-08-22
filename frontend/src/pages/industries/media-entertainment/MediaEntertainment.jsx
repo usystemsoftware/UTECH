@@ -3,8 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import PageLayout from "@/custom/PageLayout";
 import VideoPoster from "@/custom/VideoPoster";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import FaqSection from "@/custom/FaqSection";
 import { TypographyMuted, Headline, TypographyH5 } from "@/custom/Typography";
 
@@ -113,7 +112,9 @@ export default function MediaEntertainment() {
         </div>
 
         {/* CTA ContactUsButton */}
-        <ContactUsButton variant="hover">GET LIVE STREAMING SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET LIVE STREAMING SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       {/* === Video Production Section === */}
@@ -168,7 +169,9 @@ export default function MediaEntertainment() {
           </div>
 
           {/* CTA ContactUsButton */}
-          <ContactUsButton variant="hover">GET VIDEO PRODUCTION SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET VIDEO PRODUCTION SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -208,7 +211,9 @@ export default function MediaEntertainment() {
           </div>
 
           {/* CTA ContactUsButton */}
-          <ContactUsButton variant="hover">HIRE MUSIC SOFTWARE DEVELOPER</ContactUsButton>
+          <ContactUsButton variant="hover">
+            HIRE MUSIC SOFTWARE DEVELOPER
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -221,17 +226,17 @@ export default function MediaEntertainment() {
 
         <FeaturesListOpposite features={publishingSolutions} grid />
 
-        <Button variant="hover">GET DIGITAL PUBLISHING SOLUTIONS</Button>
+        <ContactUsButton variant="hover">
+          GET DIGITAL PUBLISHING SOLUTIONS
+        </ContactUsButton>
 
         {/* Center Image */}
-        <FadeInWhenVisible className="md:block hidden">
-          <img
-            loading="lazy"
-            src="/assets/industries/media-entertainment/dashboard-800-width.png"
-            alt="Mobile Analytics App"
-            className="w-[60%] mx-auto"
-          />
-        </FadeInWhenVisible>
+        <img
+          loading="lazy"
+          src="/assets/industries/media-entertainment/dashboard-800-width.png"
+          alt="Mobile Analytics App"
+          className="sm:w-[60%] w-full mx-auto"
+        />
       </PageLayout>
 
       {/* === Photography Software Solutions Section === */}
@@ -285,7 +290,9 @@ export default function MediaEntertainment() {
           </div>
 
           {/* CTA ContactUsButton */}
-          <ContactUsButton variant="hover">GET PHOTOGRAPHY SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET PHOTOGRAPHY SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 

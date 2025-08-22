@@ -4,7 +4,7 @@ export const FeaturesGridnew = ({
   leftFeatures = [],
   rightFeatures = [],
   centerImage,
-  imgSize = "sm:w-[70%] md:w-[80%]",
+  imgSize = "sm:w-[70%] md:w-[80%] xl:w-175 2xl:w-185",
   iconGap,
 }) => (
   <div className="flex flex-col lg:flex-row items-center w-full justify-center gap-4 mt-10">

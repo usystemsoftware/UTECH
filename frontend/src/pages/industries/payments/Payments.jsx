@@ -92,7 +92,9 @@ const Payments = () => {
               />
             ))}
           </div>
-          <ContactUsButton variant="hover">Get Payment Processing Solutions</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Get Payment Processing Solutions
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -104,7 +106,9 @@ const Payments = () => {
 
         <FeaturesList features={gamingPayment} grid3 center />
 
-        <ContactUsButton variant="hover">GET FINANCE SOFTWARE SUPPORT</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET FINANCE SOFTWARE SUPPORT
+        </ContactUsButton>
 
         {/* Testimonials */}
         <TestimonialSection testimonials={testimonials} />
@@ -138,7 +142,9 @@ const Payments = () => {
               />
             </div>
           </div>
-          <ContactUsButton variant="hover">Get Mobile Payment Solutions</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Get Mobile Payment Solutions
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -182,7 +188,9 @@ const Payments = () => {
           ))}
         </div>
 
-        <ContactUsButton variant="hover">Get Online Payment Solutions</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Get Online Payment Solutions
+        </ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -249,7 +257,9 @@ const Payments = () => {
           </div>
         </div>
 
-        <ContactUsButton variant="hover">Get Pos Terminal Solutions</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Get Pos Terminal Solutions
+        </ContactUsButton>
       </PageLayout>
 
       <section className=" bg-secondary py-14">
@@ -335,7 +345,9 @@ const Payments = () => {
               className="w-42 sm:w-56 xl:w-62 2xl:w-64 mx-auto"
             />
           </div>
-          <ContactUsButton variant="hover">Get Ach & Check Solutions</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Get Ach & Check Solutions
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -375,7 +387,9 @@ const Payments = () => {
 
           <FeaturesList features={LegalManagement} grid3 center />
 
-          <ContactUsButton variant="hover">GET PAYMENT SOFTWARE SUPPORT</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET PAYMENT SOFTWARE SUPPORT
+          </ContactUsButton>
         </PageLayout>
       </section>
 
