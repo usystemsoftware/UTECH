@@ -4,7 +4,7 @@ import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import PageLayout from "@/custom/PageLayout";
 import VideoPoster from "@/custom/VideoPoster";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import ContactUsButton from "@/custom/ContactUsButton";
+import { Button } from "@/components/ui/button";
 import FaqSection from "@/custom/FaqSection";
 import { TypographyMuted, Headline, TypographyH5 } from "@/custom/Typography";
 
@@ -70,16 +70,14 @@ export default function MediaEntertainment() {
         />
 
         {/* Streaming Features + Comparison Tools */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
           {/* Left Image */}
-          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/media-entertainment/web-animation-and-graphic-design-service.png"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/media-entertainment/web-animation-and-graphic-design-service.png"
+            alt="Portfolio"
+            className="w-135 xl:w-145 2xl:w-165  mx-auto"
+          />
 
           {/* Features List */}
           <div className="text-start space-y-6">
@@ -101,18 +99,14 @@ export default function MediaEntertainment() {
             {/* Tool Icons */}
             <div className="flex items-center flex-wrap gap-6 mt-6">
               {streamingTools.map((item, index) => (
-                <FadeInWhenVisible
-                  key={index}
-                  delay={0.5}
-                  className="md:block hidden"
-                >
+                <div key={index} className="md:block hidden">
                   <img
                     loading="lazy"
                     src={`/assets/industries/media-entertainment/streaming-tools/${item?.img}.png`}
                     alt={item.label}
-                    className="w-8 h-8 mx-auto"
+                    className="mx-auto"
                   />
-                </FadeInWhenVisible>
+                </div>
               ))}
             </div>
           </div>
@@ -131,7 +125,7 @@ export default function MediaEntertainment() {
           />
 
           {/* Production Features + Tools */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
             {/* Features List */}
             <div className="text-start space-y-6">
               <TypographyH5>Video Production Tools</TypographyH5>
@@ -152,27 +146,25 @@ export default function MediaEntertainment() {
               {/* Tool Icons */}
               <div className="flex items-center flex-wrap gap-6 mt-6">
                 {productionTools.map((item, index) => (
-                  <FadeInWhenVisible key={index} delay={0.5}>
+                  <div key={index}>
                     <img
                       loading="lazy"
                       src={`/assets/industries/media-entertainment/production-tools/${item?.img}.png`}
                       alt={item.label}
                       className="mx-auto"
                     />
-                  </FadeInWhenVisible>
+                  </div>
                 ))}
               </div>
             </div>
 
             {/* Right Image */}
-            <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/industries/media-entertainment/streaming-video-development-services.png"
-                alt="Portfolio"
-                className="w-135 mx-auto"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/media-entertainment/streaming-video-development-services.png"
+              alt="Portfolio"
+              className="md:w-135 sm:w-110 w-72 mx-auto"
+            />
           </div>
 
           {/* CTA ContactUsButton */}
@@ -203,24 +195,16 @@ export default function MediaEntertainment() {
             description="Our pro audio software developers are committed to engineering world-class audio apps and building software to expand the creative freedom of today’s music pros."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
             {/* Left and Right Feature Columns */}
-            <FeaturesList
-              features={musicSolutions.slice(0, 2)}
-              center
+            <FeaturesList features={musicSolutions.slice(0, 2)} center />
+            <img
+              loading="lazy"
+              src="/assets/industries/media-entertainment/custom-music-software-solutins.png"
+              alt="Mobile Analytics App"
+              className="w-42 sm:w-62 2xl:w-64 mx-auto block sm:hidden md:block"
             />
-            <FadeInWhenVisible className="md:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/industries/media-entertainment/custom-music-software-solutins.png"
-                alt="Mobile Analytics App"
-                className="w-52 mx-auto"
-              />
-            </FadeInWhenVisible>
-            <FeaturesList
-              features={musicSolutions.slice(2, 4)}
-              center
-            />
+            <FeaturesList features={musicSolutions.slice(2, 4)} center />
           </div>
 
           {/* CTA ContactUsButton */}
@@ -229,18 +213,15 @@ export default function MediaEntertainment() {
       </section>
 
       {/* === Digital Publishing Solutions Section === */}
-      <PageLayout className="py-16 space-y-8 text-center">
+      <PageLayout className="py-16 space-y-10 text-center">
         <Headline
           title="Custom Digital Publishing Solutions"
           description="We develop custom digital publishing software solutions, including content management systems (CMS), social media tools, DRM software, and more."
         />
 
-        <FeaturesListOpposite
-          features={publishingSolutions}
-          grid
-        />
+        <FeaturesListOpposite features={publishingSolutions} grid />
 
-        <ContactUsButton variant="hover">GET DIGITAL PUBLISHING SOLUTIONS</ContactUsButton>
+        <Button variant="hover">GET DIGITAL PUBLISHING SOLUTIONS</Button>
 
         {/* Center Image */}
         <FadeInWhenVisible className="md:block hidden">
@@ -261,16 +242,14 @@ export default function MediaEntertainment() {
             description="We deliver best-in-class, reliable, and fully customizable photography software solutions so that photographers can get the most out of their images."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             {/* Left Image */}
-            <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/industries/media-entertainment/video-production-software-development.png"
-                alt="Portfolio"
-                className="w-135 mx-auto"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/media-entertainment/video-production-software-development.png"
+              alt="Portfolio"
+              className="w-135 xl:w-145 2xl:w-165 mx-auto"
+            />
 
             {/* Right: Features + Tools */}
             <div className="text-start space-y-6">
@@ -284,22 +263,22 @@ export default function MediaEntertainment() {
                 features={photographySolutions}
                 iconAlign="horizontal"
               />
-              <TypographyMuted>
+              <TypographyMuted className="text-center">
                 Our custom photography software compare closely to
                 industry-leading tools, including:
               </TypographyMuted>
 
               {/* Tool Icons */}
-              <div className="flex items-center flex-wrap gap-6 mt-6">
+              <div className="flex items-center justify-center flex-wrap gap-6 mt-6">
                 {photoGraphyTools.map((item, index) => (
-                  <FadeInWhenVisible key={index} delay={0.5}>
+                  <div key={index}>
                     <img
                       loading="lazy"
                       src={`/assets/industries/media-entertainment/photographyTools/${item?.img}.png`}
                       alt={item.label}
                       className="mx-auto"
                     />
-                  </FadeInWhenVisible>
+                  </div>
                 ))}
               </div>
             </div>
@@ -316,11 +295,7 @@ export default function MediaEntertainment() {
           title="Enhance Media & Entertainment with Cutting-Edge AI Solutions"
           description="U Tech’s extensive industry experience allows us to deliver cutting-edge AI solutions that enable businesses to enhance content creation, personalization, audience engagement, and operational efficiency, transforming the media and entertainment landscape."
         />
-        <FeaturesList
-          features={aiMediaSolutions}
-          grid
-          center
-        />
+        <FeaturesList features={aiMediaSolutions} grid center />
 
         <ContactUsButton variant="hover">
           GET AI-POWERED MEDIA & ENTERTAINMENT SOLUTIONS
@@ -334,16 +309,14 @@ export default function MediaEntertainment() {
             title="Digital Asset Management Solutions"
             description="We design digital asset management (DAM) systems to specifically address the needs of the entertainment industry."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-8">
             <FeaturesList features={damSolutions.slice(0, 2)} center />
-            <FadeInWhenVisible className="hidden md:block">
-              <img
-                loading="lazy"
-                src="/assets/industries/media-entertainment/dropbox-developer.png"
-                alt="Mobile Analytics App"
-                className="sm:w-135 mx-auto w-96"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/media-entertainment/dropbox-developer.png"
+              alt="Mobile Analytics App"
+              className="sm:w-135 xl:w-145 2xl:w-165 mx-auto w-96 block sm:hidden md:block"
+            />
             <FeaturesList features={damSolutions.slice(2, 4)} center />
           </div>
           <ContactUsButton variant="hover">GET DAM SOLUTIONS</ContactUsButton>
@@ -357,41 +330,35 @@ export default function MediaEntertainment() {
           description="U Tech provides custom-tailored software designed to protect and safeguard your digital assets from being altered or redistributed."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           {/* Left: DRM Features */}
           <div className="text-start space-y-6">
             <FeaturesList features={drmSolutions} iconAlign="horizontal" />
-            <TypographyMuted>
+            <TypographyMuted className="text-center">
               Our custom DRM solutions compare closely to industry-leading
               tools, including:
             </TypographyMuted>
-            <div className="flex items-center flex-wrap gap-6 mt-6">
+            <div className="flex items-center justify-center flex-wrap gap-6 mt-6">
               {digiatalMarketingTools.map((item, index) => (
-                <FadeInWhenVisible
-                  key={index}
-                  delay={0.5}
-                  className="sm:block hidden"
-                >
+                <div key={index} className="sm:block hidden">
                   <img
                     loading="lazy"
                     src={`/assets/industries/media-entertainment/digital-marketing/${item?.img}.png`}
                     alt={item.label}
                     className="mx-auto"
                   />
-                </FadeInWhenVisible>
+                </div>
               ))}
             </div>
           </div>
 
           {/* Right: Image */}
-          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/media-entertainment/dashboard.png"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/media-entertainment/dashboard.png"
+            alt="Portfolio"
+            className="w-135 xl:w-145 2xl:w-165 mx-auto"
+          />
         </div>
 
         <ContactUsButton variant="hover">GET DRM SOLUTIONS</ContactUsButton>

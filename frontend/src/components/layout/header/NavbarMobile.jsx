@@ -63,21 +63,45 @@ const NavbarMobile = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 z-50 w-full transition-colors ${open && "bg-white text-black"} duration-300 ${scrolled ? "bg-white shadow" : "bg-transparent"
-        }`}
+      className={`fixed top-0 left-0 z-50 w-full transition-colors ${
+        open && "bg-white text-black"
+      } duration-300 ${scrolled ? "bg-white shadow" : "bg-transparent"}`}
     >
       <AccessibilityWidget />
       <div className="flex items-center justify-between px-4 py-4">
         <Link to="/" className="flex items-center">
           <img loading="lazy" src="/logo.png" alt="Logo" className="w-26" />
         </Link>
-        <div className="flex items-center space-x-4">
-          <IconRenderer strokeWidth={2} name="Search" size={22} className={`cursor-pointer ${scrolled || open ? "text-black dark:text-white" : "text-white"}`} />
+        <div className="flex items-center space-x-5">
+          <Link to="/contact-us">
+            <IconRenderer
+              strokeWidth={2}
+              name="Phone"
+              size={19}
+              className={`cursor-pointer ${
+                scrolled || open ? "text-black dark:text-white" : "text-white"
+              }`}
+            />
+          </Link>
+          <IconRenderer
+            strokeWidth={2}
+            name="Search"
+            size={22}
+            className={`cursor-pointer ${
+              scrolled || open ? "text-black dark:text-white" : "text-white"
+            }`}
+          />
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className="w-10 h-10 bg-muted flex justify-center items-center rounded-full"
+            className={`cursor-pointer ${
+              scrolled || open ? "text-black dark:text-white" : "text-white"
+            }`}
           >
-            <IconRenderer strokeWidth={2} name={open ? "X" : "AlignRight"} size={22} />
+            <IconRenderer
+              strokeWidth={2}
+              name={open ? "X" : "AlignJustify"}
+              size={24}
+            />
           </button>
         </div>
       </div>
@@ -101,13 +125,20 @@ const NavbarMobile = () => {
 
               {Navlinks.filter(filterNavlinks).map((section, idx) => {
                 const isOpen = openMenuIndex === idx || searchTerm.length > 0;
-                const sectionMatch = section.title.toLowerCase().includes(searchTerm.toLowerCase());
+                const sectionMatch = section.title
+                  .toLowerCase()
+                  .includes(searchTerm.toLowerCase());
                 return (
                   <div key={idx} className="mb-2">
                     <button
-                      onClick={() => setOpenMenuIndex(prev => prev === idx ? null : idx)}
-                      className={`flex w-full items-center justify-between px-3 py-2 text-sm font-medium rounded-md ${sectionMatch || isOpen ? "bg-blue-100 text-blue-800" : "text-muted-foreground"
-                        }`}
+                      onClick={() =>
+                        setOpenMenuIndex((prev) => (prev === idx ? null : idx))
+                      }
+                      className={`flex w-full items-center justify-between px-3 py-2 text-sm font-medium rounded-md ${
+                        sectionMatch || isOpen
+                          ? "bg-blue-100 text-blue-800"
+                          : "text-muted-foreground"
+                      }`}
                     >
                       <span>{highlightMatch(section.title, searchTerm)}</span>
                       <IconRenderer
@@ -118,26 +149,37 @@ const NavbarMobile = () => {
                     </button>
                     {isOpen && (
                       <div className="transition-all duration-300 mt-3">
-                        {section.items?.filter((item) =>
-                          item.label.toLowerCase().includes(searchTerm.toLowerCase())
-                        ).map((item, i) => (
-                          <FadeInWhenVisible key={i}>
-                            <Link
-                              to={item.href}
-                              onClick={() => setOpen(false)}
-                              className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${selectedLink === item.href
-                                ? "text-blue-800 font-medium"
-                                : "text-muted-foreground hover:text-primary"
+                        {section.items
+                          ?.filter((item) =>
+                            item.label
+                              .toLowerCase()
+                              .includes(searchTerm.toLowerCase())
+                          )
+                          .map((item, i) => (
+                            <FadeInWhenVisible key={i}>
+                              <Link
+                                to={item.href}
+                                onClick={() => setOpen(false)}
+                                className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${
+                                  selectedLink === item.href
+                                    ? "text-blue-800 font-medium"
+                                    : "text-muted-foreground hover:text-primary"
                                 }`}
-                            >
-                              <IconRenderer strokeWidth={2} name={item.icon} size={16} />
-                              {highlightMatch(item.label, searchTerm)}
-                            </Link>
-                          </FadeInWhenVisible>
-                        ))}
+                              >
+                                <IconRenderer
+                                  strokeWidth={2}
+                                  name={item.icon}
+                                  size={16}
+                                />
+                                {highlightMatch(item.label, searchTerm)}
+                              </Link>
+                            </FadeInWhenVisible>
+                          ))}
                         {section.groups?.map((group, gIdx) => {
                           const matchingLinks = group.links?.filter((link) =>
-                            link.label.toLowerCase().includes(searchTerm.toLowerCase())
+                            link.label
+                              .toLowerCase()
+                              .includes(searchTerm.toLowerCase())
                           );
                           if (!matchingLinks?.length) return null;
                           return (
@@ -152,10 +194,11 @@ const NavbarMobile = () => {
                                   <Link
                                     to={link.href}
                                     onClick={() => setOpen(false)}
-                                    className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${selectedLink === link.href
-                                      ? "text-blue-800 font-medium"
-                                      : "text-muted-foreground hover:text-primary"
-                                      }`}
+                                    className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${
+                                      selectedLink === link.href
+                                        ? "text-blue-800 font-medium"
+                                        : "text-muted-foreground hover:text-primary"
+                                    }`}
                                   >
                                     {highlightMatch(link.label, searchTerm)}
                                   </Link>

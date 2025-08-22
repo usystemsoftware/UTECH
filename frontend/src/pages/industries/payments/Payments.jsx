@@ -1,4 +1,3 @@
-import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import HeroSection from "@/components/HeroSection";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList } from "@/components/FeaturesList";
@@ -60,7 +59,6 @@ const Payments = () => {
         />
       </PageLayout>
 
-
       <section className="relative w-full overflow-hidden">
         <VideoPoster
           features={features}
@@ -75,19 +73,13 @@ const Payments = () => {
             description="We configure and integrate custom payment gateways, processors, and other payment software from industry-leading vendors.."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-            <FeaturesList
-              features={pymentSolutions}
-              grid
-              center
+            <FeaturesList features={pymentSolutions} grid center />
+            <img
+              loading="lazy"
+              src="/assets/industries/payments/processing.png"
+              alt="Portfolio"
+              className="w-42 sm:w-56 xl:w-62 2xl:w-64 mx-auto block sm:hidden md:block"
             />
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/industries/payments/processing.png"
-                alt="Portfolio"
-                className="md:w-50 w-42 mx-auto"
-              />
-            </FadeInWhenVisible>
           </div>
           <div className="flex items-center justify-center gap-6 flex-wrap">
             {Pymentlogs.map((logo, index) => (
@@ -110,11 +102,7 @@ const Payments = () => {
           description="Our AI-driven payment solutions leverage Machine Learning algorithms to enhance efficiency, automate processes, and optimize transaction routes. The self-learning payment systems adapt to changing transaction patterns, ensuring real-time processing and improved overall performance.."
         />
 
-        <FeaturesList
-          features={gamingPayment}
-          grid3
-          center
-        />
+        <FeaturesList features={gamingPayment} grid3 center />
 
         <ContactUsButton variant="hover">GET FINANCE SOFTWARE SUPPORT</ContactUsButton>
 
@@ -129,16 +117,16 @@ const Payments = () => {
             description="We build and seamlessly integrate personalized mobile payment processing and security solutions for reliable P2P, e-commerce, and credit card processing payment systems.."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/industries/payments/mobile-payment-processing-solutions.png"
-                alt="Financial Planning Dashboard"
-                className="w-52 mx-auto hidden sm:block"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/payments/mobile-payment-processing-solutions.png"
+              alt="Financial Planning Dashboard"
+              className="w-42 sm:w-56 xl:w-62 2xl:w-64 mx-auto"
+            />
             <div className="text-start space-y-3">
-              <TypographyH5 className="font-extrabold">Mobile & Online Payment Processing</TypographyH5>
+              <TypographyH5 className="font-extrabold">
+                Mobile & Online Payment Processing
+              </TypographyH5>
               <TypographyMuted>
                 We provide native, web, and hybrid payment application solutions
                 for peer-to-peer (P2P) payment exchanges on Android, iOS, and
@@ -160,7 +148,7 @@ const Payments = () => {
           description="Our developers create customized online payment systems and security modules for businesses to accept every type of payment online with ease.."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Left Features List */}
           <FeaturesList
             features={PaymentManagementSolutions.slice(0, 2)}
@@ -168,14 +156,12 @@ const Payments = () => {
           />
 
           {/* Center Animation */}
-          <FadeInWhenVisible className="md:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/payments/online.png"
-              alt="Mobile Analytics App"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/payments/online.png"
+            alt="Mobile Analytics App"
+            className="w-145 xl:w-155 2xl:w-165 mx-auto"
+          />
 
           {/* Right Features List */}
           <FeaturesList
@@ -205,9 +191,11 @@ const Payments = () => {
             title="Point of Sale (POS) Software Solutions"
             description="Our development experts create custom point of sale (POS) solutions with unique features to promote scalability and business growth"
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
             <div className="text-start space-y-4">
-              <TypographyH5 className="font-extrabold">Custom Mobile Payment Solutions</TypographyH5>
+              <TypographyH5 className="font-extrabold">
+                Custom Mobile Payment Solutions
+              </TypographyH5>
               <TypographyMuted>
                 We engineer secure, simple, and PCI-compliant mobile point of
                 sale (mPOS) solutions that transform smartphones and tablets
@@ -218,14 +206,12 @@ const Payments = () => {
                 iconAlign="horizontal"
               />
             </div>
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/industries/payments/pos.png"
-                alt="Payment Planning Dashboard"
-                className="w-130 mx-auto hidden sm:block"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/payments/pos.png"
+              alt="Payment Planning Dashboard"
+              className="w-145 xl:w-155 2xl:w-165 mx-auto"
+            />
           </div>
           <ContactUsButton variant="hover">Get Pos Solutions</ContactUsButton>
         </PageLayout>
@@ -236,18 +222,16 @@ const Payments = () => {
           title="Online Payment Terminal Solutions"
           description="We provide comprehensive custom POS terminal solutions and services to enable merchants to simplify operations and achieving maximum efficiency.."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-          <FadeInWhenVisible className="sm:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/payments/terminal.png"
-              alt="Financial Planning Dashboard"
-              className="w-130 mx-auto hidden sm:block"
-            />
-          </FadeInWhenVisible>
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+          <img
+            loading="lazy"
+            src="/assets/industries/payments/terminal.png"
+            alt="Financial Planning Dashboard"
+            className="w-86 sm:w-130 xl:w-135 2xl:w-145 mx-auto"
+          />
           <div className="fleex flex-col gap-4 text-center justify-center items-center">
             {PaymentTransformationTerminal.map((feature, idx) => (
-              <div key={idx}              >
+              <div key={idx}>
                 {feature.img && (
                   <img
                     src={`/assets/industries/payments/Terminals/${feature.img}.png`}
@@ -259,9 +243,7 @@ const Payments = () => {
                 <TypographyH5 className="font-extrabold">
                   {feature.title}
                 </TypographyH5>
-                <TypographyMuted>
-                  {feature.description}
-                </TypographyMuted>
+                <TypographyMuted>{feature.description}</TypographyMuted>
               </div>
             ))}
           </div>
@@ -276,9 +258,11 @@ const Payments = () => {
             title="Custom EMV Software Solutions"
             description="Our developers customize EMV chip software technologies for a variety of businesses to support payment protection and compliance."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
             <div className="text-start space-y-4">
-              <TypographyH5 className="font-extrabold">EMV Chip Software Technologies</TypographyH5>
+              <TypographyH5 className="font-extrabold">
+                EMV Chip Software Technologies
+              </TypographyH5>
               <TypographyMuted>
                 We provide a comprehensive broad range of custom EMV software
                 solutions, enabling financial institutions to deliver secure
@@ -289,14 +273,12 @@ const Payments = () => {
                 iconAlign="horizontal"
               />
             </div>
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/industries/payments/customm.png"
-                alt="Payment Planning Dashboard"
-                className="w-120 mx-auto hidden sm:block"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/payments/customm.png"
+              alt="Payment Planning Dashboard"
+              className="w-86 sm:w-120 2xl:w-135 mx-auto"
+            />
           </div>
           <ContactUsButton variant="hover">Get Emv Solutions</ContactUsButton>
         </PageLayout>
@@ -308,25 +290,22 @@ const Payments = () => {
           description="We create end-to-end custom automatic billing software platforms with dynamic tools that allow businesses to navigate the digital economy easily.."
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/industries/payments/billing.gif"
-              alt="Payment Planning Dashboard"
-              className="w-50 mx-auto hidden sm:block"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/payments/billing.gif"
+            alt="Payment Planning Dashboard"
+            className="w-42 sm:w-56 xl:w-62 2xl:w-64 mx-auto"
+          />
           <div className="text-start space-y-4">
-            <TypographyH5 className="font-extrabold">Custom Payments & Billing Software</TypographyH5>
+            <TypographyH5 className="font-extrabold">
+              Custom Payments & Billing Software
+            </TypographyH5>
             <TypographyMuted>
               We buld custom-tailored payment and billing platforms,
               encompassing all of the features and functionalities that your
               business needs to succeed.
             </TypographyMuted>
-            <FeaturesList
-              features={BillingSoftware}
-              iconAlign="horizontal"
-            />
+            <FeaturesList features={BillingSoftware} iconAlign="horizontal" />
           </div>
         </div>
         <ContactUsButton variant="hover">Get Billing Solutions</ContactUsButton>
@@ -340,24 +319,21 @@ const Payments = () => {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             <div className="text-start space-y-4">
-              <TypographyH5 className="font-extrabold">ACH Payments & Check 21 Software</TypographyH5>
+              <TypographyH5 className="font-extrabold">
+                ACH Payments & Check 21 Software
+              </TypographyH5>
               <TypographyMuted>
                 We seamlessly integrate eCheck processing functionalities to
                 propel your payment processing workflows at new levels.
               </TypographyMuted>
-              <FeaturesList
-                features={ACHPayment}
-                iconAlign="horizontal"
-              />
+              <FeaturesList features={ACHPayment} iconAlign="horizontal" />
             </div>
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/industries/payments/achprocessing.png"
-                alt="Payment Planning Dashboard"
-                className="w-50 mx-auto hidden sm:block"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/payments/achprocessing.png"
+              alt="Payment Planning Dashboard"
+              className="w-42 sm:w-56 xl:w-62 2xl:w-64 mx-auto"
+            />
           </div>
           <ContactUsButton variant="hover">Get Ach & Check Solutions</ContactUsButton>
         </PageLayout>
@@ -370,25 +346,22 @@ const Payments = () => {
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
           <div className="text-start space-y-4">
-            <TypographyH5 className="font-extrabold">Fraud Protection & Prevention</TypographyH5>
+            <TypographyH5 className="font-extrabold">
+              Fraud Protection & Prevention
+            </TypographyH5>
             <TypographyMuted>
               We configure intelligent fraud protection and detection software
               solutions, designed to fit your organization and offer real-time
               monitoring to prevent fraud.
             </TypographyMuted>
-            <FeaturesList
-              features={FraudManagement}
-              iconAlign="horizontal"
-            />
+            <FeaturesList features={FraudManagement} iconAlign="horizontal" />
           </div>
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/industries/payments/management.png"
-              alt="Payment Planning Dashboard"
-              className="w-70 mx-auto hidden sm:block"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/payments/management.png"
+            alt="Payment Planning Dashboard"
+            className="w-52 sm:w-66 xl:w-78 2xl:w-86 mx-auto"
+          />
         </div>
         <ContactUsButton variant="hover">Get Fraud Protection</ContactUsButton>
       </PageLayout>
@@ -400,11 +373,7 @@ const Payments = () => {
             description="At U Tech, we provide comprehensive payment software support services, including troubleshooting gateway issues, customer support, maintenance & upgrades, and cross-platform payment integration.."
           />
 
-          <FeaturesList
-            features={LegalManagement}
-            grid3
-            center
-          />
+          <FeaturesList features={LegalManagement} grid3 center />
 
           <ContactUsButton variant="hover">GET PAYMENT SOFTWARE SUPPORT</ContactUsButton>
         </PageLayout>

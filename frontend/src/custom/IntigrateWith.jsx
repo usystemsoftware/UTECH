@@ -30,7 +30,7 @@ export default function IntigrateWith({ title, description }) {
                             loading="lazy"
                             src={logo.src}
                             alt={logo.alt}
-                            className="h-10 w-auto object-contain transition duration-300 ease-in-out"
+                            className="object-contain transition duration-300 ease-in-out"
                         />
                     </div>
                 ))}

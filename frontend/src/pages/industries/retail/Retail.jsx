@@ -3,7 +3,6 @@ import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographyH5, TypographyMuted, Headline } from "@/custom/Typography";
 import {
@@ -30,40 +29,38 @@ export default function Retail() {
         imageFit="cover"
       />
 
-      {/* === Core Retail Solutions Overview with Center Image === */}
-      <FeaturesGridnew
-        leftFeatures={retailSolutions.slice(0, 3)}
-        rightFeatures={retailSolutions.slice(3, 6)}
-        centerImage="/assets/industries/retail/retail-banner-3.png"
-        iconGap="md:gap-18"
-      />
+      <PageLayout className="space-y-10 py-16">
+        {/* === Core Retail Solutions Overview with Center Image === */}
+        <FeaturesGridnew
+          leftFeatures={retailSolutions.slice(0, 3)}
+          rightFeatures={retailSolutions.slice(3, 6)}
+          centerImage="/assets/industries/retail/retail-banner-3.png"
+          iconGap="md:gap-18"
+        />
+      </PageLayout>
 
       {/* === Experienced Retail Developers Section === */}
-      <section className="bg-secondary py-16">
+      <section className="bg-secondary pt-16">
         <PageLayout className="space-y-10 text-center">
           <Headline
             title="We Have Retail Software Developers with Industry-Experience"
             description="U Tech, an retail software development company provides custom retail software development solutions for brick and mortar, e-commerce, c-store & grocery, dealerships, shopping cart, and mobile systems."
           />
 
-          <FeaturesList
-            features={retailSoftwareSolutions}
-            center
-            grid3
-          />
+          <FeaturesList features={retailSoftwareSolutions} center grid3 />
 
           {/* CTA ContactUsButton */}
-          <ContactUsButton variant="hover">GET RETAIL SOFTWARE SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET RETAIL SOFTWARE SOLUTIONS
+          </ContactUsButton>
 
           {/* Developer Experience Image */}
-          <FadeInWhenVisible className="hidden md:block">
-            <img
-              src="/assets/industries/retail/we-have-software-developers-with-retail-industry-experience.png"
-              alt="Accounting Dashboard"
-              loading="lazy"
-              className="sm:w-[50%] w-full mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            src="/assets/industries/retail/we-have-software-developers-with-retail-industry-experience.png"
+            alt="Accounting Dashboard"
+            loading="lazy"
+            className="sm:w-[50%] w-full mx-auto"
+          />
         </PageLayout>
       </section>
 
@@ -74,15 +71,12 @@ export default function Retail() {
           description="We leverage the power of artificial intelligence (AI) to develop innovative solutions for all sectors of retail. These AI-powered technology solutions provide powerful avenues for modernization and optimization."
         />
 
-        <FeaturesList
-          features={retailAiSolutions}
-          center
-          grid3
-        />
-
+        <FeaturesList features={retailAiSolutions} center grid3 />
 
         {/* CTA ContactUsButton */}
-        <ContactUsButton variant="hover">GET AI-POWERED RETAIL SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET AI-POWERED RETAIL SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       {/* === Retail & Wholesale Software Section === */}
@@ -94,24 +88,20 @@ export default function Retail() {
 
         {/* Image and Customer-Facing Features */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/retail/ar-software-development.png"
-              alt="Portfolio"
-              className="w-52 mx-auto"
-            />
-          </FadeInWhenVisible>
-
-          <FeaturesList
-            center
-            features={retailCustomerSolutions}
-            grid
+          <img
+            loading="lazy"
+            src="/assets/industries/retail/ar-software-development.png"
+            alt="Portfolio"
+            className="w-42 sm:w-52 xl:w-62 2xl:w-68 mx-auto"
           />
+
+          <FeaturesList center features={retailCustomerSolutions} grid />
         </div>
 
         {/* CTA ContactUsButton */}
-        <ContactUsButton variant="hover">HIRE RETAIL SOFTWARE DEVELOPES</ContactUsButton>
+        <ContactUsButton variant="hover">
+          HIRE RETAIL SOFTWARE DEVELOPES
+        </ContactUsButton>
       </PageLayout>
 
       {/* === E-Commerce Software Section === */}
@@ -123,7 +113,7 @@ export default function Retail() {
           />
 
           {/* Text + Feature List + Image */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
             {/* Features */}
             <div className="text-start space-y-6">
               <TypographyH5>E-Commerce Software Solutions</TypographyH5>
@@ -139,18 +129,18 @@ export default function Retail() {
             </div>
 
             {/* Image */}
-            <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/industries/retail/custom-e-commerce-software-solutions.png"
-                alt="Portfolio"
-                className="w-130 mx-auto"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/retail/custom-e-commerce-software-solutions.png"
+              alt="Portfolio"
+              className="w-86 sm:w-110 xl:w-145 2xl:w-155 mx-auto"
+            />
           </div>
 
           {/* CTA ContactUsButton */}
-          <ContactUsButton variant="hover">GET RETAIL E-COMMERCE SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET RETAIL E-COMMERCE SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -163,14 +153,12 @@ export default function Retail() {
 
         {/* Image + Feature List */}
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
-          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/retail/custom-shopping-cart-software-solutions.png"
-              alt="Portfolio"
-              className="w-96 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/retail/custom-shopping-cart-software-solutions.png"
+            alt="Portfolio"
+            className="w-78 sm:w-96 xl:w-110 2xl:w-135 mx-auto"
+          />
 
           <div className="text-start space-y-6">
             <TypographyH5>Shopping Cart Solutions</TypographyH5>
@@ -192,25 +180,23 @@ export default function Retail() {
             {/* Tool Logos */}
             <div className="flex items-center flex-wrap gap-6 mt-6">
               {shoppingCartSoftwares.map((item, index) => (
-                <FadeInWhenVisible
-                  key={index}
-                  delay={0.5}
-                  className="md:block hidden"
-                >
+                <div key={index}>
                   <img
                     loading="lazy"
                     src={`/assets/industries/retail/shopping-software/${item?.img}.png`}
                     alt={item.label}
                     className="mx-auto"
                   />
-                </FadeInWhenVisible>
+                </div>
               ))}
             </div>
           </div>
         </div>
 
         {/* CTA ContactUsButton */}
-        <ContactUsButton variant="hover">GET SHOPPING CARD SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET SHOPPING CARD SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       {/* === Mobile Retail Software Section === */}
@@ -235,18 +221,18 @@ export default function Retail() {
                 features={mobileRetailSolutions}
               />
             </div>
-            <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/industries/retail/e-commerce-automation.png"
-                alt="Portfolio"
-                className="w-52 mx-auto"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/retail/e-commerce-automation.png"
+              alt="Portfolio"
+              className="w-42 sm:w-52 xl:w-62 2xl:w-68 mx-auto"
+            />
           </div>
 
           {/* CTA ContactUsButton */}
-          <ContactUsButton variant="hover">GET MOBILE RETAIL SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET MOBILE RETAIL SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 

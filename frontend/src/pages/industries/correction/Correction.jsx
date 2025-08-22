@@ -2,7 +2,6 @@ import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import ImageNearScreen from "@/custom/ImageNearScreen";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographyMuted, Headline, TypographyH5 } from "@/custom/Typography";
 import {
@@ -37,9 +36,9 @@ export default function Correction() {
           description="We develop custom Jail Management Software that provides a comprehensive set of capabilities to manage the entire jail management lifecycle from booking to release."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
           {/* Features List */}
-          <div className="text-start">
+          <div className="text-start order-2 md:order-1">
             <TypographyH5>Jail Management System Development</TypographyH5>
             <TypographyMuted className="mb-8">
               Our expert team of software developers & engineers build Jail
@@ -54,26 +53,22 @@ export default function Correction() {
           </div>
 
           {/* Left Image */}
-          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/correction/jail-mgmt-systems.png"
-              alt="Portfolio"
-              className="w-56 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/correction/jail-mgmt-systems.png"
+            alt="Portfolio"
+            className="w-42 sm:w-56 xl:w-62 mx-auto order-1 md:order-2"
+          />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
           {/* Left Image */}
-          <FadeInWhenVisible delay={0.5} className="sm:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/industries/correction/workflow-mgmt.png"
-              alt="Portfolio"
-              className="w-110 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/correction/workflow-mgmt.png"
+            alt="Portfolio"
+            className="w-72 sm:w-86 xl:w-135 2xl:w-155 mx-auto"
+          />
 
           {/* Features List */}
           <div className="text-start">
@@ -92,24 +87,20 @@ export default function Correction() {
         </div>
 
         {/* CTA ContactUsButton */}
-        <ContactUsButton variant="hover">OPTIMIZE JAIL OPERATIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          OPTIMIZE JAIL OPERATIONS
+        </ContactUsButton>
       </PageLayout>
 
-      <section className="bg-secondary pt-10 space-y-6">
-        <PageLayout>
-          <FeaturesList
-            features={correctionalAdminSolutions}
-            grid
-            center
+      <section className="bg-secondary pt-10 ">
+        <PageLayout className="space-y-10">
+          <FeaturesList features={correctionalAdminSolutions} grid center />
+          <img
+            loading="lazy"
+            src="/assets/industries/correction/logistics-software-developers.png"
+            alt="Portfolio"
+            className="sm:w-[60%] w-full mx-auto"
           />
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/correction/logistics-software-developers.png"
-              alt="Portfolio"
-              className="w-[60%] mx-auto"
-            />
-          </FadeInWhenVisible>
         </PageLayout>
       </section>
 
@@ -136,10 +127,7 @@ export default function Correction() {
             description="Our AI algorithms for correctional management software assist in effective operation and resource management. Our Artificial intelligence algorithms contribute to robust security measures through real-time surveillance and risk assessment."
           />
 
-          <FeaturesListOpposite
-            features={aiDrivenCorrectionalSolutions}
-          />
-
+          <FeaturesListOpposite features={aiDrivenCorrectionalSolutions} />
         </PageLayout>
       </section>
 
@@ -153,7 +141,7 @@ export default function Correction() {
           features={inmateHealthcareSolutions}
           src="/assets/industries/correction/task-laptop.png"
           imageAlign="right"
-          imgClass="w-115"
+          imgClass="w-115 xl:w-120 2xl:w-135"
         />
       </section>
 
@@ -172,14 +160,12 @@ export default function Correction() {
             />
 
             {/* Center Animation */}
-            <FadeInWhenVisible className="sm:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/industries/correction/immate-tracking-mobile.png"
-                alt="Mobile Analytics App"
-                className="md:w-52 w-46 mx-auto"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/industries/correction/immate-tracking-mobile.png"
+              alt="Mobile Analytics App"
+              className="sm:w-48 md:w-52 xl:w-56 2xl:w-62 w-42 mx-auto"
+            />
 
             {/* Right Features List */}
             <FeaturesList
@@ -187,7 +173,9 @@ export default function Correction() {
               center
             />
           </div>
-          <ContactUsButton variant="hover">UPGRADE TRACKING SYSTEMS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            UPGRADE TRACKING SYSTEMS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -196,7 +184,7 @@ export default function Correction() {
           features={jailSecuritySolutions}
           src="/assets/industries/correction/jail-security-solutions.png"
           imageAlign="right"
-          imgClass="w-120"
+          imgClass="w-120 xl:w-130 2xl:w-140"
         />
       </section>
 
@@ -207,22 +195,18 @@ export default function Correction() {
             description="We design Inmate Reentry Solutions that automate and streamline offender release program processes while aiding in reducing recidivism."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <FadeInWhenVisible className="sm:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/industries/correction/jail-management-solutions-laptop.png"
-                alt="Mobile Analytics App"
-                className="md:w-110 w-96 mx-auto"
-              />
-            </FadeInWhenVisible>
-            <FeaturesList
-              features={inmateReleaseSolutions}
-              grid
-              center
+            <img
+              loading="lazy"
+              src="/assets/industries/correction/jail-management-solutions-laptop.png"
+              alt="Mobile Analytics App"
+              className="w-76 sm:w-96 md:w-110 xl:w-120 2xl:w-135 mx-auto"
             />
+            <FeaturesList features={inmateReleaseSolutions} grid center />
           </div>
 
-          <ContactUsButton variant="hover">GET INMATE REENTRY SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET INMATE REENTRY SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -232,7 +216,7 @@ export default function Correction() {
           description="We offer Human Resource Management & Human Capital Management (HCM) Software Development Services to manage correctional officers and civilian staff members."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8">
           {/* Features List */}
           <div className="text-start">
             <TypographyH5>HRMS Solutions</TypographyH5>
@@ -249,14 +233,12 @@ export default function Correction() {
           </div>
 
           {/* Left Image */}
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/industries/correction/hrms-solutions.png"
-              alt="Portfolio"
-              className="md:w-64 w-52 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/correction/hrms-solutions.png"
+            alt="Portfolio"
+            className="md:w-64 sm:w-52 w-42 mx-auto"
+          />
         </div>
         {/* CTA ContactUsButton */}
         <ContactUsButton variant="hover">GET HRMS SOLUTIONS</ContactUsButton>
@@ -271,19 +253,19 @@ export default function Correction() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {integratedCorrectionalSoftwareSolutions?.map((item, index) => (
               <div key={index} className="grid gap-4">
-                <FeaturesList fadeUp={fadeUp} features={[item]} />
+                <FeaturesList features={[item]} />
 
                 {item?.partners && item.partners.length > 0 && (
                   <div className="flex items-center justify-center flex-wrap gap-6 mt-6">
                     {item.partners.map((partner, pIndex) => (
-                      <FadeInWhenVisible key={pIndex} delay={0.5}>
+                      <div key={pIndex}>
                         <img
                           loading="lazy"
                           src={`/assets/industries/correction/partner/${partner}.png`}
                           alt={`${item.title} - ${partner}`}
-                          className="w-fit h-8 mx-auto"
+                          className=" mx-auto"
                         />
-                      </FadeInWhenVisible>
+                      </div>
                     ))}
                   </div>
                 )}
