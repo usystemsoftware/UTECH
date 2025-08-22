@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import emailjs from "@emailjs/browser";
+import { RiWhatsappFill } from "react-icons/ri";
 
 import {
   TypographyMuted,
@@ -13,6 +14,7 @@ import {
   TypographyH3,
 } from "@/custom/Typography";
 import { Locations } from "./Data";
+import LoadingPage from "@/custom/LoadingPage";
 
 const contactFields = [
   { name: "name", label: "Full Name", required: true, type: "text" },
@@ -33,6 +35,9 @@ const ContactPage = () => {
   const params = new URLSearchParams(search);
   const fromPage = params.get("from");
   console.log(fromPage)
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -61,10 +66,14 @@ const ContactPage = () => {
     const errors = required.filter((f) => !formData[f]);
     if (errors.length === 0) {
       console.log("Submitted:", formData);
+      setLoading(true);
+      setSuccess(false);
+      setError(false);
+
       emailjs
         .send(
-          "service_igrg5ci",
-          "template_gst2p5a",
+          "service_v93ejbb",
+          "template_f64ajai",
           {
             name: formData.name,
             email: formData.email,
@@ -72,14 +81,14 @@ const ContactPage = () => {
             company: formData.company,
             message: formData.message,
             tradeshow: formData.tradeshow,
-            from: formData.from,
+            from: fromPage,
           },
-          "7-SnSze-TVD6r3rSM"
+          "v_-i7YDV7VK71ggnZ"
         )
         .then(
-          (result) => {
-            console.log("Email successfully sent!", result.text);
-            alert("Your message has been sent successfully 🚀");
+          () => {
+            setLoading(false);
+            setSuccess(true);
             setFormData({
               name: "",
               email: "",
@@ -87,12 +96,16 @@ const ContactPage = () => {
               company: "",
               message: "",
               tradeshow: "",
-              from: fromPage || "",
+              from: "",
             });
+
+            // Auto-hide success after 3s
+            setTimeout(() => setSuccess(false), 2000);
           },
-          (error) => {
-            console.log("Failed to send email:", error.text);
-            alert("Oops! Something went wrong ❌");
+          () => {
+            setLoading(false);
+            setError(true);
+            setTimeout(() => setError(false), 5000);
           }
         );
     } else {
@@ -195,10 +208,23 @@ const ContactPage = () => {
           <div className="space-y-2">
             <p>Mumbai: +91 9270033002</p>
             <p>Pune: +91 9270033002</p>
-            <div className="flex gap-2">
-              <span className="bg-primary text-white px-2 rounded text-xs">SMS</span>
-              +91 9270033002
+            <div className="flex items-center gap-2">
+              {/* WhatsApp button */}
+              <a
+                href="https://wa.me/919270033002?text=Hello%20I%20am%20interested%20in%20your%20services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 bg-green-500 text-white px-2 py-1 rounded text-xs hover:bg-green-600 transition"
+              >
+                <RiWhatsappFill size={16} className="text-white" />
+                WhatsApp
+              </a>
+
+
+              {/* Phone info */}
+              <TypographyMuted>+91 9270033002</TypographyMuted>
             </div>
+
             <div className="pt-2">
               {emails.map((email) => (
                 <TypographyMuted key={email}>{email}</TypographyMuted>
@@ -239,6 +265,8 @@ const ContactPage = () => {
           </div>
         </div>
       </PageLayout>
+      <LoadingPage loading={loading} success={success} error={error} />
+
     </section>
   );
 };
