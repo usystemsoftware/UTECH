@@ -1,14 +1,14 @@
 import React from 'react'
 import HeroSection from "@/components/HeroSection";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
-import { TypographyList2 } from '@/custom/Typography';
+import { TypographyH3, TypographyMuted } from '@/custom/Typography';
 import FaqSection from "@/custom/FaqSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, } from "@/custom/Typography";
 import PortfolioGrid from "@/components/PortfolioGrid";
-import { services, services2, services3, expertise } from './Data';
+import { services, services2, services3, industryRoutes, services4, services5, services6, services7, services8, techRoutes, softwareAiFaq, portfolioItems } from './Data';
+import { Link } from 'react-router-dom';
 const Services = () => {
     return (
         <>
@@ -28,14 +28,12 @@ const Services = () => {
                         description="We provide world-class custom software development services for startups, small-to-midsize (SMB), and enterprise-size businesses. Our expertise also extends to providing dedicated software development support, ensuring optimal performance and long-term success for your projects."
                     />
                     <div className="grid grid-cols-1 items-center gap-6 sm:grid-cols-2">
-                        <FadeInWhenVisible>
-                            <img
-                                loading="lazy"
-                                src="/assets/services/services/10035.png"
-                                alt="Portfolio"
-                                className="w-96 sm:w-135 mx-auto"
-                            />
-                        </FadeInWhenVisible>
+                        <img
+                            loading="lazy"
+                            src="/assets/services/services/10035.png"
+                            alt="Portfolio"
+                            className="w-96 sm:w-135 mx-auto"
+                        />
                         <FeaturesList
                             features={services}
                             iconAlign="horizontal"
@@ -52,14 +50,12 @@ const Services = () => {
                             features={services2}
                             iconAlign="horizontal"
                         />
-                        <FadeInWhenVisible>
-                            <img
-                                loading="lazy"
-                                src="/assets/services/services/10036.png"
-                                alt="Portfolio"
-                                className="w-90 sm:w-100 mx-auto"
-                            />
-                        </FadeInWhenVisible>
+                        <img
+                            loading="lazy"
+                            src="/assets/services/services/10036.png"
+                            alt="Portfolio"
+                            className="w-90 sm:w-100 mx-auto"
+                        />
 
                     </div>
                     <ContactUsButton variant="hover">HIRE APPLICATION SOFTWARE DEVELOPMENT SERVICES</ContactUsButton>
@@ -74,14 +70,12 @@ const Services = () => {
                         description="Augment your existing development team to complete a big project or build a new software solution or application from scratch with the best custom software development company, Chetu."
                     />
                     <div className="grid grid-cols-1 items-center gap-6 sm:grid-cols-2">
-                        <FadeInWhenVisible>
-                            <img
-                                loading="lazy"
-                                src="/assets/services/services/10037.png"
-                                alt="Portfolio"
-                                className="w-90 sm:w-130 mx-auto"
-                            />
-                        </FadeInWhenVisible>
+                        <img
+                            loading="lazy"
+                            src="/assets/services/services/10037.png"
+                            alt="Portfolio"
+                            className="w-90 sm:w-130 mx-auto"
+                        />
                         <FeaturesList
                             features={services3}
                             iconAlign="horizontal"
@@ -96,41 +90,51 @@ const Services = () => {
             <section className='py-10'>
 
                 <PageLayout className="space-y-10 text-center">
+
                     <div className="grid grid-cols-1 items-center gap-6 sm:grid-cols-2">
-                        <div className="grid grid-cols-1 md:grid-cols-2 ">
-                            <div>
-                                {
-                                    expertise.slice(0, 9).map((item, index) =>
-                                        <li key={index} className="flex items-start space-y-1">
-                                            <span className="text-black text-2xl mr-2 -mt-1">•</span>
-                                            <span className="text-teal-600 hover:text-teal-700 transition-colors duration-200 cursor-pointer">{item}</span>
-                                        </li>
-                                    )
-                                }
+                        <div className='space-y-4'>
+                            <div className='space-y-2'>
+
+                                <TypographyH3 className="text-left">Our Developers Have Industry Expertise</TypographyH3>
+                                <TypographyMuted className="text-left">Our dedicated team of in-house software developers has extensive industry-specific experience building custom software solutions and applications for</TypographyMuted>
                             </div>
 
+                            <div className="grid grid-cols-1 md:grid-cols-2 justify-center ">
+                                <div>
+                                    <ul>
+                                        {
+                                            industryRoutes.slice(0, 9).map((item, index) =>
+                                                <li key={index} className="flex items-start space-y-2">
+                                                    <span className="text-black text-2xl mr-2 -mt-1">•</span>
+                                                    <Link to={item?.path} className="text-teal-600 hover:text-teal-700 transition-colors duration-200 cursor-pointer">{item?.name}</Link>
+                                                </li>
+                                            )
+                                        }
+                                    </ul>
 
-                            <div>
-                                {
-                                    expertise.slice(9, 16).map((item, index) =>
-                                        <li key={index} className="flex items-start space-y-1">
-                                            <span className="text-black text-2xl mr-2 -mt-1">•</span>
-                                            <span className="text-teal-600 hover:text-teal-700 transition-colors duration-200 cursor-pointer">{item}</span>
-                                        </li>
-                                    )
-                                }
+                                </div>
+                                <div>
+                                    <ul>
+                                        {
+                                            industryRoutes.slice(9, 16).map((item, index) =>
+                                                <li key={index} className="flex items-start space-y-2">
+                                                    <span className="text-black text-2xl mr-2 -mt-1">•</span>
+                                                    <Link to={item?.path} className="text-teal-600 hover:text-teal-700 transition-colors duration-200 cursor-pointer">{item?.name}</Link>
+                                                </li>
+                                            )
+                                        }
+                                    </ul>
+                                </div>
                             </div>
 
                         </div>
 
-                        <FadeInWhenVisible>
-                            <img
-                                loading="lazy"
-                                src="/assets/services/services/10038.png"
-                                alt="Portfolio"
-                                className="w-90 sm:w-150 mx-auto"
-                            />
-                        </FadeInWhenVisible>
+                        <img
+                            loading="lazy"
+                            src="/assets/services/services/10038.png"
+                            alt="Portfolio"
+                            className="w-90 sm:w-150 mx-auto"
+                        />
 
 
 
@@ -138,7 +142,159 @@ const Services = () => {
                 </PageLayout>
             </section>
 
+            <section className='py-5 bg-secondary'>
 
+                <PageLayout className="space-y-10 text-center">
+                    <Headline
+                        title="Industry-Specific Software Solutions"
+                        description="Integrate scalable and customized industry-specific software with Chetu into workflows for industries such as healthcare, finance, and retail."
+                    />
+                    <FeaturesList
+                        features={services4}
+                        grid3
+                        center
+                    />
+                </PageLayout>
+            </section>
+
+            <section className='py-5'>
+
+                <PageLayout className="space-y-10 text-center">
+                    <Headline
+                        title="Software Development Support"
+                        description="Discover comprehensive software support services, including consulting, optimization, maintenance, and patch management to enhance system performance."
+                    />
+                    <FeaturesListOpposite
+                        features={services5}
+                    />
+                    <ContactUsButton variant="hover">GET RELIABLE SOFTWARE SUPPORT
+                    </ContactUsButton>
+
+                </PageLayout>
+            </section>
+            <section className='py-5 bg-secondary'>
+
+                <PageLayout className="space-y-10 text-center">
+                    <Headline
+                        title="AI-Powered Custom Software Development Services"
+                        description="We are a software development services company that also offers AI-powered custom software development services that are designed to align perfectly with your unique business requirements. Maximize the potential of your projects with intelligent automation, data-driven insights, personalized user interactions, and more."
+                    />
+                    <FeaturesList
+                        features={services6}
+                        grid3
+                        center
+                    />
+                    <ContactUsButton variant="hover">AI-POWERED CUSTOM SOFTWARE SERVICES</ContactUsButton>
+
+                </PageLayout>
+            </section>
+
+            <section className='py-10 '>
+                <PageLayout className="space-y-10 text-center">
+                    <Headline
+                        title="Product Lifecycle Management (PLM)"
+                        description="Our agile, end-to-end product lifecycle management (PLM) model covers everything from conceptualization, concurrent front-end & back-end coding, deployment, QA, and more.
+"
+                    />
+                    <div className="grid grid-cols-1 items-center gap-6 sm:grid-cols-2">
+                        <img
+                            loading="lazy"
+                            src="/assets/services/services/10039.png"
+                            alt="Portfolio"
+                            className="w-90 sm:w-130 mx-auto"
+                        />
+
+                        <FeaturesList
+                            features={services7}
+                            iconAlign="horizontal"
+                        />
+                    </div>
+                </PageLayout>
+            </section>
+
+            <section className='py-10 '>
+
+                <PageLayout className="space-y-10 text-center">
+                    <Headline
+                        title="We Have On-Demand Developers"
+                        description="We are proud to employ over 2,800 in-house developers with many years of combined software development experience in a wide array of industries."
+                    />
+                    <div className="grid grid-cols-1 items-center gap-6 sm:grid-cols-2">
+                        <img
+                            loading="lazy"
+                            src="/assets/services/services/10035.png"
+                            alt="Portfolio"
+                            className="w-90 sm:w-130 mx-auto"
+                        />
+                        <FeaturesList
+                            features={services8}
+                            iconAlign="horizontal"
+                        />
+                    </div>
+                    <ContactUsButton variant="hover">HIRE CUSTOM SOFTWARE DEVELOPERS</ContactUsButton>
+
+                </PageLayout>
+            </section>
+
+            <section className='py-10'>
+                <PageLayout className="space-y-10 text-center">
+
+                    <div className="grid grid-cols-1 items-center gap-6 sm:grid-cols-2">
+                        <div className='space-y-4'>
+                            <div className='space-y-2'>
+
+                                <TypographyH3 className="text-left">Hire Developers With Programming Expertise</TypographyH3>
+                                <TypographyMuted className="text-left">Our highly experienced software developers have a deep understanding of how to leverage top programming languages, frameworks, and other software development tools to create the ideal solution for your digital transformation goals.</TypographyMuted>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 justify-center ">
+                                <div>
+                                    <ul>
+                                        {
+                                            techRoutes.slice(0, 6).map((item, index) =>
+                                                <li key={index} className="flex items-start space-y-2">
+                                                    <span className="text-black text-2xl mr-2 -mt-1">•</span>
+                                                    <Link to={item?.path} className="text-teal-600 hover:text-teal-700 transition-colors duration-200 cursor-pointer">{item?.name}</Link>
+                                                </li>
+                                            )
+                                        }
+                                    </ul>
+
+                                </div>
+                                <div>
+                                    <ul>
+                                        {
+                                            techRoutes.slice(6, 12).map((item, index) =>
+                                                <li key={index} className="flex items-start space-y-2">
+                                                    <span className="text-black text-2xl mr-2 -mt-1">•</span>
+                                                    <Link to={item?.path} className="text-teal-600 hover:text-teal-700 transition-colors duration-200 cursor-pointer">{item?.name}</Link>
+                                                </li>
+                                            )
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <img
+                            loading="lazy"
+                            src="/assets/services/services/10040.png"
+                            alt="Portfolio"
+                            className="w-90 sm:w-150 mx-auto"
+                        />
+                    </div>
+                </PageLayout>
+            </section>
+
+            <div className="py-16">
+                <FaqSection
+                    faqs={softwareAiFaq}
+                    title="AI Software Services: Answers to Commonly Asked Questions"
+                />
+            </div>
+
+            <PortfolioGrid items={portfolioItems} />
 
         </>
     )

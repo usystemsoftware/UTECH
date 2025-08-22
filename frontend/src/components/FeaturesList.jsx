@@ -49,23 +49,19 @@ export const FeaturesList = ({
 
   return (
     <div
-      className={`flex flex-col ${
-        reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-      } items-center justify-center gap-8`}
+      className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+        } items-center justify-center gap-8`}
     >
       <div className={contentClass}>
         {features.map((feature, index) => (
           <div
             key={index}
-            className={`flex ${
-              iconAlign === "horizontal"
-                ? `md:flex-row flex-col gap-4 ${
-                    center ? "items-center" : "items-center md:items-start"
-                  }`
-                : `flex-col gap-4 ${
-                    center ? "items-center" : "items-center md:items-start"
-                  }`
-            } ${center ? "text-center" : "text-center md:text-left"}`}
+            className={`flex ${iconAlign === "horizontal"
+                ? `md:flex-row flex-col gap-4 ${center ? "items-center" : "items-center md:items-start"
+                }`
+                : `flex-col gap-4 ${center ? "items-center" : "items-center md:items-start"
+                }`
+              } ${center ? "text-center" : "text-center md:text-left"}`}
           >
             {/* ICON */}
             <span className="flex-shrink-0">
@@ -129,10 +125,9 @@ export const FeaturesListOpposite = ({ features }) => {
           <div
             key={index}
             className={`flex items-center gap-5 text-center
-              ${
-                isRightColumn
-                  ? "flex-col md:flex-row-reverse md:text-right md:items-start"
-                  : "flex-col md:flex-row md:text-left md:items-start"
+              ${isRightColumn
+                ? "flex-col md:flex-row-reverse md:text-right md:items-start"
+                : "flex-col md:flex-row md:text-left md:items-start"
               }`}
           >
             {/* Icon */}
