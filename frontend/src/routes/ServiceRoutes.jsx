@@ -8,7 +8,6 @@ import BackupRecovery from "@/pages/services/backup-recovery/BackupRecovery";
 import DataIntegration from "@/pages/services/data-integration/DataIntegration";
 import DataManagement from "@/pages/services/data-management/DataManagement";
 import DevOps from "@/pages/services/devops/DevOps";
-import CustomServices from "@/pages/services/customservices/CustomServices";
 import FinopsServices from "@/pages/services/finops-services/FinopsServices";
 import ImplementationDeployment from "@/pages/services/implementation-deployment/ImplementationDeployment";
 import InfrastructureSupport from "@/pages/services/infrastructure-support/InfrastructureSupport";
@@ -20,6 +19,7 @@ import SystemsIntegration from "@/pages/services/systems-integration/SystemsInte
 import ProductLifecycleManagement from "@/pages/services/product-lifecycle-management/ProductLifecycleManagement";
 import SLASupport from "@/pages/services/sla-support/SLASupport";
 import SoftwareSecurity from "@/pages/services/software-security/SoftwareSecurity";
+import Services from "@/pages/services/customservices/Services";
 
 export const ServiceRoutes = [
   { path: "/services/api-development", element: <ApiDevelopment /> },
@@ -32,7 +32,7 @@ export const ServiceRoutes = [
   { path: "/services/data-integration", element: <DataIntegration /> },
   { path: "/services/data-management", element: <DataManagement /> },
   { path: "/services/devops", element: <DevOps /> },
-  { path: "/services/custom-software", element: <CustomServices /> },
+  { path: "/services/custom-software", element: <Services /> },
   { path: "/services/finops", element: <FinopsServices /> },
   { path: "/services/implementation-deployment", element: <ImplementationDeployment /> },
   { path: "/services/infrastructure-support", element: <InfrastructureSupport /> },
