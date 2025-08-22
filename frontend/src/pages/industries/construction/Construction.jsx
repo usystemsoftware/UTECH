@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import { TypographyH2, Headline } from "@/custom/Typography";
@@ -63,7 +63,9 @@ export default function Construction() {
           description="U Tech is at the forefront of AI-driven smart construction solutions, dedicated to transforming the AEC industry..."
         />
         <FeaturesListOpposite features={AIPoweredConstructionFeatures} />
-        <Button variant="hover">Get AI Powered Construction Solutions</Button>
+        <ContactUsButton variant="hover">
+          Get AI Powered Construction Solutions
+        </ContactUsButton>
       </PageLayout>
 
       {/* Construction Automation Tools */}

@@ -11,7 +11,7 @@ export default function PortfolioGrid({ items = [] }) {
             <img
               src={item.img}
               alt={item.title || `Portfolio ${index + 1}`}
-              className="w-full h-[200px] md:h-[270px] 2xl:h-[340px] object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-[200px] md:h-[270px] 2xl:h-[360px] object-cover transition-transform duration-500 group-hover:scale-105"
             />
 
             {/* Hover Text Overlay */}

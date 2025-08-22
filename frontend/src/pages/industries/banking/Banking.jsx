@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import { Headline } from "@/custom/Typography";
@@ -46,9 +46,9 @@ export const Banking = () => (
         iconGap="md:gap-26"
       />
 
-      <Button variant="hover" className="mt-8">
+      <ContactUsButton variant="hover" className="mt-8">
         CUSTOMIZE YOUR BANKING SOLUTION NOW
-      </Button>
+      </ContactUsButton>
     </PageLayout>
 
     <PageLayout className="py-12 space-y-10 text-center">
@@ -74,7 +74,7 @@ export const Banking = () => (
           center
         />
       </div>
-      <Button variant="hover">Get ATM Software Solutions</Button>
+      <ContactUsButton variant="hover">Get ATM Software Solutions</ContactUsButton>
     </PageLayout>
 
     <section className="py-16 bg-secondary space-y-10 text-center">
@@ -94,7 +94,7 @@ export const Banking = () => (
           iconAlign="horizontal"
         />
       </PageLayout>
-      <Button variant="hover">Get Loan Management Software Solutions</Button>
+      <ContactUsButton variant="hover">Get Loan Management Software Solutions</ContactUsButton>
     </section>
 
     {/* Mobile Banking Section */}
@@ -115,7 +115,7 @@ export const Banking = () => (
           className="md:w-56 w-42 xl:w-62 2xl:w-64 mx-auto sm:hidden md:block block"
         />
       </PageLayout>
-      <Button variant="hover">Get Mobile Banking Software Solutions</Button>
+      <ContactUsButton variant="hover">Get Mobile Banking Software Solutions</ContactUsButton>
     </section>
 
     {/* Online Banking Section */}
@@ -136,9 +136,9 @@ export const Banking = () => (
           iconAlign="horizontal"
         />
       </PageLayout>
-      <Button variant="hover" className="mt-8">
+      <ContactUsButton variant="hover" className="mt-8">
         Get Online Banking Software Solution
-      </Button>
+      </ContactUsButton>
     </section>
 
     <section>
@@ -161,7 +161,7 @@ export const Banking = () => (
         />
         <FeaturesList features={BankingAtmFeatures.slice(2, 4)} center />
       </div>
-      <Button variant="hover">Get ATM Software Solutions</Button>
+      <ContactUsButton variant="hover">Get ATM Software Solutions</ContactUsButton>
     </PageLayout>
 
     {/* CORE Banking Section */}
@@ -181,7 +181,7 @@ export const Banking = () => (
           />
         </div>
       </PageLayout>
-      <Button variant="hover">Get Online Banking Software Solutions</Button>
+      <ContactUsButton variant="hover">Get Online Banking Software Solutions</ContactUsButton>
     </section>
 
     {/* EMV Software Section */}
@@ -200,7 +200,7 @@ export const Banking = () => (
         />
         <FeaturesList features={BankingCustomEMVServices.slice(2, 4)} center />
       </div>
-      <Button variant="hover">Get EMV Software Solutions</Button>
+      <ContactUsButton variant="hover">Get EMV Software Solutions</ContactUsButton>
     </PageLayout>
 
     {/* ACH Processing Section */}
@@ -218,7 +218,7 @@ export const Banking = () => (
         />
         <FeaturesList features={BankingACHfeatures} iconAlign="horizontal" />
       </PageLayout>
-      <Button variant="hover">Get Check 21 & ACH Processing Solutions</Button>
+      <ContactUsButton variant="hover">Get Check 21 & ACH Processing Solutions</ContactUsButton>
     </section>
 
     {/* Banking Software Support */}
@@ -227,7 +227,9 @@ export const Banking = () => (
         title="Banking Software Support"
         description="Banking and fiscal services have seen a significant transformation because of the use of new software solutions and apps. U Technology’s banking software support enhances efficiency, reliability, and regulatory compliance while improving the customer experience."
       />
-      <FeaturesListOpposite features={BankingSupportItems} />
+      <FeaturesListOpposite
+        features={BankingSupportItems}
+      />
       <Button variant="hover">Get Finance Software Support</Button>
     </PageLayout>
 

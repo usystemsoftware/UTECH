@@ -3,7 +3,7 @@ import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 
 import {
@@ -54,7 +54,9 @@ export default function Sports() {
             description="U Tech leverages cutting-edge AI analytics to modernize sports management by designing intuitive wearables for customized training, personalized nutrition, and performance monitoring."
           />
           <FeaturesListOpposite features={aiSportsSolutions} />
-          <Button variant="hover">OPTIMIZE SPORTS SOFTWARE WITH AI</Button>
+          <ContactUsButton variant="hover">
+            OPTIMIZE SPORTS SOFTWARE WITH AI
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -76,7 +78,9 @@ export default function Sports() {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">DEVELOP SPORT ANALYTICS SOFTWARE</Button>
+        <ContactUsButton variant="hover">
+          DEVELOP SPORT ANALYTICS SOFTWARE
+        </ContactUsButton>
       </PageLayout>
 
       {/* === Fitness Club & Gym Management Section === */}
@@ -102,9 +106,9 @@ export default function Sports() {
               features={fitnessManagementSolutions.slice(2, 4)}
             />
           </div>
-          <Button variant="hover">
+          <ContactUsButton variant="hover">
             HIRE GYM MANAGEMENT SOFTWARE DEVELOPES
-          </Button>
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -123,7 +127,9 @@ export default function Sports() {
           />
           <FeaturesList features={golfSoftwareSolutions} grid center />
         </div>
-        <Button variant="hover">HIRE GOLF MANAGEMENT SOFTWARE DEVELOPER</Button>
+        <ContactUsButton variant="hover">
+          HIRE GOLF MANAGEMENT SOFTWARE DEVELOPER
+        </ContactUsButton>
       </PageLayout>
 
       {/* === Sports Training Section === */}
@@ -145,9 +151,9 @@ export default function Sports() {
               className="w-110 sm:w-125 md:w-145 xl:w-155 2xl:w-175 mx-auto"
             />
           </div>
-          <Button variant="hover">
+          <ContactUsButton variant="hover">
             HIRE SPORT TRANNING SOFTWARE DEVELOPER
-          </Button>
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -169,9 +175,9 @@ export default function Sports() {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">
+        <ContactUsButton variant="hover">
           OPTIMIZE SPORTS KINESIOLOGY SOFTWARE DEVELOPER
-        </Button>
+        </ContactUsButton>
       </PageLayout>
 
       {/* === Sports Medicine Section === */}
@@ -193,9 +199,9 @@ export default function Sports() {
               className="w-78 md:w-110 xl:w-120 2xl:w-130 mx-auto"
             />
           </div>
-          <Button variant="hover">
+          <ContactUsButton variant="hover">
             DEVELOP SPORT MEDICINE MANAGEMENT SOFTWARE
-          </Button>
+          </ContactUsButton>
         </PageLayout>
       </section>
 

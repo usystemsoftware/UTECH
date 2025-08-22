@@ -3,7 +3,7 @@ import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import FaqSection from "@/custom/FaqSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographySmall, Headline } from "@/custom/Typography";
 import { Check } from "lucide-react";
 import {
@@ -99,7 +99,9 @@ export default function EnvManagement() {
               </TypographySmall>
             </div>
           </div>
-          <Button variant="hover">CALL EMS DEVELOPERS NOW</Button>
+          <ContactUsButton variant="hover">
+            CALL EMS DEVELOPERS NOW
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -118,7 +120,9 @@ export default function EnvManagement() {
           />
           <FeaturesList features={internalSolutions} iconAlign="horizontal" />
         </div>
-        <Button variant="hover">ACCESS ENVIRONMENATAL RISKS WITH EASE</Button>
+        <ContactUsButton variant="hover">
+          ACCESS ENVIRONMENATAL RISKS WITH EASE
+        </ContactUsButton>
       </PageLayout>
 
       {/* Uses: environmentalSoftwareSolutions */}
@@ -142,9 +146,9 @@ export default function EnvManagement() {
               />
             </div>
           </div>
-          <Button variant="hover">
+          <ContactUsButton variant="hover">
             ENSURE 100% ENVIRONMENATAL COMPLIANCE NOW
-          </Button>
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -166,7 +170,9 @@ export default function EnvManagement() {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">KEEP TRACK OF ENVIRONMENATAL ASSETS NOW</Button>
+        <ContactUsButton variant="hover">
+          KEEP TRACK OF ENVIRONMENATAL ASSETS NOW
+        </ContactUsButton>
       </PageLayout>
 
       {/* Uses: environmentalUtilitySolutions */}
@@ -188,7 +194,9 @@ export default function EnvManagement() {
               className="W-135 xl:w-145 2xl:w-165 mx-auto"
             />
           </div>
-          <Button variant="hover">MANAGE OPERATIONAL WORKFLOWS</Button>
+          <ContactUsButton variant="hover">
+            MANAGE OPERATIONAL WORKFLOWS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -210,7 +218,9 @@ export default function EnvManagement() {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">BUILD YOUR WEATHER TRACKING APP</Button>
+        <ContactUsButton variant="hover">
+          BUILD YOUR WEATHER TRACKING APP
+        </ContactUsButton>
       </PageLayout>
 
       {/* Uses: faqData */}

@@ -4,7 +4,7 @@ import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import FaqSection from "@/custom/FaqSection";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 import {
     dataIntegrationServices,
@@ -41,10 +41,10 @@ export default function SystemsIntegration() {
                     iconAlign="horizontal"
                 />
 
-                {/* CTA Button */}
-                <Button variant="hover">
+                {/* CTA ContactUsButton */}
+                <ContactUsButton variant="hover">
                     GET CUSTOM INTEGRATION SERVICES
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             {/* === CUSTOM WEBSOCKET UPGRADE SERVICES === */}
@@ -75,10 +75,10 @@ export default function SystemsIntegration() {
                     </FadeInWhenVisible>
                 </div>
 
-                {/* CTA Button */}
-                <Button variant="hover">
+                {/* CTA ContactUsButton */}
+                <ContactUsButton variant="hover">
                     GET WEBSOCKET SOLUTIONS
-                </Button>
+                </ContactUsButton>
 
                 {/* Additional section for websocket development */}
                 <Headline title="Websocket Development" />
@@ -101,10 +101,10 @@ export default function SystemsIntegration() {
                     />
                 </FadeInWhenVisible>
 
-                {/* CTA Button */}
-                <Button variant="hover">
+                {/* CTA ContactUsButton */}
+                <ContactUsButton variant="hover">
                     HIRE DEVELOPER NOW
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             {/* === SOFTWARE DEVELOPMENT SOLUTIONS GRID === */}

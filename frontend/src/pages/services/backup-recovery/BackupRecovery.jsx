@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, TypographyH5, TypographyMuted } from "@/custom/Typography";
 
 // Importing all feature arrays from external data file
@@ -74,11 +74,11 @@ export default function BackupRecovery() {
                     <FeaturesList features={cloudBackupSolutions} grid center />
                 </div>
 
-                {/* CTA Button */}
+                {/* CTA ContactUsButton */}
                 <FadeInWhenVisible>
-                    <Button variant='hover'>
+                    <ContactUsButton variant='hover'>
                         SPEAK WITH OUR DATA BACKUP CONSULTANTS
-                    </Button>
+                    </ContactUsButton>
                 </FadeInWhenVisible>
             </PageLayout>
 
@@ -131,11 +131,11 @@ export default function BackupRecovery() {
                         <FeaturesList features={securityBackupSolutions} grid center />
                     </div>
 
-                    {/* CTA Button */}
+                    {/* CTA ContactUsButton */}
                     <FadeInWhenVisible>
-                        <Button variant='hover'>
+                        <ContactUsButton variant='hover'>
                             GET BACKUP AND RECOVERY SOLUTIONS
-                        </Button>
+                        </ContactUsButton>
                     </FadeInWhenVisible>
                 </PageLayout>
             </section>
@@ -162,11 +162,11 @@ export default function BackupRecovery() {
                     </FadeInWhenVisible>
                 </div>
 
-                {/* CTA Button */}
+                {/* CTA ContactUsButton */}
                 <FadeInWhenVisible>
-                    <Button variant='hover'>
+                    <ContactUsButton variant='hover'>
                         INTERGRATE BACKUP AND RECOVERY SOLUTIONS
-                    </Button>
+                    </ContactUsButton>
                 </FadeInWhenVisible>
             </PageLayout>
         </>

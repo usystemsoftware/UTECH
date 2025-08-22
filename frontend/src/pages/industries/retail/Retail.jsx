@@ -3,7 +3,7 @@ import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographyH5, TypographyMuted, Headline } from "@/custom/Typography";
 import {
   mobileRetailSolutions,
@@ -49,8 +49,10 @@ export default function Retail() {
 
           <FeaturesList features={retailSoftwareSolutions} center grid3 />
 
-          {/* CTA Button */}
-          <Button variant="hover">GET RETAIL SOFTWARE SOLUTIONS</Button>
+          {/* CTA ContactUsButton */}
+          <ContactUsButton variant="hover">
+            GET RETAIL SOFTWARE SOLUTIONS
+          </ContactUsButton>
 
           {/* Developer Experience Image */}
           <img
@@ -71,8 +73,10 @@ export default function Retail() {
 
         <FeaturesList features={retailAiSolutions} center grid3 />
 
-        {/* CTA Button */}
-        <Button variant="hover">GET AI-POWERED RETAIL SOLUTIONS</Button>
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">
+          GET AI-POWERED RETAIL SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       {/* === Retail & Wholesale Software Section === */}
@@ -94,8 +98,10 @@ export default function Retail() {
           <FeaturesList center features={retailCustomerSolutions} grid />
         </div>
 
-        {/* CTA Button */}
-        <Button variant="hover">HIRE RETAIL SOFTWARE DEVELOPES</Button>
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">
+          HIRE RETAIL SOFTWARE DEVELOPES
+        </ContactUsButton>
       </PageLayout>
 
       {/* === E-Commerce Software Section === */}
@@ -131,8 +137,10 @@ export default function Retail() {
             />
           </div>
 
-          {/* CTA Button */}
-          <Button variant="hover">GET RETAIL E-COMMERCE SOLUTIONS</Button>
+          {/* CTA ContactUsButton */}
+          <ContactUsButton variant="hover">
+            GET RETAIL E-COMMERCE SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -185,8 +193,10 @@ export default function Retail() {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <Button variant="hover">GET SHOPPING CARD SOLUTIONS</Button>
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">
+          GET SHOPPING CARD SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       {/* === Mobile Retail Software Section === */}
@@ -219,8 +229,10 @@ export default function Retail() {
             />
           </div>
 
-          {/* CTA Button */}
-          <Button variant="hover">GET MOBILE RETAIL SOLUTIONS</Button>
+          {/* CTA ContactUsButton */}
+          <ContactUsButton variant="hover">
+            GET MOBILE RETAIL SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 

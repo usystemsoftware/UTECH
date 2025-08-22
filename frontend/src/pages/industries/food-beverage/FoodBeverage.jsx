@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
@@ -86,7 +86,7 @@ const FoodBeverage = () => {
               />
             </div>
           </div>
-          <Button variant="hover">GET F&B MGMT SOLUTIONS</Button>
+          <ContactUsButton variant="hover">GET F&B MGMT SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -108,7 +108,7 @@ const FoodBeverage = () => {
             className="w-42 sm:w-48 md:w-52 xl:w-54 2xl:w-56 mx-auto"
           />
         </div>
-        <Button variant="hover">GET F&B ERP SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET F&B ERP SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* Food & Beverage Quality Management Section */}
@@ -130,7 +130,7 @@ const FoodBeverage = () => {
               iconAlign="horizontal"
             />
           </div>
-          <Button variant="hover">GET F&B QA SOLUTIONS</Button>
+          <ContactUsButton variant="hover">GET F&B QA SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -152,7 +152,7 @@ const FoodBeverage = () => {
             className="w-135 md:w-145 xl:w-155 2xl:w-165 mx-auto"
           />
         </div>
-        <Button variant="hover">GET F&B DISTRIBUTION SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET F&B DISTRIBUTION SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* Food & Beverage Inventory Management Section */}
@@ -174,7 +174,7 @@ const FoodBeverage = () => {
               iconAlign="horizontal"
             />
           </div>
-          <Button variant="hover">GET F&B INVENTORY MGMT SOLUTIONS</Button>
+          <ContactUsButton variant="hover">GET F&B INVENTORY MGMT SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -251,7 +251,7 @@ const FoodBeverage = () => {
             className="w-145 xl:w-155 2xl:w-165 mx-auto"
           />
         </div>
-        <Button variant="hover">GET F&B TRACEABILITY SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET F&B TRACEABILITY SOLUTIONS</ContactUsButton>
       </PageLayout>
     </>
   );

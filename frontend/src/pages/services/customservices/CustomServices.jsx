@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import FaqSection from "@/custom/FaqSection";
 import { Headline, TypographyH3, TypographyMuted, TypographyH4 } from "@/custom/Typography";
 import { Link } from 'react-router-dom'
@@ -76,9 +76,9 @@ const CustomServices = () => {
           </FadeInWhenVisible>
         </div>
 
-        <Button variant="hover">
+        <ContactUsButton variant="hover">
           HIRE APPLICATION SOFTWARE DEVELOPMENT SERVICES
-        </Button>
+        </ContactUsButton>
       </PageLayout>
 
       {/* === Product Engineering Section === */}
@@ -103,7 +103,7 @@ const CustomServices = () => {
               iconAlign="horizontal"
             />
           </div>
-          <Button variant="hover">GET CUSTOM SOFTWARE SERVICES</Button>
+          <ContactUsButton variant="hover">GET CUSTOM SOFTWARE SERVICES</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -152,7 +152,7 @@ const CustomServices = () => {
             description="Integrate scalable and customized industry-specific software with U Tech into workflows for industries such as healthcare, finance, and retail.."
           />
           <FeaturesList features={CustomServicesgame} fadeUp={fadeUp} grid3 center />
-          <Button variant="hover">Get Your Telecom Software Audit</Button>
+          <ContactUsButton variant="hover">Get Your Telecom Software Audit</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -163,7 +163,7 @@ const CustomServices = () => {
           description="Discover comprehensive software support services, including consulting, optimization, maintenance, and patch management to enhance system performance."
         />
         <FeaturesList features={Telecommunicationfedus} fadeUp={fadeUp} grid iconAlign='horizontal' />
-        <Button variant="hover">GET RELIABLE SOFTWARE SUPPORT</Button>
+        <ContactUsButton variant="hover">GET RELIABLE SOFTWARE SUPPORT</ContactUsButton>
       </PageLayout>
 
       {/* === AI-Powered Custom Software Development Section === */}
@@ -174,7 +174,7 @@ const CustomServices = () => {
             description="We are a software development services company that also offers AI-powered custom software development services that are designed to align perfectly with your unique business requirements. Maximize the potential of your projects with intelligent automation, data-driven insights, personalized user interactions, and more."
           />
           <FeaturesList features={CustomServiceAi} fadeUp={fadeUp} grid3 center />
-          <Button variant="hover">AI-POWERED CUSTOM SOFTWARE SERVICES</Button>
+          <ContactUsButton variant="hover">AI-POWERED CUSTOM SOFTWARE SERVICES</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -213,7 +213,7 @@ const CustomServices = () => {
             </FadeInWhenVisible>
             <FeaturesList features={CustomDeveloper} fadeUp={fadeUp} iconAlign='horizontal' />
           </div>
-          <Button variant="hover">HIRE CUSTOM SOFTWARE DEVELOPERS</Button>
+          <ContactUsButton variant="hover">HIRE CUSTOM SOFTWARE DEVELOPERS</ContactUsButton>
         </PageLayout>
       </section>
 

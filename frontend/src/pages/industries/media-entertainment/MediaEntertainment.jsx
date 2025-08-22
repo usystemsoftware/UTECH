@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import PageLayout from "@/custom/PageLayout";
 import VideoPoster from "@/custom/VideoPoster";
+import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { Button } from "@/components/ui/button";
 import FaqSection from "@/custom/FaqSection";
 import { TypographyMuted, Headline, TypographyH5 } from "@/custom/Typography";
@@ -111,8 +112,8 @@ export default function MediaEntertainment() {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <Button variant="hover">GET LIVE STREAMING SOLUTIONS</Button>
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">GET LIVE STREAMING SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* === Video Production Section === */}
@@ -166,8 +167,8 @@ export default function MediaEntertainment() {
             />
           </div>
 
-          {/* CTA Button */}
-          <Button variant="hover">GET VIDEO PRODUCTION SOLUTIONS</Button>
+          {/* CTA ContactUsButton */}
+          <ContactUsButton variant="hover">GET VIDEO PRODUCTION SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -180,10 +181,10 @@ export default function MediaEntertainment() {
 
         <FeaturesListOpposite features={mediaSolutions} grid />
 
-        {/* CTA Button */}
-        <Button variant="hover">
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">
           GET STAERTED WITH CUSTOM MEDIA SOLUTIONS
-        </Button>
+        </ContactUsButton>
       </PageLayout>
 
       {/* === Music Software Development Section === */}
@@ -206,8 +207,8 @@ export default function MediaEntertainment() {
             <FeaturesList features={musicSolutions.slice(2, 4)} center />
           </div>
 
-          {/* CTA Button */}
-          <Button variant="hover">HIRE MUSIC SOFTWARE DEVELOPER</Button>
+          {/* CTA ContactUsButton */}
+          <ContactUsButton variant="hover">HIRE MUSIC SOFTWARE DEVELOPER</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -221,6 +222,16 @@ export default function MediaEntertainment() {
         <FeaturesListOpposite features={publishingSolutions} grid />
 
         <Button variant="hover">GET DIGITAL PUBLISHING SOLUTIONS</Button>
+
+        {/* Center Image */}
+        <FadeInWhenVisible className="md:block hidden">
+          <img
+            loading="lazy"
+            src="/assets/industries/media-entertainment/dashboard-800-width.png"
+            alt="Mobile Analytics App"
+            className="w-[60%] mx-auto"
+          />
+        </FadeInWhenVisible>
       </PageLayout>
 
       {/* === Photography Software Solutions Section === */}
@@ -273,8 +284,8 @@ export default function MediaEntertainment() {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <Button variant="hover">GET PHOTOGRAPHY SOLUTIONS</Button>
+          {/* CTA ContactUsButton */}
+          <ContactUsButton variant="hover">GET PHOTOGRAPHY SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -286,9 +297,9 @@ export default function MediaEntertainment() {
         />
         <FeaturesList features={aiMediaSolutions} grid center />
 
-        <Button variant="hover">
+        <ContactUsButton variant="hover">
           GET AI-POWERED MEDIA & ENTERTAINMENT SOLUTIONS
-        </Button>
+        </ContactUsButton>
       </PageLayout>
 
       {/* === Digital Asset Management (DAM) Section === */}
@@ -308,7 +319,7 @@ export default function MediaEntertainment() {
             />
             <FeaturesList features={damSolutions.slice(2, 4)} center />
           </div>
-          <Button variant="hover">GET DAM SOLUTIONS</Button>
+          <ContactUsButton variant="hover">GET DAM SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -350,7 +361,7 @@ export default function MediaEntertainment() {
           />
         </div>
 
-        <Button variant="hover">GET DRM SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET DRM SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* === FAQ Section === */}

@@ -3,7 +3,7 @@ import { FeaturesList } from "@/components/FeaturesList";
 import { Headline, TypographyH4, TypographyH1 } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 
 import { FaCheck } from "react-icons/fa";
 import {
@@ -49,7 +49,7 @@ const DigitalTransformation = () => {
           iconAlign="horizontal"
         />
 
-        <Button variant="hover">WORK WITH TRASFORAMTION EXPERTS</Button>
+        <ContactUsButton variant="hover">WORK WITH TRASFORAMTION EXPERTS</ContactUsButton>
       </PageLayout>
 
       <section className="py-16 bg-secondary text-center">
@@ -85,7 +85,7 @@ const DigitalTransformation = () => {
             center
           />
 
-          <Button variant="hover">GET DIGITAL TRANSFORMATION SERVICES</Button>
+          <ContactUsButton variant="hover">GET DIGITAL TRANSFORMATION SERVICES</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -99,8 +99,8 @@ const DigitalTransformation = () => {
 
         <FeaturesList features={industrySolutions} fadeUp={fadeUp} grid iconAlign="horizontal" />
 
-        {/* Button */}
-        <Button variant="hover">Get Industry DX Solution</Button>
+        {/* ContactUsButton */}
+        <ContactUsButton variant="hover">Get Industry DX Solution</ContactUsButton>
       </PageLayout>
 
       <section className="py-16 bg-secondary">
@@ -136,7 +136,7 @@ const DigitalTransformation = () => {
             </FadeInWhenVisible>
           </div>
 
-          <Button variant="hover">Hire A Reliable DX Resource</Button>
+          <ContactUsButton variant="hover">Hire A Reliable DX Resource</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -156,7 +156,7 @@ const DigitalTransformation = () => {
         />
 
         <FadeInWhenVisible>
-          <Button variant="hover">WORK WITH TOP TALENT</Button>
+          <ContactUsButton variant="hover">WORK WITH TOP TALENT</ContactUsButton>
         </FadeInWhenVisible>
       </PageLayout>
 
@@ -177,7 +177,7 @@ const DigitalTransformation = () => {
             center
           />
           <FadeInWhenVisible>
-            <Button variant="hover">HIRE A ONE-STOP SHOP</Button>
+            <ContactUsButton variant="hover">HIRE A ONE-STOP SHOP</ContactUsButton>
           </FadeInWhenVisible>
         </PageLayout>
       </section>
@@ -231,7 +231,7 @@ const DigitalTransformation = () => {
                 </FadeInWhenVisible>
                 <TypographyH4>{item.title}</TypographyH4>
                 <FadeInWhenVisible>
-                  <Button className="w-full">READ MORE</Button>
+                  <ContactUsButton className="w-full">READ MORE</ContactUsButton>
                 </FadeInWhenVisible>
               </div>
             ))}

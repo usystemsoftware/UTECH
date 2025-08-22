@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
@@ -64,9 +64,9 @@ const RealEstate = () => {
           centerImage="/assets/industries/real-estate/solutions.png"
         />
 
-        <Button variant="hover" className="mt-8">
+        <ContactUsButton variant="hover" className="mt-8">
           CUSTOMIZE YOUR BANKING SOLUTION NOW
-        </Button>
+        </ContactUsButton>
       </PageLayout>
 
       <section className="relative w-full overflow-hidden">
@@ -111,9 +111,9 @@ const RealEstate = () => {
         tools."
         />
         <FeaturesListOpposite features={realEstateSolutions} />
-        <Button variant="hover">
+        <ContactUsButton variant="hover">
           Get Real Estate Solutions integrated with AI
-        </Button>
+        </ContactUsButton>
       </PageLayout>
 
       <section className="py-16 bg-secondary space-y-10 text-center">
@@ -135,7 +135,7 @@ const RealEstate = () => {
             <AppDevelopPartner />
           </div>
         </PageLayout>
-        <Button variant="hover">Get Your Custom App</Button>
+        <ContactUsButton variant="hover">Get Your Custom App</ContactUsButton>
       </section>
 
       {/* === Banking Software Support Section ==g= */}
@@ -166,7 +166,7 @@ const RealEstate = () => {
             className="w-145 xl:w-155 2xl:w-175 mx-auto"
           />
         </div>
-        <Button variant="hover">STREAMLINE PROPERTY MANAGEMENT</Button>
+        <ContactUsButton variant="hover">STREAMLINE PROPERTY MANAGEMENT</ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-16">
@@ -207,7 +207,7 @@ const RealEstate = () => {
             <FeaturesList features={idxSolutions} iconAlign="horizontal" />
           </div>
         </div>
-        <Button variant="hover">GET IDX SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET IDX SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* FAQ Section */}

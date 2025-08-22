@@ -5,7 +5,7 @@ import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import FaqSection from "@/custom/FaqSection";
 import { TestimonialSection } from "@/components/TestimonialSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import {
     Headline,
@@ -43,9 +43,9 @@ export default function IOT() {
                     features={IoTServices}
                 />
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET IOT DEVELOPERS
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-12">

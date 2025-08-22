@@ -3,7 +3,7 @@ import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 
 import {
@@ -55,7 +55,7 @@ const Assettracking = () => {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+          <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -75,9 +75,9 @@ const Assettracking = () => {
               iconAlign="horizontal"
             />
           </div>
-          <Button variant="hover">
+          <ContactUsButton variant="hover">
             Get Asset Tracking Developers
-          </Button>
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -92,9 +92,9 @@ const Assettracking = () => {
             grid3
             center
           />
-          <Button variant="hover">
+          <ContactUsButton variant="hover">
             GET AI-POWERED ASSET TRACKING SOLUTIONS
-          </Button>
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -141,7 +141,7 @@ const Assettracking = () => {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">GET CUSTOM SOLUTIONS</Button>
+          <ContactUsButton variant="hover">GET CUSTOM SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -182,7 +182,7 @@ const Assettracking = () => {
             />
           </FadeInWhenVisible>
         </div>
-        <Button variant="hover">CUSTOMIZE YOUR SOFTWARE</Button>
+        <ContactUsButton variant="hover">CUSTOMIZE YOUR SOFTWARE</ContactUsButton>
       </PageLayout>
 
       <PageLayout className="space-y-10 py-16 text-center">
@@ -200,14 +200,14 @@ const Assettracking = () => {
             iconAlign="horizontal"
           />
         </div>
-        <Button variant="hover">Get Custom EDI Integrations</Button>
+        <ContactUsButton variant="hover">Get Custom EDI Integrations</ContactUsButton>
       </PageLayout>
 
       <PageLayout className="py-16 space-y-10 text-center">
         <FeaturesListOpposite
           features={applicationSupport}
         />
-        <Button variant="hover">GET APPLICATION SUPPORT</Button>
+        <ContactUsButton variant="hover">GET APPLICATION SUPPORT</ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-16">
@@ -222,7 +222,7 @@ const Assettracking = () => {
             grid3
             center
           />
-          <Button variant="hover">GET AI-POWERED ASSET TRACKING SOLUTIONS</Button>
+          <ContactUsButton variant="hover">GET AI-POWERED ASSET TRACKING SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 

@@ -21,6 +21,7 @@ import {
     Faqs,
     portfolioItems
 } from './Data';
+import ContactUsButton from "@/custom/ContactUsButton";
 
 const Aws = () => {
     return (
@@ -71,7 +72,7 @@ const Aws = () => {
                             iconAlign="horizontal"
                         />
                     </div>
-                    <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+                    <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
                 </PageLayout>
             </section>
 

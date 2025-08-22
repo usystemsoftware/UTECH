@@ -3,7 +3,7 @@ import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, } from "@/custom/Typography";
 import Iconrender from '@/components/Iconrender';
 import PortfolioGrid from "@/components/PortfolioGrid";
@@ -53,7 +53,7 @@ const Arvr = () => {
                         />
                     </FadeInWhenVisible>
                 </div>
-                <Button variant="hover">BOOK YOUR FREE AI CONSULTATION</Button>
+                <ContactUsButton variant="hover">BOOK YOUR FREE AI CONSULTATION</ContactUsButton>
             </PageLayout>
 
             <section className="py-16 bg-secondary">
@@ -110,7 +110,7 @@ const Arvr = () => {
                         iconAlign="horizontal"
                     />
                 </div>
-                <Button variant="hover">GET THE AR/VR SOLUTION</Button>
+                <ContactUsButton variant="hover">GET THE AR/VR SOLUTION</ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16">
@@ -124,7 +124,7 @@ const Arvr = () => {
                         grid3
                         center
                     />
-                    <Button variant="hover">Hire AI AR/VR Specialists</Button>
+                    <ContactUsButton variant="hover">Hire AI AR/VR Specialists</ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -167,7 +167,7 @@ const Arvr = () => {
 
             <PageLayout className="py-8 space-y-8 text-center">
                 <Iconrender center webdesignintegrations={webdesignintegrations} />
-                <Button variant="hover">HIRE AR/VR DEVELOPERS</Button>
+                <ContactUsButton variant="hover">HIRE AR/VR DEVELOPERS</ContactUsButton>
             </PageLayout>
 
             <div className="py-8">

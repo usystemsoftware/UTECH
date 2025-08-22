@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import FaqSection from "@/custom/FaqSection";
@@ -51,9 +51,9 @@ export default function Database() {
                         center
                     />
                 </div>
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     BOOK YOUR DATABASE CONSULTATION NOW
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary pt-16 text-center">
@@ -67,9 +67,9 @@ export default function Database() {
                         features={databaseSoftwareSolutions}
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET DATABASE SOLUTIONS
-                    </Button>
+                    </ContactUsButton>
 
                     <FadeInWhenVisible>
                         <img
@@ -123,9 +123,9 @@ export default function Database() {
                             iconAlign="horizontal"
                         />
                     </div>
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         OPTIMIZE YOUR DATA WITH OUR EXPERTISE
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -151,9 +151,9 @@ export default function Database() {
                     </FadeInWhenVisible>
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     INTEGRATE YOUR DATABASE NOW
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-12 text-center">
@@ -180,9 +180,9 @@ export default function Database() {
                             center
                         />
                     </div>
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET CUSTOM DATABASE SERVICES
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 

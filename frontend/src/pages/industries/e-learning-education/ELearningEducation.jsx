@@ -3,7 +3,7 @@ import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import HeroSection from "@/components/HeroSection";
 import FaqSection from "@/custom/FaqSection";
 import PageLayout from "@/custom/PageLayout";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import {
   TypographyMuted,
   Headline,
@@ -62,7 +62,9 @@ export default function ELearningEducation() {
             description="With eLearning representing an interesting facet of modern education, Artificial Intelligence represents a revolutionary path to make the learning experience more engaging and fruitful for learners!"
           />
           <FeaturesList features={aiPoweredELearningSolutions} grid3 center />
-          <Button variant="hover">GET A-POWERED eLEARNING TOOLS</Button>
+          <ContactUsButton variant="hover">
+            GET A-POWERED eLEARNING TOOLS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -104,7 +106,7 @@ export default function ELearningEducation() {
         <PageLayout className="text-center space-y-12">
           <FeaturesListOpposite features={lmsSolutions} />
 
-          <Button variant="hover">HIRE LMS DEVELOPERS</Button>
+          <ContactUsButton variant="hover">HIRE LMS DEVELOPERS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -153,7 +155,9 @@ export default function ELearningEducation() {
           />
         </div>
 
-        <Button variant="hover">Get Content Authoring Solutions</Button>
+        <ContactUsButton variant="hover">
+          Get Content Authoring Solutions
+        </ContactUsButton>
       </PageLayout>
 
       {/* SIS Development Section */}
@@ -194,7 +198,7 @@ export default function ELearningEducation() {
             />
           </div>
 
-          <Button variant="hover">GET SIS SOFTWARE</Button>
+          <ContactUsButton variant="hover">GET SIS SOFTWARE</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -246,7 +250,9 @@ export default function ELearningEducation() {
               className="w-135 xl:w-145 2xl:w-150 mx-auto order-1 md:order-2"
             />
           </div>
-          <Button variant="hover">GET WEB BASED TRAINING SOFTWARE</Button>
+          <ContactUsButton variant="hover">
+            GET WEB BASED TRAINING SOFTWARE
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -257,7 +263,9 @@ export default function ELearningEducation() {
           description="Our support services team provides responsive around-the-clock eLearning software support. We troubleshoot issues and carefully monitor the performance of all e-learning resources to eliminate latency and costly workflow interruption and ensure high-performing education materials that are SCORM compliant."
         />
         <FeaturesListOpposite features={elearningSupportServices} grid />
-        <Button variant="hover">HIRE eLEARNING DEVELOPERS</Button>
+        <ContactUsButton variant="hover">
+          HIRE eLEARNING DEVELOPERS
+        </ContactUsButton>
       </PageLayout>
 
       {/* Enterprise LMS Platform Features */}

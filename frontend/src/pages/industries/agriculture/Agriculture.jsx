@@ -4,11 +4,12 @@ import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
-import { Button } from "@/components/ui/button";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { Headline } from "@/custom/Typography";
 import ImageNearScreen from "@/custom/ImageNearScreen";
 import VideoTvPoster from "@/custom/VideoTvPoster";
+import ContactUsButton from "@/custom/ContactUsButton";
+
 import {
   agricultureFaq,
   agricultureSolutions,
@@ -55,8 +56,9 @@ export default function Agriculture() {
             description="Our developers can implement Artificial Intelligence (AI) that analyzes data from satellites, drones, and sensors to provide real-time insights about soil conditions, moisture levels, and crop health. This data can be used to optimize irrigation, fertilization, and pest control, leading to increased yields and resource savings. Revolutionize agriculture through invaluable technology and insights that allow you to enhance productivity and resource allocation while minimizing environmental impact."
           />
           <FeaturesList features={aiAgricultureSolutions} center grid3 />
-
-          <Button variant="hover">GET AI-POWERED AGRICULTURE SOLUTIONS</Button>
+          <ContactUsButton variant="hover">
+            GET AI-POWERED AGRICULTURE SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -67,31 +69,29 @@ export default function Agriculture() {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/industries/agriculture/land-management-software2.png"
-              alt="Migration Planning Dashboard"
-              className="mx-auto w-96 sm:w-135 2xl:w-175"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/agriculture/land-management-software2.png"
+            alt="Migration Planning Dashboard"
+            className="mx-auto w-96 sm:w-135 2xl:w-175"
+          />
           <FeaturesList features={landTechSolutions} iconAlign="horizontal" />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 mt-16 md:grid-cols-3 gap-4 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 mt-16 md:grid-cols-3 gap-6 items-center">
           <FeaturesList features={farmingSolutions.slice(0, 2)} center />
-          <FadeInWhenVisible className="hidden md:block">
-            <img
-              loading="lazy"
-              src="/assets/industries/agriculture/land-management-software1.png"
-              alt="Mobile Analytics App"
-              className="mx-auto w-46 sm:w-54 2xl:w-58"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/industries/agriculture/land-management-software1.png"
+            alt="Mobile Analytics App"
+            className="mx-auto w-42 sm:w-54 2xl:w-58"
+          />
           <FeaturesList features={farmingSolutions.slice(2, 4)} center />
         </div>
 
-        <Button variant="hover">GET LAND MGMT SOFTWARE DEVELOPERS</Button>
+        <ContactUsButton variant="hover">
+          GET LAND MGMT SOFTWARE DEVELOPERS
+        </ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-16">
@@ -108,31 +108,29 @@ export default function Agriculture() {
                 iconAlign="horizontal"
               />
             </div>
-            <FadeInWhenVisible className="order-1 sm:order-2">
-              <img
-                loading="lazy"
-                src="/assets//industries/agriculture/dispensary-seed-to-sale-software-development-services1.png"
-                alt="Migration Planning Dashboard"
-                className="mx-auto w-42 sm:w-52 md:w-62"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets//industries/agriculture/dispensary-seed-to-sale-software-development-services1.png"
+              alt="Migration Planning Dashboard"
+              className="mx-auto w-42 sm:w-52 md:w-62 order-1 sm:order-2"
+            />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets//industries/agriculture/dispensary-seed-to-sale-software-development-services2.png"
-                alt="Migration Planning Dashboard"
-                className="mx-auto w-42 sm:w-52 md:w-62"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets//industries/agriculture/dispensary-seed-to-sale-software-development-services2.png"
+              alt="Migration Planning Dashboard"
+              className="mx-auto w-42 sm:w-52 md:w-62"
+            />
             <FeaturesList
               features={cannabisSolutions.slice(3, 6)}
               iconAlign="horizontal"
             />
           </div>
-          <Button variant="hover">GET SEED-TO-SALE SOFTWARE DEVELOPERS</Button>
+          <ContactUsButton variant="hover">
+            GET SEED-TO-SALE SOFTWARE DEVELOPERS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -146,9 +144,9 @@ export default function Agriculture() {
           src="/assets/industries/agriculture/precision-agriculture-software.png"
           imageAlign="left"
         />
-        <Button variant="hover">
+        <ContactUsButton variant="hover">
           GET PRECISION AGRICULATURE SOFTWARE DEVELOPERS
-        </Button>
+        </ContactUsButton>
       </section>
 
       <section className="bg-secondary py-16">
@@ -165,32 +163,30 @@ export default function Agriculture() {
                 iconAlign="horizontal"
               />
             </div>
-            <FadeInWhenVisible className="order-1 sm:order-2">
-              <img
-                loading="lazy"
-                src="/assets//industries/agriculture/agriculture-drone-software-development-services1.png"
-                alt="Migration Planning Dashboard"
-                className="mx-auto w-42 sm:w-52 md:w-62"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets//industries/agriculture/agriculture-drone-software-development-services1.png"
+              alt="Migration Planning Dashboard"
+              className="mx-auto w-42 sm:w-52 md:w-62 order-1 sm:order-2"
+            />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
-            <FadeInWhenVisible className="md:block sm:hidden block">
-              <img
-                loading="lazy"
-                src="/assets//industries/agriculture/agriculture-drone-software-solutions2.png"
-                alt="Migration Planning Dashboard"
-                className="mx-auto w-42 sm:w-62"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets//industries/agriculture/agriculture-drone-software-solutions2.png"
+              alt="Migration Planning Dashboard"
+              className="mx-auto w-42 sm:w-62 block sm:hidden md:block"
+            />
             <FeaturesList
               features={droneFarmingSolutions.slice(3, 8)}
               center
               grid
             />
           </div>
-          <Button variant="hover">GET DRONE SOFTWARE DEVELOPERS</Button>
+          <ContactUsButton variant="hover">
+            GET DRONE SOFTWARE DEVELOPERS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -210,31 +206,29 @@ export default function Agriculture() {
                 iconAlign="horizontal"
               />
             </div>
-            <FadeInWhenVisible className="order-1 md:order-2">
-              <img
-                loading="lazy"
-                src="/assets//industries/agriculture/food-safety-&-compliance-software-development1.png"
-                alt="Migration Planning Dashboard"
-                className="mx-auto w-96 sm:w-145 2xl:w-175"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets//industries/agriculture/food-safety-&-compliance-software-development1.png"
+              alt="Migration Planning Dashboard"
+              className="mx-auto w-96 sm:w-145 2xl:w-175 order-1 md:order-2"
+            />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 mt-12 items-center gap-6">
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets//industries/agriculture/food-safety-&-compliance-software-development2.png"
-                alt="Migration Planning Dashboard"
-                className="mx-auto w-96 sm:w-155 2xl:w-185"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets//industries/agriculture/food-safety-&-compliance-software-development2.png"
+              alt="Migration Planning Dashboard"
+              className="mx-auto w-96 sm:w-155 2xl:w-185"
+            />
             <FeaturesList
               features={foodSafetySolutions.slice(3, 8)}
               iconAlign="horizontal"
             />
           </div>
-          <Button variant="hover">GET FOOD SAFETY SOFTWARE DEVELOPERS</Button>
+          <ContactUsButton variant="hover">
+            GET FOOD SAFETY SOFTWARE DEVELOPERS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -251,14 +245,12 @@ export default function Agriculture() {
               iconAlign="horizontal"
             />
           </div>
-          <FadeInWhenVisible className="order-1 sm:order-2">
-            <img
-              loading="lazy"
-              src="/assets//industries/agriculture/aquaculture-software-solutions-laptop1.png"
-              alt="Migration Planning Dashboard"
-              className="mx-auto w-96 sm:w-145 2xl:w-185"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets//industries/agriculture/aquaculture-software-solutions-laptop1.png"
+            alt="Migration Planning Dashboard"
+            className="mx-auto w-96 sm:w-145 2xl:w-185 order-1 sm:order-2"
+          />
         </div>
       </PageLayout>
 
@@ -267,10 +259,11 @@ export default function Agriculture() {
           features={aquacultureSolutions.slice(3, 8)}
           src="/assets/industries/agriculture/aquaculture-software-solutions-new-graphic.png"
           imageAlign="left"
-          imgClass="2xl:w-200"
+          imgClass="2xl:w-135"
         />
-
-        <Button variant="hover">GET AQUACULTURE SOFTWARE DEVELOPERS</Button>
+        <ContactUsButton variant="hover">
+          GET AQUACULTURE SOFTWARE DEVELOPERS
+        </ContactUsButton>
       </section>
 
       <section className="bg-secondary py-16">

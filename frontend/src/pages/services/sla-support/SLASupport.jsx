@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, TypographyH3 } from "@/custom/Typography";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import FaqSection from "@/custom/FaqSection";
@@ -66,9 +66,9 @@ export default function SLASupport() {
                         center
                         grid3
                     />
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET WHITE-LABEL IT SUPPORT
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -105,9 +105,9 @@ export default function SLASupport() {
                         />
                     </div>
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET IT SUPPORT NOW
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 

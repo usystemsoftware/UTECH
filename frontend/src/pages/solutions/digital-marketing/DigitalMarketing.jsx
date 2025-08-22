@@ -9,7 +9,7 @@ import {
   TestingSolutions,
   TestSolution,
 } from "./Data";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 
 const DigitalMarketing = () => {
@@ -34,8 +34,8 @@ const DigitalMarketing = () => {
 
         <FeaturesList features={DriveMore} fadeUp={fadeUp} grid3 center />
 
-        {/* === CTA Button: Marketing Experts === */}
-        <Button variant="hover">SPEAK TO MARKETING EXPERTS</Button>
+        {/* === CTA ContactUsButton: Marketing Experts === */}
+        <ContactUsButton variant="hover">SPEAK TO MARKETING EXPERTS</ContactUsButton>
       </PageLayout>
 
       {/* === CUSTOM DIGITAL MARKETING SOFTWARE SECTION === */}
@@ -87,8 +87,8 @@ const DigitalMarketing = () => {
           </FadeInWhenVisible>
         </div>
 
-        {/* === CTA Button: Manage Marketing === */}
-        <Button variant="hover">Manage Your Marketing Needs</Button>
+        {/* === CTA ContactUsButton: Manage Marketing === */}
+        <ContactUsButton variant="hover">Manage Your Marketing Needs</ContactUsButton>
       </PageLayout>
 
       {/* === SOFTWARE FEATURES & FUNCTIONS SECTION === */}
@@ -128,8 +128,8 @@ const DigitalMarketing = () => {
 
           <FeaturesList features={TestSolution} fadeUp={fadeUp} grid center />
 
-          {/* === CTA Button: Maximize Marketing === */}
-          <Button variant="hover">MAXIMIZE YOUR MARKETING EFFORTS</Button>
+          {/* === CTA ContactUsButton: Maximize Marketing === */}
+          <ContactUsButton variant="hover">MAXIMIZE YOUR MARKETING EFFORTS</ContactUsButton>
         </PageLayout>
       </section>
     </>

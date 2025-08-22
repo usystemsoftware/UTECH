@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
@@ -119,7 +119,7 @@ export default function Healthcare() {
             />
           </div>
 
-          <Button variant="hover">Cunsultation for EHR</Button>
+          <ContactUsButton variant="hover">Cunsultation for EHR</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -143,7 +143,7 @@ export default function Healthcare() {
           {/* Right Features List */}
           <FeaturesList features={telemedicineFeatures.slice(2, 4)} center />
         </div>
-        <Button variant="hover">Develop Your Telehelth Platform</Button>
+        <ContactUsButton variant="hover">Develop Your Telehelth Platform</ContactUsButton>
       </PageLayout>
 
       <section className="py-12">
@@ -162,7 +162,7 @@ export default function Healthcare() {
               className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto"
             />
           </div>
-          <Button variant="hover">DEVELOP LIMS PLATFORM SOLUTIONS</Button>
+          <ContactUsButton variant="hover">DEVELOP LIMS PLATFORM SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -177,10 +177,10 @@ export default function Healthcare() {
           imgClass="w-135 xl:w-145 2xl:w-165"
         />
 
-        {/* CTA Button */}
-        <Button variant="hover" className="mt-8">
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover" className="mt-8">
           START YOUR PACS/DICOM PROJECT TODAY
-        </Button>
+        </ContactUsButton>
       </section>
 
       <section className="bg-secondary py-12">
@@ -199,7 +199,7 @@ export default function Healthcare() {
               className="w-72 sm:w-105 xl:w-115 2xl:w-130 mx-auto"
             />
           </div>
-          <Button variant="hover">DEVELOP LIMS PLATFORM SOLUTIONS</Button>
+          <ContactUsButton variant="hover">DEVELOP LIMS PLATFORM SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -217,7 +217,7 @@ export default function Healthcare() {
             className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto block sm:hidden md:block"
           />
         </div>
-        <Button variant="hover">GET PHARMACY POS SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET PHARMACY POS SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -236,7 +236,7 @@ export default function Healthcare() {
             />
             <FeaturesList features={eRxFeatures} iconAlign="horizontal" />
           </div>
-          <Button variant="hover">GET ERX SOFTWARE SOLUTIONS</Button>
+          <ContactUsButton variant="hover">GET ERX SOFTWARE SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -261,7 +261,7 @@ export default function Healthcare() {
           {/* Right Features List */}
           <FeaturesList features={hospitalSystemFeatures.slice(2, 4)} center />
         </div>
-        <Button variant="hover">GET HIS/PMS SOFTWARE SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET HIS/PMS SOFTWARE SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -280,7 +280,7 @@ export default function Healthcare() {
               className="w-135 xl:w-145 2xl:w-165 mx-auto"
             />
           </div>
-          <Button variant="hover">GET RCM SOFTWARE SOLUTIONS</Button>
+          <ContactUsButton variant="hover">GET RCM SOFTWARE SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -298,7 +298,7 @@ export default function Healthcare() {
           />
           <FeaturesList features={hl7IntegrationFeatures} center grid />
         </div>
-        <Button variant="hover">GET HL7 INTERGRATION</Button>
+        <ContactUsButton variant="hover">GET HL7 INTERGRATION</ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-16">
@@ -354,7 +354,7 @@ export default function Healthcare() {
               iconAlign="horizontal"
             />
           </div>
-          <Button variant="hover">Get Assistive Tech Solutions</Button>
+          <ContactUsButton variant="hover">Get Assistive Tech Solutions</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -383,7 +383,7 @@ export default function Healthcare() {
             center
           />
         </div>
-        <Button variant="hover">GET VETERINITY SOFTWARE SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET VETERINITY SOFTWARE SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       <div className="py-12">

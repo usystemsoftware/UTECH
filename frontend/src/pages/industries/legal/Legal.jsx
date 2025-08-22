@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import ImageNearScreen from "@/custom/ImageNearScreen";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
@@ -121,7 +121,7 @@ const Legal = () => (
           />
         </div>
       </div>
-      <Button variant="hover">HIRE LEGAL SOFTWARE DEVELOPERS</Button>
+      <ContactUsButton variant="hover">HIRE LEGAL SOFTWARE DEVELOPERS</ContactUsButton>
     </PageLayout>
 
     <section className="bg-secondary py-12">
@@ -133,7 +133,7 @@ const Legal = () => (
 
         <FeaturesList features={gamingLegal} grid3 center />
 
-        <Button variant="hover">Get Legal Software Solutions</Button>
+        <ContactUsButton variant="hover">Get Legal Software Solutions</ContactUsButton>
       </PageLayout>
     </section>
 
@@ -145,7 +145,7 @@ const Legal = () => (
 
       <FeaturesListOpposite features={legalgSupportIsecound} />
 
-      <Button variant="hover">Get Started with Custom Legal Software</Button>
+      <ContactUsButton variant="hover">Get Started with Custom Legal Software</ContactUsButton>
     </PageLayout>
 
     {/* === THIRD-PARTY API FUNCTIONALITY SECTION === */}
@@ -174,7 +174,7 @@ const Legal = () => (
           </div>
         ))}
       </div>
-      <Button variant="hover">GET YOUR LEGAL SOFTWARE INTEGRATION</Button>
+      <ContactUsButton variant="hover">GET YOUR LEGAL SOFTWARE INTEGRATION</ContactUsButton>
     </PageLayout>
   </>
 );

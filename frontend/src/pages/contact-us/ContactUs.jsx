@@ -1,9 +1,12 @@
+import { useLocation } from "react-router-dom";
 import PageLayout from "@/custom/PageLayout";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import emailjs from "@emailjs/browser";
+
 import {
   TypographyMuted,
   TypographyH6,
@@ -25,6 +28,12 @@ const emails = [
 ];
 
 const ContactPage = () => {
+
+  const { search } = useLocation();
+  const params = new URLSearchParams(search);
+  const fromPage = params.get("from");
+  console.log(fromPage)
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -32,7 +41,14 @@ const ContactPage = () => {
     company: "",
     message: "",
     tradeshow: "",
+    from: ""
   });
+  useEffect(() => {
+    if (fromPage) {
+      setFormData((prev) => ({ ...prev, from: fromPage }));
+    }
+  }, [fromPage]);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -45,7 +61,42 @@ const ContactPage = () => {
     const errors = required.filter((f) => !formData[f]);
     if (errors.length === 0) {
       console.log("Submitted:", formData);
-      // trigger your API logic here
+      emailjs
+        .send(
+          "service_igrg5ci",
+          "template_gst2p5a",
+          {
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            company: formData.company,
+            message: formData.message,
+            tradeshow: formData.tradeshow,
+            from: formData.from,
+          },
+          "7-SnSze-TVD6r3rSM"
+        )
+        .then(
+          (result) => {
+            console.log("Email successfully sent!", result.text);
+            alert("Your message has been sent successfully 🚀");
+            setFormData({
+              name: "",
+              email: "",
+              phone: "",
+              company: "",
+              message: "",
+              tradeshow: "",
+              from: fromPage || "",
+            });
+          },
+          (error) => {
+            console.log("Failed to send email:", error.text);
+            alert("Oops! Something went wrong ❌");
+          }
+        );
+    } else {
+      alert("Please fill all required fields: " + errors.join(", "));
     }
   };
 

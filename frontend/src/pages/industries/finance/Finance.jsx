@@ -4,7 +4,7 @@ import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import PageLayout from "@/custom/PageLayout";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographyH3, TypographyMuted, Headline } from "@/custom/Typography";
 import {
   leftFeatures,
@@ -47,7 +47,9 @@ const Finance = () => {
           rightFeatures={rightFeatures}
           centerImage="/assets/industries/finance/combo-finance.png"
         />
-        <Button variant="hover">CUSTOMIZE YOUR BANKING SOLUTION NOW</Button>
+        <ContactUsButton variant="hover">
+          CUSTOMIZE YOUR BANKING SOLUTION NOW
+        </ContactUsButton>
       </PageLayout>
 
       {/* AI Benefits */}
@@ -59,7 +61,9 @@ const Finance = () => {
           />
           <FeaturesList features={aiBenefits} grid3 center />
 
-          <Button variant="hover">GET AI-POWERED FINANCIAL SOLUTIONS</Button>
+          <ContactUsButton variant="hover">
+            GET AI-POWERED FINANCIAL SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -86,7 +90,9 @@ const Finance = () => {
           title="Integrate with Leading Accounting Platforms"
           description="Sync your financial data with top financial tools for better efficiency and accuracy."
         />
-        <Button variant="hover">GET ACCOUNTING SOFTWARE SOLUTIONS</Button>
+        <ContactUsButton variant="hover">
+          GET ACCOUNTING SOFTWARE SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       {/* Portfolio Section */}
@@ -108,7 +114,9 @@ const Finance = () => {
             className="w-135 xl:w-145 2xl:w-165 mx-auto"
           />
         </PageLayout>
-        <Button variant="hover">GET PORTFOLIO MGMT SOFTWARE SOLUTIONS</Button>
+        <ContactUsButton variant="hover">
+          GET PORTFOLIO MGMT SOFTWARE SOLUTIONS
+        </ContactUsButton>
       </section>
 
       {/* Planning Section */}
@@ -127,9 +135,9 @@ const Finance = () => {
             />
             <FeaturesList features={planningFeatures} grid center />
           </div>
-          <Button variant="hover">
+          <ContactUsButton variant="hover">
             GET FINANCIAL PLANNING SOFTWARE SOLUTIONS
-          </Button>
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -198,7 +206,9 @@ const Finance = () => {
               className="w-96 sm:w-120 xl:w-135 2xl:w-145 mx-auto"
             />
           </div>
-          <Button variant="hover">GET INSURANCE SOFTWARE SOLUTIONS</Button>
+          <ContactUsButton variant="hover">
+            GET INSURANCE SOFTWARE SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -217,7 +227,9 @@ const Finance = () => {
           />
           <FeaturesList features={taxFeatures} iconAlign="horizontal" />
         </PageLayout>
-        <Button variant="hover">GET TAX PREP SOFTWARE SOLUTIONS</Button>
+        <ContactUsButton variant="hover">
+          GET TAX PREP SOFTWARE SOLUTIONS
+        </ContactUsButton>
       </section>
 
       {/* Factoring Section */}
@@ -227,7 +239,9 @@ const Finance = () => {
           description="Leverage U Technology's profound financial software development expertise to drive your business forward with advanced factoring solutions. Our innovative services are meticulously designed to streamline your financial processes and set you apart in the competitive landscape."
         />
         <FeaturesListOpposite features={factoringFeatures} grid center />
-        <Button variant="hover">GET FACTORING SOLUTIONS</Button>
+        <ContactUsButton variant="hover">
+          GET FACTORING SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       {/* Support Section */}
@@ -238,7 +252,9 @@ const Finance = () => {
             description="Leverage U Technology's profound financial software development expertise to drive your business forward with advanced factoring solutions. Our innovative services are meticulously designed to streamline your financial processes and set you apart in the competitive landscape."
           />
           <FeaturesListOpposite features={supportFeatures} grid />
-          <Button variant="hover">GET FINANCE SOFTWARE SUPPORT</Button>
+          <ContactUsButton variant="hover">
+            GET FINANCE SOFTWARE SUPPORT
+          </ContactUsButton>
         </PageLayout>
 
         {/* Testimonials */}

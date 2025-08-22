@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { TypographyMuted, Headline } from "@/custom/Typography";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList } from "@/components/FeaturesList";
 import ImageNearScreen from "@/custom/ImageNearScreen";
 import FaqSection from "@/custom/FaqSection";
@@ -84,7 +84,9 @@ const Gaming = () => (
           <img key={idx} src={logo.src} alt={logo.alt} />
         ))}
       </div>
-      <Button variant="hover">HIRE VIDEO GAME DEVELOPER</Button>
+      <ContactUsButton variant="hover">
+        HIRE VIDEO GAME DEVELOPER
+      </ContactUsButton>
     </PageLayout>
 
     {/* === Mobile Game Development Services Section === */}
@@ -95,7 +97,9 @@ const Gaming = () => (
           description="U Tech’s mobile game software solutions allow you to deliver engaging and highly immersive games to players worldwide, built with cutting-edge technology and monetization solutions."
         />
         <FeaturesList features={GammingMobile} grid3 center />
-        <Button variant="hover">HIRE MOBILE GAME DEVELOPERS</Button>
+        <ContactUsButton variant="hover">
+          HIRE MOBILE GAME DEVELOPERS
+        </ContactUsButton>
       </PageLayout>
     </section>
 
@@ -114,7 +118,9 @@ const Gaming = () => (
         />
         <FeaturesList features={gameFeatures} iconAlign="horizontal" />
       </div>
-      <Button variant="hover">GET AR/VR GAME SOLUTIONS</Button>
+      <ContactUsButton variant="hover">
+        GET AR/VR GAME SOLUTIONS
+      </ContactUsButton>
     </PageLayout>
 
     {/* === iGaming Development Services Section === */}
@@ -133,7 +139,9 @@ const Gaming = () => (
             className="mx-auto w-42 sm:w-62 md:w-70 block sm:hidden md:block"
           />
         </div>
-        <Button variant="hover">GET IGAMING SOFTWARE PROVIDER</Button>
+        <ContactUsButton variant="hover">
+          GET IGAMING SOFTWARE PROVIDER
+        </ContactUsButton>
       </PageLayout>
     </section>
 
@@ -152,7 +160,9 @@ const Gaming = () => (
         />
         <FeaturesList features={gameFeatureslist} iconAlign="horizontal" />
       </div>
-      <Button variant="hover">GET SOCIAL GAMING SOLUTIONS</Button>
+      <ContactUsButton variant="hover">
+        GET SOCIAL GAMING SOLUTIONS
+      </ContactUsButton>
     </PageLayout>
 
     {/* === Unreal Engine Game Development Section === */}
@@ -171,7 +181,9 @@ const Gaming = () => (
             className="mx-auto w-135 md:w-155 xl:w-166 2xl:w-175"
           />
         </div>
-        <Button variant="hover">HIRE UNREAL ENGINE DEVELOPER</Button>
+        <ContactUsButton variant="hover">
+          HIRE UNREAL ENGINE DEVELOPER
+        </ContactUsButton>
       </PageLayout>
     </section>
 
@@ -187,7 +199,9 @@ const Gaming = () => (
         imageAlign="left"
         imgClass="xl:w-146 2xl:w-165"
       />
-      <Button variant="hover">GET GAMING ART DEVELOPERS</Button>
+      <ContactUsButton variant="hover">
+        GET GAMING ART DEVELOPERS
+      </ContactUsButton>
     </section>
 
     {/* === Fantasy Sports Software Development Section === */}
@@ -206,7 +220,9 @@ const Gaming = () => (
             className="mx-auto w-64 sm:w-72 md:w-90"
           />
         </div>
-        <Button variant="hover">GET FANTASY SPORTS SOFTWARE SOLUTIONS</Button>
+        <ContactUsButton variant="hover">
+          GET FANTASY SPORTS SOFTWARE SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
     </section>
 
@@ -217,7 +233,9 @@ const Gaming = () => (
         description="With gaming being one of the most lucrative industries in today’s world, Artificial Intelligence (AI) in games has become an increasingly important pillar of game development. Our experts have industry-specific technical experience for cutting-edge AI game development. Artificial Intelligence stands as an innovative tool that can level up the gaming experience."
       />
       <FeaturesList features={gammingSolutiondeveloper} grid3 center />
-      <Button variant="hover">GET AI IN GAME DEVELOPMENT</Button>
+      <ContactUsButton variant="hover">
+        GET AI IN GAME DEVELOPMENT
+      </ContactUsButton>
     </PageLayout>
 
     {/* === Gaming Application Support Services Section === */}
@@ -228,7 +246,9 @@ const Gaming = () => (
           description="Our experts provide comprehensive gaming application support to address the diverse needs of the gaming industry. We provide full support services for proprietary gaming applications and white-label support solutions enhancing gaming development and support teams.."
         />
         <FeaturesList features={gammingSupportApplication} center grid3 />
-        <Button variant="hover">GET GAMING APPS SUPPORT</Button>
+        <ContactUsButton variant="hover">
+          GET GAMING APPS SUPPORT
+        </ContactUsButton>
       </PageLayout>
     </section>
 

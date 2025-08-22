@@ -22,6 +22,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         hover:
           "border-2 border-primary text-xs md:text-sm font-semibold rounded-full hover:bg-primary hover:text-white transition duration-300 whitespace-nowrap",
+        herosection: "",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

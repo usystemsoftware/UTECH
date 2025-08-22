@@ -3,7 +3,7 @@ import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { Check } from "lucide-react";
 import {
@@ -57,9 +57,9 @@ export default function FraudProtection() {
                     />
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     PROTECT YOUR BUSSINESS AGAINST FRAUDSTERS NOW
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-12">
@@ -89,9 +89,9 @@ export default function FraudProtection() {
                         center
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET AI-POWERED FRUAD DETECTION
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
 
                 <PageLayout className="text-center py-10 space-y-10">
@@ -132,9 +132,9 @@ export default function FraudProtection() {
                         center
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         HIRE FRUAD PREVENTATION EXPERTS TODAY
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -212,9 +212,9 @@ export default function FraudProtection() {
                         ))}
                     </div>
                 </div>
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     ADD CUSTOM FRUAD DETECTION FEATURES
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <PageLayout className="space-y-10 text-center">
@@ -239,9 +239,9 @@ export default function FraudProtection() {
                     />
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     INTEGRATE YOUR FRAUD SOLUTION NOW
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             {/* === FAQ SECTION === */}

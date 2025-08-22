@@ -3,7 +3,7 @@ import { FeaturesList } from "@/components/FeaturesList";
 import HeroSection from "@/components/HeroSection";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import PageLayout from "@/custom/PageLayout";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { TypographyMuted, Headline } from "@/custom/Typography";
 
 import {
@@ -104,8 +104,8 @@ export default function HCM() {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <Button variant="hover">GET HRMS/HRIS SOLUTIONS</Button>
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">GET HRMS/HRIS SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* =================== Payroll & Benefits Section =================== */}
@@ -153,8 +153,8 @@ export default function HCM() {
           <FeaturesList features={backgroundScreeningSolutions} grid center />
         </div>
 
-        {/* CTA Button */}
-        <Button variant="hover">GET BACKGROUND SCREENING SOLUTIONS</Button>
+        {/* CTA ContactUsButton */}
+        <ContactUsButton variant="hover">GET BACKGROUND SCREENING SOLUTIONS</ContactUsButton>
 
         <TestimonialSection testimonials={testimonials} />
       </PageLayout>

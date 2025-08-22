@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 import {
   FinopServicesformation,
@@ -61,7 +61,7 @@ const FinopsServices = () => {
             </FadeInWhenVisible>
             <FeaturesList features={FinopsFeatures} fadeUp={fadeUp} iconAlign="horizontal" />
           </div>
-          <Button variant="hover">SPEAK WITH OUR FINOPS CONSULTANTS</Button>
+          <ContactUsButton variant="hover">SPEAK WITH OUR FINOPS CONSULTANTS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -72,7 +72,7 @@ const FinopsServices = () => {
           description="U Tech offers a wide range of FinOps services, with individualized strategies tailored to exceed your goals. We focus on strategic consulting, performance tracking, cost optimization and sustainable FinOps practices to ensure full lifecycle performance with our support services.."
         />
         <FeaturesList features={FinopsServicesAi} fadeUp={fadeUp} grid3 center />
-        <Button variant="hover">GET FINOPS SERVICES</Button>
+        <ContactUsButton variant="hover">GET FINOPS SERVICES</ContactUsButton>
       </PageLayout>
 
       {/* === AI-Powered FinOps Tools Section === */}
@@ -93,7 +93,7 @@ const FinopsServices = () => {
               />
             </FadeInWhenVisible>
           </div>
-          <Button variant="hover">GET AI-POWERED FINOPS CAPABILITIES</Button>
+          <ContactUsButton variant="hover">GET AI-POWERED FINOPS CAPABILITIES</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -104,7 +104,7 @@ const FinopsServices = () => {
           description="U Tech’s certified FinOps practitioners create individualized hybrid and multi-cloud support strategies to deliver exceptional client services, optimized cloud-based workflows, and reduced expenses to enable greater business value and ROI."
         />
         <FeaturesList features={FinopServicesfedus} fadeUp={fadeUp} grid />
-        <Button variant="hover">SPEAK WITH A FINOPS EXPERT</Button>
+        <ContactUsButton variant="hover">SPEAK WITH A FINOPS EXPERT</ContactUsButton>
       </PageLayout>
     </>
   );

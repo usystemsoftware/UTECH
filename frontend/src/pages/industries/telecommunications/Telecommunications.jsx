@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import FaqSection from "@/custom/FaqSection";
@@ -60,9 +60,9 @@ const Telecommunications = () => {
           imageClass="xl:w-175 2xl:w-195 mx-auto"
           reverse
         />
-        <Button variant="hover">
+        <ContactUsButton variant="hover">
           Book a Demo of Our Telecom Software Solutions
-        </Button>
+        </ContactUsButton>
       </PageLayout>
 
       {/* Section: AI-Powered Telecommunications Solutions */}
@@ -72,8 +72,12 @@ const Telecommunications = () => {
             title="AI-Powered Telecommunications Solutions"
             description="Leverage AI-driven telecom software to cut costs, boost efficiency, and future-proof your operations..."
           />
-          <FeaturesList2 features={AITelecomFeatures} grid center />
-          <Button variant="hover">GET AI-POWERED TELECOM SOLUTIONS</Button>
+          <FeaturesList2
+            features={AITelecomFeatures}
+            grid
+            center
+          />
+          <ContactUsButton variant="hover">GET AI-POWERED TELECOM SOLUTIONS</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -86,7 +90,7 @@ const Telecommunications = () => {
 
         <FeaturesList features={gamingtelecommunication} grid3 center />
 
-        <Button variant="hover">Get Your Telecom Software Audit</Button>
+        <ContactUsButton variant="hover">Get Your Telecom Software Audit</ContactUsButton>
       </PageLayout>
 
       {/* Section: Telecom Software Support Services */}
@@ -96,8 +100,10 @@ const Telecommunications = () => {
             title="Telecom Software Support Services"
             description="We deliver end-to-end support services for telecom applications..."
           />
-          <FeaturesListOpposite features={TelecommunicationSolutions} />
-          <Button variant="hover">GET TELECOM APPLICATION SUPPORT</Button>
+          <FeaturesListOpposite
+            features={TelecommunicationSolutions}
+          />
+          <ContactUsButton variant="hover">GET TELECOM APPLICATION SUPPORT</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -116,7 +122,7 @@ const Telecommunications = () => {
           />
           <FeaturesList features={telecomSolutions.slice(2, 4)} center />
         </div>
-        <Button variant="hover">GET TELECOM IOT SOLUTIONS</Button>
+        <ContactUsButton variant="hover">GET TELECOM IOT SOLUTIONS</ContactUsButton>
       </PageLayout>
 
       {/* Section: Custom Telecom Integration Services with Partner Logos */}
@@ -143,7 +149,7 @@ const Telecommunications = () => {
               </div>
             ))}
           </div>
-          <Button variant="hover">GET INTEGRATED TELECOM SOFTWARE</Button>
+          <ContactUsButton variant="hover">GET INTEGRATED TELECOM SOFTWARE</ContactUsButton>
         </PageLayout>
       </section>
 

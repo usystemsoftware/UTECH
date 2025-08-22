@@ -4,7 +4,7 @@ import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import { FeaturesList2 } from "@/components/FeaturesList2";
 import FaqSection from "@/custom/FaqSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { Headline, TypographyMuted, TypographyH3 } from "@/custom/Typography";
 import {
@@ -51,9 +51,9 @@ export default function FacilitiesManagement() {
                         center
                     />
                 </div>
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     MANAGE YOUR FACALITIES WITH EASE
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16">
@@ -81,9 +81,9 @@ export default function FacilitiesManagement() {
                     center
                     grid3
                 />
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     BUILD YOUR CUSTOM FM SOFTWARE SOLUTUTION NOW
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-primary py-8 text-center">

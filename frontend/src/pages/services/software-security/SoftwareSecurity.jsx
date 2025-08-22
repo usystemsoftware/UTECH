@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, TypographyH3, TypographyMuted } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import {
@@ -72,9 +72,9 @@ export default function SoftwareSecurity() {
                         features={cybersecurityAISolutions}
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET AI-POWERED CYBERSECURITY COMPLIANCE SOLUTIONS
-                    </Button>
+                    </ContactUsButton>
 
                 </PageLayout>
             </section>
@@ -120,9 +120,9 @@ export default function SoftwareSecurity() {
                             center
                         />
                     </div>
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         HIRE CYBERSECURITY SOFTWARE DEVELOPERS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -237,9 +237,9 @@ export default function SoftwareSecurity() {
                         iconAlign="horizontal"
                     />
                 </div>
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET CYBERSECURITY SOFTWARE SOLUTIONS
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16">

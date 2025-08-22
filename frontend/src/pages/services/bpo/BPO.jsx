@@ -4,7 +4,7 @@ import { Check } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 import { TypographyH6, TypographyMuted } from "@/custom/Typography";
 import {
@@ -97,7 +97,7 @@ export default function BPO() {
 
         <FeaturesList features={bpoServices} fadeUp={fadeUp} grid iconAlign="horizontal" />
 
-        <Button variant="hover">HIRE BPO ONE-STOP SHOP</Button>
+        <ContactUsButton variant="hover">HIRE BPO ONE-STOP SHOP</ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-16 mt-8">
@@ -108,7 +108,7 @@ export default function BPO() {
           />
           <FeaturesList features={servicesData} fadeUp={fadeUp} grid iconAlign="horizontal" />
 
-          <Button variant="hover">Get BPO SERVICES</Button>
+          <ContactUsButton variant="hover">Get BPO SERVICES</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -119,7 +119,7 @@ export default function BPO() {
         />
         <FeaturesList features={industriesData} fadeUp={fadeUp} grid iconAlign="horizontal" />
 
-        <Button variant="hover">HIRE A RELIABLE BPO RESOURCE</Button>
+        <ContactUsButton variant="hover">HIRE A RELIABLE BPO RESOURCE</ContactUsButton>
       </PageLayout>
 
       <section className="py-12 bg-secondary">
@@ -170,7 +170,7 @@ export default function BPO() {
         />
         <FeaturesList features={companyHighlights} fadeUp={fadeUp} grid center />
 
-        <Button variant="hover">WORK WITH TOP TALENT</Button>
+        <ContactUsButton variant="hover">WORK WITH TOP TALENT</ContactUsButton>
       </PageLayout>
 
       <PageLayout className="space-y-10 py-10 text-center">
@@ -191,7 +191,7 @@ export default function BPO() {
           <FeaturesList features={technicalSolutions} fadeUp={fadeUp} grid center />
         </div>
 
-        <Button variant="hover">GET DEVOP'S SUPPORT</Button>
+        <ContactUsButton variant="hover">GET DEVOP'S SUPPORT</ContactUsButton>
       </PageLayout>
     </>
   );

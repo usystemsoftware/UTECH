@@ -6,7 +6,7 @@ import { FeaturesList } from "@/components/FeaturesList";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import Iconrender from '@/components/Iconrender';
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, TypographyH3 } from "@/custom/Typography";
 import {
     cmsDevelopmentServices,
@@ -85,9 +85,9 @@ export default function CMS() {
                         description="Adding custom features, integrating plugins, and implementing add-ons to your new and improved website allows you to turn your vision into a feature-rich, custom-tailored software reality. U Tech takes your existing content management system (CMS) and elevates it to new heights."
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         INTEGRATE YOUR CMS NOW
-                    </Button>
+                    </ContactUsButton>
 
                     <Iconrender
                         webdesignintegrations={cmsIntegrations}
@@ -108,9 +108,9 @@ export default function CMS() {
                     iconGap="md:gap-26"
                 />
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     HIRE CMS DEVELOPMENT COMPANY
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             {/* PORTFOLIO GRID SECTION WITH ANIMATION */}

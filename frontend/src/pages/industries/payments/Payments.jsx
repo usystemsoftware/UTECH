@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { FeaturesList } from "@/components/FeaturesList";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
@@ -92,7 +92,7 @@ const Payments = () => {
               />
             ))}
           </div>
-          <Button variant="hover">Get Payment Processing Solutions</Button>
+          <ContactUsButton variant="hover">Get Payment Processing Solutions</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -104,7 +104,7 @@ const Payments = () => {
 
         <FeaturesList features={gamingPayment} grid3 center />
 
-        <Button variant="hover">GET FINANCE SOFTWARE SUPPORT</Button>
+        <ContactUsButton variant="hover">GET FINANCE SOFTWARE SUPPORT</ContactUsButton>
 
         {/* Testimonials */}
         <TestimonialSection testimonials={testimonials} />
@@ -138,7 +138,7 @@ const Payments = () => {
               />
             </div>
           </div>
-          <Button variant="hover">Get Mobile Payment Solutions</Button>
+          <ContactUsButton variant="hover">Get Mobile Payment Solutions</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -182,7 +182,7 @@ const Payments = () => {
           ))}
         </div>
 
-        <Button variant="hover">Get Online Payment Solutions</Button>
+        <ContactUsButton variant="hover">Get Online Payment Solutions</ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -213,7 +213,7 @@ const Payments = () => {
               className="w-145 xl:w-155 2xl:w-165 mx-auto"
             />
           </div>
-          <Button variant="hover">Get Pos Solutions</Button>
+          <ContactUsButton variant="hover">Get Pos Solutions</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -249,7 +249,7 @@ const Payments = () => {
           </div>
         </div>
 
-        <Button variant="hover">Get Pos Terminal Solutions</Button>
+        <ContactUsButton variant="hover">Get Pos Terminal Solutions</ContactUsButton>
       </PageLayout>
 
       <section className=" bg-secondary py-14">
@@ -280,7 +280,7 @@ const Payments = () => {
               className="w-86 sm:w-120 2xl:w-135 mx-auto"
             />
           </div>
-          <Button variant="hover">Get Emv Solutions</Button>
+          <ContactUsButton variant="hover">Get Emv Solutions</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -308,7 +308,7 @@ const Payments = () => {
             <FeaturesList features={BillingSoftware} iconAlign="horizontal" />
           </div>
         </div>
-        <Button variant="hover">Get Billing Solutions</Button>
+        <ContactUsButton variant="hover">Get Billing Solutions</ContactUsButton>
       </PageLayout>
 
       <section className=" bg-secondary py-12">
@@ -335,7 +335,7 @@ const Payments = () => {
               className="w-42 sm:w-56 xl:w-62 2xl:w-64 mx-auto"
             />
           </div>
-          <Button variant="hover">Get Ach & Check Solutions</Button>
+          <ContactUsButton variant="hover">Get Ach & Check Solutions</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -363,7 +363,7 @@ const Payments = () => {
             className="w-52 sm:w-66 xl:w-78 2xl:w-86 mx-auto"
           />
         </div>
-        <Button variant="hover">Get Fraud Protection</Button>
+        <ContactUsButton variant="hover">Get Fraud Protection</ContactUsButton>
       </PageLayout>
 
       <section className=" bg-secondary py-12">
@@ -375,7 +375,7 @@ const Payments = () => {
 
           <FeaturesList features={LegalManagement} grid3 center />
 
-          <Button variant="hover">GET PAYMENT SOFTWARE SUPPORT</Button>
+          <ContactUsButton variant="hover">GET PAYMENT SOFTWARE SUPPORT</ContactUsButton>
         </PageLayout>
       </section>
 

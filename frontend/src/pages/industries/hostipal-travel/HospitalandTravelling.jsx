@@ -2,7 +2,7 @@ import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 import VideoPoster from "@/custom/VideoPoster";
 
@@ -39,7 +39,9 @@ export default function HospitalandTravelling() {
 
         <FeaturesList features={hospitalityServices} grid3 center />
 
-        <Button variant="hover">GET HOSPITILITY MGMT SOLUTIONS</Button>
+        <ContactUsButton variant="hover">
+          GET HOSPITILITY MGMT SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       <section className="relative w-full overflow-hidden">
@@ -59,7 +61,9 @@ export default function HospitalandTravelling() {
 
           <FeaturesList features={hospitalityAdditionalServices} grid3 center />
 
-          <Button variant="hover">GET HOSPITILITY MGMT SOLUTIONS</Button>
+          <ContactUsButton variant="hover">
+            GET HOSPITILITY MGMT SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -70,7 +74,9 @@ export default function HospitalandTravelling() {
         />
 
         <FeaturesListOpposite features={aiHospitalitySolutions} grid />
-        <Button variant="hover">GET HOSPITILITY & TRAVEL SOFTWARE</Button>
+        <ContactUsButton variant="hover">
+          GET HOSPITILITY & TRAVEL SOFTWARE
+        </ContactUsButton>
       </PageLayout>
 
       {/* === SUPPORT SERVICES SECTION === */}
@@ -82,7 +88,9 @@ export default function HospitalandTravelling() {
 
         <FeaturesListOpposite features={hospitalitySupportServices} grid />
 
-        <Button variant="hover">GET HOSPITILITY & TRAVEL SOFTWARE</Button>
+        <ContactUsButton variant="hover">
+          GET HOSPITILITY & TRAVEL SOFTWARE
+        </ContactUsButton>
       </PageLayout>
 
       {/* === TRAVELPORT INTEGRATION SECTION === */}
@@ -107,7 +115,9 @@ export default function HospitalandTravelling() {
             />
           </div>
 
-          <Button variant="hover">GET TRAVEL PORT SOFTWARE SOLUTIONS</Button>
+          <ContactUsButton variant="hover">
+            GET TRAVEL PORT SOFTWARE SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -131,7 +141,9 @@ export default function HospitalandTravelling() {
           />
         </div>
 
-        <Button variant="hover">GET SABRE SOFTWARE SOLUTIONS</Button>
+        <ContactUsButton variant="hover">
+          GET SABRE SOFTWARE SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       {/* === FAQ SECTION === */}

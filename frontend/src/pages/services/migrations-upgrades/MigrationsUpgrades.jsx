@@ -2,7 +2,7 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, TypographyMuted, TypographyH5 } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import {
@@ -36,7 +36,7 @@ const MigrationsUpgrades = () => {
           description="U Tech is a leading software development company providing expert data migration services. With years of experience, our skilled team migrates databases, servers, user accounts, agent jobs, and SSIS packages with minimal downtime. Our solutions ensure a smooth transition from outdated to modern systems, enhancing efficiency and reducing costs. Whether migrating to the cloud or upgrading platforms, U Tech's data migration solutions are tailored to meet your unique needs and ensure a successful outcome."
         />
         <FeaturesList features={migrationServicesfedus} fadeUp={fadeUp} grid iconAlign="horizontal" />
-        <Button variant="hover">REQUEST MIGRATION SERVICES</Button>
+        <ContactUsButton variant="hover">REQUEST MIGRATION SERVICES</ContactUsButton>
         <FadeInWhenVisible delay={0.5}>
           <img
             loading="lazy"
@@ -55,7 +55,7 @@ const MigrationsUpgrades = () => {
             description="U Tech’s software specialists leverage Artificial Intelligence to streamline workflow and ensure seamless data transition to cloud-based and existing platforms. Our AI-enhanced data migration automates data management, report generation, and project monitoring to enable data-driven decisions and boost business intelligence."
           />
           <FeaturesList features={migrationfedus} fadeUp={fadeUp} grid iconAlign="horizontal" />
-          <Button variant="hover">GET AI SOLUTIONS FOR DATA MIGRATION</Button>
+          <ContactUsButton variant="hover">GET AI SOLUTIONS FOR DATA MIGRATION</ContactUsButton>
         </PageLayout>
       </section>
 
@@ -83,7 +83,7 @@ const MigrationsUpgrades = () => {
             <FeaturesList features={migrationFeatures} fadeUp={fadeUp} iconAlign="horizontal" />
           </div>
         </div>
-        <Button variant="hover">AUTOMATE YOUR DATABASE MIGRATION</Button>
+        <ContactUsButton variant="hover">AUTOMATE YOUR DATABASE MIGRATION</ContactUsButton>
       </PageLayout>
 
       {/* === Remote DBA Services Section === */}
@@ -131,7 +131,7 @@ const MigrationsUpgrades = () => {
             />
           </div>
         </div>
-        <Button variant="hover">HIRE DATA MIGRATION EXPERTS</Button>
+        <ContactUsButton variant="hover">HIRE DATA MIGRATION EXPERTS</ContactUsButton>
       </PageLayout>
 
       {/* === Migration Tools Logos Section === */}
@@ -172,7 +172,7 @@ const MigrationsUpgrades = () => {
           description="Our highly skilled IT professionals provide expert data migration support services to ensure seamless transitions. We offer specialized assistance, timely troubleshooting and debugging, and active monitoring services."
         />
         <FeaturesList features={migrationData} fadeUp={fadeUp} grid iconAlign="horizontal" />
-        <Button variant="hover">GET DATA MIGRATION SUPPORT</Button>
+        <ContactUsButton variant="hover">GET DATA MIGRATION SUPPORT</ContactUsButton>
       </PageLayout>
 
       {/* === FAQ SECTION === */}

@@ -5,7 +5,7 @@ import { TestimonialSection } from "@/components/TestimonialSection";
 import { FeaturesList } from "@/components/FeaturesList";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import FaqSection from "@/custom/FaqSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, TypographyH3, TypographyMuted } from "@/custom/Typography";
 import {
     dmsAdvancedFeatures,
@@ -59,9 +59,9 @@ export default function DocumentManagement() {
                         ))
                     }
                 </div>
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     BOOK YOUR FREE DMS CONSULTATION
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <PageLayout className="py-12 text-center space-y-10">
@@ -89,9 +89,9 @@ export default function DocumentManagement() {
                     grid
                 />
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     BOOK YOUR FREE DMS CONSULTATION
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16">
@@ -120,9 +120,9 @@ export default function DocumentManagement() {
                         grid
                     />
 
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         BOOK YOUR FREE DMS CONSULTATION
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -161,9 +161,9 @@ export default function DocumentManagement() {
                     </FadeInWhenVisible>
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     BOOK YOUR FREE DMS CONSULTATION
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
 
@@ -178,9 +178,9 @@ export default function DocumentManagement() {
                         grid3
                         center
                     />
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         BOOK YOUR FREE DMS CONSULTATION
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 

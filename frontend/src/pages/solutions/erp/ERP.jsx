@@ -3,7 +3,7 @@ import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
-import { Button } from "@/components/ui/button";
+import ContactUsButton from "@/custom/ContactUsButton";
 import PortfolioGrid from "@/components/PortfolioGrid";
 import { Headline, TypographySmall } from "@/custom/Typography";
 import { Check } from "lucide-react";
@@ -63,9 +63,9 @@ export default function ERP() {
                         iconAlign="horizontal"
                     />
                 </div>
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     GET CUSTOM ERP SOLUTIONS
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             <section className="bg-secondary py-16">
@@ -77,9 +77,9 @@ export default function ERP() {
                     <FeaturesListOpposite
                         features={erpAiServices}
                     />
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET AI-POWERED ERP SOLUTIONS
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -93,9 +93,9 @@ export default function ERP() {
                     center
                     grid3
                 />
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     REQUEST A CUSTOM ERP CONSULTATION
-                </Button>
+                </ContactUsButton>
                 <FadeInWhenVisible>
                     <img
                         loading="lazy"
@@ -161,9 +161,9 @@ export default function ERP() {
                     <FeaturesListOpposite
                         features={erpSupportSolutions}
                     />
-                    <Button variant="hover">
+                    <ContactUsButton variant="hover">
                         GET EXPERT ERP SUPPORT
-                    </Button>
+                    </ContactUsButton>
                 </PageLayout>
             </section>
 
@@ -190,9 +190,9 @@ export default function ERP() {
                     </FadeInWhenVisible>
                 </div>
 
-                <Button variant="hover">
+                <ContactUsButton variant="hover">
                     Start Your ERP Implementation Journey
-                </Button>
+                </ContactUsButton>
             </PageLayout>
 
             {/* === FAQ SECTION === */}
