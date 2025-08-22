@@ -3,7 +3,6 @@ import { Card } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline } from "@/custom/Typography";
 import { TypographyH6, TypographyMuted } from "@/custom/Typography";
@@ -95,9 +94,11 @@ export default function BPO() {
           description="Our specialized industry-specific teams provide skill, intelligence, and efficiency to drive value and growth. With our innovative resources, we will help you increase operational flexibility."
         />
 
-        <FeaturesList features={bpoServices} fadeUp={fadeUp} grid iconAlign="horizontal" />
+        <FeaturesList features={bpoServices} grid iconAlign="horizontal" />
 
-        <ContactUsButton variant="hover">HIRE BPO ONE-STOP SHOP</ContactUsButton>
+        <ContactUsButton variant="hover">
+          HIRE BPO ONE-STOP SHOP
+        </ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-16 mt-8">
@@ -106,7 +107,7 @@ export default function BPO() {
             title="Flexible Business Process Outsourcing Services"
             description="We offer a wide variety of BPO services to support your non-core processes and facilitate growth and scalability."
           />
-          <FeaturesList features={servicesData} fadeUp={fadeUp} grid iconAlign="horizontal" />
+          <FeaturesList features={servicesData} grid iconAlign="horizontal" />
 
           <ContactUsButton variant="hover">Get BPO SERVICES</ContactUsButton>
         </PageLayout>
@@ -117,9 +118,11 @@ export default function BPO() {
           title="Industry Specific BPO Services"
           description="Our BPO services fulfill the needs of companies across various industries, covering key processes to enable your business to have a competitive advantage."
         />
-        <FeaturesList features={industriesData} fadeUp={fadeUp} grid iconAlign="horizontal" />
+        <FeaturesList features={industriesData} grid iconAlign="horizontal" />
 
-        <ContactUsButton variant="hover">HIRE A RELIABLE BPO RESOURCE</ContactUsButton>
+        <ContactUsButton variant="hover">
+          HIRE A RELIABLE BPO RESOURCE
+        </ContactUsButton>
       </PageLayout>
 
       <section className="py-12 bg-secondary">
@@ -130,17 +133,14 @@ export default function BPO() {
           />
 
           <div className="grid grid-cols-1 items-center sm:grid-cols-2 gap-8">
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/services/bpo/infrastructure-1.avif"
-                alt="Portfolio"
-                className="w-135 mx-auto"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/services/bpo/infrastructure-1.avif"
+              alt="Portfolio"
+              className="w-145 xl:w-155 2xl:w-175 mx-auto"
+            />
             <FeaturesList
               features={facilityFeatures.slice(0, 2)}
-              fadeUp={fadeUp}
               iconAlign="horizontal"
             />
           </div>
@@ -148,27 +148,24 @@ export default function BPO() {
           <div className="grid grid-cols-1 items-center sm:grid-cols-2 gap-8">
             <FeaturesList
               features={facilityFeatures.slice(2, 4)}
-              fadeUp={fadeUp}
               iconAlign="horizontal"
             />
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/services/bpo/infrastructure-2.avif"
-                alt="Portfolio"
-                className="w-135 mx-auto"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/services/bpo/infrastructure-2.avif"
+              alt="Portfolio"
+              className="w-145 xl:w-155 2xl:w-175 mx-auto"
+            />
           </div>
         </PageLayout>
-      </section >
+      </section>
 
       <PageLayout className="space-y-10 py-16 text-center">
         <Headline
           title="Hire Top Talent"
           description="U Tech recruits top talent that goes through a rigorous hiring process followed by thorough training and development to provide optimal service."
         />
-        <FeaturesList features={companyHighlights} fadeUp={fadeUp} grid center />
+        <FeaturesList features={companyHighlights} grid center />
 
         <ContactUsButton variant="hover">WORK WITH TOP TALENT</ContactUsButton>
       </PageLayout>
@@ -180,15 +177,13 @@ export default function BPO() {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-          <FadeInWhenVisible delay={0.5}>
-            <img
-              loading="lazy"
-              src="/assets/services/bpo/devops-support.png"
-              alt="Portfolio"
-              className="w-135 mx-auto"
-            />
-          </FadeInWhenVisible>
-          <FeaturesList features={technicalSolutions} fadeUp={fadeUp} grid center />
+          <img
+            loading="lazy"
+            src="/assets/services/bpo/devops-support.png"
+            alt="Portfolio"
+            className="w-145 xl:w-155 2xl:w-175 mx-auto"
+          />
+          <FeaturesList features={technicalSolutions} grid center />
         </div>
 
         <ContactUsButton variant="hover">GET DEVOP'S SUPPORT</ContactUsButton>

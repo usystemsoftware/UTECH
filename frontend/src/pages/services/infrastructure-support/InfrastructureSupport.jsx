@@ -1,13 +1,8 @@
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
 import ContactUsButton from "@/custom/ContactUsButton";
-import {
-  Headline,
-  TypographyMuted,
-  TypographyH5,
-} from "@/custom/Typography";
+import { Headline, TypographyMuted, TypographyH5 } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import {
   infrastructureCustom,
@@ -39,52 +34,58 @@ const InfrastructureSupport = () => {
         />
 
         {/* === DBMS Support Section === */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-          <div className="space-y-4 md:text-start text-center">
-            <TypographyH5>Data Storage & Database IT Support Services</TypographyH5>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div className="space-y-4 md:text-start text-center order-2 md:order-1">
+            <TypographyH5>
+              Data Storage & Database IT Support Services
+            </TypographyH5>
             <TypographyMuted>
-              We offer cross-platform support for cloud-based and on-premise databases, leveraging machine learning technologies to revamp database management systems (DBMS).
+              We offer cross-platform support for cloud-based and on-premise
+              databases, leveraging machine learning technologies to revamp
+              database management systems (DBMS).
             </TypographyMuted>
             <FeaturesList
               features={infrastructureCustom.slice(0, 3)}
-              fadeUp={fadeUp}
               iconAlign="horizontal"
             />
           </div>
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/services/introstructure-support/introstructuresupport.png"
-              alt="Secure Planning Dashboard"
-              className="mx-auto w-145 hidden sm:block"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/services/introstructure-support/introstructuresupport.png"
+            alt="Secure Planning Dashboard"
+            className="w-145 xl:w-155 2xl:w-175 mx-auto order-1 md:order-2"
+          />
         </div>
 
         {/* === Help Desk Section === */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-          <FadeInWhenVisible className="hidden sm:block">
-            <img
-              loading="lazy"
-              src="/assets/services/introstructure-support/recovery.png"
-              alt="Secure Planning Dashboard"
-              className="h-110 md:h-130 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/services/introstructure-support/recovery.png"
+            alt="Secure Planning Dashboard"
+            className="h-78 sm:h-110 md:h-130 mx-auto"
+          />
+
           <div className="space-y-4 md:text-start text-center">
-            <TypographyH5>24/7 IT Infrastructure Help Desk Management</TypographyH5>
+            <TypographyH5>
+              24/7 IT Infrastructure Help Desk Management
+            </TypographyH5>
             <TypographyMuted>
-              We provide 24/7 support for your business user community to address all technical requests and IT inquiries, infrastructure management, enabling onsite & remote help desk architecture creation & management.
+              We provide 24/7 support for your business user community to
+              address all technical requests and IT inquiries, infrastructure
+              management, enabling onsite & remote help desk architecture
+              creation & management.
             </TypographyMuted>
             <FeaturesList
               features={infrastructureCustom.slice(3, 7)}
-              fadeUp={fadeUp}
               reverse
               iconAlign="horizontal"
             />
           </div>
         </div>
-        <ContactUsButton variant="hover">GET IT SUPPORT & MAINTENANCE</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET IT SUPPORT & MAINTENANCE
+        </ContactUsButton>
       </PageLayout>
 
       {/* === SECURITY & MODERNIZATION SECTION === */}
@@ -94,24 +95,31 @@ const InfrastructureSupport = () => {
             title="Secure & Modernize Your IT Operations With U Tech"
             description="U Tech secures & modernizes your IT operations by adopting, integrating, and implementing innovative technologies that keep your business systems up-to-date."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <div className="text-start space-y-4">
-              <TypographyH5>IT Infrastructure Security & Modernization</TypographyH5>
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+            <div className="text-start space-y-4 order-2 md:order-1">
+              <TypographyH5>
+                IT Infrastructure Security & Modernization
+              </TypographyH5>
               <TypographyMuted>
-                We perform vulnerability scans, SSL/AES encryptions, and other server security best practices for SQL Server, MySQL, PostgreSQL, MongoDB, Oracle, Informix, Db2, and other databases.
+                We perform vulnerability scans, SSL/AES encryptions, and other
+                server security best practices for SQL Server, MySQL,
+                PostgreSQL, MongoDB, Oracle, Informix, Db2, and other databases.
               </TypographyMuted>
-              <FeaturesList features={infrastructureFeatures} fadeUp={fadeUp} iconAlign="horizontal" />
-            </div>
-            <FadeInWhenVisible className='hidden sm:block'>
-              <img
-                loading="lazy"
-                src="/assets/services/introstructure-support/secure.png"
-                alt="Secure Planning Dashboard"
-                className="w-145 mx-auto"
+              <FeaturesList
+                features={infrastructureFeatures}
+                iconAlign="horizontal"
               />
-            </FadeInWhenVisible>
+            </div>
+            <img
+              loading="lazy"
+              src="/assets/services/introstructure-support/secure.png"
+              alt="Secure Planning Dashboard"
+              className="w-145 xl:w-155 2xl:w-175 mx-auto order-1 md:order-2"
+            />
           </div>
-          <ContactUsButton variant="hover">MODERNIZE IT OPERATIONS NOW</ContactUsButton>
+          <ContactUsButton variant="hover">
+            MODERNIZE IT OPERATIONS NOW
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -121,27 +129,25 @@ const InfrastructureSupport = () => {
           title="Support Integration Services in IT Infrastructure"
           description="Our developers create customized online payment systems and security modules for businesses to accept every type of payment online with ease.."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-6">
           <FeaturesList
             features={infrastructuresupportSolutions.slice(0, 2)}
-            fadeUp={fadeUp}
             center
           />
-          <FadeInWhenVisible className="md:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/services/introstructure-support/modernization.png"
-              alt="Mobile Analytics App"
-              className="mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/services/introstructure-support/modernization.png"
+            alt="Mobile Analytics App"
+            className="w-145 xl:w-155 2xl:w-175 mx-auto"
+          />
           <FeaturesList
             features={infrastructuresupportSolutions.slice(2, 4)}
-            fadeUp={fadeUp}
             center
           />
         </div>
-        <ContactUsButton variant="hover">GET IT SUPPORT INTEGRATION NOW</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET IT SUPPORT INTEGRATION NOW
+        </ContactUsButton>
       </PageLayout>
 
       {/* === MONITORING TOOL INTEGRATIONS SECTION === */}
@@ -151,23 +157,18 @@ const InfrastructureSupport = () => {
             title="IT Infrastructure Monitoring Tool Integrations"
             description="We leverage leading IT infrastructure monitoring solutions for your existing IT infrastructures to maintain the health and integrity of your databases, servers, applications, and resources.."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
-            <FeaturesList
-              fadeUp={fadeUp}
-              features={dicominfrastructure}
-              grid
-              center
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
+            <FeaturesList features={dicominfrastructure} grid center />
+            <img
+              loading="lazy"
+              src="/assets/services/introstructure-support/integrations.png"
+              alt="Portfolio"
+              className="w-145 xl:w-155 2xl:w-175 mx-auto"
             />
-            <FadeInWhenVisible delay={0.5}>
-              <img
-                loading="lazy"
-                src="/assets/services/introstructure-support/integrations.png"
-                alt="Portfolio"
-                className="w-135 mx-auto"
-              />
-            </FadeInWhenVisible>
           </div>
-          <ContactUsButton variant="hover">GET IT INFRASTRUCTURE MONITORING NOW</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET IT INFRASTRUCTURE MONITORING NOW
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -177,13 +178,10 @@ const InfrastructureSupport = () => {
           title="Elevate Your IT Infrastructure with Intelligent AI Solutions"
           description="U Tech harnesses the power of Artificial Intelligence to transform your IT infrastructure. Our skilled developers customize and deploy intelligent solutions to optimize your systems and drive unparalleled performance."
         />
-        <FeaturesList
-          features={Custominfrastructuregame}
-          fadeUp={fadeUp}
-          grid3
-          center
-        />
-        <ContactUsButton variant="hover">Get AI-enabled It Infrastructure</ContactUsButton>
+        <FeaturesList features={Custominfrastructuregame} grid3 center />
+        <ContactUsButton variant="hover">
+          Get AI-enabled It Infrastructure
+        </ContactUsButton>
       </PageLayout>
 
       {/* === ENHANCED SUPPORT SERVICES SECTION === */}
@@ -195,11 +193,12 @@ const InfrastructureSupport = () => {
           />
           <FeaturesList
             features={infrastructureServicesfedus}
-            fadeUp={fadeUp}
             grid
             iconAlign="horizontal"
           />
-          <ContactUsButton variant="hover">Enhance IT Infrastructure Now</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Enhance IT Infrastructure Now
+          </ContactUsButton>
         </PageLayout>
       </section>
 

@@ -1,7 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesList } from "@/components/FeaturesList";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { Headline, TypographyH3, TypographyMuted } from "@/custom/Typography";
 import {
@@ -27,16 +26,14 @@ const QualityAssurance = () => {
       {/* === CROSS PLATFORM INTRO + PLATFORMS SECTION === */}
       <PageLayout className="py-16 space-y-8">
         {/* Intro headline */}
-        <FadeInWhenVisible>
-          <Headline
-            title="Software Quality Assurance Testing Services"
-            description="U Tech brings together the most reliable expertise, processes, technologies, and QA testing specialists to deliver high value-added and agile-aligned QA & software testing solutions that you can trust."
-          />
-        </FadeInWhenVisible>
+        <Headline
+          title="Software Quality Assurance Testing Services"
+          description="U Tech brings together the most reliable expertise, processes, technologies, and QA testing specialists to deliver high value-added and agile-aligned QA & software testing solutions that you can trust."
+        />
 
         {/* Cross-platform features and image */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 space-y-12 items-center">
-          <FadeInWhenVisible className="space-y-4 text-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 space-y-12 items-center">
+          <div className="space-y-4 text-start">
             <TypographyH3>Software QA Web & Mobile App Testing</TypographyH3>
             <TypographyMuted>
               U Technology's seasoned test architects and engineers provide
@@ -49,16 +46,14 @@ const QualityAssurance = () => {
               features={mobileAppPlatforms}
               iconAlign="horizontal"
             />
-          </FadeInWhenVisible>
+          </div>
 
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/services/quality-assurance/assurance.png"
-              alt="Mobile App Devices"
-              className="h-auto mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/services/quality-assurance/assurance.png"
+            alt="Mobile App Devices"
+            className="w-145 xl:w-155 2xl:w-175 mx-auto"
+          />
         </div>
       </PageLayout>
 
@@ -69,25 +64,19 @@ const QualityAssurance = () => {
             title="Harness the Power of U Technology's QA Testing Solutions"
             description="Augment your software development A-team with U Technology's custom-tailored QA software testing solutions."
           />
-          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <FeaturesList
-              features={qualityPlatforms.slice(0, 2)}
-              center
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8">
+            <FeaturesList features={qualityPlatforms.slice(0, 2)} center />
+            <img
+              loading="lazy"
+              src="/assets/services/quality-assurance/solution.png"
+              alt="Tax Preparation"
+              className="sm:w-54 w-48 xl:w-56 2xl:w-68 mx-auto"
             />
-            <FadeInWhenVisible className="md:block hidden">
-              <img
-                loading="lazy"
-                src="/assets/services/quality-assurance/solution.png"
-                alt="Tax Preparation"
-                className="w-54 mx-auto"
-              />
-            </FadeInWhenVisible>
-            <FeaturesList
-              features={qualityPlatforms.slice(2, 4)}
-              center
-            />
+            <FeaturesList features={qualityPlatforms.slice(2, 4)} center />
           </div>
-          <ContactUsButton variant="hover">Get QA Testing Solutions</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Get QA Testing Solutions
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -99,15 +88,13 @@ const QualityAssurance = () => {
         />
 
         {/* Cross-platform features and image */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 space-y-12 items-center">
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/services/quality-assurance/testing.png"
-              alt="Mobile App Devices"
-              className="h-auto mx-auto"
-            />
-          </FadeInWhenVisible>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 space-y-12 items-center">
+          <img
+            loading="lazy"
+            src="/assets/services/quality-assurance/testing.png"
+            alt="Mobile App Devices"
+            className="w-145 xl:w-155 2xl:w-175 mx-auto"
+          />
           <div className="space-y-4">
             <TypographyH3>Software QA Testing Solutions</TypographyH3>
             <TypographyMuted>
@@ -118,10 +105,7 @@ const QualityAssurance = () => {
               regression, performance, usability security, and compatibility
               testing..
             </TypographyMuted>
-            <FeaturesList
-              features={CustomQuality}
-              iconAlign="horizontal"
-            />
+            <FeaturesList features={CustomQuality} iconAlign="horizontal" />
           </div>
         </div>
       </PageLayout>
@@ -134,13 +118,11 @@ const QualityAssurance = () => {
             description="Elevate your IT efforts to new heights by leveraging our custom QA Testing Solutions designed specifically for your website or application."
           />
 
-          <FeaturesList
-            features={supportServices}
-            grid3
-            center
-          />
+          <FeaturesList features={supportServices} grid3 center />
 
-          <ContactUsButton variant="hover">GET WEB SUPPORT ON-DEMAND</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET WEB SUPPORT ON-DEMAND
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -176,7 +158,9 @@ const QualityAssurance = () => {
         </div>
 
         {/* CTA button */}
-        <ContactUsButton variant="hover">Test Your Software Now</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Test Your Software Now
+        </ContactUsButton>
       </PageLayout>
     </div>
   );

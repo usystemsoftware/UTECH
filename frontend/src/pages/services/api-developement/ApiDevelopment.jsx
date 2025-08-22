@@ -4,9 +4,7 @@ import { FeaturesList } from "@/components/FeaturesList";
 import ContactUsButton from "@/custom/ContactUsButton";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 
-// Data imports
 import {
   AiApiFeatures,
   faqs,
@@ -37,27 +35,33 @@ const ApiDevelopment = () => {
           description="U Tech custom API solutions support a range of integration protocols, including REST, SOAP, XML, and RPC API. Our developers have extensive experience creating custom application programming interfaces using these protocols to ensure seamless integration between your systems."
         />
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8 ">
           {/* Left Features List */}
-          <FeaturesList features={features.slice(0, 2)} fadeUp={fadeUp} iconAlign="horizontal" />
+          <FeaturesList
+            features={features.slice(0, 2)}
+            iconAlign="horizontal"
+          />
 
           {/* Center Animation */}
-          <FadeInWhenVisible className="md:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/services/api-development/cellphone-animation.gif"
-              alt="Mobile Analytics App"
-              className="w-56 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/services/api-development/cellphone-animation.gif"
+            alt="Mobile Analytics App"
+            className="w-42 sm:w-52 xl:w-56 2xl:w-62 mx-auto"
+          />
 
           {/* Right Features List */}
-          <FeaturesList features={features.slice(3, 6)} fadeUp={fadeUp} iconAlign="horizontal" />
+          <FeaturesList
+            features={features.slice(3, 6)}
+            iconAlign="horizontal"
+          />
         </div>
 
         {/* Call to Action ContactUsButton */}
         {/* <FadeInWhenVisible> */}
-        <ContactUsButton variant="hover">CUSTOMIZE YOUR BANKING SOLUTION NOW</ContactUsButton>
+        <ContactUsButton variant="hover">
+          CUSTOMIZE YOUR BANKING SOLUTION NOW
+        </ContactUsButton>
         {/* </FadeInWhenVisible> */}
       </PageLayout>
 
@@ -69,7 +73,7 @@ const ApiDevelopment = () => {
         />
 
         {/* Feature Cards Grid */}
-        <FeaturesList features={AiApiFeatures} fadeUp={fadeUp} grid3 center />
+        <FeaturesList features={AiApiFeatures} grid3 center />
 
         {/* Call to Action */}
         {/* <FadeInWhenVisible> */}
@@ -86,15 +90,13 @@ const ApiDevelopment = () => {
 
         {/* APIaaS Image + Feature Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
-          <FadeInWhenVisible className="md:block hidden">
-            <img
-              loading="lazy"
-              src="/assets/services/api-development/third-party-software-integration.png"
-              alt="Mobile Analytics App"
-              className="w-56 mx-auto"
-            />
-          </FadeInWhenVisible>
-          <FeaturesList features={services} fadeUp={fadeUp} grid />
+          <img
+            loading="lazy"
+            src="/assets/services/api-development/third-party-software-integration.png"
+            alt="Mobile Analytics App"
+            className="w-42 sm:w-52 xl:w-56 2xl:w-62 mx-auto"
+          />
+          <FeaturesList features={services} grid />
         </div>
 
         {/* CTA */}
@@ -113,11 +115,13 @@ const ApiDevelopment = () => {
         />
 
         {/* Two-Column Functionality Grid */}
-        <FeaturesList features={apiFunctionality} fadeUp={fadeUp} grid />
+        <FeaturesList features={apiFunctionality} grid />
 
         {/* CTA */}
         {/* <FadeInWhenVisible> */}
-        <ContactUsButton variant="hover">GET THIRD-PARTY API FUNCTIONALITY</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET THIRD-PARTY API FUNCTIONALITY
+        </ContactUsButton>
         {/* </FadeInWhenVisible> */}
       </PageLayout>
 
@@ -129,7 +133,7 @@ const ApiDevelopment = () => {
         />
 
         {/* Support Cards */}
-        <FeaturesList features={support} fadeUp={fadeUp} grid iconAlign="horizontal" />
+        <FeaturesList features={support} grid iconAlign="horizontal" />
       </PageLayout>
 
       {/* ===== FAQ SECTION ===== */}
@@ -141,11 +145,7 @@ const ApiDevelopment = () => {
       <div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {portfolioItems.map((item, index) => (
-            <FadeInWhenVisible
-              delay={index * 0.2}
-              key={index}
-              className="relative group overflow-hidden"
-            >
+            <div key={index} className="relative group overflow-hidden">
               <img
                 loading="lazy"
                 src={item.img}
@@ -159,7 +159,7 @@ const ApiDevelopment = () => {
                   </TypographyH3>
                 </div>
               )}
-            </FadeInWhenVisible>
+            </div>
           ))}
         </div>
       </div>

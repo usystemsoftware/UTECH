@@ -1,6 +1,5 @@
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { Check } from "lucide-react";
@@ -37,25 +36,15 @@ const ApplicationMaintenance = () => {
           Application Maintenance Services
         </TypographyH3>
         {/* === APPLICATION MAINTENANCE FEATURES SECTION === */}
-        <div className="block md:hidden">
-          <FeaturesList
-            features={Application}
-            grid
-            center
-          />
-        </div>
-
-        <div className="md:grid hidden grid-cols-1 md:grid-cols-3 sm:grid-cols-2 mt-8 items-center gap-8 space-y-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 mt-8 items-center gap-8">
           <FeaturesList features={Application.slice(0, 3)} center />
 
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/services/application-maintenanc/experts.jpg"
-              alt="Mobile App Devices"
-              className="h-110 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/services/application-maintenanc/experts.jpg"
+            alt="Mobile App Devices"
+            className="sm:w-78 w-52 xl:w-96 2xl:w-110 mx-auto"
+          />
 
           <FeaturesList features={Application.slice(3, 6)} center />
         </div>
@@ -72,10 +61,16 @@ const ApplicationMaintenance = () => {
             description="Applications are long-term investments, and U Technology's Application Support Services encompass technical expertise, software maintenance, extended support, and exceptional customer service, all aimed at keeping your applications running optimally."
           />
 
-          <FeaturesList features={ApplicationSupport} grid3 iconAlign="horizontal" />
+          <FeaturesList
+            features={ApplicationSupport}
+            grid3
+            iconAlign="horizontal"
+          />
 
           {/* === CTA BUTTON: SUPPORT === */}
-          <ContactUsButton variant="hover">GET APPLICATION SUPPORT</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET APPLICATION SUPPORT
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -110,17 +105,15 @@ const ApplicationMaintenance = () => {
           </div>
 
           {/* === IMAGE + SUPPORT LIST === */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 items-center mt-12">
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/services/application-maintenanc/support.png"
-                alt="Support Dashboard"
-                className="mx-auto w-135"
-              />
-            </FadeInWhenVisible>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center mt-12">
+            <img
+              loading="lazy"
+              src="/assets/services/application-maintenanc/support.png"
+              alt="Support Dashboard"
+              className="w-145 xl:w-155 2xl:w-175 mx-auto"
+            />
 
-            <FadeInWhenVisible className="space-y-4">
+            <div className="space-y-4">
               <TypographyH3>BOH Support:</TypographyH3>
               <ul className="space-y-3 text-left">
                 {supportItems.map((item, index) => (
@@ -130,7 +123,7 @@ const ApplicationMaintenance = () => {
                   </li>
                 ))}
               </ul>
-            </FadeInWhenVisible>
+            </div>
           </div>
         </PageLayout>
       </section>
@@ -154,7 +147,7 @@ const ApplicationMaintenance = () => {
                     key={index}
                     loading="lazy"
                     src={`/assets/services/application-development/logos/${logo}.png`}
-                    className="h-8 mx-auto cursor-pointer hover:scale-105 transition-transform"
+                    className="mx-auto cursor-pointer hover:scale-105 transition-transform"
                     alt={logo}
                   />
                 ))}
