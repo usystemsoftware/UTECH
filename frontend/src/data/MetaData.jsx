@@ -529,7 +529,7 @@ export const metaData = {
       "services",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/implementation.jpg",
     "url": "${baseUrl}/services/implementation-deployment",
     "category": "Services",
     "published": "August 2025"
@@ -543,7 +543,7 @@ export const metaData = {
       "services",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/infrastructuresupport.jpg",
     "url": "${baseUrl}/services/infrastructure-support",
     "category": "Services",
     "published": "August 2025"
@@ -558,7 +558,7 @@ export const metaData = {
       "services",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/MigrationsUpgrades.jpg",
     "url": "${baseUrl}/services/migrations-upgrades",
     "category": "Services",
     "published": "August 2025"
@@ -573,7 +573,7 @@ export const metaData = {
       "services",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/noc.jpg",
     "url": "${baseUrl}/services/noc",
     "category": "Services",
     "published": "August 2025"
@@ -587,7 +587,7 @@ export const metaData = {
       "services",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/partner.jpg",
     "url": "${baseUrl}/services/partner-support",
     "category": "Services",
     "published": "August 2025"
@@ -602,7 +602,7 @@ export const metaData = {
       "services",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/product-lifecycle-management.jpeg",
     "url": "${baseUrl}/services/plm",
     "category": "Services",
     "published": "August 2025"
@@ -631,7 +631,7 @@ export const metaData = {
       "services",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/sla-support.jpeg",
     "url": "${baseUrl}/services/sla-support",
     "category": "Services",
     "published": "August 2025"
@@ -645,7 +645,7 @@ export const metaData = {
       "services",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/software-security.jpeg",
     "url": "${baseUrl}/services/software-security",
     "category": "Services",
     "published": "August 2025"
@@ -660,7 +660,7 @@ export const metaData = {
       "services",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/startup-mvp.jpeg",
     "url": "${baseUrl}/services/startup-mvp",
     "category": "Services",
     "published": "August 2025"
@@ -674,7 +674,7 @@ export const metaData = {
       "services",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/systems-integration.jpeg",
     "url": "${baseUrl}/services/systems-integration",
     "category": "Services",
     "published": "August 2025"
@@ -689,7 +689,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/animation-graphic-design-banner.jpg",
     "url": "${baseUrl}/solutions/animation-graphic-design",
     "category": "Solutions",
     "published": "August 2025"
@@ -703,7 +703,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/ai.jpg",
     "url": "${baseUrl}/solutions/ai",
     "category": "Solutions",
     "published": "August 2025"
@@ -717,7 +717,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/asset-tracking.jpg",
     "url": "${baseUrl}/solutions/asset-tracking",
     "category": "Solutions",
     "published": "August 2025"
@@ -732,7 +732,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/aar-vr.jpg",
     "url": "${baseUrl}/solutions/ar-vr",
     "category": "Solutions",
     "published": "August 2025"
@@ -746,7 +746,7 @@ export const metaData = {
       "cloud solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/aws.jpg",
     "url": "${baseUrl}/solutions/aws",
     "category": "Solutions",
     "published": "August 2025"
@@ -760,7 +760,7 @@ export const metaData = {
       "design solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/autodesk.jpg",
     "url": "${baseUrl}/solutions/autodesk",
     "category": "Solutions",
     "published": "August 2025"
@@ -774,7 +774,7 @@ export const metaData = {
       "security solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/biometrics.jpg",
     "url": "${baseUrl}/solutions/biometrics",
     "category": "Solutions",
     "published": "August 2025"
@@ -788,7 +788,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/blockchain.jpg",
     "url": "${baseUrl}/solutions/blockchain",
     "category": "Solutions",
     "published": "August 2025"
@@ -803,7 +803,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/bi-analytics.jpg",
     "url": "${baseUrl}/solutions/bi-analytics",
     "category": "Solutions",
     "published": "August 2025"
@@ -818,7 +818,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/cms-banner.jpeg",
     "url": "${baseUrl}/solutions/cms",
     "category": "Solutions",
     "published": "August 2025"
@@ -847,7 +847,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/cloud-application-development.jpg",
     "url": "${baseUrl}/solutions/cloud",
     "category": "Solutions",
     "published": "August 2025"
@@ -861,7 +861,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/acustom-database-development-services-banner.jpg",
     "url": "${baseUrl}/solutions/database",
     "category": "Solutions",
     "published": "August 2025"
@@ -876,7 +876,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/digital-asset-management-banner.jpg",
     "url": "${baseUrl}/solutions/digital-asset-management",
     "category": "Solutions",
     "published": "August 2025"
@@ -904,7 +904,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/document-management-banner.jpg",
     "url": "${baseUrl}/solutions/document-management",
     "category": "Solutions",
     "published": "August 2025"
@@ -933,7 +933,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/erp-banner.jpg",
     "url": "${baseUrl}/solutions/erp",
     "category": "Solutions",
     "published": "August 2025"
@@ -947,7 +947,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/facility-management-banner.jpg",
     "url": "${baseUrl}/solutions/facilities-management",
     "category": "Solutions",
     "published": "August 2025"
@@ -961,7 +961,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/fraud-protection-banner.jpg",
     "url": "${baseUrl}/solutions/fraud-protection",
     "category": "Solutions",
     "published": "August 2025"
@@ -976,7 +976,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/gis-banner.jpg",
     "url": "${baseUrl}/solutions/gis",
     "category": "Solutions",
     "published": "August 2025"
@@ -990,7 +990,7 @@ export const metaData = {
       "cloud solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/google-cloud-banner.jpg",
     "url": "${baseUrl}/solutions/google-cloud",
     "category": "Solutions",
     "published": "August 2025"
@@ -1004,7 +1004,7 @@ export const metaData = {
       "enterprise solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/ibm-new-banner.jpg",
     "url": "${baseUrl}/solutions/ibm",
     "category": "Solutions",
     "published": "August 2025"
@@ -1019,7 +1019,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/iot-m2m-banner.jpg",
     "url": "${baseUrl}/solutions/iot",
     "category": "Solutions",
     "published": "August 2025"
@@ -1033,7 +1033,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/kiosk-banner.jpg",
     "url": "${baseUrl}/solutions/kiosk",
     "category": "Solutions",
     "published": "August 2025"
@@ -1090,7 +1090,7 @@ export const metaData = {
       "enterprise solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/oracle-banner.jpg",
     "url": "${baseUrl}/solutions/oracle",
     "category": "Solutions",
     "published": "August 2025"
@@ -1104,7 +1104,7 @@ export const metaData = {
       "CRM solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/salesforce-banner.jpg",
     "url": "${baseUrl}/solutions/salesforce",
     "category": "Solutions",
     "published": "August 2025"
@@ -1118,7 +1118,7 @@ export const metaData = {
       "ERP solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/sap-banner.jpg",
     "url": "${baseUrl}/solutions/sap",
     "category": "Solutions",
     "published": "August 2025"
@@ -1147,7 +1147,7 @@ export const metaData = {
       "solutions",
       "U Tech"
     ],
-    "image": "banner/aec-banner.jpg",
+    "image": "banner/custom-ukg-banner.jpg",
     "url": "${baseUrl}/solutions/ukg",
     "category": "Solutions",
     "published": "August 2025"
