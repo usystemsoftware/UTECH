@@ -24,7 +24,7 @@ const highlightMatch = (text, query) => {
   ));
 };
 
-const NavbarMobile = () => {
+const NavbarMobile = ({ setIsCommandOpen }) => {
   const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
   const [openMenuIndex, setOpenMenuIndex] = useState(null);
@@ -63,9 +63,8 @@ const NavbarMobile = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 z-50 w-full transition-colors ${
-        open && "bg-white text-black"
-      } duration-300 ${scrolled ? "bg-white shadow" : "bg-transparent"}`}
+      className={`fixed top-0 left-0 z-50 w-full transition-colors ${open && "bg-white text-black"
+        } duration-300 ${scrolled ? "bg-white shadow" : "bg-transparent"}`}
     >
       <AccessibilityWidget />
       <div className="flex items-center justify-between px-4 py-4">
@@ -78,24 +77,27 @@ const NavbarMobile = () => {
               strokeWidth={2}
               name="Phone"
               size={19}
-              className={`cursor-pointer ${
-                scrolled || open ? "text-black dark:text-white" : "text-white"
-              }`}
+              className={`cursor-pointer ${scrolled || open ? "text-black dark:text-white" : "text-white"
+                }`}
             />
           </Link>
-          <IconRenderer
-            strokeWidth={2}
-            name="Search"
-            size={22}
-            className={`cursor-pointer ${
-              scrolled || open ? "text-black dark:text-white" : "text-white"
-            }`}
-          />
+          <button
+            onClick={() => setIsCommandOpen(true)}
+
+          >
+            <IconRenderer
+              strokeWidth={2}
+              name="Search"
+              size={22}
+              className={`cursor-pointer ${scrolled || open ? "text-black dark:text-white" : "text-white"
+                }`}
+            />
+          </button>
+
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className={`cursor-pointer ${
-              scrolled || open ? "text-black dark:text-white" : "text-white"
-            }`}
+            className={`cursor-pointer ${scrolled || open ? "text-black dark:text-white" : "text-white"
+              }`}
           >
             <IconRenderer
               strokeWidth={2}
@@ -134,11 +136,10 @@ const NavbarMobile = () => {
                       onClick={() =>
                         setOpenMenuIndex((prev) => (prev === idx ? null : idx))
                       }
-                      className={`flex w-full items-center justify-between px-3 py-2 text-sm font-medium rounded-md ${
-                        sectionMatch || isOpen
-                          ? "bg-blue-100 text-blue-800"
-                          : "text-muted-foreground"
-                      }`}
+                      className={`flex w-full items-center justify-between px-3 py-2 text-sm font-medium rounded-md ${sectionMatch || isOpen
+                        ? "bg-blue-100 text-blue-800"
+                        : "text-muted-foreground"
+                        }`}
                     >
                       <span>{highlightMatch(section.title, searchTerm)}</span>
                       <IconRenderer
@@ -160,11 +161,10 @@ const NavbarMobile = () => {
                               <Link
                                 to={item.href}
                                 onClick={() => setOpen(false)}
-                                className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${
-                                  selectedLink === item.href
-                                    ? "text-blue-800 font-medium"
-                                    : "text-muted-foreground hover:text-primary"
-                                }`}
+                                className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${selectedLink === item.href
+                                  ? "text-blue-800 font-medium"
+                                  : "text-muted-foreground hover:text-primary"
+                                  }`}
                               >
                                 <IconRenderer
                                   strokeWidth={2}
@@ -194,11 +194,10 @@ const NavbarMobile = () => {
                                   <Link
                                     to={link.href}
                                     onClick={() => setOpen(false)}
-                                    className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${
-                                      selectedLink === link.href
-                                        ? "text-blue-800 font-medium"
-                                        : "text-muted-foreground hover:text-primary"
-                                    }`}
+                                    className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${selectedLink === link.href
+                                      ? "text-blue-800 font-medium"
+                                      : "text-muted-foreground hover:text-primary"
+                                      }`}
                                   >
                                     {highlightMatch(link.label, searchTerm)}
                                   </Link>

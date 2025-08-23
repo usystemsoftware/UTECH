@@ -1,10 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NavbarDesktop from "./NavbarDesktop";
 import NavbarMobile from "./NavbarMobile";
 import { CommandSearch } from "@/custom/CommandSearch";
 
 const Navbar = () => {
   const [isCommandOpen, setIsCommandOpen] = useState(false);
+
+  useEffect(() => {
+    if (isCommandOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isCommandOpen]);
 
   return (
     <>
@@ -26,12 +37,12 @@ const Navbar = () => {
           onClick={() => setIsCommandOpen(false)} // close on background click
         >
           <div onClick={(e) => e.stopPropagation()}>
-            <CommandSearch />
+            <CommandSearch setIsCommandOpen={setIsCommandOpen} />
           </div>
         </div>
       )}
     </>
-  )
+  );
 };
 
 export default Navbar;
