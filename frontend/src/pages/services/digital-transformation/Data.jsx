@@ -30,7 +30,7 @@ export const digitalTransformationFeatures = [
     icon: "/assets/services/digital-transformation/icons/10005.svg",
     title: "Systems Integration",
     description:
-      "OU Technology’s digital transformation services can help you build a seamless technology environment by connecting systems, applications, and data sources. This will enable your organization to streamline operations while improving data management and enhancing key areas such as customer engagement.",
+      "OU Tech’s digital transformation services can help you build a seamless technology environment by connecting systems, applications, and data sources. This will enable your organization to streamline operations while improving data management and enhancing key areas such as customer engagement.",
   },
   {
     icon: "/assets/services/digital-transformation/icons/10006.svg",
@@ -107,7 +107,7 @@ export const industrySolutions = [
     icon: "/assets/services/digital-transformation/icons/10016.svg",
     title: "Digital Transformation in Healthcare",
     description:
-      "U Technology’s digital transformation services can help healthcare companies reduce administrative workload, enhance patient care, and ensure regulatory compliance. Custom software and mobile application development, systems integration, and intelligent automation are among the many solutions we provide, tailored for industry needs.",
+      "U Tech’s digital transformation services can help healthcare companies reduce administrative workload, enhance patient care, and ensure regulatory compliance. Custom software and mobile application development, systems integration, and intelligent automation are among the many solutions we provide, tailored for industry needs.",
     align: "right",
   },
   {
@@ -121,7 +121,7 @@ export const industrySolutions = [
     icon: "/assets/services/digital-transformation/icons/10018.svg",
     title: "Tech Enabled Hospitality & Travel",
     description:
-      "U Technology’s digital transformation experts can develop and implement digital transformation strategies tailored to hospitality & travel. We use innovative strategies and technologies to help companies enhance online booking, customer service, and inventory management. Drive growth and scalability while boosting customer engagement and satisfaction.",
+      "U Tech’s digital transformation experts can develop and implement digital transformation strategies tailored to hospitality & travel. We use innovative strategies and technologies to help companies enhance online booking, customer service, and inventory management. Drive growth and scalability while boosting customer engagement and satisfaction.",
     align: "right",
   },
 ];
@@ -179,7 +179,7 @@ export const facilityAssurance = [
     icon: "/assets/services/digital-transformation/icons/10022.svg",
     title: "Reliability",
     description:
-      "U Technology’s facilities have fast, reliable Internet connections with a 24/7 admin team. We also have backup generators to withstand outages and keep our operations going at full strength and efficiency. We offer real-time communication along with both proactive support and troubleshooting to resolve issues.",
+      "U Tech’s facilities have fast, reliable Internet connections with a 24/7 admin team. We also have backup generators to withstand outages and keep our operations going at full strength and efficiency. We offer real-time communication along with both proactive support and troubleshooting to resolve issues.",
   },
 ];
 
@@ -188,7 +188,7 @@ export const dxFeatures = [
     title: "DX Specialized Teams",
     icon: "/assets/services/digital-transformation/icons/10008.svg",
     description:
-      "U Technology’s industry-specific support teams are comprised of dedicated experts, having decades of specialized experience. Our teams keep up with trends, regulations, and processes to stay ahead and produce optimal solutions.",
+      "U Tech’s industry-specific support teams are comprised of dedicated experts, having decades of specialized experience. Our teams keep up with trends, regulations, and processes to stay ahead and produce optimal solutions.",
   },
   {
     title: "All-Encompassing Support",

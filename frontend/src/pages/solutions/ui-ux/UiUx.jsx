@@ -1,7 +1,6 @@
 import { TypographyMuted, TypographyH3, Headline } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import ContactUsButton from "@/custom/ContactUsButton";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import { FeaturesList } from "@/components/FeaturesList";
@@ -48,36 +47,40 @@ const UiUx = () => {
           title="Dynamic User Design Services for Smarter User Navigation"
           description="  The key to developing a successful app is marrying the functionality
             your users demand with an intuitive design and experience that make
-            it as simple as possible to use. U Technology UI/UX experts will
+            it as simple as possible to use. U Tech UI/UX experts will
             design the perfect web, desktop, or mobile app to meet your specific
             business requirements, industry needs, and product development
             goals. We design and develop
             innovative digital user experiences
             that solve complex business problems."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/solutions/ui-ux/mockup.png"
-              alt="Tax Preparation"
-              className="w-76 mx-auto"
-            />
-          </FadeInWhenVisible>
-          <FeaturesList features={uiuxServices.slice(0, 3)} fadeUp={fadeUp} iconAlign="horizontal" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <img
+            loading="lazy"
+            src="/assets/solutions/ui-ux/mockup.png"
+            alt="Tax Preparation"
+            className="w-62 sm:w-76 xl:w-82 2xl:w-86 mx-auto"
+          />
+          <FeaturesList
+            features={uiuxServices.slice(0, 3)}
+            iconAlign="horizontal"
+          />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-          <FeaturesList features={uiuxServices.slice(3, 6)} fadeUp={fadeUp} iconAlign="horizontal" />
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/solutions/ui-ux/mobile-mockup.png"
-              alt="Tax Preparation"
-              className="w-82 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <FeaturesList
+            features={uiuxServices.slice(3, 6)}
+            iconAlign="horizontal"
+          />
+          <img
+            loading="lazy"
+            src="/assets/solutions/ui-ux/mobile-mockup.png"
+            alt="Tax Preparation"
+            className="w-64 sm:w-76 xl:w-84 2xl:w-92 mx-auto"
+          />
         </div>
-        <ContactUsButton variant="hover">Hire Experienced UI/UX Developer</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Hire Experienced UI/UX Developer
+        </ContactUsButton>
       </PageLayout>
 
       {/* AI BENEFITS SECTION */}
@@ -85,10 +88,9 @@ const UiUx = () => {
         <PageLayout className="space-y-10">
           <Headline
             title="AI-Powered UI UX Development Services"
-            description="U Technology commitment to staying ahead of the technological curve is ushering in a new era of AI-powered innovation. Our commitment to seamless, intuitive design takes center stage as we harness the transformative capabilities of Artificial Intelligence."
+            description="U Tech commitment to staying ahead of the technological curve is ushering in a new era of AI-powered innovation. Our commitment to seamless, intuitive design takes center stage as we harness the transformative capabilities of Artificial Intelligence."
           />
-          <FeaturesList features={aiBenefits} fadeUp={fadeUp} grid3 center />
-
+          <FeaturesList features={aiBenefits} grid3 center />
         </PageLayout>
       </section>
 
@@ -100,25 +102,25 @@ const UiUx = () => {
             business goals and how to best serve your target audience with a
             seamless, intuitive, and pleasurable user experience."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
-          <FeaturesList features={processSteps.slice(0, 2)} fadeUp={fadeUp} center />
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/solutions/ui-ux/processes.png"
-              alt="Tax Preparation"
-              className="w-86 mx-auto"
-            />
-          </FadeInWhenVisible>
-          <FeaturesList features={processSteps.slice(2, 4)} fadeUp={fadeUp} center />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+          <FeaturesList features={processSteps.slice(0, 2)} center />
+          <img
+            loading="lazy"
+            src="/assets/solutions/ui-ux/processes.png"
+            alt="Tax Preparation"
+            className="w-76 xl:w-92 2xl:w-110 mx-auto"
+          />
+          <FeaturesList features={processSteps.slice(2, 4)} center />
         </div>
-        <ContactUsButton variant="hover">CUSTOMIZE YOUR UX/UI DESIGN</ContactUsButton>
+        <ContactUsButton variant="hover">
+          CUSTOMIZE YOUR UX/UI DESIGN
+        </ContactUsButton>
       </PageLayout>
 
       {/* TECHNOLOGY STACK SECTION */}
       <PageLayout className="text-center py-12">
         <Headline
-          title="U Technology's UX/UI Technology Stack"
+          title="U Tech's UX/UI Technology Stack"
           description="We use multiple platforms and programming languages to ensure our
           desktop and mobile UI/UX design services are versatile and leverage
           the full strength of these systems to provide computing power,
@@ -126,7 +128,7 @@ const UiUx = () => {
         />
         <div className="grid md:grid-cols-3 gap-12 space-y-8 text-center my-16">
           {uxUiTechStack?.map((item, idx) => (
-            <FadeInWhenVisible key={idx}>
+            <div key={idx}>
               <TypographyH3 className="text-lg font-semibold mb-2">
                 {item.title}
               </TypographyH3>
@@ -134,7 +136,7 @@ const UiUx = () => {
                 {item.description}
               </TypographyMuted>
               <LogoRow logos={item.logos} />
-            </FadeInWhenVisible>
+            </div>
           ))}
         </div>
 

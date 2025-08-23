@@ -37,7 +37,7 @@ export const Banking = () => (
     <PageLayout className="text-center py-16">
       <Headline
         title="Custom Banking Software Development"
-        description="U Technology’s team of expert developers cater to the technical needs of the ever-evolving banking sector by offering high quality software solutions that transform your core environment to streamline banking & financial workflows."
+        description="U Tech’s team of expert developers cater to the technical needs of the ever-evolving banking sector by offering high quality software solutions that transform your core environment to streamline banking & financial workflows."
       />
       <FeaturesGridnew
         leftFeatures={BankingSoftwareLeftFeatures}
@@ -82,7 +82,7 @@ export const Banking = () => (
     <section className="py-16 bg-secondary space-y-10 text-center">
       <Headline
         title="Custom Loan Servicing & Origination Solutions"
-        description="U Technology’s custom loan servicing and origination personalized solutions handle underwriting, origination, disbursement, servicing, amortization, processing, and so much more for financial services and institutions."
+        description="U Tech’s custom loan servicing and origination personalized solutions handle underwriting, origination, disbursement, servicing, amortization, processing, and so much more for financial services and institutions."
       />
       <PageLayout className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <img
@@ -105,7 +105,7 @@ export const Banking = () => (
     <section className="py-12 space-y-10 bg-secondary text-center">
       <Headline
         title="Custom Mobile Banking Software Solutions"
-        description="U Technology makes it possible for mobile banking software providers to customize features, such as electronic bill payments, remote check deposits, P2P payments, fund transfers between accounts, text messaging, and statement downloading & printing."
+        description="U Tech makes it possible for mobile banking software providers to customize features, such as electronic bill payments, remote check deposits, P2P payments, fund transfers between accounts, text messaging, and statement downloading & printing."
       />
       <PageLayout className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         <FeaturesList
@@ -128,7 +128,7 @@ export const Banking = () => (
     <section className="py-16 bg-secondary space-y-10 text-center">
       <Headline
         title="Custom Online Banking Software Systems"
-        description="U Technology’s financial software development services create robust, straightforward customizations to online banking systems for brick-and-mortar and FinTech companies of any size, built with incorporated branding for enhanced consistency & visibility."
+        description="U Tech’s financial software development services create robust, straightforward customizations to online banking systems for brick-and-mortar and FinTech companies of any size, built with incorporated branding for enhanced consistency & visibility."
       />
       <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center">
         <img
@@ -155,7 +155,7 @@ export const Banking = () => (
     <PageLayout className="py-12 space-y-10 text-center">
       <Headline
         title="Custom ATM Software Development"
-        description="U Technology's banking software developers are at the forefront of the industry, configuring and customizing existing ATM software, as well as providing end-to-end ATM software development services for national and international financial institutions."
+        description="U Tech's banking software developers are at the forefront of the industry, configuring and customizing existing ATM software, as well as providing end-to-end ATM software development services for national and international financial institutions."
       />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <FeaturesList features={BankingAtmFeatures.slice(0, 2)} center />
@@ -176,7 +176,7 @@ export const Banking = () => (
     <section className="bg-secondary py-16 space-y-8 text-center">
       <Headline
         title="Custom CORE Banking Solutions"
-        description="U Technology’s developers provide Centralized Online Real-Time Exchange (CORE) banking software services that effortlessly support all of a bank’s most common transactions, including making and servicing loans, opening new accounts, and processing cash deposits & withdrawals."
+        description="U Tech’s developers provide Centralized Online Real-Time Exchange (CORE) banking software services that effortlessly support all of a bank’s most common transactions, including making and servicing loans, opening new accounts, and processing cash deposits & withdrawals."
       />
       <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
         <FeaturesList features={BankingCoreFeatures} iconAlign="horizontal" />
@@ -198,7 +198,7 @@ export const Banking = () => (
     <PageLayout className="text-center space-y-8 my-12">
       <Headline
         title="Custom EMV Software Solutions"
-        description="U Technology provides a comprehensive, broad range of EMV software solutions from custom-coded programming to advanced feature implementation, enabling institutions to deliver secure data in sensitive environments."
+        description="U Tech provides a comprehensive, broad range of EMV software solutions from custom-coded programming to advanced feature implementation, enabling institutions to deliver secure data in sensitive environments."
       />
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         <FeaturesList features={BankingCustomEMVServices.slice(0, 2)} center />
@@ -219,7 +219,7 @@ export const Banking = () => (
     <section className="py-16 bg-secondary space-y-10 text-center">
       <Headline
         title="Check 21 Software & ACH Processing Solutions"
-        description="At U Technology, we customize your ACH payment processing and Check 21 capabilities to seamlessly integrate e-check processing functionality and credit card processing with secure verification systems and enhanced UX designs."
+        description="At U Tech, we customize your ACH payment processing and Check 21 capabilities to seamlessly integrate e-check processing functionality and credit card processing with secure verification systems and enhanced UX designs."
       />
       <PageLayout className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
         <img
@@ -239,7 +239,7 @@ export const Banking = () => (
     <PageLayout className="py-16 space-y-8 text-center">
       <Headline
         title="Banking Software Support"
-        description="Banking and fiscal services have seen a significant transformation because of the use of new software solutions and apps. U Technology’s banking software support enhances efficiency, reliability, and regulatory compliance while improving the customer experience."
+        description="Banking and fiscal services have seen a significant transformation because of the use of new software solutions and apps. U Tech’s banking software support enhances efficiency, reliability, and regulatory compliance while improving the customer experience."
       />
       <FeaturesListOpposite features={BankingSupportItems} />
       <ContactUsButton variant="hover" className="mt-8">

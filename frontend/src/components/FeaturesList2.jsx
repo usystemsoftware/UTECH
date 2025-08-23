@@ -46,7 +46,10 @@ export const FeaturesList2 = ({
     >
       <div className={contentClass}>
         {features.map((feature, index) => (
-          <div key={index} className="flex items-start gap-8 ">
+          <div
+            key={index}
+            className="flex flex-col md:flex-row items-start gap-4 md:gap-8 "
+          >
             <span className="flex-shrink-0">
               {isImageIcon(feature.icon) ? (
                 <img
@@ -54,7 +57,7 @@ export const FeaturesList2 = ({
                   alt={feature.title}
                   width={iconSize}
                   height={iconSize}
-                  className="object-contain lg:w-17 lg:h-17 w-14 h-14"
+                  className="object-contain lg:w-17 lg:h-17 sm:w-15 sm:h-15 w-10 h-10"
                 />
               ) : (
                 <IconRenderer
@@ -64,7 +67,7 @@ export const FeaturesList2 = ({
                 />
               )}
             </span>
-            <div>
+            <div className="space-y-2">
               <div className="flex items-center gap-4">
                 <TypographyH5 className="font-extrabold text-base 2xl:text-xl tracking-tight">
                   {feature?.title}
@@ -76,7 +79,7 @@ export const FeaturesList2 = ({
               )}
 
               {feature?.list && (
-                <ul className="list-disc text-sm pl-5 mt-2 space-y-4 text-muted-foreground">
+                <ul className="list-disc text-sm pl-5 mt-4 space-y-4 text-muted-foreground">
                   {feature.list.map((point, idx) => (
                     <li key={idx}>{point}</li>
                   ))}

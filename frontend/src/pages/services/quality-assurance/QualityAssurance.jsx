@@ -36,7 +36,7 @@ const QualityAssurance = () => {
           <div className="space-y-4 text-start">
             <TypographyH3>Software QA Web & Mobile App Testing</TypographyH3>
             <TypographyMuted>
-              U Technology's seasoned test architects and engineers provide
+              U Tech's seasoned test architects and engineers provide
               world-class QA testing services for web and mobile applications,
               ensuring full compliance and high-quality software every time. We
               harness the power of innovative AI, IoT, and RPA technologies to
@@ -61,8 +61,8 @@ const QualityAssurance = () => {
       <section className="bg-secondary">
         <PageLayout className="py-12 space-y-10 text-center">
           <Headline
-            title="Harness the Power of U Technology's QA Testing Solutions"
-            description="Augment your software development A-team with U Technology's custom-tailored QA software testing solutions."
+            title="Harness the Power of U Tech's QA Testing Solutions"
+            description="Augment your software development A-team with U Tech's custom-tailored QA software testing solutions."
           />
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-8">
             <FeaturesList features={qualityPlatforms.slice(0, 2)} center />
@@ -114,7 +114,7 @@ const QualityAssurance = () => {
       <section className="bg-secondary py-16">
         <PageLayout className="space-y-12 text-center">
           <Headline
-            title="Reinforce  Your IT Team With U Technology's Experienced QA Testing Experts"
+            title="Reinforce  Your IT Team With U Tech's Experienced QA Testing Experts"
             description="Elevate your IT efforts to new heights by leveraging our custom QA Testing Solutions designed specifically for your website or application."
           />
 

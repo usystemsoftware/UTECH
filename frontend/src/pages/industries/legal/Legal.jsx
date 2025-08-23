@@ -33,7 +33,7 @@ const Legal = () => (
     <section className="space-y-8 py-16">
       <Headline
         title="Hire Developers with Custom Legal Software Development Experience"
-        description="U Technology's, a legal software development company has extensive legal industry experience providing best-in-class Legal Software Development Services from the ground up and revamping existing solutions through custom-tailored integrations."
+        description="U Tech's, a legal software development company has extensive legal industry experience providing best-in-class Legal Software Development Services from the ground up and revamping existing solutions through custom-tailored integrations."
       />
 
       <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
@@ -89,7 +89,7 @@ const Legal = () => (
       <PageLayout className="space-y-6 text-center">
         <Headline
           title="AI-Powered Legal Software Development Services"
-          description="Enhance legal workflows with U Technology's’s AI-driven software, enhancing accuracy, automation, and compliance across processes."
+          description="Enhance legal workflows with U Tech's’s AI-driven software, enhancing accuracy, automation, and compliance across processes."
         />
         <FeaturesListOpposite features={legalgSupportItems} grid />
       </PageLayout>
@@ -121,7 +121,9 @@ const Legal = () => (
           />
         </div>
       </div>
-      <ContactUsButton variant="hover">HIRE LEGAL SOFTWARE DEVELOPERS</ContactUsButton>
+      <ContactUsButton variant="hover">
+        HIRE LEGAL SOFTWARE DEVELOPERS
+      </ContactUsButton>
     </PageLayout>
 
     <section className="bg-secondary py-12">
@@ -133,19 +135,23 @@ const Legal = () => (
 
         <FeaturesList features={gamingLegal} grid3 center />
 
-        <ContactUsButton variant="hover">Get Legal Software Solutions</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Get Legal Software Solutions
+        </ContactUsButton>
       </PageLayout>
     </section>
 
     <PageLayout className="py-12 space-y-10 text-center">
       <Headline
         title="Specialized Legal Practice Software Solutions"
-        description="U Technology's designs and deploys customized legal practice software to augment research, streamline workflow, and enable data-driven decisions with powerful analytics. This intuitive software addresses the unique needs of various legal fields, such as immigration law, estate law, family law, and personal injury."
+        description="U Tech's designs and deploys customized legal practice software to augment research, streamline workflow, and enable data-driven decisions with powerful analytics. This intuitive software addresses the unique needs of various legal fields, such as immigration law, estate law, family law, and personal injury."
       />
 
       <FeaturesListOpposite features={legalgSupportIsecound} />
 
-      <ContactUsButton variant="hover">Get Started with Custom Legal Software</ContactUsButton>
+      <ContactUsButton variant="hover">
+        Get Started with Custom Legal Software
+      </ContactUsButton>
     </PageLayout>
 
     {/* === THIRD-PARTY API FUNCTIONALITY SECTION === */}
@@ -174,7 +180,9 @@ const Legal = () => (
           </div>
         ))}
       </div>
-      <ContactUsButton variant="hover">GET YOUR LEGAL SOFTWARE INTEGRATION</ContactUsButton>
+      <ContactUsButton variant="hover">
+        GET YOUR LEGAL SOFTWARE INTEGRATION
+      </ContactUsButton>
     </PageLayout>
   </>
 );

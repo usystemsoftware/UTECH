@@ -85,7 +85,7 @@ export const CustomLoanServicingfeatures = [
   {
     title: "Loan Settlement Software Platforms",
     description:
-      "U Technology's programmers create payment and settlement platforms supporting ACH and EFT for all payment types.",
+      "U Tech's programmers create payment and settlement platforms supporting ACH and EFT for all payment types.",
     icon: "/assets/industries/banking/icons/10007.svg",
     animation: "animate-spin",
   },
@@ -167,10 +167,10 @@ export const BankingAtmFeatures = [
 ];
 
 export const tvpoasterDescription = {
-  title: "U Technology ENSURES 100% PCI-DSS COMPLIANCE",
+  title: "U Tech ENSURES 100% PCI-DSS COMPLIANCE",
   src: "/assets/industries/banking/10002.png",
   description:
-    "U Technology’s banking software developers ensure your software complies with the strict regulatory standards on anti-money laundering and consumer protection standards. This includes the Payment Card Industry Security Standards Council (PCI SSC), Payment Card Industry Data Security Standard (PCI-DSS), and Payment Application Data Security Standard (PA-DSS). Also, Payment Application-Qualified Security Accessors (PA-QSA), SOX, Dodd-Frank, Check 21, and the Securities Act of 1933.",
+    "U Tech’s banking software developers ensure your software complies with the strict regulatory standards on anti-money laundering and consumer protection standards. This includes the Payment Card Industry Security Standards Council (PCI SSC), Payment Card Industry Data Security Standard (PCI-DSS), and Payment Application Data Security Standard (PA-DSS). Also, Payment Application-Qualified Security Accessors (PA-QSA), SOX, Dodd-Frank, Check 21, and the Securities Act of 1933.",
 };
 export const BankingCoreFeatures = [
   {
@@ -201,7 +201,7 @@ export const BankingCustomEMVServices = [
     icon: "/assets/industries/aviation/icons/10002.svg",
     title: "EMV Software Development",
     description:
-      "U Technology offers professional end-to-end EMV migration services including EMV compliant software programming, testing, and validation for full and semi-integrated solutions.",
+      "U Tech offers professional end-to-end EMV migration services including EMV compliant software programming, testing, and validation for full and semi-integrated solutions.",
   },
   {
     icon: "/assets/industries/aviation/icons/10003.svg",
@@ -248,13 +248,13 @@ export const BankingSupportItems = [
   {
     title: "Currency Exchange Support",
     description:
-      "Currency Exchange Support enables real-time currency conversion. U Technology’s engineers can enable your software or app to integrate and maintain data exchanges with international banking systems while monitoring and updating exchange rates.",
+      "Currency Exchange Support enables real-time currency conversion. U Tech’s engineers can enable your software or app to integrate and maintain data exchanges with international banking systems while monitoring and updating exchange rates.",
     icon: "/assets/industries/banking/icons/10003.svg",
   },
   {
     title: "Check Processing Assistance",
     description:
-      "U Technology’s software developers can include check processing assistance in your software to help users automate the verification, capture, and clearance of checks with check processing, OCR, and digital imaging.",
+      "U Tech’s software developers can include check processing assistance in your software to help users automate the verification, capture, and clearance of checks with check processing, OCR, and digital imaging.",
     icon: "/assets/industries/banking/icons/10003.svg",
   },
   {
@@ -296,7 +296,7 @@ export const BankingSupportItems = [
   {
     title: "Online Account Opening Support",
     description:
-      "U Technology’s online account opening support guides your software users through a streamlined, secure process to open new accounts, including compliance checks, ID verification, and document submission.",
+      "U Tech’s online account opening support guides your software users through a streamlined, secure process to open new accounts, including compliance checks, ID verification, and document submission.",
     icon: "/assets/industries/banking/icons/10013.svg",
   },
   {
@@ -323,13 +323,13 @@ export const BankingFaqs = [
     question:
       "Can you migrate our existing construction software to a cloud-based solution?",
     answer:
-      "Definitely! U Technology provides cloud migration services for your current construction software to a safe and scalable cloud environment with minimal disruption and optimal performance.",
+      "Definitely! U Tech provides cloud migration services for your current construction software to a safe and scalable cloud environment with minimal disruption and optimal performance.",
   },
   {
     question:
       "Do you offer support and maintenance after construction software development?",
     answer:
-      "Yes! Your software will run smoothly, remain up to date, and secure, as experts at U Technology provide ongoing support and maintenance so you can build with confidence.",
+      "Yes! Your software will run smoothly, remain up to date, and secure, as experts at U Tech provide ongoing support and maintenance so you can build with confidence.",
   },
   {
     question: "Can AI automate repetitive tasks in construction software?",

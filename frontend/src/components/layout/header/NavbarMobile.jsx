@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Input } from "@/components/ui/input";
 import { Navlinks } from "@/data/Navlinks";
 import { IconRenderer } from "@/custom/IconRenderer";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import AccessibilityWidget from "@/components/layout/AccessibilityWidget";
+import { Separator } from "@/components/ui/separator";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 const highlightMatch = (text, query) => {
   if (!query) return text;
@@ -15,7 +21,7 @@ const highlightMatch = (text, query) => {
       key={i}
       className={
         part.toLowerCase() === query.toLowerCase()
-          ? "text-red-500 font-semibold"
+          ? "text-blue-600 font-semibold"
           : undefined
       }
     >
@@ -63,8 +69,9 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
 
   return (
     <div
-      className={`fixed top-0 left-0 z-50 w-full transition-colors ${open && "bg-white text-black"
-        } duration-300 ${scrolled ? "bg-white shadow" : "bg-transparent"}`}
+      className={`fixed top-0 left-0 z-50 w-full transition-colors ${
+        open && "bg-white text-black"
+      } duration-300 ${scrolled ? "bg-white shadow" : "bg-transparent"}`}
     >
       <AccessibilityWidget />
       <div className="flex items-center justify-between px-4 py-4">
@@ -72,32 +79,54 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
           <img loading="lazy" src="/logo.png" alt="Logo" className="w-26" />
         </Link>
         <div className="flex items-center space-x-5">
-          <Link to="/contact-us">
-            <IconRenderer
-              strokeWidth={2}
-              name="Phone"
-              size={19}
-              className={`cursor-pointer ${scrolled || open ? "text-black dark:text-white" : "text-white"
-                }`}
-            />
-          </Link>
-          <button
-            onClick={() => setIsCommandOpen(true)}
-
-          >
+          <Popover>
+            <PopoverTrigger>
+              <button>
+                <IconRenderer
+                  strokeWidth={2}
+                  name="Phone"
+                  size={19}
+                  className={`cursor-pointer mt-2 ${
+                    scrolled || open
+                      ? "text-black dark:text-white"
+                      : "text-white"
+                  }`}
+                />
+              </button>
+            </PopoverTrigger>
+            <PopoverContent className="mr-10 w-fit shadow-none rounded-none border p-0">
+              <div className="space-y-3 text-sm">
+                <a
+                  href="tel:+6591234567"
+                  className="flex items-center gap-2 px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-800"
+                >
+                  🇸🇬: +65 9123 4567
+                </a>
+                <Separator />
+                <a
+                  href="tel:+919876543210"
+                  className="flex items-center gap-2 px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-800"
+                >
+                  🇮🇳: +91 98765 43210
+                </a>
+              </div>
+            </PopoverContent>
+          </Popover>
+          <button onClick={() => setIsCommandOpen(true)}>
             <IconRenderer
               strokeWidth={2}
               name="Search"
               size={22}
-              className={`cursor-pointer ${scrolled || open ? "text-black dark:text-white" : "text-white"
-                }`}
+              className={`cursor-pointer ${
+                scrolled || open ? "text-black dark:text-white" : "text-white"
+              }`}
             />
           </button>
-
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className={`cursor-pointer ${scrolled || open ? "text-black dark:text-white" : "text-white"
-              }`}
+            className={`cursor-pointer ${
+              scrolled || open ? "text-black dark:text-white" : "text-white"
+            }`}
           >
             <IconRenderer
               strokeWidth={2}
@@ -108,16 +137,18 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
         </div>
       </div>
 
-      <AnimatePresence>
+      {/* Mobile Menu */}
+      <div>
         {open && (
           <motion.div
             initial={{ y: -10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -10, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-[100px] left-0 w-full h-[calc(100vh-100px)] flex flex-col bg-card z-50"
+            className="fixed top-[100px] left-0 w-full h-[calc(100vh-100px)] flex flex-col bg-white z-50"
           >
-            <div className="overflow-y-auto flex-1 px-3 pt-3">
+            {/* Scrollable content */}
+            <div className="overflow-y-auto flex-1 px-3 pt-3 pb-24">
               <Input
                 className="border-none bg-muted mb-3 text-sm outline-none px-2"
                 placeholder="Search docs"
@@ -127,29 +158,41 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
 
               {Navlinks.filter(filterNavlinks).map((section, idx) => {
                 const isOpen = openMenuIndex === idx || searchTerm.length > 0;
-                const sectionMatch = section.title
-                  .toLowerCase()
-                  .includes(searchTerm.toLowerCase());
                 return (
-                  <div key={idx} className="mb-2">
+                  <div key={idx} className="mb-0">
+                    {/* Title button */}
                     <button
                       onClick={() =>
                         setOpenMenuIndex((prev) => (prev === idx ? null : idx))
                       }
-                      className={`flex w-full items-center justify-between px-3 py-2 text-sm font-medium rounded-md ${sectionMatch || isOpen
-                        ? "bg-blue-100 text-blue-800"
-                        : "text-muted-foreground"
-                        }`}
+                      className={`flex w-full items-center justify-between px-4 py-3 
+                        text-sm font-semibold tracking-wide uppercase
+                        border-b border-gray-200
+                        transition-colors duration-300
+                        ${
+                          isOpen
+                            ? "text-blue-700"
+                            : "text-gray-600 hover:text-black"
+                        }
+                      `}
                     >
                       <span>{highlightMatch(section.title, searchTerm)}</span>
-                      <IconRenderer
-                        strokeWidth={2}
-                        name={isOpen ? "ChevronDown" : "ChevronRight"}
-                        size={16}
-                      />
+                      <motion.div
+                        animate={{ rotate: isOpen ? 180 : 0 }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        <IconRenderer
+                          strokeWidth={2}
+                          name="ChevronDown"
+                          size={18}
+                          className="text-gray-500"
+                        />
+                      </motion.div>
                     </button>
+
+                    {/* Submenu */}
                     {isOpen && (
-                      <div className="transition-all duration-300 mt-3">
+                      <div className="transition-all duration-300 mt-1 pl-6">
                         {section.items
                           ?.filter((item) =>
                             item.label
@@ -160,52 +203,22 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
                             <FadeInWhenVisible key={i}>
                               <Link
                                 to={item.href}
-                                onClick={() => setOpen(false)}
-                                className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${selectedLink === item.href
-                                  ? "text-blue-800 font-medium"
-                                  : "text-muted-foreground hover:text-primary"
+                                onClick={() => {
+                                  setOpen(false);
+                                  setSelectedLink(item.href);
+                                }}
+                                className={`block py-2 text-sm border-b border-gray-100
+                                  ${
+                                    selectedLink === item.href ||
+                                    pathname === item.href
+                                      ? "text-blue-700 font-medium"
+                                      : "text-gray-600 hover:text-primary"
                                   }`}
                               >
-                                <IconRenderer
-                                  strokeWidth={2}
-                                  name={item.icon}
-                                  size={16}
-                                />
                                 {highlightMatch(item.label, searchTerm)}
                               </Link>
                             </FadeInWhenVisible>
                           ))}
-                        {section.groups?.map((group, gIdx) => {
-                          const matchingLinks = group.links?.filter((link) =>
-                            link.label
-                              .toLowerCase()
-                              .includes(searchTerm.toLowerCase())
-                          );
-                          if (!matchingLinks?.length) return null;
-                          return (
-                            <div key={gIdx}>
-                              {group.group && (
-                                <div className="font-medium text-sm mt-3 mb-1 text-muted-foreground px-3">
-                                  {highlightMatch(group.group, searchTerm)}
-                                </div>
-                              )}
-                              {matchingLinks.map((link, lIdx) => (
-                                <FadeInWhenVisible key={lIdx}>
-                                  <Link
-                                    to={link.href}
-                                    onClick={() => setOpen(false)}
-                                    className={`px-3 py-1.5 flex items-center gap-2 rounded-md text-sm ${selectedLink === link.href
-                                      ? "text-blue-800 font-medium"
-                                      : "text-muted-foreground hover:text-primary"
-                                      }`}
-                                  >
-                                    {highlightMatch(link.label, searchTerm)}
-                                  </Link>
-                                </FadeInWhenVisible>
-                              ))}
-                            </div>
-                          );
-                        })}
                       </div>
                     )}
                   </div>
@@ -213,25 +226,38 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
               })}
             </div>
 
-            <div className="flex gap-3 p-3 border-t bg-background">
+            {/* Fixed Bottom Buttons */}
+            <div className="p-4 border-t border-gray-200 flex gap-3">
               <Link
-                onClick={() => setOpen(false)}
-                to="/book-call"
-                className="bg-primary text-white py-1.5 px-3 rounded text-sm w-full text-center"
-              >
-                Book Call
-              </Link>
-              <Link
-                onClick={() => setOpen(false)}
                 to="/contact-us"
-                className="bg-secondary py-1.5 px-3 rounded text-sm text-muted-foreground w-full text-center"
+                onClick={() => setOpen(false)}
+                className={`flex-1 text-center py-2 rounded font-medium transition-colors
+                  ${
+                    pathname === "/contact-us"
+                      ? "bg-blue-600 text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  }
+                `}
               >
                 Contact Us
+              </Link>
+              <Link
+                to="/book-call"
+                onClick={() => setOpen(false)}
+                className={`flex-1 text-center py-2 rounded font-medium transition-colors
+                  ${
+                    pathname === "/book-call"
+                      ? "bg-blue-600 text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  }
+                `}
+              >
+                Book Call
               </Link>
             </div>
           </motion.div>
         )}
-      </AnimatePresence>
+      </div>
     </div>
   );
 };

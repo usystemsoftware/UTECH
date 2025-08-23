@@ -39,8 +39,8 @@ const Finance = () => {
       {/* Features Grid */}
       <PageLayout className="text-center my-12 space-y-8">
         <Headline
-          title="U Technology’s Financial Software Development Services"
-          description="U Technology’s custom financial software development services cater to the finance industry, providing custom-tailored solutions for accounting, portfolio management, financial planning, insurance, and taxes."
+          title="U Tech’s Financial Software Development Services"
+          description="U Tech’s custom financial software development services cater to the finance industry, providing custom-tailored solutions for accounting, portfolio management, financial planning, insurance, and taxes."
         />
         <FeaturesGridnew
           leftFeatures={leftFeatures}
@@ -57,7 +57,7 @@ const Finance = () => {
         <PageLayout className="space-y-8 text-center">
           <Headline
             title="Optimizing Finance with Artificial Intelligence"
-            description="With the ever-evolving landscape of financial services becoming increasingly complex and digital, AI is a game-changer. U Technology’s Financial Software Development Services are here to help you transform your operations, improve your customer experiences, and aid in strategic decision-making."
+            description="With the ever-evolving landscape of financial services becoming increasingly complex and digital, AI is a game-changer. U Tech’s Financial Software Development Services are here to help you transform your operations, improve your customer experiences, and aid in strategic decision-making."
           />
           <FeaturesList features={aiBenefits} grid3 center />
 
@@ -71,7 +71,7 @@ const Finance = () => {
       <PageLayout className="text-center space-y-8 my-12">
         <Headline
           title="Custom Accounting Software Development"
-          description="U Technology’s custom accounting software development services include API programming & integrations, AIS architecture, bookkeeping app development, and much more."
+          description="U Tech’s custom accounting software development services include API programming & integrations, AIS architecture, bookkeeping app development, and much more."
         />
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
           <img
@@ -83,7 +83,7 @@ const Finance = () => {
           <FeaturesList features={accountingFeatures} iconAlign="horizontal" />
         </div>
         <TypographyMuted>
-          U Technology integrates your current accounting management system with
+          U Tech integrates your current accounting management system with
           industry-leading ERP and bookkeeping solutions, including:
         </TypographyMuted>
         <IntigrateWith
@@ -99,7 +99,7 @@ const Finance = () => {
       <section className="py-16 bg-secondary space-y-8 text-center">
         <Headline
           title="Custom Portfolio Management Software Development"
-          description="U Technology’s custom portfolio management software solutions encompass everything from risk analysis and investments to stock trading apps and fund management in a centralized platform."
+          description="U Tech’s custom portfolio management software solutions encompass everything from risk analysis and investments to stock trading apps and fund management in a centralized platform."
         />
         <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-12">
           <FeaturesList
@@ -124,7 +124,7 @@ const Finance = () => {
         <PageLayout className="text-center space-y-8">
           <Headline
             title="Custom Financial Planning Software Development"
-            description="U Technology’s custom financial planning software solutions streamline day-to-day processes, including invoicing, payment processing, audit archiving, report generation, and more."
+            description="U Tech’s custom financial planning software solutions streamline day-to-day processes, including invoicing, payment processing, audit archiving, report generation, and more."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
             <img
@@ -148,11 +148,11 @@ const Finance = () => {
             WE ENSURE YOU A 100% COMPLIANCE WITH THE IRS & FASB!
           </TypographyH3>
           <TypographyMuted>
-            U Technology's finance software development experts comply with
-            regulatory standards including anti-money laundering and consumer
-            protection standards such as Financial Accounting Standards Boards
-            (FASB), SOX, Dodd-Frank, the Securities Act of 1933, and Payment
-            Application Data Security Standard (PA-DSS).
+            U Tech's finance software development experts comply with regulatory
+            standards including anti-money laundering and consumer protection
+            standards such as Financial Accounting Standards Boards (FASB), SOX,
+            Dodd-Frank, the Securities Act of 1933, and Payment Application Data
+            Security Standard (PA-DSS).
           </TypographyMuted>
         </div>
         <div>
@@ -195,7 +195,7 @@ const Finance = () => {
         <PageLayout className="space-y-10">
           <Headline
             title="Custom Insurance Software Development"
-            description="U Technology’s custom insurance software solutions ensures success-driven insurance automation to help insurance companies drive momentum and drive productivity."
+            description="U Tech’s custom insurance software solutions ensures success-driven insurance automation to help insurance companies drive momentum and drive productivity."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <FeaturesList features={insuranceFeatures} grid center />
@@ -216,7 +216,7 @@ const Finance = () => {
       <section className="py-12 space-y-10 text-center">
         <Headline
           title="Custom Tax Preparation Software Development"
-          description="U Technology’s custom tax prep software solutions support the preparation, calculation, and reporting of personal and business taxes."
+          description="U Tech’s custom tax prep software solutions support the preparation, calculation, and reporting of personal and business taxes."
         />
         <PageLayout className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <img
@@ -236,7 +236,7 @@ const Finance = () => {
       <PageLayout className="py-16 text-center space-y-10">
         <Headline
           title="Tailored Factoring Software Development Solutions"
-          description="Leverage U Technology's profound financial software development expertise to drive your business forward with advanced factoring solutions. Our innovative services are meticulously designed to streamline your financial processes and set you apart in the competitive landscape."
+          description="Leverage U Tech's profound financial software development expertise to drive your business forward with advanced factoring solutions. Our innovative services are meticulously designed to streamline your financial processes and set you apart in the competitive landscape."
         />
         <FeaturesListOpposite features={factoringFeatures} grid center />
         <ContactUsButton variant="hover">
@@ -249,7 +249,7 @@ const Finance = () => {
         <PageLayout className="space-y-10">
           <Headline
             title="Tailored Factoring Software Development Solutions"
-            description="Leverage U Technology's profound financial software development expertise to drive your business forward with advanced factoring solutions. Our innovative services are meticulously designed to streamline your financial processes and set you apart in the competitive landscape."
+            description="Leverage U Tech's profound financial software development expertise to drive your business forward with advanced factoring solutions. Our innovative services are meticulously designed to streamline your financial processes and set you apart in the competitive landscape."
           />
           <FeaturesListOpposite features={supportFeatures} grid />
           <ContactUsButton variant="hover">

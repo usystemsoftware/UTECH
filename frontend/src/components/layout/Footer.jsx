@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import { version } from "../../../package.json";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { TypographyH4, TypographyH2, TypographyMuted } from "@/custom/Typography";
+import {
+  TypographyH4,
+  TypographyH2,
+  TypographyMuted,
+} from "@/custom/Typography";
 import { IconRenderer } from "@/custom/IconRenderer";
 import PageLayout from "@/custom/PageLayout";
 import ContactUsButton from "@/custom/ContactUsButton";
@@ -40,10 +44,19 @@ export const footerLinks = [
     title: "Services",
     links: [
       { label: "API Development", to: "/services/api-development" },
-      { label: "Aplication Development", to: "/services/application-development" },
+      {
+        label: "Aplication Development",
+        to: "/services/application-development",
+      },
       { label: "QA Testing", to: "/services/qa-testing" },
-      { label: "Digital Transformation", to: "/services/digital-transformation" },
-      { label: "Application Maintenance", to: "/services/application-maintenance" },
+      {
+        label: "Digital Transformation",
+        to: "/services/digital-transformation",
+      },
+      {
+        label: "Application Maintenance",
+        to: "/services/application-maintenance",
+      },
     ],
   },
   {
@@ -69,7 +82,7 @@ export const footerLinks = [
 ];
 
 export const legalNotices = [
-  "U Technology (India) Pvt Ltd CIN: U72900PN2020PTC193410 Registered Office no.02,15, Zeroboyz Chowk, Nehru Nagar, Pune, Pimpri-Chinchwad, Pune, Maharashtra - 411018 , Email ID: enquiry@usystem.software",
+  "U Tech (India) Pvt Ltd CIN: U72900PN2020PTC193410 Registered Office no.02,15, Zeroboyz Chowk, Nehru Nagar, Pune, Pimpri-Chinchwad, Pune, Maharashtra - 411018 , Email ID: enquiry@usystem.software",
   "Visitors are hereby informed that their information submitted on the website may be shared with relevant service providers. Product and service information is accurate based on the latest company data.",
   "We do not solicit or promote services through unsolicited calls or messages. Any such interactions should be reported to our support team immediately.",
 ];
@@ -85,14 +98,18 @@ export const Footer = () => {
   return (
     <footer className=" relative text-white ">
       <div className="bg-[#23727c] pt-4">
-
         <div className="text-center px-4">
-          <TypographyH2 className="text-3xl font-bold mb-4">CONTACT US</TypographyH2>
+          <TypographyH2 className="text-3xl font-bold mb-4">
+            CONTACT US
+          </TypographyH2>
           <p className="max-w-2xl mx-auto mb-6">
-            Drop us a line or give us a ring. We love to hear from you and are happy to answer any questions.
+            Drop us a line or give us a ring. We love to hear from you and are
+            happy to answer any questions.
           </p>
-          <ContactUsButton variant="herosection"
-            className="border-2 border-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-500 transition">
+          <ContactUsButton
+            variant="herosection"
+            className="border-2 border-orange-500 text-white px-6 py-2 rounded-full hover:bg-orange-500 transition"
+          >
             GET DEVELOPERS
           </ContactUsButton>
         </div>
@@ -114,7 +131,8 @@ export const Footer = () => {
             <img
               src="/assets/footer/icons/10002.svg"
               className="object-contain w-8.5"
-            />             <TypographyH2 className="text-2xl font-bold">50+</TypographyH2>
+            />{" "}
+            <TypographyH2 className="text-2xl font-bold">50+</TypographyH2>
             <TypographyMuted className="mt-1">HAPPY CUSTOMERS</TypographyMuted>
           </div>
 
@@ -123,8 +141,11 @@ export const Footer = () => {
             <img
               src="/assets/footer/icons/10003.svg"
               className="object-contain w-11"
-            />             <TypographyH2 className="text-2xl font-bold">47%</TypographyH2>
-            <TypographyMuted className="mt-1">REPEAT AND REFERRAL BUSINESS</TypographyMuted>
+            />{" "}
+            <TypographyH2 className="text-2xl font-bold">47%</TypographyH2>
+            <TypographyMuted className="mt-1">
+              REPEAT AND REFERRAL BUSINESS
+            </TypographyMuted>
           </div>
 
           {/* Item 4 */}
@@ -132,13 +153,13 @@ export const Footer = () => {
             <img
               src="/assets/footer/icons/10004.svg"
               className="object-contain w-11"
-            />             <TypographyH2 className="text-2xl font-bold">11+</TypographyH2>
+            />{" "}
+            <TypographyH2 className="text-2xl font-bold">11+</TypographyH2>
             <TypographyMuted className="mt-1">DEVELOPERS</TypographyMuted>
           </div>
         </div>
       </div>
       <div className="bg-[#213448] pt-10 pb-6">
-
         <PageLayout className="grid gap-10 md:grid-cols-4 lg:grid-cols-5 ">
           {/* Brand & Subscribe */}
           <div className="col-span-2 space-y-4">
@@ -148,14 +169,24 @@ export const Footer = () => {
             <p className="text-sm md:text-base text-gray-300">
               Subscribe to get the latest updates, articles, and inspiration.
             </p>
-            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2">
-              <Input type="email" required placeholder="Enter your email" className="flex-1" />
+            <form
+              onSubmit={handleSubscribe}
+              className="flex flex-col sm:flex-row gap-2"
+            >
+              <Input
+                type="email"
+                required
+                placeholder="Enter your email"
+                className="flex-1"
+              />
               <Button type="submit" className="w-full sm:w-auto">
                 Subscribe
               </Button>
             </form>
             {subscribed && (
-              <p className="text-green-400 text-sm md:text-base">Thank you for subscribing! 🎉</p>
+              <p className="text-green-400 text-sm md:text-base">
+                Thank you for subscribing! 🎉
+              </p>
             )}
             <div className="flex items-center gap-2 mt-4">
               {socialIcons.map((item, i) => (
@@ -176,7 +207,9 @@ export const Footer = () => {
           {/* Links Sections */}
           {footerLinks.map((section, i) => (
             <div key={i}>
-              <TypographyH4 className="text-base sm:text-xl mb-3">{section.title}</TypographyH4>
+              <TypographyH4 className="text-base sm:text-xl mb-3">
+                {section.title}
+              </TypographyH4>
               <ul className="space-y-2 sm:space-y-3 text-[13px] md:text-sm text-gray-300">
                 {section.links.map((link, j) => (
                   <li key={j}>
@@ -204,15 +237,21 @@ export const Footer = () => {
           <div>
             {quickLinks.map((item, index) => (
               <React.Fragment key={item.to}>
-                <Link to={item.to} className="hover:underline hover:text-primary">
+                <Link
+                  to={item.to}
+                  className="hover:underline hover:text-primary"
+                >
                   {item.label}
                 </Link>
-                {index < quickLinks.length - 1 && <span className="mx-1">|</span>}
+                {index < quickLinks.length - 1 && (
+                  <span className="mx-1">|</span>
+                )}
               </React.Fragment>
             ))}
           </div>
           <div className="sm:text-base text-sm">
-            © {new Date().getFullYear()} Umbarakar Technology (India) Pvt Ltd. All rights reserved.
+            © {new Date().getFullYear()} Umbarakar Technology (India) Pvt Ltd.
+            All rights reserved.
           </div>
         </div>
         {/* Version */}
@@ -220,7 +259,6 @@ export const Footer = () => {
           Version: {version}
         </span>
       </div>
-
     </footer>
   );
 };

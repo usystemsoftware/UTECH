@@ -2,7 +2,6 @@ import ContactUsButton from "@/custom/ContactUsButton";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import { FeaturesList } from "@/components/FeaturesList";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { TestimonialSection } from "@/components/TestimonialSection";
 import PageLayout from "@/custom/PageLayout";
 import { Headline } from "@/custom/Typography";
@@ -36,7 +35,7 @@ const CRM = () => {
       <section className="py-16 text-center space-y-10">
         <Headline
           title="Custom CRM Development Services"
-          description="U Technology develops custom-tailored CRM systems, implementing
+          description="U Tech develops custom-tailored CRM systems, implementing
             application development software features & functionalities that
             drive businesses forward."
         />
@@ -45,16 +44,19 @@ const CRM = () => {
           features={services.slice(0, 4)}
           src="/assets/solutions/crm/custom-crm.png"
           imageAlign="right"
+          imgClass="w-96 xl:w-130 2xl:w-145"
         />
 
         <ImageNearScreen
           features={services.slice(4, 8)}
           src="/assets/solutions/crm/custom-crm-2.png"
           imageAlign="left"
-          imgClass="w-96"
+          imgClass="w-96 xl:w-110 2xl:w-115"
         />
 
-        <ContactUsButton variant="hover">GET FACTORING SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET FACTORING SOLUTIONS
+        </ContactUsButton>
       </section>
 
       {/* ====== AI-Powered CRM Solutions Section ====== */}
@@ -68,7 +70,7 @@ const CRM = () => {
               intelligence can be integrated into businesses to optimize and
               improve their work operations."
           />
-          <FeaturesList features={aiFeatures} fadeUp={fadeUp} grid iconAlign="horizontal" />
+          <FeaturesList features={aiFeatures} grid iconAlign="horizontal" />
           <ContactUsButton variant="hover">DEVELOP CRM WITH AI</ContactUsButton>
         </PageLayout>
       </section>
@@ -77,24 +79,24 @@ const CRM = () => {
       <PageLayout className="py-12 space-y-10 text-center">
         <Headline
           title="CRM Software Services"
-          description="U Technology provides
+          description="U Tech provides
             custom CRM software services
             focused on automating sales, marketing, and customer service
             business processes for healthcare, banking, real estate, and other
             industries."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/solutions/crm/marketing.png"
-              alt="Tax Preparation"
-              className="sm:w-96 mx-auto w-68"
-            />
-          </FadeInWhenVisible>
-          <FeaturesList features={crmSoftwares} fadeUp={fadeUp} iconAlign="horizontal" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <img
+            loading="lazy"
+            src="/assets/solutions/crm/marketing.png"
+            alt="Tax Preparation"
+            className="sm:w-96 xl:w-110 2xl:w-135 mx-auto w-68"
+          />
+          <FeaturesList features={crmSoftwares} iconAlign="horizontal" />
         </div>
-        <ContactUsButton variant="hover">DEVELOP CUSTOM CRM SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          DEVELOP CUSTOM CRM SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       {/* ====== CRM Support & Maintenance Section ====== */}
@@ -108,8 +110,14 @@ const CRM = () => {
               comprises a wide range of CRM platforms, making our support services
               unparalleled."
           />
-          <FeaturesList features={crmSupportItems} fadeUp={fadeUp} grid iconAlign="horizontal" />
-          <ContactUsButton variant="hover">HIRE CRM CONSULTING SERVICES</ContactUsButton>
+          <FeaturesList
+            features={crmSupportItems}
+            grid
+            iconAlign="horizontal"
+          />
+          <ContactUsButton variant="hover">
+            HIRE CRM CONSULTING SERVICES
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -122,19 +130,19 @@ const CRM = () => {
             Microsoft Dynamics, SugarCRM, Zoho, GoHighLevel, and SAP, to boost
             productivity and meet client needs."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-3 items-center gap-8">
-          <FeaturesList features={crmPlatforms.slice(0, 3)} fadeUp={fadeUp} center />
-          <FadeInWhenVisible>
-            <img
-              loading="lazy"
-              src="/assets/solutions/crm/integrations.png"
-              alt="Tax Preparation"
-              className="md:w-96 mx-auto w-68"
-            />
-          </FadeInWhenVisible>
-          <FeaturesList features={crmPlatforms.slice(3, 6)} fadeUp={fadeUp} center />
+        <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
+          <FeaturesList features={crmPlatforms.slice(0, 3)} center />
+          <img
+            loading="lazy"
+            src="/assets/solutions/crm/integrations.png"
+            alt="Tax Preparation"
+            className="sm:w-96 xl:w-110 2xl:w-120 mx-auto w-68"
+          />
+          <FeaturesList features={crmPlatforms.slice(3, 6)} center />
         </div>
-        <ContactUsButton variant="hover">HIRE CRM INTEGRATION DEVELOPMENT</ContactUsButton>
+        <ContactUsButton variant="hover">
+          HIRE CRM INTEGRATION DEVELOPMENT
+        </ContactUsButton>
       </PageLayout>
 
       {/* ====== Testimonials Section ====== */}

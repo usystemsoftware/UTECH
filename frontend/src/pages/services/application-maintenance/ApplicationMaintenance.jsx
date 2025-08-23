@@ -29,8 +29,8 @@ const ApplicationMaintenance = () => {
       {/* === INTRODUCTION SECTION === */}
       <PageLayout className="py-16 space-y-10 text-center">
         <Headline
-          title="U Technology: Your Comprehensive Solutions Provider"
-          description="U Technology brings together the most reliable expertise, processes, technologies, and QA testing specialists to deliver high value-added and agile-aligned QA & software testing solutions that you can trust.."
+          title="U Tech: Your Comprehensive Solutions Provider"
+          description="U Tech brings together the most reliable expertise, processes, technologies, and QA testing specialists to deliver high value-added and agile-aligned QA & software testing solutions that you can trust.."
         />
         <TypographyH3 className="text-center">
           Application Maintenance Services
@@ -58,7 +58,7 @@ const ApplicationMaintenance = () => {
         <PageLayout className="space-y-10 text-center">
           <Headline
             title="Application Support Servicest"
-            description="Applications are long-term investments, and U Technology's Application Support Services encompass technical expertise, software maintenance, extended support, and exceptional customer service, all aimed at keeping your applications running optimally."
+            description="Applications are long-term investments, and U Tech's Application Support Services encompass technical expertise, software maintenance, extended support, and exceptional customer service, all aimed at keeping your applications running optimally."
           />
 
           <FeaturesList
@@ -93,13 +93,13 @@ const ApplicationMaintenance = () => {
           <div className="flex justify-between gap-8 md:flex-row flex-col">
             <Headline
               title="Block of Hours Support Services"
-              description="U Technology's team comprises over 2,800 industry-experienced developers with comprehensive domain expertise and technical proficiency. Our commitment to excellence is reflected in the delivery of superior support through flexible and cost-effective Block of Hours support services tailored for various applications.."
+              description="U Tech's team comprises over 2,800 industry-experienced developers with comprehensive domain expertise and technical proficiency. Our commitment to excellence is reflected in the delivery of superior support through flexible and cost-effective Block of Hours support services tailored for various applications.."
               className="text-start"
             />
 
             <Headline
               title="Technical & Non-Technical Support"
-              description="U Technology’s Block of Hours program is a cost-effective alternative to our standard flat-rate support offered to new, current, and past customers. We offer technical and non-technical support services for all software applications. Services are sold per 100 Block of Hours with reduced rates contingent on hours purchased.."
+              description="U Tech’s Block of Hours program is a cost-effective alternative to our standard flat-rate support offered to new, current, and past customers. We offer technical and non-technical support services for all software applications. Services are sold per 100 Block of Hours with reduced rates contingent on hours purchased.."
               className="text-start"
             />
           </div>

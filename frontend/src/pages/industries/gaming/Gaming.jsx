@@ -36,10 +36,10 @@ const Gaming = () => (
       imageFit="cover"
     />
 
-    {/* === U Technology’s Game Development Services Section === */}
+    {/* === U Tech’s Game Development Services Section === */}
     <PageLayout className="text-center py-10">
       <Headline
-        title="U Technology’s Game Development Services"
+        title="U Tech’s Game Development Services"
         description="Our certified gaming software development experts can create your video game project from scratch or revamp existing solutions with updates and integrations to stay in line with current gaming industry trends."
       />
       <FeaturesGridnew
@@ -55,7 +55,7 @@ const Gaming = () => (
       <PageLayout className="text-center space-y-10">
         <Headline
           title="Custom PixiJS Development"
-          description="Are you looking to create impressive PixiJS examples or PixiJS games? At U Technology’s, we leverage the power of PixiJS, the HTML5 creation engine that offers the quickest and most adaptable 2D WebGL renderer."
+          description="Are you looking to create impressive PixiJS examples or PixiJS games? At U Tech’s, we leverage the power of PixiJS, the HTML5 creation engine that offers the quickest and most adaptable 2D WebGL renderer."
         />
         <FeaturesList features={gamingSolutions} grid3 center />
       </PageLayout>
@@ -65,7 +65,7 @@ const Gaming = () => (
     <PageLayout className="py-12 text-center space-y-12">
       <Headline
         title="Custom Loan Servicing & Origination Solutions"
-        description="U Technology’s custom loan servicing and origination personalized solutions handle underwriting, origination, disbursement, servicing, amortization, processing, and so much more for financial services and institutions."
+        description="U Tech’s custom loan servicing and origination personalized solutions handle underwriting, origination, disbursement, servicing, amortization, processing, and so much more for financial services and institutions."
       />
       <FeaturesList
         features={gamingLoanServicingfeatures}

@@ -1,6 +1,6 @@
 export const introText = {
   title: "Hire An Experienced & Dedicated Application Development Company",
-  description: `At U Technology, we understand that time to market is critical for our clients' success, which is why we offer expert mobile app development services that prioritize speed and efficiency. Our mobile app developers write software for use across mobile operating systems, including Apple, Android, and Windows devices. They are also responsible for testing the application and providing updates whenever necessary.`,
+  description: `At U Tech, we understand that time to market is critical for our clients' success, which is why we offer expert mobile app development services that prioritize speed and efficiency. Our mobile app developers write software for use across mobile operating systems, including Apple, Android, and Windows devices. They are also responsible for testing the application and providing updates whenever necessary.`,
 };
 
 export const crossPlatformText = {
@@ -78,7 +78,7 @@ export const AiApiFeatures = [
     icon: "/assets/services/application-development/icons/7.svg",
     title: "IoT App Solutions",
     description:
-      "Unleash the power of IoT with U Technology’s expert developers. Seamlessly integrate IoT solutions into your systems via an API, revolutionizing aspects of your business like supply chain automation and real-time data analytics.",
+      "Unleash the power of IoT with U Tech’s expert developers. Seamlessly integrate IoT solutions into your systems via an API, revolutionizing aspects of your business like supply chain automation and real-time data analytics.",
   },
   {
     icon: "/assets/services/application-development/icons/8.svg",
@@ -137,7 +137,7 @@ export const CustomServices = [
     icon: "/assets/services/bpo/icons/10001.svg",
     title: "Client-Facing Application Solutions",
     description:
-      "U Technology’s agile app development practices allow us to create innovative, engaging, and highly scalable Client-Facing Application Solutions that offer more interoperability and flexibility than most off-the-shelf solutions currently on the market. At U Technology, we build powerful client app solutions to fuel business growth and maximize your ROI.",
+      "U Tech’s agile app development practices allow us to create innovative, engaging, and highly scalable Client-Facing Application Solutions that offer more interoperability and flexibility than most off-the-shelf solutions currently on the market. At U Tech, we build powerful client app solutions to fuel business growth and maximize your ROI.",
   },
   {
     icon: "/assets/services/bpo/icons/10002.svg",
@@ -171,8 +171,8 @@ export const CustomServices = [
   },
 ];
 export const pciDssComplianceContent = {
-  title: "U Technology ENSURES 100% PCI-DSS COMPLIANCE",
-  description: `U Technology’s banking software developers ensure your software complies with
+  title: "U Tech ENSURES 100% PCI-DSS COMPLIANCE",
+  description: `U Tech’s banking software developers ensure your software complies with
 the strict regulatory standards on anti-money laundering and consumer
 protection standards. This includes the Payment Card Industry Security
 Standards Council (PCI SSC), Payment Card Industry Data Security Standard

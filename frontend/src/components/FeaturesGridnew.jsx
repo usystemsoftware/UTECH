@@ -23,7 +23,7 @@ export const FeaturesGridnew = ({
               <img
                 src={item.icon}
                 alt={item.label || "feature"}
-                className="w-15 h-15 object-contain"
+                className="w-10 h-10 lg:w-17 lg:h-17 sm:w-15 sm:h-15 object-contain"
               />
             ) : null}
           </span>
@@ -63,7 +63,7 @@ export const FeaturesGridnew = ({
               <img
                 src={item.icon}
                 alt={item.label || "feature"}
-                className="w-15 h-15 object-contain"
+                className="w-10 h-10 lg:w-17 lg:h-17 sm:w-15 sm:h-15 object-contain"
               />
             ) : null}
           </span>

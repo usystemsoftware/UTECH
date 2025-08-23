@@ -55,7 +55,7 @@ const RealEstate = () => {
       <PageLayout className="text-center py-16">
         <Headline
           title="Custom Banking Software Development"
-          description="U Technology’s team of expert developers cater to the technical needs of the ever-evolving banking sector by offering high quality software solutions that transform your core environment to streamline banking & financial workflows."
+          description="U Tech’s team of expert developers cater to the technical needs of the ever-evolving banking sector by offering high quality software solutions that transform your core environment to streamline banking & financial workflows."
         />
 
         <FeaturesGridnew
@@ -166,7 +166,9 @@ const RealEstate = () => {
             className="w-145 xl:w-155 2xl:w-175 mx-auto"
           />
         </div>
-        <ContactUsButton variant="hover">STREAMLINE PROPERTY MANAGEMENT</ContactUsButton>
+        <ContactUsButton variant="hover">
+          STREAMLINE PROPERTY MANAGEMENT
+        </ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-16">

@@ -17,7 +17,7 @@ const VideoTvPoster = ({ information }) => {
           "/assets/solutions/gis/custom-gis-software-solutions.png"
         }
         alt="Portfolio"
-        className="md:w-165 lg:w-185 2xl:w-260 w-full mx-auto"
+        className="md:w-165 lg:w-185 w-full mx-auto"
       />
     </PageLayout>
   );
