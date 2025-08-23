@@ -1,15 +1,19 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { initGA, trackPageView } from "@/lib/analytics";
+import ReactGA from "react-ga4";
+
+const GA_MEASUREMENT_ID = "G-ET6TXFFZQH";
 
 export const useAnalytics = () => {
     const location = useLocation();
 
     useEffect(() => {
-        initGA();
+        // Initialize GA4 once
+        ReactGA.initialize(GA_MEASUREMENT_ID);
     }, []);
 
     useEffect(() => {
-        trackPageView(location.pathname + location.search);
+        // Track page view on route change
+        ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
     }, [location]);
 };

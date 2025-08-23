@@ -30,7 +30,7 @@ const highlightMatch = (text, query) => {
   ));
 };
 
-const NavbarMobile = () => {
+const NavbarMobile = ({ setIsCommandOpen }) => {
   const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
   const [openMenuIndex, setOpenMenuIndex] = useState(null);
@@ -112,14 +112,16 @@ const NavbarMobile = () => {
               </div>
             </PopoverContent>
           </Popover>
-          <IconRenderer
-            strokeWidth={2}
-            name="Search"
-            size={22}
-            className={`cursor-pointer ${
-              scrolled || open ? "text-black dark:text-white" : "text-white"
-            }`}
-          />
+          <button onClick={() => setIsCommandOpen(true)}>
+            <IconRenderer
+              strokeWidth={2}
+              name="Search"
+              size={22}
+              className={`cursor-pointer ${
+                scrolled || open ? "text-black dark:text-white" : "text-white"
+              }`}
+            />
+          </button>
           <button
             onClick={() => setOpen((prev) => !prev)}
             className={`cursor-pointer ${
@@ -224,7 +226,7 @@ const NavbarMobile = () => {
               })}
             </div>
 
-            {/* ✅ Fixed Bottom Buttons */}
+            {/* Fixed Bottom Buttons */}
             <div className="p-4 border-t border-gray-200 flex gap-3">
               <Link
                 to="/contact-us"
