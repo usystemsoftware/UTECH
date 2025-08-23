@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Bot, X, Send, User } from "lucide-react";
 import { TypographyH5 } from "@/custom/Typography";
 import { Button } from "@/components/ui/button";
+import { useNavigate, useLocation } from "react-router-dom"; // 👈 for navigation
+import axios from "axios";
 
 const chatVariants = {
   hidden: { opacity: 0, y: 50, scale: 0.8 },
@@ -26,34 +28,101 @@ const messageVariants = {
 };
 
 export default function ChatUI() {
-  const [messages, setMessages] = useState([
-    { id: 1, type: "bot", text: "Hi there! 👋 How can we assist you today?" },
-    { id: 2, type: "user", text: "I have a question about your services." },
-    { id: 3, type: "bot", text: "Sure! Please share the details." },
-  ]);
+  const [step, setStep] = useState("default"); // default | email | otp | verified
+  const [email, setEmail] = useState("");
+  const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const messagesEndRef = useRef(null);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  const handleSendMessage = () => {
+  const handleOptionClick = (option) => {
+    if (option === "Book Call") navigate("/book-call");
+    if (option === "Apply Job") navigate("/apply-job");
+    if (option === "Need Help?") navigate("/need-help");
+  };
+
+  const handleSendMessage = async () => {
     if (!inputValue.trim()) return;
-    const newMessage = {
-      id: Date.now(),
-      type: "user",
-      text: inputValue.trim(),
-    };
-    setMessages((prev) => [...prev, newMessage]);
+
+    const userMessage = { id: Date.now(), type: "user", text: inputValue.trim() };
+    setMessages((prev) => [...prev, userMessage]);
+
+    if (true) {
+      console.log(inputValue.trim())
+      setEmail(inputValue.trim());
+      setStep("otp");
+
+      try {
+        const response = await axios.post(
+          "http://localhost:5002/auth/send-otp",
+          { email: email }, // request body
+          { headers: { "Content-Type": "application/json" } } // config
+        );
+
+
+        console.log(response)
+
+        if (response.status === 200) {
+          setMessages((prev) => [
+            ...prev,
+            {
+              id: Date.now() + 2,
+              type: "bot",
+              text: "OTP sent to your email ✅. Please enter it below.",
+            },
+          ]);
+        } else {
+          setMessages((prev) => [
+            ...prev,
+            { id: Date.now() + 2, type: "bot", text: "Error sending OTP ❌" },
+          ]);
+          setStep("email");
+        }
+      } catch (err) {
+        console.log(err)
+        setMessages((prev) => [
+          ...prev,
+          { id: Date.now() + 3, type: "bot", text: "Server error ❌" },
+        ]);
+        setStep("email");
+      }
+    }
+
+    if (step === "otp") {
+      try {
+        const response = await axios.post(
+          "http://localhost:5002/auth/verify-otp",
+          { email: email, otp: inputValue.trim() }, // request body
+          { headers: { "Content-Type": "application/json" } } // config
+        );
+        if (response.status === 200) {
+          setStep("verified");
+          setMessages((prev) => [
+            ...prev,
+            { id: Date.now() + 4, type: "bot", text: "✅ Email verified successfully!" },
+          ]);
+        } else {
+          setMessages((prev) => [
+            ...prev,
+            { id: Date.now() + 5, type: "bot", text: "❌ Invalid OTP, please try again." },
+          ]);
+        }
+      } catch (err) {
+        console.log(err)
+        setMessages((prev) => [
+          ...prev,
+          { id: Date.now() + 6, type: "bot", text: "Server error ❌" },
+        ]);
+      }
+    }
+
     setInputValue("");
-    setTimeout(() => {
-      setMessages((prev) => [
-        ...prev,
-        { id: Date.now() + 1, type: "bot", text: "Thanks for your message! 💬" },
-      ]);
-    }, 800);
   };
 
   const toggleChat = () => setIsOpen(!isOpen);
@@ -99,9 +168,7 @@ export default function ChatUI() {
                 {messages.map((message) => (
                   <motion.div
                     key={message.id}
-                    className={`flex items-start space-x-3 ${message.type === "user"
-                      ? "flex-row-reverse space-x-reverse"
-                      : ""
+                    className={`flex items-start space-x-3 ${message.type === "user" ? "flex-row-reverse space-x-reverse" : ""
                       }`}
                     initial="hidden"
                     animate="visible"
@@ -129,6 +196,23 @@ export default function ChatUI() {
                     </div>
                   </motion.div>
                 ))}
+
+                {/* Show quick options only on default step */}
+                {step === "default" && (
+                  <div className="flex gap-2 mt-4">
+                    {["Book Call", "Apply Job", "Need Help?"].map((opt) => (
+                      <Button
+                        key={opt}
+                        onClick={() => handleOptionClick(opt)}
+                        size="sm"
+                        className="rounded-full bg-primary/80 text-white hover:bg-primary"
+                      >
+                        {opt}
+                      </Button>
+                    ))}
+                  </div>
+                )}
+
                 <div ref={messagesEndRef} />
               </div>
 
