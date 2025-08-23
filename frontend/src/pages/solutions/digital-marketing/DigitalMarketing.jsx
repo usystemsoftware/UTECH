@@ -1,6 +1,5 @@
 import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import { FeaturesList } from "@/components/FeaturesList";
 import {
   DriveMore,
@@ -29,13 +28,15 @@ const DigitalMarketing = () => {
       <PageLayout className="py-16 text-center space-y-10">
         <Headline
           title="Drive More Revenue with Digital Marketing Software Development"
-          description="Whether you require digital marketing software developers-for-hire to augment your existing in-house development team, or a newly developed digital marketing software solution to help your business drive more revenue, U Technology’s got you covered."
+          description="Whether you require digital marketing software developers-for-hire to augment your existing in-house development team, or a newly developed digital marketing software solution to help your business drive more revenue, U Tech’s got you covered."
         />
 
-        <FeaturesList features={DriveMore} fadeUp={fadeUp} grid3 center />
+        <FeaturesList features={DriveMore} grid3 center />
 
         {/* === CTA ContactUsButton: Marketing Experts === */}
-        <ContactUsButton variant="hover">SPEAK TO MARKETING EXPERTS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          SPEAK TO MARKETING EXPERTS
+        </ContactUsButton>
       </PageLayout>
 
       {/* === CUSTOM DIGITAL MARKETING SOFTWARE SECTION === */}
@@ -47,19 +48,20 @@ const DigitalMarketing = () => {
           />
 
           {/* === Features + Image Grid: CustomDigitalMarketing === */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 space-y-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             {/* Left: Image */}
-            <FadeInWhenVisible>
-              <img
-                loading="lazy"
-                src="/assets/solutions/digital-marketing/software.png"
-                alt="Mobile App Devices"
-                className="w-135 mx-auto"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/solutions/digital-marketing/software.png"
+              alt="Mobile App Devices"
+              className="w-145 xl:w-155 2xl:w-175 mx-auto"
+            />
 
             {/* Right: Feature List */}
-            <FeaturesList features={CustomDigitalMarketing} iconAlign="horizontal" />
+            <FeaturesList
+              features={CustomDigitalMarketing}
+              iconAlign="horizontal"
+            />
           </div>
         </PageLayout>
       </section>
@@ -77,18 +79,18 @@ const DigitalMarketing = () => {
           <FeaturesList features={WebApps} iconAlign="horizontal" />
 
           {/* Right: Image */}
-          <FadeInWhenVisible className="hidden sm:block">
-            <img
-              loading="lazy"
-              src="/assets/solutions/digital-marketing/application.png"
-              alt="Mobile App Devices"
-              className="md:w-55 w-48 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/solutions/digital-marketing/application.png"
+            alt="Mobile App Devices"
+            className="sm:w-55 w-42 xl:w-58 2xl:w-62 mx-auto"
+          />
         </div>
 
         {/* === CTA ContactUsButton: Manage Marketing === */}
-        <ContactUsButton variant="hover">Manage Your Marketing Needs</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Manage Your Marketing Needs
+        </ContactUsButton>
       </PageLayout>
 
       {/* === SOFTWARE FEATURES & FUNCTIONS SECTION === */}
@@ -100,36 +102,28 @@ const DigitalMarketing = () => {
           />
 
           {/* === Features + Image + Features Split Grid === */}
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 items-center">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 items-center">
             {/* Left Features List: TestingSolutions */}
-            <FeaturesList
-              features={TestingSolutions.slice(0, 3)}
-              fadeUp={fadeUp}
-              center
-            />
+            <FeaturesList features={TestingSolutions.slice(0, 3)} center />
 
             {/* Center Image */}
-            <FadeInWhenVisible className="hidden md:block">
-              <img
-                loading="lazy"
-                src="/assets/solutions/digital-marketing/functions.png"
-                alt="Tax Preparation"
-                className="md:w-135 w-96 mx-auto"
-              />
-            </FadeInWhenVisible>
+            <img
+              loading="lazy"
+              src="/assets/solutions/digital-marketing/functions.png"
+              alt="Tax Preparation"
+              className="md:w-135 sm:w-120 w-96 mx-auto"
+            />
 
             {/* Right Features List: TestSolution */}
-            <FeaturesList
-              features={TestingSolutions.slice(3, 6)}
-              fadeUp={fadeUp}
-              center
-            />
+            <FeaturesList features={TestingSolutions.slice(3, 6)} center />
           </div>
 
-          <FeaturesList features={TestSolution} fadeUp={fadeUp} grid center />
+          <FeaturesList features={TestSolution} grid center />
 
           {/* === CTA ContactUsButton: Maximize Marketing === */}
-          <ContactUsButton variant="hover">MAXIMIZE YOUR MARKETING EFFORTS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            MAXIMIZE YOUR MARKETING EFFORTS
+          </ContactUsButton>
         </PageLayout>
       </section>
     </>

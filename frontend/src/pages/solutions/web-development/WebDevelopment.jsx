@@ -2,7 +2,6 @@ import ContactUsButton from "@/custom/ContactUsButton";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import { FeaturesList } from "@/components/FeaturesList";
-import { fadeUp } from "@/custom/FadeInWhenVisible";
 import PageLayout from "@/custom/PageLayout";
 import TechnologyStatCard from "@/components/TechnologyStatCard";
 import { Headline, TypographyH4 } from "@/custom/Typography";
@@ -46,7 +45,7 @@ const WebDevelopment = () => {
           features={webDevCardData}
           src="/assets/solutions/web-development/web-development-right.png"
           imageAlign="right"
-          imgClass="w-96"
+          imgClass="w-96 xl:w-115"
         />
 
         {/* Call to action button */}
@@ -63,9 +62,11 @@ const WebDevelopment = () => {
         />
 
         {/* List of web development services */}
-        <FeaturesList features={webDevelopmentServices} fadeUp={fadeUp} grid3 center />
+        <FeaturesList features={webDevelopmentServices} grid3 center />
 
-        <ContactUsButton variant="hover">HIRE FULL-STACK WEB DEVELOPERS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          HIRE FULL-STACK WEB DEVELOPERS
+        </ContactUsButton>
       </PageLayout>
 
       {/* ====== Tech Stack Section ====== */}
@@ -100,7 +101,9 @@ const WebDevelopment = () => {
             ))}
           </div>
 
-          <ContactUsButton variant="hover">REQUEST WEB DEVELOPMENT SERVICES</ContactUsButton>
+          <ContactUsButton variant="hover">
+            REQUEST WEB DEVELOPMENT SERVICES
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -115,9 +118,11 @@ const WebDevelopment = () => {
           to drive innovation and success."
         />
 
-        <FeaturesList features={aiDevCardData} fadeUp={fadeUp} grid iconAlign="horizontal" />
+        <FeaturesList features={aiDevCardData} grid iconAlign="horizontal" />
 
-        <ContactUsButton variant="hover">HIRE WEB APP DEVELOPER</ContactUsButton>
+        <ContactUsButton variant="hover">
+          HIRE WEB APP DEVELOPER
+        </ContactUsButton>
       </PageLayout>
 
       {/* ====== Support Section ====== */}
@@ -131,9 +136,11 @@ const WebDevelopment = () => {
             your benefit."
           />
 
-          <FeaturesList features={supportServices} fadeUp={fadeUp} grid center />
+          <FeaturesList features={supportServices} grid center />
 
-          <ContactUsButton variant="hover">GET WEB SUPPORT ON-DEMAND</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET WEB SUPPORT ON-DEMAND
+          </ContactUsButton>
         </PageLayout>
       </section>
 

@@ -85,7 +85,7 @@ const DynamicHelmet = () => {
       <meta
         key="og:title"
         property="og:title"
-        content={currentMeta.title || "Software Development | U Technology"}
+        content={currentMeta.title || "Software Development | U Tech"}
       />
       <meta
         key="og:description"
@@ -97,12 +97,20 @@ const DynamicHelmet = () => {
       <meta property="og:image:height" content="630" />
 
       {/* Twitter */}
-      <meta key="twitter:card" name="twitter:card" content="summary_large_image" />
-      <meta key="twitter:url" name="twitter:url" content={currentMeta.canonical} />
+      <meta
+        key="twitter:card"
+        name="twitter:card"
+        content="summary_large_image"
+      />
+      <meta
+        key="twitter:url"
+        name="twitter:url"
+        content={currentMeta.canonical}
+      />
       <meta
         key="twitter:title"
         name="twitter:title"
-        content={currentMeta.title || "Software Development | U Technology"}
+        content={currentMeta.title || "Software Development | U Tech"}
       />
       <meta
         key="twitter:description"

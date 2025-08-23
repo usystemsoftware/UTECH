@@ -114,7 +114,7 @@ export const TestingSolutions = [
     icon: "BadgeIndianRupee",
     title: "SEO Marketing Tools",
     description:
-      "Integrating Semrush or Ahrefs are excellent tools to use when optimizing your SEO, and with U Technology on your side, we can integrate these tools seamlessly with your workflows.",
+      "Integrating Semrush or Ahrefs are excellent tools to use when optimizing your SEO, and with U Tech on your side, we can integrate these tools seamlessly with your workflows.",
   },
 ];
 
@@ -123,7 +123,7 @@ export const TestSolution = [
     icon: "SearchCode",
     title: "SEO Marketing Tools",
     description:
-      "Whether you wish to utilize Google Ads, Bing Ads, or even Facebook Ads, U Technology developers can seamlessly conjoin your systems together, so you have full control over your ad spend.",
+      "Whether you wish to utilize Google Ads, Bing Ads, or even Facebook Ads, U Tech developers can seamlessly conjoin your systems together, so you have full control over your ad spend.",
   },
   {
     icon: "Star",

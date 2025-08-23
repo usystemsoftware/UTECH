@@ -13,25 +13,30 @@ import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 const dummyCustomers = [
   {
     id: 1,
-    name: "Dr. Anika Sharma",
-    email: "anika.sharma@medtech.io",
-    designation: "Radiology AI Specialist",
-    image: "/assets/customers/anika.png",
+    name: "Rajesh Umbarkar",
+    email: "usystem.rajesh@gmail.com",
+    designation: "Founder & CEO",
+    location: "Pune",
+    expertise: ["CEO", "Software Engineer", "CA", "Advacate"],
+    phone: "+91 9270033002",
+    image: "/assets/book-call/images.png",
+    description:
+      "I’m a technology consultant with 15+ years of experience in Finance and software industry",
   },
-  {
-    id: 2,
-    name: "John Matthews",
-    email: "john.matthews@cardioscan.com",
-    designation: "Cardiac Imaging Consultant",
-    image: "/assets/customers/john.png",
-  },
-  {
-    id: 3,
-    name: "Sara Lee",
-    email: "sara.lee@aidiagnostics.com",
-    designation: "AI Integration Consultant",
-    image: "/assets/customers/sara.png",
-  },
+  // {
+  //   id: 2,
+  //   name: "JR. Amol Mahor",
+  //   email: "amol@usystem.solutions",
+  //   designation: "JR. Software Engineer",
+  //   image: "/assets/customers/anika.png",
+  // },
+  // {
+  //   id: 3,
+  //   name: "JR. Abhijit Mhaske",
+  //   email: "abhijit@usystem.solutions",
+  //   designation: "JR. Software Engineer",
+  //   image: "/assets/customers/john.png",
+  // },
 ];
 
 export default function Customers() {
@@ -55,7 +60,7 @@ export default function Customers() {
           onBack={() => setSelectedCustomer(null)}
         />
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="flex justify-center items-center gap-6">
           {dummyCustomers.map((customer) => (
             <FadeInWhenVisible
               key={customer.id}
@@ -65,7 +70,7 @@ export default function Customers() {
                 <FadeInWhenVisible>
                   <img
                     loading="lazy"
-                    src={customer.image}
+                    src={customer.image || "/assets/book-call/images.png"}
                     alt={customer.name}
                     className="w-20 h-20 rounded-full border border-primary"
                   />

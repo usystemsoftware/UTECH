@@ -39,10 +39,19 @@ export const footerLinks = [
     title: "Services",
     links: [
       { label: "API Development", to: "/services/api-development" },
-      { label: "Aplication Development", to: "/services/application-development" },
+      {
+        label: "Aplication Development",
+        to: "/services/application-development",
+      },
       { label: "QA Testing", to: "/services/qa-testing" },
-      { label: "Digital Transformation", to: "/services/digital-transformation" },
-      { label: "Application Maintenance", to: "/services/application-maintenance" },
+      {
+        label: "Digital Transformation",
+        to: "/services/digital-transformation",
+      },
+      {
+        label: "Application Maintenance",
+        to: "/services/application-maintenance",
+      },
     ],
   },
   {
@@ -68,7 +77,7 @@ export const footerLinks = [
 ];
 
 export const legalNotices = [
-  "U Technology (India) Pvt Ltd CIN: U72900PN2020PTC193410 Registered Office no.02,15, Zeroboyz Chowk, Nehru Nagar, Pune, Pimpri-Chinchwad, Pune, Maharashtra - 411018 , Email ID: enquiry@usystem.software",
+  "U Tech (India) Pvt Ltd CIN: U72900PN2020PTC193410 Registered Office no.02,15, Zeroboyz Chowk, Nehru Nagar, Pune, Pimpri-Chinchwad, Pune, Maharashtra - 411018 , Email ID: enquiry@usystem.software",
   "Visitors are hereby informed that their information submitted on the website may be shared with relevant service providers. Product and service information is accurate based on the latest company data.",
   "We do not solicit or promote services through unsolicited calls or messages. Any such interactions should be reported to our support team immediately.",
 ];
@@ -92,14 +101,24 @@ export const Footer = () => {
           <p className="text-sm md:text-base text-gray-300">
             Subscribe to get the latest updates, articles, and inspiration.
           </p>
-          <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2">
-            <Input type="email" required placeholder="Enter your email" className="flex-1" />
+          <form
+            onSubmit={handleSubscribe}
+            className="flex flex-col sm:flex-row gap-2"
+          >
+            <Input
+              type="email"
+              required
+              placeholder="Enter your email"
+              className="flex-1"
+            />
             <Button type="submit" className="w-full sm:w-auto">
               Subscribe
             </Button>
           </form>
           {subscribed && (
-            <p className="text-green-400 text-sm md:text-base">Thank you for subscribing! 🎉</p>
+            <p className="text-green-400 text-sm md:text-base">
+              Thank you for subscribing! 🎉
+            </p>
           )}
           <div className="flex items-center gap-2 mt-4">
             {socialIcons.map((item, i) => (
@@ -120,7 +139,9 @@ export const Footer = () => {
         {/* Links Sections */}
         {footerLinks.map((section, i) => (
           <div key={i}>
-            <TypographyH4 className="text-base sm:text-xl mb-3">{section.title}</TypographyH4>
+            <TypographyH4 className="text-base sm:text-xl mb-3">
+              {section.title}
+            </TypographyH4>
             <ul className="space-y-2 sm:space-y-3 text-[13px] md:text-sm text-gray-300">
               {section.links.map((link, j) => (
                 <li key={j}>
@@ -156,7 +177,8 @@ export const Footer = () => {
           ))}
         </div>
         <div className="sm:text-base text-sm">
-          © {new Date().getFullYear()} Umbarakar Technology (India) Pvt Ltd. All rights reserved.
+          © {new Date().getFullYear()} Umbarakar Technology (India) Pvt Ltd. All
+          rights reserved.
         </div>
       </div>
       {/* Version */}

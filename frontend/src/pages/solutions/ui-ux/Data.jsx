@@ -151,11 +151,11 @@ export const uxUiTechStack = [
 // Testimonials
 export const uiuxtestimonials = [
   {
-    text: `I just wanted to let you know that the development that U Technology has been performing has exceeded my expectations. There are some really amazing innovations that we’ve incorporated in Adobe Illustrator. The HTML window in window functions are also great and I think is ground breaking and I’m really impressed how U Technology has been able to materialize my ideas into actual code and prototypes..`,
+    text: `I just wanted to let you know that the development that U Tech has been performing has exceeded my expectations. There are some really amazing innovations that we’ve incorporated in Adobe Illustrator. The HTML window in window functions are also great and I think is ground breaking and I’m really impressed how U Tech has been able to materialize my ideas into actual code and prototypes..`,
     author: "CEO, Leading Design Industry",
   },
   {
-    text: `Our application is now so much more user-friendly and intuitive. Not only has the overall experience improved for our users, but the integrated e-commerce platform has created a smoother transition for sales. From an investment standpoint,  U Technology experienced team members and affordable rates have allowed us to not only improve our return on investment but complete this project in a highly expeditious manner..`,
+    text: `Our application is now so much more user-friendly and intuitive. Not only has the overall experience improved for our users, but the integrated e-commerce platform has created a smoother transition for sales. From an investment standpoint,  U Tech experienced team members and affordable rates have allowed us to not only improve our return on investment but complete this project in a highly expeditious manner..`,
     author: "Director of IT Development, Travel Industry",
   },
 ];
@@ -170,7 +170,7 @@ export const uiuxfaqs = [
   {
     question: "What are the UI/UX design deliverables?",
     answer:
-      "Deliverables vary and are based on a project-by-project basis.  U Technology dedicated UI/UX developers focus on designing and delivering high-quality collateral focusing on Research reports, UX audit reports, red route analysis, user persona, Customer journey maps, Sitemap, Wireframes, UI sketches, interactive prototypes, and design systems.",
+      "Deliverables vary and are based on a project-by-project basis.  U Tech dedicated UI/UX developers focus on designing and delivering high-quality collateral focusing on Research reports, UX audit reports, red route analysis, user persona, Customer journey maps, Sitemap, Wireframes, UI sketches, interactive prototypes, and design systems.",
   },
   {
     question:

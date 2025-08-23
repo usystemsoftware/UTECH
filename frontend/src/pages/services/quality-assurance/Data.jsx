@@ -30,7 +30,7 @@ export const qualityPlatforms = [
     icon: "/assets/services/application-development/icons/6.svg",
     title: "Software QA Functional Testing",
     description:
-      "U Technology provides advanced-level QA functional testing services that focus on preventing unexpected or problematic software behaviors and detecting functionality defects early to ensure that it meets end-user expectations for functionality.",
+      "U Tech provides advanced-level QA functional testing services that focus on preventing unexpected or problematic software behaviors and detecting functionality defects early to ensure that it meets end-user expectations for functionality.",
   },
   {
     icon: "/assets/services/application-development/icons/7.svg",

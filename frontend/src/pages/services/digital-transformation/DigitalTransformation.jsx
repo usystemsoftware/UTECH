@@ -34,7 +34,7 @@ const DigitalTransformation = () => {
         <Headline
           title="Drive Growth and Innovation With Our Digital Transformation
             Solutions"
-          description="U Technology’s digital transformation consulting experts will help your
+          description="U Tech’s digital transformation consulting experts will help your
             business reach optimal performance through innovative strategies and
             implementation of digital transformation initiatives. Our DevOps
             specialists are available to provide workflow automation, deploy,
@@ -86,7 +86,7 @@ const DigitalTransformation = () => {
       <PageLayout className="py-16 text-center space-y-10">
         <Headline
           title="Industry-Specific Digital Transformation Solutions"
-          description="U Technology provides customized digital transformation solutions to meet
+          description="U Tech provides customized digital transformation solutions to meet
           the specific needs of businesses across different industries,
           including finance, healthcare, and retail."
         />
@@ -149,7 +149,7 @@ const DigitalTransformation = () => {
       <PageLayout className="py-20 text-center space-y-10">
         <Headline
           title="Top Talent & Industry Expertise"
-          description="U Technology recruits top talent that goes through a rigorous hiring
+          description="U Tech recruits top talent that goes through a rigorous hiring
           process followed by thorough training and development to provide
           optimal service."
         />

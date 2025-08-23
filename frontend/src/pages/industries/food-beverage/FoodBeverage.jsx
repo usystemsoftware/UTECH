@@ -86,7 +86,9 @@ const FoodBeverage = () => {
               />
             </div>
           </div>
-          <ContactUsButton variant="hover">GET F&B MGMT SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET F&B MGMT SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -130,7 +132,9 @@ const FoodBeverage = () => {
               iconAlign="horizontal"
             />
           </div>
-          <ContactUsButton variant="hover">GET F&B QA SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET F&B QA SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -152,7 +156,9 @@ const FoodBeverage = () => {
             className="w-135 md:w-145 xl:w-155 2xl:w-165 mx-auto"
           />
         </div>
-        <ContactUsButton variant="hover">GET F&B DISTRIBUTION SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET F&B DISTRIBUTION SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       {/* Food & Beverage Inventory Management Section */}
@@ -174,7 +180,9 @@ const FoodBeverage = () => {
               iconAlign="horizontal"
             />
           </div>
-          <ContactUsButton variant="hover">GET F&B INVENTORY MGMT SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET F&B INVENTORY MGMT SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -186,8 +194,7 @@ const FoodBeverage = () => {
             WE ENSURE YOUR COMPLIANCE WITH THE USDA & FDA
           </TypographyH3>
           <TypographyMuted>
-            U Technology's food and beverage software development,
-            integration...
+            U Tech's food and beverage software development, integration...
           </TypographyMuted>
         </div>
 
@@ -251,7 +258,9 @@ const FoodBeverage = () => {
             className="w-145 xl:w-155 2xl:w-165 mx-auto"
           />
         </div>
-        <ContactUsButton variant="hover">GET F&B TRACEABILITY SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET F&B TRACEABILITY SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
     </>
   );

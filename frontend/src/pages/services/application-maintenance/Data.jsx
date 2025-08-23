@@ -89,7 +89,7 @@ export const ApplicationSupport = [
   {
     title: "Scalability Solutions",
     description:
-      "Future-proof your technology with our scalable support solutions. Designed to evolve alongside your business, our services seamlessly adapt to growing demands. Whether expanding user bases or incorporating new functionalities, U Technology ensures your applications remain agile, efficient, and ready to scale with your organizational objectives.",
+      "Future-proof your technology with our scalable support solutions. Designed to evolve alongside your business, our services seamlessly adapt to growing demands. Whether expanding user bases or incorporating new functionalities, U Tech ensures your applications remain agile, efficient, and ready to scale with your organizational objectives.",
     icon: "/assets/services/application-maintenanc/icons/10015.svg",
   },
   {
@@ -215,9 +215,9 @@ export const faqs = [
   },
   {
     question:
-      "Can U Technology customize support services based on our specific industry requirements?",
+      "Can U Tech customize support services based on our specific industry requirements?",
     answer:
-      "Absolutely. U Technology's application support services are tailored to meet the specific requirements of diverse industries. Our team of experts understands the workings of various sectors, enabling us to customize support solutions that align precisely with your industry's unique needs and challenges..",
+      "Absolutely. U Tech's application support services are tailored to meet the specific requirements of diverse industries. Our team of experts understands the workings of various sectors, enabling us to customize support solutions that align precisely with your industry's unique needs and challenges..",
   },
   {
     question: "How do you handle downtime on an application?",
@@ -226,8 +226,8 @@ export const faqs = [
   },
   {
     question:
-      "Can U Technology provide examples of successful application support implementations?",
+      "Can U Tech provide examples of successful application support implementations?",
     answer:
-      "Absolutely. Explore our client portfolio to see firsthand how U Technology's application support services have positively impacted diverse industries. Our tailored solutions, coupled with a commitment to excellence, have consistently delivered optimal outcomes for our clients",
+      "Absolutely. Explore our client portfolio to see firsthand how U Tech's application support services have positively impacted diverse industries. Our tailored solutions, coupled with a commitment to excellence, have consistently delivered optimal outcomes for our clients",
   },
 ];

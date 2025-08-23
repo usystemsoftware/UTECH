@@ -5,7 +5,6 @@ import ContactUsButton from "@/custom/ContactUsButton";
 import FaqSection from "@/custom/FaqSection";
 import HeroSection from "@/components/HeroSection";
 import TechnologyStatCard from "@/components/TechnologyStatCard";
-import { FadeInWhenVisible, fadeUp } from "@/custom/FadeInWhenVisible";
 import {
   aiEmbeddedSolutions,
   bspSolutions,
@@ -32,29 +31,29 @@ const EmbeddedSoftware = () => {
       {/* ===== ROBUST SOFTWARE & HARDWARE SOLUTIONS ===== */}
       <PageLayout className="py-12 space-y-10 text-center">
         <Headline
-          title="U Technology Provides Top Embedded Software Solutions"
+          title="U Tech Provides Top Embedded Software Solutions"
           description="Our embedded software engineers offer turn-key embedded system
             solutions, creating, testing, debugging, and validating solutions
             for various platforms and architectures, utilizing their expertise
             in computer science."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
           {/* Left-side image */}
-          <FadeInWhenVisible delay={0.2}>
-            <img
-              loading="lazy"
-              src="/assets/solutions/embedded-software/solution.png"
-              alt="Tax Preparation"
-              className="sm:w-96 w-68 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/solutions/embedded-software/solution.png"
+            alt="Tax Preparation"
+            className="sm:w-96 w-68 xl:w-110 2xl:w-120 mx-auto"
+          />
 
           {/* Right-side feature list */}
-          <FeaturesList features={robustSolutions} fadeUp={fadeUp} iconAlign="horizontal" />
+          <FeaturesList features={robustSolutions} iconAlign="horizontal" />
         </div>
 
         {/* Call to action button */}
-        <ContactUsButton variant="hover">Get Embedded Software Developers</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Get Embedded Software Developers
+        </ContactUsButton>
       </PageLayout>
 
       {/* ===== HMI (Human-Machine Interface) SOLUTIONS ===== */}
@@ -65,23 +64,25 @@ const EmbeddedSoftware = () => {
             enable full visibility and control over your embedded systems in
             real-time."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           {/* Left-side feature list */}
-          <FeaturesList features={hmiSolutions} fadeUp={fadeUp} iconAlign="horizontal" />
+          <div className="order-2 md:order-1">
+            <FeaturesList features={hmiSolutions} iconAlign="horizontal" />
+          </div>
 
           {/* Right-side image */}
-          <FadeInWhenVisible delay={0.2}>
-            <img
-              loading="lazy"
-              src="/assets/solutions/embedded-software/development.png"
-              alt="Tax Preparation"
-              className="w-68 sm:w-96 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/solutions/embedded-software/development.png"
+            alt="Tax Preparation"
+            className="sm:w-96 w-68 xl:w-110 2xl:w-120 mx-auto"
+          />
         </div>
 
         {/* CTA button */}
-        <ContactUsButton variant="hover">Get Embedded Hmi Solutions</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Get Embedded Hmi Solutions
+        </ContactUsButton>
       </PageLayout>
 
       {/* ===== AI-POWERED EMBEDDED SOFTWARE SOLUTIONS ===== */}
@@ -94,7 +95,11 @@ const EmbeddedSoftware = () => {
               through advanced AI integration."
           />
           {/* Two-column grid for AI solution features */}
-          <FeaturesList features={aiEmbeddedSolutions} grid iconAlign="horizontal" />
+          <FeaturesList
+            features={aiEmbeddedSolutions}
+            grid
+            iconAlign="horizontal"
+          />
         </PageLayout>
       </section>
 
@@ -106,23 +111,23 @@ const EmbeddedSoftware = () => {
             by completing a custom Linux development board support package
             (BSP)."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
           {/* Left-side image */}
-          <FadeInWhenVisible delay={0.2}>
-            <img
-              loading="lazy"
-              src="/assets/solutions/embedded-software/package.png"
-              alt="Tax Preparation"
-              className="w-110 mx-auto"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/solutions/embedded-software/package.png"
+            alt="Tax Preparation"
+            className="w-145 xl:w-155 2xl:w-175 mx-auto"
+          />
 
           {/* Right-side feature list */}
-          <FeaturesList features={bspSolutions} fadeUp={fadeUp} iconAlign="horizontal" />
+          <FeaturesList features={bspSolutions} iconAlign="horizontal" />
         </div>
 
         {/* CTA button */}
-        <ContactUsButton variant="hover">Get Embedded Bsp Solutions</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Get Embedded Bsp Solutions
+        </ContactUsButton>
       </PageLayout>
 
       {/* ===== EMBEDDED DEVELOPMENT SOLUTIONS SECTION ===== */}
@@ -135,10 +140,16 @@ const EmbeddedSoftware = () => {
               Internet of Things, industrial automation, and beyond."
           />
           {/* Grid layout for two columns of feature lists */}
-          <FeaturesList features={embeddedDevSolutions} grid iconAlign="horizontal" />
+          <FeaturesList
+            features={embeddedDevSolutions}
+            grid
+            iconAlign="horizontal"
+          />
 
           {/* CTA button */}
-          <ContactUsButton variant="hover">Get Embedded Solutions</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Get Embedded Solutions
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -149,23 +160,23 @@ const EmbeddedSoftware = () => {
           description="We revamp your existing custom embedded hardware or off-the-shelf
             solution, providing end-to-end design from concept to production."
         />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           {/* Left-side features */}
-          <FeaturesList features={industrySolutions} fadeUp={fadeUp} iconAlign="horizontal" />
+          <FeaturesList features={industrySolutions} iconAlign="horizontal" />
 
           {/* Right-side image */}
-          <FadeInWhenVisible delay={0.2}>
-            <img
-              loading="lazy"
-              src="/assets/solutions/embedded-software/services.png"
-              alt="Tax Preparation"
-              className="w-68 mx-auto sm:w-96"
-            />
-          </FadeInWhenVisible>
+          <img
+            loading="lazy"
+            src="/assets/solutions/embedded-software/services.png"
+            alt="Tax Preparation"
+            className="w-68 mx-auto sm:w-110"
+          />
         </div>
 
         {/* CTA button */}
-        <ContactUsButton variant="hover">Get Embedded Hmi Solutions</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Get Embedded Hmi Solutions
+        </ContactUsButton>
       </PageLayout>
 
       {/* ===== EMBEDDED SOFTWARE DEVELOPER TOOLS ===== */}

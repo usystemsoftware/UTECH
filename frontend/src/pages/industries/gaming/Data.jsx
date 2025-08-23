@@ -79,7 +79,7 @@ export const gamingLoanServicingfeatures = [
   {
     title: "Video Game Software Development",
     description:
-      "U Technology’s is skilled with using Unreal Engine, CRYENGINE, Unity 3D/5.0, Riot Engine, Maya, Houdini, and more, plus JavaScript, HTML5, C/C++, and more to model/render animations..",
+      "U Tech’s is skilled with using Unreal Engine, CRYENGINE, Unity 3D/5.0, Riot Engine, Maya, Houdini, and more, plus JavaScript, HTML5, C/C++, and more to model/render animations..",
     icon: "/assets/industries/gaming/icons/14.svg",
     animation: "animate-bounce",
   },

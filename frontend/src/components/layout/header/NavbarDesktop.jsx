@@ -92,6 +92,13 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
                 </div>
               </div>
             ))}
+            <Link to="/company/careers">
+              <TypographySmall
+                className={`font-semibold tracking-wide uppercase  underline-offset-6 hover:underline hover:text-primary ${!scrolled && "text-white"}`}
+              >
+                Careers
+              </TypographySmall>
+            </Link>
           </nav>
 
           {/* Right Side Buttons */}

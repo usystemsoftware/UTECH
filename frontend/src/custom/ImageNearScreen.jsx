@@ -25,7 +25,7 @@ const ImageNearScreen = ({
             loading="lazy"
             src={src}
             alt="Portfolio"
-            className={`h-auto object-contain`}
+            className={`${imgClass} object-contain`}
           />
         </div>
 

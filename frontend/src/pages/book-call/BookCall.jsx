@@ -19,20 +19,20 @@ const timeSlots = {
     Morning: ["9:00 AM", "10:30 AM"],
     Afternoon: ["1:00 PM"],
     Evening: [],
-    Night: ["9:00 PM"]
+    Night: ["9:00 PM"],
   },
   "2025-07-24": {
     Morning: [],
     Afternoon: [],
     Evening: [],
-    Night: []
+    Night: [],
   },
   "2025-08-02": {
     Morning: ["8:30 AM", "9:15 AM"],
     Afternoon: ["2:00 PM", "3:00 PM"],
     Evening: ["6:00 PM"],
-    Night: []
-  }
+    Night: [],
+  },
 };
 
 const BookCall = ({ bookingData, setBookingData, customer, onBack }) => {
@@ -45,7 +45,7 @@ const BookCall = ({ bookingData, setBookingData, customer, onBack }) => {
     Morning: [],
     Afternoon: [],
     Evening: [],
-    Night: []
+    Night: [],
   };
 
   const now = dayjs();
@@ -80,19 +80,20 @@ const BookCall = ({ bookingData, setBookingData, customer, onBack }) => {
           />
           <TypographyH5>{customer?.name || "Customer Care"}</TypographyH5>
           <TypographySmall className="text-muted-foreground">
-            {customer?.designation || "Founder & CEO | AI & Medical Device Expert"}
+            {customer?.designation ||
+              "Founder & CEO | AI & Medical Device Expert"}
           </TypographySmall>
           <TypographyP className="mt-4 text-sm text-muted-foreground">
-            I’m a technology consultant with 16+ years of experience in AI-powered medical devices, embedded systems, and wireless communication.
+            {customer?.description}
           </TypographyP>
 
           <div className="mt-6">
             <TypographyH5 className="mb-2">Expertise</TypographyH5>
             <div className="flex flex-wrap justify-center md:justify-start gap-2">
-              {["AI in Medical Devices", "BLE", "Embedded Systems", "Edge AI", "Imaging", "Cloud", "IoT"].map((item) => (
+              {customer?.expertise.map((item) => (
                 <span
                   key={item}
-                  className="bg-muted text-foreground px-3 py-1 rounded-full text-xs border border-border"
+                  className="bg-muted text-foreground px-3 py-2 cursor-pointer rounded-full text-xs border border-border"
                 >
                   {item}
                 </span>
@@ -102,12 +103,15 @@ const BookCall = ({ bookingData, setBookingData, customer, onBack }) => {
 
           <div className="mt-6 flex flex-col gap-2 items-center md:items-start text-sm text-muted-foreground">
             <div className="flex items-center">
-              <IconRenderer name="MapPin" className="mr-2" /> Pune
+              <IconRenderer name="MapPin" className="mr-2" />{" "}
+              {customer?.location}
             </div>
             <div className="flex items-center">
               <IconRenderer name="Mail" className="mr-2" />
               <a
-                href={`mailto:${customer?.email || "cansultent@usystem.solutions"}`}
+                href={`mailto:${
+                  customer?.email || "cansultent@usystem.solutions"
+                }`}
                 className="underline hover:text-primary"
               >
                 {customer?.email || "cansultent@usystem.solutions"}
@@ -115,28 +119,33 @@ const BookCall = ({ bookingData, setBookingData, customer, onBack }) => {
             </div>
             <div className="flex items-center">
               <IconRenderer name="Phone" className="mr-2" />
-              <a href="tel:+9270033002" className="underline hover:text-primary">
-                +9270033002
+              <a
+                href="tel:+9270033002"
+                className="underline hover:text-primary"
+              >
+                {customer?.phone}
               </a>
             </div>
           </div>
 
           <a
-            href="https://wa.me/6589520271"
+            href={`https://wa.me/${customer?.phone}`}
             className="inline-block mt-4 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full text-sm transition"
           >
             Chat on WhatsApp
           </a>
 
           <div className="mt-6 flex justify-center md:justify-start gap-4">
-            {["Facebook", "Instagram", "Twitter", "Linkedin"].map((platform) => (
-              <IconRenderer
-                key={platform}
-                name={platform}
-                size={22}
-                className="text-muted-foreground hover:text-primary transition cursor-pointer"
-              />
-            ))}
+            {["Facebook", "Instagram", "Twitter", "Linkedin"].map(
+              (platform) => (
+                <IconRenderer
+                  key={platform}
+                  name={platform}
+                  size={22}
+                  className="text-muted-foreground hover:text-primary transition cursor-pointer"
+                />
+              )
+            )}
           </div>
         </div>
 
@@ -170,7 +179,12 @@ const BookCall = ({ bookingData, setBookingData, customer, onBack }) => {
                       const isToday = dayjs().isSame(selectedDate, "day");
                       const [hour, minutePart] = time.split(":");
                       const [minutes, ampm] = minutePart.split(" ");
-                      const hour24 = ampm === "PM" && +hour !== 12 ? +hour + 12 : ampm === "AM" && +hour === 12 ? 0 : +hour;
+                      const hour24 =
+                        ampm === "PM" && +hour !== 12
+                          ? +hour + 12
+                          : ampm === "AM" && +hour === 12
+                          ? 0
+                          : +hour;
                       const slotDateTime = dayjs(selectedDate)
                         .hour(hour24)
                         .minute(parseInt(minutes))
@@ -182,9 +196,10 @@ const BookCall = ({ bookingData, setBookingData, customer, onBack }) => {
                           key={time}
                           disabled={isPast}
                           className={`px-4 py-2 text-sm border rounded cursor-pointer transition 
-                            ${isPast
-                              ? "bg-muted text-muted-foreground cursor-not-allowed"
-                              : selectedSlot === time
+                            ${
+                              isPast
+                                ? "bg-muted text-muted-foreground cursor-not-allowed"
+                                : selectedSlot === time
                                 ? "bg-primary text-white"
                                 : "bg-background hover:bg-accent hover:text-accent-foreground"
                             }`}
@@ -216,11 +231,7 @@ const BookCall = ({ bookingData, setBookingData, customer, onBack }) => {
             Book Now
           </Button>
 
-          <Button
-            variant="secondary"
-            className="mt-4 w-full"
-            onClick={onBack}
-          >
+          <Button variant="secondary" className="mt-4 w-full" onClick={onBack}>
             Back
           </Button>
         </div>

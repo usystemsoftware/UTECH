@@ -39,18 +39,19 @@ export default function OurPartners() {
   return (
     <section className="relative bg-[#213448] py-16 text-white overflow-hidden">
       <PageLayout>
-
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center z-10 relative">
           {/* Left Content */}
           <div className="md:col-span-5 space-y-6">
-            <TypographyH1>Trusted by Leading Companies Worldwide</TypographyH1>
-            <TypographyMuted>
+            <TypographyH1 className="xl:text-3xl 2xl:text-4xl">
+              Trusted by Leading Companies Worldwide
+            </TypographyH1>
+            <TypographyMuted className="2xl:text-xl">
               We are your partners in innovation, delivering cutting-edge
               solutions for top companies across the globe.
             </TypographyMuted>
             <Button
               variant="link"
-              className="text-orange-500 text-md px-0 font-semibold"
+              className="text-orange-500 text-md px-0 2xl:text-xl font-semibold"
             >
               Explore Partner Ecosystem →
             </Button>
