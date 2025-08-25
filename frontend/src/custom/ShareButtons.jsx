@@ -17,8 +17,8 @@ const ShareButtons = () => {
 
   const pathname = location.pathname;
   const slug = pathname.split("/").filter(Boolean).pop();
-  // const shareUrl = `http://staging.usystem.software/share/${slug}`; // backend url
-  const shareUrl = `https://u-tech-r7be.onrender.com/share/${slug}`; // backend url
+  const shareUrl = `http://staging.usystem.software/share/${slug}`; // backend url
+  // const shareUrl = `https://u-tech-r7be.onrender.com/share/${slug}`; // backend url
 
   const isMobile = () => /Mobi|Android|iPhone/i.test(navigator.userAgent);
 
@@ -42,7 +42,7 @@ const ShareButtons = () => {
           onClick={handleNativeShare}
           className="bg-blue-500 text-white p-3 rounded-full cursor-pointer shadow-md"
         >
-          <Share2 size={16}/>
+          <Share2 size={16} />
         </button>
       ) : (
         // Desktop: Toggle button + dropdown list
@@ -52,7 +52,7 @@ const ShareButtons = () => {
             onClick={() => setOpen(!open)}
             className="bg-blue-500 text-white p-3 rounded-full cursor-pointer shadow-md"
           >
-            <Share2 size={22}/>
+            <Share2 size={22} />
           </button>
 
           {/* Dropdown with share options */}
