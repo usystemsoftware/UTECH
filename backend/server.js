@@ -1,8 +1,8 @@
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
-const connectDB = require('./config/db');
-const { metaData } = require('./config/metaData');
+require("dotenv").config();
+const express = require("express");
+const cors = require("cors");
+const connectDB = require("./config/db");
+const { metaData } = require("./config/metaData");
 
 const app = express();
 
@@ -11,23 +11,24 @@ const app = express();
 app.use(cors());
 
 app.use(express.json());
-app.get('/', (req, res) => {
-  res.send("this is u_tech server v1")
-})
+app.get("/", (req, res) => {
+  res.send("this is u_tech server v2");
+});
 
-// for seo manage 
-
+// for seo manage
 app.get("/sitemap.xml", (req, res) => {
   res.header("Content-Type", "application/xml");
   const urls = Object.values(metaData)
-    .map(data => `
+    .map(
+      (data) => `
       <url>
         <loc>${data.url}</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
       </url>
-    `)
+    `
+    )
     .join("");
 
   res.send(`
@@ -37,11 +38,14 @@ app.get("/sitemap.xml", (req, res) => {
   `);
 });
 
-
-app.use('/auth', require('./routes/authRoutes'));
-app.use('/chatbot', require('./routes/chatbotRoutes'));
-app.use('/share', require('./routes/metaShareRoutes'))
+app.use("/auth", require("./routes/authRoutes"));
+app.use("/chatbot", require("./routes/chatbotRoutes"));
+app.use("/share", require("./routes/metaShareRoutes"));
+app.use("/jobs", require("./routes/jobRoutes"));
+app.use("/bookings", require("./routes/bookingRoutes"));
 
 // connectDB();
 
-app.listen(process.env.PORT, () => console.log(` Server running on http://localhost:${process.env.PORT}`));
+app.listen(process.env.PORT, () =>
+  console.log(` Server running on http://localhost:${process.env.PORT}`)
+);
