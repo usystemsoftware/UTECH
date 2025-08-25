@@ -23,7 +23,7 @@ export const HeroSection = () => {
         <div className="grid sm:grid-cols-2 items-center gap-10">
           {/* LEFT TEXT CONTENT */}
           <div className="space-y-8 text-white">
-            <FadeInWhenVisible delay={0.1}>
+            <FadeInWhenVisible delay={0.1} className="hidden md:block">
               <TypographySmall className="sm:p-3 p-2 text-center text-white bg-primary rounded-full text-sm 2xl:text-lg inline-block">
                 🚀 Digital Engineering & Enterprise Modernization
               </TypographySmall>

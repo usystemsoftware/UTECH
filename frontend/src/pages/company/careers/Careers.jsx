@@ -4,6 +4,7 @@ import PageLayout from "@/custom/PageLayout";
 import { Headline, TypographyH4, TypographyMuted } from "@/custom/Typography";
 import { Link } from "react-router-dom";
 import { companyValues, jobs } from "./Data";
+import { Clock, ShieldCheck } from "lucide-react";
 
 export default function Careers() {
   return (
@@ -27,15 +28,25 @@ export default function Careers() {
                 height={400}
                 className="w-full h-64 object-cover object-center"
               />
-              <div className="space-y-3 p-6 shadow">
+              <div className="space-y-3 p-4 shadow">
                 <TypographyH4>{job.title}</TypographyH4>
-                <TypographyMuted>{job.type}</TypographyMuted>
-                <div className="flex justify-between">
-                  <span className="bg-green-100 p-2 text-sm">Active</span>
-                  <Link to={job.link}>
-                    <Button>View Details</Button>
-                  </Link>
+                <TypographyMuted className="sm:line-clamp-3">
+                  {job.description}
+                </TypographyMuted>
+                <div className="flex items-center flex-wrap gap-4 mt-4">
+                  <TypographyMuted>{job.type}</TypographyMuted>
+                  <span className="bg-secondary py-2 flex items-center gap-1 px-6 rounded-full text-sm">
+                    <Clock size={16} /> 23-08-2025
+                  </span>
+
+                  <span className="bg-green-200 flex items-center gap-1 py-2 px-6 rounded-full text-sm">
+                    {" "}
+                    <ShieldCheck size={16} /> Active{" "}
+                  </span>
                 </div>
+                <Link to={job.link}>
+                  <Button className="w-full">View Details</Button>
+                </Link>
               </div>
             </div>
           ))}

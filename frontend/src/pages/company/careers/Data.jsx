@@ -2,6 +2,37 @@
 export const jobs = [
   {
     id: 1,
+    title: "Full Stack Developer",
+    type: "Fulltime",
+    location: "Remote / Onsite",
+    link: "/company/careers/full-stack-developer",
+    slug: "full-stack-developer",
+    img: "/assets/company/careers/fullstack-devp.jpeg",
+    description:
+      "We are looking for experienced Full Stack Developers who can handle both client-side and server-side development. You will be responsible for designing, developing, and maintaining scalable web applications.",
+    roledef:
+      "As a Full Stack Developer, you should be comfortable with front-end frameworks, backend development, APIs, and databases. You will work across the stack to deliver high-quality software solutions.",
+    responsibility: [
+      "Develop and maintain both client-side and server-side applications.",
+      "Design and manage APIs and integrations.",
+      "Work with databases for data storage and retrieval.",
+      "Ensure application performance, scalability, and security.",
+      "Collaborate with designers, developers, and product managers.",
+    ],
+    skills: [
+      "JavaScript / TypeScript",
+      "React / Next.js",
+      "Node.js / Express.js",
+      "Databases (MongoDB, PostgreSQL, MySQL)",
+      "REST & GraphQL APIs",
+      "Cloud Platforms (AWS, GCP, Azure)",
+      "Version Control (Git, GitHub)",
+    ],
+    qualification:
+      "Bachelor’s degree in Computer Science or related field. 2+ years experience in full-stack development preferred.",
+  },
+  {
+    id: 2,
     title: "Front End Developer",
     type: "Fulltime",
     location: "Remote / Onsite",
@@ -20,7 +51,7 @@ export const jobs = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Backend Developer",
     type: "Fulltime",
     location: "Remote / Onsite",
@@ -49,7 +80,7 @@ export const jobs = [
       "Bachelor’s degree in Computer Science or related field. Strong knowledge of backend frameworks and databases.",
   },
   {
-    id: 3,
+    id: 4,
     title: "Digital Marketing Executive",
     type: "Fulltime",
     location: "Remote / Onsite",
@@ -95,7 +126,7 @@ export const jobs = [
       "Any Degree with Digital Marketing Course (Certified) and should have handled live projects.",
   },
   {
-    id: 4,
+    id: 5,
     title: "UI UX Designer",
     type: "Fulltime",
     location: "Remote / Onsite",
@@ -114,7 +145,7 @@ export const jobs = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Embedded Developer",
     type: "Fulltime",
     location: "Remote / Onsite",
@@ -137,7 +168,7 @@ export const jobs = [
     qualification: "BE in Electronics, Electrical or Computer.",
   },
   {
-    id: 6,
+    id: 7,
     title: "Hardware Engineer",
     type: "Fulltime",
     location: "Remote / Onsite",

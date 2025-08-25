@@ -1,7 +1,10 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5002",
+  baseURL:
+    window.location.hostname === "localhost"
+      ? "http://localhost:5002"
+      : "https://staging.usystem.software",
 });
 
 // Send a message to chatbot

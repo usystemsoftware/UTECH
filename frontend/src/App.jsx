@@ -11,6 +11,7 @@ import { CompanyRoutes } from "@/routes/CompanyRoutes";
 // import DynamicHelmet from "@/custom/DynamicHelmet";
 import CookieConsentBanner from "@/components/layout/CookieConsentBanner";
 import { useAnalytics } from "@/hooks/useAnalytics";
+import { ScrollToTopButton } from "@/components/ScrollToTop";
 
 export default function App() {
   useAnalytics();
@@ -51,6 +52,7 @@ export default function App() {
       </Routes>
 
       <Chat />
+      <ScrollToTopButton />
       <Footer />
     </>
   );

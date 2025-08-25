@@ -15,26 +15,25 @@ import {
 } from "@/custom/Typography";
 import { Locations } from "./Data";
 import LoadingPage from "@/custom/LoadingPage";
+import { Mail } from "lucide-react";
 
 const contactFields = [
   { name: "name", label: "Full Name", required: true, type: "text" },
   { name: "email", label: "Email", required: true, type: "email" },
   { name: "phone", label: "Phone", required: true, type: "text" },
-  { name: "company", label: "Company (Optional)", required: false, type: "text" },
-];
-
-const emails = [
-  "consultant@usystem.software",
-  "sales@usystem.solution",
-  "sales@usystem.software",
+  {
+    name: "company",
+    label: "Company (Optional)",
+    required: false,
+    type: "text",
+  },
 ];
 
 const ContactPage = () => {
-
   const { search } = useLocation();
   const params = new URLSearchParams(search);
   const fromPage = params.get("from");
-  console.log(fromPage)
+  console.log(fromPage);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -46,14 +45,13 @@ const ContactPage = () => {
     company: "",
     message: "",
     tradeshow: "",
-    from: ""
+    from: "",
   });
   useEffect(() => {
     if (fromPage) {
       setFormData((prev) => ({ ...prev, from: fromPage }));
     }
   }, [fromPage]);
-
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -130,7 +128,8 @@ const ContactPage = () => {
               What’s on your mind?
             </h1>
             <p className="text-lg mb-6">
-              We’re here to help! Tell us what you’re looking for and we’ll get you connected to the right people.
+              We’re here to help! Tell us what you’re looking for and we’ll get
+              you connected to the right people.
             </p>
           </div>
         </div>
@@ -143,7 +142,9 @@ const ContactPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {contactFields.map(({ name, label, required, type }) => (
               <div key={name} className="grid gap-2">
-                <Label className="uppercase">{label} {required && <span className="text-red-500">*</span>}</Label>
+                <Label className="uppercase">
+                  {label} {required && <span className="text-red-500">*</span>}
+                </Label>
                 <Input
                   type={type}
                   name={name}
@@ -171,7 +172,8 @@ const ContactPage = () => {
           {/* Tradeshow */}
           <div className="grid gap-2">
             <Label className="text-sm mb-1 block">
-              Have you seen us at any tradeshow? <span className="text-red-500">*</span>
+              Have you seen us at any tradeshow?{" "}
+              <span className="text-red-500">*</span>
             </Label>
             <div className="flex items-center gap-6">
               {["Yes", "No"].map((option) => (
@@ -193,45 +195,44 @@ const ContactPage = () => {
 
           {/* Legal Notes */}
           <TypographyMuted className="text-xs pt-2">
-            <span className="text-red-500">*</span> By requesting a consult you agree to the terms of U Tech's{" "}
-            <a href="#" className="text-blue-600 underline">privacy policy</a>.
+            <span className="text-red-500">*</span> By requesting a consult you
+            agree to the terms of U Tech's{" "}
+            <a href="#" className="text-blue-600 underline">
+              privacy policy
+            </a>
+            .
           </TypographyMuted>
           <TypographyMuted className="text-xs">
             This site is protected by reCAPTCHA and the Google{" "}
-            <a href="#" className="text-blue-600 underline">Privacy Policy</a> and{" "}
-            <a href="#" className="text-blue-600 underline">Terms of Service</a> apply.
+            <a href="#" className="text-blue-600 underline">
+              Privacy Policy
+            </a>{" "}
+            and{" "}
+            <a href="#" className="text-blue-600 underline">
+              Terms of Service
+            </a>{" "}
+            apply.
           </TypographyMuted>
         </form>
 
         {/* LOCATIONS */}
         <div className="space-y-6 text-sm">
-          <div className="space-y-2">
-            <p>Mumbai: +91 9270033002</p>
-            <p>Pune: +91 9270033002</p>
-            <div className="flex items-center gap-2">
-              {/* WhatsApp button */}
-              <a
-                href="https://wa.me/919270033002?text=Hello%20I%20am%20interested%20in%20your%20services"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 bg-green-500 text-white px-2 py-1 rounded text-xs hover:bg-green-600 transition"
-              >
-                <RiWhatsappFill size={16} className="text-white" />
-                WhatsApp
-              </a>
+          <div className="pt-2 flex items-center gap-2">
+            <a
+              href="mailto:sales@usystem.software?subject=Service%20Inquiry&body=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+              className="flex items-center gap-2 bg-orange-600 text-white w-fit px-2 py-1 rounded text-xs hover:bg-orange-700 transition"
+            >
+              <Mail size={16} className="text-white" />
+              Email
+            </a>
 
-
-              {/* Phone info */}
-              <TypographyMuted>+91 9270033002</TypographyMuted>
-            </div>
-
-            <div className="pt-2">
-              {emails.map((email) => (
-                <TypographyMuted key={email}>{email}</TypographyMuted>
-              ))}
-            </div>
+            <a
+              href="mailto:sales@usystem.software?subject=Service%20Inquiry&body=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+              className="text-muted-foreground hover:underline"
+            >
+              sales@usystem.software
+            </a>
           </div>
-
           <div>
             <TypographyH3>LOCATIONS</TypographyH3>
 
@@ -244,7 +245,18 @@ const ContactPage = () => {
                   <div key={idx}>
                     <TypographyH6>{item.title}</TypographyH6>
                     <TypographyMuted>{item.address}</TypographyMuted>
-                    <p>{item.phone}</p>
+                    <a
+                      href="https://wa.me/919270033002?text=Hello%20I%20am%20interested%20in%20your%20services"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      <div className="flex items-center gap-1 bg-green-500 text-white px-2 py-1 rounded text-xs hover:bg-green-600 transition">
+                        <RiWhatsappFill size={16} className="text-white" />
+                        WhatsApp
+                      </div>
+                      <TypographyMuted>+91 9270033002</TypographyMuted>
+                    </a>
                   </div>
                 ))}
               </div>
@@ -257,8 +269,18 @@ const ContactPage = () => {
               <div className="mt-3 space-y-2 pl-4">
                 <TypographyH6>Singapore</TypographyH6>
                 <div className="flex items-center gap-2">
-                  <span className="bg-primary text-white px-2 rounded text-xs">SMS</span>
-                  <TypographyMuted>+91 9270033002</TypographyMuted>
+                  <a
+                    href="https://wa.me/919270033002?text=Hello%20I%20am%20interested%20in%20your%20services"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2"
+                  >
+                    <div className="flex items-center gap-1 bg-green-500 text-white px-2 py-1 rounded text-xs hover:bg-green-600 transition">
+                      <RiWhatsappFill size={16} className="text-white" />
+                      WhatsApp
+                    </div>
+                    <TypographyMuted>+91 9270033002</TypographyMuted>
+                  </a>
                 </div>
               </div>
             </details>
@@ -266,7 +288,6 @@ const ContactPage = () => {
         </div>
       </PageLayout>
       <LoadingPage loading={loading} success={success} error={error} />
-
     </section>
   );
 };

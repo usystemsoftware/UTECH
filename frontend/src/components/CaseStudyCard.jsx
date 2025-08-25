@@ -47,13 +47,11 @@ export default function CaseStudyCard({
 
           <TypographyH4 className="px-3">{title}</TypographyH4>
 
-          <TypographyMuted className="px-3 sm:line-clamp-3">
+          <TypographyMuted className="px-3 sm:line-clamp-2">
             {description}
           </TypographyMuted>
 
-          {year && (
-            <p className="text-sm text-gray-500 italic">Year: {year}</p>
-          )}
+          {year && <p className="text-sm text-gray-500 italic">Year: {year}</p>}
 
           {features?.length > 0 && (
             <div className="space-y-2">

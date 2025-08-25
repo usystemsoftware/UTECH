@@ -1,6 +1,5 @@
 import { useState } from "react";
 import PageLayout from "@/custom/PageLayout";
-import BubblesBackground from "@/components/BubblesBackground";
 import { IconRenderer } from "@/custom/IconRenderer";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,26 +13,16 @@ import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import dayjs from "dayjs";
 import BookUserSubmiteDetails from "./BookUserSubmiteDetails";
 
-const timeSlots = {
-  "2025-07-30": {
-    Morning: ["9:00 AM", "10:30 AM"],
-    Afternoon: ["1:00 PM"],
-    Evening: [],
-    Night: ["9:00 PM"],
-  },
-  "2025-07-24": {
-    Morning: [],
-    Afternoon: [],
-    Evening: [],
-    Night: [],
-  },
-  "2025-08-02": {
-    Morning: ["8:30 AM", "9:15 AM"],
-    Afternoon: ["2:00 PM", "3:00 PM"],
-    Evening: ["6:00 PM"],
-    Night: [],
-  },
+//  Default slots for every day
+const defaultSlots = {
+  Morning: ["9:00 AM", "10:30 AM"],
+  Afternoon: ["1:00 PM", "2:30 PM"],
+  Evening: ["6:00 PM", "7:30 PM"],
+  Night: ["9:00 PM"],
 };
+
+//  If you want some specific dates to have no slots, add them here
+const blockedDates = ["2025-07-24"];
 
 const BookCall = ({ bookingData, setBookingData, customer, onBack }) => {
   const [selectedDate, setSelectedDate] = useState(dayjs());
@@ -41,12 +30,11 @@ const BookCall = ({ bookingData, setBookingData, customer, onBack }) => {
   const [showForm, setShowForm] = useState(false);
 
   const formattedDate = selectedDate.format("YYYY-MM-DD");
-  const slotsForDate = timeSlots[formattedDate] || {
-    Morning: [],
-    Afternoon: [],
-    Evening: [],
-    Night: [],
-  };
+
+  //  If date is blocked, no slots, else show default slots
+  const slotsForDate = blockedDates.includes(formattedDate)
+    ? { Morning: [], Afternoon: [], Evening: [], Night: [] }
+    : defaultSlots;
 
   const now = dayjs();
 
@@ -65,11 +53,7 @@ const BookCall = ({ bookingData, setBookingData, customer, onBack }) => {
 
   return (
     <PageLayout className="min-h-screen relative">
-      <div className="relative">
-        <BubblesBackground />
-      </div>
-
-      <div className="md:p-8 flex flex-col md:flex-row gap-8 bg-card text-card-foreground rounded-2xl md:shadow-xl">
+      <div className="md:p-8 flex flex-col md:flex-row gap-8 ">
         {/* Left Panel */}
         <div className="md:flex-1 text-center md:text-left">
           <img
@@ -223,17 +207,19 @@ const BookCall = ({ bookingData, setBookingData, customer, onBack }) => {
             </TypographySmall>
           )}
 
-          <Button
-            className="w-full mt-2"
-            disabled={!selectedSlot}
-            onClick={() => setShowForm(true)}
-          >
-            Book Now
-          </Button>
+          <div className="grid grid-cols-2 mt-4 items-center gap-5">
+            <Button
+              className="w-full"
+              disabled={!selectedSlot}
+              onClick={() => setShowForm(true)}
+            >
+              Book Now
+            </Button>
 
-          <Button variant="secondary" className="mt-4 w-full" onClick={onBack}>
-            Back
-          </Button>
+            <Button variant="secondary" className="w-full" onClick={onBack}>
+              Back
+            </Button>
+          </div>
         </div>
       </div>
     </PageLayout>

@@ -12,6 +12,8 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { RiWhatsappFill } from "react-icons/ri";
+import { Phone } from "lucide-react";
 
 const highlightMatch = (text, query) => {
   if (!query) return text;
@@ -94,22 +96,30 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
                 />
               </button>
             </PopoverTrigger>
-            <PopoverContent className="mr-10 w-fit shadow-none rounded-none border p-0">
-              <div className="space-y-3 text-sm">
-                <a
-                  href="tel:+6591234567"
-                  className="flex items-center gap-2 px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  🇸🇬: +65 9123 4567
-                </a>
-                <Separator />
-                <a
-                  href="tel:+919876543210"
-                  className="flex items-center gap-2 px-6 py-2 hover:bg-gray-100 dark:hover:bg-gray-800"
-                >
-                  🇮🇳: +91 98765 43210
-                </a>
-              </div>
+            <PopoverContent className="mr-10 w-[150px] shadow-none space-y-1 p-2 rounded-none border">
+              {/* Call option */}
+              <a
+                href="tel:+919270033002"
+                className="flex flex-col gap-2 hover:bg-gray-100 dark:hover:bg-gray-800"
+              >
+                <div className="flex items-center gap-1 bg-blue-500 text-white px-2 py-1 text-sm hover:bg-blue-600 transition">
+                  <Phone size={16} /> Call
+                </div>
+              </a>
+              <Separator />
+
+              {/* WhatsApp option */}
+              <a
+                href="https://wa.me/919270033002?text=Hello%20I%20am%20interested%20in%20your%20services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col gap-2 hover:bg-gray-100 dark:hover:bg-gray-800"
+              >
+                <div className="flex items-center gap-1 bg-green-500 text-white px-2 py-1 text-sm hover:bg-green-600 transition">
+                  <RiWhatsappFill size={16} className="text-white" />
+                  WhatsApp
+                </div>
+              </a>
             </PopoverContent>
           </Popover>
           <button onClick={() => setIsCommandOpen(true)}>
