@@ -13,12 +13,13 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const sendEmail = async (to, subject, text) => {
+const sendEmail = async (to, subject, text, html) => {
   const mailOptions = {
     from: process.env.SMTP_USER, // keep consistent with auth user
     to,
     subject,
     text,
+    html
   };
 
   await transporter.sendMail(mailOptions);
