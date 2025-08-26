@@ -1,13 +1,11 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import PageLayout from "@/custom/PageLayout";
 import { useEffect, useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import emailjs from "@emailjs/browser";
 import { RiWhatsappFill } from "react-icons/ri";
-
 import {
   TypographyMuted,
   TypographyH6,
@@ -16,6 +14,7 @@ import {
 import { Locations } from "./Data";
 import LoadingPage from "@/custom/LoadingPage";
 import { Mail } from "lucide-react";
+import { contactFormApply } from "@/machine/contactForm";
 
 const contactFields = [
   { name: "name", label: "Full Name", required: true, type: "text" },
@@ -33,7 +32,7 @@ const ContactPage = () => {
   const { search } = useLocation();
   const params = new URLSearchParams(search);
   const fromPage = params.get("from");
-  console.log(fromPage);
+  // console.log(fromPage);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -58,54 +57,44 @@ const ContactPage = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const required = ["name", "email", "phone", "message", "tradeshow"];
     const errors = required.filter((f) => !formData[f]);
+
     if (errors.length === 0) {
       console.log("Submitted:", formData);
       setLoading(true);
       setSuccess(false);
       setError(false);
 
-      emailjs
-        .send(
-          "service_v93ejbb",
-          "template_f64ajai",
-          {
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            company: formData.company,
-            message: formData.message,
-            tradeshow: formData.tradeshow,
-            from: fromPage,
-          },
-          "v_-i7YDV7VK71ggnZ"
-        )
-        .then(
-          () => {
-            setLoading(false);
-            setSuccess(true);
-            setFormData({
-              name: "",
-              email: "",
-              phone: "",
-              company: "",
-              message: "",
-              tradeshow: "",
-              from: "",
-            });
+      try {
+        const response = await contactFormApply(formData);
 
-            // Auto-hide success after 3s
-            setTimeout(() => setSuccess(false), 2000);
-          },
-          () => {
-            setLoading(false);
-            setError(true);
-            setTimeout(() => setError(false), 5000);
-          }
-        );
+        if (response.success) {
+          setLoading(false);
+          setSuccess(true);
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            company: "",
+            message: "",
+            tradeshow: "",
+            from: "",
+          });
+
+          // Auto-hide success after 2s
+          setTimeout(() => setSuccess(false), 2000);
+        }
+      } catch (err) {
+        console.error("Contact form error:", err);
+        setLoading(false);
+        setError(true);
+
+        // Auto-hide error after 5s
+        setTimeout(() => setError(false), 5000);
+      }
     } else {
       alert("Please fill all required fields: " + errors.join(", "));
     }
@@ -197,20 +186,29 @@ const ContactPage = () => {
           <TypographyMuted className="text-xs pt-2">
             <span className="text-red-500">*</span> By requesting a consult you
             agree to the terms of U Tech's{" "}
-            <a href="#" className="text-blue-600 underline">
+            <Link
+              to="/company/privacy-policy"
+              className="text-blue-600 underline"
+            >
               privacy policy
-            </a>
+            </Link>
             .
           </TypographyMuted>
           <TypographyMuted className="text-xs">
             This site is protected by reCAPTCHA and the Google{" "}
-            <a href="#" className="text-blue-600 underline">
+            <Link
+              to="/company/privacy-policy"
+              className="text-blue-600 underline"
+            >
               Privacy Policy
-            </a>{" "}
+            </Link>{" "}
             and{" "}
-            <a href="#" className="text-blue-600 underline">
+            <Link
+              to="/company/legal-policy"
+              className="text-blue-600 underline"
+            >
               Terms of Service
-            </a>{" "}
+            </Link>{" "}
             apply.
           </TypographyMuted>
         </form>

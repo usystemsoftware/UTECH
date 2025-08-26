@@ -1,4 +1,5 @@
 import { CustomAxios } from "@/custom/CustomAxios"
+
 export const sendOtp = async ({ addBotMessage, userInput, setStep }) => {
     try {
         const response = await CustomAxios.post("/auth/send-otp", { email: userInput });

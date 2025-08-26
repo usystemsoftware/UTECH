@@ -214,7 +214,7 @@ export default function WorkWithUs() {
             <TypographyLead>
               We’re here to help you solve your problems!
             </TypographyLead>
-            <Link to="/contact-us">
+            <Link to="/company/careers">
               <Button className="w-fit 2xl:text-lg 2xl:py-5">
                 Let’s connect!
               </Button>

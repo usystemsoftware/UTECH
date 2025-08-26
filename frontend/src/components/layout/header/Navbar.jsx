@@ -33,10 +33,10 @@ const Navbar = () => {
       </div>
       {isCommandOpen && (
         <div
-          className="fixed inset-0 bg-black/50 z-50 flex justify-center items-start pt-32"
-          onClick={() => setIsCommandOpen(false)} // close on background click
+          className="fixed inset-0 bg-black/50 z-50 sm:flex sm:justify-center items-start h-screen pt-36"
+          onClick={() => setIsCommandOpen(false)}
         >
-          <div onClick={(e) => e.stopPropagation()}>
+          <div onClick={(e) => e.stopPropagation()} className="mx-6">
             <CommandSearch setIsCommandOpen={setIsCommandOpen} />
           </div>
         </div>

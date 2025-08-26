@@ -71,7 +71,7 @@ export function CommandSearch({ setIsCommandOpen }) {
   }, {});
 
   return (
-    <Command className="rounded-lg border shadow-md w-full md:min-w-xl p-4">
+    <Command className="sm:min-w-md p-6">
       <CommandInput
         placeholder="Search Solutions, Services, Industries..."
         value={query}

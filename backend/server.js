@@ -43,6 +43,8 @@ app.use("/chatbot", require("./routes/chatbotRoutes"));
 app.use("/share", require("./routes/metaShareRoutes"));
 app.use("/jobs", require("./routes/jobRoutes"));
 app.use("/bookings", require("./routes/bookingRoutes"));
+app.use("/email", require("./routes/subscribeRoutes"));
+app.use("/contact", require("./routes/contactRoutes"));
 
 // connectDB();
 

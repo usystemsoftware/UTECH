@@ -11,6 +11,8 @@ import {
 import { IconRenderer } from "@/custom/IconRenderer";
 import PageLayout from "@/custom/PageLayout";
 import ContactUsButton from "@/custom/ContactUsButton";
+import { subscribeEmail } from "@/machine/subscribeWithEmail";
+import { Loader2 } from "lucide-react";
 
 export const quickLinks = [
   { label: "Privacy Policy", to: "/company/privacy-policy" },
@@ -32,7 +34,7 @@ const socialIcons = [
     url: "https://www.instagram.com/usystem_software",
     label: "Instagram",
   },
-  { icon: "X", url: "#", label: "Twitter" },
+  { icon: "Twitter", url: "#", label: "Twitter" },
   {
     icon: "Linkedin",
     url: "https://in.linkedin.com/company/umbarkar-technology-india-pvt-ltd",
@@ -89,11 +91,27 @@ export const legalNotices = [
 ];
 
 export const Footer = () => {
-  const [subscribed, setSubscribed] = useState(false);
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = async (e) => {
     e.preventDefault();
-    setSubscribed(true);
+    setLoading(true);
+    setSuccess(false);
+    setError(false);
+
+    try {
+      await subscribeEmail(email);
+      setSuccess(true);
+      setEmail("");
+    } catch (err) {
+      console.error("Subscription failed:", err);
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -116,7 +134,7 @@ export const Footer = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-12 bg-[#fff]  ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-12 bg-[#fff]">
           {/* Item 1 */}
           <div className="flex flex-col items-center gap-2 h-40 bg-[#005D69] min-h-[216px] p-4">
             <img
@@ -132,17 +150,17 @@ export const Footer = () => {
             <img
               src="/assets/footer/icons/10002.svg"
               className="object-contain w-8.5"
-            />{" "}
+            />
             <TypographyH2 className="text-2xl font-bold">50+</TypographyH2>
             <TypographyMuted className="mt-1">HAPPY CUSTOMERS</TypographyMuted>
           </div>
 
           {/* Item 3 */}
-          <div className="flex flex-col gap-2 items-center min-h-[216px] p-4 bg-[#005D69]  ">
+          <div className="flex flex-col gap-2 items-center min-h-[216px] p-4 bg-[#005D69]">
             <img
               src="/assets/footer/icons/10003.svg"
               className="object-contain w-11"
-            />{" "}
+            />
             <TypographyH2 className="text-2xl font-bold">47%</TypographyH2>
             <TypographyMuted className="mt-1">
               REPEAT AND REFERRAL BUSINESS
@@ -154,12 +172,13 @@ export const Footer = () => {
             <img
               src="/assets/footer/icons/10004.svg"
               className="object-contain w-11"
-            />{" "}
+            />
             <TypographyH2 className="text-2xl font-bold">11+</TypographyH2>
             <TypographyMuted className="mt-1">DEVELOPERS</TypographyMuted>
           </div>
         </div>
       </div>
+
       <div className="bg-[#213448] pt-10 pb-6">
         <PageLayout className="grid gap-10 md:grid-cols-4 lg:grid-cols-5 ">
           {/* Brand & Subscribe */}
@@ -178,15 +197,27 @@ export const Footer = () => {
                 type="email"
                 required
                 placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="flex-1"
               />
-              <Button type="submit" className="w-full sm:w-auto">
-                Subscribe
+              <Button
+                type="submit"
+                className="w-full sm:w-auto flex items-center justify-center gap-2"
+                disabled={loading}
+              >
+                {loading && <Loader2 className="w-4 h-4 animate-spin" />}
+                {loading ? "Subscribing..." : "Subscribe"}
               </Button>
             </form>
-            {subscribed && (
+            {success && (
               <p className="text-green-400 text-sm md:text-base">
-                Thank you for subscribing! 🎉
+                🎉 Thank you for subscribing!
+              </p>
+            )}
+            {error && (
+              <p className="text-red-400 text-sm md:text-base">
+                ❌ Subscription failed. Please try again.
               </p>
             )}
             <div className="flex items-center gap-2 mt-4">
@@ -251,10 +282,11 @@ export const Footer = () => {
             ))}
           </div>
           <div className="sm:text-base text-sm">
-            Copyright © {new Date().getFullYear()} Umbarakar Technology (India) Pvt Ltd.
-            All rights reserved.
+            Copyright © {new Date().getFullYear()} Umbarakar Technology (India)
+            Pvt Ltd. All rights reserved.
           </div>
         </div>
+
         {/* Version */}
         <span className="absolute bottom-0 right-4 z-40 text-sm">
           Version: {version}

@@ -13,12 +13,14 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const sendEmail = async (to, subject, text) => {
+// Support both plain text and HTML
+const sendEmail = async (to, subject, html, text = "") => {
   const mailOptions = {
-    from: process.env.SMTP_USER, // keep consistent with auth user
+    from: process.env.SMTP_USER,
     to,
     subject,
     text,
+    html,
   };
 
   await transporter.sendMail(mailOptions);
