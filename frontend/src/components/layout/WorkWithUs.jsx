@@ -11,12 +11,12 @@ import {
   TypographyLead,
 } from "@/custom/Typography";
 import { motion } from "framer-motion";
-import { PhoneCall } from "lucide-react";
 import HeadingSection from "@/custom/HeadingSection";
 import { readyWithUSstats } from "@/data/LandingData";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { RiWhatsappFill } from "react-icons/ri";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -231,9 +231,17 @@ export default function WorkWithUs() {
                 Pimpri-Chinchwad, Pune, Maharashtra - 411018
               </TypographyMuted>
               <div className="flex items-center space-x-2 text-blue-600 font-medium mt-2">
-                <PhoneCall size={18} />
-                <a href="tel:+9270033002" className="hover:underline">
-                  +91 9270033002
+                <a
+                  href="https://wa.me/919270033002?text=Hello%20I%20am%20interested%20in%20your%20services"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2"
+                >
+                  <div className="flex items-center gap-1 bg-green-500 text-white px-2 py-1 rounded text-xs hover:bg-green-600 transition">
+                    <RiWhatsappFill size={16} className="text-white" />
+                    WhatsApp
+                  </div>
+                  <TypographyMuted>+91 9270033002</TypographyMuted>
                 </a>
               </div>
             </Card>

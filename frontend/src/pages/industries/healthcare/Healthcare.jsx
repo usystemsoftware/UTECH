@@ -119,7 +119,9 @@ export default function Healthcare() {
             />
           </div>
 
-          <ContactUsButton variant="hover">Cunsultation for EHR</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Cunsultation for EHR
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -143,7 +145,9 @@ export default function Healthcare() {
           {/* Right Features List */}
           <FeaturesList features={telemedicineFeatures.slice(2, 4)} center />
         </div>
-        <ContactUsButton variant="hover">Develop Your Telehelth Platform</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Develop Your Telehelth Platform
+        </ContactUsButton>
       </PageLayout>
 
       <section className="py-12">
@@ -162,11 +166,13 @@ export default function Healthcare() {
               className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto"
             />
           </div>
-          <ContactUsButton variant="hover">DEVELOP LIMS PLATFORM SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            DEVELOP LIMS PLATFORM SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
-      <section className="bg-white flex flex-col gap-3 justify-center items-center">
+      <section className="flex flex-col gap-3 justify-center py-12 items-center">
         <Headline
           title="PACS & DICOM Viewer platform"
           description="We deliver end-to-end PACS/DICOM platform designed for secure data and image sharing, archiving, viewing, and more."
@@ -199,7 +205,9 @@ export default function Healthcare() {
               className="w-72 sm:w-105 xl:w-115 2xl:w-130 mx-auto"
             />
           </div>
-          <ContactUsButton variant="hover">DEVELOP LIMS PLATFORM SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            DEVELOP LIMS PLATFORM SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -217,7 +225,9 @@ export default function Healthcare() {
             className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto block sm:hidden md:block"
           />
         </div>
-        <ContactUsButton variant="hover">GET PHARMACY POS SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET PHARMACY POS SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -236,7 +246,9 @@ export default function Healthcare() {
             />
             <FeaturesList features={eRxFeatures} iconAlign="horizontal" />
           </div>
-          <ContactUsButton variant="hover">GET ERX SOFTWARE SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET ERX SOFTWARE SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -261,7 +273,9 @@ export default function Healthcare() {
           {/* Right Features List */}
           <FeaturesList features={hospitalSystemFeatures.slice(2, 4)} center />
         </div>
-        <ContactUsButton variant="hover">GET HIS/PMS SOFTWARE SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET HIS/PMS SOFTWARE SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -280,7 +294,9 @@ export default function Healthcare() {
               className="w-135 xl:w-145 2xl:w-165 mx-auto"
             />
           </div>
-          <ContactUsButton variant="hover">GET RCM SOFTWARE SOLUTIONS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET RCM SOFTWARE SOLUTIONS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -313,7 +329,7 @@ export default function Healthcare() {
       </section>
 
       <PageLayout className="my-16 py-16 grid grid-cols-1 items-center md:grid-cols-2 space-y-10 bg-cyan-50">
-        <div className="space-y-8">
+        <div className="space-y-8 dark:text-black">
           <TypographyH3>
             WE ENSURE YOUR SOLUTIONS ARE COMPLIANT WITH REGULATORY STANDARDS
           </TypographyH3>
@@ -354,7 +370,9 @@ export default function Healthcare() {
               iconAlign="horizontal"
             />
           </div>
-          <ContactUsButton variant="hover">Get Assistive Tech Solutions</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Get Assistive Tech Solutions
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -383,7 +401,9 @@ export default function Healthcare() {
             center
           />
         </div>
-        <ContactUsButton variant="hover">GET VETERINITY SOFTWARE SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET VETERINITY SOFTWARE SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       <div className="py-12">

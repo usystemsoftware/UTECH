@@ -94,7 +94,9 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
             ))}
             <Link to="/company/careers">
               <TypographySmall
-                className={`font-semibold tracking-wide uppercase  underline-offset-6 hover:underline hover:text-primary ${!scrolled && "text-white"}`}
+                className={`font-semibold tracking-wide uppercase  underline-offset-6 hover:underline hover:text-primary ${
+                  !scrolled && "text-white"
+                }`}
               >
                 Careers
               </TypographySmall>
@@ -155,7 +157,7 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
                               key={idx}
                               to={link.href}
                               onClick={() => setHoveredIndex(null)}
-                              className="flex items-center gap-2 hover:text-primary p-2 rounded-md transition-all"
+                              className="flex items-center gap-2 dark:text-black hover:text-primary p-2 rounded-md transition-all"
                             >
                               <IconRenderer name={link.icon} strokeWidth={2} />
                               <TypographyP className="md:text-sm">

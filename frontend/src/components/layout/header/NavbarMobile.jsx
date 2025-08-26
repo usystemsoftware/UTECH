@@ -72,8 +72,9 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
 
   return (
     <div
-      className={`fixed top-0 left-0 z-50 w-full transition-colors ${open && "bg-white text-black"
-        } duration-300 ${scrolled ? "bg-white shadow" : "bg-transparent"}`}
+      className={`fixed top-0 left-0 z-50 w-full transition-colors ${
+        open && "bg-white text-black"
+      } duration-300 ${scrolled ? "bg-white shadow" : "bg-transparent"}`}
     >
       <AccessibilityWidget />
       <div className="flex items-center justify-between px-4 py-4">
@@ -88,10 +89,9 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
                   strokeWidth={2}
                   name="Phone"
                   size={19}
-                  className={`cursor-pointer mt-2 ${scrolled || open
-                    ? "text-black dark:text-white"
-                    : "text-white"
-                    }`}
+                  className={`cursor-pointer mt-2 ${
+                    scrolled || open ? "text-black" : "text-white"
+                  }`}
                 />
               </button>
             </PopoverTrigger>
@@ -126,14 +126,16 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
               strokeWidth={2}
               name="Search"
               size={22}
-              className={`cursor-pointer ${scrolled || open ? "text-black dark:text-white" : "text-white"
-                }`}
+              className={`cursor-pointer ${
+                scrolled || open ? "text-black" : "text-white"
+              }`}
             />
           </button>
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className={`cursor-pointer ${scrolled || open ? "text-black dark:text-white" : "text-white"
-              }`}
+            className={`cursor-pointer ${
+              scrolled || open ? "text-black" : "text-white"
+            }`}
           >
             <IconRenderer
               strokeWidth={2}
@@ -176,9 +178,10 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
                         text-sm font-semibold tracking-wide uppercase
                         border-b border-gray-200
                         transition-colors duration-300
-                        ${isOpen
-                          ? "text-blue-700"
-                          : "text-gray-600 hover:text-black"
+                        ${
+                          isOpen
+                            ? "text-blue-700"
+                            : "text-gray-600 hover:text-black"
                         }
                       `}
                     >
@@ -214,10 +217,11 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
                                   setSelectedLink(item.href);
                                 }}
                                 className={`block py-2 text-sm border-b border-gray-100
-                                  ${selectedLink === item.href ||
+                                  ${
+                                    selectedLink === item.href ||
                                     pathname === item.href
-                                    ? "text-blue-700 font-medium"
-                                    : "text-gray-600 hover:text-primary"
+                                      ? "text-blue-700 font-medium"
+                                      : "text-gray-600 hover:text-primary"
                                   }`}
                               >
                                 {highlightMatch(item.label, searchTerm)}
@@ -229,14 +233,20 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
                   </div>
                 );
               })}
-              <Link to="/company/careers" className="block px-4 py-3 
+              <Link
+                to="/company/careers"
+                className="block px-4 py-3 
                         text-sm font-semibold tracking-wide uppercase
                         border-b border-gray-200 text-gray-600
-                        transition-colors duration-300">
-                <button className="uppercase" onClick={() => {
-                  setOpen(false);
-                  setSelectedLink(item.href);
-                }}>
+                        transition-colors duration-300"
+              >
+                <button
+                  className="uppercase"
+                  onClick={() => {
+                    setOpen(false);
+                    setSelectedLink(item.href);
+                  }}
+                >
                   {highlightMatch("Careers", searchTerm)}
                 </button>
               </Link>
@@ -248,9 +258,10 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
                 to="/contact-us"
                 onClick={() => setOpen(false)}
                 className={`flex-1 text-center py-2 rounded font-medium transition-colors
-                  ${pathname === "/contact-us"
-                    ? "bg-blue-600 text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  ${
+                    pathname === "/contact-us"
+                      ? "bg-blue-600 text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }
                 `}
               >
@@ -260,9 +271,10 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
                 to="/book-call"
                 onClick={() => setOpen(false)}
                 className={`flex-1 text-center py-2 rounded font-medium transition-colors
-                  ${pathname === "/book-call"
-                    ? "bg-blue-600 text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  ${
+                    pathname === "/book-call"
+                      ? "bg-blue-600 text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }
                 `}
               >

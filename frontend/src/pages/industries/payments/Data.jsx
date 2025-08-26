@@ -28,7 +28,7 @@ export const PymentSoftwareLeftFeatures = [
     icon: "/assets/industries/payments/icons/7.svg",
   },
   {
-    label: "Lngenico",
+    label: "Igenico",
     icon: "/assets/industries/payments/icons/8.svg",
   },
 ];
@@ -70,8 +70,14 @@ export const PymentSoftwareRightFeatures = [
 
 export const features = [
   { img: "/assets/industries/payments/icons/17.svg", title: "SoftPOS" },
-  { img: "/assets/industries/payments/icons/18.svg", title: "Real Time KYC & IDP" },
-  { img: "/assets/industries/payments/icons/19.svg", title: "BNPL (Buy Now Pay Later)" },
+  {
+    img: "/assets/industries/payments/icons/18.svg",
+    title: "Real Time KYC & IDP",
+  },
+  {
+    img: "/assets/industries/payments/icons/19.svg",
+    title: "BNPL (Buy Now Pay Later)",
+  },
 ];
 
 export const pymentSolutions = [
@@ -165,20 +171,20 @@ export const PaymentTransformationFeatures = [
     icon: "/assets/industries/payments/icons/29.svg",
     title: "Mobile E-Wallet Development",
     description:
-      "We offer custom e-wallet app development and integration services, leveraging third-party platforms for debit, credit, and prepaid card payments."
+      "We offer custom e-wallet app development and integration services, leveraging third-party platforms for debit, credit, and prepaid card payments.",
   },
   {
     icon: "/assets/industries/payments/icons/30.svg",
     title: "Mobile Payment Processing Applications",
     description:
-      "Our experienced developers integrate mobile device payment processing applications and POS terminals with NFC, QR code, RFID barcode, SMS, and more."
+      "Our experienced developers integrate mobile device payment processing applications and POS terminals with NFC, QR code, RFID barcode, SMS, and more.",
   },
   {
     icon: "/assets/industries/payments/icons/31.svg",
     title: "Mobile POS Systems",
     description:
-      "Our developers leverage third-party POS software vendors, including Verifone, Clover, Ingenico, and Equinox, to process debit and credit card payments."
-  }
+      "Our developers leverage third-party POS software vendors, including Verifone, Clover, Ingenico, and Equinox, to process debit and credit card payments.",
+  },
 ];
 
 export const PaymentManagementSolutions = [

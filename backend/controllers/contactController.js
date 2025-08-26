@@ -16,7 +16,7 @@ exports.submitContact = async (req, res) => {
     // 1. Email content for your Admin/Sales Team
     const adminMailOptions = {
       from: `"U Technology Contact Portal" <${email}>`,
-      to: process.env.ADMIN_EMAIL || "sales@usystem.software",
+      to: process.env.SALES_EMAIL || "sales@usystem.software",
       subject: `New Contact Form Submission: ${name} (Tradeshow: ${tradeshow})`,
       html: `
         <div style="font-family: 'Inter', sans-serif; background-color: #f8f8f8; padding: 20px; border-radius: 8px; border: 1px solid #e0e0e0;">
@@ -62,7 +62,7 @@ exports.submitContact = async (req, res) => {
 
     // 2. Email content for the User (Confirmation)
     const userMailOptions = {
-      from: `"U Technology Team" <${process.env.ADMIN_EMAIL}>`,
+      from: `"U Technology Team" <${email}>`,
       to: email,
       subject: `We’ve Received Your Inquiry, ${name}!`,
       html: `
@@ -103,7 +103,7 @@ exports.submitContact = async (req, res) => {
       </p>
 
       <p style="color: #7f8c8d; font-size: 14px; margin-top: 30px;">
-        Best regards,<br>
+        Best Regards,<br>
         <strong>U Technology Team</strong>
       </p>
 

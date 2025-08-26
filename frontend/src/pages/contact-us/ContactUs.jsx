@@ -262,7 +262,7 @@ const ContactPage = () => {
 
             <details className="border-b border-primary py-2">
               <summary className="text-lg font-semibold text-primary cursor-pointer">
-                Estan Asia Specifics
+                Estern Asia Specifics
               </summary>
               <div className="mt-3 space-y-2 pl-4">
                 <TypographyH6>Singapore</TypographyH6>

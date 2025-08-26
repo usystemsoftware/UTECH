@@ -15,9 +15,9 @@ import Cookies from "js-cookie";
 const dummyCustomers = [
   {
     id: 1,
-    name: "Rajesh Umbarkar",
-    email: "usystem.rajesh@gmail.com",
-    designation: "Founder & CEO",
+    name: "Software Consultant",
+    email: "support@usystem.solions",
+    designation: "Consultant Team",
     location: "Pune",
     expertise: ["CEO", "Software Engineer", "CA", "Advocate"],
     phone: "+91 9270033002",
@@ -96,7 +96,7 @@ export default function Customers() {
             {dummyCustomers.map((customer) => (
               <FadeInWhenVisible
                 key={customer.id}
-                className="border p-6 rounded-xl shadow-md bg-white"
+                className="border p-6 rounded-xl shadow-md bg-card"
               >
                 <div className="flex gap-4 items-center">
                   <img

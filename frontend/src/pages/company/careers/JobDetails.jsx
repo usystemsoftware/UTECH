@@ -93,6 +93,10 @@ export default function JobDetails() {
     formDataObj.append("role", capitalizeWords(job.title));
     formDataObj.append("resume", form.resume);
 
+    if (job.responsibility && job.responsibility.length > 0) {
+      formDataObj.append("responsibility", job.responsibility.join(", "));
+    }
+
     try {
       setLoading(true);
       setError(false);
