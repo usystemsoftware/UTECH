@@ -12,12 +12,13 @@ import { IconRenderer } from "@/custom/IconRenderer";
 import PageLayout from "@/custom/PageLayout";
 import ContactUsButton from "@/custom/ContactUsButton";
 
-const quickLinks = [
-  { label: "About Us", to: "/company/about-us" },
+export const quickLinks = [
+  { label: "Privacy Policy", to: "/company/privacy-policy" },
+  { label: "Legal Policy", to: "/company/legal-policy" },
   { label: "Careers", to: "/company/careers" },
-  { label: "History", to: "/company/history" },
-  { label: "Locations", to: "/company/locations" },
-  { label: "Reviews", to: "/company/reviews" },
+  { label: "Sitemap", to: "/company/sitemap" },
+  { label: "Refferal", to: "/company/refferal" },
+  { label: "Contact Us", to: "/contact-us" },
 ];
 
 const socialIcons = [
@@ -207,7 +208,7 @@ export const Footer = () => {
           {/* Links Sections */}
           {footerLinks.map((section, i) => (
             <div key={i}>
-              <TypographyH4 className="text-base sm:text-xl mb-3">
+              <TypographyH4 className="text-base uppercase mb-3">
                 {section.title}
               </TypographyH4>
               <ul className="space-y-2 sm:space-y-3 text-[13px] md:text-sm text-gray-300">
@@ -250,7 +251,7 @@ export const Footer = () => {
             ))}
           </div>
           <div className="sm:text-base text-sm">
-            © {new Date().getFullYear()} Umbarakar Technology (India) Pvt Ltd.
+            Copyright © {new Date().getFullYear()} Umbarakar Technology (India) Pvt Ltd.
             All rights reserved.
           </div>
         </div>
