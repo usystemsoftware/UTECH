@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const { setOtp, getOtp, deleteOtp } = require("../utils/otpStore");
-const { sendEmail } = require('../utils/nodeMailer');
+const { transporter } = require("../utils/sendEmail");
 
 exports.sendOtp = async (req, res) => {
     try {
@@ -29,12 +29,15 @@ exports.sendOtp = async (req, res) => {
         }
         const otp = Math.floor(100000 + Math.random() * 900000).toString();
 
-        await sendEmail({
+        const userMailOptions = {
             to: email,
             subject: "Your OTP Code",
             text: `Your OTP is ${otp}. It is valid for 10 minutes.`,
             html: `<p>Your OTP is <strong>${otp}</strong>. It is valid for 10 minutes.</p>`,
-        });
+        }
+
+        await transporter.sendMail(userMailOptions);
+
 
         setOtp(email, otp);
 
