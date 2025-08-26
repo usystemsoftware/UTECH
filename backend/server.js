@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 const connectDB = require("./config/db");
 const { metaData } = require("./config/metaData");
 
@@ -14,6 +15,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("this is u_tech server v2");
 });
+
 
 // for seo manage
 app.get("/sitemap.xml", (req, res) => {
@@ -45,6 +47,12 @@ app.use("/jobs", require("./routes/jobRoutes"));
 app.use("/bookings", require("./routes/bookingRoutes"));
 app.use("/email", require("./routes/subscribeRoutes"));
 app.use("/contact", require("./routes/contactRoutes"));
+
+app.use(express.static(path.join(__dirname, "client/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client/build", "index.html"));
+});
 
 // connectDB();
 

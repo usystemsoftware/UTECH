@@ -8,7 +8,7 @@ import { IndustryRoutes } from "@/routes/IndustryRoutes";
 import { ServiceRoutes } from "@/routes/ServiceRoutes";
 import { DefaultRoutes } from "@/routes/DefaultRoutes";
 import { CompanyRoutes } from "@/routes/CompanyRoutes";
-// import DynamicHelmet from "@/custom/DynamicHelmet";
+import DynamicHelmet from "@/custom/DynamicHelmet";
 import CookieConsentBanner from "@/components/layout/CookieConsentBanner";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import { ScrollToTopButton } from "@/components/ScrollToTop";
@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <>
-      {/* <DynamicHelmet /> */}
+      <DynamicHelmet />
       <CookieConsentBanner />
       <Navbar />
 
