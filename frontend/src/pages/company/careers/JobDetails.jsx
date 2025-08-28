@@ -202,17 +202,17 @@ export default function JobDetails() {
 
         {/* Apply Form */}
         {!applied ? (
-          <div className="border h-fit rounded-2xl p-6 space-y-4 text-center shadow-md max-w-sm mx-auto">
-            <h1 className="text-2xl font-bold mb-4">Apply For A Job</h1>
-            <form onSubmit={handleSubmit} className="space-y-4 text-left">
+          <div className="max-w-sm mx-auto">
+            <h1 className="text-2xl font-bold mb-8">Apply For A Job</h1>
+            <form onSubmit={handleSubmit} className="space-y-8 text-left">
               <div className="grid gap-2">
                 <Label className="font-semibold">First Name</Label>
-                <Input
+                <input
                   type="text"
                   name="firstname"
                   value={form.firstname}
                   onChange={handleChange}
-                  className="capitalize"
+                  className="capitalize border-b-2 focus:outline-none focus:border-primary"
                 />
                 {errors.firstname && (
                   <p className="text-red-500 text-sm">{errors.firstname}</p>
@@ -221,12 +221,12 @@ export default function JobDetails() {
 
               <div className="grid gap-2">
                 <Label className="font-semibold">Last Name</Label>
-                <Input
+                <input
                   type="text"
                   name="lastname"
                   value={form.lastname}
                   onChange={handleChange}
-                  className="capitalize"
+                  className="capitalize border-b-2 focus:outline-none focus:border-primary"
                 />
                 {errors.lastname && (
                   <p className="text-red-500 text-sm">{errors.lastname}</p>
@@ -235,11 +235,12 @@ export default function JobDetails() {
 
               <div className="grid gap-2">
                 <Label className="font-semibold">Email</Label>
-                <Input
+                <input
                   type="email"
                   name="email"
                   value={form.email}
                   onChange={handleChange}
+                  className="capitalize border-b-2 focus:outline-none focus:border-primary"
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm">{errors.email}</p>
@@ -248,11 +249,12 @@ export default function JobDetails() {
 
               <div className="grid gap-2">
                 <Label className="font-semibold">Mobile Number</Label>
-                <Input
+                <input
                   type="text"
                   name="mobile"
                   value={form.mobile}
                   onChange={handleChange}
+                  className="capitalize border-b-2 focus:outline-none focus:border-primary"
                 />
                 {errors.mobile && (
                   <p className="text-red-500 text-sm">{errors.mobile}</p>
@@ -261,12 +263,12 @@ export default function JobDetails() {
 
               <div className="grid gap-2">
                 <Label className="font-semibold">Upload Resume</Label>
-                <Input
+                <input
                   type="file"
                   name="resume"
                   accept=".pdf,.doc,.docx"
                   onChange={handleChange}
-                  className="cursor-pointer"
+                  className="capitalize cursor-pointer border-b-2 focus:outline-none focus:border-primary"
                 />
                 {errors.resume && (
                   <p className="text-red-500 text-sm">{errors.resume}</p>

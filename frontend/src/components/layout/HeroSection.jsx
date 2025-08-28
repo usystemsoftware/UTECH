@@ -3,12 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
   TypographyLead,
-  TypographySmall,
   TypographyH1,
 } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
-import ShareButtons from "@/custom/ShareButtons";
 
 export const HeroSection = () => {
   return (
@@ -23,14 +21,9 @@ export const HeroSection = () => {
         <div className="grid sm:grid-cols-2 items-center gap-10">
           {/* LEFT TEXT CONTENT */}
           <div className="space-y-8 text-white">
-            <FadeInWhenVisible delay={0.1} className="hidden md:block">
-              <TypographySmall className="sm:p-3 p-2 text-center text-white bg-primary rounded-full text-sm 2xl:text-lg inline-block">
-                🚀 Digital Engineering & Enterprise Modernization
-              </TypographySmall>
-            </FadeInWhenVisible>
 
             <FadeInWhenVisible delay={0.2}>
-              <TypographyH1 className="tracking-tighter md:text-2xl xl:text-3xl 2xl:text-5xl text-white">
+              <TypographyH1 className="tracking-tighter md:text-2xl xl:text-4xl text-white">
                 Drive Innovation with a World-Class
                 <span className="block text-primary">
                   Software Development Company
@@ -39,7 +32,7 @@ export const HeroSection = () => {
             </FadeInWhenVisible>
 
             <FadeInWhenVisible delay={0.3}>
-              <TypographyLead className="text-white md:text-base xl:text-md 2xl:text-xl">
+              <TypographyLead className="text-white">
                 U Tech Systems is a global services and Custom Software
                 Solutions & Support Services for Every Industry and Enterprise
                 Modernization to help enterprises accelerate their Software
@@ -50,14 +43,14 @@ export const HeroSection = () => {
             <FadeInWhenVisible delay={0.4}>
               <div className="grid grid-cols-2 gap-4">
                 <Link to="/contact-us">
-                  <Button className="w-full xl:text-sm 2xl:text-lg 2xl:py-4">
+                  <Button className="w-full 2xl:py-4">
                     Contact Us <Phone />
                   </Button>
                 </Link>
                 <Link to="/book-call">
                   <Button
                     variant="outline"
-                    className="w-full xl:text-sm 2xl:text-lg 2xl:py-4 text-black"
+                    className="w-full 2xl:py-4 text-black"
                   >
                     Book Call <Video />
                   </Button>
@@ -79,7 +72,6 @@ export const HeroSection = () => {
           </FadeInWhenVisible>
         </div>
       </PageLayout>
-      <ShareButtons />
     </div>
   );
 };
