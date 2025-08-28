@@ -17,8 +17,8 @@ const ShareButtons = () => {
 
   const pathname = location.pathname;
   const slug = pathname.split("/").filter(Boolean).pop();
-  const shareUrl = `http://staging.usystem.software/share/${slug}`; // backend url
-  // const shareUrl = `https://u-tech-r7be.onrender.com/share/${slug}`; // backend url
+  // const shareUrl = `http://staging.usystem.software/share/${slug}`; // backend url
+  const shareUrl = ` https://u-tech-r7be.onrender.com/share/${slug}`; // backend url
 
   const isMobile = () => /Mobi|Android|iPhone/i.test(navigator.userAgent);
 
@@ -26,7 +26,7 @@ const ShareButtons = () => {
     try {
       await navigator.share({
         title: "Explore IT Solutions with U Tech",
-        text: "Discover innovative IT services and solutions designed to help your business grow. Check out U Tech today!",
+        text: "Check out U Tech today!",
         url: shareUrl,
       });
     } catch (err) {

@@ -7,6 +7,7 @@ import { TypographyP, TypographySmall } from "@/custom/Typography";
 import { Button } from "@/components/ui/button";
 import { Navlinks } from "@/data/Navlinks";
 import { IconRenderer } from "@/custom/IconRenderer";
+import ShareButtons from "../../../custom/ShareButtons";
 
 const NavbarDesktop = ({ setIsCommandOpen }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -105,6 +106,7 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
 
           {/* Right Side Buttons */}
           <div className="flex items-center gap-4 lg:gap-8">
+            <ShareButtons />
             <button
               className="cursor-pointer"
               onClick={() => setIsCommandOpen(true)}
