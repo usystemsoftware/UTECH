@@ -121,7 +121,7 @@ const NavbarDesktop = ({ setIsCommandOpen }) => {
                 size="sm"
                 className={`rounded font-bold ${
                   !scrolled
-                    ? "bg-white text-black hover:bg-white hover:text-black"
+                    ? "bg-white dark:text-black text-black hover:bg-white hover:text-black"
                     : ""
                 }`}
               >

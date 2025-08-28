@@ -30,7 +30,7 @@ export const HeroSection = () => {
             </FadeInWhenVisible>
 
             <FadeInWhenVisible delay={0.2}>
-              <TypographyH1 className="tracking-tighter md:text-3xl xl:text-4xl 2xl:text-5xl text-white">
+              <TypographyH1 className="tracking-tighter md:text-2xl xl:text-3xl 2xl:text-5xl text-white">
                 Drive Innovation with a World-Class
                 <span className="block text-primary">
                   Software Development Company
@@ -39,7 +39,7 @@ export const HeroSection = () => {
             </FadeInWhenVisible>
 
             <FadeInWhenVisible delay={0.3}>
-              <TypographyLead className="text-white md:text-base xl:text-lg 2xl:text-xl">
+              <TypographyLead className="text-white md:text-base xl:text-md 2xl:text-xl">
                 U Tech Systems is a global services and Custom Software
                 Solutions & Support Services for Every Industry and Enterprise
                 Modernization to help enterprises accelerate their Software
@@ -50,14 +50,14 @@ export const HeroSection = () => {
             <FadeInWhenVisible delay={0.4}>
               <div className="grid grid-cols-2 gap-4">
                 <Link to="/contact-us">
-                  <Button className="w-full 2xl:text-lg 2xl:py-4">
+                  <Button className="w-full xl:text-sm 2xl:text-lg 2xl:py-4">
                     Contact Us <Phone />
                   </Button>
                 </Link>
                 <Link to="/book-call">
                   <Button
                     variant="outline"
-                    className="w-full  2xl:text-lg 2xl:py-4 text-black"
+                    className="w-full xl:text-sm 2xl:text-lg 2xl:py-4 text-black"
                   >
                     Book Call <Video />
                   </Button>

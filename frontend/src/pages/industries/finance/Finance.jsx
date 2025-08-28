@@ -143,7 +143,7 @@ const Finance = () => {
 
       {/* Compliance Section */}
       <PageLayout className="py-12 bg-cyan-50 my-12 flex flex-col sm:flex-row justify-between items-center md:space-x-8">
-        <div className="flex-1 space-y-4">
+        <div className="flex-1 space-y-4 dark:text-black">
           <TypographyH3 className="text-black">
             WE ENSURE YOU A 100% COMPLIANCE WITH THE IRS & FASB!
           </TypographyH3>

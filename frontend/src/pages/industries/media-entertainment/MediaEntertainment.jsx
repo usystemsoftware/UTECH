@@ -218,7 +218,7 @@ export default function MediaEntertainment() {
       </section>
 
       {/* === Digital Publishing Solutions Section === */}
-      <PageLayout className="py-16 space-y-10 text-center">
+      <PageLayout className="pt-16 space-y-10 text-center">
         <Headline
           title="Custom Digital Publishing Solutions"
           description="We develop custom digital publishing software solutions, including content management systems (CMS), social media tools, DRM software, and more."
