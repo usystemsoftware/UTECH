@@ -31,7 +31,23 @@ export const metaData = {
     category: "Contact",
     published: "August 2025",
   },
-
+  agriculture: {
+    slug: "agriculture",
+    title: "Agriculture Industry Solutions | U Tech",
+    description: "Discover U Tech's innovative digital and technology solutions for the agriculture industry. Empowering farmers, agribusinesses, and supply chains with smart, sustainable, and data-driven tools.",
+    keywords: [
+      "agriculture technology",
+      "agritech solutions",
+      "farming innovation",
+      "U Tech agriculture",
+      "smart farming",
+      "agriculture industry solutions"
+    ],
+    image: "https://usystem.software/banner/agriculture-banner.jpg",
+    url: "https://usystem.software/industries/agriculture",
+    category: "Industries",
+    published: "August 2025",
+  },
   aviation: {
     slug: "aviation",
     title: "Aviation Industry Solutions | U Tech",

@@ -12,6 +12,7 @@ import {
   TypographySmall,
 } from "@/custom/Typography";
 import {
+  herobannerLinks,
   portfolioItems,
   sapAISolutions,
   sapFaq,
@@ -29,6 +30,7 @@ export default function SAP() {
         title="SAP DEVELOPMENT COMPANY"
         buttonText="HIRE SAP CONSULTANTS"
         buttonLink="#"
+        bottomLinks={herobannerLinks}
       />
 
       <PageLayout className="py-16 space-y-10 text-center">

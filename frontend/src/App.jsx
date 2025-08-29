@@ -52,8 +52,8 @@ export default function App() {
         ))}
       </Routes>
 
-      {/* <Chat /> */}
-      <TawkToChat />
+      <Chat />
+      {/* <TawkToChat /> */}
       <ScrollToTopButton />
       <Footer />
     </>

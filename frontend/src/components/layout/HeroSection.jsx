@@ -11,13 +11,13 @@ import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 export const HeroSection = () => {
   return (
     <div
-      className="relative min-h-[70vh] sm:min-h-[100vh] bg-cover bg-center bg-no-repeat"
+      className="relative min-h-[80vh] sm:min-h-[100vh] bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: 'url("/banner/hero.jpg")' }}
     >
       {/* Overlay dark gradient */}
       <div className="absolute inset-0 bg-black/50 z-0" />
 
-      <PageLayout className="relative z-10 flex items-center min-h-[70vh] sm:min-h-[100vh] justify-center pt-20 sm:pt-14">
+      <PageLayout className="relative z-10 flex items-center min-h-[80vh] sm:min-h-[100vh] justify-center pt-20 sm:pt-14">
         <div className="grid sm:grid-cols-2 items-center gap-10">
           {/* LEFT TEXT CONTENT */}
           <div className="space-y-8 text-white">

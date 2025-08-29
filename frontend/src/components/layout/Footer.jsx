@@ -85,9 +85,10 @@ export const footerLinks = [
 ];
 
 export const legalNotices = [
-  "U Tech (India) Pvt Ltd CIN: U72900PN2020PTC193410 Registered Office no.02,15, Zeroboyz Chowk, Nehru Nagar, Pune, Pimpri-Chinchwad, Pune, Maharashtra - 411018 , Email ID: enquiry@usystem.software",
-  "Visitors are hereby informed that their information submitted on the website may be shared with relevant service providers. Product and service information is accurate based on the latest company data.",
-  "We do not solicit or promote services through unsolicited calls or messages. Any such interactions should be reported to our support team immediately.",
+  `<strong style="font-family: 'Oswald', Arial, sans-serif; letter-spacing: 0.5px; font-size: "16px";>Umbarakar Technology (India) Pvt Ltd CIN: U72900PN2020PTC193410</strong>`,
+  `<strong>Registered Office: </strong> Office No.02,15, Zeroboyz Chowk, Nehru Nagar, Pimpri-Chinchwad, Pune, Maharashtra - 411018`,
+  `<span>Visitors are hereby informed that their information submitted on the website may be shared with relevant service providers. Product and service information is accurate based on the latest company data.</span>`,
+  `<span>We do not solicit or promote services through unsolicited calls or messages. Any such interactions should be reported to our support team immediately.</span>`,
 ];
 
 export const Footer = () => {
@@ -259,7 +260,11 @@ export const Footer = () => {
         <PageLayout>
           <ul className="my-4 list-disc px-4 text-[13px] sm:text-sm text-gray-300 grid gap-2 [&>li]:mt-2">
             {legalNotices.map((notice, index) => (
-              <li key={index}>{notice}</li>
+              <li
+                key={index}
+                dangerouslySetInnerHTML={{ __html: notice }}
+                className="leading-relaxed"
+              />
             ))}
           </ul>
         </PageLayout>
@@ -281,14 +286,14 @@ export const Footer = () => {
               </React.Fragment>
             ))}
           </div>
-          <div className="sm:text-base text-sm">
+          <div style={{ fontFamily: '"Oswald", Arial, sans-serif' }} className="text-[15px] tracking-wide">
             Copyright © {new Date().getFullYear()} Umbarakar Technology (India)
             Pvt Ltd. All rights reserved.
           </div>
         </div>
 
         {/* Version */}
-        <span className="absolute bottom-0 right-4 z-40 text-sm">
+        <span className="absolute bottom-0 left-4 z-40 text-sm">
           Version: {version}
         </span>
       </div>

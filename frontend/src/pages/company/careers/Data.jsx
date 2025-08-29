@@ -212,34 +212,34 @@ export const companyValues = [
     title: "Rewarding Opportunities",
     description:
       "We provide every individual with opportunities they truly deserve. From promotions and recognition to leadership roles, we ensure your contributions are always acknowledged and rewarded.",
-    img: "/assets/company/careers/culture.webp",
+    img: "/assets/company/careers/rewarding-opportunities.jpg",
   },
   {
     id: 3,
     title: "Happiness",
     description:
       "Happiness is in our DNA. We make sure our team members are well taken care of with a balanced work-life environment, wellness programs, and a fun, engaging workplace.",
-    img: "/assets/company/careers/culture.webp",
+    img: "/assets/company/careers/happiness.jpeg",
   },
   {
     id: 4,
     title: "Innovative Work",
     description:
       "Innovation is at the heart of everything we do. We encourage creativity, experimentation, and cutting-edge solutions that allow technology to work smarter and deliver impactful results.",
-    img: "/assets/company/careers/culture.webp",
+    img: "/assets/company/careers/innovativework.jpg",
   },
   {
     id: 5,
     title: "Shared Wealth Creation",
     description:
       "Beyond competitive salaries, we believe in sharing success. Performance bonuses, equity opportunities, and long-term benefits ensure everyone grows along with the company.",
-    img: "/assets/company/careers/culture.webp",
+    img: "/assets/company/careers/wealth-building.jpg",
   },
   {
     id: 6,
     title: "Diversity & Inclusion",
     description:
       "We welcome all genders, religions, and abilities. By embracing diversity, we create an inclusive family where everyone feels respected, empowered, and truly part of our journey.",
-    img: "/assets/company/careers/culture.webp",
+    img: "/assets/company/careers/blog_pr_diversity-and-Inclusion.jpeg",
   },
 ];

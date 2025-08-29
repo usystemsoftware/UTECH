@@ -239,7 +239,7 @@ export const Headline = ({ title, description, className }) => {
     <div>
       <div
         className={cn(
-          "space-y-4 w-full text-center sm:max-w-2xl md:max-w-4xl mx-auto",
+          "space-y-4 w-full text-center sm:max-w-2xl md:max-w-7xl mx-auto",
           settings.bigText && "big-text",
           settings.textSpacing && "text-spacing",
           settings.dyslexiaFont && "dyslexia-font",
@@ -251,7 +251,7 @@ export const Headline = ({ title, description, className }) => {
         <h1 className="text-xl sm:text-2xl md:text-3xl xl:text-4xl font-bold tracking-tighter">
           {title}
         </h1>
-        <p className="text-sm sm:text-base xl:text-lg">{description}</p>
+        <p className="text-sm sm:text-base">{description}</p>
       </div>
     </div>
   );
@@ -337,9 +337,8 @@ export const TypographyTable = ({ headers = [], rows = [], className }) => {
       {rows.map((row, index) => (
         <div
           key={index}
-          className={`grid grid-cols-2 px-4 py-3 border-b ${
-            index % 2 === 0 ? "bg-muted/20" : "bg-background"
-          }`}
+          className={`grid grid-cols-2 px-4 py-3 border-b ${index % 2 === 0 ? "bg-muted/20" : "bg-background"
+            }`}
         >
           <div className="font-medium text-muted-foreground">{row.module}</div>
           <div className="grid gap-2">{row.content}</div>

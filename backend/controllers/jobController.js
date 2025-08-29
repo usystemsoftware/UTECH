@@ -40,9 +40,9 @@ exports.applyForJob = async (req, res) => {
       <p><strong>Responsibilities:</strong></p>
         <ul>
           ${responsibility
-            .split(",")
-            .map((r) => `<li>${r.trim()}</li>`)
-            .join("")}
+          .split(",")
+          .map((r) => `<li>${r.trim()}</li>`)
+          .join("")}
       </ul>
 
       <p style="margin-top: 25px">
@@ -59,11 +59,11 @@ exports.applyForJob = async (req, res) => {
       `,
       attachments: resume
         ? [
-            {
-              filename: resume.originalname,
-              content: resume.buffer,
-            },
-          ]
+          {
+            filename: resume.originalname,
+            content: resume.buffer,
+          },
+        ]
         : [],
     };
 
@@ -96,9 +96,9 @@ exports.applyForJob = async (req, res) => {
         <p><strong>Responsibilities:</strong></p>
         <ul>
           ${responsibility
-            .split(",")
-            .map((r) => `<li>${r.trim()}</li>`)
-            .join("")}
+          .split(",")
+          .map((r) => `<li>${r.trim()}</li>`)
+          .join("")}
         </ul>
 
         <p>If you have any questions, feel free to reply to this email.</p>

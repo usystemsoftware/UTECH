@@ -183,3 +183,43 @@ export const portfolioItems = [
         img: "/assets/solutions/sap/1.jpeg",
     },
 ];
+
+
+export const herobannerLinks = [
+    {
+        label: "SAP S/4HANA",
+        link: "/sap-s4hana"
+    },
+    {
+        label: "SAP Data & Analytics",
+        link: "/sap-data-analytics"
+    },
+    {
+        label: "SAP SuccessFactors HCM",
+        link: "/sap-successfactors-hcm"
+    },
+    {
+        label: "SAP Customer Experience (SAP CX)",
+        link: "/sap-customer-experience"
+    },
+    {
+        label: "SAP Business One",
+        link: "/sap-business-one"
+    },
+    {
+        label: "SAP ECC Service",
+        link: "/sap-ecc-service"
+    },
+    {
+        label: "SAP Business ByDesign",
+        link: "/sap-business-bydesign"
+    },
+    {
+        label: "SAP Mobility",
+        link: "/sap-mobility"
+    },
+    {
+        label: "SAP Business Technology Platform",
+        link: "/sap-business-technology-platform"
+    }
+];
