@@ -911,9 +911,27 @@ export const metaData = {
     title: "Events | U Tech",
     description: "Stay updated on upcoming events and activities at U Tech.",
     keywords: ["events", "U Tech", "company events"],
-    image: "https://usystem.software/banner/events-banner.jpg",
+    image: "https://media.istockphoto.com/id/1284180906/photo/colorful-lord-ganesha-statue-for-lord-ganesha-festival.jpg?s=612x612&w=0&k=20&c=RHxKoNRBZGBKAayh7bYEkeNdAzDdLhOhbKFm9Z2bJCc=",
     url: "https://usystem.software/company/events",
     category: "Company",
+    published: "August 2025",
+  },
+
+  ganeshChaturthi: {
+    slug: "ganesh-chaturthi-2025",
+    title: "Ganesh Chaturthi 2025 | U Tech",
+    description:
+      "Celebrate Ganesh Chaturthi with devotion, joy, and vibrant festivities at U Tech. Join us for cultural programs and rituals.",
+    keywords: [
+      "Ganesh Chaturthi",
+      "Ganpati Festival",
+      "U Tech events",
+      "Ganpati 2025 celebration",
+      "Hindu festival"
+    ],
+    image: "https://usystem.software/banner/ganesh-chaturthi-banner.jpg",
+    url: "https://usystem.software/company/events/ganesh-chaturthi-2025",
+    category: "Festivals",
     published: "August 2025",
   },
   history: {
