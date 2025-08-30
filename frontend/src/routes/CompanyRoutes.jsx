@@ -14,6 +14,6 @@ export const CompanyRoutes = [
   { path: "/company/privacy-policy", element: <PrivacyPolicy /> },
   { path: "/company/legal-policy", element: <LegalPolicy /> },
   { path: "/company/sitemap", element: <Sitemap /> },
-  { path: "/company/about", element: <About /> },
+  { path: "/company/about-us", element: <About /> },
   { path: "/company/events", element: <Event /> },
 ];

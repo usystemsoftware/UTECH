@@ -48,12 +48,6 @@ app.use("/bookings", require("./routes/bookingRoutes"));
 app.use("/email", require("./routes/subscribeRoutes"));
 app.use("/contact", require("./routes/contactRoutes"));
 
-app.use(express.static(path.join(__dirname, "client/build")));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client/build", "index.html"));
-});
-
 // connectDB();
 
 app.listen(process.env.PORT, () =>
