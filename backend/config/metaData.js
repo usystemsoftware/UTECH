@@ -910,7 +910,7 @@ export const metaData = {
     slug: "events",
     title: "Ganesh Festival 2025 With Opening the U Techology Website With VIP guests. Please accept the invitation and build the part of our happiness",
     description:
-      "Celebrate the grand opening of Ganesh Festival 2025 at U Tech with joy, devotion, and cultural programs. Special VIP guests invited to mark this auspicious day.",
+      "Celebrate the grand opening of Ganesh Festival 2025 at U Technology with joy, devotion, and cultural programs. Special VIP guests invited to mark this auspicious day.",
     keywords: [
       "Ganesh Festival 2025",
       "Ganpati Utsav U Tech",
