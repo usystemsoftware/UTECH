@@ -13,6 +13,7 @@ import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 import { bookingSlotes } from "@/machine/bookingSlotes";
 import LoadingPage from "@/custom/LoadingPage";
+import HeroSection from "@/components/HeroSection";
 
 export default function BookUserSubmitDetails({
   customer,
@@ -134,85 +135,57 @@ export default function BookUserSubmitDetails({
       <LoadingPage loading={loading} success={success} error={error} />
 
       {submitted && bookingData ? (
-        <div className="mt-12 max-w-3xl mx-auto bg-card border border-border rounded-xl shadow-md p-6 space-y-4">
-          <div className="flex items-center space-x-4">
-            <img
-              src={
-                bookingData.customer?.image || "/assets/book-call/images.png"
-              }
-              alt={bookingData.customer?.name || "Customer"}
-              className="w-20 h-20 rounded-full border-4 border-primary"
-            />
-            <div>
-              <TypographyH5>{bookingData.customer?.name}</TypographyH5>
-              <TypographySmall>{bookingData.customer?.email}</TypographySmall>
-              <p className="text-sm mt-1">
-                {bookingData.customer?.designation}
-              </p>
+        <>
+          {/* <HeroSection
+            backgroundImage="https://www.shutterstock.com/image-photo/business-planning-calendar-agenda-work-600nw-2461973363.jpg"
+            title="Thank you for booking !"
+            description="Our team has received your request. You’ll receive your Google Meet linkon your registered email/phone shortly before the meeting."
+            buttonText="Go to Home"
+            buttonLink="/"
+            overlayOpacity="0.6"
+
+          /> */}
+          <div className="flex items-center justify-center min-h-screen bg-slate-300 px-4">
+            <div className="w-full max-w-3xl bg-card border border-border rounded-2xl shadow-lg p-8 space-y-6">
+              {/* Customer Info */}
+              <div className="flex flex-col items-center text-center space-y-4">
+                <img
+                  src={bookingData.customer?.image || "/assets/book-call/images.png"}
+                  alt={bookingData.customer?.name || "Customer"}
+                  className="w-24 h-24 rounded-full border-4 border-primary shadow-md"
+                />
+                <div>
+                  <TypographyH5>{bookingData.customer?.name}</TypographyH5>
+                  <TypographySmall>{bookingData.customer?.email}</TypographySmall>
+                  <p className="text-sm mt-1 text-muted-foreground">
+                    {bookingData.customer?.designation}
+                  </p>
+                </div>
+              </div>
+
+              {/* Confirmation Message */}
+              <div className="bg-blue-50 border border-blue-200 text-blue-800 px-6 py-4 rounded-xl shadow-sm text-center">
+                <p className="font-semibold text-lg">📩 Thank you for booking!</p>
+                <p className="text-sm mt-2 leading-relaxed">
+                  Our team has received your request. You’ll receive your
+                  <span className="font-medium"> Google Meet link</span>
+                  on your registered email/phone shortly before the meeting.
+                </p>
+              </div>
+
+              {/* Go to Home Button */}
+              <div className="flex justify-center">
+                <button
+                  onClick={() => (window.location.href = "/")}
+                  className="px-6 py-2 rounded-lg bg-primary text-white font-medium shadow-md hover:bg-primary/90 transition"
+                >
+                  ⬅ Go to Home
+                </button>
+              </div>
             </div>
           </div>
 
-          <div className="bg-muted p-4 rounded-lg space-y-2">
-            <p>
-              <strong>Date:</strong> {bookingData.date}
-            </p>
-            <p>
-              <strong>Time:</strong> {bookingData.slot}
-            </p>
-            <p>
-              <strong>Name:</strong> {bookingData.name}
-            </p>
-            <p>
-              <strong>Email:</strong> {bookingData.email}
-            </p>
-            <p>
-              <strong>Phone:</strong> {bookingData.phone}
-            </p>
-            {bookingData.description && (
-              <p>
-                <strong>Requirements:</strong> {bookingData.description}
-              </p>
-            )}
-            {bookingData.source && (
-              <p>
-                <strong>Heard From:</strong> {bookingData.source}
-              </p>
-            )}
-            {bookingData.meetLink && (
-              <p className="text-green-600 font-medium">
-                ✅ Meeting Created:{" "}
-                <a
-                  href={bookingData.meetLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline text-blue-600"
-                >
-                  Join via Google Meet
-                </a>
-              </p>
-            )}
-          </div>
-
-          <div className="flex justify-end gap-4">
-            <Button variant="outline" onClick={handleCancel}>
-              Cancel
-            </Button>
-            {bookingData.meetLink ? (
-              <Button asChild>
-                <a
-                  href={bookingData.meetLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Attend Meeting
-                </a>
-              </Button>
-            ) : (
-              <Button disabled>Generating Link...</Button>
-            )}
-          </div>
-        </div>
-      ) : (
+        </>) : (
         <div className="mt-12 flex flex-col md:flex-row max-w-6xl mx-auto bg-card border border-border rounded-2xl overflow-hidden shadow-lg">
           <div className="bg-muted p-6 md:p-8 md:w-1/2 flex flex-col items-center text-center md:text-left">
             <img
