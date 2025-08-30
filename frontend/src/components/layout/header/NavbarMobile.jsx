@@ -7,7 +7,6 @@ import { IconRenderer } from "@/custom/IconRenderer";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import AccessibilityWidget from "@/components/layout/AccessibilityWidget";
 import { Separator } from "@/components/ui/separator";
-import { TypographySmall } from "@/custom/Typography";
 import {
   Popover,
   PopoverContent,
@@ -15,6 +14,7 @@ import {
 } from "@/components/ui/popover";
 import { RiWhatsappFill } from "react-icons/ri";
 import { Phone } from "lucide-react";
+import ShareButtons from "@/custom/ShareButtons";
 
 const highlightMatch = (text, query) => {
   if (!query) return text;
@@ -33,18 +33,17 @@ const highlightMatch = (text, query) => {
   ));
 };
 
-const NavbarMobile = ({ setIsCommandOpen }) => {
+const NavbarMobile = ({ setIsCommandOpen, scrolledMobile, setScrolledMobile }) => {
   const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
   const [openMenuIndex, setOpenMenuIndex] = useState(null);
   const [selectedLink, setSelectedLink] = useState(pathname);
   const [searchTerm, setSearchTerm] = useState("");
-  const [scrolled, setScrolled] = useState(false);
 
   // Scroll background effect
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolledMobile(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -72,9 +71,8 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
 
   return (
     <div
-      className={`fixed top-0 left-0 z-50 w-full transition-colors ${
-        open && "bg-white text-black"
-      } duration-300 ${scrolled ? "bg-white shadow" : "bg-transparent"}`}
+      className={`fixed top-0 left-0 z-50 w-full transition-colors ${open && "bg-white text-black"
+        } duration-300 ${scrolledMobile ? "bg-white shadow" : "bg-transparent"}`}
     >
       <AccessibilityWidget />
       <div className="flex items-center justify-between px-4 py-4">
@@ -82,6 +80,7 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
           <img loading="lazy" src="/logo.png" alt="Logo" className="w-26" />
         </Link>
         <div className="flex items-center space-x-5">
+          <ShareButtons scrolledMobile={scrolledMobile} />
           <Popover>
             <PopoverTrigger>
               <button>
@@ -89,9 +88,8 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
                   strokeWidth={2}
                   name="Phone"
                   size={19}
-                  className={`cursor-pointer mt-2 ${
-                    scrolled || open ? "text-black" : "text-white"
-                  }`}
+                  className={`cursor-pointer mt-2 ${scrolledMobile || open ? "text-black" : "text-white"
+                    }`}
                 />
               </button>
             </PopoverTrigger>
@@ -126,16 +124,14 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
               strokeWidth={2}
               name="Search"
               size={22}
-              className={`cursor-pointer ${
-                scrolled || open ? "text-black" : "text-white"
-              }`}
+              className={`cursor-pointer ${scrolledMobile || open ? "text-black" : "text-white"
+                }`}
             />
           </button>
           <button
             onClick={() => setOpen((prev) => !prev)}
-            className={`cursor-pointer ${
-              scrolled || open ? "text-black" : "text-white"
-            }`}
+            className={`cursor-pointer ${scrolledMobile || open ? "text-black" : "text-white"
+              }`}
           >
             <IconRenderer
               strokeWidth={2}
@@ -178,10 +174,9 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
                         text-sm font-semibold tracking-wide uppercase
                         border-b border-gray-200
                         transition-colors duration-300
-                        ${
-                          isOpen
-                            ? "text-blue-700"
-                            : "text-gray-600 hover:text-black"
+                        ${isOpen
+                          ? "text-blue-700"
+                          : "text-gray-600 hover:text-black"
                         }
                       `}
                     >
@@ -216,14 +211,14 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
                                   setOpen(false);
                                   setSelectedLink(item.href);
                                 }}
-                                className={`block py-2 text-sm border-b border-gray-100
-                                  ${
-                                    selectedLink === item.href ||
+                                className={`py-2 flex items-center gap-2 text-sm border-b border-gray-100
+                                  ${selectedLink === item.href ||
                                     pathname === item.href
-                                      ? "text-blue-700 font-medium"
-                                      : "text-gray-600 hover:text-primary"
+                                    ? "text-blue-700 font-medium"
+                                    : "text-gray-600 hover:text-primary"
                                   }`}
                               >
+                                <IconRenderer name={item.icon} strokeWidth={2} />
                                 {highlightMatch(item.label, searchTerm)}
                               </Link>
                             </FadeInWhenVisible>
@@ -233,7 +228,7 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
                   </div>
                 );
               })}
-              <Link
+              {/* <Link
                 to="/company/careers"
                 className="block px-4 py-3 
                         text-sm font-semibold tracking-wide uppercase
@@ -249,7 +244,7 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
                 >
                   {highlightMatch("Careers", searchTerm)}
                 </button>
-              </Link>
+              </Link> */}
             </div>
 
             {/* Fixed Bottom Buttons */}
@@ -257,11 +252,10 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
               <Link
                 to="/contact-us"
                 onClick={() => setOpen(false)}
-                className={`flex-1 text-center py-2 rounded font-medium transition-colors
-                  ${
-                    pathname === "/contact-us"
-                      ? "bg-blue-600 text-white"
-                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                className={`flex-1 text-center py-2 text-sm rounded font-medium transition-colors
+                  ${pathname === "/contact-us"
+                    ? "bg-blue-600 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }
                 `}
               >
@@ -270,11 +264,10 @@ const NavbarMobile = ({ setIsCommandOpen }) => {
               <Link
                 to="/book-call"
                 onClick={() => setOpen(false)}
-                className={`flex-1 text-center py-2 rounded font-medium transition-colors
-                  ${
-                    pathname === "/book-call"
-                      ? "bg-blue-600 text-white"
-                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                className={`flex-1 text-center py-2 text-sm rounded font-medium transition-colors
+                  ${pathname === "/book-call"
+                    ? "bg-blue-600 text-white"
+                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }
                 `}
               >

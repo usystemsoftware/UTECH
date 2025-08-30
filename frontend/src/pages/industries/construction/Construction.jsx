@@ -111,7 +111,7 @@ export default function Construction() {
       </section>
 
       {/* BIM Software Section */}
-      <section className="py-16 bg-white flex flex-col gap-3 justify-center items-center">
+      <section className="py-16 flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Building Information Modeling (BIM) Software"
           description="Building Information Modeling (BIM) Software U Tech is a software development company..."
@@ -126,7 +126,7 @@ export default function Construction() {
 
       {/* Revit Software Section */}
 
-      <section className="py-5 bg-white flex flex-col gap-3 justify-center items-center">
+      <section className="py-5 flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Revit Software Solutions"
           description="U Tech’s Revit software include app development & plugin development..."
@@ -158,7 +158,7 @@ export default function Construction() {
         </div>
       </PageLayout>
 
-      <section className="py-16 bg-white flex flex-col gap-3 justify-center items-center">
+      <section className="py-16 flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Cost Estimation Software"
           description="U Tech’s construction cost estimation software solutions save time and money..."
@@ -172,7 +172,7 @@ export default function Construction() {
       </section>
       {/* Bid Management Section */}
 
-      <section className="py-5 bg-white flex flex-col gap-3 justify-center items-center">
+      <section className="py-16 flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Construction Bid Management Software"
           description="U Tech’s construction bid management software solutions enable companies to simplify..."
@@ -207,7 +207,7 @@ export default function Construction() {
 
       {/* Scheduling Software Section */}
 
-      <section className="py-5 bg-white flex flex-col gap-3 justify-center items-center">
+      <section className="py-16 flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Scheduling Software Solution"
           description="U Tech’s scheduling software solutions facilitate fast schedule generation..."

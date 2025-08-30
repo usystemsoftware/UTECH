@@ -221,3 +221,59 @@ export const portfolioItems = [
         description: "PHP || Salesforce Apps || App Development"
     },
 ];
+
+
+export const salesforceMenu = [
+    {
+        label: "Salesforce Agentforce",
+        link: "/solutions/salesforce-agentforce"
+    },
+    {
+        label: "Salesforce Consulting",
+        link: "/solutions/salesforce-consulting"
+    },
+    {
+        label: "Salesforce Visualforce",
+        link: "/solutions/salesforce-visualforce"
+    },
+    {
+        label: "Salesforce Integration",
+        link: "/solutions/salesforce-integration"
+    },
+    {
+        label: "Salesforce Support",
+        link: "/solutions/salesforce-support"
+    },
+    {
+        label: "Salesforce App Development",
+        link: "/solutions/salesforce-app-development"
+    },
+    {
+        label: "Salesforce Experience Cloud",
+        link: "/solutions/salesforce-experience-cloud"
+    },
+    {
+        label: "Salesforce Service Cloud",
+        link: "/solutions/salesforce-service-cloud"
+    },
+    {
+        label: "Salesforce Sales Cloud",
+        link: "/solutions/salesforce-sales-cloud"
+    },
+    {
+        label: "Salesforce Marketing",
+        link: "/solutions/salesforce-marketing"
+    },
+    {
+        label: "Salesforce Lightning",
+        link: "/solutions/salesforce-lightning"
+    },
+    {
+        label: "Salesforce Appexchange",
+        link: "/solutions/salesforce-appexchange"
+    },
+    {
+        label: "Salesforce Apex",
+        link: "/solutions/salesforce-apex"
+    }
+];

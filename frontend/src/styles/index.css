@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap');
 
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -112,7 +112,6 @@
   --sidebar-ring: oklch(0.637 0.237 25.331);
 }
 
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -132,6 +131,7 @@
     font-family: "Lato", sans-serif;
     /* font-family: "Inter", sans-serif; */
     /* font-family: "Outfit", sans-serif; */
+    /* font-family: "Oswald", sans-serif; */
     /* font-family: "Fjalla One", sans-serif; */
     /* font-family: "Jost", sans-serif; */
     /* font-family: "Josefin Sans", sans-serif; */
@@ -148,18 +148,23 @@
 
   @keyframes aurora {
     from {
-      background-position:
-        50% 50%,
-        50% 50%;
+      background-position: 50% 50%, 50% 50%;
     }
 
     to {
-      background-position:
-        350% 50%,
-        350% 50%;
+      background-position: 350% 50%, 350% 50%;
     }
   }
 }
+
+/* img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
 
 /* hide-scrollbar.css */
 .hide-scrollbar::-webkit-scrollbar {
@@ -187,7 +192,6 @@
   /* Indigo-600 */
   border-radius: 9999px;
 }
-
 
 /* src/styles/accessibility.css */
 .high-contrast {
@@ -226,7 +230,7 @@
 }
 
 .dyslexia-font {
-  font-family: 'Outfit', sans-serif !important;
+  font-family: "Outfit", sans-serif !important;
 }
 
 .line-height {

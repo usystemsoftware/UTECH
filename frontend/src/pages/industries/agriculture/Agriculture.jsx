@@ -133,7 +133,7 @@ export default function Agriculture() {
         </PageLayout>
       </section>
 
-      <section className="py-16 bg-white flex flex-col gap-6 justify-center items-center">
+      <section className="py-16 flex flex-col gap-6 justify-center items-center">
         <Headline
           title="Smart Farming Software Development Services"
           description="U Tech develops smart farming software that allows smart farming technologies to interface with existing monitoring & sensor software for added interoperability."

@@ -5,6 +5,8 @@ import { CommandSearch } from "@/custom/CommandSearch";
 
 const Navbar = () => {
   const [isCommandOpen, setIsCommandOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [scrolledMobile, setScrolledMobile] = useState(false);
 
   useEffect(() => {
     if (isCommandOpen) {
@@ -21,6 +23,8 @@ const Navbar = () => {
     <>
       <div className="block md:hidden">
         <NavbarMobile
+          scrolledMobile={scrolledMobile}
+          setScrolledMobile={setScrolledMobile}
           setIsCommandOpen={setIsCommandOpen}
           isCommandOpen={isCommandOpen}
         />
@@ -29,6 +33,8 @@ const Navbar = () => {
         <NavbarDesktop
           setIsCommandOpen={setIsCommandOpen}
           isCommandOpen={isCommandOpen}
+          scrolled={scrolled}
+          setScrolled={setScrolled}
         />
       </div>
       {isCommandOpen && (

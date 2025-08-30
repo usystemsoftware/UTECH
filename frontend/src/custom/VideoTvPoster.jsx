@@ -4,7 +4,7 @@ import { TypographyMuted, TypographyH3 } from "@/custom/Typography";
 const VideoTvPoster = ({ information }) => {
   return (
     <PageLayout className="my-16 py-16 grid grid-cols-1 md:grid-cols-2 items-center space-y-10 bg-[url('/assets/industries/aviation/we-develop-elearning-background.jpg')] bg-cover bg-center bg-no-repeat">
-      <div className="space-y-4">
+      <div className="space-y-4 dark:text-black">
         <TypographyH3 className="font-extrabold">
           {information?.title}
         </TypographyH3>

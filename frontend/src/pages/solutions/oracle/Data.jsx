@@ -138,3 +138,66 @@ export const portfolioItems = [
         img: "/assets/solutions/oracle/1.jpeg",
     }
 ];
+
+export const oracleSolutions = [
+    {
+        label: "NetSuite",
+        link: "/solutions/oracle/netsuite"
+    },
+    {
+        label: "Oracle Supply Chain Management (SCM)",
+        link: "/solutions/oracle/scm"
+    },
+    {
+        label: "Oracle Human Capital Management (HCM)",
+        link: "/solutions/oracle/hcm"
+    },
+    {
+        label: "Oracle Customer Experience (CX)",
+        link: "/solutions/oracle/cx"
+    },
+    {
+        label: "Oracle Analytics",
+        link: "/solutions/oracle/analytics"
+    },
+    {
+        label: "Oracle Fusion",
+        link: "/solutions/oracle/fusion"
+    },
+    {
+        label: "Oracle E-Business Suite",
+        link: "/solutions/oracle/ebs"
+    },
+    {
+        label: "Oracle PeopleSoft",
+        link: "/solutions/oracle/peoplesoft"
+    },
+    {
+        label: "JD Edwards",
+        link: "/solutions/oracle/jd-edwards"
+    },
+    {
+        label: "Oracle MICROS Simphony",
+        link: "/solutions/oracle/micros-simphony"
+    },
+    {
+        label: "Oracle Primavera",
+        link: "/solutions/oracle/primavera"
+    },
+    {
+        label: "Oracle Health",
+        link: "/solutions/oracle/health"
+    },
+    {
+        label: "Oracle Siebel CRM",
+        link: "/solutions/oracle/siebel-crm"
+    },
+    {
+        label: "Oracle Opera PMS",
+        link: "/solutions/oracle/opera-pms"
+    },
+    {
+        label: "Cloud Infrastructure (OCI)",
+        link: "/solutions/oracle/oci"
+    }
+];

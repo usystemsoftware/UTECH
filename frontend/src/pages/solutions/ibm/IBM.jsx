@@ -28,7 +28,7 @@ export default function IBM() {
                 backgroundImage="/banner/ibm-new-banner.jpg"
                 title="Certified IBM Silver Partners"
                 buttonText="SPEAK WITH OUR IBM EXPERTS"
-                buttonLink="#"
+                partnerLogo="/assets//solutions/ibm/partner.png"
             />
 
             <PageLayout className="py-16 space-y-10 text-center">

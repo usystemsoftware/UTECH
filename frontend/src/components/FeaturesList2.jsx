@@ -40,9 +40,8 @@ export const FeaturesList2 = ({
 
   return (
     <div
-      className={`flex flex-col ${
-        reverse ? "lg:flex-row-reverse" : "lg:flex-row"
-      } items-center justify-center gap-10`}
+      className={`flex flex-col ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+        } items-center justify-center gap-10`}
     >
       <div className={contentClass}>
         {features.map((feature, index) => (
@@ -69,13 +68,13 @@ export const FeaturesList2 = ({
             </span>
             <div className="space-y-2">
               <div className="flex items-center gap-4">
-                <TypographyH5 className="font-extrabold text-base 2xl:text-xl tracking-tight">
+                <TypographyH5 className="text-base 2xl:text-xl tracking-tight">
                   {feature?.title}
                 </TypographyH5>
               </div>
 
               {feature?.description && (
-                <TypographyMuted>{feature?.description}</TypographyMuted>
+                <TypographyMuted className="break-words tracking-tight text-justify">{feature?.description}</TypographyMuted>
               )}
 
               {feature?.list && (

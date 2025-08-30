@@ -4,6 +4,8 @@ import JobDetails from "@/pages/company/careers/JobDetails";
 import LegalPolicy from "@/pages/company/legal-policy/LegalPolicy";
 import PrivacyPolicy from "@/pages/company/privacy-policy/PrivacyPolicy";
 import Sitemap from "@/pages/company/sitemap/Sitemap";
+import About from "@/pages/company/about/About";
+import Event from "@/pages/company/Events/Event";
 
 export const CompanyRoutes = [
   { path: "*", element: <Maintenance404 /> },
@@ -12,4 +14,6 @@ export const CompanyRoutes = [
   { path: "/company/privacy-policy", element: <PrivacyPolicy /> },
   { path: "/company/legal-policy", element: <LegalPolicy /> },
   { path: "/company/sitemap", element: <Sitemap /> },
+  { path: "/company/about", element: <About /> },
+  { path: "/company/events", element: <Event /> },
 ];

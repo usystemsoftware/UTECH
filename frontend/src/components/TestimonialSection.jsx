@@ -23,10 +23,10 @@ export function TestimonialSection({ testimonials = [] }) {
               </span>
 
               {/* Testimonial text */}
-              <p className="text-gray-700 text-base leading-relaxed">{t.text}</p>
+              <p className="text-gray-700 dark:text-gray-300 text-base leading-relaxed">{t.text}</p>
 
               {/* Author */}
-              <p className="mt-6 text-right text-sm italic text-gray-900">
+              <p className="mt-6 text-right text-sm italic text-gray-900 dark:text-gray-200">
                 — {t.author}
               </p>
 

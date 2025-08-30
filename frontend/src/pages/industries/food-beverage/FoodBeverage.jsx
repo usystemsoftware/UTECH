@@ -187,7 +187,7 @@ const FoodBeverage = () => {
       </section>
 
       {/* USDA & FDA Compliance Section */}
-      <PageLayout className="py-12 bg-cyan-50 my-12 flex flex-col sm:flex-row justify-between items-center md:space-x-8">
+      <PageLayout className="py-12 bg-cyan-50 dark:text-black my-12 flex flex-col sm:flex-row justify-between items-center md:space-x-8">
         {/* Text Content */}
         <div className="flex-1 space-y-4">
           <TypographyH3 className="text-black">

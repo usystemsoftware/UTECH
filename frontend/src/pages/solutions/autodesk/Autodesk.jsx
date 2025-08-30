@@ -26,8 +26,7 @@ const Autodesk = () => {
         backgroundImage="/banner/autodesk.jpg"
         title="CUSTOM AUTODESK CONSULTING & IMPLEMENTATION SOLUTIONS"
         buttonText="HIRE AWS DEVELOPERS"
-        buttonLink="#"
-        imageFit="cover"
+        partnerLogo="/assets//solutions/autodesk/partner.png"
       />
 
       <PageLayout className="space-y-10 py-16 text-center">

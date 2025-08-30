@@ -12,6 +12,7 @@ import DynamicHelmet from "@/custom/DynamicHelmet";
 import CookieConsentBanner from "@/components/layout/CookieConsentBanner";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import { ScrollToTopButton } from "@/components/ScrollToTop";
+import TawkToChat from "@/components/layout/TawkToChat";
 
 export default function App() {
   useAnalytics();
@@ -52,6 +53,7 @@ export default function App() {
       </Routes>
 
       <Chat />
+      {/* <TawkToChat /> */}
       <ScrollToTopButton />
       <Footer />
     </>
