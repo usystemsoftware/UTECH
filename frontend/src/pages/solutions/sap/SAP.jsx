@@ -29,8 +29,9 @@ export default function SAP() {
         backgroundImage="/banner/sap-banner.jpg"
         title="SAP DEVELOPMENT COMPANY"
         buttonText="HIRE SAP CONSULTANTS"
-        buttonLink="#"
+        bottombgcolor="bg-[#0072BC]"
         bottomLinks={herobannerLinks}
+        partnerLogo="/assets//solutions/sap/partner.png"
       />
 
       <PageLayout className="py-16 space-y-10 text-center">

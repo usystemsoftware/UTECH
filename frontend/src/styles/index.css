@@ -131,7 +131,7 @@
     font-family: "Lato", sans-serif;
     /* font-family: "Inter", sans-serif; */
     /* font-family: "Outfit", sans-serif; */
-     /* font-family: "Oswald", sans-serif; */
+    /* font-family: "Oswald", sans-serif; */
     /* font-family: "Fjalla One", sans-serif; */
     /* font-family: "Jost", sans-serif; */
     /* font-family: "Josefin Sans", sans-serif; */
@@ -156,6 +156,15 @@
     }
   }
 }
+
+/* img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
 
 /* hide-scrollbar.css */
 .hide-scrollbar::-webkit-scrollbar {

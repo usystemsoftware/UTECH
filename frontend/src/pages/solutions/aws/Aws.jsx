@@ -30,8 +30,7 @@ const Aws = () => {
         title="AWS DEVELOPMENT SERVICES"
         description="As a certified Autodesk partner, a member of Autodesk Developer Network & Forge Systems Integrator, U Tech provide Autodesk implementation including consulting, design, integration, customization, and AI enhancement."
         buttonText="HIRE AUTODESK EXPERTS NOW"
-        buttonLink="#"
-        imageFit="cover"
+        partnerLogo="/assets//solutions/aws/partner.png"
       />
 
       <PageLayout className="space-y-10 py-16 text-center">

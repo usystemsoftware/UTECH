@@ -22,7 +22,7 @@ export default function UKG() {
         title="UKG IMPLEMENTATION SERVICES"
         description="We are UKG Ready Certified Partner Providing Custom Implementation and Consulting Solutions"
         buttonText="GET A FREE QUOTE TODAY"
-        buttonLink="#"
+        partnerLogo="/assets//solutions/ukg/partner.png"
       />
 
       <PageLayout className="py-16 space-y-10 text-center">

@@ -17,6 +17,7 @@ import {
   industries,
   portfolioItems,
   salesforceFaq,
+  salesforceMenu,
   salesforceServices,
   salesforceSolutions,
   supportServices,
@@ -32,7 +33,9 @@ export default function Salesforce() {
         title="CUSTOM SALESFORCE DEVELOPMENT SERVICES"
         description="Elevate your Salesforce CRM system with our Salesforce development services"
         buttonText="HIRE SALESFORCE DEVELOPERS"
-        buttonLink="#"
+        bottombgcolor="bg-[#0072BC]"
+        bottomLinks={salesforceMenu}
+        partnerLogo="/assets//solutions/salesforce/partner.png"
       />
 
       <PageLayout className="py-16 space-y-10 text-center">
@@ -77,11 +80,10 @@ export default function Salesforce() {
                 <button
                   key={index}
                   onClick={() => setActiveIndex(index)}
-                  className={`flex flex-col items-center cursor-pointer  transition-all duration-300 ${
-                    activeIndex === index
-                      ? "text-orange-600 border-b-2 border-orange-500"
-                      : "text-gray-600 hover:text-orange-500 hover:border-b-2 border-orange-500"
-                  }`}
+                  className={`flex flex-col items-center cursor-pointer  transition-all duration-300 ${activeIndex === index
+                    ? "text-orange-600 border-b-2 border-orange-500"
+                    : "text-gray-600 hover:text-orange-500 hover:border-b-2 border-orange-500"
+                    }`}
                 >
                   <img
                     loading="lazy"

@@ -57,10 +57,10 @@ export const FeaturesList = ({
           <div
             key={index}
             className={`flex ${iconAlign === "horizontal"
-                ? `md:flex-row flex-col gap-4 ${center ? "items-center" : "items-center md:items-start"
-                }`
-                : `flex-col gap-4 ${center ? "items-center" : "items-center md:items-start"
-                }`
+              ? `md:flex-row flex-col gap-4 ${center ? "items-center" : "items-center md:items-start"
+              }`
+              : `flex-col gap-4 ${center ? "items-center" : "items-center md:items-start"
+              }`
               } ${center ? "text-center" : "text-center md:text-left"}`}
           >
             {/* ICON */}
@@ -88,10 +88,10 @@ export const FeaturesList = ({
                 iconAlign === "horizontal" && !center ? "flex-1 md:ml-4" : ""
               }
             >
-              <TypographyH5 className="font-extrabold text-base 2xl:text-xl tracking-tight">
+              <TypographyH5 className="text-base 2xl:text-xl tracking-tight">
                 {feature.title}
               </TypographyH5>
-              <TypographyMuted className="text-start">
+              <TypographyMuted className="break-words tracking-tight text-justify">
                 {feature.description}
               </TypographyMuted>
             </div>
@@ -151,7 +151,7 @@ export const FeaturesListOpposite = ({ features }) => {
 
             {/* Text */}
             <div className="w-full">
-              <TypographyH5 className="font-extrabold text-base md:text-xl text-primary tracking-tight">
+              <TypographyH5 className="text-base md:text-xl text-primary tracking-tight">
                 {title}
               </TypographyH5>
               <div
@@ -159,7 +159,7 @@ export const FeaturesListOpposite = ({ features }) => {
                     mx-auto md:mx-0 
                     ${isRightColumn ? "md:ml-auto" : ""}`}
               />
-              <TypographyMuted className="sm:line-clamp-4 text-start">
+              <TypographyMuted className="break-words tracking-tight text-justify">
                 {description}
               </TypographyMuted>
             </div>

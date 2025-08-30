@@ -7,7 +7,6 @@ import { IconRenderer } from "@/custom/IconRenderer";
 import { FadeInWhenVisible } from "@/custom/FadeInWhenVisible";
 import AccessibilityWidget from "@/components/layout/AccessibilityWidget";
 import { Separator } from "@/components/ui/separator";
-import { TypographySmall } from "@/custom/Typography";
 import {
   Popover,
   PopoverContent,
@@ -212,13 +211,14 @@ const NavbarMobile = ({ setIsCommandOpen, scrolledMobile, setScrolledMobile }) =
                                   setOpen(false);
                                   setSelectedLink(item.href);
                                 }}
-                                className={`block py-2 text-sm border-b border-gray-100
+                                className={`py-2 flex items-center gap-2 text-sm border-b border-gray-100
                                   ${selectedLink === item.href ||
                                     pathname === item.href
                                     ? "text-blue-700 font-medium"
                                     : "text-gray-600 hover:text-primary"
                                   }`}
                               >
+                                <IconRenderer name={item.icon} strokeWidth={2} />
                                 {highlightMatch(item.label, searchTerm)}
                               </Link>
                             </FadeInWhenVisible>
@@ -228,7 +228,7 @@ const NavbarMobile = ({ setIsCommandOpen, scrolledMobile, setScrolledMobile }) =
                   </div>
                 );
               })}
-              <Link
+              {/* <Link
                 to="/company/careers"
                 className="block px-4 py-3 
                         text-sm font-semibold tracking-wide uppercase
@@ -244,7 +244,7 @@ const NavbarMobile = ({ setIsCommandOpen, scrolledMobile, setScrolledMobile }) =
                 >
                   {highlightMatch("Careers", searchTerm)}
                 </button>
-              </Link>
+              </Link> */}
             </div>
 
             {/* Fixed Bottom Buttons */}
@@ -252,7 +252,7 @@ const NavbarMobile = ({ setIsCommandOpen, scrolledMobile, setScrolledMobile }) =
               <Link
                 to="/contact-us"
                 onClick={() => setOpen(false)}
-                className={`flex-1 text-center py-2 rounded font-medium transition-colors
+                className={`flex-1 text-center py-2 text-sm rounded font-medium transition-colors
                   ${pathname === "/contact-us"
                     ? "bg-blue-600 text-white"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -264,7 +264,7 @@ const NavbarMobile = ({ setIsCommandOpen, scrolledMobile, setScrolledMobile }) =
               <Link
                 to="/book-call"
                 onClick={() => setOpen(false)}
-                className={`flex-1 text-center py-2 rounded font-medium transition-colors
+                className={`flex-1 text-center py-2 text-sm rounded font-medium transition-colors
                   ${pathname === "/book-call"
                     ? "bg-blue-600 text-white"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"

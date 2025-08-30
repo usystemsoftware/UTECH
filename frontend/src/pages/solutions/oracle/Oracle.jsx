@@ -16,6 +16,7 @@ import {
   oracleCloudServices,
   oracleFAQ,
   oracleIndustrySolutions,
+  oracleSolutions,
   oracleSupportServices,
   portfolioItems,
 } from "./Data";
@@ -28,7 +29,9 @@ export default function Oracle() {
         title="ORACLE CONSULTING SERVICES"
         description="Your trusted Oracle partner for seamless Oracle Cloud solutions"
         buttonText="HIRE ORACLE CONSULTANTS"
-        buttonLink="#"
+        bottomLinks={oracleSolutions}
+        bottombgcolor="bg-[#333333]"
+        partnerLogo="/assets//solutions/oracle/partner.png"
       />
 
       <PageLayout className="py-16 space-y-10 text-center">

@@ -1,5 +1,3 @@
-import { Phone, Video } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
   TypographyLead,
@@ -41,19 +39,12 @@ export const HeroSection = () => {
             </FadeInWhenVisible>
 
             <FadeInWhenVisible delay={0.4}>
-              <div className="grid grid-cols-2 gap-4">
-                <Link to="/contact-us">
-                  <Button className="w-full 2xl:py-4">
-                    Contact Us <Phone />
-                  </Button>
+              <div className="flex items-center gap-4">
+                <Link to="/contact-us" className="flex text-xs sm:text-sm items-center justify-center px-8 py-2 uppercase gap-2 bg-primary rounded-full">
+                  Contact Us
                 </Link>
-                <Link to="/book-call">
-                  <Button
-                    variant="outline"
-                    className="w-full 2xl:py-4 text-black"
-                  >
-                    Book Call <Video />
-                  </Button>
+                <Link to="/book-call" className="flex text-xs sm:text-sm items-center px-8 py-2 justify-center gap-2 border-2 hover:bg-primary border-primary rounded-full uppercase">
+                  Book Call
                 </Link>
               </div>
             </FadeInWhenVisible>

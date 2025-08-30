@@ -27,7 +27,7 @@ export default function GoogleCloud() {
         title="GOOGLE CLOUD DEVELOPMENT SERVICES"
         description="Delivering top-tier Google Cloud solutions, from expert development and certified GCP Partner."
         buttonText="HIRE GOOGLE CLOUD DEVELOPERS"
-        buttonLink="#"
+        partnerLogo="/assets//solutions/google-cloud/partner.png"
       />
 
       <PageLayout className="text-center py-12 space-y-10">
