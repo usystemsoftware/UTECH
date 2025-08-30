@@ -13,7 +13,8 @@ const ShareButtons = ({ scrolled, scrolledMobile }) => {
 
   const pathname = location.pathname;
   const slug = pathname.split("/").filter(Boolean).pop();
-  const shareUrl = `https://u-tech-r7be.onrender.com/share/${slug}`;
+  // const shareUrl = `https://u-tech-r7be.onrender.com/share/${slug}`;
+  const shareUrl = `https://staging.usystem.software/share/${slug}`;
 
   const isMobile = () => /Mobi|Android|iPhone/i.test(navigator.userAgent);
 

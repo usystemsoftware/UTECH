@@ -881,7 +881,7 @@ export const metaData = {
     title: "About Us | U Tech",
     description: "Learn more about U Tech, our mission, and our values.",
     keywords: ["about us", "U Tech", "company information"],
-    image: "https://usystem.software/banner/about-us.jpg",
+    image: "https://usystem.software/banner/about.webp",
     url: "https://usystem.software/company/about-us",
     category: "Company",
     published: "August 2025",
@@ -908,28 +908,18 @@ export const metaData = {
   },
   events: {
     slug: "events",
-    title: "Events | U Tech",
-    description: "Stay updated on upcoming events and activities at U Tech.",
-    keywords: ["events", "U Tech", "company events"],
-    image: "https://media.istockphoto.com/id/1284180906/photo/colorful-lord-ganesha-statue-for-lord-ganesha-festival.jpg?s=612x612&w=0&k=20&c=RHxKoNRBZGBKAayh7bYEkeNdAzDdLhOhbKFm9Z2bJCc=",
-    url: "https://usystem.software/company/events",
-    category: "Company",
-    published: "August 2025",
-  },
-
-  ganeshChaturthi: {
-    slug: "ganesh-chaturthi-2025",
-    title: "Ganesh Chaturthi 2025 | U Tech",
+    title: "Ganesh Festival 2025 With Opening the U Techology Website With VIP guests. Please accept the invitation and build the part of our happiness",
     description:
-      "Celebrate Ganesh Chaturthi with devotion, joy, and vibrant festivities at U Tech. Join us for cultural programs and rituals.",
+      "Celebrate the grand opening of Ganesh Festival 2025 at U Tech with joy, devotion, and cultural programs. Special VIP guests invited to mark this auspicious day.",
     keywords: [
-      "Ganesh Chaturthi",
-      "Ganpati Festival",
+      "Ganesh Festival 2025",
+      "Ganpati Utsav U Tech",
+      "Ganpati Festival 2025",
       "U Tech events",
-      "Ganpati 2025 celebration",
-      "Hindu festival"
+      "Ganesh Festival VIP invite",
+      "Hindu festival celebration"
     ],
-    image: "https://usystem.software/banner/ganesh-chaturthi-banner.jpg",
+    image: "https://plus.unsplash.com/premium_photo-1722677453717-eb1baa12f42f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGdhbnBhdGklMjBiYXBwYXxlbnwwfHwwfHx8MA%3D%3D",
     url: "https://usystem.software/company/events/ganesh-chaturthi-2025",
     category: "Festivals",
     published: "August 2025",
