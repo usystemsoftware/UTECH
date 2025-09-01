@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import { motion } from "framer-motion";
+import Timeline from "@/custom/Timeline";
 import {
     Headline,
     TypographyH4,
@@ -8,11 +8,11 @@ import {
 } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { Card, CardContent, CardDescription } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import FaqSection from "@/custom/FaqSection";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { CheckCircle2 } from "lucide-react";
 import { IconRenderer } from "@/custom/IconRenderer";
+import TestimonialsSection from "@/custom/TestimonialsSection";
 import { Link } from 'react-router-dom'
 
 import {
@@ -31,18 +31,6 @@ import {
     awards,
     companyStats,
 } from "./Data";
-
-const containerVariants = {
-    hidden: {},
-    show: {
-        transition: { staggerChildren: 0.2 },
-    },
-};
-
-const itemVariants = {
-    hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-};
 
 export default function AboutPage() {
     return (
@@ -175,21 +163,29 @@ export default function AboutPage() {
             </PageLayout>
 
             {/*  TIMELINE */}
-            <JourneyTimeline />
+            <PageLayout className="py-10 space-y-10">
+                <Headline
+                    title="Our Journey"
+                    description="Milestones that shaped who we are today."
+                />
+                <Timeline data={timelineData} />
+            </PageLayout>
 
             {/*  CLIENT TESTIMONIALS */}
-            <TestimonialsSection
-                title="Client Testimonials"
-                description="We are trusted by small to mid-sized organizations, Fortune 5000 companies, and major brands to advance their technology objectives."
-                data={clientsTestimonials}
-            />
+            <section className="py-16 bg-secondary space-y-10">
+                <TestimonialsSection
+                    title="Client Testimonials"
+                    description="We are trusted by small to mid-sized organizations, Fortune 5000 companies, and major brands to advance their technology objectives."
+                    data={clientsTestimonials}
+                />
 
-            {/*  EMPLOYEE TESTIMONIALS */}
-            <TestimonialsSection
-                title="Employee Testimonials"
-                description="Our people are at the heart of everything we do. Here's what they have to say about working with us."
-                data={employeeTestimonials}
-            />
+                {/*  EMPLOYEE TESTIMONIALS */}
+                <TestimonialsSection
+                    title="Employee Testimonials"
+                    description="Our people are at the heart of everything we do. Here's what they have to say about working with us."
+                    data={employeeTestimonials}
+                />
+            </section>
 
             {/*  LEADERSHIP */}
             <PageLayout className="py-16 space-y-10">
@@ -273,70 +269,5 @@ function CapabilityRow({ title, points, icon }) {
                 ))}
             </CardContent>
         </Card>
-    );
-}
-
-function JourneyTimeline() {
-    return (
-        <PageLayout className="py-16 space-y-10">
-            <Headline title="Our Journey" description="Milestones that shaped who we are today." />
-            <div className="relative max-w-4xl mx-auto">
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 bg-blue-200 h-full hidden sm:block" />
-                <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: true, amount: 0.3 }}
-                    className="space-y-10"
-                >
-                    {timelineData.map((t, idx) => (
-                        <motion.div
-                            key={idx}
-                            variants={itemVariants}
-                            className={`relative flex flex-col sm:flex-row items-center ${idx % 2 === 0 ? "sm:justify-start" : "sm:justify-end"}`}
-                        >
-                            <div className="absolute md:flex hidden sm:static items-center justify-center">
-                                <div className="flex flex-col items-center">
-                                    <div className="h-4 w-4 rounded-full bg-primary ring-4 ring-blue-600/30" />
-                                    <span className="text-sm font-semibold text-primary mt-2">{t.year}</span>
-                                </div>
-                            </div>
-                            <div className="md:hidden flex items-center mb-3 gap-2">
-                                <div className="h-3 w-3 rounded-full bg-primary ring-3 ring-blue-600/30" />
-                                <span className="text-sm font-semibold text-primary mt-2">{t.year}</span>
-                            </div>
-                            <div className={`bg-card p-6 rounded-2xl shadow-md w-full sm:w-[45%] border border-gray-100 ${idx % 2 === 0 ? "sm:mr-10" : "sm:ml-10"}`}>
-                                <TypographyH4 className="text-primary underline underline-offset-4">{t.title}</TypographyH4>
-                                <p className="pt-2 text-gray-700  dark:text-gray-300">{t.desc}</p>
-                            </div>
-                        </motion.div>
-                    ))}
-                </motion.div>
-            </div>
-        </PageLayout>
-    );
-}
-
-function TestimonialsSection({ title, description, data }) {
-    return (
-        <section className="py-16 bg-secondary">
-            <PageLayout className="space-y-10">
-                <Headline title={title} description={description} />
-                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                    {data.map((q, i) => (
-                        <div key={i} className="p-6 bg-card space-y-6 shadow-md border-2 border-primary relative">
-                            <p className="text-accent-foreground text-base mb-6 pb-6">“{q.quote}”</p>
-                            <div className="flex items-center gap-4 absolute left-4 md:left-8 -bottom-3 bg-primary py-1 px-4 rounded-md">
-                                <Avatar className="h-10 w-10 border-2 border-white shadow-md">
-                                    <AvatarImage src={q.image} />
-                                    <AvatarFallback className="bg-blue-200 text-blue-800 font-semibold">U</AvatarFallback>
-                                </Avatar>
-                                <div className="text-white text-xs sm:text-sm">{q.name}, {q.role}</div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </PageLayout>
-        </section>
     );
 }

@@ -22,6 +22,7 @@ export default function Affiliations() {
                 backgroundImage="/banner/affiliations-banner.jpeg"
                 title="PARTNERSHIPS AND AFFILIATIONS"
                 description="Leveraging our deep industry and technical expertise to deliver our network of strategic partnerships exceptional results."
+                buttonText="HIRE STRATEGIC PARTNERS"
                 bottombgcolor="bg-[#0072BC]"
                 ContactUsButtonText="HIRE STRATEGIC PARTNERS"
                 bottomLinks={partnersLinks}

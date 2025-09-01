@@ -45,7 +45,7 @@ export default function HeroSection({
         {/* Foreground Content */}
         <div className="relative z-20 md:max-w-5xl text-center px-4 space-y-6 text-white">
           {/* Title */}
-          <TypographyH1 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase leading-snug">
+          <TypographyH1 className="text-3xl sm:text-4xl md:text-5xl font-bold capitalize leading-snug">
             {title}
           </TypographyH1>
 

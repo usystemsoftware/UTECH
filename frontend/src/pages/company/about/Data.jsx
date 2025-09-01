@@ -150,34 +150,34 @@ export const capabilitiesTabs = [
 
 export const timelineData = [
     {
-        year: "2010",
+        date: "2010",
         title: "Founded Arya Soft",
-        desc: "We started our journey in Mumbai with a small but passionate team, driven by innovation and client success.",
+        description: "We started our journey in Mumbai with a small but passionate team, driven by innovation and client success.",
     },
     {
-        year: "2015",
+        date: "2015",
         title: "Expansion in Mumbai",
-        desc: "Established stronger roots in Mumbai, building long-term partnerships and scaling operations.",
+        description: "Established stronger roots in Mumbai, building long-term partnerships and scaling operations.",
     },
     {
-        year: "2020",
+        date: "2020",
         title: "Opened Singapore Office",
-        desc: "Marked our global presence by expanding to Singapore, strengthening international collaborations.",
+        description: "Marked our global presence by expanding to Singapore, strengthening international collaborations.",
     },
     {
-        year: "2022",
+        date: "2022",
         title: "Rebranded as U Tech",
-        desc: "Renamed from Arya Soft to U Tech. Expanded offices in Mumbai, Singapore, and Pune with our main office in Pimpri, Pune.",
+        description: "Renamed from Arya Soft to U Tech. Expanded offices in Mumbai, Singapore, and Pune with our main office in Pimpri, Pune.",
     },
     {
-        year: "2023",
+        date: "2023",
         title: "AI Everywhere",
-        desc: "Integrated practical AI across products—assistants, search, insights, automation.",
+        description: "Integrated practical AI across products—assistants, search, insights, automation.",
     },
     {
-        year: "2024–25",
+        date: "2024–25",
         title: "Global Delivery",
-        desc: "Scaling teams, partnerships, and platforms with a security-first posture.",
+        description: "Scaling teams, partnerships, and platforms with a security-first posture.",
     },
 ];
 
