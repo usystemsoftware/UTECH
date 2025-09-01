@@ -1,486 +1,342 @@
 import HeroSection from "@/components/HeroSection";
 import { motion } from "framer-motion";
 import {
-    Rocket,
-    Leaf,
-    Shield,
-    Users,
-    Brain,
-    LineChart,
-    Globe2,
-    Sparkles,
-    CheckCircle2,
-    Eye,
-    Heart,
-    Calendar,
-    Cpu,
-    Lightbulb,
-    ShieldCheck,
-    Award,
-    CheckCircle
-} from "lucide-react";
-
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+    Headline,
+    TypographyH4,
+    TypographyMuted,
+    TypographyH3
+} from "@/custom/Typography";
+import PageLayout from "@/custom/PageLayout";
+import { Card, CardContent, CardDescription } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Separator } from "@/components/ui/separator";
-import { Tabs, TabsContent, TabsList, TabsTrigger, } from "@/components/ui/tabs";
+import FaqSection from "@/custom/FaqSection";
 import ContactUsButton from "@/custom/ContactUsButton";
+import { CheckCircle2 } from "lucide-react";
+import { IconRenderer } from "@/custom/IconRenderer";
+import { Link } from 'react-router-dom'
+
+import {
+    heroData,
+    valuesData,
+    overviewCards,
+    valuesList,
+    capabilitiesTabs,
+    timelineData,
+    clientsTestimonials,
+    leadership,
+    employeeTestimonials,
+    faqs,
+    certifications,
+    industries,
+    awards,
+    companyStats,
+} from "./Data";
+
+const containerVariants = {
+    hidden: {},
+    show: {
+        transition: { staggerChildren: 0.2 },
+    },
+};
+
+const itemVariants = {
+    hidden: { opacity: 0, y: 40 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
 
 export default function AboutPage() {
     return (
-        <div className="relative bg-blue-50/50"> {/* Light blue background for the page */}
+        <>
+            {/*  HERO SECTION */}
             <HeroSection
-                backgroundImage="/banner/about.webp"
-                title="ABOUT U TECHNOLOGY"
-                description="At U Technology, we empower businesses with next-gen digital solutions. Our team of innovators, developers, and strategists work together to build scalable, user-centric products that drive growth and transformation."
-                buttonText="LEARN MORE ABOUT US"
+                backgroundImage={heroData.backgroundImage}
+                title={heroData.title}
+                description={heroData.description}
+                buttonText={heroData.buttonText}
             />
 
-            {/* Decorative gradient blur with stronger blue focus */}
-            <div className="pointer-events-none absolute inset-0 -z-10">
-                <div className="mx-auto h-[480px] max-w-6xl blur-3xl opacity-50 bg-gradient-to-r from-blue-600/20 via-sky-500/20 to-indigo-600/20 rounded-b-[150px]" />
-            </div>
-
-            {/* WHAT WE STAND FOR */}
-            <section id="values" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5">
-                <div className="mb-14 text-center">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">What we stand for</h2>
-                    <p className="text-gray-700 mt-4 max-w-3xl mx-auto text-lg">
-                        Principles that shape how we build products, partner with clients, and grow our people.
-                    </p>
-                </div>
-
+            {/*  WHAT WE STAND FOR */}
+            <PageLayout id="values" className="py-12 space-y-10">
+                <Headline
+                    title="What we stand for"
+                    description="Principles that shape how we build products, partner with clients, and grow our people."
+                />
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-                    {[
-                        {
-                            icon: <Brain className="h-7 w-7 text-blue-600" />, title: "Practical AI",
-                            desc: "AI when it matters, automation where it counts—always tied to business outcomes."
-                        },
-                        {
-                            icon: <Shield className="h-7 w-7 text-blue-600" />, title: "Security-first",
-                            desc: "Threat‑modeling and privacy by default. We bake in compliance from day one."
-                        },
-                        {
-                            icon: <Users className="h-7 w-7 text-blue-600" />, title: "Partner mindset",
-                            desc: "Transparent comms, predictable delivery, and teams that feel in‑house."
-                        },
-                        {
-                            icon: <Leaf className="h-7 w-7 text-blue-600" />, title: "Sustainable tech",
-                            desc: "Efficient architectures and green deployments to minimize cost and footprint."
-                        },
-                    ].map((v) => (
-                        <Card key={v.title} className="rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white">
-                            <CardHeader className="flex flex-col items-center text-center p-6">
-                                <div className="rounded-full bg-blue-100 p-3 mb-4">{v.icon}</div>
-                                <div>
-                                    <CardTitle className="text-xl font-semibold text-gray-900">{v.title}</CardTitle>
-                                    <CardDescription className="pt-2 text-gray-600">{v.desc}</CardDescription>
-                                </div>
-                            </CardHeader>
-                        </Card>
+                    {valuesData.map((v) => (
+                        <InfoCard key={v.title} title={v.title} desc={v.desc} icon={v.icon} />
                     ))}
                 </div>
-            </section>
+            </PageLayout>
 
-            {/* COMPANY SNAPSHOT */}
-            <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 bg-blue-50 rounded-xl my-10">
-                <div className="mb-14 text-center">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">About Our Group</h2>
-                    <p className="text-gray-700 mt-4 max-w-3xl mx-auto text-lg">
-                        A quick glance at Umbarkar Technology India Pvt Ltd — who we are, what we do, and what drives us forward.
-                    </p>
-                </div>
+            {/*  COMPANY SNAPSHOT */}
+            <section className="py-16 bg-secondary">
+                <PageLayout className="space-y-12">
+                    <Headline
+                        title="About Our Group"
+                        description="A quick glance at Umbarkar Technology India Pvt Ltd — who we are, what we do, and what drives us forward."
+                    />
 
-                <Tabs defaultValue="overview" className="w-full">
-                    {/* Tab Buttons */}
-                    <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 rounded-full bg-blue-100 p-1.5 shadow-inner">
-                        <TabsTrigger value="overview" className="flex items-center justify-center gap-2 rounded-full data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md data-[state=active]:font-semibold transition-all">
-                            <Globe2 className="w-4 h-4" /> Overview
-                        </TabsTrigger>
-                        <TabsTrigger value="mission" className="flex items-center justify-center gap-2 rounded-full data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md data-[state=active]:font-semibold transition-all">
-                            <Rocket className="w-4 h-4" /> Mission
-                        </TabsTrigger>
-                        <TabsTrigger value="vision" className="flex items-center justify-center gap-2 rounded-full data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md data-[state=active]:font-semibold transition-all">
-                            <Eye className="w-4 h-4" /> Vision
-                        </TabsTrigger>
-                        <TabsTrigger value="values" className="flex items-center justify-center gap-2 rounded-full data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md data-[state=active]:font-semibold transition-all">
-                            <Heart className="w-4 h-4" /> Values
-                        </TabsTrigger>
-                    </TabsList>
-
-                    {/* Overview */}
-                    <TabsContent value="overview" className="mt-10">
+                    {/*  Overview */}
+                    <div>
+                        <TypographyH4 className="text-center mb-6">Overview</TypographyH4>
                         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                            <div className="p-6 bg-white rounded-xl shadow-md text-center">
-                                <Calendar className="mx-auto text-blue-600 h-8 w-8 mb-3" />
-                                <h3 className="font-semibold text-gray-900">Founded</h3>
-                                <p className="text-gray-600 text-sm mt-1">27th August 2020, Pimpri, Pune</p>
-                            </div>
-                            <div className="p-6 bg-white rounded-xl shadow-md text-center">
-                                <CheckCircle className="mx-auto text-blue-600 h-8 w-8 mb-3" />
-                                <h3 className="font-semibold text-gray-900">Status</h3>
-                                <p className="text-gray-600 text-sm mt-1">Active Technology-Driven Company</p>
-                            </div>
-                            <div className="p-6 bg-white rounded-xl shadow-md text-center">
-                                <Cpu className="mx-auto text-blue-600 h-8 w-8 mb-3" />
-                                <h3 className="font-semibold text-gray-900">Industry</h3>
-                                <p className="text-gray-600 text-sm mt-1">Computer & Related Activities</p>
-                            </div>
+                            {overviewCards.map((item) => (
+                                <InfoCard key={item.title} title={item.title} desc={item.desc} icon={item.icon} />
+                            ))}
                         </div>
                         <div className="mt-8 text-center max-w-3xl mx-auto">
-                            <p className="text-lg text-gray-700 leading-relaxed">
+                            <p className="md:text-lg text-sm text-gray-700 dark:text-gray-200 leading-relaxed">
                                 With a commitment to <span className="font-semibold text-blue-700">innovation</span> and
                                 <span className="font-semibold text-blue-700"> excellence</span>, we deliver scalable digital solutions
                                 that empower businesses and communities globally.
                             </p>
                         </div>
-                    </TabsContent>
+                    </div>
 
-                    {/* Mission */}
-                    <TabsContent value="mission" className="mt-10">
-                        <div className="bg-white p-8 rounded-2xl shadow-md text-center max-w-3xl mx-auto">
-                            <p className="text-lg text-gray-700">
-                                To build <span className="font-semibold text-blue-700">cutting-edge digital solutions</span>
-                                that drive growth, efficiency, and positive impact across industries.
-                            </p>
-                        </div>
-                    </TabsContent>
+                    {/*  Mission & Vision */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <InfoCard title="Mission" desc="To build cutting-edge digital solutions that drive growth, efficiency, and positive impact across industries." icon="Goal" />
+                        <InfoCard title="Vision" desc="To become a global leader in technology innovation, empowering enterprises with sustainable and future-ready solutions." icon="Earth" />
+                    </div>
 
-                    {/* Vision */}
-                    <TabsContent value="vision" className="mt-10">
-                        <div className="bg-white p-8 rounded-2xl shadow-md text-center max-w-3xl mx-auto">
-                            <p className="text-lg text-gray-700">
-                                To become a <span className="font-semibold text-blue-700">global leader in technology innovation</span>,
-                                empowering enterprises with sustainable and future-ready solutions.
-                            </p>
-                        </div>
-                    </TabsContent>
-
-                    {/* Values */}
-                    <TabsContent value="values" className="mt-10">
-                        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 text-center">
-                            {[
-                                { icon: <Lightbulb className="mx-auto text-blue-600 h-8 w-8 mb-3" />, label: "Innovation", desc: "Always pushing boundaries with creativity and technology." },
-                                { icon: <ShieldCheck className="mx-auto text-blue-600 h-8 w-8 mb-3" />, label: "Integrity", desc: "Committed to transparency, ethics, and trust." },
-                                { icon: <Award className="mx-auto text-blue-600 h-8 w-8 mb-3" />, label: "Excellence", desc: "Delivering high-quality solutions that make an impact." },
-                                { icon: <Users className="mx-auto text-blue-600 h-8 w-8 mb-3" />, label: "Collaboration", desc: "Working together with clients and communities." },
-                            ].map((v) => (
-                                <div key={v.label} className="p-6 rounded-2xl bg-white shadow-md hover:shadow-lg transition">
-                                    {v.icon}
-                                    <div className="text-lg font-semibold text-gray-900">{v.label}</div>
-                                    <p className="text-gray-600 mt-2 text-sm">{v.desc}</p>
-                                </div>
+                    {/*  Core Values */}
+                    <div>
+                        <TypographyH4 className="text-center mb-6">Core Values</TypographyH4>
+                        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                            {valuesList.map((v) => (
+                                <InfoCard key={v.label} title={v.label} desc={v.desc} icon={v.icon} />
                             ))}
                         </div>
-                    </TabsContent>
-                </Tabs>
+                    </div>
+                </PageLayout>
             </section>
 
-
-            {/* CAPABILITIES TABS */}
-            <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 bg-blue-50 rounded-xl my-3">
-                <div className="mb-14 text-center">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Our Capabilities</h2>
-                    <p className="text-gray-700 mt-4 max-w-3xl mx-auto text-lg">
-                        Expertise across key technology domains to accelerate your innovation.
-                    </p>
+            {/*  CERTIFICATIONS */}
+            <PageLayout className="py-16 space-y-10">
+                <Headline title="Certifications & Compliance" description="We meet global standards to ensure security and trust." />
+                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                    {certifications.map((c) => (
+                        <InfoCard key={c.title} title={c.title} desc={c.desc} icon={c.icon} />
+                    ))}
                 </div>
-                <Tabs defaultValue="ai" className="w-full">
-                    <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 rounded-full bg-blue-100 p-1.5 shadow-inner">
-                        <TabsTrigger value="ai" className="rounded-full data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md data-[state=active]:font-semibold transition-all">AI & Automation</TabsTrigger>
-                        <TabsTrigger value="web" className="rounded-full data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md data-[state=active]:font-semibold transition-all">Web & Mobile</TabsTrigger>
-                        <TabsTrigger value="cloud" className="rounded-full data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md data-[state=active]:font-semibold transition-all">Cloud & DevOps</TabsTrigger>
-                        <TabsTrigger value="data" className="rounded-full data-[state=active]:bg-blue-600 data-[state=active]:text-white data-[state=active]:shadow-md data-[state=active]:font-semibold transition-all">Data & Analytics</TabsTrigger>
-                    </TabsList>
-                    <TabsContent value="ai" className="mt-8">
-                        <CapabilityRow
-                            title="From idea to impact with AI"
-                            points={[
-                                "LLM-powered assistants and RAG systems",
-                                "Process automation and workflow orchestration",
-                                "Ethical, secure deployment and monitoring",
-                                "Custom ML model development and integration",
-                            ]}
-                            icon={<Sparkles className="h-7 w-7 text-blue-600" />}
-                        />
-                    </TabsContent>
-                    <TabsContent value="web" className="mt-8">
-                        <CapabilityRow
-                            title="Beautiful, performant web & mobile apps"
-                            points={[
-                                "Modern UX with accessibility at core",
-                                "Next.js/React, RN/Expo, Node/Express",
-                                "Testing, analytics, and CI baked in",
-                                "Scalable microfrontend and microservice architectures",
-                            ]}
-                            icon={<Globe2 className="h-7 w-7 text-blue-600" />}
-                        />
-                    </TabsContent>
-                    <TabsContent value="cloud" className="mt-8">
-                        <CapabilityRow
-                            title="Scale without surprises in the cloud"
-                            points={[
-                                "Kubernetes, serverless, containers for agility",
-                                "Robust observability and cost optimization strategies",
-                                "Secure pipelines and Infrastructure as Code (IaC)",
-                                "Cloud migration and hybrid cloud solutions",
-                            ]}
-                            icon={<Rocket className="h-7 w-7 text-blue-600" />}
-                        />
-                    </TabsContent>
-                    <TabsContent value="data" className="mt-8">
-                        <CapabilityRow
-                            title="Decisions backed by insightful data"
-                            points={[
-                                "Efficient ELT/ETL pipelines and data warehousing",
-                                "Interactive dashboards, experiments, and BI reports",
-                                "Advanced ML models for prediction and personalization",
-                                "Real-time data streaming and processing",
-                            ]}
-                            icon={<LineChart className="h-7 w-7 text-blue-600" />}
-                        />
-                    </TabsContent>
-                </Tabs>
-            </section>
+            </PageLayout>
 
-            {/* TIMELINE */}
-            <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-1">
-                <div className="mb-14 text-center">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Our Journey</h2>
-                    <p className="text-gray-700 mt-4 max-w-3xl mx-auto text-lg">
-                        Milestones that shaped who we are today.
-                    </p>
-                </div>
-
-                <div className="relative">
-                    <Separator className="absolute left-6 top-0 h-full w-1 bg-blue-200 hidden sm:block" />
-                    <div className="space-y-10">
-                        {[
-                            {
-                                year: "2010",
-                                title: "Founded Arya Soft",
-                                desc: "We started our journey in Mumbai with a small but passionate team, driven by innovation and client success."
-                            },
-                            {
-                                year: "2015",
-                                title: "Expansion in Mumbai",
-                                desc: "Established stronger roots in Mumbai, building long-term partnerships and scaling operations."
-                            },
-                            {
-                                year: "2020",
-                                title: "Opened Singapore Office",
-                                desc: "Marked our global presence by expanding to Singapore, strengthening international collaborations."
-                            },
-                            {
-                                year: "2022",
-                                title: "Rebranded as U Tech",
-                                desc: "Renamed from Arya Soft to U Tech. Expanded offices in Mumbai, Singapore, and Pune with our main office in Pimpri, Pune."
-                            },
-                            {
-                                year: "2023",
-                                title: "AI Everywhere",
-                                desc: "Integrated practical AI across products—assistants, search, insights, automation."
-                            },
-                            {
-                                year: "2024–25",
-                                title: "Global Delivery",
-                                desc: "Scaling teams, partnerships, and platforms with a security-first posture."
-                            }
-                        ].map((t, idx) => (
-                            <motion.div
-                                key={t.year}
-                                initial={{ opacity: 0, x: -50 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.6, delay: idx * 0.15 }}
-                                className="grid grid-cols-1 gap-4 sm:grid-cols-[120px_1fr] items-center"
-                            >
-                                {/* Year + Timeline Dot */}
-                                <div className="flex items-center gap-4 sm:justify-end">
-                                    <div className="sm:hidden h-3 w-3 rounded-full bg-blue-600 ring-4 ring-blue-600/20 shrink-0" />
-                                    <div className="text-lg font-bold text-blue-700">{t.year}</div>
-                                    <div className="hidden sm:block h-4 w-4 rounded-full bg-blue-600 ring-4 ring-blue-600/20 shrink-0" />
-                                </div>
-
-                                {/* Card */}
-                                <Card className="rounded-3xl shadow-lg bg-white p-6 hover:shadow-xl transition-shadow duration-300">
-                                    <CardHeader className="p-0">
-                                        <CardTitle className="text-xl font-semibold text-gray-900">{t.title}</CardTitle>
-                                        <CardDescription className="pt-1 text-gray-700">{t.desc}</CardDescription>
-                                    </CardHeader>
-                                </Card>
-                            </motion.div>
+            {/*  INDUSTRIES */}
+            <section className="bg-secondary py-16">
+                <PageLayout className="space-y-10 text-center">
+                    <Headline title="Industries We Serve" description="Expertise across multiple sectors to deliver industry-focused solutions." />
+                    <div className="grid gap-8 md:grid-cols-2">
+                        {industries.map((c) => (
+                            <CapabilityRow key={c.value} title={c.title} points={c.points} icon={c.icon} />
                         ))}
                     </div>
-                </div>
+                    <Link to="/services/custom-software" className="rounded-full border border-orange-400 hover:bg-orange-500">
+                        See More.....
+                    </Link>
+                </PageLayout>
             </section>
 
+            {/*  AWARDS */}
+            <section className="bg-seconday py-16">
+                <PageLayout className="space-y-10">
+                    <Headline title="Awards & Recognition" description="Proud moments that reflect our dedication to excellence." />
+                    <div className="flex justify-center flex-wrap gap-8">
+                        {awards.map((a) => (
+                            <InfoCard key={a.title} title={a.title} desc={a.desc} icon={a.icon} />
+                        ))}
+                    </div>
+                </PageLayout>
+            </section>
 
-
-            {/* CLIENT QUOTES */}
-            <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 bg-blue-50 rounded-xl my-5">
-                <div className="mb-14 text-center">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">What clients say</h2>
-                    <p className="text-gray-700 mt-4 max-w-3xl mx-auto text-lg">A few words from partners we've shipped with.</p>
+            {/*  COMPANY STATS */}
+            <PageLayout className="py-12 space-y-10">
+                <Headline title="Our Impact in Numbers" description="Delivering measurable success across the globe." />
+                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 text-center">
+                    {companyStats.map((s) => (
+                        <div key={s.label} className="p-6 bg-card shadow-md border border-gray-100 rounded-lg">
+                            <h3 className="text-4xl font-bold text-primary">{s.value}</h3>
+                            <p className="text-gray-700 mt-2">{s.label}</p>
+                        </div>
+                    ))}
                 </div>
-                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                    {[
-                        {
-                            quote:
-                                "U Tech felt like an extension of our team—fast iterations, clear communication, and real business impact.",
-                            name: "Rohit Kumar", role: "Head of Product, Fintech",
-                        },
-                        {
-                            quote:
-                                "Their security-first approach gave us the confidence to scale. We shipped our MVP in 7 weeks.",
-                            name: "Arun S.", role: "CTO, Healthtech",
-                        },
-                        {
-                            quote:
-                                "They helped us operationalize AI where it mattered—search, insights, and automation.",
-                            name: "Meera D.", role: "Operations, E‑commerce",
-                        },
-                    ].map((q, i) => (
-                        <Card key={i} className="rounded-3xl shadow-lg bg-white p-6 hover:shadow-xl transition-shadow duration-300">
-                            <CardHeader className="p-0 mb-4">
-                                <CardDescription className="text-lg leading-relaxed text-gray-700">“{q.quote}”</CardDescription>
-                            </CardHeader>
-                            <CardContent className="flex items-center gap-4 pt-0">
-                                <Avatar className="h-14 w-14 border-2 border-blue-400 shadow-md">
-                                    <AvatarImage src={`https://i.pravatar.cc/100?img=${i + 11}`} />
-                                    <AvatarFallback className="bg-blue-200 text-blue-800 font-semibold">U</AvatarFallback>
-                                </Avatar>
-                                <div>
-                                    <div className="text-base font-semibold text-gray-900">{q.name}</div>
-                                    <div className="text-sm text-blue-600">{q.role}</div>
-                                </div>
-                            </CardContent>
+            </PageLayout>
+
+            {/*  CAPABILITIES */}
+            <PageLayout className="py-16 space-y-10">
+                <Headline
+                    title="Our Capabilities"
+                    description="Expertise across key technology domains to accelerate your innovation."
+                />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {capabilitiesTabs.map((c) => (
+                        <CapabilityRow key={c.value} title={c.title} points={c.points} icon={c.icon} />
+                    ))}
+                </div>
+            </PageLayout>
+
+            {/*  TIMELINE */}
+            <JourneyTimeline />
+
+            {/*  CLIENT TESTIMONIALS */}
+            <TestimonialsSection
+                title="Client Testimonials"
+                description="We are trusted by small to mid-sized organizations, Fortune 5000 companies, and major brands to advance their technology objectives."
+                data={clientsTestimonials}
+            />
+
+            {/*  EMPLOYEE TESTIMONIALS */}
+            <TestimonialsSection
+                title="Employee Testimonials"
+                description="Our people are at the heart of everything we do. Here's what they have to say about working with us."
+                data={employeeTestimonials}
+            />
+
+            {/*  LEADERSHIP */}
+            <PageLayout className="py-16 space-y-10">
+                <Headline
+                    title="Leadership"
+                    description="Builders, designers, and problem-solvers who care about details and delivery."
+                />
+                <div className="flex flex-wrap justify-center gap-8">
+                    {leadership.map((m, i) => (
+                        <Card key={i} className="text-center p-0">
+                            <div className="border m-6 w-[200px] h-[200px] bg-blue-100 rounded-full flex items-center justify-center overflow-hidden">
+                                <img src={m.img} alt={m.name} className="w-full h-full object-contain" />
+                            </div>
+                            <div className="border-t-2 space-y-2 p-3">
+                                <TypographyH4>{m.name}</TypographyH4>
+                                <div className="text-base font-semibold text-blue-700">{m.role}</div>
+                            </div>
                         </Card>
                     ))}
                 </div>
-            </section>
+            </PageLayout>
 
-            ---
+            {/*  FAQ */}
+            <div className="py-8">
+                <FaqSection faqs={faqs} title="FAQ's" />
+            </div>
 
-            <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5">
-                <div className="mb-14 text-center">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">Leadership</h2>
-                    <p className="text-gray-700 mt-4 max-w-3xl mx-auto text-lg">
-                        Builders, designers, and problem-solvers who care about details and delivery.
-                    </p>
-                </div>
-
-                <div className="flex justify-center items-center w-full">
-                    {[
-                        {
-                            name: "Rajesh Umbarkar ",
-                            role: "Founder & CEO",
-                            img: "/assets/about/rajeshsir.jpg",
-                        },
-                    ].map((m, i) => (
-                        <Card
-                            key={i}
-                            className="rounded-3xl shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 max-w-lg w-full"
-                        >
-                            <CardContent className="p-0">
-                                {/* Image Wrapper */}
-                                <div className="w-full h-[400px] flex items-center justify-center bg-gray-100 rounded-t-3xl overflow-hidden">
-                                    <img
-                                        src={m.img}
-                                        alt={m.name}
-                                        className="max-h-full max-w-full object-contain"
-                                    />
-                                </div>
-
-                                {/* Text */}
-                                <div className="p-8 text-center">
-                                    <div className="font-semibold text-2xl text-gray-900">{m.name}</div>
-                                    <div className="text-lg text-blue-700 mt-2">{m.role}</div>
-                                </div>
-                            </CardContent>
-                        </Card>
-                    ))}
-                </div>
-            </section>
-
-
-            ---
-
-            {/* FAQ */}
-            <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-7 bg-blue-50 rounded-xl my-5">
-                <div className="mb-14 text-center">
-                    <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">FAQs</h2>
-                    <p className="text-gray-700 mt-4 max-w-3xl mx-auto text-lg">Common questions about partnering with U Tech.</p>
-                </div>
-                <Accordion type="single" collapsible className="rounded-3xl border border-blue-200 bg-white p-4 shadow-lg">
-                    <AccordionItem value="item-1" className="border-b border-blue-100 last:border-b-0">
-                        <AccordionTrigger className="text-left text-lg font-semibold text-blue-800 hover:text-blue-900 transition-colors py-4">How do projects usually start?</AccordionTrigger>
-                        <AccordionContent className="text-gray-700 text-base pb-4">
-                            We begin with a short discovery to align on outcomes, users, scope, and constraints. Then we propose a
-                            lightweight plan with milestones and success metrics.
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-2" className="border-b border-blue-100 last:border-b-0">
-                        <AccordionTrigger className="text-left text-lg font-semibold text-blue-800 hover:text-blue-900 transition-colors py-4">What does your delivery model look like?</AccordionTrigger>
-                        <AccordionContent className="text-gray-700 text-base pb-4">
-                            Cross‑functional squads (PM + Design + Eng) ship in weekly sprints with demos, async updates, and clear
-                            release notes. You keep full ownership of code and infra.
-                        </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-3" className="last:border-b-0">
-                        <AccordionTrigger className="text-left text-lg font-semibold text-blue-800 hover:text-blue-900 transition-colors py-4">Can you integrate with our existing stack?</AccordionTrigger>
-                        <AccordionContent className="text-gray-700 text-base pb-4">
-                            Yes. We work with modern JS/TS stacks (React/Next, Node, Express), cloud (Vercel, AWS, GCP), and common data
-                            platforms. We'll adapt to your guardrails and security requirements.
-                        </AccordionContent>
-                    </AccordionItem>
-                </Accordion>
-            </section>
-
-            ---
-
-            {/* CTA */}
-            <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-                <Card className="rounded-[2.5rem] border-4 border-dashed border-blue-300 bg-blue-600 text-white shadow-2xl">
+            {/*  CTA */}
+            <PageLayout className="py-16">
+                <Card className="rounded-sm border-4 border-dashed border-white bg-[#009698] text-white shadow-2xl">
                     <CardContent className="grid gap-8 p-10 sm:grid-cols-[1fr_auto] sm:items-center">
                         <div>
-                            <h3 className="text-3xl sm:text-4xl font-extrabold">Have a project in mind?</h3>
-                            <p className="text-blue-100 mt-3 text-lg leading-relaxed">
+                            <TypographyH3>Have a project in mind?</TypographyH3>
+                            <TypographyMuted className="mt-3 leading-relaxed">
                                 Let’s scope it together and get your first release out in weeks—not months.
-                            </p>
+                            </TypographyMuted>
                         </div>
-                        <ContactUsButton size="lg" className="rounded-full bg-white text-blue-700 hover:bg-blue-500 hover:text-white shadow-lg transition-all duration-300 transform hover:-translate-y-1" asChild variant="hover">
+                        <ContactUsButton variant="hover" className="border-2 uppercase hover:bg-orange-500 border-orange-500 rounded-full">
                             Get AI Powered Construction Solutions
                         </ContactUsButton>
                     </CardContent>
                 </Card>
-            </section>
+            </PageLayout>
+        </>
+    );
+}
 
-            <footer className="pb-10" />
-        </div>
+/*  Reusable Components */
+function InfoCard({ title, desc, icon }) {
+    return (
+        <Card className="hover:shadow-2xl cursor-pointer transition-shadow duration-300 border-t-4 border-primary p-6 text-center">
+            <div className="flex flex-col items-center gap-4">
+                <div className="rounded-full bg-blue-100 p-3 border border-blue-200 text-3xl">
+                    <IconRenderer name={icon} strokeWidth={2} size={26} className="text-primary" />
+                </div>
+                <TypographyH4>{title}</TypographyH4>
+                <CardDescription className="text-gray-600 dark:text-gray-300">{desc}</CardDescription>
+            </div>
+        </Card>
     );
 }
 
 function CapabilityRow({ title, points, icon }) {
     return (
-        <Card className="rounded-3xl shadow-xl bg-white p-6 hover:shadow-2xl transition-shadow duration-300 border-t-4 border-blue-500">
-            <CardHeader className="flex flex-row items-start gap-4 p-0 mb-6">
-                <div className="rounded-xl bg-blue-100 p-3 shrink-0 border border-blue-200">{icon}</div>
-                <div>
-                    <CardTitle className="text-2xl font-bold text-gray-900">{title}</CardTitle>
-                    <CardDescription className="pt-1 text-gray-600 text-base">What we typically deliver</CardDescription>
+        <Card className="hover:shadow-2xl text-start cursor-pointer transition-shadow duration-300 border-t-4 border-primary p-6">
+            <div className="flex flex-row items-start gap-4 mb-6">
+                <div className="rounded-full bg-blue-100 p-3 shrink-0 border border-blue-200">
+                    <IconRenderer name={icon} strokeWidth={2} size={26} className="text-primary" />
                 </div>
-            </CardHeader>
-            <CardContent className="grid gap-4 pt-0 sm:grid-cols-2 lg:grid-cols-3">
+                <div>
+                    <TypographyH4>{title}</TypographyH4>
+                    <CardDescription className="pt-1 text-base">What we deliver</CardDescription>
+                </div>
+            </div>
+            <CardContent className="grid gap-4 pt-0">
                 {points.map((p) => (
-                    <div key={p} className="flex items-start gap-3 text-base text-gray-700">
-                        <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue-600" />
-                        <span>{p}</span>
+                    <div key={p} className="flex items-start gap-3 text-base dark:text-gray-300 text-gray-700">
+                        <CheckCircle2 className="mt-0.5 h-5 w-5 text-primary" />
+                        <span className="text-sm">{p}</span>
                     </div>
                 ))}
             </CardContent>
         </Card>
+    );
+}
+
+function JourneyTimeline() {
+    return (
+        <PageLayout className="py-16 space-y-10">
+            <Headline title="Our Journey" description="Milestones that shaped who we are today." />
+            <div className="relative max-w-4xl mx-auto">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 bg-blue-200 h-full hidden sm:block" />
+                <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, amount: 0.3 }}
+                    className="space-y-10"
+                >
+                    {timelineData.map((t, idx) => (
+                        <motion.div
+                            key={idx}
+                            variants={itemVariants}
+                            className={`relative flex flex-col sm:flex-row items-center ${idx % 2 === 0 ? "sm:justify-start" : "sm:justify-end"}`}
+                        >
+                            <div className="absolute md:flex hidden sm:static items-center justify-center">
+                                <div className="flex flex-col items-center">
+                                    <div className="h-4 w-4 rounded-full bg-primary ring-4 ring-blue-600/30" />
+                                    <span className="text-sm font-semibold text-primary mt-2">{t.year}</span>
+                                </div>
+                            </div>
+                            <div className="md:hidden flex items-center mb-3 gap-2">
+                                <div className="h-3 w-3 rounded-full bg-primary ring-3 ring-blue-600/30" />
+                                <span className="text-sm font-semibold text-primary mt-2">{t.year}</span>
+                            </div>
+                            <div className={`bg-card p-6 rounded-2xl shadow-md w-full sm:w-[45%] border border-gray-100 ${idx % 2 === 0 ? "sm:mr-10" : "sm:ml-10"}`}>
+                                <TypographyH4 className="text-primary underline underline-offset-4">{t.title}</TypographyH4>
+                                <p className="pt-2 text-gray-700  dark:text-gray-300">{t.desc}</p>
+                            </div>
+                        </motion.div>
+                    ))}
+                </motion.div>
+            </div>
+        </PageLayout>
+    );
+}
+
+function TestimonialsSection({ title, description, data }) {
+    return (
+        <section className="py-16 bg-secondary">
+            <PageLayout className="space-y-10">
+                <Headline title={title} description={description} />
+                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    {data.map((q, i) => (
+                        <div key={i} className="p-6 bg-card space-y-6 shadow-md border-2 border-primary relative">
+                            <p className="text-accent-foreground text-base mb-6 pb-6">“{q.quote}”</p>
+                            <div className="flex items-center gap-4 absolute left-4 md:left-8 -bottom-3 bg-primary py-1 px-4 rounded-md">
+                                <Avatar className="h-10 w-10 border-2 border-white shadow-md">
+                                    <AvatarImage src={q.image} />
+                                    <AvatarFallback className="bg-blue-200 text-blue-800 font-semibold">U</AvatarFallback>
+                                </Avatar>
+                                <div className="text-white text-xs sm:text-sm">{q.name}, {q.role}</div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </PageLayout>
+        </section>
     );
 }

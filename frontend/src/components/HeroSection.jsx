@@ -87,7 +87,7 @@ export default function HeroSection({
       />
 
       {/* Breadcrumbs */}
-      <PageLayout className="mt-4 pt-4 border-t">
+      <PageLayout className="mt-4 pt-4">
         <Breadcrumbs />
       </PageLayout>
     </>

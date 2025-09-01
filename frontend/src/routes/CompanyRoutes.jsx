@@ -6,6 +6,8 @@ import PrivacyPolicy from "@/pages/company/privacy-policy/PrivacyPolicy";
 import Sitemap from "@/pages/company/sitemap/Sitemap";
 import About from "@/pages/company/about/About";
 import Event from "@/pages/company/Events/Event";
+import Refferal from "@/pages/company/refferal/refferal";
+import Location from "@/pages/company/locations/Location";
 
 export const CompanyRoutes = [
   { path: "*", element: <Maintenance404 /> },
@@ -16,4 +18,6 @@ export const CompanyRoutes = [
   { path: "/company/sitemap", element: <Sitemap /> },
   { path: "/company/about-us", element: <About /> },
   { path: "/company/events", element: <Event /> },
+  { path: "/company/refferal", element: <Refferal /> },
+  { path: "/company/locations", element: <Location /> },
 ];

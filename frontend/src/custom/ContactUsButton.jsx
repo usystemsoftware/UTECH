@@ -15,7 +15,7 @@ const ContactUsButton = ({ children, variant, className }) => {
   return (
     <Button
       onClick={handlenavigate}
-      className={className}
+      className={`whitespace-normal break-words text-center ${className}`}
       variant={variant || "default"}
     >
       {children}

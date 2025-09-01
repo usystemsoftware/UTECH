@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
     Headline,
-    TypographyH3,
     TypographyH1,
     TypographySmall,
     TypographyMuted
@@ -207,7 +206,7 @@ export default function Event() {
                 />
                 <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
 
-                    <ul className="grid md:grid-cols-2 gap-8 text-gray-700">
+                    <ul className="grid md:grid-cols-2 gap-4 md:gap-8 text-gray-700">
                         {highlights.map((item, index) => (
                             <li key={index} className="bg-orange-50 p-4 rounded-lg shadow-sm flex items-center gap-3">
                                 <TypographyMuted className="text-orange-600 text-sm">✔</TypographyMuted>

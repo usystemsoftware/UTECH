@@ -228,65 +228,6 @@ const NavbarMobile = ({ setIsCommandOpen, scrolledMobile, setScrolledMobile }) =
                   </div>
                 );
               })}
-              {/* Company Section */}
-              <div className="mb-0">
-                <button
-                  onClick={() =>
-                    setOpenMenuIndex((prev) => (prev === "company" ? null : "company"))
-                  }
-                  className={`flex w-full items-center justify-between px-4 py-3 
-      text-sm font-semibold tracking-wide uppercase
-      border-b border-gray-200
-      transition-colors duration-300
-      ${openMenuIndex === "company" ? "text-blue-700" : "text-gray-600 hover:text-black"}
-    `}
-                >
-                  <span>{highlightMatch("Company", searchTerm)}</span>
-                  <motion.div
-                    animate={{ rotate: openMenuIndex === "company" ? 180 : 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <IconRenderer
-                      strokeWidth={2}
-                      name="ChevronDown"
-                      size={18}
-                      className="text-gray-500"
-                    />
-                  </motion.div>
-                </button>
-
-                {/* Company Submenu */}
-                {openMenuIndex === "company" && (
-                  <div className="transition-all duration-300 mt-1 pl-6">
-                    {[
-                      { label: "About Us", href: "/company/about-us" },
-                      { label: "Events", href: "/company/events" },
-                      { label: "Careers", href: "/company/careers" },
-                    ]
-                      .filter((item) =>
-                        item.label.toLowerCase().includes(searchTerm.toLowerCase())
-                      )
-                      .map((item, i) => (
-                        <FadeInWhenVisible key={i}>
-                          <Link
-                            to={item.href}
-                            onClick={() => {
-                              setOpen(false);
-                              setSelectedLink(item.href);
-                            }}
-                            className={`py-2 flex items-center gap-2 text-sm border-b border-gray-100
-                ${selectedLink === item.href || pathname === item.href
-                                ? "text-blue-700 font-medium"
-                                : "text-gray-600 hover:text-primary"
-                              }`}
-                          >
-                            {highlightMatch(item.label, searchTerm)}
-                          </Link>
-                        </FadeInWhenVisible>
-                      ))}
-                  </div>
-                )}
-              </div>
             </div>
 
             {/* Fixed Bottom Buttons */}

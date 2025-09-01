@@ -11,7 +11,6 @@ import ShareButtons from "@/custom/ShareButtons";
 
 const NavbarDesktop = ({ setIsCommandOpen, scrolled, setScrolled }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const [careersOpen, setCareersOpen] = useState(false);
   const timeoutRef = useRef(null);
 
   useEffect(() => {
@@ -33,31 +32,11 @@ const NavbarDesktop = ({ setIsCommandOpen, scrolled, setScrolled }) => {
   const handleMouseEnter = (index) => {
     clearTimeout(timeoutRef.current);
     setHoveredIndex(index);
-    if (hoveredIndex != null) {
-      setCareersOpen(false);
-    }
   };
 
   const handleMouseLeave = () => {
     timeoutRef.current = setTimeout(() => {
       setHoveredIndex(null);
-    }, 200);
-  };
-
-  const handleCareersEnter = () => {
-    clearTimeout(timeoutRef.current);
-    if (hoveredIndex !== null) {
-      setHoveredIndex(null)
-    }
-    setCareersOpen(true);
-  };
-
-  const handleCareersLeave = () => {
-    timeoutRef.current = setTimeout(() => {
-      if (hoveredIndex !== null) {
-        setHoveredIndex(null)
-      }
-      setCareersOpen(false);
     }, 200);
   };
 
@@ -85,6 +64,7 @@ const NavbarDesktop = ({ setIsCommandOpen, scrolled, setScrolled }) => {
               />
             </Link>
 
+
             {/* Nav Links */}
             <nav className="flex items-center gap-6 relative z-40">
               {Navlinks.map((item, index) => (
@@ -97,7 +77,7 @@ const NavbarDesktop = ({ setIsCommandOpen, scrolled, setScrolled }) => {
                   <div className="flex items-center gap-1 cursor-pointer">
                     <TypographySmall
                       className={`font-semibold tracking-wide uppercase transition-colors duration-200 ${hoveredIndex === index
-                        ? "text-primary underline-offset-6 underline"
+                        ? "text-primary  underline-offset-6 underline"
                         : "hover:text-primary"
                         }`}
                     >
@@ -113,68 +93,24 @@ const NavbarDesktop = ({ setIsCommandOpen, scrolled, setScrolled }) => {
                   </div>
                 </div>
               ))}
-
-              {/* Careers Dropdown */}
-              <div
-                className="relative w-[150px]"
-                onMouseEnter={handleCareersEnter}
-                onMouseLeave={handleCareersLeave}
-              >
-                <button className="flex items-center gap-1 cursor-pointer">
-                  <TypographySmall
-                    className={`font-semibold tracking-wide uppercase underline-offset-6 hover:underline hover:text-primary ${!scrolled && "text-white"
-                      }`}
-                  >
-                    Company
-                  </TypographySmall>
-                  <IconRenderer
-                    name="ChevronDown"
-                    strokeWidth={2}
-                    size={20}
-                    className={`transition-transform duration-200 ${careersOpen ? "rotate-180 text-white hover:text-primary" : "text-black dark:text-white"
-                      }`}
-                  />
-                </button>
-
-                {/* Dropdown Menu */}
-                {careersOpen && (
-                  <div className="absolute top-8 left-0 bg-white dark:text-black shadow-lg mt-2 w-full p-6 z-50">
-                    <ul className="flex flex-col space-y-3">
-                      <li>
-                        <Link
-                          to="/company/about-us"
-                          className="py-3 font-medium hover:text-primary hover:underline underline-offset-4 text-sm"
-                        >
-                          About Us
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/company/events"
-                          className="py-3 font-medium hover:text-primary hover:underline underline-offset-4 text-sm"
-                        >
-                          Events
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/company/careers"
-                          className="py-3 font-medium hover:text-primary hover:underline underline-offset-4 text-sm"
-                        >
-                          Careers
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                )}
-              </div>
-
+              {/* <Link to="/company/careers">
+                <TypographySmall
+                  className={`font-semibold tracking-wide uppercase  underline-offset-6 hover:underline hover:text-primary ${!scrolled && "text-white"
+                    }`}
+                >
+                  Careers
+                </TypographySmall>
+              </Link> */}
             </nav>
+
           </div>
 
           {/* Right Side Buttons */}
           <div className="flex items-center gap-4 lg:gap-8">
-            <ShareButtons scrolled={scrolled} setScrolled={setScrolled} />
+            <ShareButtons
+              scrolled={scrolled}
+              setScrolled={setScrolled}
+            />
 
             <button
               className="cursor-pointer"
@@ -202,7 +138,7 @@ const NavbarDesktop = ({ setIsCommandOpen, scrolled, setScrolled }) => {
         </PageLayout>
       </div>
 
-      {/* Dropdown for Navlinks */}
+      {/* Dropdown */}
       {hoveredIndex !== null &&
         (Navlinks[hoveredIndex].items || Navlinks[hoveredIndex].groups) && (
           <div

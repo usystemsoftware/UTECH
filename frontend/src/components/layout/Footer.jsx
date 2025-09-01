@@ -270,8 +270,8 @@ export const Footer = () => {
         </PageLayout>
 
         {/* Bottom bar with quick links */}
-        <div className="mt-8 text-center border-t border-white/10 pt-6 text-xs sm:text-sm text-gray-400 space-y-2">
-          <div>
+        <PageLayout className="mt-8 mb-22 sm:mb-10 md:mb-8 text-center border-t border-white/10 pt-6 text-xs sm:text-sm text-gray-400 space-y-2">
+          <div className="leading-7">
             {quickLinks.map((item, index) => (
               <React.Fragment key={item.to}>
                 <Link
@@ -290,7 +290,7 @@ export const Footer = () => {
             Copyright © {new Date().getFullYear()} Umbarakar Technology (India)
             Pvt Ltd. All rights reserved.
           </div>
-        </div>
+        </PageLayout>
 
         {/* Version */}
         <span className="absolute bottom-0 left-4 z-40 text-sm">

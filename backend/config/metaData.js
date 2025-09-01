@@ -919,8 +919,8 @@ export const metaData = {
       "Ganesh Festival VIP invite",
       "Hindu festival celebration"
     ],
-    image: "https://plus.unsplash.com/premium_photo-1722677453717-eb1baa12f42f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGdhbnBhdGklMjBiYXBwYXxlbnwwfHwwfHx8MA%3D%3D",
-    url: "https://usystem.software/company/events/ganesh-chaturthi-2025",
+    image: "https://usystem.software/assets/company/events/7.jpg",
+    url: "https://usystem.software/company/events",
     category: "Festivals",
     published: "August 2025",
   },

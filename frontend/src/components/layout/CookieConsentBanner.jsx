@@ -65,7 +65,7 @@ const CookieConsentBanner = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 0.6 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 bg-black backdrop-blur-sm z-40"
+                        className="fixed inset-0 bg-black backdrop-blur-sm z-50"
                     />
 
                     {/* Main Banner */}
@@ -117,7 +117,7 @@ const CookieConsentBanner = () => {
                             <div className="bg-white shadow-2xl max-w-2xl w-full p-6 md:p-8 text-gray-800 overflow-y-auto max-h-[75vh] scrollbar-custom rounded-md">
                                 <h2 className="text-xl font-semibold mb-4">Cookie Preferences</h2>
 
-                                <div className="space-y-4 text-sm">
+                                <div className="space-y-8 text-sm">
                                     {/* Reusable Section */}
                                     {[
                                         {
@@ -146,7 +146,7 @@ const CookieConsentBanner = () => {
                                                 "These cookies may be set by advertising partners to show you relevant adverts on other sites.",
                                         },
                                     ].map((section) => (
-                                        <div key={section.key} className="border border-gray-300 rounded p-4">
+                                        <div key={section.key} className="space-y-4">
                                             <div
                                                 className="flex justify-between items-center cursor-pointer"
                                                 onClick={() => toggleExpanded(section.key)}

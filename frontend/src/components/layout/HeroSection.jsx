@@ -40,7 +40,7 @@ export const HeroSection = () => {
 
             <FadeInWhenVisible delay={0.4}>
               <div className="flex items-center gap-4">
-                <Link to="/contact-us" className="flex text-xs sm:text-sm items-center justify-center px-8 py-2 uppercase gap-2 bg-primary rounded-full">
+                <Link to="/contact-us" className="flex text-xs border-2 border-primary sm:text-sm items-center justify-center px-8 py-2 uppercase gap-2 bg-primary rounded-full">
                   Contact Us
                 </Link>
                 <Link to="/book-call" className="flex text-xs sm:text-sm items-center px-8 py-2 justify-center gap-2 border-2 hover:bg-primary border-primary rounded-full uppercase">
