@@ -101,6 +101,7 @@ export const Navlinks = [
       { label: "About Us", href: "/company/about-us", icon: "Info" },
       // { label: "Awards", href: "/company/awards", icon: "Award" },
       { label: "Careers", href: "/company/careers", icon: "Briefcase" },
+      { label: "Refferal", href: "/company/refferal", icon: "NotebookText" },
       { label: "Events", href: "/company/events", icon: "Calendar" },
       { label: "History", href: "/company/history", icon: "Clock" },
       { label: "Locations", href: "/company/locations", icon: "MapPin" },

@@ -70,7 +70,7 @@ export default function Location() {
                                 className="w-15 h-15 rounded-full"
                             />
                             <TypographySmall>
-                                Pune, India<br />
+                                Singapore, India<br />
                                 A-208, Sector-22<br />
                                 Singapore
                             </TypographySmall>
