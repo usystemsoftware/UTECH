@@ -11,7 +11,6 @@ import PageLayout from "@/custom/PageLayout";
 export default function Location() {
     return (
         <>
-
             <HeroSection
                 backgroundImage="/banner/location-banner.jpeg"
                 title="U Technology Locations "
