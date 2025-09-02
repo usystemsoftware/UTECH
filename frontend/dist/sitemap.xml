@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://usystem.software/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Industries -->
+  <url><loc>https://usystem.software/industries/aviation</loc></url>
+  <url><loc>https://usystem.software/industries/banking</loc></url>
+  <url><loc>https://usystem.software/industries/construction</loc></url>
+  <url><loc>https://usystem.software/industries/corrections</loc></url>
+  <url><loc>https://usystem.software/industries/e-learning-education</loc></url>
+  <url><loc>https://usystem.software/industries/energy-utilities</loc></url>
+  <url><loc>https://usystem.software/industries/environmental-management</loc></url>
+  <url><loc>https://usystem.software/industries/finance</loc></url>
+  <url><loc>https://usystem.software/industries/food-beverage</loc></url>
+  <url><loc>https://usystem.software/industries/gaming</loc></url>
+  <url><loc>https://usystem.software/industries/healthcare</loc></url>
+  <url><loc>https://usystem.software/industries/hospitality-travel</loc></url>
+  <url><loc>https://usystem.software/industries/hcm</loc></url>
+  <url><loc>https://usystem.software/industries/legal</loc></url>
+  <url><loc>https://usystem.software/industries/media-entertainment</loc></url>
+  <url><loc>https://usystem.software/industries/meetings-events</loc></url>
+  <url><loc>https://usystem.software/industries/payments</loc></url>
+  <url><loc>https://usystem.software/industries/political-campaigns</loc></url>
+  <url><loc>https://usystem.software/industries/real-estate</loc></url>
+  <url><loc>https://usystem.software/industries/retail</loc></url>
+  <url><loc>https://usystem.software/industries/sports</loc></url>
+  <url><loc>https://usystem.software/industries/supply-chain</loc></url>
+  <url><loc>https://usystem.software/industries/telecommunications</loc></url>
+
+  <!-- Services -->
+  <url><loc>https://usystem.software/services/api-development</loc></url>
+  <url><loc>https://usystem.software/services/application-development</loc></url>
+  <url><loc>https://usystem.software/services/application-maintenance</loc></url>
+  <url><loc>https://usystem.software/services/backup-disaster-recovery</loc></url>
+  <url><loc>https://usystem.software/services/bpo</loc></url>
+  <url><loc>https://usystem.software/services/custom-software</loc></url>
+  <url><loc>https://usystem.software/services/data-integration</loc></url>
+  <url><loc>https://usystem.software/services/data-management</loc></url>
+  <url><loc>https://usystem.software/services/devops</loc></url>
+  <url><loc>https://usystem.software/services/digital-transformation</loc></url>
+  <url><loc>https://usystem.software/services/finops</loc></url>
+  <url><loc>https://usystem.software/services/implementation-deployment</loc></url>
+  <url><loc>https://usystem.software/services/infrastructure-support</loc></url>
+  <url><loc>https://usystem.software/services/migrations-upgrades</loc></url>
+  <url><loc>https://usystem.software/services/noc</loc></url>
+  <url><loc>https://usystem.software/services/partner-support</loc></url>
+  <url><loc>https://usystem.software/services/plm</loc></url>
+  <url><loc>https://usystem.software/services/qa-testing</loc></url>
+  <url><loc>https://usystem.software/services/sla-support</loc></url>
+  <url><loc>https://usystem.software/services/software-security</loc></url>
+  <url><loc>https://usystem.software/services/startup-mvp</loc></url>
+  <url><loc>https://usystem.software/services/systems-integration</loc></url>
+
+  <!-- Solutions -->
+  <url><loc>https://usystem.software/solutions/animation-graphic-design</loc></url>
+  <url><loc>https://usystem.software/solutions/ai</loc></url>
+  <url><loc>https://usystem.software/solutions/asset-tracking</loc></url>
+  <url><loc>https://usystem.software/solutions/ar-vr</loc></url>
+  <url><loc>https://usystem.software/solutions/aws</loc></url>
+  <url><loc>https://usystem.software/solutions/autodesk</loc></url>
+  <url><loc>https://usystem.software/solutions/biometrics</loc></url>
+  <url><loc>https://usystem.software/solutions/blockchain</loc></url>
+  <url><loc>https://usystem.software/solutions/bi-analytics</loc></url>
+  <url><loc>https://usystem.software/solutions/cms</loc></url>
+  <url><loc>https://usystem.software/solutions/crm</loc></url>
+  <url><loc>https://usystem.software/solutions/cloud</loc></url>
+  <url><loc>https://usystem.software/solutions/database</loc></url>
+  <url><loc>https://usystem.software/solutions/digital-asset-management</loc></url>
+  <url><loc>https://usystem.software/solutions/digital-marketing</loc></url>
+  <url><loc>https://usystem.software/solutions/document-management</loc></url>
+  <url><loc>https://usystem.software/solutions/embedded-software</loc></url>
+  <url><loc>https://usystem.software/solutions/erp</loc></url>
+  <url><loc>https://usystem.software/solutions/facilities-management</loc></url>
+  <url><loc>https://usystem.software/solutions/fraud-protection</loc></url>
+  <url><loc>https://usystem.software/solutions/gis</loc></url>
+  <url><loc>https://usystem.software/solutions/google-cloud</loc></url>
+  <url><loc>https://usystem.software/solutions/ibm</loc></url>
+  <url><loc>https://usystem.software/solutions/iot</loc></url>
+  <url><loc>https://usystem.software/solutions/kiosk</loc></url>
+  <url><loc>https://usystem.software/solutions/ui-ux</loc></url>
+  <url><loc>https://usystem.software/solutions/microsoft</loc></url>
+  <url><loc>https://usystem.software/solutions/netsuite</loc></url>
+  <url><loc>https://usystem.software/solutions/oracle</loc></url>
+  <url><loc>https://usystem.software/solutions/salesforce</loc></url>
+  <url><loc>https://usystem.software/solutions/sap</loc></url>
+  <url><loc>https://usystem.software/solutions/uipath</loc></url>
+  <url><loc>https://usystem.software/solutions/ukg</loc></url>
+  <url><loc>https://usystem.software/solutions/web-development</loc></url>
+
+  <!-- Company -->
+  <url><loc>https://usystem.software/company/about-us</loc></url>
+  <url><loc>https://usystem.software/company/awards</loc></url>
+  <url><loc>https://usystem.software/company/careers</loc></url>
+  <url><loc>https://usystem.software/company/events</loc></url>
+  <url><loc>https://usystem.software/company/history</loc></url>
+  <url><loc>https://usystem.software/company/locations</loc></url>
+  <url><loc>https://usystem.software/company/newsroom</loc></url>
+  <url><loc>https://usystem.software/company/partners-affiliations</loc></url>
+  <url><loc>https://usystem.software/company/people-and-culture</loc></url>
+  <url><loc>https://usystem.software/company/reviews</loc></url>
+
+</urlset>
