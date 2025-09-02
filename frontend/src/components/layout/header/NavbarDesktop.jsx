@@ -44,7 +44,7 @@ const NavbarDesktop = ({ setIsCommandOpen, scrolled, setScrolled }) => {
     <motion.div
       transition={{ duration: 0.3 }}
       className={`fixed top-0 left-0 w-full mx-auto z-50 transition-all duration-300 ${scrolled
-        ? "bg-white/30 backdrop-blur-lg border-b border-white/20 shadow-md"
+        ? "bg-white/30 backdrop-blur-lg shadow-md"
         : "bg-transparent"
         }`}
       style={{ right: 0, left: 0, margin: "0 auto" }}

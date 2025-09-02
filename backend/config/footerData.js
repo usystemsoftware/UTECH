@@ -1,4 +1,4 @@
-export const footerLinks = [
+const footerLinks = [
   {
     title: "Services",
     links: [
@@ -40,8 +40,11 @@ export const footerLinks = [
   },
 ];
 
-export const legalNotices = [
+const legalNotices = [
   "U Tech (India) Pvt Ltd CIN: U72900PN2020PTC193410 Registered Office no.02,15, Zeroboyz Chowk, Nehru Nagar, Pune, Pimpri-Chinchwad, Pune, Maharashtra - 411018 , Email ID: enquiry@usystem.software",
   "Visitors are hereby informed that their information submitted on the website may be shared with relevant service providers. Product and service information is accurate based on the latest company data.",
   "We do not solicit or promote services through unsolicited calls or messages. Any such interactions should be reported to our support team immediately.",
 ];
+
+module.exports = { footerLinks, legalNotices };
+

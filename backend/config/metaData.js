@@ -1,4 +1,4 @@
-export const metaData = {
+const metaData = {
   "/": {
     slug: "/",
     title: "Software Engineering | U Tech",
@@ -1105,3 +1105,6 @@ export const metaData = {
     published: "August 2025",
   },
 };
+
+
+module.exports = { metaData };

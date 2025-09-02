@@ -4,11 +4,13 @@ import OurServices from "@/components/layout/OurServices";
 import WorkWithUs from "@/components/layout/WorkWithUs";
 import OurProjects from "@/components/layout/OurProjects";
 import OurPartners from "@/components/layout/OurPartners";
+import { HeroSection2 } from "@/components/layout/HeroSection2";
 
 export default function MainLayout() {
   return (
     <>
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <HeroSection2 />
       <OurServices />
       <OurProjects />
       <OurIndustry />
