@@ -38,4 +38,4 @@ jobs:
           cd frontend
           npm install
           npm test || echo "No frontend tests"
-          npm run build
+          npm run build
