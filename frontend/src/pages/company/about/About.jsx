@@ -118,7 +118,7 @@ export default function AboutPage() {
                             <CapabilityRow key={c.value} title={c.title} points={c.points} icon={c.icon} />
                         ))}
                     </div>
-                    <Link to="/services/custom-software" className="rounded-full border border-orange-400 hover:bg-orange-500">
+                    <Link to="/services/custom-software" className="rounded-full border-2 hover:text-white py-2 px-6 border-orange-400 hover:bg-orange-500">
                         See More.....
                     </Link>
                 </PageLayout>

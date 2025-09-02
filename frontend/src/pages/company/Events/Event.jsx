@@ -8,9 +8,10 @@ import {
 } from "@/custom/Typography";
 import PageLayout from "@/custom/PageLayout";
 import { galleryImages, guests, highlights, schedule } from "./Data";
+import GaneshInvitation from "./GaneshInvitation";
 
 // Countdown Timer Component
-const Countdown = ({ targetDate }) => {
+export const Countdown = ({ targetDate }) => {
     const [timeLeft, setTimeLeft] = useState({
         days: "00",
         hours: "00",
@@ -74,27 +75,7 @@ export default function Event() {
     return (
         <>
             {/* ✅ Hero Section */}
-            <section
-                className="relative h-screen flex items-center justify-center text-white overflow-hidden bg-cover bg-center"
-                style={{
-                    backgroundImage:
-                        "url('https://plus.unsplash.com/premium_photo-1722679322058-b324b14da3b5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D')",
-                }}
-            >
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/30"></div>
-
-                {/* Content */}
-                <div className="relative z-10 text-center px-4 space-y-6">
-                    <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg">
-                        Celebrate Ganesh Chaturthi
-                    </h1>
-                    <p className="text-lg md:text-xl max-w-2xl mx-auto">
-                        Join us for a grand celebration filled with devotion, culture, and joy.
-                    </p>
-                    <Countdown targetDate={new Date("September 3, 2025 10:00:00").getTime()} />
-                </div>
-            </section>
+            <GaneshInvitation />
 
             {/* ✅ Guests */}
             <PageLayout section className="py-12 space-y-10" >
@@ -148,7 +129,7 @@ export default function Event() {
                     {/* Event Details */}
                     <div className="text-gray-600 text-sm leading-relaxed">
                         <p>
-                            <span className="font-semibold">Date:</span> 5th Sept, 2025
+                            <span className="font-semibold">Date:</span> 4th Sept, 2025
                         </p>
                         <p>
                             <span className="font-semibold">Venue:</span> Umbarakar Technology Pvt Ltd,<br />
@@ -184,7 +165,7 @@ export default function Event() {
                             Event Details
                         </TypographyH1>
                         <ul class="space-y-3 text-gray-700 dark:text-slate-200 text-base">
-                            <li><strong>Date:</strong> September 3, 2025</li>
+                            <li><strong>Date:</strong> September 4, 2025</li>
                             <li><strong>Time:</strong> 10:00 AM onwards</li>
                             <li><strong>Special Guests:</strong> VIP Invitees</li>
                             <li><strong>Dress Code:</strong> Traditional Attire</li>
@@ -194,7 +175,6 @@ export default function Event() {
                             <li><strong>Contact Person:</strong> +91 9270033002 (Event Coordinator)</li>
                             <li><strong>Parking:</strong> Available at Basement & Near Zeroboyz Chowk</li>
                         </ul>
-
                     </div>
                 </PageLayout>
             </section>

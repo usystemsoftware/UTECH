@@ -17,11 +17,11 @@ export default function Location() {
                 title="U Technology Locations "
             />
 
-            <TypographyH3 className="text-primary text-center">
+            <TypographyH3 className="text-primary pt-10 text-center">
                 Global Solutions, Local Services
             </TypographyH3>
 
-            <PageLayout className="py-16 space-y-10 flex justify-between md:flex-row flex-col gap-6">
+            <PageLayout className="py-12 space-y-10 flex justify-between md:flex-row flex-col gap-6">
 
                 <div className="space-y-4">
                     <div className="space-y-6">

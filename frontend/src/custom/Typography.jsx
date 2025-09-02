@@ -127,7 +127,7 @@ export const TypographyLarge = ({ children, className }) => (
 export const TypographySmall = ({ children, className }) => (
   <AccessibleText
     as="small"
-    className={cn("text-xs sm:text-sm font-medium", className)}
+    className={cn("text-sm font-medium", className)}
   >
     {children}
   </AccessibleText>

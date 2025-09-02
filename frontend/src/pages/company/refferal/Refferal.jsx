@@ -11,7 +11,7 @@ export default function Refferal() {
     return (
         <>
             <HeroSection
-                backgroundImage="/banner/reffrels.jpeg"
+                backgroundImage="/banner/referral-banner.jpeg"
                 title=" REFER A FRIEND AND GET 50+ "
             />
 

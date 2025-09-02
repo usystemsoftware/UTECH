@@ -19,8 +19,13 @@ export default function App() {
 
   return (
     <>
+      {/* metabody change as per routes */}
       <DynamicHelmet />
+
+      {/* cookies accept and declience */}
       <CookieConsentBanner />
+
+      {/* navbar */}
       <Navbar />
 
       <Routes>

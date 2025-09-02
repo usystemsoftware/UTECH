@@ -9,8 +9,8 @@ import { HeroSection2 } from "@/components/layout/HeroSection2";
 export default function MainLayout() {
   return (
     <>
-      {/* <HeroSection /> */}
-      <HeroSection2 />
+      <HeroSection />
+      {/* <HeroSection2 /> */}
       <OurServices />
       <OurProjects />
       <OurIndustry />

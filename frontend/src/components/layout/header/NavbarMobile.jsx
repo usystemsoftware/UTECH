@@ -77,7 +77,7 @@ const NavbarMobile = ({ setIsCommandOpen, scrolledMobile, setScrolledMobile }) =
       <AccessibilityWidget />
       <div className="flex items-center justify-between px-4 py-4">
         <Link to="/" className="flex items-center">
-          <img loading="lazy" src="/logo.png" alt="Logo" className="w-26" />
+          <img loading="lazy" src="/logo.png" alt="Logo" className="w-28" />
         </Link>
         <div className="flex items-center space-x-5">
           <ShareButtons scrolledMobile={scrolledMobile} />
