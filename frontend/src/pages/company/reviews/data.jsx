@@ -1,0 +1,273 @@
+// Services Data
+export const services = [
+  {
+    title: "API Development",
+    chartNames: ["API Dev Avg", "API Dev High", "API Dev Low"],
+    tasks: [
+      {
+        profile: "https://randomuser.me/api/portraits/men/32.jpg",
+        name: "Aarav Sharma",
+        date: "2025-09-01",
+        rating: 5,
+        description: "Developed REST APIs for the user module with authentication and error handling.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/women/44.jpg",
+        name: "Priya Desai",
+        date: "2025-09-03",
+        rating: 4,
+        description: "Created Payment Gateway APIs and integrated with frontend apps.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/men/76.jpg",
+        name: "Rohit Verma",
+        date: "2025-09-05",
+        rating: 5,
+        description: "Implemented Notification APIs with efficient error handling.",
+      },
+    ],
+  },
+  {
+    title: "Application Development",
+    chartNames: ["App Dev Avg", "App Dev High", "App Dev Low"],
+    tasks: [
+      {
+        profile: "https://randomuser.me/api/portraits/women/50.jpg",
+        name: "Neha Patel",
+        date: "2025-08-28",
+        rating: 5,
+        description: "Developed mobile app UI for seamless user experience.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/men/65.jpg",
+        name: "Karan Mehta",
+        date: "2025-08-30",
+        rating: 4,
+        description: "Integrated backend APIs into web dashboard using React.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/women/60.jpg",
+        name: "Ananya Joshi",
+        date: "2025-09-01",
+        rating: 5,
+        description: "Optimized state management and app performance.",
+      },
+    ],
+  },
+  {
+    title: "Maintenance",
+    chartNames: ["Maintenance Avg", "Maintenance High", "Maintenance Low"],
+    tasks: [
+      {
+        profile: "https://randomuser.me/api/portraits/men/40.jpg",
+        name: "Rohan Singh",
+        date: "2025-08-25",
+        rating: 4,
+        description: "Performed bug fixes and resolved production issues.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/women/30.jpg",
+        name: "Isha Kaur",
+        date: "2025-08-27",
+        rating: 5,
+        description: "System monitoring and patch updates for apps.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/men/55.jpg",
+        name: "Vikram Reddy",
+        date: "2025-08-29",
+        rating: 5,
+        description: "Maintained server and database uptime.",
+      },
+    ],
+  },
+  {
+    title: "SAP",
+    chartNames: ["SAP Avg", "SAP High", "SAP Low"],
+    tasks: [
+      {
+        profile: "https://randomuser.me/api/portraits/men/12.jpg",
+        name: "Aditya Malhotra",
+        date: "2025-08-22",
+        rating: 5,
+        description: "Implemented SAP FICO module for finance automation.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/women/25.jpg",
+        name: "Simran Gupta",
+        date: "2025-08-26",
+        rating: 4,
+        description: "Configured SAP HCM for HR management processes.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/men/78.jpg",
+        name: "Rajesh Kumar",
+        date: "2025-08-30",
+        rating: 5,
+        description: "Customized SAP MM for procurement workflows.",
+      },
+    ],
+  },
+  {
+    title: "Database",
+    chartNames: ["DB Avg", "DB High", "DB Low"],
+    tasks: [
+      {
+        profile: "https://randomuser.me/api/portraits/men/85.jpg",
+        name: "Sandeep Yadav",
+        date: "2025-08-20",
+        rating: 5,
+        description: "Optimized SQL queries to improve database performance.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/women/33.jpg",
+        name: "Kavya Iyer",
+        date: "2025-08-24",
+        rating: 4,
+        description: "Designed and managed PostgreSQL database schema.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/men/48.jpg",
+        name: "Harsh Raj",
+        date: "2025-08-28",
+        rating: 5,
+        description: "Implemented database backup and disaster recovery systems.",
+      },
+    ],
+  },
+  {
+    title: "Finance",
+    chartNames: ["Finance Avg", "Finance High", "Finance Low"],
+    tasks: [
+      {
+        profile: "https://randomuser.me/api/portraits/women/15.jpg",
+        name: "Ritika Sharma",
+        date: "2025-08-18",
+        rating: 5,
+        description: "Prepared financial statements and monthly reports.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/men/22.jpg",
+        name: "Arjun Kapoor",
+        date: "2025-08-21",
+        rating: 4,
+        description: "Handled budgeting and expense analysis.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/women/52.jpg",
+        name: "Megha Nair",
+        date: "2025-08-25",
+        rating: 5,
+        description: "Automated tax calculations and compliance reporting.",
+      },
+    ],
+  },
+  {
+    title: "Banking",
+    chartNames: ["Banking Avg", "Banking High", "Banking Low"],
+    tasks: [
+      {
+        profile: "https://randomuser.me/api/portraits/men/31.jpg",
+        name: "Nikhil Jain",
+        date: "2025-08-19",
+        rating: 5,
+        description: "Developed secure net banking features with OTP login.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/women/62.jpg",
+        name: "Shreya Menon",
+        date: "2025-08-23",
+        rating: 4,
+        description: "Integrated UPI payment systems into mobile apps.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/men/70.jpg",
+        name: "Dhruv Choudhary",
+        date: "2025-08-27",
+        rating: 5,
+        description: "Implemented fraud detection algorithms in banking systems.",
+      },
+    ],
+  },
+  {
+    title: "ERP",
+    chartNames: ["ERP Avg", "ERP High", "ERP Low"],
+    tasks: [
+      {
+        profile: "https://randomuser.me/api/portraits/women/36.jpg",
+        name: "Tanvi Rao",
+        date: "2025-08-22",
+        rating: 5,
+        description: "Deployed ERP system for supply chain management.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/men/60.jpg",
+        name: "Ankit Bansal",
+        date: "2025-08-24",
+        rating: 4,
+        description: "Customized ERP modules for client’s inventory needs.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/women/47.jpg",
+        name: "Pooja Sinha",
+        date: "2025-08-29",
+        rating: 5,
+        description: "Integrated ERP with CRM systems for better data flow.",
+      },
+    ],
+  },
+  {
+    title: "CRM",
+    chartNames: ["CRM Avg", "CRM High", "CRM Low"],
+    tasks: [
+      {
+        profile: "https://randomuser.me/api/portraits/men/28.jpg",
+        name: "Vivek Agarwal",
+        date: "2025-08-20",
+        rating: 5,
+        description: "Implemented Salesforce CRM for client relationship tracking.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/women/56.jpg",
+        name: "Anjali Mishra",
+        date: "2025-08-23",
+        rating: 4,
+        description: "Created automated email campaigns using CRM workflows.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/men/38.jpg",
+        name: "Manish Tiwari",
+        date: "2025-08-26",
+        rating: 5,
+        description: "Integrated CRM with analytics tools for insights.",
+      },
+    ],
+  },
+  {
+    title: "Digital Marketing",
+    chartNames: ["DM Avg", "DM High", "DM Low"],
+    tasks: [
+      {
+        profile: "https://randomuser.me/api/portraits/women/41.jpg",
+        name: "Swati Kapoor",
+        date: "2025-08-18",
+        rating: 5,
+        description: "Led SEO campaigns improving search rankings by 40%.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/men/54.jpg",
+        name: "Rahul Khanna",
+        date: "2025-08-21",
+        rating: 4,
+        description: "Managed paid ad campaigns on Google and Facebook.",
+      },
+      {
+        profile: "https://randomuser.me/api/portraits/women/63.jpg",
+        name: "Divya Malhotra",
+        date: "2025-08-25",
+        rating: 5,
+        description: "Developed content strategies for brand awareness.",
+      },
+    ],
+  },
+];

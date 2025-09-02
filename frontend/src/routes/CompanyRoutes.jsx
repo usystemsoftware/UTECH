@@ -7,7 +7,8 @@ import Sitemap from "@/pages/company/sitemap/Sitemap";
 import About from "@/pages/company/about/About";
 import Event from "@/pages/company/Events/Event";
 import Refferal from "@/pages/company/refferal/refferal";
-import Location from "@/pages/company/locations/Location";
+import Location from "@/pages/company/locations/Location"; 
+import Review from "@/pages/company/reviews/review";
 
 export const CompanyRoutes = [
   { path: "*", element: <Maintenance404 /> },
@@ -20,4 +21,5 @@ export const CompanyRoutes = [
   { path: "/company/events", element: <Event /> },
   { path: "/company/refferal", element: <Refferal /> },
   { path: "/company/locations", element: <Location /> },
+  { path: "/company/reviews", element: <Review /> },
 ];

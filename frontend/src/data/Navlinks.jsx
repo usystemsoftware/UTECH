@@ -107,7 +107,7 @@ export const Navlinks = [
       // { label: "Newsroom", href: "/company/newsroom", icon: "Newspaper" },
       // { label: "Partners & Affiliations", href: "/company/partners-affiliations", icon: "Handshake" },
       // { label: "People And Culture", href: "/company/people-and-culture", icon: "Smile" },
-      // { label: "Reviews", href: "/company/reviews", icon: "Star" },
+      { label: "Reviews", href: "/company/reviews", icon: "Star" },
     ],
   },
 ];
