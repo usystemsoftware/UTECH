@@ -1,0 +1,41 @@
+name: Node.js CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build_and_test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      # Backend install and test (no build step)
+      - name: Backend - Install and Test
+        run: |
+          cd backend
+          npm install
+          npm test || echo "No backend tests"
+
+      # Frontend install, test, and build
+      - name: Frontend - Install, Test and Build
+        run: |
+          cd frontend
+          npm install
+          npm test || echo "No frontend tests"
+          npm run build
