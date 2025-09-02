@@ -90,7 +90,7 @@ const ShareButtons = ({ scrolled, scrolledMobile }) => {
 
                 {/* Copy Link */}
                 <button
-                  className={`${scrolled ? "text-black" : "text-white"}`}
+                  className={`${scrolled ? "text-black" : "text-white"} cursor-pointer`}
                   onClick={() => {
                     navigator.clipboard.writeText(shareUrl);
                     setOpen(false);

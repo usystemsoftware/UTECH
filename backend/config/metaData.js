@@ -935,7 +935,7 @@ export const metaData = {
       "Ganesh Festival VIP invite",
       "Hindu festival celebration"
     ],
-    image: "https://usystem.software/assets/company/events/tumbnil.png",
+    image: "https://usystem.software/assets/company/events/7.jpg",
     url: "https://usystem.software/company/events",
     category: "Festivals",
     published: "August 2025",
