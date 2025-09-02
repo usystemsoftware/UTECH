@@ -26,13 +26,16 @@ export const guests = [
 ];
 
 export const galleryImages = [
+    "/assets/company/events/8.jpg",
     "/assets/company/events/1.jpg",
     "/assets/company/events/2.jpg",
     "/assets/company/events/3.jpg",
     "/assets/company/events/4.jpg",
+    "/assets/company/events/9.jpg",
+    "/assets/company/events/10.jpg",
+    "/assets/company/events/11.jpg",
     "/assets/company/events/5.jpg",
     "/assets/company/events/6.jpg",
-    "https://images.unsplash.com/photo-1682527286936-707da832b0b7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGdhbnBhdGklMjBiYXBwYXxlbnwwfHwwfHx8MA%3D%3D",
     "https://images.unsplash.com/photo-1598596078551-832ffee5ea3a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdhbnBhdGklMjBiYXBwYXxlbnwwfHwwfHx8MA%3D%3D",
     "https://plus.unsplash.com/premium_photo-1722677453717-eb1baa12f42f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGdhbnBhdGklMjBiYXBwYXxlbnwwfHwwfHx8MA%3D%3D",
 ];

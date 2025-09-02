@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export default function GaneshInvitationMarathi() {
+export default function GaneshInvitation() {
 
     return (
         <section className="relative min-h-screen flex flex-col items-center justify-start bg-gradient-to-br from-[#009896] via-yellow-200 to-[#009698] px-4 overflow-hidden pt-24">
