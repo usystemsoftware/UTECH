@@ -178,7 +178,7 @@ export default function Event() {
                             <img src="/assets/company/events/dnyaneshwar-kamble2.png" alt="dnyaneshwar-kamble2.png" className="w-full h-full" />
                         </div>
 
-                        <TypographyH1 className="absolute bottom-2 left-56 text-[#eec446]">
+                        <TypographyH1 className="absolute bottom-2 left-56 hidden md:block text-[#eec446]">
                             Dr. Dnyaneshwar Kamble
                         </TypographyH1>
                     </div>
