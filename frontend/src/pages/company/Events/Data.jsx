@@ -1,6 +1,6 @@
 export const guests = [
     {
-        name: "DR. Dnyaneshwar Kamble",
+        name: "Dr. Dnyaneshwar Kamble",
         title: "Founder of-  Arban Nidhi Bank Ltd., Mitcone President, Minister of state",
         img: "/assets/company/events/dnyaneshwar-kamble.jpg",
     },

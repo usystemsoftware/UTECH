@@ -154,37 +154,40 @@ export default function Event() {
             </PageLayout>
 
             {/* ✅ Event Details */}
-            <section className="bg-black pt-12 md:pt-0 text-white">
-                <div className="flex relative justify-between md:flex-row flex-col md:items-center gap-8">
-                    <div className="space-y-10 text-start px-6 mx-auto pb-8 md:pb-0">
-                        <TypographyH1 className="md:ml-84">
+            <section className="bg-black relative text-white">
+                <div className="flex justify-between md:flex-row flex-col md:items-center gap-8">
+                    <div className="space-y-10 text-start px-6 mx-auto pb-8 md:pb-0 order-2 md:order-1">
+                        <TypographyH1 className="text-[#bb9219] md:ml-48">
                             Event Details
                         </TypographyH1>
-                        <ul class="space-y-3 text-slate-200 md:ml-84 text-base">
+                        <ul class="space-y-3 text-[#bb9219] md:ml-48 text-wrap text-base">
                             <li><strong>Date:</strong> September 4, 2025</li>
                             <li><strong>Time:</strong> 04:00 PM onwards</li>
                             <li><strong>Special Guests:</strong> VIP Invitees</li>
                             <li><strong>Dress Code:</strong> Traditional Attire</li>
                             <li><strong>Theme:</strong> Eco-friendly Ganesh Utsav</li>
-                            <li><strong>Activities:</strong> U Technology Opening with New Product, Pooja, Cultural Programs, Modak Prasad</li>
+                            <li><strong>Activities:</strong> U Technology Opening with New Product,<br /> Pooja, Cultural Programs, Modak Prasad</li>
                             <li><strong>Prasad:</strong> Authentic Modaks & Sweets</li>
                             <li><strong>Contact Person:</strong> +91 9270033002 (Event Coordinator)</li>
                             <li><strong>Parking:</strong> Available at Basement & Near Zeroboyz Chowk</li>
                         </ul>
                     </div>
-                    <div className="w-62 h-84 md:block hidden absolute bottom-0 left-0">
-                        <img src="/assets/company/events/dnyaneshwar-kamble2.png" alt="dnyaneshwar-kamble2.png" className="w-full h-full" />
-                    </div>
 
-                    <div className="w-62 h-84 md:hidden block">
-                        <img src="/assets/company/events/dnyaneshwar-kamble2.png" alt="dnyaneshwar-kamble2.png" className="w-full h-full" />
+                    <div>
+                        <div className="w-62 h-84 md:block hidden absolute bottom-0 left-0">
+                            <img src="/assets/company/events/dnyaneshwar-kamble2.png" alt="dnyaneshwar-kamble2.png" className="w-full h-full" />
+                        </div>
+
+                        <TypographyH1 className="absolute bottom-2 left-56 text-[#eec446]">
+                            Dr. Dnyaneshwar Kamble
+                        </TypographyH1>
                     </div>
 
                     <img
                         src="/assets/company/events/7.jpg"
                         alt="bappa"
                         loading="lazy"
-                        className="md:h-145 h-110 hidden md:block"
+                        className="md:h-145 h-110 order-1 md:order-2"
                     />
                 </div>
             </section>
@@ -297,7 +300,7 @@ export default function Event() {
             </section>
 
             {/* ✅ Contact & Map */}
-            < PageLayout className="py-12 space-y-8 flex items-center gap-8" >
+            < PageLayout className="py-12 space-y-8 grid grid-cols-1 md:grid-cols-2 gap-8" >
                 <Headline
                     title="Visit Us at Our Venue"
                     description="Office No.02,15, Zeroboyz Chowk, above HDFC Bank, Nehru Nagar, Pimpri Colony, Pune, Pimpri-Chinchwad, Maharashtra 411018"
