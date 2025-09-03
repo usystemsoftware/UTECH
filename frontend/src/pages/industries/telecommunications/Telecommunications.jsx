@@ -75,7 +75,6 @@ const Telecommunications = () => {
           <FeaturesList2
             features={AITelecomFeatures}
             grid
-            center
           />
           <ContactUsButton variant="hover">GET AI-POWERED TELECOM SOLUTIONS</ContactUsButton>
         </PageLayout>

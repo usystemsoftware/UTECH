@@ -16,7 +16,6 @@ import TestimonialsSection from "@/custom/TestimonialsSection";
 import { Link } from 'react-router-dom'
 
 import {
-    heroData,
     valuesData,
     overviewCards,
     valuesList,
@@ -37,10 +36,10 @@ export default function AboutPage() {
         <>
             {/*  HERO SECTION */}
             <HeroSection
-                backgroundImage={heroData.backgroundImage}
-                title={heroData.title}
-                description={heroData.description}
-                buttonText={heroData.buttonText}
+                backgroundImage="/banner/about.jpeg"
+                title="ABOUT U TECHNOLOGY"
+                description="At U Technology, we empower businesses with next-gen digital solutions. Our team of innovators, developers, and strategists work together to build scalable, user-centric products that drive growth and transformation."
+                buttonText="LEARN MORE ABOUT US"
             />
 
             {/*  WHAT WE STAND FOR */}
@@ -175,7 +174,7 @@ export default function AboutPage() {
             <section className="py-16 bg-secondary space-y-10">
                 <TestimonialsSection
                     title="Client Testimonials"
-                    description="We are trusted by small to mid-sized organizations, Fortune 5000 companies, and major brands to advance their technology objectives."
+                    description="We are trusted by small to mid-sized organizations, 3 companies, and major brands to advance their technology objectives."
                     data={clientsTestimonials}
                 />
 
@@ -196,7 +195,7 @@ export default function AboutPage() {
                 <div className="flex flex-wrap justify-center gap-8">
                     {leadership.map((m, i) => (
                         <Card key={i} className="text-center p-0">
-                            <div className="border m-6 w-[200px] h-[200px] bg-blue-100 rounded-full flex items-center justify-center overflow-hidden">
+                            <div className="border m-6 w-[250px] h-[250px] rounded-full flex items-center justify-center overflow-hidden">
                                 <img src={m.img} alt={m.name} className="w-full h-full object-contain" />
                             </div>
                             <div className="border-t-2 space-y-2 p-3">

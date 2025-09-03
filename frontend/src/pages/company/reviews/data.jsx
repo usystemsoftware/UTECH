@@ -1,11 +1,9 @@
 export const services = [
-  // ✅ API Development
   {
     title: "API Development",
     chartNames: ["API Dev Avg", "API Dev High", "API Dev Low"],
     tasks: [
       {
-        profile: "https://randomuser.me/api/portraits/men/32.jpg",
         name: "Aarav Sharma",
         date: "2025-09-01",
         rating: 5,
@@ -18,7 +16,6 @@ Enhanced API speed by 35% with caching.
 Performed load testing for 1M requests.`,
       },
       {
-        profile: "https://randomuser.me/api/portraits/women/44.jpg",
         name: "Priya Desai",
         date: "2025-09-03",
         rating: 4,
@@ -31,7 +28,6 @@ Ensured PCI compliance for payment security.
 Performed integration testing with sandbox.`,
       },
       {
-        profile: "https://randomuser.me/api/portraits/men/76.jpg",
         name: "Rohit Verma",
         date: "2025-09-05",
         rating: 5,
@@ -52,7 +48,6 @@ Tested APIs using automated scripts.`,
     chartNames: ["App Dev Avg", "App Dev High", "App Dev Low"],
     tasks: [
       {
-        profile: "https://randomuser.me/api/portraits/women/50.jpg",
         name: "Neha Patel",
         date: "2025-08-28",
         rating: 5,
@@ -65,7 +60,6 @@ Used Redux for state management.
 Enhanced performance for low-end devices.`,
       },
       {
-        profile: "https://randomuser.me/api/portraits/men/65.jpg",
         name: "Karan Mehta",
         date: "2025-08-30",
         rating: 4,
@@ -78,7 +72,6 @@ Improved SEO for better search ranking.
 Tested with Cypress for UI stability.`,
       },
       {
-        profile: "https://randomuser.me/api/portraits/women/60.jpg",
         name: "Ananya Joshi",
         date: "2025-09-01",
         rating: 5,
@@ -99,7 +92,6 @@ Implemented progressive web app features.`,
     chartNames: ["Maintenance Avg", "Maintenance High", "Maintenance Low"],
     tasks: [
       {
-        profile: "https://randomuser.me/api/portraits/men/40.jpg",
         name: "Rohan Singh",
         date: "2025-08-25",
         rating: 4,
@@ -112,7 +104,6 @@ Implemented rollback mechanisms.
 Handled high-traffic load during updates.`,
       },
       {
-        profile: "https://randomuser.me/api/portraits/women/30.jpg",
         name: "Isha Kaur",
         date: "2025-08-27",
         rating: 5,
@@ -125,7 +116,6 @@ Monitored resource utilization via Grafana.
 Implemented proactive issue resolution.`,
       },
       {
-        profile: "https://randomuser.me/api/portraits/men/55.jpg",
         name: "Vikram Reddy",
         date: "2025-08-29",
         rating: 5,
@@ -146,7 +136,6 @@ Documented all maintenance activities.`,
     chartNames: ["SAP Avg", "SAP High", "SAP Low"],
     tasks: [
       {
-        profile: "https://randomuser.me/api/portraits/men/21.jpg",
         name: "Aditya Kapoor",
         date: "2025-08-22",
         rating: 5,
@@ -159,7 +148,6 @@ Ensured compliance with company policies.
 Trained staff for SAP module usage.`,
       },
       {
-        profile: "https://randomuser.me/api/portraits/women/34.jpg",
         name: "Simran Kaur",
         date: "2025-08-24",
         rating: 4,
@@ -180,7 +168,6 @@ Created backup and recovery strategies.`,
     chartNames: ["DB Avg", "DB High", "DB Low"],
     tasks: [
       {
-        profile: "https://randomuser.me/api/portraits/men/72.jpg",
         name: "Rahul Nair",
         date: "2025-08-20",
         rating: 5,
@@ -201,7 +188,6 @@ Ensured high availability using clustering.`,
     chartNames: ["Finance Avg", "Finance High", "Finance Low"],
     tasks: [
       {
-        profile: "https://randomuser.me/api/portraits/women/25.jpg",
         name: "Sneha Rao",
         date: "2025-08-18",
         rating: 5,
@@ -222,7 +208,6 @@ Configured alerts for overdue payments.`,
     chartNames: ["Banking Avg", "Banking High", "Banking Low"],
     tasks: [
       {
-        profile: "https://randomuser.me/api/portraits/men/38.jpg",
         name: "Amit Kulkarni",
         date: "2025-08-16",
         rating: 4,
@@ -243,7 +228,6 @@ Created audit logs for every transaction.`,
     chartNames: ["ERP Avg", "ERP High", "ERP Low"],
     tasks: [
       {
-        profile: "https://randomuser.me/api/portraits/women/52.jpg",
         name: "Pooja Menon",
         date: "2025-08-14",
         rating: 5,
@@ -264,7 +248,6 @@ Provided training for ERP usage.`,
     chartNames: ["CRM Avg", "CRM High", "CRM Low"],
     tasks: [
       {
-        profile: "https://randomuser.me/api/portraits/men/84.jpg",
         name: "Nikhil Bansal",
         date: "2025-08-12",
         rating: 5,
@@ -285,7 +268,6 @@ Integrated chatbots for customer support.`,
     chartNames: ["Marketing Avg", "Marketing High", "Marketing Low"],
     tasks: [
       {
-        profile: "https://randomuser.me/api/portraits/women/70.jpg",
         name: "Ritika Shah",
         date: "2025-08-10",
         rating: 5,

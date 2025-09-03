@@ -881,7 +881,7 @@ export const metaData = {
     title: "About Us | U Tech",
     description: "Learn more about U Tech, our mission, and our values.",
     keywords: ["about us", "U Tech", "company information"],
-    image: "https://usystem.software/banner/about.webp",
+    image: "https://usystem.software/banner/about.jpeg",
     url: "https://usystem.software/company/about-us",
     category: "Company",
     published: "August 2025",

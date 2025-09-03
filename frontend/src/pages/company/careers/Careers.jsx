@@ -20,7 +20,7 @@ export default function Careers() {
 
         <div className="space-y-4 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-8">
           {jobs.map((job) => (
-            <div key={job.id}>
+            <div key={job.id} >
               <img
                 src={job.img}
                 alt={job.title}
@@ -45,7 +45,7 @@ export default function Careers() {
                   </span>
                 </div>
                 <Link to={job.link}>
-                  <Button className="w-full">View Details</Button>
+                  <Button className="w-full rounded-md">View Details</Button>
                 </Link>
               </div>
             </div>

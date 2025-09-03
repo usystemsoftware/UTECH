@@ -71,6 +71,7 @@ const FlipUnit = ({ label, value }) => {
 };
 
 export default function Event() {
+    const [selectedImage, setSelectedImage] = useState(null);
 
     return (
         <>
@@ -80,7 +81,7 @@ export default function Event() {
             {/* ✅ Guests */}
             <PageLayout section className="py-12 space-y-10" >
                 <Headline
-                    title="Our Special Guests"
+                    title="Invitation Card"
                 />
                 {/* <div className="grid md:grid-cols-3 gap-8">
                     {guests.map((guest, index) => (
@@ -107,6 +108,7 @@ export default function Event() {
                         </motion.div>
                     ))}
                 </div> */}
+
                 <motion.div
                     className="bg-gradient-to-br from-orange-100 via-white to-orange-50 rounded-xl shadow-xl p-8 text-center border-2 border-orange-400 relative space-y-6"
                     initial={{ opacity: 0, y: 30 }}
@@ -152,21 +154,15 @@ export default function Event() {
             </PageLayout>
 
             {/* ✅ Event Details */}
-            <section className="bg-secondary py-12">
-                <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-                    <img
-                        src="/assets/company/events/7.jpg"
-                        alt="bappa"
-                        loading="lazy"
-                        className="mx-auto md:h-110"
-                    />
-                    <div className="space-y-10 text-start">
+            <section className="bg-black text-white">
+                <div className="flex justify-between md:flex-row flex-col md:items-center gap-8">
+                    <div className="space-y-10 text-start px-6 mx-auto pb-8 md:pb-0 order-2 md:order-1">
                         <TypographyH1>
                             Event Details
                         </TypographyH1>
-                        <ul class="space-y-3 text-gray-700 dark:text-slate-200 text-base">
+                        <ul class="space-y-3 text-slate-200 text-base">
                             <li><strong>Date:</strong> September 4, 2025</li>
-                            <li><strong>Time:</strong> 10:00 AM onwards</li>
+                            <li><strong>Time:</strong> 04:00 PM onwards</li>
                             <li><strong>Special Guests:</strong> VIP Invitees</li>
                             <li><strong>Dress Code:</strong> Traditional Attire</li>
                             <li><strong>Theme:</strong> Eco-friendly Ganesh Utsav</li>
@@ -176,8 +172,46 @@ export default function Event() {
                             <li><strong>Parking:</strong> Available at Basement & Near Zeroboyz Chowk</li>
                         </ul>
                     </div>
-                </PageLayout>
+                    <img
+                        src="/assets/company/events/7.jpg"
+                        alt="bappa"
+                        loading="lazy"
+                        className="md:h-145 h-110 order-1 md:order-2"
+                    />
+                </div>
             </section>
+
+            <PageLayout section className="py-12 space-y-10" >
+                <Headline
+                    title="Guests"
+                />
+                <div className="grid md:grid-cols-3 gap-8">
+                    {guests.map((guest, index) => (
+                        <motion.div
+                            key={index}
+                            className="rounded-xl cursor-pointer border bg-secondary p-6 text-center hover:shadow-2xl transition duration-300"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: index * 0.2 }}
+                        >
+                            <img
+                                src={guest.img}
+                                alt={guest.name}
+                                loading="lazy"
+                                className="w-28 h-28 rounded-full mx-auto mb-4 object-cover border-4 border-orange-500"
+                            />
+                            <h3 className="text-xl font-semibold">{guest.name}</h3>
+                            <p className="text-gray-500 mb-3">{guest.title}</p>
+                            {
+                                guest.name === "DR. Dnyaneshwar Kamble" &&
+                                <h3 className="bg-green-300 rounded-full py-1 px-3 font-semibold text-sm w-fit mx-auto">
+                                    VIP Guest
+                                </h3>
+                            }
+                        </motion.div>
+                    ))}
+                </div>
+            </PageLayout>
 
             {/* ✅ Highlights & Schedule */}
             <section section className="bg-seccondary py-16 space-y-10" >
@@ -207,35 +241,58 @@ export default function Event() {
             </section>
 
             {/* ✅ Gallery */}
-            < section id="gallery" className="py-12 bg-secondary space-y-10" >
-                <Headline
-                    title="Event Gallary..."
-                />
-                <PageLayout className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                    {galleryImages.map((img, index) => (
-                        <motion.div
-                            key={index}
-                            className="overflow-hidden shadow-lg"
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: index * 0.1 }}
+            <section id="gallery" className="py-12 bg-secondary">
+                <PageLayout className="space-y-10">
+                    <Headline
+                        title="Event Gallery..."
+                    />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                        {galleryImages.map((img, index) => (
+                            <motion.div
+                                key={index}
+                                className="overflow-hidden shadow-lg cursor-pointer"
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: index * 0.1 }}
+                                onClick={() => setSelectedImage(img)}
+                            >
+                                <img
+                                    src={img}
+                                    alt={`Gallery ${index + 1}`}
+                                    loading="lazy"
+                                    className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
+                                />
+                            </motion.div>
+                        ))}
+                    </div>
+
+                    {/* Fullscreen Image Modal */}
+                    {selectedImage && (
+                        <div
+                            className="fixed inset-0 bg-black/80 bg-opacity-60 flex items-center justify-center z-50"
+                            onClick={() => setSelectedImage(null)}
                         >
                             <img
-                                src={img}
-                                alt={`Gallery ${index + 1}`}
-                                loading="lazy"
-                                className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
+                                src={selectedImage}
+                                alt="Fullscreen"
+                                className="max-w-[90%] max-h-[80vh] object-contain"
                             />
-                        </motion.div>
-                    ))}
+                            <button
+                                onClick={() => setSelectedImage(null)}
+                                className="absolute top-5 cursor-pointer right-5 text-white text-3xl font-bold"
+                            >
+                                ✕
+                            </button>
+                        </div>
+                    )}
                 </PageLayout>
-            </ section>
+            </section>
 
             {/* ✅ Contact & Map */}
-            < PageLayout className="py-12 text-center" >
+            < PageLayout className="py-12 space-y-8 text-center" >
                 <Headline
                     title="Visit Us at Our Venue"
-                    decription="Umbarakar Technology Pvt Ltd, Office No.02,15, Zeroboyz Chowk, Nehru Nagar, Pimpri-Chinchwad, Pune, Maharashtra - 411018"
+                    description="Office No.02,15, Zeroboyz Chowk, above HDFC Bank, Nehru Nagar, Pimpri Colony, Pune, Pimpri-Chinchwad, Maharashtra 411018"
                 />
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890.3433210926873!2d73.81623548850015!3d18.633158987240353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9c95e95487f%3A0xb716badcdf9a8761!2sUC%20Services%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1756537110930!5m2!1sen!2sin" width="600"

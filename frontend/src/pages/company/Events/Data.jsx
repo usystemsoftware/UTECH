@@ -1,32 +1,27 @@
 export const guests = [
     {
-        name: "Mr. Amit Sharma",
-        title: "CEO, XYZ Group",
-        img: "https://randomuser.me/api/portraits/men/32.jpg",
-        bio: "A visionary leader with 20+ years in business strategy and community welfare.",
-        linkedin: "https://linkedin.com/in/amitsharma",
-        twitter: "https://twitter.com/amitsharma",
+        name: "DR. Dnyaneshwar Kamble",
+        title: "Mincone President, Minister of state",
+        img: "/assets/company/events/dnyaneshwar-kamble.jpg",
     },
     {
-        name: "Ms. Priya Verma",
-        title: "Director, ABC Ltd",
-        img: "https://randomuser.me/api/portraits/women/44.jpg",
-        bio: "Renowned for her philanthropic work and leadership in corporate social responsibility.",
-        linkedin: "https://linkedin.com/in/priyaverma",
-        twitter: "https://twitter.com/priyaverma",
+        name: "Ms. Vaishali(Tai) Ghodekar",
+        title: "Ex-Mayor of Pimpri Chinchwad Municipal Corporation. Being a Doc",
+        img: "/assets/company/events/vaishali-tai.jpg",
     },
     {
-        name: "Mr. Raj Malhotra",
-        title: "Investor & Philanthropist",
-        img: "https://randomuser.me/api/portraits/men/55.jpg",
-        bio: "Supporting startups and cultural initiatives to promote Indian traditions.",
-        linkedin: "https://linkedin.com/in/rajmalhotra",
-        twitter: "https://twitter.com/rajmalhotra",
+        name: "Mr. Baba Kamble",
+        title: "National President: Auto, Taxi, Bus, Truck, Transport Federation",
+        img: "/assets/company/events/baba-kamble.jpg",
     },
 ];
 
 export const galleryImages = [
     "/assets/company/events/8.jpg",
+    "/assets/company/events/12.jpg",
+    "/assets/company/events/13.jpg",
+    "/assets/company/events/14.jpg",
+    "/assets/company/events/15.jpg",
     "/assets/company/events/1.jpg",
     "/assets/company/events/2.jpg",
     "/assets/company/events/3.jpg",
@@ -50,9 +45,9 @@ export const highlights = [
 ];
 
 export const schedule = [
-    { time: "10:00 AM", event: "Welcome Ceremony & Ganesh Sthapana" },
-    { time: "11:30 AM", event: "VIP Guest Speech & Blessings" },
-    { time: "01:00 PM", event: "Cultural Performances & Dance" },
-    { time: "03:00 PM", event: "Aarti & Maha Prasad Distribution" },
-    { time: "06:00 PM", event: "Evening Bhajans & Lamp Lighting" },
+    { time: "04:00 PM", event: "Welcome Ceremony" },
+    { time: "04:30 PM", event: "VIP Guest Speech & Blessings" },
+    { time: "05:00 PM", event: "Cultural Performances , Dance & Employee Speech" },
+    { time: "06:00 PM", event: "Aarti & Maha Prasad Distribution" },
+    { time: "07:00 PM", event: "Dinner & All" },
 ];

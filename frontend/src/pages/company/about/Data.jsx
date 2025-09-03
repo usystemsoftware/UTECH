@@ -1,11 +1,3 @@
-export const heroData = {
-    backgroundImage: "/banner/about.webp",
-    title: "ABOUT U TECHNOLOGY",
-    description:
-        "At U Technology, we empower businesses with next-gen digital solutions. Our team of innovators, developers, and strategists work together to build scalable, user-centric products that drive growth and transformation.",
-    buttonText: "LEARN MORE ABOUT US",
-};
-
 export const valuesData = [
     {
         icon: "Brain",
@@ -187,43 +179,37 @@ export const clientsTestimonials = [
             "U Tech felt like an extension of our team—fast iterations, clear communication, and real business impact.",
         name: "Rohit Kumar",
         role: "Head of Product, Fintech",
-        image: "https://randomuser.me/api/portraits/men/44.jpg",
     },
     {
         quote:
             "Their security-first approach gave us the confidence to scale. We shipped our MVP in 7 weeks.",
         name: "Arun S.",
         role: "CTO, Healthtech",
-        image: "https://randomuser.me/api/portraits/men/4.jpg",
     },
     {
         quote:
             "They helped us operationalize AI where it mattered—search, insights, and automation.",
         name: "Meera D.",
         role: "Operations, E-commerce",
-        image: "https://randomuser.me/api/portraits/women/44.jpg",
     },
 ];
 
 export const employeeTestimonials = [
     {
-        name: "Sarah Johnson",
+        name: "Rutik Patil",
         role: "Software Engineer",
-        image: "https://randomuser.me/api/portraits/men/14.jpg",
         quote:
             "Working here has been an amazing experience. The team culture and opportunities for growth are incredible!",
     },
     {
-        name: "Michael Smith",
+        name: "Prabhas Gupta",
         role: "Project Manager",
-        image: "https://randomuser.me/api/portraits/men/46.jpg",
         quote:
             "I love the collaborative environment and the emphasis on work-life balance. Truly a great place to work.",
     },
     {
-        name: "Emily Davis",
+        name: "Chetan Sharma",
         role: "UI/UX Designer",
-        image: "https://randomuser.me/api/portraits/women/65.jpg",
         quote:
             "The projects are innovative and challenging, which keeps me excited every day. Highly recommend joining us!",
     },

@@ -128,12 +128,7 @@ export default function ServicesReviewPage() {
               {/* Reviews */}
               <div className="space-y-6">
                 {service.tasks.map((task, idx) => (
-                  <div key={idx} className="flex gap-4">
-                    <img
-                      src={task.profile}
-                      alt={task.name}
-                      className="w-12 h-12 rounded-full object-cover"
-                    />
+                  <div key={idx}>
                     <div className="space-y-1">
                       <TypographyH4 className="text-base font-semibold">{task.name}</TypographyH4>
                       <TypographyMuted className="text-xs">{task.date}</TypographyMuted>
@@ -141,7 +136,7 @@ export default function ServicesReviewPage() {
                         {"★".repeat(task.rating)}
                         {"☆".repeat(5 - task.rating)}
                       </p>
-                      <p className="text-gray-700 text-sm md:line-clamp-7">{task.description}</p>
+                      <p className="text-gray-700 text-sm md:line-clamp-7 reak-words tracking-tight text-justify">{task.description}</p>
                     </div>
                   </div>
                 ))}

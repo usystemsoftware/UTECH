@@ -44,7 +44,7 @@ export default function GaneshInvitation() {
                         />
                         <h3 className="text-red-700 font-bold text-3xl mt-6">महाप्रसाद कार्यक्रम उत्साह</h3>
                         <p className="text-gray-800 text-lg mt-2">गुरुवार, <span className="font-semibold">०४/०९/२०२४</span></p>
-                        <p className="text-gray-600 mt-2">कार्यक्रमाची सुरुवात: <span className="font-semibold">१०:०० सकाळी</span></p>
+                        <p className="text-gray-600 mt-2">कार्यक्रमाची सुरुवात: <span className="font-semibold">०४:०० दुपारी</span></p>
                     </div>
 
                     {/* Right - Details */}
@@ -63,10 +63,10 @@ export default function GaneshInvitation() {
                         {/* Location & VIP Request */}
                         <div className="bg-yellow-100 p-4 rounded-lg border-l-4 border-red-500">
                             <p><strong>स्थळ:</strong> उंबरकर टेक्नॉलॉजी प्रा. लि.,
-                                ऑफिस क्र. ०२, १५, झेरोबॉईज चौक, नेहरू नगर,
+                                ऑफिस क्र. ०२, १५, झिरो बॉईज चौक, नेहरू नगर,
                                 पिंपरी-चिंचवड, पुणे, महाराष्ट्र - ४११०१८</p>
                             <p><strong>दिनांक:</strong> ०४/०९/२०२४</p>
-                            <p><strong>वेळ:</strong> १०:०० सकाळी</p>
+                            <p><strong>वेळ:</strong> ०४:०० दुपारी</p>
                             <p className="mt-2 text-red-700 font-semibold">आमच्या वेबसाइट उद्घाटनासाठी मान्यवर पाहुण्यांचे विशेष आमंत्रण</p>
                         </div>
 
