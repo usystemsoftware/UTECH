@@ -1,7 +1,7 @@
 export const guests = [
     {
         name: "DR. Dnyaneshwar Kamble",
-        title: "Mincone President, Minister of state",
+        title: "Founder of-  Arban Nidhi Bank Ltd., Mitcone President, Minister of state",
         img: "/assets/company/events/dnyaneshwar-kamble.jpg",
     },
     {
@@ -31,6 +31,7 @@ export const galleryImages = [
     "/assets/company/events/11.jpg",
     "/assets/company/events/5.jpg",
     "/assets/company/events/6.jpg",
+    "/assets/company/events/16.jpg",
     "https://images.unsplash.com/photo-1598596078551-832ffee5ea3a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdhbnBhdGklMjBiYXBwYXxlbnwwfHwwfHx8MA%3D%3D",
     "https://plus.unsplash.com/premium_photo-1722677453717-eb1baa12f42f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGdhbnBhdGklMjBiYXBwYXxlbnwwfHwwfHx8MA%3D%3D",
 ];
