@@ -90,7 +90,7 @@ export const Navlinks = [
       { label: "Oracle", href: "/solutions/oracle", image: "/images/partners/oracle.png", icon: "CircleDashed" },
       { label: "Salesforce", href: "/solutions/salesforce", image: "/images/partners/salesforce.png", icon: "Activity" },
       { label: "SAP", href: "/solutions/sap", image: "/images/partners/sap.png", icon: "LayoutGrid" },
-      // { label: "UiPath", href: "/solutions/uipath", image: "/images/partners/uipath.png", icon: "Bot" },
+       { label: "UiPath", href: "/solutions/uipath", image: "/images/partners/uipath.png", icon: "Bot" },
       { label: "UKG", href: "/solutions/ukg", image: "/images/partners/ukg.png", icon: "Users" },
       { label: "More....", href: "/affiliations", },
     ],
