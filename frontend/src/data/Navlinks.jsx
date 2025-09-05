@@ -85,7 +85,7 @@ export const Navlinks = [
       { label: "Autodesk", href: "/solutions/autodesk", image: "/images/partners/autodesk.png", icon: "Shapes" },
       { label: "IBM", href: "/solutions/ibm", image: "/images/partners/ibm.png", icon: "Server" },
       { label: "Google Cloud", href: "/solutions/google-cloud", image: "/images/partners/google-cloud.png", icon: "CloudSun" },
-      // { label: "Microsoft", href: "/solutions/microsoft", image: "/images/partners/microsoft.png", icon: "Laptop" },
+      { label: "Microsoft", href: "/solutions/microsoft", image: "/images/partners/microsoft.png", icon: "Laptop" },
       // { label: "NetSuite", href: "/solutions/netsuite", image: "/images/partners/netsuite.png", icon: "Network" },
       { label: "Oracle", href: "/solutions/oracle", image: "/images/partners/oracle.png", icon: "CircleDashed" },
       { label: "Salesforce", href: "/solutions/salesforce", image: "/images/partners/salesforce.png", icon: "Activity" },
