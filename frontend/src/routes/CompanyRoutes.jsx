@@ -5,7 +5,7 @@ import LegalPolicy from "@/pages/company/legal-policy/LegalPolicy";
 import PrivacyPolicy from "@/pages/company/privacy-policy/PrivacyPolicy";
 import Sitemap from "@/pages/company/sitemap/Sitemap";
 import About from "@/pages/company/about/About";
-import Event from "@/pages/company/events/Event";
+import Events from "@/pages/company/events/Events";
 import Refferal from "@/pages/company/refferal/refferal";
 import Location from "@/pages/company/locations/Location";
 import History from "@/pages/company/history/History";
@@ -20,7 +20,7 @@ export const CompanyRoutes = [
   { path: "/company/legal-policy", element: <LegalPolicy /> },
   { path: "/company/sitemap", element: <Sitemap /> },
   { path: "/company/about-us", element: <About /> },
-  { path: "/company/events", element: <Event /> },
+  { path: "/company/events", element: <Events /> },
   { path: "/company/refferal", element: <Refferal /> },
   { path: "/company/locations", element: <Location /> },
   { path: "/company/history", element: <History /> },

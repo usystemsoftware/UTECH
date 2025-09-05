@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
     Headline,
+    TypographyH3,
     TypographyH1,
     TypographySmall,
     TypographyMuted
@@ -70,50 +71,21 @@ const FlipUnit = ({ label, value }) => {
     );
 };
 
-export default function Event() {
+export default function GaneshFestival() {
     const [selectedImage, setSelectedImage] = useState(null);
 
     return (
         <>
-            {/* ✅ Hero Section */}
+            {/*  Hero Section */}
             <GaneshInvitation />
 
-            {/* ✅ Guests */}
+            {/*  Guests */}
             <PageLayout section className="py-12 space-y-10" >
-                <Headline
-                    title="Invitation Card"
-                />
-                {/* <div className="grid md:grid-cols-3 gap-8">
-                    {guests.map((guest, index) => (
-                        <motion.div
-                            key={index}
-                            className="bg-gray-50 rounded-xl cursor-pointer shadow-lg p-6 text-center hover:shadow-2xl transition duration-300"
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.2 }}
-                        >
-                            <img
-                                src={guest.img}
-                                alt={guest.name}
-                                loading="lazy"
-                                className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-orange-500"
-                            />
-                            <h3 className="text-xl font-semibold">{guest.name}</h3>
-                            <p className="text-gray-500 mb-3">{guest.title}</p>
-                            <p className="text-gray-600 text-sm mb-4">{guest.bio}</p>
-                            <div className="flex justify-center gap-3">
-                                <a href={guest.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">LinkedIn</a>
-                                <a href={guest.twitter} target="_blank" rel="noopener noreferrer" className="text-sky-500 hover:underline">Twitter</a>
-                            </div>
-                        </motion.div>
-                    ))}
-                </div> */}
-
-                <motion.div
+                <TypographyH3 className="text-primary uppercase text-center">
+                    Invitation Card
+                </TypographyH3>
+                <div
                     className="bg-gradient-to-br from-orange-100 via-white to-orange-50 rounded-xl shadow-xl p-8 text-center border-2 border-orange-400 relative space-y-6"
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: guests.length * 0.2 }}
                 >
                     {/* VIP Badge */}
                     <div className="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
@@ -150,10 +122,10 @@ export default function Event() {
                             </a>
                         </p>
                     </div>
-                </motion.div>
+                </div>
             </PageLayout>
 
-            {/* ✅ Event Details */}
+            {/*  Event Details */}
             <section className="bg-black relative text-white">
                 <div className="flex justify-between md:flex-row flex-col md:items-center gap-8">
                     <div className="space-y-10 text-start px-6 mx-auto pb-8 md:pb-0 order-2 md:order-1">
@@ -173,12 +145,16 @@ export default function Event() {
                         </ul>
                     </div>
 
-                    <div>
-                        <div className="w-62 h-84 md:block hidden absolute bottom-0 left-0">
-                            <img src="/assets/company/events/dnyaneshwar-kamble2.png" alt="dnyaneshwar-kamble2.png" className="w-full h-full" />
+                    <div className="md:block hidden ">
+                        <div className="w-62 h-84 absolute bottom-0 left-0">
+                            <img
+                                src="/assets/company/events/dnyaneshwar-kamble2.png"
+                                alt="dnyaneshwar-kamble2.png"
+                                className="w-full h-full"
+                            />
                         </div>
 
-                        <TypographyH1 className="absolute bottom-2 left-56 hidden md:block text-[#eec446]">
+                        <TypographyH1 className="absolute bottom-2 left-56 text-[#eec446]">
                             Dr. Dnyaneshwar Kamble
                         </TypographyH1>
                     </div>
@@ -187,15 +163,15 @@ export default function Event() {
                         src="/assets/company/events/7.jpg"
                         alt="bappa"
                         loading="lazy"
-                        className="md:h-145 h-110 order-1 md:order-2"
+                        className=" order-1 md:order-2"
                     />
                 </div>
             </section>
 
             <PageLayout section className="py-12 space-y-10" >
-                <Headline
-                    title="Guests"
-                />
+                <TypographyH3 className="text-primary uppercase text-center">
+                    Guests
+                </TypographyH3>
                 <div className="grid md:grid-cols-3 gap-8">
                     {guests.map((guest, index) => (
                         <motion.div
@@ -224,11 +200,11 @@ export default function Event() {
                 </div>
             </PageLayout>
 
-            {/* ✅ Highlights & Schedule */}
+            {/*  Highlights & Schedule */}
             <section section className="bg-seccondary py-16 space-y-10" >
-                <Headline
-                    title="Event Highlights & Cultural Program Schedule"
-                />
+                <TypographyH3 className="text-primary uppercase text-center">
+                    Event Highlights & Cultural Program Schedule
+                </TypographyH3>
                 <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
 
                     <ul className="grid md:grid-cols-2 gap-4 md:gap-8 text-gray-700">
@@ -251,55 +227,47 @@ export default function Event() {
                 </PageLayout>
             </section>
 
-            {/* ✅ Gallery */}
-            <section id="gallery" className="py-12 bg-secondary">
-                <PageLayout className="space-y-10">
-                    <Headline
-                        title="Event Gallery..."
-                    />
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                        {galleryImages.map((img, index) => (
-                            <motion.div
-                                key={index}
-                                className="overflow-hidden shadow-lg cursor-pointer"
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                transition={{ delay: index * 0.1 }}
-                                onClick={() => setSelectedImage(img)}
-                            >
-                                <img
-                                    src={img}
-                                    alt={`Gallery ${index + 1}`}
-                                    loading="lazy"
-                                    className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
-                                />
-                            </motion.div>
-                        ))}
-                    </div>
+            {/*  Gallery */}
+            <section id="gallery" className="py-12 space-y-10 bg-secondary">
+                <TypographyH3 className="text-primary uppercase text-center">
+                    Event Gallery...
+                </TypographyH3>
+                <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-6">
+                    {galleryImages.map((img, index) => (
+                        <img
+                            key={index}
+                            onClick={() => setSelectedImage(img)}
+                            src={img}
+                            alt={`Gallery ${index + 1}`}
+                            loading="lazy"
+                            className="w-full cursor-pointer hover:scale-105 h-48 object-cover transition-transform duration-300"
+                            onError={(e) => (e.target.src = "/assets/company/events/16.jpg")}
+                        />
+                    ))}
+                </div>
 
-                    {/* Fullscreen Image Modal */}
-                    {selectedImage && (
-                        <div
-                            className="fixed inset-0 bg-black/80 bg-opacity-60 flex items-center justify-center z-50"
+                {/* Fullscreen Image Modal */}
+                {selectedImage && (
+                    <div
+                        className="fixed inset-0 bg-black/80 bg-opacity-60 flex items-center justify-center z-50"
+                        onClick={() => setSelectedImage(null)}
+                    >
+                        <img
+                            src={selectedImage}
+                            alt="Fullscreen"
+                            className="max-w-[90%] max-h-[80vh] object-contain"
+                        />
+                        <button
                             onClick={() => setSelectedImage(null)}
+                            className="absolute top-5 cursor-pointer right-5 text-white text-3xl font-bold"
                         >
-                            <img
-                                src={selectedImage}
-                                alt="Fullscreen"
-                                className="max-w-[90%] max-h-[80vh] object-contain"
-                            />
-                            <button
-                                onClick={() => setSelectedImage(null)}
-                                className="absolute top-5 cursor-pointer right-5 text-white text-3xl font-bold"
-                            >
-                                ✕
-                            </button>
-                        </div>
-                    )}
-                </PageLayout>
+                            ✕
+                        </button>
+                    </div>
+                )}
             </section>
 
-            {/* ✅ Contact & Map */}
+            {/*  Contact & Map */}
             < PageLayout className="py-12 space-y-8 grid grid-cols-1 md:grid-cols-2 gap-8" >
                 <Headline
                     title="Visit Us at Our Venue"
