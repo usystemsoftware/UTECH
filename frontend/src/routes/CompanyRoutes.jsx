@@ -26,4 +26,5 @@ export const CompanyRoutes = [
   { path: "/company/history", element: <History /> },
   { path: "/company/people-and-culture", element: <PeopleAndCulture /> },
   { path: "/company/reviews", element: <Review /> },
+  
 ];

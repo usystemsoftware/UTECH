@@ -29,6 +29,7 @@ import Autodesk from "@/pages/solutions/autodesk/Autodesk";
 import Biometrics from "@/pages/solutions/biometrics/Biometrics";
 import Blockchain from "@/pages/solutions/blockchain/Blockchain";
 import Bianalytics from "@/pages/solutions/bi-analytics/Bianalytics";
+import Microsoft from "@/pages/solutions/microsoft/Microsoft"; // ✅ fixed
 
 export const SolutionRoutes = [
   { path: "/solutions/web-development", element: <WebDevelopment /> },
@@ -62,13 +63,5 @@ export const SolutionRoutes = [
   { path: "/solutions/biometrics", element: <Biometrics /> },
   { path: "/solutions/blockchain", element: <Blockchain /> },
   { path: "/solutions/bi-analytics", element: <Bianalytics /> },
-
-
-
-
-
-
-
-
-
+  { path: "/solutions/microsoft", element: <Microsoft /> }, // ✅ fixed
 ];

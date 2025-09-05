@@ -304,9 +304,9 @@ export const HighLighter = ({
       )}
     >
       <h3
-        className={cn("text-lg sm:text-xl text-blue-900 font-bold", className)}
+        className={cn("text-lg sm:text-xl md:text-2xl font-semibold tracking-tight", className)}
       >
-        {rightText} <span className="text-accent">{highLighter}</span>{" "}
+        {rightText} <span className="text-orange-700">{highLighter}</span>{" "}
         {leftText}
       </h3>
       <div className="w-14 h-0.5 bg-accent"></div>
