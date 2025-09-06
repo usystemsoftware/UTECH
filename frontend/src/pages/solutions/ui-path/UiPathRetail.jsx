@@ -16,12 +16,12 @@ export default function UiPathRetail() {
           {/* Left Features */}
           <div className="space-y-12">
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/trade-promotions.svg"
+              icon="/assets/solutions/ui-path/icons/47.svg"
               title="Trade Promotions"
               text="We utilize RPA to quickly track and analyze how promotions are performing. Our solutions eliminate the need for manual entry on spreadsheet based programs saving time and money."
             />
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/sales-analytics.svg"
+              icon="/assets/solutions/ui-path/icons/48.svg"
               title="Sales Data Analytics"
               text="We provide sales analytics using RPAs. Our solutions provides full audits with real-time insights, helping retailers and suppliers analyze the huge amounts of sales data at their disposal."
             />
@@ -30,7 +30,7 @@ export default function UiPathRetail() {
           {/* Center Image */}
           <div className="flex justify-center">
             <img
-              src="/assets/solutions/ui-path/mockups/retail.png"
+              src="/assets/solutions/ui-path/Retail.gif"
               alt="UiPath Retail & CPG Automation"
               className="max-h-[450px] object-contain"
             />
@@ -39,12 +39,12 @@ export default function UiPathRetail() {
           {/* Right Features */}
           <div className="space-y-12">
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/new-product.svg"
+              icon="/assets/solutions/ui-path/icons/49.svg"
               title="New Product Introductions"
               text="We easily automate processes related to alerts and client opinions in real time. Our solutions allow retailers to adjust pricing, production or inventory to respond to consumer behavior."
             />
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/store-layout.svg"
+              icon="/assets/solutions/ui-path/icons/50.svg"
               title="Store Layout Planning"
               text="Our RPA solutions utilize existing databases giving retailers access to more accurate information on a store-by-store basis. You can respond to customer behavior by segmenting store layouts according to consumer demographics and preferences."
             />

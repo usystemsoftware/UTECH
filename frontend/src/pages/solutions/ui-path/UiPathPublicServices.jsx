@@ -16,12 +16,12 @@ export default function UiPathPublicServices() {
           {/* Left Features */}
           <div className="space-y-12">
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/applications.svg"
+              icon="/assets/solutions/ui-path/icons/43.svg"
               title="Applications"
               text="We utilize UiPath Robots to work with all applications with human like interactions like clicking, typing and reading screen information. It can handle browsers, emails, terminals, excel, word, PDFs, databases, and many others."
             />
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/security.svg"
+              icon="/assets/solutions/ui-path/icons/44.svg"
               title="Security"
               text="We create security systems for Private and Public Sector organizations. We protect and preserve sensitive data and access control via a Password Vault. Our solution runs automation under locked screens and uses the TLS 1.2 protocol to provide privacy and data integrity."
             />
@@ -30,12 +30,12 @@ export default function UiPathPublicServices() {
           {/* Right Features */}
           <div className="space-y-12">
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/rpa-development.svg"
+              icon="/assets/solutions/ui-path/icons/45.svg"
               title="RPA Development"
               text="Visually intuitive, feature-rich and extensible Studio designer allows ease of automation of complex processes with fewer man-hours – so ROI and performance benefits arrive faster. It is packed with template activities and a powerful recorder that can follow your clicks and keyboard strokes and turn them into an automation sequence, helping you jumpstart your automation."
             />
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/compliance.svg"
+              icon="/assets/solutions/ui-path/icons/46.svg"
               title="Compliance"
               text="We create compliance solutions that provide logging, monitoring, and a full audit trails of your business practices. We store the actions of the user and robots in a log file and create custom dashboards for monitoring compliance."
             />

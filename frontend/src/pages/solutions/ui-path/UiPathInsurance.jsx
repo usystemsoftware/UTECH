@@ -16,12 +16,12 @@ export default function UiPathInsurance() {
           {/* Left Features */}
           <div className="space-y-12">
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/25.svg"
+              icon="/assets/solutions/ui-path/icons/26.svg"
               title="Legacy Integration"
               text="We build RPA processes that work with legacy systems, including spreadsheets, PDFs, scanned documents, and applications like Duckcreek, Guidewire, and LexisNexis. Some insurance firms processes rely heavily on legacy systems – we develop integrations that bridge the gap between legacy and modern applications."
             />
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/28.svg"
+              icon="/assets/solutions/ui-path/icons/25.svg"
               title="Improved Regulatory Compliance"
               text="We develop fully intelligent automation processes for the insurance industry that improve governance and regulatory compliance. Detailed logs of activities are maintained, allowing more cases to be processed in real-time while reducing workloads and backlogs."
             />
@@ -39,7 +39,7 @@ export default function UiPathInsurance() {
           {/* Right Features */}
           <div className="space-y-12">
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/26.svg"
+              icon="/assets/solutions/ui-path/icons/28.svg"
               title="Non-Invasive Deployment"
               text="Our RPA runs everyday tasks on any system or application without affecting underlying systems. It offers an alternative to core-platform integrations or replacements, requires no coding, and delivers significant savings."
             />

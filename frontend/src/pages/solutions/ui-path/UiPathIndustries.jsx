@@ -2,7 +2,7 @@ import { useState } from "react";
 import UiPathBPO from "./Uipathbpo";
 import Uipathbanking from "./Uipathbanking";
 import UiPathInsurance from "./UiPathInsurance";
-import UiPathHealthcare from "./UiPathHealthcare";
+import UiPathHealthcare from "./Uipathhealthacare";
 import Uipathtelecom from "./Uipathtelecom";
 import Uipathmanufacturing from "./Uipathmanufacturing";
 import UiPathPublicServices from "./UiPathPublicServices";
@@ -12,10 +12,18 @@ const industries = [
   { id: "bpo", label: "BPO", component: <UiPathBPO /> },
   { id: "banking", label: "Banking", component: <Uipathbanking /> },
   { id: "insurance", label: "Insurance", component: <UiPathInsurance /> },
-  { id: "healthcare", label: "Healthcare", component: <UiPathHealthcare/> },
+  { id: "healthcare", label: "Healthcare", component: <UiPathHealthcare /> },
   { id: "telecom", label: "Telecom", component: <Uipathtelecom /> },
-  { id: "manufacturing", label: "Manufacturing", component: <Uipathmanufacturing /> },
-  { id: "public", label: "Public Services", component: <UiPathPublicServices /> },
+  {
+    id: "manufacturing",
+    label: "Manufacturing",
+    component: <Uipathmanufacturing />,
+  },
+  {
+    id: "public",
+    label: "Public Services",
+    component: <UiPathPublicServices />,
+  },
   { id: "retail", label: "Retail & CPG", component: <UiPathRetail /> },
 ];
 

@@ -16,12 +16,12 @@ export default function UiPathManufacturing() {
           {/* Left Features */}
           <div className="space-y-12">
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/regulatory-compliance.svg"
+              icon="/assets/solutions/ui-path/icons/38.svg"
               title="Regulatory Compliance"
               text="We value security so we never store any process-related data on customers, suppliers and company information throughout the automation process. We store the robots' actions so they can be monitored and reviewed ensuring visibility throughout a manufacturer's supply chain and operations."
             />
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/paperless-operations.svg"
+              icon="/assets/solutions/ui-path/icons/39.svg"
               title="Paperless Operations"
               text="We design solutions enabling manufacturers to digitize their paper files and integrate physical data into their existing digital operations."
             />
@@ -30,7 +30,7 @@ export default function UiPathManufacturing() {
           {/* Center Image */}
           <div className="flex justify-center">
             <img
-              src="/assets/solutions/ui-path/mockups/manufacturing.png"
+              src="/assets/solutions/ui-path/Inventory.gif"
               alt="UiPath Manufacturing Automation"
               className="max-h-[450px] object-contain"
             />
@@ -39,12 +39,12 @@ export default function UiPathManufacturing() {
           {/* Right Features */}
           <div className="space-y-12">
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/digital-communication.svg"
+              icon="/assets/solutions/ui-path/icons/40.svg"
               title="Digital Communication"
               text="We utilize UiPath to provide manufacturers with named entity recognition, language detection, and sentiment analysis capabilities. We give manufacturers the ability to respond to customers and suppliers by applying UiPath's automation capabilities to email and chat-based communication."
             />
             <FeatureItem
-              icon="/assets/solutions/ui-path/icons/process-monitoring.svg"
+              icon="/assets/solutions/ui-path/icons/41.svg"
               title="Process Monitoring"
               text="We provide non-invasive data extraction using UiPath to provide data analytics. We develop real-time reporting provided by the software robots that allows manufacturers to determine optimal inventory levels based on previous needs."
             />

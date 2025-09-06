@@ -31,21 +31,31 @@ import Blockchain from "@/pages/solutions/blockchain/Blockchain";
 import Bianalytics from "@/pages/solutions/bi-analytics/Bianalytics";
 import UiPath from "@/pages/solutions/ui-path/UiPath";
 
+import Microsoft from "@/pages/solutions/microsoft/Microsoft"; // ✅ fixed
 export const SolutionRoutes = [
   { path: "/solutions/web-development", element: <WebDevelopment /> },
   { path: "/solutions/crm", element: <CRM /> },
   { path: "/solutions/ui-ux", element: <UiUx /> },
   { path: "/solutions/embedded-software", element: <EmbeddedSoftware /> },
   { path: "/solutions/digital-marketing", element: <DigitalMarketing /> },
-  { path: "/solutions/animation-graphic-design", element: <AnimationGraphicDesign /> },
+  {
+    path: "/solutions/animation-graphic-design",
+    element: <AnimationGraphicDesign />,
+  },
   { path: "/solutions/ai", element: <Ai /> },
   { path: "/solutions/cms", element: <CMS /> },
   { path: "/solutions/cloud", element: <Cloud /> },
   { path: "/solutions/database", element: <Database /> },
-  { path: "/solutions/digital-asset-management", element: <DigitalAssetManagement /> },
+  {
+    path: "/solutions/digital-asset-management",
+    element: <DigitalAssetManagement />,
+  },
   { path: "/solutions/document-management", element: <DocumentManagement /> },
   { path: "/solutions/erp", element: <ERP /> },
-  { path: "/solutions/facilities-management", element: <FacilitiesManagement /> },
+  {
+    path: "/solutions/facilities-management",
+    element: <FacilitiesManagement />,
+  },
   { path: "/solutions/fraud-protection", element: <FraudProtection /> },
   { path: "/solutions/gis", element: <GIS /> },
   { path: "/solutions/iot", element: <IOT /> },
@@ -63,6 +73,8 @@ export const SolutionRoutes = [
   { path: "/solutions/biometrics", element: <Biometrics /> },
   { path: "/solutions/blockchain", element: <Blockchain /> },
   { path: "/solutions/bi-analytics", element: <Bianalytics /> },
+
   { path: "/solutions/uipath", element: <UiPath /> },
 
+  { path: "/solutions/microsoft", element: <Microsoft /> }, // ✅ fixed
 ];

@@ -6,23 +6,16 @@ import { Headline } from "@/custom/Typography";
 import UiPathBPO from "./Uipathbpo";
 import Uipathbanking from "./Uipathbanking";
 import UiPathInsurance from "./UiPathInsurance";
-import UiPathHealthcare from "./UiPathHealthcare";
+import UiPathHealthcare from "./Uipathhealthacare";
 import Uipathtelecom from "./Uipathtelecom";
 import Uipathmanufacturing from "./Uipathmanufacturing";
 import UiPathPublicServices from "./UiPathPublicServices";
-import UiPathRetail from "./UiPathRetail"
-import FAQ from "@/custom/FAQ ";
+import UiPathRetail from "./UiPathRetail";
+import FaqSection from "@/custom/FaqSection";
 
 // Import all data
-import {
-  uipathServices,
-  uipathAI,
-  uipathAutomation,
-  uipathFaq
-} from "./Data";
+import { uipathServices, uipathAI, uipathAutomation, uipathFaq } from "./Data";
 import UiPathIndustries from "./UiPathIndustries";
-
-
 
 export default function UiPath() {
   return (
@@ -75,15 +68,14 @@ export default function UiPath() {
       <Uipathmanufacturing/>
       <UiPathPublicServices/>
       <UiPathRetail/> */}
-      <UiPathIndustries/>
-      <div className="py-16">
-  <FAQ faqs={uipathFaq} title="FAQ's About UiPath Services" />
+      <UiPathIndustries />
+      
+        {/* === FAQ SECTION === */}
+              <div className="py-16">
+                <FaqSection faqs={uipathFaq} title="FAQ's About uipath Services" />
+              </div>
 </div>
 
-      {/* FAQ Section */}
-
-
-    </div>
   );
 }
 
@@ -96,5 +88,4 @@ const FeatureItem = ({ icon, title, text }) => (
       <p className="text-gray-600 mt-2">{text}</p>
     </div>
   </div>
-  
 );

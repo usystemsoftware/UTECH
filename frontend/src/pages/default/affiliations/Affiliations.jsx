@@ -55,10 +55,10 @@ export default function Affiliations() {
 
             <section className="bg-secondary py-14">
                 <PageLayout className="space-y-10">
-                    <Headline
+                    {/* <Headline
                         title="AI Solutions for U Tech Partner Products"
                         description="Our AI experts enhance and customize AI-driven solutions integrated with partner platforms to modernize industries, drive revenue streams, and augment personnel to elevate workflow processes and performance."
-                    />
+                    /> */}
                     <FeaturesListOpposite
                         features={aiCollaborationData}
                     />

@@ -116,7 +116,7 @@ export const FeaturesList = ({
   );
 };
 
-export const FeaturesListOpposite = ({ features }) => {
+export const FeaturesListOpposite = ({ features, titleClassName = "text-primary" }) => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
       {features.map(({ icon, iconSize = 40, title, description }, index) => {
@@ -151,7 +151,7 @@ export const FeaturesListOpposite = ({ features }) => {
 
             {/* Text */}
             <div className="w-full">
-              <TypographyH5 className="text-base md:text-xl text-primary tracking-tight">
+              <TypographyH5 className={`text-base md:text-xl tracking-tight ${titleClassName}`}>
                 {title}
               </TypographyH5>
               <div

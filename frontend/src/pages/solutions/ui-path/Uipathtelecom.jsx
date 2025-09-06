@@ -17,22 +17,22 @@ export default function UiPathTelecom() {
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
           <FeatureItem
-            icon="/assets/solutions/ui-path/icons/telecom-1.svg"
+            icon="/assets/solutions/ui-path/icons/34.svg"
             title="Data Transmission"
             text="We implement UiPath platform interacts with the user interface like a human and gets implemented non-invasively in addition to existing programs."
           />
           <FeatureItem
-            icon="/assets/solutions/ui-path/icons/telecom-2.svg"
+            icon="/assets/solutions/ui-path/icons/35.svg"
             title="Cost Reduction"
             text="We facilitate cost reduction by using UiPath's during BPMS or ERP implementation. The UiPath platform enables telecommunications providers to attain rapid internal cost reduction and ROI."
           />
           <FeatureItem
-            icon="/assets/solutions/ui-path/icons/telecom-3.svg"
+            icon="/assets/solutions/ui-path/icons/36.svg"
             title="Scalability"
             text="We expertly scale UiPath's software robotic workforce up or down, to fit the current needs and no additional costs. We use UiPath's intelligent scheduling to deploy an agile workforce in the Cloud or on-premises from a single central server."
           />
           <FeatureItem
-            icon="/assets/solutions/ui-path/icons/telecom-4.svg"
+            icon="/assets/solutions/ui-path/icons/37.svg"
             title="High Levels of Data Security"
             text="We maintain data security by utilizing UiPath to ensure that all customer and company information is kept confidential throughout automated operations for enterprises. The UiPath automation platform maintains robot-related activity reports and analytics but never locally stores any process-related data from the software robots."
           />

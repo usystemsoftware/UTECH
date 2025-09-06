@@ -13,6 +13,8 @@ import PageLayout from "@/custom/PageLayout";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { subscribeEmail } from "@/machine/subscribeWithEmail";
 import { Loader2 } from "lucide-react";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export const quickLinks = [
   { label: "Privacy Policy", to: "/company/privacy-policy" },
@@ -25,18 +27,22 @@ export const quickLinks = [
 
 const socialIcons = [
   {
-    icon: "Facebook",
+    icon: FaFacebookF,
     url: "https://www.facebook.com/AryaSoft1",
     label: "Facebook",
   },
   {
-    icon: "Instagram",
+    icon: FaInstagram,
     url: "https://www.instagram.com/usystem_software",
     label: "Instagram",
   },
-  { icon: "Twitter", url: "#", label: "Twitter" },
   {
-    icon: "Linkedin",
+    icon: FaXTwitter,
+    url: "#",
+    label: "Twitter",
+  },
+  {
+    icon: FaLinkedinIn,
     url: "https://in.linkedin.com/company/umbarkar-technology-india-pvt-ltd",
     label: "LinkedIn",
   },
@@ -222,18 +228,21 @@ export const Footer = () => {
               </p>
             )}
             <div className="flex items-center gap-2 mt-4">
-              {socialIcons.map((item, i) => (
-                <a
-                  key={i}
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={item.label}
-                  className="border-2 hover:scale-105 transition-all w-10 h-10 hover:bg-primary border-primary rounded-full flex justify-center items-center"
-                >
-                  <IconRenderer name={item.icon} strokeWidth={2} size={20} />
-                </a>
-              ))}
+              {socialIcons.map((item, i) => {
+                const Icon = item.icon;
+                return (
+                  <a
+                    key={i}
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={item.label}
+                    className="border-2 hover:scale-105 transition-all w-10 h-10 hover:bg-primary border-primary rounded-full flex justify-center items-center"
+                  >
+                    <Icon className="text-white" size={18} />
+                  </a>
+                );
+              })}
             </div>
           </div>
 
