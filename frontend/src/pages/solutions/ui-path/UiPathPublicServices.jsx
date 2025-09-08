@@ -7,18 +7,18 @@ export default function UiPathPublicServices() {
     <section className="py-16 bg-white">
       <PageLayout>
         {/* Heading */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <Headline title="UiPath & Public Services" description="" />
         </div>
 
         {/* Main Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Features */}
-          <div className="space-y-12">
+          <div className="flex flex-col items-center space-y-10 lg:items-center">
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/43.svg"
               title="Applications"
-              text="We utilize UiPath Robots to work with all applications with human like interactions like clicking, typing and reading screen information. It can handle browsers, emails, terminals, excel, word, PDFs, databases, and many others."
+              text="We utilize UiPath Robots to work with all applications with human-like interactions like clicking, typing and reading screen information. It can handle browsers, emails, terminals, Excel, Word, PDFs, databases, and many others."
             />
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/44.svg"
@@ -28,7 +28,7 @@ export default function UiPathPublicServices() {
           </div>
 
           {/* Right Features */}
-          <div className="space-y-12">
+          <div className="flex flex-col items-center space-y-10 lg:items-center">
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/45.svg"
               title="RPA Development"
@@ -37,13 +37,13 @@ export default function UiPathPublicServices() {
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/46.svg"
               title="Compliance"
-              text="We create compliance solutions that provide logging, monitoring, and a full audit trails of your business practices. We store the actions of the user and robots in a log file and create custom dashboards for monitoring compliance."
+              text="We create compliance solutions that provide logging, monitoring, and a full audit trail of your business practices. We store the actions of the user and robots in a log file and create custom dashboards for monitoring compliance."
             />
           </div>
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-16">
           <ContactUsButton variant="hover">GET UIPATH AUTOMATION</ContactUsButton>
         </div>
       </PageLayout>
@@ -53,9 +53,20 @@ export default function UiPathPublicServices() {
 
 // Reusable Feature Component
 const FeatureItem = ({ icon, title, text }) => (
-  <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 px-4">
-    <img src={icon} alt={title} className="w-12 h-12" />
-    <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
-    <p className="text-gray-600 leading-relaxed">{text}</p>
+  <div className="flex flex-col items-center text-center space-y-3 px-4 md:px-0">
+    {/* Icon centered */}
+    <div className="flex justify-center">
+      <img
+        src={icon}
+        alt={title}
+        className="w-16 h-16 md:w-20 md:h-20 object-contain"
+      />
+    </div>
+
+    {/* Title */}
+    <h3 className="text-lg md:text-xl font-semibold text-gray-900">{title}</h3>
+
+    {/* Text justified */}
+    <p className="text-gray-600 leading-relaxed text-justify">{text}</p>
   </div>
 );

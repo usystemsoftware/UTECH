@@ -7,41 +7,41 @@ export default function UiPathHealthcare() {
     <section className="py-16 bg-white">
       <PageLayout>
         {/* Heading */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <Headline title="Healthcare and UiPath" description="" />
         </div>
 
         {/* Main Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
           {/* Left Features */}
-          <div className="space-y-12">
+          <div className="flex flex-col items-center space-y-10 lg:items-center">
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/30.svg"
               title="Front Office Support"
-              text="Our RPA solutions allow service providers to improve the quality of their forward-facing operations. We utilize UiPath's cognitive RPA, to achieve complex language, named entity recognition, and sentiment analysis capabilities by integrating Google, Microsoft, IBM & ABBYY cognitive and OCR services."
+              text="Our RPA solutions allow service providers to improve the quality of their forward-facing operations. We utilize UiPath's cognitive RPA to achieve complex language, named entity recognition, and sentiment analysis capabilities."
             />
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/31.svg"
               title="Superior System Compatibility"
-              text="We utilize UiPath to non-intrusively run automation with the user interface using intelligent computer vision. We automate existing healthcare systems and applications with UiPath without affecting the underlying code."
+              text="We utilize UiPath to non-intrusively run automation with the user interface using intelligent computer vision. We automate existing healthcare systems and applications without affecting the underlying code."
             />
           </div>
 
           {/* Center Image */}
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-8 lg:mt-0">
             <img
               src="/assets/solutions/ui-path/healthcare.png"
               alt="UiPath Healthcare Automation"
-              className="max-h-[450px] object-contain"
+              className="max-h-[450px] w-full object-contain rounded-xl shadow-lg"
             />
           </div>
 
           {/* Right Features */}
-          <div className="space-y-12">
+          <div className="flex flex-col items-center space-y-10 lg:items-center">
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/32.svg"
               title="Cost Benefit"
-              text="Our RPA delivers cost benefits by utilizing UiPath's intelligent scheduling and multi-tenancy. Healthcare providers can leverage a cost-effective workforce and significantly reduce operating costs. We deploy robots in the Cloud or on-premises from a single central server."
+              text="Our RPA delivers cost benefits by utilizing UiPath's intelligent scheduling and multi-tenancy. Healthcare providers can leverage a cost-effective workforce and reduce operating costs."
             />
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/33.svg"
@@ -52,7 +52,7 @@ export default function UiPathHealthcare() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-16">
           <ContactUsButton variant="hover">GET UIPATH AUTOMATION</ContactUsButton>
         </div>
       </PageLayout>
@@ -62,9 +62,20 @@ export default function UiPathHealthcare() {
 
 // Reusable Feature Component
 const FeatureItem = ({ icon, title, text }) => (
-  <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 px-4">
-    <img src={icon} alt={title} className="w-12 h-12" />
-    <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
-    <p className="text-gray-600 leading-relaxed">{text}</p>
+  <div className="flex flex-col items-center text-center space-y-3 px-4 md:px-0">
+    {/* Icon centered with title */}
+    <div className="flex justify-center">
+      <img
+        src={icon}
+        alt={title}
+        className="w-16 h-16 md:w-20 md:h-20 object-contain"
+      />
+    </div>
+
+    {/* Title */}
+    <h3 className="text-lg md:text-xl font-semibold text-gray-900">{title}</h3>
+
+    {/* Text */}
+    <p className="text-gray-600 leading-relaxed text-justify">{text}</p>
   </div>
 );

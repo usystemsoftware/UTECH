@@ -7,14 +7,14 @@ export default function UiPathManufacturing() {
     <section className="py-16 bg-white">
       <PageLayout>
         {/* Heading */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <Headline title="Manufacturing & UiPath" description="" />
         </div>
 
         {/* Main Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
           {/* Left Features */}
-          <div className="space-y-12">
+          <div className="flex flex-col items-center space-y-10 lg:items-center">
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/38.svg"
               title="Regulatory Compliance"
@@ -27,17 +27,18 @@ export default function UiPathManufacturing() {
             />
           </div>
 
-          {/* Center Image */}
-          <div className="flex justify-center">
-            <img
-              src="/assets/solutions/ui-path/Inventory.gif"
-              alt="UiPath Manufacturing Automation"
-              className="max-h-[450px] object-contain"
-            />
-          </div>
+        {/* Center Image */}
+<div className="flex justify-center mt-8 lg:mt-0">
+  <img
+    src="/assets/solutions/ui-path/Inventory.gif"
+    alt="UiPath Manufacturing Automation"
+    className="h-[550px] w-auto object-contain rounded-xl shadow-lg"
+  />
+</div>
+
 
           {/* Right Features */}
-          <div className="space-y-12">
+          <div className="flex flex-col items-center space-y-10 lg:items-center">
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/40.svg"
               title="Digital Communication"
@@ -52,7 +53,7 @@ export default function UiPathManufacturing() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-16">
           <ContactUsButton variant="hover">GET UIPATH AUTOMATION</ContactUsButton>
         </div>
       </PageLayout>
@@ -62,9 +63,20 @@ export default function UiPathManufacturing() {
 
 // Reusable Feature Component
 const FeatureItem = ({ icon, title, text }) => (
-  <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 px-4">
-    <img src={icon} alt={title} className="w-12 h-12" />
-    <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
-    <p className="text-gray-600 leading-relaxed">{text}</p>
+  <div className="flex flex-col items-center text-center space-y-3 px-4 md:px-0">
+    {/* Icon centered */}
+    <div className="flex justify-center">
+      <img
+        src={icon}
+        alt={title}
+        className="w-16 h-16 md:w-20 md:h-20 object-contain"
+      />
+    </div>
+
+    {/* Title */}
+    <h3 className="text-lg md:text-xl font-semibold text-gray-900">{title}</h3>
+
+    {/* Text justified */}
+    <p className="text-gray-600 leading-relaxed text-justify">{text}</p>
   </div>
 );

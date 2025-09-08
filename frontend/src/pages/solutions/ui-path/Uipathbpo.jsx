@@ -7,7 +7,7 @@ export default function UiPathBPO() {
     <section className="py-16 bg-white">
       <PageLayout>
         {/* Heading */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <Headline
             title="UiPath & BPO: The Perfect Fit"
             description=""
@@ -17,7 +17,7 @@ export default function UiPathBPO() {
         {/* Content Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left side features */}
-          <div className="space-y-10">
+          <div className="space-y-12">
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/17.svg"
               title="Automation"
@@ -41,18 +41,20 @@ export default function UiPathBPO() {
           </div>
 
           {/* Right side image */}
-          <div className="flex justify-center">
+          <div className="flex justify-center md:justify-end mt-8 md:mt-0">
             <img
               src="/assets/solutions/ui-path/uipathbpo.png"
               alt="UiPath BPO Dashboard"
-              className="max-w-full rounded-2xl shadow-lg"
+              className="max-w-full rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300"
             />
           </div>
         </div>
 
         {/* CTA Button */}
-        <div className="text-center mt-12">
-          <ContactUsButton variant="hover">GET UIPATH DEVELOPERS</ContactUsButton>
+        <div className="text-center mt-16">
+          <ContactUsButton variant="hover">
+            GET UIPATH DEVELOPERS
+          </ContactUsButton>
         </div>
       </PageLayout>
     </section>
@@ -60,20 +62,26 @@ export default function UiPathBPO() {
 }
 
 // Reusable feature item
+// Reusable feature item
 const FeatureItem = ({ icon, title, text }) => (
-  <div className="flex items-start space-x-4">
-    <img src={icon} alt={title} className="w-10 h-10 flex-shrink-0" />
+  <div className="flex space-x-4 md:space-x-6">
+    {/* Icon with top padding */}
+    <img
+      src={icon}
+      alt={title}
+      className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 pt-1 md:pt-2" // top padding added
+    />
+
+    {/* Text */}
     <div>
-      <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
-      <p className="text-gray-600 mt-2 leading-relaxed">{text}</p>
+      <h3 className="text-lg md:text-xl font-semibold text-gray-900 leading-tight">
+        {title}
+      </h3>
+      <p className="text-gray-600 mt-2 md:mt-3 leading-relaxed">
+        {text}
+      </p>
     </div>
   </div>
 );
-
-
-
-
-
-
 
 

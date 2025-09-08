@@ -7,41 +7,41 @@ export default function UiPathInsurance() {
     <section className="py-16 bg-white">
       <PageLayout>
         {/* Heading */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <Headline title="UiPath for Insurance" description="" />
         </div>
 
         {/* Main Content Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
           {/* Left Features */}
-          <div className="space-y-12">
+          <div className="flex flex-col items-center space-y-10 lg:items-center">
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/26.svg"
               title="Legacy Integration"
-              text="We build RPA processes that work with legacy systems, including spreadsheets, PDFs, scanned documents, and applications like Duckcreek, Guidewire, and LexisNexis. Some insurance firms processes rely heavily on legacy systems – we develop integrations that bridge the gap between legacy and modern applications."
+              text="We build RPA processes that work with legacy systems, including spreadsheets, PDFs, scanned documents, and applications like Duckcreek, Guidewire, and LexisNexis."
             />
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/25.svg"
               title="Improved Regulatory Compliance"
-              text="We develop fully intelligent automation processes for the insurance industry that improve governance and regulatory compliance. Detailed logs of activities are maintained, allowing more cases to be processed in real-time while reducing workloads and backlogs."
+              text="We develop fully intelligent automation processes for the insurance industry that improve governance and regulatory compliance."
             />
           </div>
 
           {/* Center Image */}
-          <div className="flex justify-center">
+          <div className="flex justify-center mt-8 lg:mt-0">
             <img
               src="/assets/solutions/ui-path/Uipathinsurance.png"
               alt="UiPath for Insurance"
-              className="max-h-[450px] object-contain"
+              className="h-[550px] w-auto object-contain rounded-xl shadow-lg"
             />
           </div>
 
           {/* Right Features */}
-          <div className="space-y-12">
+          <div className="flex flex-col items-center space-y-10 lg:items-center">
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/28.svg"
               title="Non-Invasive Deployment"
-              text="Our RPA runs everyday tasks on any system or application without affecting underlying systems. It offers an alternative to core-platform integrations or replacements, requires no coding, and delivers significant savings."
+              text="Our RPA runs everyday tasks on any system or application without affecting underlying systems."
             />
             <FeatureItem
               icon="/assets/solutions/ui-path/icons/29.svg"
@@ -52,7 +52,7 @@ export default function UiPathInsurance() {
         </div>
 
         {/* CTA Button */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-16">
           <ContactUsButton variant="hover">GET UIPATH AUTOMATION</ContactUsButton>
         </div>
       </PageLayout>
@@ -62,9 +62,20 @@ export default function UiPathInsurance() {
 
 // Reusable Feature Component
 const FeatureItem = ({ icon, title, text }) => (
-  <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 px-4">
-    <img src={icon} alt={title} className="w-12 h-12" />
-    <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
-    <p className="text-gray-600 leading-relaxed">{text}</p>
+  <div className="flex flex-col items-center text-center space-y-3 px-4 md:px-0">
+    {/* Icon centered */}
+    <div className="flex justify-center">
+      <img
+        src={icon}
+        alt={title}
+        className="w-16 h-16 md:w-20 md:h-20 object-contain"
+      />
+    </div>
+
+    {/* Title */}
+    <h3 className="text-lg md:text-xl font-semibold text-gray-900">{title}</h3>
+
+    {/* Text justified */}
+    <p className="text-gray-600 leading-relaxed text-justify">{text}</p>
   </div>
 );
