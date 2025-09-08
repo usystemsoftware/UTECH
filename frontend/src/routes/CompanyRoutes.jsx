@@ -11,6 +11,7 @@ import Location from "@/pages/company/locations/Location";
 import History from "@/pages/company/history/History";
 import PeopleAndCulture from "@/pages/company/people-and-culture/PeopleAndCulture";
 import Review from "@/pages/company/reviews/review";
+import Newsroom from "../pages/company/newsroom/Newsroom";
 
 export const CompanyRoutes = [
   { path: "*", element: <Maintenance404 /> },
@@ -26,5 +27,6 @@ export const CompanyRoutes = [
   { path: "/company/history", element: <History /> },
   { path: "/company/people-and-culture", element: <PeopleAndCulture /> },
   { path: "/company/reviews", element: <Review /> },
+  { path: "/company/newsroom", element: <Newsroom/> },
   
 ];
