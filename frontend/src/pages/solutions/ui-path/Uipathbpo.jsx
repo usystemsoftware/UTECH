@@ -4,7 +4,7 @@ import ContactUsButton from "@/custom/ContactUsButton";
 
 export default function UiPathBPO() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
       <PageLayout>
         {/* Heading */}
         <div className="text-center mb-16">
@@ -62,26 +62,23 @@ export default function UiPathBPO() {
 }
 
 // Reusable feature item
-// Reusable feature item
 const FeatureItem = ({ icon, title, text }) => (
   <div className="flex space-x-4 md:space-x-6">
     {/* Icon with top padding */}
     <img
       src={icon}
       alt={title}
-      className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 pt-1 md:pt-2" // top padding added
+      className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 pt-1 md:pt-2"
     />
 
     {/* Text */}
     <div>
-      <h3 className="text-lg md:text-xl font-semibold text-gray-900 leading-tight">
+      <h3 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white leading-tight">
         {title}
       </h3>
-      <p className="text-gray-600 mt-2 md:mt-3 leading-relaxed">
+      <p className="text-gray-600 dark:text-gray-300 mt-2 md:mt-3 leading-relaxed text-justify">
         {text}
       </p>
     </div>
   </div>
 );
-
-

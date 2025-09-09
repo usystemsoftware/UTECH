@@ -2,7 +2,7 @@ import { useState } from "react";
 import UiPathBPO from "./Uipathbpo";
 import Uipathbanking from "./Uipathbanking";
 import UiPathInsurance from "./UiPathInsurance";
-import UiPathHealthcare from "./Uipathhealthacare";
+import UiPathHealthcare from "./UiPathhealthacare";
 import Uipathtelecom from "./Uipathtelecom";
 import Uipathmanufacturing from "./Uipathmanufacturing";
 import UiPathPublicServices from "./UiPathPublicServices";
@@ -31,18 +31,18 @@ export default function UiPathIndustries() {
   const [active, setActive] = useState("bpo");
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4">
         {/* Tabs */}
-        <div className="flex overflow-x-auto space-x-4 border-b pb-2 mb-8">
+        <div className="flex overflow-x-auto space-x-4 border-b border-gray-200 dark:border-gray-700 pb-2 mb-8">
           {industries.map((industry) => (
             <button
               key={industry.id}
               onClick={() => setActive(industry.id)}
-              className={`px-4 py-2 whitespace-nowrap rounded-t-lg font-medium transition ${
+              className={`px-4 py-2 whitespace-nowrap rounded-t-lg font-medium transition-colors duration-300 ${
                 active === industry.id
                   ? "bg-blue-600 text-white shadow"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700"
               }`}
             >
               {industry.label}

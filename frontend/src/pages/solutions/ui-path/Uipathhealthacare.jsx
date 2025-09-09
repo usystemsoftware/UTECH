@@ -4,7 +4,7 @@ import ContactUsButton from "@/custom/ContactUsButton";
 
 export default function UiPathHealthcare() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
       <PageLayout>
         {/* Heading */}
         <div className="text-center mb-16">
@@ -32,7 +32,7 @@ export default function UiPathHealthcare() {
             <img
               src="/assets/solutions/ui-path/healthcare.png"
               alt="UiPath Healthcare Automation"
-              className="max-h-[450px] w-full object-contain rounded-xl shadow-lg"
+              className="max-h-[500px] w-full object-contain rounded-xl shadow-lg"
             />
           </div>
 
@@ -73,9 +73,13 @@ const FeatureItem = ({ icon, title, text }) => (
     </div>
 
     {/* Title */}
-    <h3 className="text-lg md:text-xl font-semibold text-gray-900">{title}</h3>
+    <h3 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
+      {title}
+    </h3>
 
     {/* Text */}
-    <p className="text-gray-600 leading-relaxed text-justify">{text}</p>
+    <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
+      {text}
+    </p>
   </div>
 );

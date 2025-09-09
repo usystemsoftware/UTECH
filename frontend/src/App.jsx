@@ -8,6 +8,7 @@ import { IndustryRoutes } from "@/routes/IndustryRoutes";
 import { ServiceRoutes } from "@/routes/ServiceRoutes";
 import { DefaultRoutes } from "@/routes/DefaultRoutes";
 import { CompanyRoutes } from "@/routes/CompanyRoutes";
+import { PortfolioRoutes } from "@/routes/PortfolioRoutes";
 import DynamicHelmet from "@/custom/DynamicHelmet";
 import CookieConsentBanner from "@/components/layout/CookieConsentBanner";
 import { useAnalytics } from "@/hooks/useAnalytics";
@@ -53,6 +54,11 @@ export default function App() {
 
         {/* company routes */}
         {CompanyRoutes.map(({ path, element }) => (
+          <Route key={path} path={path} element={element} />
+        ))}
+
+         {/* company routes */}
+        {PortfolioRoutes.map(({ path, element }) => (
           <Route key={path} path={path} element={element} />
         ))}
       </Routes>

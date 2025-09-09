@@ -4,7 +4,7 @@ import ContactUsButton from "@/custom/ContactUsButton";
 
 export default function UiPathManufacturing() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
       <PageLayout>
         {/* Heading */}
         <div className="text-center mb-16">
@@ -27,15 +27,14 @@ export default function UiPathManufacturing() {
             />
           </div>
 
-        {/* Center Image */}
-<div className="flex justify-center mt-8 lg:mt-0">
-  <img
-    src="/assets/solutions/ui-path/Inventory.gif"
-    alt="UiPath Manufacturing Automation"
-    className="h-[550px] w-auto object-contain rounded-xl shadow-lg"
-  />
-</div>
-
+          {/* Center Image */}
+          <div className="flex justify-center mt-8 lg:mt-0">
+            <img
+              src="/assets/solutions/ui-path/Inventory.gif"
+              alt="UiPath Manufacturing Automation"
+              className="h-[550px] w-auto object-contain rounded-xl shadow-lg"
+            />
+          </div>
 
           {/* Right Features */}
           <div className="flex flex-col items-center space-y-10 lg:items-center">
@@ -74,9 +73,13 @@ const FeatureItem = ({ icon, title, text }) => (
     </div>
 
     {/* Title */}
-    <h3 className="text-lg md:text-xl font-semibold text-gray-900">{title}</h3>
+    <h3 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-gray-100">
+      {title}
+    </h3>
 
     {/* Text justified */}
-    <p className="text-gray-600 leading-relaxed text-justify">{text}</p>
+    <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
+      {text}
+    </p>
   </div>
 );

@@ -12,8 +12,9 @@ export default function PrivacyPolicy() {
         title="Privacy Policy"
       />
 
-      {/* Privacy Content */}
+      {/* Privacy Content */}                        
       <section className="py-16">
+        
         <PageLayout className="space-y-12">
           <Headline
             title="U Tech Privacy Policy"

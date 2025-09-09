@@ -4,7 +4,7 @@ import ContactUsButton from "@/custom/ContactUsButton";
 
 export default function UiPathFinanceBanking() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
       <PageLayout>
         {/* Heading */}
         <div className="text-center mb-12">
@@ -50,8 +50,16 @@ export default function UiPathFinanceBanking() {
 // Reusable feature block
 const FeatureItem = ({ icon, title, text }) => (
   <div className="flex flex-col items-center text-center space-y-4 px-4">
-    <img src={icon} alt={title} className="w-12 h-12" />
-    <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
-    <p className="text-gray-600 leading-relaxed">{text}</p>
+    <img
+      src={icon}
+      alt={title}
+      className="w-12 h-12"
+    />
+    <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+      {title}
+    </h3>
+    <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-justify">
+      {text}
+    </p>
   </div>
 );

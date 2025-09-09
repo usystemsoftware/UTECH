@@ -111,4 +111,13 @@ export const Navlinks = [
       { label: "Reviews", href: "/company/reviews", icon: "Star" },
     ],
   },
+
+   {
+    title: "Portfolio",
+    items: [
+      { label: "Our Clients", href: "/portfolio/our-client", icon: "Info" },
+      { label: "Our Work", href: "/portfolio/our-work", icon: "Info" },
+     
+    ],
+  },
 ];
