@@ -228,9 +228,9 @@ function Ourclient() {
           src="/assets/portfolio/hrm.gif"
           alt="Custom Integrations"
           className="mx-auto mb-6 h-48 object-contain"
-        />
+        /> 
         <h3 className="text-xl font-semibold text-teal-600 mb-2">
-          CUSTOM INTEGRATIONS & ANALYTICS
+          CUSTOM INTEGRATIONS & ANALYTICSsss
         </h3>
         <p className="text-gray-600 mb-3">Custom HRMS Solutions</p>
         <a
