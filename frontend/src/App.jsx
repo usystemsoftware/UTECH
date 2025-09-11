@@ -14,6 +14,7 @@ import CookieConsentBanner from "@/components/layout/CookieConsentBanner";
 import { useAnalytics } from "@/hooks/useAnalytics";
 import { ScrollToTopButton } from "@/components/ScrollToTop";
 import TawkToChat from "@/components/layout/TawkToChat";
+import { BlogRoutes } from "./routes/BlogRoutes";
 
 export default function App() {
   useAnalytics();
@@ -61,7 +62,17 @@ export default function App() {
         {PortfolioRoutes.map(({ path, element }) => (
           <Route key={path} path={path} element={element} />
         ))}
+
+
+        {/* company routes */}
+        {BlogRoutes.map(({ path, element }) => (
+          <Route key={path} path={path} element={element} />
+        ))}
       </Routes>
+
+
+      
+      
 
       {/* <Chat /> */}
       <TawkToChat />

@@ -120,4 +120,14 @@ export const Navlinks = [
      
     ],
   },
+
+
+   {
+    title: "Blog",
+    items: [
+      { label: "BlogSection", href: "/blog/BlogSection", icon: "Info" },
+     
+     
+    ],
+  },
 ];

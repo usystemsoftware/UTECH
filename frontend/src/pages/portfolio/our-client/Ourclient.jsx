@@ -230,14 +230,15 @@ function Ourclient() {
           className="mx-auto mb-6 h-48 object-contain"
         /> 
         <h3 className="text-xl font-semibold text-teal-600 mb-2">
-          CUSTOM INTEGRATIONS & ANALYTICSsss
+          CUSTOM INTEGRATIONS & ANALYTICS
         </h3>
+      
         <p className="text-gray-600 mb-3">Custom HRMS Solutions</p>
         <a
           href="#"
           className="text-teal-500 font-medium hover:underline"
         >
-          READ CASE STUDY &gt;&gt;
+          READ CASE STUDY
         </a>
       </div>
     </div>
