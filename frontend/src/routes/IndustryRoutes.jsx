@@ -1,5 +1,5 @@
 import Banking from "@/pages/industries/banking/Banking";
-import Aviation from "@/pages/industries/aviation/Aviation";
+import Aviation from "@/pages/industries/Aviation/Aviation";
 import Finance from "@/pages/industries/finance/Finance";
 import RealEstate from "@/pages/industries/real-estate/RealEstate";
 import Construction from "@/pages/industries/construction/Construction";
