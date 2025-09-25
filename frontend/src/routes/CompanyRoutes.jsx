@@ -5,7 +5,7 @@ import LegalPolicy from "@/pages/company/legal-policy/LegalPolicy";
 import PrivacyPolicy from "@/pages/company/privacy-policy/PrivacyPolicy";
 import Sitemap from "@/pages/company/sitemap/Sitemap";
 import About from "@/pages/company/about/About";
-import Event from "@/pages/company/events/Event";
+import Event from "@/pages/company/Events/Event";
 import Refferal from "@/pages/company/refferal/Refferal";
 import Location from "@/pages/company/locations/Location";
 import History from "@/pages/company/history/History";
