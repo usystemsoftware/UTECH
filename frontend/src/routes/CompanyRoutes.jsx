@@ -6,7 +6,7 @@ import PrivacyPolicy from "@/pages/company/privacy-policy/PrivacyPolicy";
 import Sitemap from "@/pages/company/sitemap/Sitemap";
 import About from "@/pages/company/about/About";
 import Event from "@/pages/company/events/Event";
-import Refferal from "@/pages/company/refferal/refferal";
+import Refferal from "@/pages/company/refferal/Refferal";
 import Location from "@/pages/company/locations/Location";
 import History from "@/pages/company/history/History";
 import PeopleAndCulture from "@/pages/company/people-and-culture/PeopleAndCulture";
