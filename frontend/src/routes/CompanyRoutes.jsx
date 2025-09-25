@@ -10,7 +10,7 @@ import Refferal from "@/pages/company/refferal/Refferal";
 import Location from "@/pages/company/locations/Location";
 import History from "@/pages/company/history/History";
 import PeopleAndCulture from "@/pages/company/people-and-culture/PeopleAndCulture";
-import Review from "@/pages/company/reviews/review";
+import Review from "@/pages/company/reviews/Review";
 
 export const CompanyRoutes = [
   { path: "*", element: <Maintenance404 /> },
