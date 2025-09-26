@@ -6,6 +6,16 @@ import { Headline } from "@/custom/Typography";
 import FaqSection from "@/custom/FaqSection";
 import VideoTvPoster from "@/custom/VideoTvPoster";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
+import Img_phone from "./Phone.png";
+import CenterIMG from "../../../../public/assets/Industries/banking/contentBanking.png";
+import BankingPhone from "../../../../public/assets/Industries/banking/BankingPhone.png";
+import softwareSolutions from "../../../../public/assets/Industries/banking/softwareSolutions.png";
+import img10001 from "../../../../public/assets/industries/banking/10001.png";
+import customatm from "../../../../public/assets/industries/banking/customatm.png";
+import customcore from "../../../../public/assets/industries/banking/customcore.png";
+import mobilebrowser from "../../../../public/assets/industries/banking/mobilebrowser.png";
+import payment from "../../../../public/assets/industries/banking/payment.png"
+
 import {
   AIPoweredSolutions,
   BankingACHfeatures,
@@ -42,7 +52,7 @@ export const Banking = () => (
       <FeaturesGridnew
         leftFeatures={BankingSoftwareLeftFeatures}
         rightFeatures={BankingSoftwareRightFeatures}
-        centerImage="/assets/industries/banking/contentBanking.png"
+        centerImage={CenterIMG}
         iconGap="md:gap-26"
       />
 
@@ -64,7 +74,7 @@ export const Banking = () => (
         />
         <img
           loading="lazy"
-          src="/assets/industries/banking/BankingPhone.png"
+          src={BankingPhone}
           alt="Loan Software"
           className="w-42 md:w-57 xl:w-62 mx-auto"
         />
@@ -87,7 +97,7 @@ export const Banking = () => (
       <PageLayout className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <img
           loading="lazy"
-          src="/assets/industries/banking/softwareSolutions.png"
+          src={softwareSolutions}
           alt="Mobile Banking App"
           className="md:w-140 w-130 xl:w-145 2xl:w-155 mx-auto"
         />
@@ -114,7 +124,7 @@ export const Banking = () => (
         />
         <img
           loading="lazy"
-          src="/assets/industries/banking/Phone.png"
+          src={Img_phone}
           alt="Mobile Banking App"
           className="md:w-56 w-42 xl:w-62 2xl:w-64 mx-auto sm:hidden md:block block"
         />
@@ -133,7 +143,7 @@ export const Banking = () => (
       <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center">
         <img
           loading="lazy"
-          src="/assets/industries/banking/10001.png"
+          src={img10001}
           alt="Mobile Banking App"
           className="md:w-130 w-110 2xl:w-145 mx-auto"
         />
@@ -161,7 +171,7 @@ export const Banking = () => (
         <FeaturesList features={BankingAtmFeatures.slice(0, 2)} center />
         <img
           loading="lazy"
-          src="/assets/industries/banking/customatm.png"
+          src={customatm}
           alt="Loan Software"
           className="md:w-64 sm:w-56 w-52 xl:w-68 2xl:w-96 mx-auto"
         />
@@ -183,7 +193,7 @@ export const Banking = () => (
         <div className="hidden md:block">
           <img
             loading="lazy"
-            src="/assets/industries/banking/customcore.png"
+            src={customcore}
             alt="Loan Software"
             className="w-110 xl:w-120 2xl:w-135 mx-auto"
           />
@@ -204,7 +214,7 @@ export const Banking = () => (
         <FeaturesList features={BankingCustomEMVServices.slice(0, 2)} center />
         <img
           loading="lazy"
-          src="/assets/industries/banking/mobilebrowser.png"
+          src={mobilebrowser}
           alt="Loan Software"
           className="sm:w-82 w-72 xl:w-92 2xl:w-120 mx-auto"
         />
@@ -224,7 +234,7 @@ export const Banking = () => (
       <PageLayout className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
         <img
           loading="lazy"
-          src="/assets/industries/banking/payment.png"
+          src={payment}
           alt="Mobile Banking App"
           className="sm:w-52 w-42 xl:w-56 2xl:w-62 mx-auto"
         />

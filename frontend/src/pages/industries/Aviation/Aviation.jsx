@@ -20,12 +20,21 @@ import {
 import ImageNearScreen from "@/custom/ImageNearScreen";
 import VideoTvPoster from "@/custom/VideoTvPoster";
 
+// 🔥 Import all static images from public folder (no require)
+import aviationBanner from "../../../../public/banner/aviation-banner.jpg";
+import desktopComboAviation from "../../../../public/assets/industries/aviation/desktop-combo-aviation.png";
+import flightAwareIntegration from "../../../../public/assets/industries/aviation/flightaware-custom-integration.png";
+import customFlightOps from "../../../../public/assets/industries/aviation/custom-flight-operations-management-software-development.png";
+import sabreTravelGif from "../../../../public/assets/industries/aviation/sabre-travel-network-solutions-gif.gif";
+import mroAviationSoftware from "../../../../public/assets/industries/aviation/mro-aviation-software-developers.png";
+import customDroneSoftware from "../../../../public/assets/industries/aviation/custom-drone-software-development.png";
+
 export default function Aviation() {
   return (
     <>
       {/* Banner */}
       <HeroSection
-        backgroundImage="/banner/aviation-banner.jpg"
+        backgroundImage={aviationBanner}
         title="AVIATION SOFTWARE DEVELOPMENT"
         description="Revolutionize aviation operations with AI-powered solutions for seamless integration and enhanced efficiency."
         buttonText="GET AIRLINE SOFTWARE DEVELOPERS"
@@ -42,7 +51,7 @@ export default function Aviation() {
         <FeaturesGridnew
           leftFeatures={airlineSoftwareServices.slice(0, 2)}
           rightFeatures={airlineSoftwareServices.slice(2, 4)}
-          centerImage="/assets/industries/aviation/desktop-combo-aviation.png"
+          centerImage={desktopComboAviation}
           iconGap="md:gap-32"
         />
       </PageLayout>
@@ -52,7 +61,7 @@ export default function Aviation() {
         <PageLayout className="space-y-8">
           <Headline
             title="AI Solutions for the Airline Industry"
-            description="U Tech's advanced AI solutions revolutionize the airline industry by optimizing revenue management, flight management, predictive maintenance, and more. With cutting-edge technology and industry expertise, our AI-driven systems provide real-time insights, streamline workflows, and ensure regulatory compliance."
+            description="U Tech's advanced AI solutions revolutionize the airline industry by optimizing revenue management, flight management, predictive maintenance, and more."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
             <FeaturesList
@@ -61,7 +70,7 @@ export default function Aviation() {
             />
             <div className="hidden md:block">
               <img
-                src="/assets/industries/aviation/flightaware-custom-integration.png"
+                src={flightAwareIntegration}
                 alt="AI-driven flight management system"
                 loading="lazy"
                 className="w-110 lg:w-135 2xl:w-200 mx-auto"
@@ -83,7 +92,7 @@ export default function Aviation() {
         />
         <ImageNearScreen
           features={airlineOperationsServices}
-          src="/assets/industries/aviation/custom-flight-operations-management-software-development.png"
+          src={customFlightOps}
           imageAlign="right"
           imgClass="2xl:w-145"
         />
@@ -100,10 +109,10 @@ export default function Aviation() {
             description="U Tech provides reservation & ticketing software for airlines, call centers, OTAs, internet booking & ticket vendors, and more."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-            <div delay={0.5} className="md:block hidden">
+            <div className="md:block hidden">
               <img
                 loading="lazy"
-                src="/assets/industries/aviation/sabre-travel-network-solutions-gif.gif"
+                src={sabreTravelGif}
                 alt="Airline reservation system integration"
                 className="w-52 xl:w-58 2xl:w-72 mx-auto"
               />
@@ -147,7 +156,7 @@ export default function Aviation() {
           <FeaturesList features={aviationMroSolutions.slice(0, 2)} center />
           <div>
             <img
-              src="/assets/industries/aviation/mro-aviation-software-developers.png"
+              src={mroAviationSoftware}
               alt="MRO aviation software interface"
               loading="lazy"
               className="md:w-64 w-52 xl:w-72 mx-auto"
@@ -166,7 +175,7 @@ export default function Aviation() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           <div>
             <img
-              src="/assets/industries/aviation/custom-drone-software-development.png"
+              src={customDroneSoftware}
               alt="Drone software for agriculture and construction"
               loading="lazy"
               className="md:w-120 sm:w-96 2xl:w-145 w-72 mx-auto"
@@ -180,7 +189,7 @@ export default function Aviation() {
             </TypographyMuted>
             <div className="flex items-center gap-6 justify-center flex-wrap mt-8">
               {dronePartner?.map((item, index) => (
-                <div key={index} delay={0.5}>
+                <div key={index}>
                   <img
                     loading="lazy"
                     src={`/assets/industries/aviation/drone/${item?.img}.png`}

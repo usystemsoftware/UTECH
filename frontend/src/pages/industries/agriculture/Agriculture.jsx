@@ -24,12 +24,32 @@ import {
   portfolioItems,
   tvpoasterDescription,
 } from "./Data";
+import agriculture_banner from "../../../../public/banner/agriculture-banner.jpg"
+import main_agriculture from "../../../../public/assets/industries/agriculture/main-agriculture.png"
+import land_management_software2 from "../../../../public/assets/industries/agriculture/land-management-software2.png"
+import land_management_software1 from "../../../../public/assets/industries/agriculture/land-management-software1.png"
+import Lazy_migration from "../../../../public/assets/industries/agriculture/dispensary-seed-to-sale-software-development-services1.png"
+import dispensary_seed_to_sale_software_development_services2 from "../../../../public//assets/industries/agriculture/dispensary-seed-to-sale-software-development-services2.png"
+import precision_agriculture_software  from "../../../../public/assets/industries/agriculture/precision-agriculture-software.png"
+import Migration_Planning_Dashboard_dron from "../../../../public/assets/industries/agriculture/agriculture-drone-software-development-services1.png"
+import Migration_Planning_Dashboard_dron2 from "../../../../public/assets/Industries/agriculture/agriculture-drone-software-solutions2.png"
+import Migration1 from "../../../../public/assets/industries/agriculture/food-safety-&-compliance-software-development1.png"
+import Migration2 from "../../../../public/assets/industries/agriculture/food-safety-&-compliance-software-development2.png"
+import Migration3 from "../../../../public/assets/industries/agriculture/aquaculture-software-solutions-laptop1.png"
+import Migration4 from "../../../../public/assets/industries/agriculture/aquaculture-software-solutions-new-graphic.png"
+
+
+
+
+
+
+
 
 export default function Agriculture() {
   return (
     <>
       <HeroSection
-        backgroundImage="/banner/agriculture-banner.jpg"
+        backgroundImage= {agriculture_banner}
         title="AGRICULTURE SOFTWARE DEVELOPMENT"
         description="U Tech’s AI-powered solutions transform agriculture, offering real-time insights and precision for increased yields and sustainable practices."
         buttonText="GET AGTECH SOLUTIONS"
@@ -44,7 +64,7 @@ export default function Agriculture() {
         <FeaturesGridnew
           leftFeatures={agricultureSolutions.slice(0, 5)}
           rightFeatures={agricultureSolutions.slice(5, 10)}
-          centerImage="/assets/industries/agriculture/main-agriculture.png"
+          centerImage={main_agriculture}
         />
       </PageLayout>
 
@@ -70,7 +90,7 @@ export default function Agriculture() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
           <img
             loading="lazy"
-            src="/assets/industries/agriculture/land-management-software2.png"
+            src={land_management_software2}
             alt="Migration Planning Dashboard"
             className="mx-auto w-96 sm:w-135 2xl:w-175"
           />
@@ -78,15 +98,18 @@ export default function Agriculture() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 mt-16 md:grid-cols-3 gap-6 items-center">
-          <FeaturesList features={farmingSolutions.slice(0, 2)} center />
-          <img
-            loading="lazy"
-            src="/assets/industries/agriculture/land-management-software1.png"
-            alt="Mobile Analytics App"
-            className="mx-auto w-42 sm:w-54 2xl:w-58"
-          />
-          <FeaturesList features={farmingSolutions.slice(2, 4)} center />
-        </div>
+  <FeaturesList features={farmingSolutions.slice(0, 2)} center />
+  
+  <img
+    loading="lazy"
+    src={land_management_software1}
+    alt="Mobile Analytics App"
+    className="mx-auto w-42 sm:w-54 2xl:w-58"
+  />
+  
+  <FeaturesList features={farmingSolutions.slice(2, 4)} center />
+</div>
+
 
         <ContactUsButton variant="hover">
           GET LAND MGMT SOFTWARE DEVELOPERS
@@ -109,7 +132,7 @@ export default function Agriculture() {
             </div>
             <img
               loading="lazy"
-              src="/assets//industries/agriculture/dispensary-seed-to-sale-software-development-services1.png"
+              src={Lazy_migration}
               alt="Migration Planning Dashboard"
               className="mx-auto w-42 sm:w-52 md:w-62 order-1 sm:order-2"
             />
@@ -118,7 +141,7 @@ export default function Agriculture() {
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             <img
               loading="lazy"
-              src="/assets//industries/agriculture/dispensary-seed-to-sale-software-development-services2.png"
+              src={dispensary_seed_to_sale_software_development_services2}
               alt="Migration Planning Dashboard"
               className="mx-auto w-42 sm:w-52 md:w-62"
             />
@@ -140,7 +163,7 @@ export default function Agriculture() {
         />
         <ImageNearScreen
           features={farmMonitoringSolutions}
-          src="/assets/industries/agriculture/precision-agriculture-software.png"
+          src={precision_agriculture_software}
           imageAlign="left"
         />
         <ContactUsButton variant="hover">
@@ -164,7 +187,7 @@ export default function Agriculture() {
             </div>
             <img
               loading="lazy"
-              src="/assets//industries/agriculture/agriculture-drone-software-development-services1.png"
+              src={Migration_Planning_Dashboard_dron}
               alt="Migration Planning Dashboard"
               className="mx-auto w-42 sm:w-52 md:w-62 order-1 sm:order-2"
             />
@@ -173,7 +196,7 @@ export default function Agriculture() {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
             <img
               loading="lazy"
-              src="/assets//industries/agriculture/agriculture-drone-software-solutions2.png"
+              src={Migration_Planning_Dashboard_dron2}
               alt="Migration Planning Dashboard"
               className="mx-auto w-42 sm:w-62 block sm:hidden md:block"
             />
@@ -207,7 +230,7 @@ export default function Agriculture() {
             </div>
             <img
               loading="lazy"
-              src="/assets//industries/agriculture/food-safety-&-compliance-software-development1.png"
+              src={Migration1}
               alt="Migration Planning Dashboard"
               className="mx-auto w-96 sm:w-145 2xl:w-175 order-1 md:order-2"
             />
@@ -216,7 +239,7 @@ export default function Agriculture() {
           <div className="grid grid-cols-1 md:grid-cols-2 mt-12 items-center gap-6">
             <img
               loading="lazy"
-              src="/assets//industries/agriculture/food-safety-&-compliance-software-development2.png"
+              src={Migration2}
               alt="Migration Planning Dashboard"
               className="mx-auto w-96 sm:w-155 2xl:w-185"
             />
@@ -246,7 +269,7 @@ export default function Agriculture() {
           </div>
           <img
             loading="lazy"
-            src="/assets//industries/agriculture/aquaculture-software-solutions-laptop1.png"
+            src={Migration3}
             alt="Migration Planning Dashboard"
             className="mx-auto w-96 sm:w-145 2xl:w-185 order-1 sm:order-2"
           />
@@ -256,7 +279,7 @@ export default function Agriculture() {
       <section className="text-center pb-16">
         <ImageNearScreen
           features={aquacultureSolutions.slice(3, 8)}
-          src="/assets/industries/agriculture/aquaculture-software-solutions-new-graphic.png"
+          src={Migration4}
           imageAlign="left"
           imgClass="2xl:w-135"
         />
