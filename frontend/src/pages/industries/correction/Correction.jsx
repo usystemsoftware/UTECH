@@ -22,12 +22,11 @@ import jail_mgmt_systems from "../../../../public/assets/Industries/correction/j
 import workflow_mgmt from "../../../../public/assets/Industries/correction/workflow-mgmt.png";
 import logistics_software_developers from "../../../../public/assets/Industries/correction/logistics-software-developers.png";
 import building_information_modeling_solutions_cut from "../../../../public/assets/Industries/construction/building-information-modeling-solutions-cut.png";
-import task_laptop from "../../../../public/assets/industries/correction/task-laptop.png";
-import immate_tracking_mobile from "../../../../public/assets/industries/correction/immate-tracking-mobile.png"
-import jail_security_solutions from "../../../../public/assets/industries/correction/jail-security-solutions.png"
-import jail_management_solutions_laptop from "../../../../public/assets/industries/correction/jail-management-solutions-laptop.png"
-import hrms_solutions from "../../../../public//assets/industries/correction/hrms-solutions.png"
-
+import task_laptop from "../../../../public/assets/Industries/correction/task-laptop.png";
+import immate_tracking_mobile from "../../../../public/assets/Industries/correction/immate-tracking-mobile.png";
+import jail_security_solutions from "../../../../public/assets/Industries/correction/jail-security-solutions.png";
+import jail_management_solutions_laptop from "../../../../public/assets/Industries/correction/jail-management-solutions-laptop.png";
+import hrms_solutions from "../../../../public//assets/Industries/correction/hrms-solutions.png";
 
 export default function Correction() {
   return (
