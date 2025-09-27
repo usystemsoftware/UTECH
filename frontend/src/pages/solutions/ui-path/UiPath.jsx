@@ -4,7 +4,7 @@ import PageLayout from "@/custom/PageLayout";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import { Headline } from "@/custom/Typography";
 
-import UiPathBPO from "./UiPathBPO";
+import UiPathBpo from "./UiPathBpo";
 import UiPathBanking from "./UiPathBanking";
 import UiPathInsurance from "./UiPathInsurance";
 import UiPathHealthcare from "./UiPathHealthcare";
@@ -64,17 +64,17 @@ export default function UiPath() {
       </PageLayout>
 
       {/* === INDUSTRIES === */}
-      {/* Uncomment these if you want to show them individually */}
-      
-      <UiPathBPO />
+      {/* Uncomment these if you want them individually */}
+      {/*
+      <UiPathBpo />
       <UiPathBanking />
       <UiPathInsurance />
       <UiPathHealthcare />
       <UiPathTelecom />
       <UiPathManufacturing />
       <UiPathPublicServices />
-      <UiPathRetail /> 
-     
+      <UiPathRetail />
+      */}
       <UiPathIndustries />
 
       {/* === FAQ SECTION === */}
