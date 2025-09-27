@@ -3,14 +3,16 @@ import ContactUsButton from "@/custom/ContactUsButton";
 import PageLayout from "@/custom/PageLayout";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import { Headline } from "@/custom/Typography";
-import UiPathBPO from "./Uipathbpo";
-import Uipathbanking from "./Uipathbanking";
+
+import UiPathBPO from "./UiPathBPO";
+import UiPathBanking from "./UiPathBanking";
 import UiPathInsurance from "./UiPathInsurance";
-import UiPathHealthcare from "./Uipathhealthacare";
-import Uipathtelecom from "./Uipathtelecom";
-import Uipathmanufacturing from "./Uipathmanufacturing";
+import UiPathHealthcare from "./UiPathHealthcare";
+import UiPathTelecom from "./UiPathTelecom";
+import UiPathManufacturing from "./UiPathManufacturing";
 import UiPathPublicServices from "./UiPathPublicServices";
 import UiPathRetail from "./UiPathRetail";
+
 import FaqSection from "@/custom/FaqSection";
 
 // Import all data
@@ -20,16 +22,16 @@ import UiPathIndustries from "./UiPathIndustries";
 export default function UiPath() {
   return (
     <div>
-      {/* Hero */}
+      {/* === HERO === */}
       <HeroSection
         backgroundImage="/banner/ui-path-banner.jpeg"
         title="UiPath Consulting"
         description="Hire UiPath Implementation Partners to Unlock AI-Powered Automation"
         buttonText="HIRE UIPATH CONSULTANTS"
-        partnerLogo="/assets//solutions/ui-path/partner.png"
+        partnerLogo="/assets/solutions/ui-path/partner.png"
       />
 
-      {/* Section 1 */}
+      {/* === SECTION 1 === */}
       <PageLayout className="py-16 space-y-10 text-center">
         <Headline
           title="Get Custom UiPath Services from Certified UiPath Partners"
@@ -39,7 +41,7 @@ export default function UiPath() {
         <ContactUsButton variant="hover">HIRE SAP PARTNERS</ContactUsButton>
       </PageLayout>
 
-      {/* Section 2 */}
+      {/* === SECTION 2 === */}
       <section className="py-16 bg-secondary">
         <PageLayout className="space-y-10 text-center">
           <Headline
@@ -51,7 +53,7 @@ export default function UiPath() {
         </PageLayout>
       </section>
 
-      {/* Section 3 */}
+      {/* === SECTION 3 === */}
       <PageLayout className="py-16 space-y-10 text-center">
         <Headline
           title="UiPath Automation Services"
@@ -60,26 +62,30 @@ export default function UiPath() {
         <FeaturesList grid3 center features={uipathAutomation} />
         <ContactUsButton variant="hover">GET UIPATH AUTOMATION</ContactUsButton>
       </PageLayout>
-      {/* <UiPathBPO />
-      <Uipathbanking/>
-      <UiPathInsurance/>
-      <UiPathHealthcare/>
-      <Uipathtelecom/>
-      <Uipathmanufacturing/>
-      <UiPathPublicServices/>
-      <UiPathRetail/> */}
-      <UiPathIndustries />
-      
-        {/* === FAQ SECTION === */}
-              <div className="py-16">
-                <FaqSection faqs={uipathFaq} title="FAQ's About uipath Services" />
-              </div>
-</div>
 
+      {/* === INDUSTRIES === */}
+      {/* Uncomment these if you want to show them individually */}
+      {/* 
+      <UiPathBPO />
+      <UiPathBanking />
+      <UiPathInsurance />
+      <UiPathHealthcare />
+      <UiPathTelecom />
+      <UiPathManufacturing />
+      <UiPathPublicServices />
+      <UiPathRetail /> 
+      */}
+      <UiPathIndustries />
+
+      {/* === FAQ SECTION === */}
+      <div className="py-16">
+        <FaqSection faqs={uipathFaq} title="FAQ's About UiPath Services" />
+      </div>
+    </div>
   );
 }
 
-// Helper Components
+// === HELPER COMPONENT ===
 const FeatureItem = ({ icon, title, text }) => (
   <div className="flex items-start space-x-4">
     <img src={icon} alt={title} className="w-12 h-12" />
