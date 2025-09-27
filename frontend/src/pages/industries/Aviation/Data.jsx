@@ -1,23 +1,23 @@
 // -------------------- ICON IMPORTS --------------------
-import icon10001 from "../../../../public/assets/industries/aviation/icons/10001.svg";
-import icon10002 from "../../../../public/assets/industries/aviation/icons/10002.svg";
-import icon10003 from "../../../../public/assets/industries/aviation/icons/10003.svg";
-import icon10004 from "../../../../public/assets/industries/aviation/icons/10004.svg";
-import icon10005 from "../../../../public/assets/industries/aviation/icons/10005.svg";
-import icon10006 from "../../../../public/assets/industries/aviation/icons/10006.svg";
+import icon10001 from "../../../../public/assets/Industries/aviation/icons/10001.svg";
+import icon10002 from "../../../../public/assets/Industries/aviation/icons/10002.svg";
+import icon10003 from "../../../../public/assets/Industries/aviation/icons/10003.svg";
+import icon10004 from "../../../../public/assets/Industries/aviation/icons/10004.svg";
+import icon10005 from "../../../../public/assets/Industries/aviation/icons/10005.svg";
+import icon10006 from "../../../../public/assets/Industries/aviation/icons/10006.svg";
 
 // -------------------- IMAGE IMPORTS --------------------
-import healthcareBanner from "../../../../public/assets/industries/healthcare/get-hl7-solutions.png";
+import healthcareBanner from "../../../../public/assets/Industries/healthcare/get-hl7-solutions.png";
 
-import amadeusLogo from "../../../../public/assets/industries/aviation/airline/amadeus.png";
-import flightslogicLogo from "../../../../public/assets/industries/aviation/airline/flightslogic.png";
-import galileoLogo from "../../../../public/assets/industries/aviation/airline/galileo.png";
-import sabreLogo from "../../../../public/assets/industries/aviation/airline/sabre.png";
+import amadeusLogo from "../../../../public/assets/Industries/aviation/airline/amadeus.png";
+import flightslogicLogo from "../../../../public/assets/Industries/aviation/airline/flightslogic.png";
+import galileoLogo from "../../../../public/assets/Industries/aviation/airline/galileo.png";
+import sabreLogo from "../../../../public/assets/Industries/aviation/airline/sabre.png";
 
-import arcgisLogo from "../../../../public/assets/industries/aviation/drone/arcgis.png";
-import dronedeployLogo from "../../../../public/assets/industries/aviation/drone/dronedeploy.png";
-import flytbaseLogo from "../../../../public/assets/industries/aviation/drone/flytbase.png";
-import pix4dmapperLogo from "../../../../public/assets/industries/aviation/drone/pix4dmapper.png";
+import arcgisLogo from "../../../../public/assets/Industries/aviation/drone/arcgis.png";
+import dronedeployLogo from "../../../../public/assets/Industries/aviation/drone/dronedeploy.png";
+import flytbaseLogo from "../../../../public/assets/Industries/aviation/drone/flytbase.png";
+import pix4dmapperLogo from "../../../../public/assets/Industries/aviation/drone/pix4dmapper.png";
 
 // -------------------- EXPORT DATA --------------------
 

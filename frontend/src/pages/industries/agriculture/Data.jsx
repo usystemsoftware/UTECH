@@ -1,22 +1,22 @@
 // 🌾 Agriculture Icons
-import icon1 from "../../../../public/assets/industries/agriculture/icons/1.svg";
-import icon2 from "../../../../public/assets/industries/agriculture/icons/2.svg";
-import icon3 from "../../../../public/assets/industries/agriculture/icons/3.svg";
-import icon4 from "../../../../public/assets/industries/agriculture/icons/4.svg";
-import icon5 from "../../../../public/assets/industries/agriculture/icons/5.svg";
-import icon6 from "../../../../public/assets/industries/agriculture/icons/6.svg";
-import icon7 from "../../../../public/assets/industries/agriculture/icons/7.svg";
-import icon8 from "../../../../public/assets/industries/agriculture/icons/8.svg";
-import icon9 from "../../../../public/assets/industries/agriculture/icons/9.svg";
-import icon10 from "../../../../public/assets/industries/agriculture/icons/10.svg";
+import icon1 from "../../../../public/assets/Industries/agriculture/icons/1.svg";
+import icon2 from "../../../../public/assets/Industries/agriculture/icons/2.svg";
+import icon3 from "../../../../public/assets/Industries/agriculture/icons/3.svg";
+import icon4 from "../../../../public/assets/Industries/agriculture/icons/4.svg";
+import icon5 from "../../../../public/assets/Industries/agriculture/icons/5.svg";
+import icon6 from "../../../../public/assets/Industries/agriculture/icons/6.svg";
+import icon7 from "../../../../public/assets/Industries/agriculture/icons/7.svg";
+import icon8 from "../../../../public/assets/Industries/agriculture/icons/8.svg";
+import icon9 from "../../../../public/assets/Industries/agriculture/icons/9.svg";
+import icon10 from "../../../../public/assets/Industries/agriculture/icons/10.svg";
 
 // 🌾 Agriculture Portfolio & Extra Images
 import portfolio1 from "../../../../public/assets/solutions/document-management/6.jpeg";
-import portfolio2 from "../../../../public/assets/industries/agriculture/5.jpeg";
-import portfolio3 from "../../../../public/assets/industries/agriculture/4.jpeg";
-import portfolio4 from "../../../../public/assets/industries/agriculture/3.jpeg";
-import portfolio5 from "../../../../public/assets/industries/agriculture/2.jpeg";
-import portfolio6 from "../../../../public/assets/industries/agriculture/1.jpeg";
+import portfolio2 from "../../../../public/assets/Industries/agriculture/5.jpeg";
+import portfolio3 from "../../../../public/assets/Industries/agriculture/4.jpeg";
+import portfolio4 from "../../../../public/assets/Industries/agriculture/3.jpeg";
+import portfolio5 from "../../../../public/assets/Industries/agriculture/2.jpeg";
+import portfolio6 from "../../../../public/assets/Industries/agriculture/1.jpeg";
 
 // Background + Special Image
 import tvPosterImg from "../../../../public/assets/industries/agriculture/monitor-txt-bubles-and-background-agriculture-crop.png";

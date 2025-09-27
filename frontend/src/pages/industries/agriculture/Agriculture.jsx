@@ -25,18 +25,18 @@ import {
   tvpoasterDescription,
 } from "./Data";
 import agriculture_banner from "../../../../public/banner/agriculture-banner.jpg"
-import main_agriculture from "../../../../public/assets/industries/agriculture/main-agriculture.png"
-import land_management_software2 from "../../../../public/assets/industries/agriculture/land-management-software2.png"
-import land_management_software1 from "../../../../public/assets/industries/agriculture/land-management-software1.png"
-import Lazy_migration from "../../../../public/assets/industries/agriculture/dispensary-seed-to-sale-software-development-services1.png"
-import dispensary_seed_to_sale_software_development_services2 from "../../../../public//assets/industries/agriculture/dispensary-seed-to-sale-software-development-services2.png"
-import precision_agriculture_software  from "../../../../public/assets/industries/agriculture/precision-agriculture-software.png"
-import Migration_Planning_Dashboard_dron from "../../../../public/assets/industries/agriculture/agriculture-drone-software-development-services1.png"
+import main_agriculture from "../../../../public/assets/Industries/agriculture/main-agriculture.png"
+import land_management_software2 from "../../../../public/assets/Industries/agriculture/land-management-software2.png"
+import land_management_software1 from "../../../../public/assets/Industries/agriculture/land-management-software1.png"
+import Lazy_migration from "../../../../public/assets/Industries/agriculture/dispensary-seed-to-sale-software-development-services1.png"
+import dispensary_seed_to_sale_software_development_services2 from "../../../../public//assets/Industries/agriculture/dispensary-seed-to-sale-software-development-services2.png"
+import precision_agriculture_software  from "../../../../public/assets/Industries/agriculture/precision-agriculture-software.png"
+import Migration_Planning_Dashboard_dron from "../../../../public/assets/Industries/agriculture/agriculture-drone-software-development-services1.png"
 import Migration_Planning_Dashboard_dron2 from "../../../../public/assets/Industries/agriculture/agriculture-drone-software-solutions2.png"
-import Migration1 from "../../../../public/assets/industries/agriculture/food-safety-&-compliance-software-development1.png"
-import Migration2 from "../../../../public/assets/industries/agriculture/food-safety-&-compliance-software-development2.png"
-import Migration3 from "../../../../public/assets/industries/agriculture/aquaculture-software-solutions-laptop1.png"
-import Migration4 from "../../../../public/assets/industries/agriculture/aquaculture-software-solutions-new-graphic.png"
+import Migration1 from "../../../../public/assets/Industries/agriculture/food-safety-&-compliance-software-development1.png"
+import Migration2 from "../../../../public/assets/Industries/agriculture/food-safety-&-compliance-software-development2.png"
+import Migration3 from "../../../../public/assets/Industries/agriculture/aquaculture-software-solutions-laptop1.png"
+import Migration4 from "../../../../public/assets/Industries/agriculture/aquaculture-software-solutions-new-graphic.png"
 
 
 

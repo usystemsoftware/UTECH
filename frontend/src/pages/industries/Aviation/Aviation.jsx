@@ -22,12 +22,12 @@ import VideoTvPoster from "@/custom/VideoTvPoster";
 
 // 🔥 Import all static images from public folder (no require)
 import aviationBanner from "../../../../public/banner/aviation-banner.jpg";
-import desktopComboAviation from "../../../../public/assets/industries/aviation/desktop-combo-aviation.png";
-import flightAwareIntegration from "../../../../public/assets/industries/aviation/flightaware-custom-integration.png";
-import customFlightOps from "../../../../public/assets/industries/aviation/custom-flight-operations-management-software-development.png";
-import sabreTravelGif from "../../../../public/assets/industries/aviation/sabre-travel-network-solutions-gif.gif";
-import mroAviationSoftware from "../../../../public/assets/industries/aviation/mro-aviation-software-developers.png";
-import customDroneSoftware from "../../../../public/assets/industries/aviation/custom-drone-software-development.png";
+import desktopComboAviation from "../../../../public/assets/Industries/aviation/desktop-combo-aviation.png";
+import flightAwareIntegration from "../../../../public/assets/Industries/aviation/flightaware-custom-integration.png";
+import customFlightOps from "../../../../public/assets/Industries/aviation/custom-flight-operations-management-software-development.png";
+import sabreTravelGif from "../../../../public/assets/Industries/aviation/sabre-travel-network-solutions-gif.gif";
+import mroAviationSoftware from "../../../../public/assets/Industries/aviation/mro-aviation-software-developers.png";
+import customDroneSoftware from "../../../../public/assets/Industries/aviation/custom-drone-software-development.png";
 
 export default function Aviation() {
   return (
