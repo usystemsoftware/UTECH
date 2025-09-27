@@ -10,11 +10,11 @@ import Img_phone from "./Phone.png";
 import CenterIMG from "../../../../public/assets/Industries/banking/contentBanking.png";
 import BankingPhone from "../../../../public/assets/Industries/banking/BankingPhone.png";
 import softwareSolutions from "../../../../public/assets/Industries/banking/softwareSolutions.png";
-import img10001 from "../../../../public/assets/industries/banking/10001.png";
-import customatm from "../../../../public/assets/industries/banking/customatm.png";
-import customcore from "../../../../public/assets/industries/banking/customcore.png";
-import mobilebrowser from "../../../../public/assets/industries/banking/mobilebrowser.png";
-import payment from "../../../../public/assets/industries/banking/payment.png"
+import img10001 from "../../../../public/assets/Industries/banking/10001.png";
+import customatm from "../../../../public/assets/Industries/banking/customatm.png";
+import customcore from "../../../../public/assets/Industries/banking/customcore.png";
+import mobilebrowser from "../../../../public/assets/Industries/banking/mobilebrowser.png";
+import payment from "../../../../public/assets/Industries/banking/payment.png"
 
 import {
   AIPoweredSolutions,
