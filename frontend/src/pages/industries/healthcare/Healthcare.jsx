@@ -51,7 +51,7 @@ export default function Healthcare() {
           <FeaturesGridnew
             leftFeatures={healthcareSoftwareFeatures.slice(0, 7)}
             rightFeatures={healthcareSoftwareFeatures.slice(7, 14)}
-            centerImage="/assets/industries/healthcare/desktop-combo-healthcare.png"
+            centerImage="/assets/Industries/healthcare/desktop-combo-healthcare.png"
             iconSize={38}
           />
         </PageLayout>
@@ -89,7 +89,7 @@ export default function Healthcare() {
           {/* Center Animation */}
           <img
             loading="lazy"
-            src="/assets/industries/healthcare/industry-leadin-telehealth.png"
+            src="/assets/Industries/healthcare/industry-leadin-telehealth.png"
             alt="Mobile Analytics App"
             className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto block sm:hidden md:block"
           />
@@ -109,7 +109,7 @@ export default function Healthcare() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <img
               loading="lazy"
-              src="/assets/industries/healthcare/electronic-medical-records-with-laptop.png"
+              src="/assets/Industries/healthcare/electronic-medical-records-with-laptop.png"
               alt="Portfolio"
               className="w-135 xl:w-145 2xl:w-165 mx-auto"
             />
@@ -137,7 +137,7 @@ export default function Healthcare() {
           {/* Center Animation */}
           <img
             loading="lazy"
-            src="/assets/industries/healthcare/cellphone.png"
+            src="/assets/Industries/healthcare/cellphone.png"
             alt="Mobile Analytics App"
             className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto block sm:hidden md:block"
           />
@@ -161,7 +161,7 @@ export default function Healthcare() {
             <FeaturesList features={healthInformation} iconAlign="horizontal" />
             <img
               loading="lazy"
-              src="/assets/industries/healthcare/healthInformationExchange.png"
+              src="/assets/Industries/healthcare/healthInformationExchange.png"
               alt="Portfolio"
               className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto"
             />
@@ -179,7 +179,7 @@ export default function Healthcare() {
         />
         <ImageNearScreen
           features={dicomFeatures}
-          src="/assets/industries/construction/building-information-modeling-solutions-cut.png"
+          src="/assets/Industries/construction/building-information-modeling-solutions-cut.png"
           imgClass="w-135 xl:w-145 2xl:w-165"
         />
 
@@ -200,7 +200,7 @@ export default function Healthcare() {
             <FeaturesList features={limsFeatures} iconAlign="horizontal" />
             <img
               loading="lazy"
-              src="/assets/industries/healthcare/hl7-emr-ehr-software-integrations.png"
+              src="/assets/Industries/healthcare/hl7-emr-ehr-software-integrations.png"
               alt="Portfolio"
               className="w-72 sm:w-105 xl:w-115 2xl:w-130 mx-auto"
             />
@@ -220,7 +220,7 @@ export default function Healthcare() {
           <FeaturesList features={pharmacyFeatures} center grid />
           <img
             loading="lazy"
-            src="/assets/industries/healthcare/cell-phone-animation.gif"
+            src="/assets/Industries/healthcare/cell-phone-animation.gif"
             alt="Portfolio"
             className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto block sm:hidden md:block"
           />
@@ -240,7 +240,7 @@ export default function Healthcare() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <img
               loading="lazy"
-              src="/assets/industries/healthcare/laptop.png"
+              src="/assets/Industries/healthcare/laptop.png"
               alt="Portfolio"
               className="w-135 xl:w-145 2xl:w-165 mx-auto"
             />
@@ -265,7 +265,7 @@ export default function Healthcare() {
           {/* Center Animation */}
           <img
             loading="lazy"
-            src="/assets/industries/healthcare/custom-hl7-interface-software-solutions.png"
+            src="/assets/Industries/healthcare/custom-hl7-interface-software-solutions.png"
             alt="Mobile Analytics App"
             className="w-54 sm:w-64 xl:w-68 2xl:w-72 mx-auto block sm:hidden md:block"
           />
@@ -289,7 +289,7 @@ export default function Healthcare() {
             <FeaturesList features={rcmFeatures} iconAlign="horizontal" />
             <img
               loading="lazy"
-              src="/assets/industries/healthcare/hl7-fhir-interface-software-development.png"
+              src="/assets/Industries/healthcare/hl7-fhir-interface-software-development.png"
               alt="Portfolio"
               className="w-135 xl:w-145 2xl:w-165 mx-auto"
             />
@@ -308,7 +308,7 @@ export default function Healthcare() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
           <img
             loading="lazy"
-            src="/assets/industries/healthcare/hl7-fhir-interface-software-development.png"
+            src="/assets/Industries/healthcare/hl7-fhir-interface-software-development.png"
             alt="Portfolio"
             className="w-135 xl:w-145 2xl:w-165 mx-auto"
           />
@@ -345,7 +345,7 @@ export default function Healthcare() {
         </div>
         <img
           loading="lazy"
-          src="/assets/industries/healthcare/get-hl7-solutions.png"
+          src="/assets/Industries/healthcare/get-hl7-solutions.png"
           alt="Portfolio"
           className="w-135 xl:w-175 2xl:w-200 mx-auto"
         />
@@ -361,7 +361,7 @@ export default function Healthcare() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center">
             <img
               loading="lazy"
-              src="/assets/industries/healthcare/voice-recognition.gif"
+              src="/assets/Industries/healthcare/voice-recognition.gif"
               alt="Portfolio"
               className="w-42 sm:w-48 xl:w-54 2xl:w-58 mx-auto"
             />
@@ -391,7 +391,7 @@ export default function Healthcare() {
           {/* Center Animation */}
           <img
             loading="lazy"
-            src="/assets/industries/healthcare/veterinary-practice-management-software-solutions.png"
+            src="/assets/Industries/healthcare/veterinary-practice-management-software-solutions.png"
             alt="Mobile Analytics App"
             className="w-42 sm:w-52 xl:w-54 2xl:w-58 mx-auto"
           />

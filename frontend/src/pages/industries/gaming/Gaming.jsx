@@ -45,7 +45,7 @@ const Gaming = () => (
       <FeaturesGridnew
         leftFeatures={gamingSoftwareLeftFeatures}
         rightFeatures={gamingSoftwareRightFeatures}
-        centerImage="/assets/industries/gaming/combo.png"
+        centerImage="/assets/Industries/gaming/combo.png"
         iconSize={38}
       />
     </PageLayout>
@@ -70,7 +70,7 @@ const Gaming = () => (
       <FeaturesList
         features={gamingLoanServicingfeatures}
         iconSize={38}
-        image="/assets/industries/gaming/services.png"
+        image="/assets/Industries/gaming/services.png"
         imageClass="w-135 2xl:w-145 mx-auto"
         grid
         center
@@ -112,7 +112,7 @@ const Gaming = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
         <img
           loading="lazy"
-          src="/assets/industries/gaming/development.png"
+          src="/assets/Industries/gaming/development.png"
           alt="Migration Planning Dashboard"
           className="mx-auto w-86 sm:w-110 md:w-120 2xl:w-125 "
         />
@@ -134,7 +134,7 @@ const Gaming = () => (
           <FeaturesList features={gamingLoanServicing} grid center />
           <img
             loading="lazy"
-            src="/assets/industries/gaming/igaming.png"
+            src="/assets/Industries/gaming/igaming.png"
             alt="Migration Planning Dashboard"
             className="mx-auto w-42 sm:w-62 md:w-70 block sm:hidden md:block"
           />
@@ -154,7 +154,7 @@ const Gaming = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
         <img
           loading="lazy"
-          src="/assets/industries/gaming/social.png"
+          src="/assets/Industries/gaming/social.png"
           alt="Migration Planning Dashboard"
           className="mx-auto w-84 sm:w-110 xl:w-135 2xl:w-145"
         />
@@ -176,7 +176,7 @@ const Gaming = () => (
           <FeaturesList features={gameFeaturestitle} iconAlign="horizontal" />
           <img
             loading="lazy"
-            src="/assets/industries/gaming/animation.png"
+            src="/assets/Industries/gaming/animation.png"
             alt="Migration Planning Dashboard"
             className="mx-auto w-135 md:w-155 xl:w-166 2xl:w-175"
           />
@@ -195,7 +195,7 @@ const Gaming = () => (
       />
       <ImageNearScreen
         features={gamingconceptServicing}
-        src="/assets/industries/gaming/gameart.png"
+        src="/assets/Industries/gaming/gameart.png"
         imageAlign="left"
         imgClass="xl:w-146 2xl:w-165"
       />
@@ -215,7 +215,7 @@ const Gaming = () => (
           <FeaturesList features={gameFantasy} iconAlign="horizontal" />
           <img
             loading="lazy"
-            src="/assets/industries/gaming/engagement.png"
+            src="/assets/Industries/gaming/engagement.png"
             alt="Migration Planning Dashboard"
             className="mx-auto w-64 sm:w-72 md:w-90"
           />
@@ -230,7 +230,7 @@ const Gaming = () => (
     <PageLayout className="py-16 text-center space-y-8">
       <Headline
         title="AI-Powered Gaming Solutions"
-        description="With gaming being one of the most lucrative industries in today’s world, Artificial Intelligence (AI) in games has become an increasingly important pillar of game development. Our experts have industry-specific technical experience for cutting-edge AI game development. Artificial Intelligence stands as an innovative tool that can level up the gaming experience."
+        description="With gaming being one of the most lucrative Industries in today’s world, Artificial Intelligence (AI) in games has become an increasingly important pillar of game development. Our experts have industry-specific technical experience for cutting-edge AI game development. Artificial Intelligence stands as an innovative tool that can level up the gaming experience."
       />
       <FeaturesList features={gammingSolutiondeveloper} grid3 center />
       <ContactUsButton variant="hover">

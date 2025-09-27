@@ -40,7 +40,7 @@ export default function HCM() {
         <FeaturesGridnew
           leftFeatures={additionalLinks.slice(0, 5)}
           rightFeatures={additionalLinks.slice(5, 10)}
-          centerImage="/assets/industries/hcm/desktop-combo-hcm.png"
+          centerImage="/assets/Industries/hcm/desktop-combo-hcm.png"
           iconSize={38}
         />
       </PageLayout>
@@ -84,7 +84,7 @@ export default function HCM() {
                 <div key={index}>
                   <img
                     loading="lazy"
-                    src={`/assets/industries/hcm/hrms-solutions/${item?.img}.png`}
+                    src={`/assets/Industries/hcm/hrms-solutions/${item?.img}.png`}
                     alt={item?.img}
                     className="w-16 h-16 object-contain transition-transform duration-300 hover:scale-110 mx-auto"
                   />
@@ -96,7 +96,7 @@ export default function HCM() {
           {/* Right-side Image */}
           <div>
             <img
-              src="/assets/industries/hcm/U-Techs-workforce-management-software-development-services.png"
+              src="/assets/Industries/hcm/U-Techs-workforce-management-software-development-services.png"
               alt="Accounting Dashboard"
               loading="lazy"
               className="w-86 sm:w-120 xl:w-130 2xl:w-135 mx-auto"
@@ -125,7 +125,7 @@ export default function HCM() {
             {/* Image */}
             <img
               loading="lazy"
-              src="/assets/industries/hcm/legal-management-workflow-automation.png"
+              src="/assets/Industries/hcm/legal-management-workflow-automation.png"
               alt="Portfolio"
               className="w-42 sm:w-52 xl:w-56 2xl:w-62 mx-auto"
             />
@@ -144,7 +144,7 @@ export default function HCM() {
           {/* Left Image */}
           <img
             loading="lazy"
-            src="/assets/industries/hcm/background-screening-software-solutions.png"
+            src="/assets/Industries/hcm/background-screening-software-solutions.png"
             alt="Portfolio"
             className="sm:w-125 xl:w-145 2xl:w-165 w-96 mx-auto"
           />

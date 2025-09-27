@@ -50,7 +50,7 @@ export default function ELearningEducation() {
         <FeaturesGridnew
           leftFeatures={learningManagementSolutions.slice(0, 2)}
           rightFeatures={learningManagementSolutions.slice(2, 4)}
-          centerImage="/assets/industries/e-learning-education/personalized-e-learning-software-development-solutions-desktop-combo-elearning-software.png"
+          centerImage="/assets/Industries/e-learning-education/personalized-e-learning-software-development-solutions-desktop-combo-elearning-software.png"
         />
       </PageLayout>
 
@@ -78,7 +78,7 @@ export default function ELearningEducation() {
           {/* Image */}
           <img
             loading="lazy"
-            src="/assets/industries/e-learning-education/medical-video-conferencing-software.png"
+            src="/assets/Industries/e-learning-education/medical-video-conferencing-software.png"
             alt="Portfolio"
             className="w-135 xl:w-145 2xl:w-165 mx-auto"
           />
@@ -135,7 +135,7 @@ export default function ELearningEducation() {
           </div>
           <img
             loading="lazy"
-            src="/assets/industries/e-learning-education/get-lms-solutions-mobile-ai2.png"
+            src="/assets/Industries/e-learning-education/get-lms-solutions-mobile-ai2.png"
             alt="Portfolio"
             className="w-42 sm:w-52 xl:w-56 2xl:w-62 mx-auto order-1 md:order-2"
           />
@@ -145,7 +145,7 @@ export default function ELearningEducation() {
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-8 ">
           <img
             loading="lazy"
-            src="/assets/industries/e-learning-education/gamification-of-content.png"
+            src="/assets/Industries/e-learning-education/gamification-of-content.png"
             alt="Portfolio"
             className="w-42 sm:w-52 xl:w-56 2xl:w-62 mx-auto"
           />
@@ -170,7 +170,7 @@ export default function ELearningEducation() {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center md:gap-12">
             <img
               loading="lazy"
-              src="/assets/industries/e-learning-education/personalized-student-information-system-sis-solutions.png"
+              src="/assets/Industries/e-learning-education/personalized-student-information-system-sis-solutions.png"
               alt="Portfolio"
               className="w-135 xl:w-145 2xl:w-150 mx-auto"
             />
@@ -192,7 +192,7 @@ export default function ELearningEducation() {
             <FeaturesList features={sisSolutions} grid center />
             <img
               loading="lazy"
-              src="/assets/industries/e-learning-education/laptop-01.png"
+              src="/assets/Industries/e-learning-education/laptop-01.png"
               alt="Portfolio"
               className="w-135 xl:w-145 2xl:w-150 mx-auto"
             />
@@ -211,7 +211,7 @@ export default function ELearningEducation() {
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
           <img
             loading="lazy"
-            src="/assets/industries/e-learning-education/lectora-software-development-phone.png"
+            src="/assets/Industries/e-learning-education/lectora-software-development-phone.png"
             alt="Portfolio"
             className="lg:w-56 w-42 sm:w-54 mx-auto"
           />
@@ -245,7 +245,7 @@ export default function ELearningEducation() {
             </div>
             <img
               loading="lazy"
-              src="/assets/industries/e-learning-education/credentials-&-digital-badges1.png"
+              src="/assets/Industries/e-learning-education/credentials-&-digital-badges1.png"
               alt="Mobile Analytics App"
               className="w-135 xl:w-145 2xl:w-150 mx-auto order-1 md:order-2"
             />
@@ -307,7 +307,7 @@ export default function ELearningEducation() {
 
             <img
               loading="lazy"
-              src="/assets/industries/e-learning-education/enterprise-learning-management-software.jpg"
+              src="/assets/Industries/e-learning-education/enterprise-learning-management-software.jpg"
               alt="Mobile Analytics App"
               className="w-96 xl:w-145 2xl:w-150 mx-auto"
             />

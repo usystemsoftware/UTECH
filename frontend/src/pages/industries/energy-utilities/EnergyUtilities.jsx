@@ -43,7 +43,7 @@ export default function EnergyUtilities() {
         <FeaturesGridnew
           leftFeatures={utilityFeatures.slice(0, 4)}
           rightFeatures={utilityFeatures.slice(4, 8)}
-          centerImage="/assets/industries/energy-utilities/desktop-combo-utilities.png"
+          centerImage="/assets/Industries/energy-utilities/desktop-combo-utilities.png"
         />
       </PageLayout>
 
@@ -57,7 +57,7 @@ export default function EnergyUtilities() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <img
               loading="lazy"
-              src="/assets/industries/energy-utilities/custom-energy-mamagement-software.png"
+              src="/assets/Industries/energy-utilities/custom-energy-mamagement-software.png"
               alt="Portfolio"
               className="sm:w-110 w-86 xl:w-130 2xl:w-145 mx-auto"
             />
@@ -93,7 +93,7 @@ export default function EnergyUtilities() {
             />
             <img
               loading="lazy"
-              src="/assets/industries/energy-utilities/electric-management-solutions.png"
+              src="/assets/Industries/energy-utilities/electric-management-solutions.png"
               alt="Portfolio"
               className="sm:w-52 xl:w-56 2xl:w-62 w-42 mx-auto"
             />
@@ -111,7 +111,7 @@ export default function EnergyUtilities() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <img
             loading="lazy"
-            src="/assets/industries/energy-utilities/custom-water-management-solutions.png"
+            src="/assets/Industries/energy-utilities/custom-water-management-solutions.png"
             alt="Portfolio"
             className="w-135 xl:w-145 2xl:w-150 mx-auto"
           />
@@ -139,7 +139,7 @@ export default function EnergyUtilities() {
             </div>
             <img
               loading="lazy"
-              src="/assets/industries/energy-utilities/custom-smart-grid-technology-services.png"
+              src="/assets/Industries/energy-utilities/custom-smart-grid-technology-services.png"
               alt="Portfolio"
               className="w-125 md:w-135 xl:w-145 2xl:w-150 mx-auto order-1 md:order-2"
             />
@@ -158,7 +158,7 @@ export default function EnergyUtilities() {
           <div>
             <img
               loading="lazy"
-              src="/assets/industries/energy-utilities/custom-heat-software-solutions.png"
+              src="/assets/Industries/energy-utilities/custom-heat-software-solutions.png"
               alt="Portfolio"
               className="sm:w-56 xl:w-58 2xl:w-62 w-42 mx-auto"
             />
@@ -187,7 +187,7 @@ export default function EnergyUtilities() {
             </div>
             <img
               loading="lazy"
-              src="/assets/industries/energy-utilities/custom-solar-software-solutions.png"
+              src="/assets/Industries/energy-utilities/custom-solar-software-solutions.png"
               alt="Portfolio"
               className="w-72 sm:w-86 md:w-105 xl:w-120 2xl:w-125 mx-auto order-1 md:order-2"
             />
@@ -205,7 +205,7 @@ export default function EnergyUtilities() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
           <img
             loading="lazy"
-            src="/assets/industries/energy-utilities/custom-waste-management-software-solutions.png"
+            src="/assets/Industries/energy-utilities/custom-waste-management-software-solutions.png"
             alt="Portfolio"
             className="w-145 xl:w-155 2xl:w-185 mx-auto"
           />
@@ -240,7 +240,7 @@ export default function EnergyUtilities() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center md:gap-8">
           <img
             loading="lazy"
-            src="/assets/industries/energy-utilities/custom-wind-software-development.png"
+            src="/assets/Industries/energy-utilities/custom-wind-software-development.png"
             alt="Portfolio"
             className="w-125 md:w-135 xl:w-145 2xl:w-150 mx-auto"
           />
@@ -260,7 +260,7 @@ export default function EnergyUtilities() {
             <FeaturesList features={nuclearSolutions} iconAlign="horizontal" />
             <img
               loading="lazy"
-              src="/assets/industries/energy-utilities/custom-nuclear-energy-software.png"
+              src="/assets/Industries/energy-utilities/custom-nuclear-energy-software.png"
               alt="Portfolio"
               className="sm:w-110 w-86 xl:w-120 2xl:w-135 mx-auto"
             />

@@ -44,7 +44,7 @@ const SupplyChain = () => {
         <FeaturesGridnew
           leftFeatures={SupplyChainSoftwareLeftFeatures}
           rightFeatures={SupplyChainSoftwarerightFeatures}
-          centerImage="/assets/industries/supplychain/supplychain.png"
+          centerImage="/assets/Industries/supplychain/supplychain.png"
           iconGap="md:gap-16"
         />
       </PageLayout>
@@ -70,7 +70,7 @@ const SupplyChain = () => {
             />
             <img
               loading="lazy"
-              src="/assets/industries/supplychain/distribution.gif"
+              src="/assets/Industries/supplychain/distribution.gif"
               alt="Financial Planning Dashboard"
               className="w-145 xl:w-155 2xl:w-175 mx-auto"
             />
@@ -103,7 +103,7 @@ const SupplyChain = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
             <img
               loading="lazy"
-              src="/assets/industries/supplychain/weighbridg.png"
+              src="/assets/Industries/supplychain/weighbridg.png"
               alt="Financial Planning Dashboard"
               className="w-145 xl:w-155 2xl:w-175 mx-auto"
             />
@@ -128,7 +128,7 @@ const SupplyChain = () => {
           <FeaturesList features={SupplyTransfoods} iconAlign="horizontal" />
           <img
             loading="lazy"
-            src="/assets/industries/supplychain/food.png"
+            src="/assets/Industries/supplychain/food.png"
             alt="Financial Planning Dashboard"
             className="w-145 xl:w-155 2xl:w-175 mx-auto"
           />
@@ -163,7 +163,7 @@ const SupplyChain = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
           <img
             loading="lazy"
-            src="/assets/industries/supplychain/expert.png"
+            src="/assets/Industries/supplychain/expert.png"
             alt="Financial Planning Dashboard"
             className="w-145 xl:w-155 2xl:w-175 mx-auto"
           />
@@ -186,7 +186,7 @@ const SupplyChain = () => {
             />
             <img
               loading="lazy"
-              src="/assets/industries/supplychain/interchange.png"
+              src="/assets/Industries/supplychain/interchange.png"
               alt="Financial Planning Dashboard"
               className="w-76 sm:w-110 xl:w-135 2xl:w-145 mx-auto"
             />
@@ -206,7 +206,7 @@ const SupplyChain = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
           <img
             loading="lazy"
-            src="/assets/industries/supplychain/planning.png"
+            src="/assets/Industries/supplychain/planning.png"
             alt="supplyChain Planning Dashboard"
             className="w-76 sm:w-110 xl:w-135 2xl:w-145 mx-auto"
           />
@@ -232,7 +232,7 @@ const SupplyChain = () => {
             />
             <img
               loading="lazy"
-              src="/assets/industries/supplychain/data.png"
+              src="/assets/Industries/supplychain/data.png"
               alt="supplyChain Planning Dashboard"
               className="w-145 xl:w-175 2xl:w-195 mx-auto"
             />
@@ -252,7 +252,7 @@ const SupplyChain = () => {
 
           <img
             loading="lazy"
-            src="/assets/industries/supplychain/mobile.gif"
+            src="/assets/Industries/supplychain/mobile.gif"
             alt="Portfolio"
             className="w-42 sm:w-52 xl:w-62 2xl:w-68 mx-auto"
           />

@@ -1,31 +1,31 @@
 export const retailSolutions = [
   {
     label: "Brick & Mortar Store",
-    icon: "/assets/industries/real-estate/icons/2.png",
+    icon: "/assets/Industries/real-estate/icons/2.png",
   },
   {
     label: "E-Commerce",
-    icon: "/assets/industries/real-estate/icons/4.png",
+    icon: "/assets/Industries/real-estate/icons/4.png",
   },
   {
     label: "C-Store & Grocery",
-    icon: "/assets/industries/real-estate/icons/3.png",
+    icon: "/assets/Industries/real-estate/icons/3.png",
   },
   {
     label: "Desktop, Laptop, Tablet & Mobile",
-    icon: "/assets/industries/real-estate/icons/1.png",
+    icon: "/assets/Industries/real-estate/icons/1.png",
   },
   {
     label: "Loyalty App",
-    icon: "/assets/industries/real-estate/icons/5.svg",
+    icon: "/assets/Industries/real-estate/icons/5.svg",
   },
   {
     label: "Dealerships",
-    icon: "/assets/industries/real-estate/icons/6.svg",
+    icon: "/assets/Industries/real-estate/icons/6.svg",
   },
   {
     label: "Shopping Cart",
-    icon: "/assets/industries/real-estate/icons/10.svg",
+    icon: "/assets/Industries/real-estate/icons/10.svg",
   },
 ];
 
@@ -73,37 +73,37 @@ export const retailAiSolutions = [
     title: "Customer Service Chatbots",
     description:
       "We leverage AI and NLP technology to develop interactive chatbots that increase customer engagement and provide 24/7 multilingual support with personalized recommendations based on historical data.",
-    icon: "/assets/industries/retail/icons/1.svg",
+    icon: "/assets/Industries/retail/icons/1.svg",
   },
   {
     title: "Predictive Analysis & Demand Forecasting",
     description:
       "We develop predictive analysis tools that use historical sales and market data to forecast demand, optimize inventory levels, automate replenishment, and prevent over/understocking.",
-    icon: "/assets/industries/retail/icons/2.svg",
+    icon: "/assets/Industries/retail/icons/2.svg",
   },
   {
     title: "Personalized Product Recommendations",
     description:
       "Our recommendation systems analyze customer behavior and purchase history to deliver customized product suggestions that enhance the shopping experience and drive sales.",
-    icon: "/assets/industries/retail/icons/3.svg",
+    icon: "/assets/Industries/retail/icons/3.svg",
   },
   {
     title: "Dynamic Pricing",
     description:
       "We integrate dynamic pricing engines that adjust prices in real-time based on competitor pricing, demand trends, and other key variables to maximize revenue and profitability.",
-    icon: "/assets/industries/retail/icons/4.svg",
+    icon: "/assets/Industries/retail/icons/4.svg",
   },
   {
     title: "AI-Powered Fraud Detection",
     description:
       "We implement fraud detection systems powered by AI that analyze transactions and detect anomalies to prevent fraudulent activities and protect business revenue.",
-    icon: "/assets/industries/retail/icons/5.svg",
+    icon: "/assets/Industries/retail/icons/5.svg",
   },
   {
     title: "AI Inventory Management",
     description:
       "Our AI-driven inventory tools automate replenishment, supplier coordination, and reorder optimization by analyzing customer demand patterns using machine learning.",
-    icon: "/assets/industries/retail/icons/6.svg",
+    icon: "/assets/Industries/retail/icons/6.svg",
   },
 ];
 
@@ -112,25 +112,25 @@ export const retailCustomerSolutions = [
     title: "Customer Loyalty Software",
     description:
       "Our retail loyalty solutions cover membership programs, customer account management, member self-service, rewards handling, and overall engagement tools to retain and reward loyal customers.",
-    icon: "/assets/industries/retail/icons/3.svg",
+    icon: "/assets/Industries/retail/icons/3.svg",
   },
   {
     title: "Retail Analytics and Reports",
     description:
       "We offer powerful analytics and reporting tools that provide real-time data, sales tracking, and actionable insights to drive better retail decision-making and performance optimization.",
-    icon: "/assets/industries/retail/icons/7.svg",
+    icon: "/assets/Industries/retail/icons/7.svg",
   },
   {
     title: "Self-Service Kiosks",
     description:
       "Our self-service kiosks enhance customer experience with features like product browsing, self-checkout, and personalized offers, integrated with inventory and payment systems.",
-    icon: "/assets/industries/retail/icons/8.svg",
+    icon: "/assets/Industries/retail/icons/8.svg",
   },
   {
     title: "Omnichannel Retail Solutions",
     description:
       "We build omnichannel solutions with advanced case management, personalized communication tools, and seamless customer service across platforms to ensure a unified retail experience.",
-    icon: "/assets/industries/retail/icons/4.svg",
+    icon: "/assets/Industries/retail/icons/4.svg",
   },
 ];
 
@@ -139,25 +139,25 @@ export const retailEcommerceSolutions = [
     title: "Virtual Storefronts",
     description:
       "We integrate secure payment and order processing systems into virtual storefronts, enabling seamless transaction management and automated billing processes.",
-    icon: "/assets/industries/political-campaign/icons/10.svg",
+    icon: "/assets/Industries/political-campaign/icons/10.svg",
   },
   {
     title: "B2C & B2B Marketplaces",
     description:
       "We develop advanced B2B and B2C marketplaces that connect vendors, distributors, and consumers on a unified digital commerce platform.",
-    icon: "/assets/industries/political-campaign/icons/11.svg",
+    icon: "/assets/Industries/political-campaign/icons/11.svg",
   },
   {
     title: "E-Commerce Web Design Services",
     description:
       "We create mobile-friendly, visually engaging e-commerce applications designed to deliver exceptional shopping experiences and drive customer engagement.",
-    icon: "/assets/industries/political-campaign/icons/12.svg",
+    icon: "/assets/Industries/political-campaign/icons/12.svg",
   },
   {
     title: "Retail-Specific CRM",
     description:
       "We build CRM solutions tailored for retail that track customer interactions, purchase behavior, and enable personalized marketing integrated with POS and inventory systems.",
-    icon: "/assets/industries/political-campaign/icons/13.svg",
+    icon: "/assets/Industries/political-campaign/icons/13.svg",
   },
 ];
 
@@ -166,19 +166,19 @@ export const shoppingCartSolutions = [
     title: "Shopping Cart Development",
     description:
       "We offer full-service shopping cart software development focused on branded category management, catalog features, and scalable multi-store platforms.",
-    icon: "/assets/industries/political-campaign/icons/14.svg",
+    icon: "/assets/Industries/political-campaign/icons/14.svg",
   },
   {
     title: "Open-Source Shopping Cart Integration",
     description:
       "We provide customizable open-source modules integrated with platforms like OpenCart, ZenCart, and Ecwid to enhance shopping capabilities on your website or app.",
-    icon: "/assets/industries/political-campaign/icons/15.svg",
+    icon: "/assets/Industries/political-campaign/icons/15.svg",
   },
   {
     title: "Shopping Cart Abandonment Solutions",
     description:
       "We implement shopping cart abandonment solutions with back-office portals, featuring role-based access control and tools for improving conversion rates.",
-    icon: "/assets/industries/political-campaign/icons/16.svg",
+    icon: "/assets/Industries/political-campaign/icons/16.svg",
   },
 ];
 
@@ -193,19 +193,19 @@ export const mobileRetailSolutions = [
     title: "Mobile POS Management",
     description:
       "We develop mobile POS solutions integrated with inventory management capabilities to enable real-time sales transactions and quickly create inventory reports.",
-    icon: "/assets/industries/political-campaign/icons/18.svg",
+    icon: "/assets/Industries/political-campaign/icons/18.svg",
   },
   {
     title: "eCommerce Mobile Development",
     description:
       "Our team create custom e-commerce mobile apps that also come with features like secure payment integrations, push notifications, order tracking, and personalized product recommendations.",
-    icon: "/assets/industries/political-campaign/icons/19.svg",
+    icon: "/assets/Industries/political-campaign/icons/19.svg",
   },
   {
     title: "AR & VR Retail Solutions",
     description:
       "Our retail software developers create mobile immersive augmented and virtual reality solutions that feature virtual merchandising, virtual try-ons, AR-enhanced product visualization, and more.",
-    icon: "/assets/industries/political-campaign/icons/20.svg",
+    icon: "/assets/Industries/political-campaign/icons/20.svg",
   },
 ];
 

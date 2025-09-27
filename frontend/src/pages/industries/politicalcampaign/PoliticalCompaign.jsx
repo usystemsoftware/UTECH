@@ -38,7 +38,7 @@ const PoliticalCompaign = () => {
         <FeaturesGridnew
           leftFeatures={politicalSoftwareLeftFeatures}
           rightFeatures={politicalSoftwareRightFeatures}
-          centerImage="/assets/industries/political-campaign/combo.png"
+          centerImage="/assets/Industries/political-campaign/combo.png"
           iconGap="md:gap-48"
         />
       </PageLayout>
@@ -69,7 +69,7 @@ const PoliticalCompaign = () => {
           />
           <img
             loading="lazy"
-            src="/assets/industries/political-campaign/automation.png"
+            src="/assets/Industries/political-campaign/automation.png"
             alt="Payment Planning Dashboard"
             className="w-145 xl:w-155 2xl:w-165 mx-auto"
           />
@@ -89,7 +89,7 @@ const PoliticalCompaign = () => {
           <FeaturesList features={PoliticalManagement.slice(0, 2)} center />
           <img
             loading="lazy"
-            src="/assets/industries/political-campaign/event.png"
+            src="/assets/Industries/political-campaign/event.png"
             alt="Mobile Analytics App"
             className="w-42 sm:w-56 xl:w-62 2xl:w-64 mx-auto"
           />
@@ -113,7 +113,7 @@ const PoliticalCompaign = () => {
           />
           <img
             loading="lazy"
-            src="/assets/industries/political-campaign/campaign.png"
+            src="/assets/Industries/political-campaign/campaign.png"
             alt="Mobile Analytics App"
             className="w-72 sm:w-86 xl:w-96 2xl:w-105 mx-auto"
           />
@@ -140,7 +140,7 @@ const PoliticalCompaign = () => {
           />
           <img
             loading="lazy"
-            src="/assets/industries/political-campaign/automation.png"
+            src="/assets/Industries/political-campaign/automation.png"
             alt="Portfolio"
             className="w-145 xl:w-155 2xl:w-165 mx-auto"
           />

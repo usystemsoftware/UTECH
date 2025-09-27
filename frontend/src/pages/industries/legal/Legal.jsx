@@ -50,7 +50,7 @@ const Legal = () => (
         </div>
         <img
           loading="lazy"
-          src="/assets/industries/legal/phone.png"
+          src="/assets/Industries/legal/phone.png"
           alt="Financial Planning Dashboard"
           className="w-56 sm:w-62 xl:w-64 2xl:w-66 mx-auto hidden md:block"
         />
@@ -59,7 +59,7 @@ const Legal = () => (
       <PageLayout className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
         <img
           loading="lazy"
-          src="/assets/industries/legal/software.png"
+          src="/assets/Industries/legal/software.png"
           alt="Financial Planning Dashboard"
           className="w-155 xl:w-175 2xl:w-185 mx-auto"
         />
@@ -79,7 +79,7 @@ const Legal = () => (
 
       <ImageNearScreen
         features={legalFeatures}
-        src="/assets/industries/legal/legel.png"
+        src="/assets/Industries/legal/legel.png"
         imageAlign="right"
         imgClass="w-115 xl:w-165 2xl:w-175"
       />
@@ -103,7 +103,7 @@ const Legal = () => (
       <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
         <img
           loading="lazy"
-          src="/assets/industries/legal/automation.png"
+          src="/assets/Industries/legal/automation.png"
           alt="Financial Planning Dashboard"
           className="w-42 sm:w-62 xl:w-64 2xl:w-66 mx-auto"
         />
@@ -171,7 +171,7 @@ const Legal = () => (
                 <img
                   key={idx}
                   loading="lazy"
-                  src={`/assets/industries/legal/images/${logo}.png`}
+                  src={`/assets/Industries/legal/images/${logo}.png`}
                   className="cursor-pointer hover:scale-105 transition-transform"
                   alt={logo}
                 />

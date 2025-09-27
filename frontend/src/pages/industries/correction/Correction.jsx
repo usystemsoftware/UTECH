@@ -17,12 +17,23 @@ import {
   jailManagementSolutions,
   jailSecuritySolutions,
 } from "./Data";
+import correction_banner from "../../../../public/banner/correction-banner.jpg";
+import jail_mgmt_systems from "../../../../public/assets/Industries/correction/jail-mgmt-systems.png";
+import workflow_mgmt from "../../../../public/assets/Industries/correction/workflow-mgmt.png";
+import logistics_software_developers from "../../../../public/assets/Industries/correction/logistics-software-developers.png";
+import building_information_modeling_solutions_cut from "../../../../public/assets/Industries/construction/building-information-modeling-solutions-cut.png";
+import task_laptop from "../../../../public/assets/industries/correction/task-laptop.png";
+import immate_tracking_mobile from "../../../../public/assets/industries/correction/immate-tracking-mobile.png"
+import jail_security_solutions from "../../../../public/assets/industries/correction/jail-security-solutions.png"
+import jail_management_solutions_laptop from "../../../../public/assets/industries/correction/jail-management-solutions-laptop.png"
+import hrms_solutions from "../../../../public//assets/industries/correction/hrms-solutions.png"
+
 
 export default function Correction() {
   return (
     <>
       <HeroSection
-        backgroundImage="/banner/correction-banner.jpg"
+        backgroundImage={correction_banner}
         title="Custom Corrections & Jail Management System Development"
         description="Streamline jail management with our AI-powered solutions to streamline workflows including housing, scheduling, inmate tracking, and data storage."
         buttonText="HIRE EXPERT DEVELOPERS"
@@ -55,7 +66,7 @@ export default function Correction() {
           {/* Left Image */}
           <img
             loading="lazy"
-            src="/assets/industries/correction/jail-mgmt-systems.png"
+            src={jail_mgmt_systems}
             alt="Portfolio"
             className="w-42 sm:w-56 xl:w-62 mx-auto order-1 md:order-2"
           />
@@ -65,7 +76,7 @@ export default function Correction() {
           {/* Left Image */}
           <img
             loading="lazy"
-            src="/assets/industries/correction/workflow-mgmt.png"
+            src={workflow_mgmt}
             alt="Portfolio"
             className="w-72 sm:w-86 xl:w-135 2xl:w-155 mx-auto"
           />
@@ -97,7 +108,7 @@ export default function Correction() {
           <FeaturesList features={correctionalAdminSolutions} grid center />
           <img
             loading="lazy"
-            src="/assets/industries/correction/logistics-software-developers.png"
+            src={logistics_software_developers}
             alt="Portfolio"
             className="sm:w-[60%] w-full mx-auto"
           />
@@ -112,7 +123,7 @@ export default function Correction() {
 
         <ImageNearScreen
           features={inmateServicesSolutions}
-          src="/assets/industries/construction/building-information-modeling-solutions-cut.png"
+          src={building_information_modeling_solutions_cut}
           imageAlign="left"
           imgClass="w-145"
         />
@@ -139,7 +150,7 @@ export default function Correction() {
 
         <ImageNearScreen
           features={inmateHealthcareSolutions}
-          src="/assets/industries/correction/task-laptop.png"
+          src={task_laptop}
           imageAlign="right"
           imgClass="w-115 xl:w-120 2xl:w-135"
         />
@@ -162,7 +173,7 @@ export default function Correction() {
             {/* Center Animation */}
             <img
               loading="lazy"
-              src="/assets/industries/correction/immate-tracking-mobile.png"
+              src={immate_tracking_mobile}
               alt="Mobile Analytics App"
               className="sm:w-48 md:w-52 xl:w-56 2xl:w-62 w-42 mx-auto"
             />
@@ -182,7 +193,7 @@ export default function Correction() {
       <section className="py-8 space-y-8 text-center">
         <ImageNearScreen
           features={jailSecuritySolutions}
-          src="/assets/industries/correction/jail-security-solutions.png"
+          src={jail_security_solutions}
           imageAlign="right"
           imgClass="w-120 xl:w-130 2xl:w-140"
         />
@@ -197,7 +208,7 @@ export default function Correction() {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <img
               loading="lazy"
-              src="/assets/industries/correction/jail-management-solutions-laptop.png"
+              src={jail_management_solutions_laptop}
               alt="Mobile Analytics App"
               className="w-76 sm:w-96 md:w-110 xl:w-120 2xl:w-135 mx-auto"
             />
@@ -235,7 +246,7 @@ export default function Correction() {
           {/* Left Image */}
           <img
             loading="lazy"
-            src="/assets/industries/correction/hrms-solutions.png"
+            src={hrms_solutions}
             alt="Portfolio"
             className="md:w-64 sm:w-52 w-42 mx-auto"
           />

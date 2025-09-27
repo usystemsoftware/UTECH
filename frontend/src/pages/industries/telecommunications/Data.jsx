@@ -58,7 +58,7 @@ export const AITelecomFeatures = [
     title: "AI-Driven Network Management",
     description:
       "Prevent outages before they happen with our AI-powered network management:",
-    icon: "/assets/industries/telecommunications/icons/1.svg",
+    icon: "/assets/Industries/telecommunications/icons/1.svg",
     list: [
       "Predictive Maintenance: Reduce downtime by 30% with equipment failure forecasts.",
       "Self-Healing Networks: Auto-resolve issues like congestion or signal loss.",
@@ -69,7 +69,7 @@ export const AITelecomFeatures = [
     title: "AI-Enhanced Customer Service in Telecom",
     description:
       "Deploy AI customer service tools that reduce support costs by 50%:",
-    icon: "/assets/industries/telecommunications/icons/2.svg",
+    icon: "/assets/Industries/telecommunications/icons/2.svg",
     list: [
       "24/7 Multilingual Chatbots: Resolve 80% of Tier-1 queries instantly.",
       "Voice-Activated IVR: Natural language processing for faster call routing.",
@@ -80,7 +80,7 @@ export const AITelecomFeatures = [
     title: "AI-Powered Network Security",
     description:
       "Combat telecom fraud and cyber threats with AI security suites:",
-    icon: "/assets/industries/telecommunications/icons/3.svg",
+    icon: "/assets/Industries/telecommunications/icons/3.svg",
     list: [
       "Behavioral Biometrics: Block SIM-swapping with 99.5% accuracy.",
       "Real-Time Threat Hunting: Detect SS7/DNS attacks in <1 second.",
@@ -90,7 +90,7 @@ export const AITelecomFeatures = [
   {
     title: "Telecom Network Optimization",
     description: "Maximize 5G/6G performance with AI:",
-    icon: "/assets/industries/telecommunications/icons/4.svg",
+    icon: "/assets/Industries/telecommunications/icons/4.svg",
     list: [
       "Dynamic Traffic Shaping: Prioritize mission-critical apps (e.g., healthcare IoT).",
       "Cell Tower Optimization: AI suggests ideal locations for coverage gaps.",
@@ -101,7 +101,7 @@ export const AITelecomFeatures = [
     title: "AI-Powered QoS Management",
     description:
       "Prevent service degradation and maximize uptime with our AI-driven QoS solutions:",
-    icon: "/assets/industries/telecommunications/icons/5.svg",
+    icon: "/assets/Industries/telecommunications/icons/5.svg",
     list: [
       "Dynamic Bandwidth Allocation: Prioritize critical apps during peak traffic, reducing latency by 40%.",
       "Auto-Correcting Networks: Instantly reroute traffic to maintain 99.9% SLA compliance—no manual intervention.",
@@ -112,7 +112,7 @@ export const AITelecomFeatures = [
     title: "AI for Billing & Revenue",
     description:
       "Eliminate revenue leakage and churn with AI billing solutions:",
-    icon: "/assets/industries/telecommunications/icons/6.svg",
+    icon: "/assets/Industries/telecommunications/icons/6.svg",
     list: [
       "Usage-Based Billing: Support IoT/5G monetization models.",
       "Churn Prediction: Flag at-risk customers with 92% accuracy.",
@@ -123,7 +123,7 @@ export const AITelecomFeatures = [
     title: "Real-Time Telecom Analytics",
     description:
       "Turn raw data into revenue with AI-powered subscriber insights:",
-    icon: "/assets/industries/telecommunications/icons/7.svg",
+    icon: "/assets/Industries/telecommunications/icons/7.svg",
     list: [
       "Customer Segmentation: Group users by behavior to boost promo conversions by 25%.",
       "Churn Prediction: Flag at-risk customers and trigger retention offers automatically.",
@@ -133,7 +133,7 @@ export const AITelecomFeatures = [
   {
     title: "IoT Connectivity & Network Slicing",
     description: "Scale IoT deployments effortlessly:",
-    icon: "/assets/industries/telecommunications/icons/8.svg",
+    icon: "/assets/Industries/telecommunications/icons/8.svg",
     list: [
       "AI-Driven Network Slicing: Dedicated bandwidth for smart cities/autonomous vehicles.",
       "Predictive IoT Maintenance: Alert technicians before sensors fail.",
@@ -142,7 +142,7 @@ export const AITelecomFeatures = [
   },
   {
     title: "AI-Powered Inventory Management",
-    icon: "/assets/industries/telecommunications/icons/9.svg",
+    icon: "/assets/Industries/telecommunications/icons/9.svg",
     description:
       "Optimize network assets and slash costs with AI automation by using an inventory management system:",
     list: [
@@ -154,7 +154,7 @@ export const AITelecomFeatures = [
   {
     title: "Intelligent Data Monetization",
     description: "Unlock new revenue from your data with AI-driven tools:",
-    icon: "/assets/industries/telecommunications/icons/10.svg",
+    icon: "/assets/Industries/telecommunications/icons/10.svg",
     list: [
       "Personalized Upselling: Recommend plans using 20+ behavioral signals, lifting ARPU by 12%.",
       "Compliant Data Products: Generate GDPR/CCPA-ready datasets for urban planners and retailers.",
@@ -165,37 +165,37 @@ export const AITelecomFeatures = [
 
 export const gamingtelecommunication = [
   {
-    icon: "/assets/industries/telecommunications/icons/11.svg",
+    icon: "/assets/Industries/telecommunications/icons/11.svg",
     title: "Operations & Business Support Systems Development",
     description:
       "We develop custom telecommunications software, including Operations Support Systems (OSS), Business Support Systems (BSS), Network Functions Virtualization (NFV), Software-Defined Networking (SDN), Web & Video Conferencing platforms, and network management applications for both on-site and cloud-based IT infrastructure.",
   },
   {
-    icon: "/assets/industries/telecommunications/icons/12.svg",
+    icon: "/assets/Industries/telecommunications/icons/12.svg",
     title: "Network Management Software Development",
     description:
       "Our network management tools help your team effectively manage your telecommunications functions for front-end and back-end, including network configuration & provisioning, network inventory management, Order Management, CRM, charging & billing systems, and so much more..",
   },
   {
-    icon: "/assets/industries/telecommunications/icons/13.svg",
+    icon: "/assets/Industries/telecommunications/icons/13.svg",
     title: "Network Applications Development",
     description:
       "Our expert telecommunication software developers create scalable network applications and communication portals with CTI, performance monitoring, connectivity management services, performance monitoring , and computer telephony integration effectively streamlining your communication processes across the board.",
   },
   {
-    icon: "/assets/industries/telecommunications/icons/14.svg",
+    icon: "/assets/Industries/telecommunications/icons/14.svg",
     title: "Performance Monitoring Systems Integration",
     description:
       "U Tech’s experts integrate IP management, security modules, performance data collection, , information modules, network layers, fault detection solutions, and diagnostic tools to enable teams to monitor and maintain network efficacy..",
   },
   {
-    icon: "/assets/industries/telecommunications/icons/8.svg",
+    icon: "/assets/Industries/telecommunications/icons/8.svg",
     title: "Call Accounting Software",
     description:
       "We develop custom call accounting software into your existing telecommunication infrastructure to track different kinds of calls without interrupting the flow of calls. This software captures, records, documents, and assigns all costs associated with telephone-usage to optimize your network, security, and PCI-DSS compliance.",
   },
   {
-    icon: "/assets/industries/telecommunications/icons/7.svg",
+    icon: "/assets/Industries/telecommunications/icons/7.svg",
     title: "Security Management Software Solutions",
     description:
       "Our developers implement security measures to prevent SIP hacking, caller ID scams, Signal System No.7 (SS7) attacks, Domain Name Security (DNS) breaches, and more, utilizing IoT best protocols like secure authentication, Layer Two Tunneling Protocol (L2TP), and data encryptions (NASH, DES, RSA, AES).",
@@ -205,25 +205,25 @@ export const gamingtelecommunication = [
 export const TelecommunicationSolutions = [
   {
     title: "Telecom Application Technical Support",
-    icon: "/assets/industries/telecommunications/icons/1.svg",
+    icon: "/assets/Industries/telecommunications/icons/1.svg",
     description:
       "Our dedicated application support experts provide end-to-end telecom application support. We make sure your telecom software solutions fit your business needs and run smoothly. We provide legacy system migrations to real-time interoperability testing, seamless implementation, integration with your other software systems, product administration, and other support services to ensure optimized functionality and reliability whether it’s CRM integrations, billing system upgrades, or API harmonization, we bridge gaps for flawless operations..",
   },
   {
     title: "Responsive 24/7 Help Desk Service",
-    icon: "/assets/industries/telecommunications/icons/2.svg",
+    icon: "/assets/Industries/telecommunications/icons/2.svg",
     description:
       "Our support team is available around the clock, 24/7. We can promptly address issues and ensure uninterrupted service by leveraging advanced OSS telecom systems. Our remote assistance services powered by our advanced ticketing system allow us to diagnose and resolve issues without delay. We use cutting-edge remote tools to ensure a quick and efficient resolution to keep your operations running smoothly.",
   },
   {
     title: "Extended Support & Maintenance",
-    icon: "/assets/industries/telecommunications/icons/3.svg",
+    icon: "/assets/Industries/telecommunications/icons/3.svg",
     description:
       "We provide extended support, continuously monitoring telecommunication applications to identify potential issues before outages occur. We ensure high reliability and performance with software proactive maintenance—guaranteeing system optimization with the latest features and security enhancements. We manage regular updates to guarantee compatibility and security hardening for your applications.",
   },
   {
     title: "Quality Assurance & Testing",
-    icon: "/assets/industries/telecommunications/icons/4.svg",
+    icon: "/assets/Industries/telecommunications/icons/4.svg",
     description:
       "Quality assurance and testing are paramount to having high quality telecom software. We have a rigorous approach and thorough process to ensure the highest quality solutions. With cutting-edge tools powered by the latest technologies along with meticulous protocols, we ensure optimal performance and security for your telecom applications.",
   },
@@ -234,25 +234,25 @@ export const telecomSolutions = [
     title: "Telecom IoT Solutions",
     description:
       "We develop custom IoT platforms to bridge 4G and 5G networks using NB-IoT and LTE-M protocols. Our solutions enable secure device connectivity for asset tracking, remote monitoring, and smart infrastructure while ensuring cellular-satellite redundancy.",
-    icon: "/assets/industries/telecommunications/icons/5.svg",
+    icon: "/assets/Industries/telecommunications/icons/5.svg",
   },
   {
     title: "AI Solutions",
     description:
       "We integrate Artificial Intelligence (AI) Solutions to automate critical business processes for your telecom organization. We incorporate virtual assistant solutions, Robotic Process Automation (RPA) software, network monitoring software, predictive maintenance, fraud detection systems, and network optimization tools to boost overall efficiency and automation while ensuring cellular-satellite redundancy.",
-    icon: "/assets/industries/telecommunications/icons/6.svg",
+    icon: "/assets/Industries/telecommunications/icons/6.svg",
   },
   {
     title: "Custom VAS Software",
     description:
       "Our support team custom Value Added Service (VAS) solutions, consisting of highly advanced non-core services designed to promote telecommunications operators’ organizations. We implement services, such as IVR systems, voicemails, SMS voting, message recording, dynamic ring back tones, balance check capabilities, and more for an enhanced customer experience and seamless deployment.",
-    icon: "/assets/industries/telecommunications/icons/7.svg",
+    icon: "/assets/Industries/telecommunications/icons/7.svg",
   },
   {
     title: "CTI Software",
     description:
       "We develop custom computer telephony integration software, cloud PBX, SIP trunking, and legacy migration tools to facilitate interconnectivity, Centrex Software Systems using compatible lines for continuous service with minimized downtime, and Session Initiation Protocol (SIP) Trunking Systems to provide IP protocol-based connectivity with PSTN networks.",
-    icon: "/assets/industries/telecommunications/icons/8.svg",
+    icon: "/assets/Industries/telecommunications/icons/8.svg",
   },
 ];
 
@@ -261,21 +261,21 @@ export const telcommunicationSoftwareSolutions = [
     title: "Telecommunications API Integration",
     description:
       "We integrate flexible and robust telecom APIs from global telecommunications industry leaders to your existing business solutions to optimize workflow efficiency..",
-    icon: "/assets/industries/telecommunications/icons/9.svg",
+    icon: "/assets/Industries/telecommunications/icons/9.svg",
     partners: ["support"],
   },
   {
     title: "Telecom Expense Management System Development",
     description:
       "We integrate custom expense management solutions designed to help businesses manage and control their expenses and assets..",
-    icon: "/assets/industries/telecommunications/icons/10.svg",
+    icon: "/assets/Industries/telecommunications/icons/10.svg",
     partners: ["software"],
   },
   {
     title: "CRM Telephony Integration",
     description:
       "Enhance customer service using CRM software with telephony integration by streamlining communication. Our CTI solutions embed click-to-call, screen pops and call analytics directly into Salesforce, Zendesk and HubSpot.",
-    icon: "/assets/industries/telecommunications/icons/11.svg",
+    icon: "/assets/Industries/telecommunications/icons/11.svg",
     partners: ["logo"],
   },
 
@@ -283,21 +283,21 @@ export const telcommunicationSoftwareSolutions = [
     title: "Cloud Communication Platforms",
     description:
       "We integrate with cloud communication platforms, including Twilio integration that offer fast, simple, and scalable ways for companies to modernize business communications.",
-    icon: "/assets/industries/telecommunications/icons/12.svg",
+    icon: "/assets/Industries/telecommunications/icons/12.svg",
     partners: ["platforms"],
   },
   {
     title: "Contact & Call Center Software",
     description:
       "We connect Genesys, Five9 and custom solutions to your CRM and knowledge bases, enabling intelligent call routing, sentiment analysis, and 360° customer views for your agents.",
-    icon: "/assets/industries/telecommunications/icons/13.svg",
+    icon: "/assets/Industries/telecommunications/icons/13.svg",
     partners: ["contact"],
   },
   {
     title: "Business Messaging Integration",
     description:
       "We bridge WhatsApp Business, RCS and enterprise chat apps with your support systems for secure, auditable messaging across sales, service and operations teams..",
-    icon: "/assets/industries/telecommunications/icons/8.svg",
+    icon: "/assets/Industries/telecommunications/icons/8.svg",
     partners: ["messaging"],
   },
 ];

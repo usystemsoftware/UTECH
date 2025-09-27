@@ -41,7 +41,7 @@ export default function Sports() {
         <FeaturesGridnew
           leftFeatures={sportsAndFitnessSolutions.slice(0, 3)}
           rightFeatures={sportsAndFitnessSolutions.slice(3, 6)}
-          centerImage="/assets/industries/sports/desktop-combo-sports.png"
+          centerImage="/assets/Industries/sports/desktop-combo-sports.png"
           iconGap="md:gap-18"
         />
       </PageLayout>
@@ -69,7 +69,7 @@ export default function Sports() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
           <img
             loading="lazy"
-            src="/assets/industries/sports/sports-analytics-and-athlete-performance-solutions-1.png"
+            src="/assets/Industries/sports/sports-analytics-and-athlete-performance-solutions-1.png"
             alt="Portfolio"
             className="w-110  md:w-135 xl:w-145 2xl:w-165 mx-auto"
           />
@@ -97,7 +97,7 @@ export default function Sports() {
             />
             <img
               loading="lazy"
-              src="/assets/industries/sports/fitness-club-and-gym-management-software.png"
+              src="/assets/Industries/sports/fitness-club-and-gym-management-software.png"
               alt="Portfolio"
               className="w-145 xl:w-155 2xl:w-175 mx-auto"
             />
@@ -121,7 +121,7 @@ export default function Sports() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           <img
             loading="lazy"
-            src="/assets/industries/sports/golf-cource-management-software-development.png"
+            src="/assets/Industries/sports/golf-cource-management-software-development.png"
             alt="Portfolio"
             className="md:w-110 w-76 sm:w-96 xl:w-120 2xl:w-130 mx-auto"
           />
@@ -146,7 +146,7 @@ export default function Sports() {
             />
             <img
               loading="lazy"
-              src="/assets/industries/sports/sports-training-software-solution.png"
+              src="/assets/Industries/sports/sports-training-software-solution.png"
               alt="Portfolio"
               className="w-110 sm:w-125 md:w-145 xl:w-155 2xl:w-175 mx-auto"
             />
@@ -166,7 +166,7 @@ export default function Sports() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
           <img
             loading="lazy"
-            src="/assets/industries/sports/sports-kinesiology-and-motion-analysis-software.png"
+            src="/assets/Industries/sports/sports-kinesiology-and-motion-analysis-software.png"
             alt="Portfolio"
             className="w-42 sm:w-52 xl:w-62 2xl:w-68 mx-auto"
           />
@@ -194,7 +194,7 @@ export default function Sports() {
             />
             <img
               loading="lazy"
-              src="/assets/industries/sports/sports-medicine-management-software-solutions.png"
+              src="/assets/Industries/sports/sports-medicine-management-software-solutions.png"
               alt="Portfolio"
               className="w-78 md:w-110 xl:w-120 2xl:w-130 mx-auto"
             />

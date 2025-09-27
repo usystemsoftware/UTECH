@@ -38,7 +38,7 @@ export default function EnvManagement() {
         <FeaturesGridnew
           leftFeatures={environmentalFeatures?.slice(0, 3)}
           rightFeatures={environmentalFeatures?.slice(3, 6)}
-          centerImage="/assets/industries/env-mng/environmental-management-software-solutions-new.png"
+          centerImage="/assets/Industries/env-mng/environmental-management-software-solutions-new.png"
           iconSize={38}
         />
       </PageLayout>
@@ -53,7 +53,7 @@ export default function EnvManagement() {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <img
               loading="lazy"
-              src="/assets/industries/env-mng/environmental-management-system-solutions.png"
+              src="/assets/Industries/env-mng/environmental-management-system-solutions.png"
               alt="Portfolio"
               className="w-155 xl:w-165 2xl:w-185 mx-auto"
             />
@@ -114,7 +114,7 @@ export default function EnvManagement() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
           <img
             loading="lazy"
-            src="/assets/industries/env-mng/environmental-risk-management-assessment-database-software.png"
+            src="/assets/Industries/env-mng/environmental-risk-management-assessment-database-software.png"
             alt="Portfolio"
             className="w-135 lg:w-155 2xl:w-165 mx-auto"
           />
@@ -140,7 +140,7 @@ export default function EnvManagement() {
             <div className="sm:block hidden">
               <img
                 loading="lazy"
-                src="/assets/industries/env-mng/environmental-compliance-software-systems-for-audits-inspections-permits.png"
+                src="/assets/Industries/env-mng/environmental-compliance-software-systems-for-audits-inspections-permits.png"
                 alt="Portfolio"
                 className="w-48 md:w-62 mx-auto"
               />
@@ -161,7 +161,7 @@ export default function EnvManagement() {
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
           <img
             loading="lazy"
-            src="/assets/industries/env-mng/environmental-inventory-management-waste-tracking-solutions.png"
+            src="/assets/Industries/env-mng/environmental-inventory-management-waste-tracking-solutions.png"
             alt="Portfolio"
             className="w-68 md:w-80 xl:w-86 2xl:w-96 mx-auto"
           />
@@ -189,7 +189,7 @@ export default function EnvManagement() {
             />
             <img
               loading="lazy"
-              src="/assets/industries/env-mng/environmental-operational-database-systems.png"
+              src="/assets/Industries/env-mng/environmental-operational-database-systems.png"
               alt="Portfolio"
               className="W-135 xl:w-145 2xl:w-165 mx-auto"
             />
@@ -209,7 +209,7 @@ export default function EnvManagement() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
           <img
             loading="lazy"
-            src="/assets/industries/env-mng/information-and-location-based-weather-app-integrations.png"
+            src="/assets/Industries/env-mng/information-and-location-based-weather-app-integrations.png"
             alt="Portfolio"
             className="w-125 md:w-135 2xl:w-145 mx-auto"
           />

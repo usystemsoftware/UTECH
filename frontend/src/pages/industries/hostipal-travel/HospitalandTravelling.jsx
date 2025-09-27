@@ -105,7 +105,7 @@ export default function HospitalandTravelling() {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
             <img
               loading="lazy"
-              src="/assets/industries/hospital-travel/flight-planning-software-solutions.png"
+              src="/assets/Industries/hospital-travel/flight-planning-software-solutions.png"
               alt="Portfolio"
               className="w-145 xl:w-155 2xl:w-165 mx-auto"
             />
@@ -131,7 +131,7 @@ export default function HospitalandTravelling() {
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           <img
             loading="lazy"
-            src="/assets/industries/hospital-travel/custom-sabre-development-and-integration-solutions-new.png"
+            src="/assets/Industries/hospital-travel/custom-sabre-development-and-integration-solutions-new.png"
             alt="Portfolio"
             className="w-52 sm:w-62 xl:w-68 2xl:w-72 mx-auto"
           />

@@ -61,7 +61,7 @@ const RealEstate = () => {
         <FeaturesGridnew
           leftFeatures={leftFeatureIcons}
           rightFeatures={rightFeatureIcons}
-          centerImage="/assets/industries/real-estate/solutions.png"
+          centerImage="/assets/Industries/real-estate/solutions.png"
         />
 
         <ContactUsButton variant="hover" className="mt-8">
@@ -87,7 +87,7 @@ const RealEstate = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 space-y-6 gap-6 items-center">
             <img
               loading="lazy"
-              src="/assets/industries/real-estate/laptop.png"
+              src="/assets/Industries/real-estate/laptop.png"
               alt="AI-powered banking analytics"
               className="w-145 xl:w-155 2xl:w-175 mx-auto"
             />
@@ -126,7 +126,7 @@ const RealEstate = () => {
         <PageLayout className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
           <img
             loading="lazy"
-            src="/assets/industries/real-estate/mobile.png"
+            src="/assets/Industries/real-estate/mobile.png"
             alt="Mobile real estate App"
             className="w-42 sm:w-52 xl:w-62 2xl:w-66 mx-auto"
           />
@@ -161,7 +161,7 @@ const RealEstate = () => {
           </div>
           <img
             loading="lazy"
-            src="/assets/industries/real-estate/virtual-tour.png"
+            src="/assets/Industries/real-estate/virtual-tour.png"
             alt="AI-powered banking analytics"
             className="w-145 xl:w-155 2xl:w-175 mx-auto"
           />
@@ -190,7 +190,7 @@ const RealEstate = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
           <img
             loading="lazy"
-            src="/assets/industries/real-estate/idx-technology-integration-solutions-tab.png"
+            src="/assets/Industries/real-estate/idx-technology-integration-solutions-tab.png"
             alt="AI-powered banking analytics"
             className="w-86 xl:w-115 2xl:w-135 mx-auto"
           />

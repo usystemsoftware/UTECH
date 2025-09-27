@@ -50,7 +50,7 @@ export default function MediaEntertainment() {
         <FeaturesGridnew
           leftFeatures={digitalServices.slice(0, 4)}
           rightFeatures={digitalServices.slice(4, 8)}
-          centerImage="/assets/industries/media-entertainment/desktop-conbo-banner-media.png"
+          centerImage="/assets/Industries/media-entertainment/desktop-conbo-banner-media.png"
         />
       </PageLayout>
 
@@ -73,7 +73,7 @@ export default function MediaEntertainment() {
           {/* Left Image */}
           <img
             loading="lazy"
-            src="/assets/industries/media-entertainment/web-animation-and-graphic-design-service.png"
+            src="/assets/Industries/media-entertainment/web-animation-and-graphic-design-service.png"
             alt="Portfolio"
             className="w-135 xl:w-145 2xl:w-165  mx-auto"
           />
@@ -101,7 +101,7 @@ export default function MediaEntertainment() {
                 <div key={index} className="md:block hidden">
                   <img
                     loading="lazy"
-                    src={`/assets/industries/media-entertainment/streaming-tools/${item?.img}.png`}
+                    src={`/assets/Industries/media-entertainment/streaming-tools/${item?.img}.png`}
                     alt={item.label}
                     className="mx-auto"
                   />
@@ -150,7 +150,7 @@ export default function MediaEntertainment() {
                   <div key={index}>
                     <img
                       loading="lazy"
-                      src={`/assets/industries/media-entertainment/production-tools/${item?.img}.png`}
+                      src={`/assets/Industries/media-entertainment/production-tools/${item?.img}.png`}
                       alt={item.label}
                       className="mx-auto"
                     />
@@ -162,7 +162,7 @@ export default function MediaEntertainment() {
             {/* Right Image */}
             <img
               loading="lazy"
-              src="/assets/industries/media-entertainment/streaming-video-development-services.png"
+              src="/assets/Industries/media-entertainment/streaming-video-development-services.png"
               alt="Portfolio"
               className="md:w-135 sm:w-110 w-72 mx-auto"
             />
@@ -203,7 +203,7 @@ export default function MediaEntertainment() {
             <FeaturesList features={musicSolutions.slice(0, 2)} center />
             <img
               loading="lazy"
-              src="/assets/industries/media-entertainment/custom-music-software-solutins.png"
+              src="/assets/Industries/media-entertainment/custom-music-software-solutins.png"
               alt="Mobile Analytics App"
               className="w-42 sm:w-62 2xl:w-64 mx-auto block sm:hidden md:block"
             />
@@ -233,7 +233,7 @@ export default function MediaEntertainment() {
         {/* Center Image */}
         <img
           loading="lazy"
-          src="/assets/industries/media-entertainment/dashboard-800-width.png"
+          src="/assets/Industries/media-entertainment/dashboard-800-width.png"
           alt="Mobile Analytics App"
           className="sm:w-[60%] w-full mx-auto"
         />
@@ -251,7 +251,7 @@ export default function MediaEntertainment() {
             {/* Left Image */}
             <img
               loading="lazy"
-              src="/assets/industries/media-entertainment/video-production-software-development.png"
+              src="/assets/Industries/media-entertainment/video-production-software-development.png"
               alt="Portfolio"
               className="w-135 xl:w-145 2xl:w-165 mx-auto"
             />
@@ -279,7 +279,7 @@ export default function MediaEntertainment() {
                   <div key={index}>
                     <img
                       loading="lazy"
-                      src={`/assets/industries/media-entertainment/photographyTools/${item?.img}.png`}
+                      src={`/assets/Industries/media-entertainment/photographyTools/${item?.img}.png`}
                       alt={item.label}
                       className="mx-auto"
                     />
@@ -320,7 +320,7 @@ export default function MediaEntertainment() {
             <FeaturesList features={damSolutions.slice(0, 2)} center />
             <img
               loading="lazy"
-              src="/assets/industries/media-entertainment/dropbox-developer.png"
+              src="/assets/Industries/media-entertainment/dropbox-developer.png"
               alt="Mobile Analytics App"
               className="sm:w-135 xl:w-145 2xl:w-165 mx-auto w-96 block sm:hidden md:block"
             />
@@ -350,7 +350,7 @@ export default function MediaEntertainment() {
                 <div key={index} className="sm:block hidden">
                   <img
                     loading="lazy"
-                    src={`/assets/industries/media-entertainment/digital-marketing/${item?.img}.png`}
+                    src={`/assets/Industries/media-entertainment/digital-marketing/${item?.img}.png`}
                     alt={item.label}
                     className="mx-auto"
                   />
@@ -362,7 +362,7 @@ export default function MediaEntertainment() {
           {/* Right: Image */}
           <img
             loading="lazy"
-            src="/assets/industries/media-entertainment/dashboard.png"
+            src="/assets/Industries/media-entertainment/dashboard.png"
             alt="Portfolio"
             className="w-135 xl:w-145 2xl:w-165 mx-auto"
           />

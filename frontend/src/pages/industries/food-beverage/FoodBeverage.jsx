@@ -45,7 +45,7 @@ const FoodBeverage = () => {
         <FeaturesGridnew
           leftFeatures={FoodBeverageSoftwareLeftFeatures}
           rightFeatures={FoodBeverageSoftwareRightFeatures}
-          centerImage="/assets/industries/food-beverage/foodbeverage.png"
+          centerImage="/assets/Industries/food-beverage/foodbeverage.png"
           iconSize={38}
         />
       </PageLayout>
@@ -68,7 +68,7 @@ const FoodBeverage = () => {
             {/* Left Image */}
             <img
               loading="lazy"
-              src="/assets/industries/food-beverage/software.png"
+              src="/assets/Industries/food-beverage/software.png"
               alt="Food & Beverage Service Management"
               className="w-135 md:w-145 xl:w-155 2xl:w-165 mx-auto"
             />
@@ -105,7 +105,7 @@ const FoodBeverage = () => {
           />
           <img
             loading="lazy"
-            src="/assets/industries/food-beverage/systems.png"
+            src="/assets/Industries/food-beverage/systems.png"
             alt="Food & Beverage ERP System"
             className="w-42 sm:w-48 md:w-52 xl:w-54 2xl:w-56 mx-auto"
           />
@@ -123,7 +123,7 @@ const FoodBeverage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
             <img
               loading="lazy"
-              src="/assets/industries/food-beverage/management.png"
+              src="/assets/Industries/food-beverage/management.png"
               alt="Food & Beverage Quality Management"
               className="w-135 md:w-145 xl:w-155 2xl:w-165 mx-auto"
             />
@@ -151,7 +151,7 @@ const FoodBeverage = () => {
           />
           <img
             loading="lazy"
-            src="/assets/industries/food-beverage/distribution.png"
+            src="/assets/Industries/food-beverage/distribution.png"
             alt="Food & Beverage Distribution"
             className="w-135 md:w-145 xl:w-155 2xl:w-165 mx-auto"
           />
@@ -171,7 +171,7 @@ const FoodBeverage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
             <img
               loading="lazy"
-              src="/assets/industries/food-beverage/inventory.png"
+              src="/assets/Industries/food-beverage/inventory.png"
               alt="Food & Beverage Inventory Management"
               className="w-135 md:w-145 xl:w-155 2xl:w-165 mx-auto"
             />
@@ -253,7 +253,7 @@ const FoodBeverage = () => {
           />
           <img
             loading="lazy"
-            src="/assets/industries/food-beverage/development.png"
+            src="/assets/Industries/food-beverage/development.png"
             alt="Food & Beverage Traceability"
             className="w-145 xl:w-155 2xl:w-165 mx-auto"
           />

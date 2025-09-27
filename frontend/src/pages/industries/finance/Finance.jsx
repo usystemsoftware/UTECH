@@ -45,7 +45,7 @@ const Finance = () => {
         <FeaturesGridnew
           leftFeatures={leftFeatures}
           rightFeatures={rightFeatures}
-          centerImage="/assets/industries/finance/combo-finance.png"
+          centerImage="/assets/Industries/finance/combo-finance.png"
         />
         <ContactUsButton variant="hover">
           CUSTOMIZE YOUR BANKING SOLUTION NOW
@@ -75,7 +75,7 @@ const Finance = () => {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
           <img
-            src="/assets/industries/finance/accounting-development.png"
+            src="/assets/Industries/finance/accounting-development.png"
             alt="Accounting Dashboard"
             loading="lazy"
             className="w-96 sm:w-120 xl:w-135 2xl:w-145 mx-auto"
@@ -109,7 +109,7 @@ const Finance = () => {
           />
           <img
             loading="lazy"
-            src="/assets/industries/finance/portfolio-development.png"
+            src="/assets/Industries/finance/portfolio-development.png"
             alt="Portfolio"
             className="w-135 xl:w-145 2xl:w-165 mx-auto"
           />
@@ -129,7 +129,7 @@ const Finance = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
             <img
               loading="lazy"
-              src="/assets/industries/finance/planning-development.png"
+              src="/assets/Industries/finance/planning-development.png"
               alt="Financial Planning Dashboard"
               className="w-78 sm:w-110 xl:w-120 2xl:w-125 mx-auto"
             />
@@ -201,7 +201,7 @@ const Finance = () => {
             <FeaturesList features={insuranceFeatures} grid center />
             <img
               loading="lazy"
-              src="/assets/industries/finance/insurance-development.png"
+              src="/assets/Industries/finance/insurance-development.png"
               alt="Insurance Dashboard"
               className="w-96 sm:w-120 xl:w-135 2xl:w-145 mx-auto"
             />
@@ -221,7 +221,7 @@ const Finance = () => {
         <PageLayout className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <img
             loading="lazy"
-            src="/assets/industries/finance/preparation-development.png"
+            src="/assets/Industries/finance/preparation-development.png"
             alt="Tax Preparation"
             className="w-145 xl:w-155 2xl:w-165 mx-auto"
           />

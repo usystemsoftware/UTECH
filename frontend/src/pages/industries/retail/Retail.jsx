@@ -34,7 +34,7 @@ export default function Retail() {
         <FeaturesGridnew
           leftFeatures={retailSolutions.slice(0, 3)}
           rightFeatures={retailSolutions.slice(3, 6)}
-          centerImage="/assets/industries/retail/retail-banner-3.png"
+          centerImage="/assets/Industries/retail/retail-banner-3.png"
           iconGap="md:gap-18"
           imgSize="xl:w-175 2xl:w-195"
         />
@@ -57,7 +57,7 @@ export default function Retail() {
 
           {/* Developer Experience Image */}
           <img
-            src="/assets/industries/retail/we-have-software-developers-with-retail-industry-experience.png"
+            src="/assets/Industries/retail/we-have-software-developers-with-retail-industry-experience.png"
             alt="Accounting Dashboard"
             loading="lazy"
             className="sm:w-[50%] w-full mx-auto"
@@ -91,7 +91,7 @@ export default function Retail() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <img
             loading="lazy"
-            src="/assets/industries/retail/ar-software-development.png"
+            src="/assets/Industries/retail/ar-software-development.png"
             alt="Portfolio"
             className="w-42 sm:w-52 xl:w-62 2xl:w-68 mx-auto"
           />
@@ -132,7 +132,7 @@ export default function Retail() {
             {/* Image */}
             <img
               loading="lazy"
-              src="/assets/industries/retail/custom-e-commerce-software-solutions.png"
+              src="/assets/Industries/retail/custom-e-commerce-software-solutions.png"
               alt="Portfolio"
               className="w-86 sm:w-110 xl:w-145 2xl:w-155 mx-auto"
             />
@@ -156,7 +156,7 @@ export default function Retail() {
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-12">
           <img
             loading="lazy"
-            src="/assets/industries/retail/custom-shopping-cart-software-solutions.png"
+            src="/assets/Industries/retail/custom-shopping-cart-software-solutions.png"
             alt="Portfolio"
             className="w-78 sm:w-96 xl:w-110 2xl:w-135 mx-auto"
           />
@@ -184,7 +184,7 @@ export default function Retail() {
                 <div key={index}>
                   <img
                     loading="lazy"
-                    src={`/assets/industries/retail/shopping-software/${item?.img}.png`}
+                    src={`/assets/Industries/retail/shopping-software/${item?.img}.png`}
                     alt={item.label}
                     className="mx-auto"
                   />
@@ -224,7 +224,7 @@ export default function Retail() {
             </div>
             <img
               loading="lazy"
-              src="/assets/industries/retail/e-commerce-automation.png"
+              src="/assets/Industries/retail/e-commerce-automation.png"
               alt="Portfolio"
               className="w-42 sm:w-52 xl:w-62 2xl:w-68 mx-auto"
             />

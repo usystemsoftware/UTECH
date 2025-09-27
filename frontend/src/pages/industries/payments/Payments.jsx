@@ -55,7 +55,7 @@ const Payments = () => {
         <FeaturesGridnew
           leftFeatures={PymentSoftwareLeftFeatures}
           rightFeatures={PymentSoftwareRightFeatures}
-          centerImage="/assets/industries/payments/combo.png"
+          centerImage="/assets/Industries/payments/combo.png"
         />
       </PageLayout>
 
@@ -76,7 +76,7 @@ const Payments = () => {
             <FeaturesList features={pymentSolutions} grid center />
             <img
               loading="lazy"
-              src="/assets/industries/payments/processing.png"
+              src="/assets/Industries/payments/processing.png"
               alt="Portfolio"
               className="w-42 sm:w-56 xl:w-62 2xl:w-64 mx-auto block sm:hidden md:block"
             />
@@ -86,7 +86,7 @@ const Payments = () => {
               <img
                 key={index}
                 loading="lazy"
-                src={`/assets/industries/payments/images/${logo}.png`}
+                src={`/assets/Industries/payments/images/${logo}.png`}
                 className="cursor-pointer h-10 hover:scale-105 transition-transform"
                 alt={logo}
               />
@@ -123,7 +123,7 @@ const Payments = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
             <img
               loading="lazy"
-              src="/assets/industries/payments/mobile-payment-processing-solutions.png"
+              src="/assets/Industries/payments/mobile-payment-processing-solutions.png"
               alt="Financial Planning Dashboard"
               className="w-42 sm:w-56 xl:w-62 2xl:w-64 mx-auto"
             />
@@ -164,7 +164,7 @@ const Payments = () => {
           {/* Center Animation */}
           <img
             loading="lazy"
-            src="/assets/industries/payments/online.png"
+            src="/assets/Industries/payments/online.png"
             alt="Mobile Analytics App"
             className="w-145 xl:w-155 2xl:w-165 mx-auto"
           />
@@ -181,7 +181,7 @@ const Payments = () => {
             <img
               key={index}
               loading="lazy"
-              src={`/assets/industries/payments/imagesonline/${logo}.png`}
+              src={`/assets/Industries/payments/imagesonline/${logo}.png`}
               className="h-10 cursor-pointer hover:scale-105 transition-transform"
               alt={logo}
             />
@@ -216,7 +216,7 @@ const Payments = () => {
             </div>
             <img
               loading="lazy"
-              src="/assets/industries/payments/pos.png"
+              src="/assets/Industries/payments/pos.png"
               alt="Payment Planning Dashboard"
               className="w-145 xl:w-155 2xl:w-165 mx-auto"
             />
@@ -233,7 +233,7 @@ const Payments = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
           <img
             loading="lazy"
-            src="/assets/industries/payments/terminal.png"
+            src="/assets/Industries/payments/terminal.png"
             alt="Financial Planning Dashboard"
             className="w-86 sm:w-130 xl:w-135 2xl:w-145 mx-auto"
           />
@@ -242,7 +242,7 @@ const Payments = () => {
               <div key={idx}>
                 {feature.img && (
                   <img
-                    src={`/assets/industries/payments/Terminals/${feature.img}.png`}
+                    src={`/assets/Industries/payments/Terminals/${feature.img}.png`}
                     alt={feature.title}
                     className="w-30 h-14 mx-auto object-contain"
                     loading="lazy"
@@ -285,7 +285,7 @@ const Payments = () => {
             </div>
             <img
               loading="lazy"
-              src="/assets/industries/payments/customm.png"
+              src="/assets/Industries/payments/customm.png"
               alt="Payment Planning Dashboard"
               className="w-86 sm:w-120 2xl:w-135 mx-auto"
             />
@@ -302,7 +302,7 @@ const Payments = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-6">
           <img
             loading="lazy"
-            src="/assets/industries/payments/billing.gif"
+            src="/assets/Industries/payments/billing.gif"
             alt="Payment Planning Dashboard"
             className="w-42 sm:w-56 xl:w-62 2xl:w-64 mx-auto"
           />
@@ -340,7 +340,7 @@ const Payments = () => {
             </div>
             <img
               loading="lazy"
-              src="/assets/industries/payments/achprocessing.png"
+              src="/assets/Industries/payments/achprocessing.png"
               alt="Payment Planning Dashboard"
               className="w-42 sm:w-56 xl:w-62 2xl:w-64 mx-auto"
             />
@@ -370,7 +370,7 @@ const Payments = () => {
           </div>
           <img
             loading="lazy"
-            src="/assets/industries/payments/management.png"
+            src="/assets/Industries/payments/management.png"
             alt="Payment Planning Dashboard"
             className="w-52 sm:w-66 xl:w-78 2xl:w-86 mx-auto"
           />

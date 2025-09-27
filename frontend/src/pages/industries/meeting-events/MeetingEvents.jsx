@@ -40,7 +40,7 @@ const MeetingEvents = () => {
         <FeaturesGridnew
           leftFeatures={MeetingEventSoftwareLeftFeatures}
           rightFeatures={MeetingEventSoftwareRightFeatures}
-          centerImage="/assets/industries/meeting-events/events.png"
+          centerImage="/assets/Industries/meeting-events/events.png"
         />
       </PageLayout>
 
@@ -68,7 +68,7 @@ const MeetingEvents = () => {
             </div>
             <img
               loading="lazy"
-              src="/assets/industries/meeting-events/phone.png"
+              src="/assets/Industries/meeting-events/phone.png"
               alt="Financial Planning Dashboard"
               className="w-40 sm:w-52 xl:w-56 2xl:w-58 mx-auto"
             />
@@ -87,7 +87,7 @@ const MeetingEvents = () => {
                     <img
                       key={idx}
                       loading="lazy"
-                      src={`/assets/industries/meeting-events/images/${logo}.png`}
+                      src={`/assets/Industries/meeting-events/images/${logo}.png`}
                       className="cursor-pointer hover:scale-105 transition-transform"
                       alt={logo}
                     />
@@ -110,7 +110,7 @@ const MeetingEvents = () => {
           <FeaturesList features={MeetingFeatures.slice(0, 2)} center />
           <img
             loading="lazy"
-            src="/assets/industries/meeting-events/conferencing.png"
+            src="/assets/Industries/meeting-events/conferencing.png"
             alt="Trading Dashboard"
             className="w-135 xl:w-145 2xl:w-165 mx-auto"
           />
@@ -128,7 +128,7 @@ const MeetingEvents = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
             <img
               loading="lazy"
-              src="/assets/industries/meeting-events/registration.png"
+              src="/assets/Industries/meeting-events/registration.png"
               alt="Food & Beverage Service Management"
               className="w-40 sm:w-52 xl:w-56 2xl:w-58 mx-auto"
             />
@@ -169,7 +169,7 @@ const MeetingEvents = () => {
             <FeaturesList features={MeetingFeaturesgive.slice(0, 2)} center />
             <img
               loading="lazy"
-              src="/assets/industries/meeting-events/developers.png"
+              src="/assets/Industries/meeting-events/developers.png"
               alt="Trading Dashboard"
               className="w-135 xl:w-145 2xl:w-165 mx-auto"
             />
@@ -202,7 +202,7 @@ const MeetingEvents = () => {
           </div>
           <img
             loading="lazy"
-            src="/assets/industries/meeting-events/trade.png"
+            src="/assets/Industries/meeting-events/trade.png"
             alt="Financial Planning Dashboard"
             className="w-135 xl:w-145 2xl:w-165 mx-auto"
           />
@@ -225,7 +225,7 @@ const MeetingEvents = () => {
             {/* Center Animation */}
             <img
               loading="lazy"
-              src="/assets/industries/meeting-events/laptop.png"
+              src="/assets/Industries/meeting-events/laptop.png"
               alt="Mobile Analytics App"
               className="w-135 xl:w-145 2xl:w-165 mx-auto"
             />
@@ -243,7 +243,7 @@ const MeetingEvents = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 items-center gap-4">
           <img
             loading="lazy"
-            src="/assets/industries/meeting-events/confrence.png"
+            src="/assets/Industries/meeting-events/confrence.png"
             alt="Association Planning Dashboard"
             className="w-66 sm:w-88 xl:w-94 2xl:w-105 mx-auto"
           />
@@ -283,7 +283,7 @@ const MeetingEvents = () => {
             {/* Center Animation */}
             <img
               loading="lazy"
-              src="/assets/industries/meeting-events/event-technology-solutions.png"
+              src="/assets/Industries/meeting-events/event-technology-solutions.png"
               alt="Mobile Analytics App"
               className="w-135 xl:w-145 2xl:w-165 mx-auto"
             />
@@ -307,7 +307,7 @@ const MeetingEvents = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
           <img
             loading="lazy"
-            src="/assets/industries/meeting-events/powers-up-your-events-and-meetings.png"
+            src="/assets/Industries/meeting-events/powers-up-your-events-and-meetings.png"
             alt="Association Planning Dashboard"
             className="w-135 xl:w-145 2xl:w-165 mx-auto"
           />

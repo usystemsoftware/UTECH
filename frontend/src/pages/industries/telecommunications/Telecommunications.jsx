@@ -37,26 +37,26 @@ const Telecommunications = () => {
 
         <FeaturesList2
           features={TelecomSolutions.slice(0, 1)}
-          image="/assets/industries/telecommunications/operations.png"
+          image="/assets/Industries/telecommunications/operations.png"
           imageClass="xl:w-175 2xl:w-195 mx-auto"
         />
 
         <FeaturesList2
           features={TelecomSolutions.slice(1, 2)}
-          image="/assets/industries/telecommunications/online.png"
+          image="/assets/Industries/telecommunications/online.png"
           reverse
           imageClass="xl:w-175 2xl:w-195 mx-auto"
         />
 
         <FeaturesList2
           features={TelecomSolutions.slice(2, 3)}
-          image="/assets/industries/telecommunications/interface.png"
+          image="/assets/Industries/telecommunications/interface.png"
           imageClass="sm:w-145 xl:w-185 2xl:w-200 mx-auto"
         />
 
         <FeaturesList2
           features={TelecomSolutions.slice(3, 4)}
-          image="/assets/industries/telecommunications/telecom.png"
+          image="/assets/Industries/telecommunications/telecom.png"
           imageClass="xl:w-175 2xl:w-195 mx-auto"
           reverse
         />
@@ -115,7 +115,7 @@ const Telecommunications = () => {
           <FeaturesList features={telecomSolutions.slice(0, 2)} center />
           <img
             loading="lazy"
-            src="/assets/industries/telecommunications/mobiles.png"
+            src="/assets/Industries/telecommunications/mobiles.png"
             alt="Telecommunication Planning Dashboard"
             className="sm:w-66 w-48 md:w-78 xl:w-86 2xl:w-96 mx-auto"
           />
@@ -140,7 +140,7 @@ const Telecommunications = () => {
                   {item?.partners.map((partner) => (
                     <img
                       loading="lazy"
-                      src={`/assets/industries/telecommunications/images/${partner}.png`}
+                      src={`/assets/Industries/telecommunications/images/${partner}.png`}
                       alt={`${item.title} - ${partner}`}
                     />
                   ))}
