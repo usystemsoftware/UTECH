@@ -19,7 +19,7 @@ import portfolio5 from "../../../../public/assets/Industries/agriculture/2.jpeg"
 import portfolio6 from "../../../../public/assets/Industries/agriculture/1.jpeg";
 
 // Background + Special Image
-import tvPosterImg from "../../../../public/assets/industries/agriculture/monitor-txt-bubles-and-background-agriculture-crop.png";
+import tvPosterImg from "../../../../public/assets/Industries/agriculture/monitor-txt-bubles-and-background-agriculture-crop.png";
 
 
 
