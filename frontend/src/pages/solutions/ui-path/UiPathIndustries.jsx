@@ -2,7 +2,7 @@ import { useState } from "react";
 import Uipathbpo from "./Uipathbpo";
 import Uipathbanking from "./Uipathbanking";
 import UiPathInsurance from "./UiPathInsurance";
-import UiPathhealthcare from "./UiPathhealthacare";
+import UiPathhealthcare from "./Uipathhealthacare";
 import Uipathtelecom from "./Uipathtelecom";
 import Uipathmanufacturing from "./Uipathmanufacturing";
 import UiPathPublicServices from "./UiPathPublicServices";
@@ -58,4 +58,3 @@ export default function UiPathIndustries() {
     </section>
   );
 }
-
