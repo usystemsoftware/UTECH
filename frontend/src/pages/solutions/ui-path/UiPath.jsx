@@ -65,7 +65,7 @@ export default function UiPath() {
 
       {/* === INDUSTRIES === */}
       {/* Uncomment these if you want to show them individually */}
-      {/* 
+      
       <UiPathBPO />
       <UiPathBanking />
       <UiPathInsurance />
@@ -74,7 +74,7 @@ export default function UiPath() {
       <UiPathManufacturing />
       <UiPathPublicServices />
       <UiPathRetail /> 
-      */}
+     
       <UiPathIndustries />
 
       {/* === FAQ SECTION === */}
