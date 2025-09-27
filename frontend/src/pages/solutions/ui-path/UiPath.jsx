@@ -4,12 +4,12 @@ import PageLayout from "@/custom/PageLayout";
 import { FeaturesList, FeaturesListOpposite } from "@/components/FeaturesList";
 import { Headline } from "@/custom/Typography";
 
-import UiPathBpo from "./UiPathBpo";
-import UiPathBanking from "./UiPathBanking";
+import UiPathBpo from "./Uipathbpo";
+import UiPathBanking from "./Uipathbanking";
 import UiPathInsurance from "./UiPathInsurance";
-import UiPathHealthcare from "./UiPathHealthcare";
-import UiPathTelecom from "./UiPathTelecom";
-import UiPathManufacturing from "./UiPathManufacturing";
+import UiPathHealthcare from "./Uipathhealthacare";
+import UiPathTelecom from "./Uipathtelecom";
+import UiPathManufacturing from "./Uipathmanufacturing";
 import UiPathPublicServices from "./UiPathPublicServices";
 import UiPathRetail from "./UiPathRetail";
 
