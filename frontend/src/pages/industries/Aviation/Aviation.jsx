@@ -28,8 +28,17 @@ import customFlightOps from "../../../../public/assets/Industries/aviation/custo
 import sabreTravelGif from "../../../../public/assets/Industries/aviation/sabre-travel-network-solutions-gif.gif";
 import mroAviationSoftware from "../../../../public/assets/Industries/aviation/mro-aviation-software-developers.png";
 import customDroneSoftware from "../../../../public/assets/Industries/aviation/custom-drone-software-development.png";
-
+import Drone1 from "../../../../public/assets/Industries/aviation/drone/arcgis.png";
+import Drone2 from "../../../../public/assets/Industries/aviation/drone/dronedeploy.png";
+import Drone3 from "../../../../public/assets/Industries/aviation/drone/flytbase.png";
+import Drone4 from "../../../../public/assets/Industries/aviation/drone/pix4dmapper.png";
 export default function Aviation() {
+  const dronePartner = [
+    { img: Drone1, name: "Drone Partner 1" },
+    { img: Drone2, name: "Drone Partner 2" },
+    { img: Drone3, name: "Drone Partner 3" },
+    { img: Drone4, name: "Drone Partner 4" },
+  ];
   return (
     <>
       {/* Banner */}
@@ -188,17 +197,17 @@ export default function Aviation() {
               transform drone image capture and analysis.
             </TypographyMuted>
             <div className="flex items-center gap-6 justify-center flex-wrap mt-8">
-              {dronePartner?.map((item, index) => (
-                <div key={index}>
-                  <img
-                    loading="lazy"
-                    src={`/assets/industries/aviation/drone/${item?.img}.png`}
-                    alt={`${item?.name || "Drone partner"} logo`}
-                    className="w-32 hover:scale-105 cursor-pointer mx-auto"
-                  />
-                </div>
-              ))}
-            </div>
+      {dronePartner.map((item, index) => (
+        <div key={index}>
+          <img
+            loading="lazy"
+            src={item.img}
+            alt={`${item.name} logo`}
+            className="w-32 hover:scale-105 cursor-pointer mx-auto"
+          />
+        </div>
+      ))}
+    </div>
           </div>
         </div>
         <ContactUsButton variant="hover">

@@ -85,12 +85,12 @@ export const Navlinks = [
       { label: "Autodesk", href: "/solutions/autodesk", image: "/images/partners/autodesk.png", icon: "Shapes" },
       { label: "IBM", href: "/solutions/ibm", image: "/images/partners/ibm.png", icon: "Server" },
       { label: "Google Cloud", href: "/solutions/google-cloud", image: "/images/partners/google-cloud.png", icon: "CloudSun" },
-      // { label: "Microsoft", href: "/solutions/microsoft", image: "/images/partners/microsoft.png", icon: "Laptop" },
+      { label: "Microsoft", href: "/solutions/microsoft", image: "/images/partners/microsoft.png", icon: "Laptop" },
       // { label: "NetSuite", href: "/solutions/netsuite", image: "/images/partners/netsuite.png", icon: "Network" },
       { label: "Oracle", href: "/solutions/oracle", image: "/images/partners/oracle.png", icon: "CircleDashed" },
       { label: "Salesforce", href: "/solutions/salesforce", image: "/images/partners/salesforce.png", icon: "Activity" },
       { label: "SAP", href: "/solutions/sap", image: "/images/partners/sap.png", icon: "LayoutGrid" },
-      // { label: "UiPath", href: "/solutions/uipath", image: "/images/partners/uipath.png", icon: "Bot" },
+      { label: "UiPath", href: "/solutions/uipath", image: "/images/partners/uipath.png", icon: "Bot" },
       { label: "UKG", href: "/solutions/ukg", image: "/images/partners/ukg.png", icon: "Users" },
       { label: "More....", href: "/affiliations", },
     ],
@@ -105,10 +105,28 @@ export const Navlinks = [
       { label: "Events", href: "/company/events", icon: "Calendar" },
       { label: "History", href: "/company/history", icon: "Clock" },
       { label: "Locations", href: "/company/locations", icon: "MapPin" },
-      // { label: "Newsroom", href: "/company/newsroom", icon: "Newspaper" },
+      { label: "Newsroom", href: "/company/newsroom", icon: "Newspaper" },
       { label: "Partners & Affiliations", href: "/affiliations", icon: "Handshake" },
       { label: "People And Culture", href: "/company/people-and-culture", icon: "Smile" },
       { label: "Reviews", href: "/company/reviews", icon: "Star" },
+    ],
+  },
+  {
+    title: "Portfolio",
+    items: [
+      { label: "Our Clients", href: "/portfolio/our-client", icon: "Info" },
+      { label: "Our Work", href: "/portfolio/our-work", icon: "Info" },
+     
+    ],
+  },
+
+
+   {
+    title: "Blog",
+    items: [
+      { label: "BlogSection", href: "/blog/BlogSection", icon: "Info" },
+     
+     
     ],
   },
 ];
