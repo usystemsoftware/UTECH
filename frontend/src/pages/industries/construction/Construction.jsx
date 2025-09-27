@@ -26,16 +26,31 @@ import {
   supportServices,
   testimonials,
 } from "./Data";
+
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FeaturesListOpposite } from "@/components/FeaturesList";
 import ImageNearScreen from "@/custom/ImageNearScreen";
+
+// ✅ Import all images from src/assets
+import heroBanner from "../../../../public/banner/aec-banner.jpg";
+import constructionSoftwareServices from "../../../../public/assets/Industries/construction/construction-software-services.png";
+import constructionAccountingSoftware from "../../../../public/assets/Industries/construction/construction-accounting-software.png";
+import bimSolutionsImg from "../../../../public/assets/Industries/construction/building-information-modeling-solutions-cut.png";
+import revitSolutionsImg from "../../../../public/assets/Industries/construction/revit-software-solutions-cut.png";
+import erpSolutionsImg from "../../../../public/assets/Industries/construction/construction-erp-software-solutions.png";
+import estimationSolutionsImg from "../../../../public/assets/Industries/construction/construction-cost-estimation-software-cut.png";
+import bidManagementSoftwareImg from "../../../../public/assets/Industries/construction/construction-bid-management-software-solutions-cut.png";
+import equipmentManagementSoftwareImg from "../../../../public/assets/Industries/construction/farm-management-software-services1.png";
+import schedulingSolutionsImg from "../../../../public/assets/Industries/construction/scheduling-software-solutions-cut.png";
+import submittalSolutionsImg from "../../../../public/assets/Industries/construction/construction-submittal-solutions.png";
+import projectManagementSolutionsImg from "../../../../public/assets/Industries/construction/project-management-software-solutions.png";
 
 export default function Construction() {
   return (
     <>
       {/* Hero Section */}
       <HeroSection
-        backgroundImage="/banner/aec-banner.jpg"
+        backgroundImage={heroBanner}
         title="Construction Software Development"
         description="Empowering Excellence in Construction With Custom AI-Powered Solutions"
         buttonText="Get Constructions Software Developers"
@@ -52,7 +67,7 @@ export default function Construction() {
         <FeaturesGridnew
           leftFeatures={ConstructionSoftwareLeftFeatures}
           rightFeatures={ConstructionSoftwareRightFeatures}
-          centerImage="/assets/industries/construction/construction-software-services.png"
+          centerImage={constructionSoftwareServices}
         />
       </PageLayout>
 
@@ -102,8 +117,8 @@ export default function Construction() {
             </div>
             <img
               loading="lazy"
-              src="/assets/industries/construction/construction-accounting-software.png"
-              alt="Portfolio"
+              src={constructionAccountingSoftware}
+              alt="Construction Accounting Software"
               className="w-135 xl:w-145 2xl:w-185 mx-auto order-1 md:order-2"
             />
           </div>
@@ -118,14 +133,13 @@ export default function Construction() {
         />
         <ImageNearScreen
           features={bimSolutions}
-          src="/assets/industries/construction/building-information-modeling-solutions-cut.png"
+          src={bimSolutionsImg}
           imageAlign="left"
           imgClass="2xl:w-165"
         />
       </section>
 
       {/* Revit Software Section */}
-
       <section className="py-5 flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Revit Software Solutions"
@@ -133,7 +147,7 @@ export default function Construction() {
         />
         <ImageNearScreen
           features={revitSolutions}
-          src="/assets/industries/construction/revit-software-solutions-cut.png"
+          src={revitSolutionsImg}
           imageAlign="right"
           imgClass="2xl:w-165"
         />
@@ -149,8 +163,8 @@ export default function Construction() {
           <div>
             <img
               loading="lazy"
-              src="/assets/industries/construction/construction-erp-software-solutions.png"
-              alt="Portfolio"
+              src={erpSolutionsImg}
+              alt="ERP Solutions"
               className="w-150 xl:w-155 2xl:w-185 mx-auto"
             />
           </div>
@@ -158,6 +172,7 @@ export default function Construction() {
         </div>
       </PageLayout>
 
+      {/* Estimation Section */}
       <section className="py-16 flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Cost Estimation Software"
@@ -165,13 +180,13 @@ export default function Construction() {
         />
         <ImageNearScreen
           features={estimationSolutions}
-          src="/assets/industries/construction/construction-cost-estimation-software-cut.png"
+          src={estimationSolutionsImg}
           imageAlign="right"
           imgClass="2xl:w-165"
         />
       </section>
-      {/* Bid Management Section */}
 
+      {/* Bid Management Section */}
       <section className="py-16 flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Construction Bid Management Software"
@@ -179,7 +194,7 @@ export default function Construction() {
         />
         <ImageNearScreen
           features={bidManagementSoftware}
-          src="/assets/industries/construction/construction-bid-management-software-solutions-cut.png"
+          src={bidManagementSoftwareImg}
           imageAlign="left"
           imgClass="2xl:w-165"
         />
@@ -198,15 +213,14 @@ export default function Construction() {
           />
           <img
             loading="lazy"
-            src="/assets/industries/construction/farm-management-software-services1.png"
-            alt="Portfolio"
+            src={equipmentManagementSoftwareImg}
+            alt="Equipment Management Software"
             className="w-48 md:w-64 xl:w-68 2xl:w-82 mx-auto"
           />
         </div>
       </PageLayout>
 
-      {/* Scheduling Software Section */}
-
+      {/* Scheduling Section */}
       <section className="py-16 flex flex-col gap-3 justify-center items-center">
         <Headline
           title="Scheduling Software Solution"
@@ -214,13 +228,13 @@ export default function Construction() {
         />
         <ImageNearScreen
           features={schedulingSolutions}
-          src="/assets/industries/construction/scheduling-software-solutions-cut.png"
+          src={schedulingSolutionsImg}
           imageAlign="left"
           imgClass="2xl:w-165"
         />
       </section>
 
-      {/* Submittal Solutions Section */}
+      {/* Submittal Section */}
       <section className="py-16 bg-secondary space-y-10">
         <Headline
           title="Construction Submittal Solutions"
@@ -230,8 +244,8 @@ export default function Construction() {
           <FeaturesList iconAlign="horizontal" features={submittalSolutions} />
           <img
             loading="lazy"
-            src="/assets/industries/construction/construction-submittal-solutions.png"
-            alt="Portfolio"
+            src={submittalSolutionsImg}
+            alt="Submittal Solutions"
             className="w-42 md:w-52 xl:w-56 2xl:w-64 mx-auto"
           />
         </PageLayout>
@@ -246,8 +260,8 @@ export default function Construction() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
           <img
             loading="lazy"
-            src="/assets/industries/construction/project-management-software-solutions.png"
-            alt="Portfolio"
+            src={projectManagementSolutionsImg}
+            alt="Project Management Solutions"
             className="md:w-110 w-72 xl:w-125 2xl:w-135 mx-auto"
           />
           <FeaturesList
