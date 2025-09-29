@@ -1,278 +1,244 @@
-import React from "react";
+import React, { useState } from "react";
+import HeroSection from "@/components/HeroSection";
+import PageLayout from "@/custom/PageLayout";
+import { Card, CardContent, CardDescription } from "@/components/ui/card";
+import { TypographyH3, TypographyH4, TypographyMuted, Headline } from "@/custom/Typography";
+import ContactUsButton from "@/custom/ContactUsButton";
+import { motion } from "framer-motion";
 
-const BlogSection = () => {
+// Dummy blog data
+const whatsNew = [
+  "The Future of Property Valuation: How Agentic AI is Revolutionizing AVMs",
+  "How SAP SuccessFactors Helps HR Solve Turnover & Payroll Issues",
+  "SAP Build: One Platform for No-Code to Pro-Code App Development",
+  "Your Next Construction Project Could Run on AI—Here’s What That Looks Like",
+];
+
+const techInsights = [
+  {
+    title: "FinOps for AI: 8 Cost Optimization Strategies for Scalable AI Workloads",
+    img: "/assets/blog/10009.jpg",
+    category: "Technical Perspectives",
+    desc: "FinOps, short for “Cloud Financial Operations,” refers to an increasingly important operational model for managing costs in AI-driven infrastructures…",
+    link: "https://example.com/finops-ai"
+  },
+];
+
+const topTech = [
+  {
+    title: "Exploring Next-Gen AI Models and Their Impact",
+    img: "/assets/blog/Toptech.jpg",
+    category: "Technical Perspectives",
+    link: "https://example.com/next-gen-ai"
+  },
+];
+
+const leftColumnPosts = [
+  { title: "Oracle Micros POS: Powering Smart Restaurants with Seamless Service", img: "/assets/blog/10006.jpg", link: "https://example.com/oracle-micros" },
+  { title: "Social Gaming Market Insights Through Mobile Gaming Segmentation", img: "/assets/blog/10007.jpg", link: "https://example.com/social-gaming" },
+  { title: "Choosing the Right Oracle Tool: EBS vs Cloud", img: "/assets/blog/10008.jpg", link: "https://example.com/oracle-ebs" },
+  { title: "FinOps for AI: 8 Cost Optimization Strategies for Scalable AI Workloads", img: "/assets/blog/10009.jpg", link: "https://example.com/finops-ai" },
+  { title: "How Sabre’s NDC Capabilities are Transforming Airline Distribution?", img: "/assets/blog/img3.jpg", link: "https://example.com/sabre-ndc" },
+];
+
+const rightColumnPosts = [
+  { category: "Technical Perspectives", title: "Deciding Between Oracle Cloud VS AWS", link: "https://example.com/oracle-vs-aws" },
+  { category: "Technical Perspectives", title: "Oracle Databases: Main Differences Between 12c, 18c and 19c", link: "https://example.com/oracle-db" },
+  { category: "Blockchain", title: "5 Key Blockchain Protocols You Need to Know", link: "https://example.com/blockchain-protocols" },
+  { category: "Technical Perspectives", title: "SAP ECC vs. SAP ERP S/4 HANA: What is the Difference?", link: "https://example.com/sap-ecc-vs-s4" },
+  { category: "Technical Perspectives", title: "Top 3 Essential Oracle ERP Modules You Need", link: "https://example.com/oracle-erp-modules" },
+];
+
+export default function BlogSection() {
+  const [selectedPost, setSelectedPost] = useState(null);
+
   return (
-<section className="pt-32 pb-16 bg-white dark:bg-gray-900 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Section Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-          Company <span className="text-teal-600">Blog</span>
-        </h2>
+    <>
+      {/* HERO SECTION (clickable) */}
+      <a href="https://example.com/hero-link" target="_blank" rel="noopener noreferrer">
+        <HeroSection
+          backgroundImage="/assets/blog/10009.jpg"
+          title="Welcome to Our Blog"
+          description="Discover the latest insights, trends, and updates from the tech and business world."
+          buttonText="Explore Blogs"
+        />
+      </a>
 
-        {/* === First Section (Earlier Layout) === */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      {/* BLOG CONTENT */}
+      <PageLayout section className="py-16 space-y-16">
+        <Headline title="Company Blog" description="Latest articles and insights from our team" />
+
+        {/* First Row */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* What's New */}
           <div>
-            <h3 className="text-xl font-semibold text-teal-600 mb-6">
-              WHAT'S NEW
-            </h3>
+            <h3 className="text-xl font-semibold text-teal-600 mb-6">WHAT'S NEW</h3>
             <ul className="space-y-6">
-              {[
-                "The Future of Property Valuation: How Agentic AI is Revolutionizing AVMs",
-                "How SAP SuccessFactors Helps HR Solve Turnover & Payroll Issues",
-                "SAP Build: One Platform for No-Code to Pro-Code App Development",
-                "Your Next Construction Project Could Run on AI—Here’s What That Looks Like",
-              ].map((title, i) => (
-                <li
+              {whatsNew.map((title, i) => (
+                <motion.li
                   key={i}
                   className="flex items-start space-x-4 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 rounded-lg transition"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.1 }}
                 >
-                  <img
-                    src="/assets/blog/10001.jpg"
-                    alt="blog"
-                    className="w-20 h-16 object-cover rounded"
-                  />
-                  <p className="text-gray-700 dark:text-gray-300 font-medium text-justify">
-                    {title}
-                  </p>
-                </li>
+                  <img src="/assets/blog/10001.jpg" alt="blog" className="w-20 h-16 object-cover rounded" />
+                  <p className="text-gray-700 dark:text-gray-300 font-medium text-justify">{title}</p>
+                </motion.li>
               ))}
             </ul>
           </div>
 
           {/* Tech Insights */}
           <div>
-            <h3 className="text-xl font-semibold text-teal-600 mb-6">
-              TECH INSIGHTS
-            </h3>
-            <div className="rounded-lg overflow-hidden shadow hover:shadow-lg transition bg-white dark:bg-gray-800">
-              <img
-                src="/assets/blog/10009.jpg"
-                alt="tech insights"
-                className="w-full h-48 md:h-56 lg:h-64 object-cover"
-              />
-              <div className="p-4 md:p-6">
-                <span className="text-sm uppercase text-gray-500 dark:text-gray-400">
-                  Technical Perspectives
-                </span>
-                <h4 className="text-lg md:text-xl font-semibold mt-2 mb-2 text-gray-900 dark:text-white">
-                  FinOps for AI: 8 Cost Optimization Strategies for Scalable AI
-                  Workloads
-                </h4>
-                <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">
-                  FinOps, short for “Cloud Financial Operations,” refers to an
-                  increasingly important operational model for managing costs in
-                  AI-driven infrastructures…
-                </p>
-              </div>
-            </div>
+            <h3 className="text-xl font-semibold text-teal-600 mb-6">TECH INSIGHTS</h3>
+            {techInsights.map((post, i) => (
+              <motion.div
+                key={i}
+                className="mb-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <a href={post.link} target="_blank" rel="noopener noreferrer">
+                  <Card className="overflow-hidden hover:shadow-2xl transition">
+                    <img src={post.img} alt={post.title} className="w-full h-56 object-cover" />
+                    <CardContent>
+                      <span className="text-sm text-gray-500 dark:text-gray-400 uppercase">{post.category}</span>
+                      <TypographyH4 className="mt-2">{post.title}</TypographyH4>
+                      <CardDescription className="text-gray-600 dark:text-gray-300 text-sm">{post.desc}</CardDescription>
+                    </CardContent>
+                  </Card>
+                </a>
+              </motion.div>
+            ))}
           </div>
 
-          {/* Top Tech Topics */}
+          {/* Top Tech */}
           <div>
-            <h3 className="text-xl font-semibold text-teal-600 mb-6">
-              TOP TECH TOPICS
-            </h3>
-            <div className="rounded-lg overflow-hidden shadow hover:shadow-lg transition bg-white dark:bg-gray-800">
-              <img
-                src="/assets/blog/Toptech.jpg"
-                alt="top tech"
-                className="w-full h-64 md:h-72 lg:h-80 object-cover"
-              />
-              <div className="p-6">
-                <span className="text-sm uppercase text-gray-500 dark:text-gray-400">
-                  Technical Perspectives
-                </span>
-                <h4 className="text-xl font-semibold mt-3 text-gray-900 dark:text-white">
-                  Exploring Next-Gen AI Models and Their Impact
-                </h4>
-              </div>
-            </div>
+            <h3 className="text-xl font-semibold text-teal-600 mb-6">TOP TECH TOPICS</h3>
+            {topTech.map((post, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <a href={post.link} target="_blank" rel="noopener noreferrer">
+                  <Card className="overflow-hidden hover:shadow-2xl transition mb-6">
+                    <img src={post.img} alt={post.title} className="w-full h-64 object-cover" />
+                    <CardContent>
+                      <span className="text-sm text-gray-500 dark:text-gray-400 uppercase">{post.category}</span>
+                      <TypographyH4 className="mt-2">{post.title}</TypographyH4>
+                    </CardContent>
+                  </Card>
+                </a>
+              </motion.div>
+            ))}
           </div>
         </div>
 
-        {/* === Second Section (New Layout) === */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {/* Left Column - Small Cards */}
+        {/* Second Row */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Left Column */}
           <div className="space-y-6">
-            {[
-              {
-                title:
-                  "Oracle Micros POS: Powering Smart Restaurants with Seamless Service",
-                img: "/assets/blog/10006.jpg",
-              },
-              {
-                title:
-                  "Social Gaming Market Insights Through Mobile Gaming Segmentation",
-                img: "/assets/blog/10007.jpg",
-              },
-              {
-                title: "Choosing the Right Oracle Tool: EBS vs Cloud",
-                img: "/assets/blog/10008.jpg",
-              },
-              {
-                title:
-                  "FinOps for AI: 8 Cost Optimization Strategies for Scalable AI Workloads",
-                img: "/assets/blog/10009.jpg",
-              },
-              {
-                title:
-                  "How Sabre’s NDC Capabilities are Transforming Airline Distribution?",
-                img: "/assets/blog/img3.jpg",
-              },
-            ].map((post, i) => (
-              <div
+            {leftColumnPosts.map((post, i) => (
+              <motion.div
                 key={i}
-                className="flex items-start space-x-4 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 rounded-lg transition"
+                className="flex items-start space-x-4 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 rounded-lg transition cursor-pointer"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.05 }}
+                onClick={() => window.open(post.link, "_blank")}
               >
-                <img
-                  src={post.img}
-                  alt={post.title}
-                  className="w-24 h-16 object-cover rounded"
-                />
-                <p className="text-gray-700 dark:text-gray-300 font-medium hover:text-teal-600 cursor-pointer text-justify">
-                  {post.title}
-                </p>
-              </div>
+                <img src={post.img} alt={post.title} className="w-24 h-16 object-cover rounded" />
+                <p className="text-gray-700 dark:text-gray-300 font-medium text-justify">{post.title}</p>
+              </motion.div>
             ))}
           </div>
 
-          {/* Center Column - Featured Blog */}
+          {/* Center Column Featured */}
           <div>
-            <span className="text-sm text-teal-600 font-semibold uppercase">
-              Healthcare
-            </span>
-            <div className="rounded-lg overflow-hidden shadow hover:shadow-lg transition mt-2 bg-white dark:bg-gray-800">
-              <img
-                src="/assets/blog/10008.jpg"
-                alt="featured blog"
-                className="w-full h-56 md:h-64 lg:h-72 object-cover"
-              />
-              <div className="p-4 md:p-6">
-                <span className="text-sm uppercase text-gray-500 dark:text-gray-400">
-                  Technical Perspectives
-                </span>
-                <h4 className="text-lg md:text-xl font-semibold mt-2 mb-2 text-gray-900 dark:text-white">
-                  The Future of Property Valuation: How Agentic AI is
-                  Revolutionizing AVMs
-                </h4>
-                <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">
-                  Real estate and property valuation underwent a radical
-                  transformation during the global…
-                </p>
-              </div>
-            </div>
+            <span className="text-sm text-teal-600 font-semibold uppercase">Featured</span>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+            >
+              <a href="https://example.com/featured-blog" target="_blank" rel="noopener noreferrer">
+                <Card className="mt-2 overflow-hidden hover:shadow-2xl transition">
+                  <img src="/assets/blog/10008.jpg" alt="featured blog" className="w-full h-56 object-cover" />
+                  <CardContent>
+                    <span className="text-sm uppercase text-gray-500 dark:text-gray-400">Technical Perspectives</span>
+                    <TypographyH4 className="mt-2">
+                      The Future of Property Valuation: How Agentic AI is Revolutionizing AVMs
+                    </TypographyH4>
+                    <CardDescription className="text-gray-600 dark:text-gray-300 text-sm">
+                      Real estate and property valuation underwent a radical transformation during the global…
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </a>
+            </motion.div>
           </div>
 
-          {/* Right Column - Blog Titles */}
+          {/* Right Column */}
           <div className="space-y-4">
-            {[
-              {
-                category: "Technical Perspectives",
-                title: "Deciding Between Oracle Cloud VS AWS",
-              },
-              {
-                category: "Technical Perspectives",
-                title:
-                  "Oracle Databases: Main Differences Between 12c, 18c and 19c",
-              },
-              {
-                category: "Blockchain",
-                title: "5 Key Blockchain Protocols You Need to Know",
-              },
-              {
-                category: "Technical Perspectives",
-                title: "SAP ECC vs. SAP ERP S/4 HANA: What is the Difference?",
-              },
-              {
-                category: "Technical Perspectives",
-                title: "Top 3 Essential Oracle ERP Modules You Need",
-              },
-            ].map((post, i) => (
-              <div
+            {rightColumnPosts.map((post, i) => (
+              <motion.div
                 key={i}
-                className="border-b pb-3 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 rounded-lg transition"
+                className="border-b pb-3 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 rounded-lg transition cursor-pointer"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.05 }}
+                onClick={() => window.open(post.link, "_blank")}
               >
-                <span className="text-sm text-teal-600 font-semibold block">
-                  {post.category}
-                </span>
-                <p className="text-gray-700 dark:text-gray-300 font-medium hover:text-teal-600 cursor-pointer text-justify">
-                  {post.title}
-                </p>
-              </div>
+                <span className="text-sm text-teal-600 font-semibold block">{post.category}</span>
+                <p className="text-gray-700 dark:text-gray-300 font-medium hover:text-teal-600 text-justify">{post.title}</p>
+              </motion.div>
             ))}
           </div>
         </div>
 
-        {/* === Third Section (Dropdown + 3 Blogs) === */}
-        {/* <div> */}
-          {/* Filters */}
-          {/* <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
-            <div className="flex flex-wrap gap-4 w-full md:w-auto">
-              <select className="border rounded px-4 py-2 w-full md:w-auto dark:bg-gray-800 dark:text-gray-200">
-                <option>All Industries</option>
-                <option>Healthcare</option>
-                <option>Finance</option>
-                <option>Technology</option>
-              </select>
-              <select className="border rounded px-4 py-2 w-full md:w-auto dark:bg-gray-800 dark:text-gray-200">
-                <option>All Technologies</option>
-                <option>AI</option>
-                <option>Blockchain</option>
-                <option>Cloud</option>
-              </select>
-              <button className="bg-teal-600 text-white px-6 py-2 rounded hover:bg-teal-700 w-full md:w-40">
-                Show All
-              </button>
-            </div>
-          </div> */}
+        {/* CTA Section with Hero Image (clickable) */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+        >
+          <a href="https://example.com/cta-link" target="_blank" rel="noopener noreferrer">
+            <Card className="rounded-sm border-4 border-dashed border-white bg-[#009698] text-white shadow-2xl hover:shadow-2xl transition">
+              <CardContent className="grid gap-8 p-10 sm:grid-cols-2 sm:items-center">
 
-          {/* Blog Grid */}
-          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title:
-                  "Increase Agility and Scalability with Headless CMS Solutions",
-                desc: "Headless CMS solutions are the optimized upgrade of the traditional CMS (Content Management System)…",
-                img: "/assets/blog/img1.jpg",
-              },
-              {
-                title:
-                  'Build NFT-Based "Play-to-Earn" Games Using Blockchain Technology',
-                desc: "The gaming industry never remains stagnant, as cutting-edge tech developments are constantly disrupting…",
-                img: "/assets/blog/img2.jpg",
-              },
-              {
-                title:
-                  "Optimizing Web Development Lifecycles with Low-Code Solutions",
-                desc: "Low code business solutions have risen in popularity for a good reason; the current shortage of talent is by no means…",
-                img: "/assets/blog/img3.jpg",
-              },
-            ].map((post, i) => (
-              <div
-                key={i}
-                className="rounded-lg overflow-hidden shadow hover:shadow-lg transition bg-white dark:bg-gray-800"
-              >
-                <img
-                  src={post.img}
-                  alt={post.title}
-                  className="w-full h-56 md:h-64 lg:h-72 object-cover"
-                />
-                <div className="p-4 md:p-6">
-                  <h4 className="text-lg md:text-xl font-semibold mb-2 text-gray-900 dark:text-white">
-                    {post.title}
-                  </h4>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm text-justify">
-                    {post.desc}
-                  </p>
+                {/* Left Side: Text */}
+                <div className="space-y-4">
+                  <TypographyH3>Have a project in mind?</TypographyH3>
+                  <TypographyMuted className="leading-relaxed">
+                    Let’s scope it together and get your first release out in weeks—not months.
+                  </TypographyMuted>
+
+                  <ContactUsButton 
+                    variant="hover" 
+                    className="border-2 uppercase hover:bg-orange-500 border-orange-500 rounded-full mt-2"
+                  >
+                    Get AI Powered Construction Solutions
+                  </ContactUsButton>
                 </div>
-              </div>
-            ))}
-          </div> */}
-        </div>
-      {/* </div> */}
-    </section>
-  );
-};
 
-export default BlogSection;
+                {/* Right Side: Hero Image */}
+                <div className="flex justify-center items-center">
+                  <img 
+                    src="/assets/hero/cta-image.jpg" 
+                    alt="CTA Hero" 
+                    className="w-full max-w-md rounded-lg shadow-xl object-cover cursor-pointer"
+                  />
+                </div>
+
+              </CardContent>
+            </Card>
+          </a>
+        </motion.div>
+      </PageLayout>
+    </>
+  );
+}
