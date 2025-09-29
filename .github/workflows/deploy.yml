@@ -3,7 +3,7 @@ name: Deploy Frontend
 on:
   push:
     branches:
-      - main # deploy on push to main
+      - main
 
 jobs:
   build-and-deploy:
@@ -16,13 +16,15 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "20" # adjust as needed
+          node-version: "20"
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./frontend
 
       - name: Build project
         run: npm run build
+        working-directory: ./frontend
 
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v0.1.8
