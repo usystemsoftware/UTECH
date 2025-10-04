@@ -11,10 +11,22 @@ import {
   devOpsSolutions,
   devOpsTools,
 } from "./Data";
+import SeoHead from "../../../components/SeoHead"
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema"
 
 export default function DevOps() {
   return (
     <>
+      <SeoHead
+        title="U Tech | DevOps - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+        componentName="DevOps"
+      />
       <HeroSection
         backgroundImage="/banner/hero-img-banner-devops.jpg"
         title="DevOps Consulting Services"

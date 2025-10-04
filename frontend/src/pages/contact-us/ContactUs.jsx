@@ -15,6 +15,9 @@ import { Locations } from "./Data";
 import LoadingPage from "@/custom/LoadingPage";
 import { Mail } from "lucide-react";
 import { contactFormApply } from "@/machine/contactForm";
+import SeoHead from "../../components/SeoHead"
+import organizationSchema from "../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../components/seo/breadcrumbs/breadcrumbSchema"
 
 const contactFields = [
   { name: "name", label: "Full Name", required: true, type: "text" },
@@ -101,6 +104,15 @@ const ContactPage = () => {
   };
 
   return (
+    <>
+    <SeoHead
+        title="U Tech | Company Blog - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
     <section className="w-full">
       {/* HERO IMAGE SECTION */}
       <div className="relative h-[600px] overflow-hidden">
@@ -287,6 +299,7 @@ const ContactPage = () => {
       </PageLayout>
       <LoadingPage loading={loading} success={success} error={error} />
     </section>
+    </>
   );
 };
 

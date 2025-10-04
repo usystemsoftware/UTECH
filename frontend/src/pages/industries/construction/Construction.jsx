@@ -32,7 +32,7 @@ import { FeaturesListOpposite } from "@/components/FeaturesList";
 import ImageNearScreen from "@/custom/ImageNearScreen";
 
 // ✅ Import all images from src/assets
-import heroBanner from "../../../../public/banner/aec-banner.jpg";
+import heroBanner from "../../../../public/banner/Img_construction.jpg";
 import constructionSoftwareServices from "../../../../public/assets/Industries/construction/construction-software-services.png";
 import constructionAccountingSoftware from "../../../../public/assets/Industries/construction/construction-accounting-software.png";
 import bimSolutionsImg from "../../../../public/assets/Industries/construction/building-information-modeling-solutions-cut.png";
@@ -44,10 +44,24 @@ import equipmentManagementSoftwareImg from "../../../../public/assets/Industries
 import schedulingSolutionsImg from "../../../../public/assets/Industries/construction/scheduling-software-solutions-cut.png";
 import submittalSolutionsImg from "../../../../public/assets/Industries/construction/construction-submittal-solutions.png";
 import projectManagementSolutionsImg from "../../../../public/assets/Industries/construction/project-management-software-solutions.png";
+import SeoHead from "../../../components/SeoHead"
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema"
+
+
 
 export default function Construction() {
   return (
     <>
+      <SeoHead
+        title="U Tech | Company Blog - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
+      
       {/* Hero Section */}
       <HeroSection
         backgroundImage={heroBanner}

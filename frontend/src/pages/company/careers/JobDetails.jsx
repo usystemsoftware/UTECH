@@ -21,6 +21,9 @@ import { jobs } from "./Data";
 import Cookies from "js-cookie";
 import { jobApply } from "@/machine/jobApply";
 import LoadingPage from "@/custom/LoadingPage";
+import SeoHead from "../../../components/SeoHead"
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema"
 
 const capitalizeWords = (str) =>
   str.toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase());
@@ -130,6 +133,14 @@ export default function JobDetails() {
 
   return (
     <>
+      <SeoHead
+        title="U Tech | JobDetails - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
       <HeroSection
         backgroundImage={job?.img}
         title={job?.title}

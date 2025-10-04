@@ -14,7 +14,10 @@ import img10001 from "../../../../public/assets/Industries/banking/10001.png";
 import customatm from "../../../../public/assets/Industries/banking/customatm.png";
 import customcore from "../../../../public/assets/Industries/banking/customcore.png";
 import mobilebrowser from "../../../../public/assets/Industries/banking/mobilebrowser.png";
-import payment from "../../../../public/assets/Industries/banking/payment.png"
+import payment from "../../../../public/assets/Industries/banking/payment.png";
+import SeoHead from "../../../components/SeoHead"
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema"
 
 import {
   AIPoweredSolutions,
@@ -33,8 +36,17 @@ import {
 
 export const Banking = () => (
   <>
+    <SeoHead
+        title="U Tech | Company Blog - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
+
     <HeroSection
-      backgroundImage="/banner/new-banking-banner.jpg"
+      backgroundImage="/banner/Banker_industry.jpg"
       title="BANKING SOFTWARE DEVELOPMENT"
       description="Transforming banking with AI, fraud detection, wealth management & more."
       buttonText="Hire Banking Software Developers"

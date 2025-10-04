@@ -5,7 +5,7 @@ export const Navlinks = [
       {
         label: "Agriculture",
         href: "/industries/agriculture",
-        image: "/images/industries/agriculture.png",
+        image: "/public/banner/agriculture-banner.jpg",
         icon: "Tractor",
       },
       {

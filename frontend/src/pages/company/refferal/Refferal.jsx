@@ -6,10 +6,21 @@ import {
 import { Button } from '@/components/ui/button'
 import PageLayout from "@/custom/PageLayout";
 import { IndianRupee, MessageCircleMore, Phone } from "lucide-react";
+import SeoHead from "../../../components/SeoHead"
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema"
 
 export default function Refferal() {
     return (
         <>
+        <SeoHead
+        title="U Tech | Company Blog - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
             <HeroSection
                 backgroundImage="/banner/referral-banner.jpeg"
                 title=" REFER A FRIEND AND GET 50+ "

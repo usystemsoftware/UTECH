@@ -17,10 +17,21 @@ import {
   sportsHealthSolutions,
   sportsTrainingSolutions,
 } from "./Data";
+import SeoHead from "../../../components/SeoHead"
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema"
 
 export default function Sports() {
   return (
     <>
+    <SeoHead
+        title="U Tech | Company Blog - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
       {/* === Hero Banner Section === */}
       <HeroSection
         backgroundImage="/banner/sport-banner.jpg"

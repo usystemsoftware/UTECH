@@ -14,6 +14,9 @@ import Cookies from "js-cookie";
 import { bookingSlotes } from "@/machine/bookingSlotes";
 import LoadingPage from "@/custom/LoadingPage";
 import HeroSection from "@/components/HeroSection";
+import SeoHead from "../../components/SeoHead"
+import organizationSchema from "../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../components/seo/breadcrumbs/breadcrumbSchema"
 
 export default function BookUserSubmitDetails({
   customer,
@@ -132,6 +135,14 @@ export default function BookUserSubmitDetails({
 
   return (
     <>
+    <SeoHead
+        title="U Tech | BookUserSubnuteDetails - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
       <LoadingPage loading={loading} success={success} error={error} />
 
       {submitted && bookingData ? (

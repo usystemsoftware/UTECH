@@ -26,11 +26,22 @@ import {
   streamingSolutions,
   streamingTools,
 } from "./Data";
+import SeoHead from "../../../components/SeoHead";
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema";
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema";
 
 // === Main Page Component ===
 export default function MediaEntertainment() {
   return (
     <>
+      <SeoHead
+        title="U Tech | Company Blog - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
       {/* === Hero Section === */}
       <HeroSection
         backgroundImage="/banner/media-enterntainment-banner.jpg"

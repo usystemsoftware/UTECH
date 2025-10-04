@@ -23,10 +23,21 @@ import {
   features,
   trackingSolutions,
 } from "./Data";
+import SeoHead from "../../../components/SeoHead";
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema";
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema";
 
 const SupplyChain = () => {
   return (
     <>
+      <SeoHead
+        title="U Tech | Company Blog - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
       {/* Hero banner section */}
       <HeroSection
         backgroundImage="/banner/supply-chain-management-banner.jpg"

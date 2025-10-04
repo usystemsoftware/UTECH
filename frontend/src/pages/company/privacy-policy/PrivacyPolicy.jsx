@@ -2,10 +2,21 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { Headline, TypographyH4, TypographyMuted } from "@/custom/Typography";
 import { privacyPolicyData } from "./Data";
+import SeoHead from "../../../components/SeoHead";
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema";
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema";
 
 export default function PrivacyPolicy() {
   return (
     <>
+      <SeoHead
+        title="U Tech | PrivacyPolicy - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
       {/* Hero Section */}
       <HeroSection
         backgroundImage="/banner/privacy-banner.jpeg"

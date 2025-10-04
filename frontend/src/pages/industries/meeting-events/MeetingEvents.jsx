@@ -21,10 +21,21 @@ import {
   eventPlanningFAQ,
 } from "./Data";
 import { TypographyH5, TypographyMuted, Headline } from "@/custom/Typography";
+import SeoHead from "../../../components/SeoHead";
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema";
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema";
 
 const MeetingEvents = () => {
   return (
     <>
+      <SeoHead
+        title="U Tech | Company Blog - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
       <HeroSection
         backgroundImage="/banner/meetings-events-banner.jpg"
         title="CUSTOM MEETINGS & EVENT PLANNING SOFTWARE SOLUTIONS"
@@ -97,7 +108,9 @@ const MeetingEvents = () => {
             </div>
           ))}
 
-          <ContactUsButton variant="hover">Get Event Mgmt Solutions</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Get Event Mgmt Solutions
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -116,7 +129,9 @@ const MeetingEvents = () => {
           />
           <FeaturesList features={MeetingFeatures.slice(2, 4)} center />
         </div>
-        <ContactUsButton variant="hover">Get Meeting Mgmt Software</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Get Meeting Mgmt Software
+        </ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -147,7 +162,9 @@ const MeetingEvents = () => {
               />
             </div>
           </div>
-          <ContactUsButton variant="hover">Get Event Registration Solutions</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Get Event Registration Solutions
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -175,7 +192,9 @@ const MeetingEvents = () => {
             />
             <FeaturesList features={MeetingFeaturesgive.slice(2, 4)} center />
           </div>
-          <ContactUsButton variant="hover">Customize Your Dating App</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Customize Your Dating App
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -208,7 +227,9 @@ const MeetingEvents = () => {
           />
         </div>
 
-        <ContactUsButton variant="hover">Get Trade Show Solutions</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Get Trade Show Solutions
+        </ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -263,7 +284,9 @@ const MeetingEvents = () => {
           </div>
         </div>
 
-        <ContactUsButton variant="hover">Get Association Mgmt Software</ContactUsButton>
+        <ContactUsButton variant="hover">
+          Get Association Mgmt Software
+        </ContactUsButton>
       </PageLayout>
 
       <section className="bg-secondary py-12">
@@ -294,7 +317,9 @@ const MeetingEvents = () => {
               center
             />
           </div>
-          <ContactUsButton variant="hover">Get Event Touch Solutions</ContactUsButton>
+          <ContactUsButton variant="hover">
+            Get Event Touch Solutions
+          </ContactUsButton>
         </PageLayout>
       </section>
 

@@ -5,6 +5,9 @@ import { Separator } from "@/components/ui/separator";
 import PageLayout from "@/custom/PageLayout";
 import { TypographyH4, TypographyMuted } from "@/custom/Typography";
 import { services } from "./data";
+import SeoHead from "../../../components/SeoHead"
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema"
 
 ChartJS.register(ArcElement, Tooltip);
 
@@ -40,6 +43,14 @@ const getStarColor = (star) => {
 export default function ServicesReviewPage() {
   return (
     <>
+    <SeoHead
+        title="U Tech | Company Blog - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
       {/* Hero Section */}
       <HeroSection
         backgroundImage="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1600&auto=format&fit=crop&q=80"

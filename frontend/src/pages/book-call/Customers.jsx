@@ -52,77 +52,87 @@ export default function Customers() {
   }
 
   return (
-    <section className="w-full">
-      {/* HERO IMAGE SECTION */}
-      <div className="relative h-[500px] overflow-hidden">
-        <img
-          src="/banner/book-call-banner.jpeg"
-          alt="Book Consultation"
-          className="absolute inset-0 w-full h-full object-cover z-0"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 to-primary/30 z-10" />
+    <>
+      <SeoHead
+        title="U Tech | Cutomers - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
+      <section className="w-full">
+        {/* HERO IMAGE SECTION */}
+        <div className="relative h-[500px] overflow-hidden">
+          <img
+            src="/banner/book-call-banner.jpeg"
+            alt="Book Consultation"
+            className="absolute inset-0 w-full h-full object-cover z-0"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/40 to-primary/30 z-10" />
 
-        <div className="relative z-20 max-w-5xl mx-auto h-full flex items-center px-6 text-white text-center justify-center">
-          <div>
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-              Book Your Consultation
-            </h1>
-            <p className="text-lg mb-6">
-              Let’s connect and discuss how we can build impactful solutions
-              together.
-            </p>
+          <div className="relative z-20 max-w-5xl mx-auto h-full flex items-center px-6 text-white text-center justify-center">
+            <div>
+              <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                Book Your Consultation
+              </h1>
+              <p className="text-lg mb-6">
+                Let’s connect and discuss how we can build impactful solutions
+                together.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* CUSTOMERS SECTION */}
-      <PageLayout className="relative z-20 -mt-32 md:mb-32 bg-card md:rounded-2xl rounded-t-2xl shadow-xl py-6">
-        <HeadingSection
-          title="Book A"
-          highlight="Consultation"
-          description="Choose a consultant and book your slot below."
-          center
-        />
-
-        {selectedCustomer ? (
-          <BookCall
-            bookingData={bookingData}
-            setBookingData={setBookingData}
-            customer={selectedCustomer}
-            onBack={() => setSelectedCustomer(null)}
+        {/* CUSTOMERS SECTION */}
+        <PageLayout className="relative z-20 -mt-32 md:mb-32 bg-card md:rounded-2xl rounded-t-2xl shadow-xl py-6">
+          <HeadingSection
+            title="Book A"
+            highlight="Consultation"
+            description="Choose a consultant and book your slot below."
+            center
           />
-        ) : (
-          <div className="flex justify-center items-center gap-6 mt-10">
-            {dummyCustomers.map((customer) => (
-              <FadeInWhenVisible
-                key={customer.id}
-                className="border p-6 rounded-xl shadow-md bg-card"
-              >
-                <div className="flex gap-4 items-center">
-                  <img
-                    loading="lazy"
-                    src={customer.image || "/assets/book-call/images.png"}
-                    alt={customer.name}
-                    className="w-20 h-20 rounded-full border border-primary object-cover"
-                  />
-                  <div>
-                    <TypographyH5>{customer.name}</TypographyH5>
-                    <TypographyMuted>{customer.designation}</TypographyMuted>
-                    <TypographySmall>{customer.email}</TypographySmall>
-                  </div>
-                </div>
 
-                <Button
-                  className="mt-6 w-full"
-                  onClick={() => setSelectedCustomer(customer)}
+          {selectedCustomer ? (
+            <BookCall
+              bookingData={bookingData}
+              setBookingData={setBookingData}
+              customer={selectedCustomer}
+              onBack={() => setSelectedCustomer(null)}
+            />
+          ) : (
+            <div className="flex justify-center items-center gap-6 mt-10">
+              {dummyCustomers.map((customer) => (
+                <FadeInWhenVisible
+                  key={customer.id}
+                  className="border p-6 rounded-xl shadow-md bg-card"
                 >
-                  Book Slot
-                </Button>
-              </FadeInWhenVisible>
-            ))}
-          </div>
-        )}
-      </PageLayout>
-    </section>
+                  <div className="flex gap-4 items-center">
+                    <img
+                      loading="lazy"
+                      src={customer.image || "/assets/book-call/images.png"}
+                      alt={customer.name}
+                      className="w-20 h-20 rounded-full border border-primary object-cover"
+                    />
+                    <div>
+                      <TypographyH5>{customer.name}</TypographyH5>
+                      <TypographyMuted>{customer.designation}</TypographyMuted>
+                      <TypographySmall>{customer.email}</TypographySmall>
+                    </div>
+                  </div>
+
+                  <Button
+                    className="mt-6 w-full"
+                    onClick={() => setSelectedCustomer(customer)}
+                  >
+                    Book Slot
+                  </Button>
+                </FadeInWhenVisible>
+              ))}
+            </div>
+          )}
+        </PageLayout>
+      </section>
+    </>
   );
 }

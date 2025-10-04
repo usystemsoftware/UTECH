@@ -7,17 +7,19 @@ const { metaData } = require("./config/metaData");
 
 const app = express();
 
-// CORS setup for multiple domains
-
+// CORS setup
 app.use(cors());
-
 app.use(express.json());
+
+// Connect to DB
+connectDB();
+
+// Root check
 app.get("/", (req, res) => {
   res.send("this is u_tech server v2");
 });
 
-
-// for seo manage
+// ✅ SEO sitemap
 app.get("/sitemap.xml", (req, res) => {
   res.header("Content-Type", "application/xml");
   const urls = Object.values(metaData)
@@ -40,6 +42,7 @@ app.get("/sitemap.xml", (req, res) => {
   `);
 });
 
+// ✅ Existing routes
 app.use("/auth", require("./routes/authRoutes"));
 app.use("/chatbot", require("./routes/chatbotRoutes"));
 app.use("/share", require("./routes/metaShareRoutes"));
@@ -48,8 +51,10 @@ app.use("/bookings", require("./routes/bookingRoutes"));
 app.use("/email", require("./routes/subscribeRoutes"));
 app.use("/contact", require("./routes/contactRoutes"));
 
-// connectDB();
+// ✅ NEW: Admin routes (Register, Login, etc.)
+app.use("/api/admin", require("./routes/adminRoutes"));
 
-app.listen(process.env.PORT, () =>
-  console.log(` Server running on http://localhost:${process.env.PORT}`)
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () =>
+  console.log(`🚀 Server running on http://localhost:${PORT}`)
 );

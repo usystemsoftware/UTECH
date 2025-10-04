@@ -12,10 +12,22 @@ import {
   softwareDevelopmentSolutions,
   webSocketData,
 } from "./Data";
+import SeoHead from "../../../components/SeoHead"
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema"
 
 export default function SystemsIntegration() {
   return (
     <>
+    <SeoHead
+        title="U Tech | SystemsIntegration - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+        componentName="Systemsintegration"
+      />
       {/* === HERO BANNER SECTION === */}
       <HeroSection
         backgroundImage="/banner/systems-integration.jpeg" // Background image for the hero

@@ -1,10 +1,13 @@
+import HeroSection from "@/components/HeroSection";
+import PageLayout from "@/custom/PageLayout";
 import { FeaturesGridnew } from "@/components/FeaturesGridnew";
 import { FeaturesList } from "@/components/FeaturesList";
 import FaqSection from "@/custom/FaqSection";
-import HeroSection from "@/components/HeroSection";
-import PageLayout from "@/custom/PageLayout";
+import ImageNearScreen from "@/custom/ImageNearScreen";
+import VideoTvPoster from "@/custom/VideoTvPoster";
 import ContactUsButton from "@/custom/ContactUsButton";
-import { TypographyMuted, Headline } from "@/custom/Typography";
+import { Headline, TypographyMuted } from "@/custom/Typography";
+
 import {
   airlineAIandAutomationServices,
   airlineOperationsServices,
@@ -13,14 +16,11 @@ import {
   airlineSoftwareServices,
   aviationFaqs,
   aviationMroSolutions,
-  dronePartner,
   droneSoftwareSolutions,
   tvpoasterDescription,
 } from "./Data";
-import ImageNearScreen from "@/custom/ImageNearScreen";
-import VideoTvPoster from "@/custom/VideoTvPoster";
 
-// 🔥 Import all static images from public folder (no require)
+// Banner and images
 import aviationBanner from "../../../../public/banner/aviation-banner.jpg";
 import desktopComboAviation from "../../../../public/assets/Industries/aviation/desktop-combo-aviation.png";
 import flightAwareIntegration from "../../../../public/assets/Industries/aviation/flightaware-custom-integration.png";
@@ -32,6 +32,12 @@ import Drone1 from "../../../../public/assets/Industries/aviation/drone/arcgis.p
 import Drone2 from "../../../../public/assets/Industries/aviation/drone/dronedeploy.png";
 import Drone3 from "../../../../public/assets/Industries/aviation/drone/flytbase.png";
 import Drone4 from "../../../../public/assets/Industries/aviation/drone/pix4dmapper.png";
+
+import SeoHead from "../../../components/SeoHead";
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema";
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema";
+import ShareButtons from "@/custom/ShareButtons"; // import ShareButtons
+
 export default function Aviation() {
   const dronePartner = [
     { img: Drone1, name: "Drone Partner 1" },
@@ -39,23 +45,41 @@ export default function Aviation() {
     { img: Drone3, name: "Drone Partner 3" },
     { img: Drone4, name: "Drone Partner 4" },
   ];
+
   return (
     <>
-      {/* Banner */}
-      <HeroSection
-        backgroundImage={aviationBanner}
-        title="AVIATION SOFTWARE DEVELOPMENT"
-        description="Revolutionize aviation operations with AI-powered solutions for seamless integration and enhanced efficiency."
-        buttonText="GET AIRLINE SOFTWARE DEVELOPERS"
-        buttonLink="#"
-        imageFit="cover"
+      {/* SEO Head with OG image */}
+      <SeoHead
+        title="U Tech | Aviation Software Development"
+        description="Explore U Tech's AI-powered aviation solutions for airlines, airports, MROs, and drone technologies."
+        url="https://usystem.software/aviation"
+        image="https://usystem.software/"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
       />
+
+      {/* Hero Section with Share Buttons */}
+      <div className="relative">
+        <HeroSection
+          backgroundImage={aviationBanner}
+          title="AVIATION SOFTWARE DEVELOPMENT"
+          description="Revolutionize aviation operations with AI-powered solutions for seamless integration and enhanced efficiency."
+          buttonText="GET AIRLINE SOFTWARE DEVELOPERS"
+          buttonLink="#"
+          imageFit="cover"
+        />
+
+        {/* Floating Share Buttons */}
+        <div className="absolute top-4 right-4 z-50">
+          <ShareButtons scrolled={false} scrolledMobile={false} />
+        </div>
+      </div>
 
       {/* Airline Software Services */}
       <PageLayout className="text-center my-12">
         <Headline
           title="Hire Experienced and Dedicated Airline Software Developers"
-          description="U Tech’s engineers have many years of industry experience programming scalable management software solutions for airlines, airports, and independent vendors."
+          description="U Tech engineers deliver scalable management software solutions for airlines, airports, and independent vendors."
         />
         <FeaturesGridnew
           leftFeatures={airlineSoftwareServices.slice(0, 2)}
@@ -65,12 +89,12 @@ export default function Aviation() {
         />
       </PageLayout>
 
-      {/* AI Airline Solutions */}
+      {/* AI Solutions */}
       <section className="bg-secondary py-12">
         <PageLayout className="space-y-8">
           <Headline
             title="AI Solutions for the Airline Industry"
-            description="U Tech's advanced AI solutions revolutionize the airline industry by optimizing revenue management, flight management, predictive maintenance, and more."
+            description="Optimize revenue management, flight operations, predictive maintenance, and more with AI-powered tools."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
             <FeaturesList
@@ -97,7 +121,7 @@ export default function Aviation() {
       <section className="py-16 flex flex-col gap-6 justify-center items-center">
         <Headline
           title="Custom Airline Technology Solutions"
-          description="U Tech provides custom airline management software for OEMs, MROs, Airports, and flight operators to streamline their operational workflows."
+          description="Streamline operational workflows with custom airline management software for OEMs, MROs, airports, and flight operators."
         />
         <ImageNearScreen
           features={airlineOperationsServices}
@@ -110,12 +134,12 @@ export default function Aviation() {
         </ContactUsButton>
       </section>
 
-      {/* Reservation Software */}
+      {/* Airline Reservation Software */}
       <section className="py-12">
         <PageLayout className="space-y-10 text-center">
           <Headline
             title="Custom Airline Reservation & Ticketing Software Development"
-            description="U Tech provides reservation & ticketing software for airlines, call centers, OTAs, internet booking & ticket vendors, and more."
+            description="Reservation & ticketing solutions for airlines, OTAs, call centers, and more."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
             <div className="md:block hidden">
@@ -159,7 +183,7 @@ export default function Aviation() {
       <PageLayout className="space-y-8 py-12">
         <Headline
           title="Custom Maintenance, Repair, & Overhaul (MRO) Solutions"
-          description="U Tech delivers aviation MRO software for aircraft maintenance directors, flight schedulers, dispatchers, and parts managers."
+          description="Aviation MRO software for aircraft maintenance directors, flight schedulers, dispatchers, and parts managers."
         />
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
           <FeaturesList features={aviationMroSolutions.slice(0, 2)} center />
@@ -179,7 +203,7 @@ export default function Aviation() {
       <PageLayout className="py-12 space-y-12 text-center">
         <Headline
           title="Custom Drone Software Development"
-          description="U Tech develops drone software for agriculture, construction, cinematography, inspections, search-and-rescue, and more."
+          description="Drone software for agriculture, construction, cinematography, inspections, search-and-rescue, and more."
         />
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           <div>
@@ -197,17 +221,17 @@ export default function Aviation() {
               transform drone image capture and analysis.
             </TypographyMuted>
             <div className="flex items-center gap-6 justify-center flex-wrap mt-8">
-      {dronePartner.map((item, index) => (
-        <div key={index}>
-          <img
-            loading="lazy"
-            src={item.img}
-            alt={`${item.name} logo`}
-            className="w-32 hover:scale-105 cursor-pointer mx-auto"
-          />
-        </div>
-      ))}
-    </div>
+              {dronePartner.map((item, index) => (
+                <div key={index}>
+                  <img
+                    loading="lazy"
+                    src={item.img}
+                    alt={`${item.name} logo`}
+                    className="w-32 hover:scale-105 cursor-pointer mx-auto"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <ContactUsButton variant="hover">

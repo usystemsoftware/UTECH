@@ -2,10 +2,21 @@ import HeroSection from "@/components/HeroSection";
 import PageLayout from "@/custom/PageLayout";
 import { TypographyH4, TypographyMuted, Headline } from "@/custom/Typography";
 import { legalPolicyData } from "./Data";
+import SeoHead from "../../../components/SeoHead"
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema"
 
 export default function LegalPolicy() {
   return (
     <>
+      <SeoHead
+        title="U Tech | LegalPolicy - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
       <HeroSection
         backgroundImage="/banner/legel-policy-banner.jpeg"
         title="Procedures & Legal Policies"

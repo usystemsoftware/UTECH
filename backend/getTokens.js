@@ -27,4 +27,4 @@ app.get("/oauth2callback", async (req, res) => {
     res.send("Tokens received! Check console.");
 });
 
-app.listen(5002, () => console.log("Visit: http://localhost:5002/auth"));
+app.listen(5002, () => console.log("Visit: http://localhost:5000/auth"));

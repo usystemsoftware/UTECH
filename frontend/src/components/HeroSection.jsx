@@ -5,6 +5,9 @@ import Breadcrumbs from "./Breadcrumbs";
 import { motion } from "framer-motion";
 import ContactUsButton from "@/custom/ContactUsButton";
 import BannerBottomLinks from "./BannerBottomLinks";
+import ShareButtons from "../custom/ShareButtons"; //
+import { Helmet } from "react-helmet";
+import SeoHead from "./SeoHead";
 
 export default function HeroSection({
   backgroundImage,
@@ -16,10 +19,33 @@ export default function HeroSection({
   imageFit = "cover",
   overlayOpacity = 0.3,
   bottomLinks,
-  partnerLogo
+  partnerLogo,
 }) {
+  const shareUrl = window.location.href; // current page url
+
   return (
     <>
+      <SeoHead
+        title={title}
+        description={description}
+        url={shareUrl}
+        image={backgroundImage} // 👈 take from hero bg
+      />
+      {/* SEO Open Graph Meta Tags */}
+      <Helmet>
+        <meta
+          property="og:title"
+          content={title || "Explore IT Solutions with U Tech"}
+        />
+        <meta
+          property="og:description"
+          content={description || "Check out U Tech today!"}
+        />
+        <meta property="og:image" content={backgroundImage} />
+        <meta property="og:url" content={shareUrl} />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       {/* Hero Section Container */}
       <section className="relative w-full min-h-[80vh] md:min-h-[100vh] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
@@ -67,18 +93,23 @@ export default function HeroSection({
               </Link>
             </ContactUsButton>
           )}
+
+          {/* Share Buttons */}
+          <div className="mt-6 flex justify-center">
+            <ShareButtons bgImage={backgroundImage} />
+          </div>
         </div>
 
-        {/* SAP Silver Partner Logo with White Background */}
-        {
-          partnerLogo && <div className="absolute bottom-0 right-0 opacity-100 z-40">
+        {/* SAP Silver Partner Logo */}
+        {partnerLogo && (
+          <div className="absolute bottom-0 right-0 opacity-100 z-40">
             <img
               src={partnerLogo}
               alt={title}
               className="h-14 md:h-20 object-contain"
             />
           </div>
-        }
+        )}
       </section>
 
       <BannerBottomLinks

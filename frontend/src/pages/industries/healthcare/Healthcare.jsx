@@ -28,10 +28,21 @@ import {
 } from "./Data";
 import VideoPoster from "@/custom/VideoPoster";
 import ImageNearScreen from "@/custom/ImageNearScreen";
+import SeoHead from "../../../components/SeoHead"
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema"
 
 export default function Healthcare() {
   return (
     <>
+    <SeoHead
+        title="U Tech | Company Blog - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
       <HeroSection
         backgroundImage="/banner/healthcare-banner.jpg"
         title="CUSTOM HEALTHCARE SOFTWARE DEVELOPMENT COMPANY"

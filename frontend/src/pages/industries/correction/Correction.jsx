@@ -27,10 +27,22 @@ import immate_tracking_mobile from "../../../../public/assets/Industries/correct
 import jail_security_solutions from "../../../../public/assets/Industries/correction/jail-security-solutions.png";
 import jail_management_solutions_laptop from "../../../../public/assets/Industries/correction/jail-management-solutions-laptop.png";
 import hrms_solutions from "../../../../public//assets/Industries/correction/hrms-solutions.png";
+import SeoHead from "../../../components/SeoHead"
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema"
 
 export default function Correction() {
   return (
     <>
+      <SeoHead
+        title="U Tech | Company Blog - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
+      
       <HeroSection
         backgroundImage={correction_banner}
         title="Custom Corrections & Jail Management System Development"

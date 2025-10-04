@@ -10,10 +10,22 @@ import {
   implementationdeploymentSolutions,
   faqs,
 } from "./Data";
+import SeoHead from "../../../components/SeoHead"
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema"
 
 const ImplementationDeployment = () => {
   return (
     <>
+      <SeoHead
+        title="U Tech | ImplementationDeployment - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+        componentName="ImplementationDeployment"
+      />
       {/* === HERO SECTION === */}
       <HeroSection
         backgroundImage="/banner/implementation.jpg"

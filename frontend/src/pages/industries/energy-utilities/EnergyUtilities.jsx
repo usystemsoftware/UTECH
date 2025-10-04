@@ -19,13 +19,29 @@ import {
   windSolutions,
 } from "./Data";
 
+import SeoHead from "../../../components/SeoHead"
+import organizationSchema from "../../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../../components/seo/breadcrumbs/breadcrumbSchema"
+
+
+
+
 // Main component for the Energy & Utilities page
 export default function EnergyUtilities() {
   return (
     <>
+      <SeoHead
+        title="U Tech | Company Blog - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
+      
       {/* Hero section for banner */}
       <HeroSection
-        backgroundImage="/banner/utilities-banner.jpg"
+        backgroundImage="/banner/Img2.jpg"
         title="Utility Management with Energy Saving AI Technology"
         description="Leverage the power of AI to revolutionize energy and utilities with cutting-edge solutions for electric, water, smart grid, heat, solar, waste management, wind, and nuclear sectors."
         buttonText="GET ENERGY DEVELOPERS"
@@ -66,7 +82,9 @@ export default function EnergyUtilities() {
               iconAlign="horizontal"
             />
           </div>
-          <ContactUsButton variant="hover">GET AI ENERGY DEVELOPERS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET AI ENERGY DEVELOPERS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -98,7 +116,9 @@ export default function EnergyUtilities() {
               className="sm:w-52 xl:w-56 2xl:w-62 w-42 mx-auto"
             />
           </div>
-          <ContactUsButton variant="hover">GET ELECTRIC MANAGEMENT DEVELOPERS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET ELECTRIC MANAGEMENT DEVELOPERS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -120,7 +140,9 @@ export default function EnergyUtilities() {
             iconAlign="horizontal"
           />
         </div>
-        <ContactUsButton variant="hover">GET WATER MANAGEMENT SOLUTIONS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET WATER MANAGEMENT SOLUTIONS
+        </ContactUsButton>
       </PageLayout>
 
       {/* Smart Grid section */}
@@ -144,7 +166,9 @@ export default function EnergyUtilities() {
               className="w-125 md:w-135 xl:w-145 2xl:w-150 mx-auto order-1 md:order-2"
             />
           </div>
-          <ContactUsButton variant="hover">HIRE SMART GRID DEVELOPERS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            HIRE SMART GRID DEVELOPERS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -168,7 +192,9 @@ export default function EnergyUtilities() {
             iconAlign="horizontal"
           />
         </div>
-        <ContactUsButton variant="hover">HIRE HEAT SOFTWARE DEVELOPERS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          HIRE HEAT SOFTWARE DEVELOPERS
+        </ContactUsButton>
       </PageLayout>
 
       {/* Solar asset software section */}
@@ -192,7 +218,9 @@ export default function EnergyUtilities() {
               className="w-72 sm:w-86 md:w-105 xl:w-120 2xl:w-125 mx-auto order-1 md:order-2"
             />
           </div>
-          <ContactUsButton variant="hover">GET SOLAR SOFTWARE DEVELOPERS</ContactUsButton>
+          <ContactUsButton variant="hover">
+            GET SOLAR SOFTWARE DEVELOPERS
+          </ContactUsButton>
         </PageLayout>
       </section>
 
@@ -214,7 +242,9 @@ export default function EnergyUtilities() {
             iconAlign="horizontal"
           />
         </div>
-        <ContactUsButton variant="hover">GET STARTES WITH WASTE TRACKING APP</ContactUsButton>
+        <ContactUsButton variant="hover">
+          GET STARTES WITH WASTE TRACKING APP
+        </ContactUsButton>
       </PageLayout>
 
       {/* Compliance highlight section */}
@@ -246,7 +276,9 @@ export default function EnergyUtilities() {
           />
           <FeaturesList features={windSolutions} iconAlign="horizontal" />
         </div>
-        <ContactUsButton variant="hover">HIRE WIND SOFTWARTE DEVELOPERS</ContactUsButton>
+        <ContactUsButton variant="hover">
+          HIRE WIND SOFTWARTE DEVELOPERS
+        </ContactUsButton>
       </PageLayout>
 
       {/* Nuclear software section */}

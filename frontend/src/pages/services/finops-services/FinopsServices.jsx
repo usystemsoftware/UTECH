@@ -14,6 +14,15 @@ import {
 const FinopsServices = () => {
   return (
     <>
+    <SeoHead
+        title="U Tech | FinopsServices - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+        componentName="FinopsServices"
+      />
       {/* === HERO SECTION === */}
       <HeroSection
         backgroundImage="/banner/finops.jpg"

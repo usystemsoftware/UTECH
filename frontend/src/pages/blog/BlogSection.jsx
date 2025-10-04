@@ -5,7 +5,9 @@ import { Card, CardContent, CardDescription } from "@/components/ui/card";
 import { TypographyH3, TypographyH4, TypographyMuted, Headline } from "@/custom/Typography";
 import ContactUsButton from "@/custom/ContactUsButton";
 import { motion } from "framer-motion";
-
+import SeoHead from "../../components/SeoHead"
+import organizationSchema from "../../components/seo/breadcrumbs/organizationSchema"
+import breadcrumbSchema from "../../components/seo/breadcrumbs/breadcrumbSchema"
 // Dummy blog data
 const whatsNew = [
   "The Future of Property Valuation: How Agentic AI is Revolutionizing AVMs",
@@ -54,6 +56,14 @@ export default function BlogSection() {
 
   return (
     <>
+    <SeoHead
+        title="U Tech | Company Blog - Insights & Updates"
+        description="Explore the latest articles, insights, and tech updates from U Tech (Umbarakar Technology)."
+        url="https://usystem.software/blog"
+        image="https://usystem.software/small-logo.png"
+        organizationSchema={organizationSchema}
+        breadcrumbSchema={breadcrumbSchema}
+      />
       {/* HERO SECTION (clickable) */}
       <a href="https://example.com/hero-link" target="_blank" rel="noopener noreferrer">
         <HeroSection
