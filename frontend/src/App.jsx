@@ -30,8 +30,8 @@ import AdminDashboard from "./pages/Admin/Admin";
 const adminRoutes = [{ path: "/admin", element: <AdminDashboard /> }];
 const seoEditorRoutes = [{ path: "/SEOEditer/seoeditor", element: <SeoEditorComponent /> }];
 const seoDashboardRoutes = [{ path: "/SEOEditer/SeoDashboard", element: <SeoDashboard /> }];
-const loginAdminRoutes = [{ path: "/login/admin", element: <LoginAdminPage /> }];
-const registrationRoutes = [{ path: "/login/registration", element: <Register /> }];
+const loginAdminRoutes = [{ path: "/login", element: <LoginAdminPage /> }];
+const registrationRoutes = [{ path: "/registration", element: <Register /> }];
 
 // Layout Wrapper Components
 const PublicLayout = ({ children }) => (

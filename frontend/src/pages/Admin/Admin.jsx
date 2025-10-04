@@ -1,5 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import AddUser  from './Adduser';
 import { LayoutDashboard, Users, Settings, LogOut, Search, Clock, Shield, BarChart3, ChevronDown, CheckCircle, XCircle } from 'lucide-react';
+import { useNavigate } from "react-router-dom";
 
 // --- Mock Data ---
 const initialUsers = [
@@ -81,6 +83,17 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
     { name: 'SEO Management', icon: BarChart3, tab: 'seo' },
   ];
 
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    // Example: Clear any authentication tokens or user data
+    localStorage.removeItem("token"); 
+    localStorage.removeItem("user");
+
+    // Navigate to login page
+    navigate("/login");
+  };
+
   return (
     <div className="w-full lg:w-64 bg-gray-800 text-white flex flex-col p-4 space-y-4 rounded-xl shadow-2xl lg:h-full lg:sticky lg:top-0">
       <div className="text-2xl font-bold text-indigo-400 border-b border-gray-700 pb-4 mb-4">
@@ -103,8 +116,11 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
         ))}
       </nav>
       <div className="mt-auto pt-4 border-t border-gray-700">
-        <button className="flex items-center p-3 w-full text-red-400 hover:bg-gray-700 rounded-lg transition-colors">
-          <LogOut className="w-5 h-5 mr-3" />
+        <button className="flex items-center p-3 w-full text-red-400 hover:bg-gray-700 rounded-lg transition-colors"
+          onClick={handleLogout}>
+          <LogOut className="w-5 h-5 mr-3"
+          onClick={() => console.log('Logging out...') }
+          />
           Logout
         </button>
       </div>
@@ -114,8 +130,10 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
 
 // --- Dashboard View Component ---
 const DashboardView = () => {
+  const [showAddUser, setShowAddUser] = useState(false);
+
   return (
-    <div className="p-6 space-y-8">
+    <div className="p-6 space-y-8 relative">
       <h1 className="text-3xl font-extrabold text-gray-800">Dashboard Overview</h1>
 
       {/* Stats Grid */}
@@ -152,7 +170,10 @@ const DashboardView = () => {
         <div className="bg-white p-6 rounded-xl shadow-lg">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">Quick Actions</h2>
           <div className="space-y-3">
-            <button className="w-full bg-indigo-500 text-white py-2 rounded-lg hover:bg-indigo-600 transition-colors shadow-md">
+            <button
+              onClick={() => setShowAddUser(true)}
+              className="w-full bg-indigo-500 text-white py-2 rounded-lg hover:bg-indigo-600 transition-colors shadow-md"
+            >
               Create New User
             </button>
             <button className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition-colors shadow-md">
@@ -161,6 +182,23 @@ const DashboardView = () => {
           </div>
         </div>
       </div>
+
+      {/* Popup Modal */}
+      {showAddUser && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm z-50">
+          <div className="relative bg-white rounded-2xl shadow-2xl p-6 w-full max-w-3xl max-h-[90vh] overflow-y-auto">
+            {/* Close Button */}
+            <button
+              onClick={() => setShowAddUser(false)}
+              className="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-xl font-bold"
+            >
+              ✕
+            </button>
+
+            <AddUser />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
