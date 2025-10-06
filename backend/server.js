@@ -1,17 +1,36 @@
-require("dotenv").config();
-const express = require("express");
-const cors = require("cors");
-const path = require("path");
-const connectDB = require("./config/db");
-const { metaData } = require("./config/metaData");
+import dotenv from "dotenv";
+import express from "express";
+import cors from "cors";
+import path from "path";
+import { fileURLToPath } from "url";
+import connectDB from "./config/db.js";
+import { metaData } from "./config/metaData.js";
 
+// Routes
+import authRoutes from "./routes/authRoutes.js";
+import chatbotRoutes from "./routes/chatbotRoutes.js";
+import metaShareRoutes from "./routes/metaShareRoutes.js";
+import jobRoutes from "./routes/jobRoutes.js";
+import bookingRoutes from "./routes/bookingRoutes.js";
+import subscribeRoutes from "./routes/subscribeRoutes.js";
+import contactRoutes from "./routes/contactRoutes.js";
+
+// ✅ Import your new user/admin routes
+import userRoutes from "./routes/userRoutes.js";
+import adminRoutes from "./routes/adminRoutes.js";
+
+dotenv.config();
 const app = express();
 
-// CORS setup
+// Fix __dirname in ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Middleware
 app.use(cors());
 app.use(express.json());
 
-// Connect to DB
+// DB Connect
 connectDB();
 
 // Root check
@@ -43,16 +62,17 @@ app.get("/sitemap.xml", (req, res) => {
 });
 
 // ✅ Existing routes
-app.use("/auth", require("./routes/authRoutes"));
-app.use("/chatbot", require("./routes/chatbotRoutes"));
-app.use("/share", require("./routes/metaShareRoutes"));
-app.use("/jobs", require("./routes/jobRoutes"));
-app.use("/bookings", require("./routes/bookingRoutes"));
-app.use("/email", require("./routes/subscribeRoutes"));
-app.use("/contact", require("./routes/contactRoutes"));
+app.use("/auth", authRoutes);
+app.use("/chatbot", chatbotRoutes);
+app.use("/share", metaShareRoutes);
+app.use("/jobs", jobRoutes);
+app.use("/bookings", bookingRoutes);
+app.use("/email", subscribeRoutes);
+app.use("/contact", contactRoutes);
 
-// ✅ NEW: Admin routes (Register, Login, etc.)
-app.use("/api/admin", require("./routes/adminRoutes"));
+// ✅ New routes
+app.use("/api/users", userRoutes); // <-- your add/get/login users
+app.use("/api/admin", adminRoutes); // <-- keep if you want admin-only
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () =>

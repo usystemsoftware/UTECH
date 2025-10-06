@@ -128,9 +128,7 @@ export default function Login() {
             <h3 className="text-gray text-2xl font-extrabold mb-1 leading-tight drop-shadow-lg">
               Find Your Next Perfect Space
             </h3>
-            <p className="text-gray-100 text-sm drop-shadow-md">
-              
-            </p>
+            <p className="text-gray-100 text-sm drop-shadow-md"></p>
           </div>
         </div>
 
@@ -186,7 +184,7 @@ export default function Login() {
           <p className="text-xs text-gray-600 text-center mt-3">
             New to UTECH?{" "}
             <Link
-              to="/Login/registration"
+              to="/registration"
               className="text-blue-600 font-bold cursor-pointer hover:text-blue-700 hover:underline transition-colors"
             >
               Create an account
