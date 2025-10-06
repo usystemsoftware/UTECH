@@ -129,7 +129,7 @@ export default function Login() {
               Find Your Next Perfect Space
             </h3>
             <p className="text-gray-100 text-sm drop-shadow-md">
-              Log in quickly to view saved properties and manage your profile.
+              
             </p>
           </div>
         </div>
