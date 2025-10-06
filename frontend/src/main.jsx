@@ -7,17 +7,21 @@ import { ThemeProvider } from "@/components/theme-provider";
 import ScrollToTop from "@/components/ScrollToTop.jsx";
 import { HelmetProvider } from "react-helmet-async";
 import { AccessibilityProvider } from "@/context/AccessibilityContext.jsx";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
+// Create root
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <HelmetProvider>
       <AccessibilityProvider>
-        <BrowserRouter>
-          <ThemeProvider defaultTheme="default" storageKey="u-tech-theme">
-            <ScrollToTop />
-            <App />
-          </ThemeProvider>
-        </BrowserRouter>
+        <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
+          <BrowserRouter>
+            <ThemeProvider defaultTheme="default" storageKey="u-tech-theme">
+              <ScrollToTop />
+              <App />
+            </ThemeProvider>
+          </BrowserRouter>
+        </GoogleOAuthProvider>
       </AccessibilityProvider>
     </HelmetProvider>
   </StrictMode>
