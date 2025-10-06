@@ -25,6 +25,8 @@ import SeoEditorComponent from "@/components/seo/SEOEditer/SeoEditer";
 import LoginAdminPage from "@/components/layout/Login/Login";
 import Register from "@/components/layout/Login/Register";
 import AdminDashboard from "./pages/Admin/Admin";
+import Key_word_Management from "../src/pages/SEOmanagement/Key_word_Management"
+import OnPageOptimization from "./pages/SEOmanagement/OnPageOptimization";
 
 // ✅ Route Arrays
 const adminRoutes = [{ path: "/admin", element: <AdminDashboard /> }];
@@ -32,6 +34,9 @@ const seoEditorRoutes = [{ path: "/SEOEditer/seoeditor", element: <SeoEditorComp
 const seoDashboardRoutes = [{ path: "/SEOEditer/SeoDashboard", element: <SeoDashboard /> }];
 const loginAdminRoutes = [{ path: "/login", element: <LoginAdminPage /> }];
 const registrationRoutes = [{ path: "/registration", element: <Register /> }];
+const KeywordManagementRoutes =[{path:"/Key_word_Management", element: <Key_word_Management/>}];
+const OnPageOptimizationRoutes = [{ path: "/OnPageOptimization", element: <OnPageOptimization /> }];
+
 
 // Layout Wrapper Components
 const PublicLayout = ({ children }) => (
@@ -111,6 +116,15 @@ export default function App() {
       {adminRoutes.map(({ path, element }) => (
         <Route key={path} path={path} element={<PlainLayout>{element}</PlainLayout>} />
       ))}
+
+    {KeywordManagementRoutes.map(({ path, element }) => (
+        <Route key={path} path={path} element={<PlainLayout>{element}</PlainLayout>} />
+      ))}
+
+    {OnPageOptimizationRoutes.map(({ path, element }) => (
+  <Route key={path} path={path} element={<PlainLayout>{element}</PlainLayout>} />
+))}
+
     </Routes>
   );
 }
