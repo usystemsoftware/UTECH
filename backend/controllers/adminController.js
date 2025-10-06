@@ -1,34 +1,74 @@
-const Admin = require("../models/Admin");
+const User = require("../models/Admin.js");
+const bcrypt = require("bcryptjs");
 const generateToken = require("../utils/generateToken");
+const { OAuth2Client } = require("google-auth-library");
 
-// @desc    Register Admin
-// @route   POST /api/admin/register
-// @access  Public
-const registerAdmin = async (req, res) => {
-  const { name, email, mobile, password, role } = req.body;
+const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
+
+// Manual Registration
+exports.registerUser = async (req, res) => {
+  const { name, email, password, mobile, role, address, city, company } = req.body;
 
   try {
-    const adminExists = await Admin.findOne({ email });
-    if (adminExists) {
-      return res.status(400).json({ message: "Admin already exists" });
-    }
+    const existingUser = await User.findOne({ email });
+    if (existingUser) return res.status(400).json({ message: "User already exists" });
 
-    const admin = await Admin.create({ name, email, mobile, password, role });
+    const hashedPassword = await bcrypt.hash(password, 10);
 
-    if (admin) {
-      res.status(201).json({
-        _id: admin._id,
-        name: admin.name,
-        email: admin.email,
-        role: admin.role,
-        token: generateToken(admin._id, admin.role),
-      });
-    } else {
-      res.status(400).json({ message: "Invalid admin data" });
-    }
-  } catch (error) {
-    res.status(500).json({ message: error.message });
+    const user = await User.create({
+      name,
+      email,
+      password: hashedPassword,
+      mobile,
+      role,
+      address,
+      city,
+      company,
+    });
+
+    res.status(201).json({ token: generateToken(user) });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
   }
 };
 
-module.exports = { registerAdmin };
+// Manual Login
+exports.loginUser = async (req, res) => {
+  const { email, password } = req.body;
+  try {
+    const user = await User.findOne({ email });
+    if (!user) return res.status(400).json({ message: "Invalid credentials" });
+
+    const validPassword = await bcrypt.compare(password, user.password);
+    if (!validPassword) return res.status(400).json({ message: "Invalid credentials" });
+
+    res.json({ token: generateToken(user) });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+// Google Login
+exports.googleLogin = async (req, res) => {
+  const { token } = req.body; // credential from frontend
+
+  try {
+    const ticket = await client.verifyIdToken({
+      idToken: token,
+      audience: process.env.GOOGLE_CLIENT_ID,
+    });
+
+    const payload = ticket.getPayload();
+    const { email, name, sub: googleId } = payload;
+
+    let user = await User.findOne({ email });
+    if (!user) {
+      user = await User.create({ name, email, googleId, role: "customer" });
+    }
+
+    res.json({ token: generateToken(user) });
+  } catch (err) {
+    console.error(err);
+    res.status(400).json({ message: "Google login failed" });
+  }
+};

@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import AddUser  from './Adduser';
-import { LayoutDashboard, Users, Settings, LogOut, Search, Clock, Shield, BarChart3, ChevronDown, CheckCircle, XCircle } from 'lucide-react';
+import { LayoutDashboard, Users, Settings, LogOut, Search, Clock, Shield, BarChart3, ChevronDown, CheckCircle, XCircle, Bell } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
 
 // --- Mock Data ---
@@ -131,10 +131,79 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
 // --- Dashboard View Component ---
 const DashboardView = () => {
   const [showAddUser, setShowAddUser] = useState(false);
+  const [notifications, setNotifications] = useState([]);
+  const [showNotifications, setShowNotifications] = useState(false);
+
+  // Example stats data
+  const dashboardStats = [
+    { title: "Total Users", value: 120, icon: BarChart3, color: "bg-indigo-500" },
+    { title: "New Leads", value: 35, icon: BarChart3, color: "bg-green-500" },
+    { title: "Projects", value: 12, icon: BarChart3, color: "bg-yellow-500" },
+    { title: "Revenue", value: "$15k", icon: BarChart3, color: "bg-red-500" },
+  ];
+
+  // Fetch notifications (contact form submissions)
+  const fetchNotifications = async () => {
+    try {
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/contact/all`);
+      if (res.data.success) {
+        setNotifications(res.data.data); // Assuming data is an array of submissions
+      }
+    } catch (err) {
+      console.error("Failed to fetch notifications:", err);
+    }
+  };
+
+  useEffect(() => {
+    fetchNotifications();
+
+    // Optional: poll every 30 seconds for new notifications
+    const interval = setInterval(fetchNotifications, 30000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="p-6 space-y-8 relative">
-      <h1 className="text-3xl font-extrabold text-gray-800">Dashboard Overview</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="text-3xl font-extrabold text-gray-800">Dashboard Overview</h1>
+        
+        {/* Notification Bell */}
+        <div className="relative">
+          <button
+            onClick={() => setShowNotifications(!showNotifications)}
+            className="relative p-2 rounded-full hover:bg-gray-200 transition"
+          >
+            <Bell className="w-6 h-6 text-gray-600" />
+            {notifications.length > 0 && (
+              <span className="absolute top-0 right-0 inline-flex items-center justify-center w-4 h-4 text-xs text-white bg-red-500 rounded-full">
+                {notifications.length}
+              </span>
+            )}
+          </button>
+
+          {showNotifications && (
+            <div className="absolute right-0 mt-2 w-80 bg-white shadow-lg rounded-lg border overflow-hidden z-50">
+              <div className="p-3 font-semibold border-b">Notifications</div>
+              <ul className="max-h-64 overflow-y-auto">
+                {notifications.length === 0 ? (
+                  <li className="p-3 text-sm text-gray-500">No notifications</li>
+                ) : (
+                  notifications.map((n, idx) => (
+                    <li
+                      key={idx}
+                      className="p-3 border-b hover:bg-gray-50 transition cursor-pointer"
+                    >
+                      <p className="font-medium">{n.name}</p>
+                      <p className="text-xs text-gray-500">{n.email}</p>
+                      <p className="text-xs text-gray-500">{n.phone}</p>
+                    </li>
+                  ))
+                )}
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
 
       {/* Stats Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -145,7 +214,9 @@ const DashboardView = () => {
           >
             <div className="flex items-center justify-between">
               <div className="text-sm font-medium text-gray-500">{stat.title}</div>
-              <stat.icon className={`w-6 h-6 p-1 rounded-full text-white ${stat.color}`} />
+              <stat.icon
+                className={`w-6 h-6 p-1 rounded-full text-white ${stat.color}`}
+              />
             </div>
             <div className="text-4xl font-bold text-gray-900 mt-2">{stat.value}</div>
             <p className="text-xs text-green-500 mt-1 flex items-center">
@@ -156,7 +227,7 @@ const DashboardView = () => {
         ))}
       </div>
 
-      {/* Placeholder Content */}
+      {/* Recent Activity & Quick Actions */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="lg:col-span-2 bg-white p-6 rounded-xl shadow-lg">
           <h2 className="text-xl font-semibold text-gray-800 mb-4">Recent Activity</h2>
@@ -187,14 +258,12 @@ const DashboardView = () => {
       {showAddUser && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm z-50">
           <div className="relative bg-white rounded-2xl shadow-2xl p-6 w-full max-w-3xl max-h-[90vh] overflow-y-auto">
-            {/* Close Button */}
             <button
               onClick={() => setShowAddUser(false)}
               className="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-xl font-bold"
             >
               ✕
             </button>
-
             <AddUser />
           </div>
         </div>
@@ -205,183 +274,74 @@ const DashboardView = () => {
 
 // --- User Management Component ---
 const UserManagementView = () => {
-  const [users, setUsers] = useState(initialUsers);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [users, setUsers] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    fetch("http://localhost:5000/api/users")
+      .then((res) => res.json())
+      .then(setUsers)
+      .catch(console.error);
+  }, []);
 
   const filteredUsers = useMemo(() => {
-    const lowercasedTerm = searchTerm.toLowerCase();
-    return users.filter(user =>
-      user.name.toLowerCase().includes(lowercasedTerm) ||
-      user.email.toLowerCase().includes(lowercasedTerm) ||
-      user.role.toLowerCase().includes(lowercasedTerm)
+    const lower = searchTerm.toLowerCase();
+    return users.filter(
+      (u) =>
+        u.name.toLowerCase().includes(lower) ||
+        u.email.toLowerCase().includes(lower) ||
+        u.role.toLowerCase().includes(lower)
     );
   }, [users, searchTerm]);
-
-  const handleRoleChange = (id, newRole) => {
-    setUsers(users.map(user =>
-      user.id === id ? { ...user, role: newRole } : user
-    ));
-  };
-
-  const handleStatusToggle = (id) => {
-    setUsers(users.map(user =>
-      user.id === id ? { ...user, status: user.status === 'Active' ? 'Inactive' : 'Active' } : user
-    ));
-  };
-
-  const roleOptions = ['Admin', 'Editor', 'Member'];
 
   return (
     <div className="p-6 space-y-6">
       <h1 className="text-3xl font-extrabold text-gray-800">User Management</h1>
-
       <div className="bg-white p-6 rounded-xl shadow-lg">
-        <div className="flex flex-col sm:flex-row justify-between items-center mb-6 space-y-4 sm:space-y-0">
-          <div className="relative w-full sm:w-80">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+        <div className="flex justify-between mb-4">
+          <div className="relative w-80">
+            <Search className="absolute left-3 top-2.5 text-gray-400" />
             <input
               type="text"
-              placeholder="Search users by name, email or role..."
+              placeholder="Search users..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition-all"
+              className="pl-10 pr-4 py-2 border rounded-lg w-full"
             />
           </div>
-          <button className="w-full sm:w-auto bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors font-medium shadow-md">
-            + Add New User
+          <button
+            onClick={() => navigate("/add-user")}
+            className="bg-indigo-600 text-white py-2 px-4 rounded-lg"
+          >
+            + Add User
           </button>
         </div>
 
-        {/* User Table (Desktop View) */}
-        <div className="hidden lg:block overflow-x-auto">
-          <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-gray-50">
-              <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider rounded-tl-xl">
-                  Name
-                </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Role
-                </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Status
-                </th>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Last Login
-                </th>
-                <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider rounded-tr-xl">
-                  Actions
-                </th>
+        <table className="min-w-full divide-y divide-gray-200">
+          <thead className="bg-gray-50">
+            <tr>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500">Name</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500">Role</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500">Status</th>
+              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500">Last Login</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-100">
+            {filteredUsers.map((user) => (
+              <tr key={user._id}>
+                <td className="px-6 py-4">{user.name}</td>
+                <td className="px-6 py-4">{user.role}</td>
+                <td className="px-6 py-4">{user.status}</td>
+                <td className="px-6 py-4">{user.lastLogin}</td>
               </tr>
-            </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
-              {filteredUsers.map((user) => (
-                <tr key={user.id} className="hover:bg-gray-50 transition-colors">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                    <div className="font-semibold">{user.name}</div>
-                    <div className="text-gray-500 text-xs">{user.email}</div>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                    <select
-                      value={user.role}
-                      onChange={(e) => handleRoleChange(user.id, e.target.value)}
-                      className={`block w-full py-1 px-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none text-sm transition-colors ${
-                        user.role === 'Admin' ? 'bg-indigo-100 text-indigo-700' : ''
-                      }`}
-                    >
-                      {roleOptions.map(role => (
-                        <option key={role} value={role}>{role}</option>
-                      ))}
-                    </select>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
-                    <span
-                      className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${
-                        user.status === 'Active' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-                      }`}
-                    >
-                      {user.status}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    {user.lastLogin}
-                  </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                    <button
-                      onClick={() => handleStatusToggle(user.id)}
-                      className={`text-indigo-600 hover:text-indigo-900 transition-colors font-medium`}
-                    >
-                      {user.status === 'Active' ? 'Deactivate' : 'Activate'}
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          {filteredUsers.length === 0 && (
-            <p className="text-center py-8 text-gray-500">No users found matching your search criteria.</p>
-          )}
-        </div>
-
-        {/* User List (Mobile/Tablet View) */}
-        <div className="lg:hidden space-y-4">
-          {filteredUsers.map((user) => (
-            <div key={user.id} className="bg-gray-50 p-4 rounded-lg shadow-sm border border-gray-200">
-              <div className="flex justify-between items-start">
-                <p className="text-lg font-bold text-gray-900">{user.name}</p>
-                <span
-                  className={`px-3 py-1 text-xs leading-5 font-semibold rounded-full ${
-                    user.status === 'Active' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-                  }`}
-                >
-                  {user.status}
-                </span>
-              </div>
-              <p className="text-sm text-gray-500 mb-2">{user.email}</p>
-              
-              <div className="mt-3 space-y-2">
-                <div className="flex items-center text-sm">
-                  <span className="font-medium w-20 text-gray-600">Role:</span>
-                  <select
-                    value={user.role}
-                    onChange={(e) => handleRoleChange(user.id, e.target.value)}
-                    className={`flex-1 py-1 px-2 border border-gray-300 bg-white rounded-md shadow-sm text-sm focus:ring-indigo-500 focus:border-indigo-500 transition-colors ${
-                      user.role === 'Admin' ? 'bg-indigo-100 text-indigo-700' : ''
-                    }`}
-                  >
-                    {roleOptions.map(role => (
-                      <option key={role} value={role}>{role}</option>
-                    ))}
-                  </select>
-                </div>
-                <div className="flex items-center text-sm text-gray-600">
-                  <span className="font-medium w-20">Last Login:</span>
-                  <span className="flex-1">{user.lastLogin}</span>
-                </div>
-              </div>
-
-              <div className="mt-4 border-t pt-3 border-gray-200">
-                <button
-                  onClick={() => handleStatusToggle(user.id)}
-                  className={`w-full py-1 rounded-md text-sm font-medium transition-colors ${
-                    user.status === 'Active'
-                      ? 'bg-red-500 text-white hover:bg-red-600'
-                      : 'bg-green-500 text-white hover:bg-green-600'
-                  }`}
-                >
-                  {user.status === 'Active' ? 'Deactivate User' : 'Activate User'}
-                </button>
-              </div>
-            </div>
-          ))}
-          {filteredUsers.length === 0 && (
-            <p className="text-center py-4 text-gray-500">No users found matching your search criteria.</p>
-          )}
-        </div>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );
-};
+}
 
 // --- Settings Component ---
 const SettingsView = () => {
