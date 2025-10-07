@@ -24,9 +24,15 @@ import SeoEditorComponent from "@/components/seo/SEOEditer/SeoEditer";
 // Auth Components
 import LoginAdminPage from "@/components/layout/Login/Login";
 import Register from "@/components/layout/Login/Register";
-import AdminDashboard from "./pages/Admin/Admin";
-import Key_word_Management from "../src/pages/SEOmanagement/Key_word_Management"
-import OnPageOptimization from "./pages/SEOmanagement/OnPageOptimization";
+import AdminDashboard from "@/pages/Admin/Admin";
+
+// ✅ SEO Management Pages
+import Key_word_Management from "@/pages/SEOmanagement/Key_word_Management";
+import OnPageOptimization from "@/pages/SEOmanagement/OnPageOptimization";
+import OffPageSEOManagement from "@/pages/SEOmanagement/OffPageSEOManagement";
+import TechnicalSEO from "@/pages/SEOmanagement/TechnicalSEO";
+import LocalSEO from "./pages/SEOmanagement/LocalSEO";
+import TeamRole from "./pages/SEOmanagement/TeamRole";
 
 // ✅ Route Arrays
 const adminRoutes = [{ path: "/admin", element: <AdminDashboard /> }];
@@ -34,11 +40,16 @@ const seoEditorRoutes = [{ path: "/SEOEditer/seoeditor", element: <SeoEditorComp
 const seoDashboardRoutes = [{ path: "/SEOEditer/SeoDashboard", element: <SeoDashboard /> }];
 const loginAdminRoutes = [{ path: "/login", element: <LoginAdminPage /> }];
 const registrationRoutes = [{ path: "/registration", element: <Register /> }];
-const KeywordManagementRoutes =[{path:"/Key_word_Management", element: <Key_word_Management/>}];
+
+// SEO Management Routes
+const KeywordManagementRoutes = [{ path: "/Key_word_Management", element: <Key_word_Management /> }];
 const OnPageOptimizationRoutes = [{ path: "/OnPageOptimization", element: <OnPageOptimization /> }];
+const OffPageSEORoutes = [{ path: "/OffPageSEOManagement", element: <OffPageSEOManagement /> }];
+const TechnicalSEORoutes = [{ path: "/TechnicalSEO", element: <TechnicalSEO /> }];
+const LocalSEORoutes = [{ path: "/localSEO", element: <LocalSEO /> }];
+const TeamRoleRoutes = [{ path: "/teamrole", element: <TeamRole /> }];
 
-
-// Layout Wrapper Components
+// ✅ Layout Wrapper Components
 const PublicLayout = ({ children }) => (
   <>
     <DynamicHelmet />
@@ -53,6 +64,7 @@ const PublicLayout = ({ children }) => (
 
 const PlainLayout = ({ children }) => <>{children}</>; // For admin/login/registration
 
+// ✅ Main App Component
 export default function App() {
   useAnalytics();
 
@@ -68,63 +80,29 @@ export default function App() {
         }
       />
 
-      {DefaultRoutes.map(({ path, element }) => (
-        <Route key={path} path={path} element={<PublicLayout>{element}</PublicLayout>} />
-      ))}
+      {/* Public Routes from multiple route arrays */}
+      {[...DefaultRoutes, ...SolutionRoutes, ...IndustryRoutes, ...ServiceRoutes, ...CompanyRoutes, ...BlogRoutes, ...PortfolioRoutes].map(
+        ({ path, element }) => (
+          <Route key={path} path={path} element={<PublicLayout>{element}</PublicLayout>} />
+        )
+      )}
 
-      {SolutionRoutes.map(({ path, element }) => (
-        <Route key={path} path={path} element={<PublicLayout>{element}</PublicLayout>} />
-      ))}
-
-      {IndustryRoutes.map(({ path, element }) => (
-        <Route key={path} path={path} element={<PublicLayout>{element}</PublicLayout>} />
-      ))}
-
-      {ServiceRoutes.map(({ path, element }) => (
-        <Route key={path} path={path} element={<PublicLayout>{element}</PublicLayout>} />
-      ))}
-
-      {CompanyRoutes.map(({ path, element }) => (
-        <Route key={path} path={path} element={<PublicLayout>{element}</PublicLayout>} />
-      ))}
-
-      {BlogRoutes.map(({ path, element }) => (
-        <Route key={path} path={path} element={<PublicLayout>{element}</PublicLayout>} />
-      ))}
-
-      {PortfolioRoutes.map(({ path, element }) => (
-        <Route key={path} path={path} element={<PublicLayout>{element}</PublicLayout>} />
-      ))}
-
-      {seoEditorRoutes.map(({ path, element }) => (
+      {/* SEO Editor & Dashboard */}
+      {[...seoEditorRoutes, ...seoDashboardRoutes].map(({ path, element }) => (
         <Route key={path} path={path} element={<PlainLayout>{element}</PlainLayout>} />
-      ))}
-
-      {seoDashboardRoutes.map(({ path, element }) => (
-        <Route key={path} path={path} element={<PublicLayout>{element}</PublicLayout>} />
       ))}
 
       {/* Admin / Login / Registration (No Navbar/Footer) */}
-      {loginAdminRoutes.map(({ path, element }) => (
+      {[...loginAdminRoutes, ...registrationRoutes, ...adminRoutes].map(({ path, element }) => (
         <Route key={path} path={path} element={<PlainLayout>{element}</PlainLayout>} />
       ))}
 
-      {registrationRoutes.map(({ path, element }) => (
-        <Route key={path} path={path} element={<PlainLayout>{element}</PlainLayout>} />
-      ))}
-
-      {adminRoutes.map(({ path, element }) => (
-        <Route key={path} path={path} element={<PlainLayout>{element}</PlainLayout>} />
-      ))}
-
-    {KeywordManagementRoutes.map(({ path, element }) => (
-        <Route key={path} path={path} element={<PlainLayout>{element}</PlainLayout>} />
-      ))}
-
-    {OnPageOptimizationRoutes.map(({ path, element }) => (
-  <Route key={path} path={path} element={<PlainLayout>{element}</PlainLayout>} />
-))}
-
+      {/* ✅ SEO Management Pages */}
+      {[...KeywordManagementRoutes, ...OnPageOptimizationRoutes, ...OffPageSEORoutes, ...TechnicalSEORoutes, ...LocalSEORoutes, ...TeamRoleRoutes].map(
+        ({ path, element }) => (
+          <Route key={path} path={path} element={<PlainLayout>{element}</PlainLayout>} />
+        )
+      )}
     </Routes>
   );
 }
