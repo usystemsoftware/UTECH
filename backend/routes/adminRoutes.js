@@ -1,9 +1,9 @@
 const express = require("express");
-const { registerAdmin } = require("../controllers/adminController");
-
+const { registerUser, loginUser, googleLogin } = require("../controllers/adminController");
 const router = express.Router();
 
-// POST /api/admin/register
-router.post("/register", registerAdmin);
+router.post("/register", registerUser);
+router.post("/login", loginUser);
+router.post("/google-login", googleLogin);
 
 module.exports = router;
