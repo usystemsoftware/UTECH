@@ -1,8 +1,9 @@
-const express = require('express');
-const { getResponse } = require('../controllers/chatbotController');
-const authenticateToken = require('../middleware/authMiddleware');
+import express from "express";
+import { getResponse } from "../controllers/chatbotController.js";
+import authenticateToken from "../middleware/authMiddleware.js";
+
 const router = express.Router();
 
-router.post('/', authenticateToken, getResponse);
+router.post("/", authenticateToken, getResponse);
 
-module.exports = router;
+export default router;   // ✅ ESM export

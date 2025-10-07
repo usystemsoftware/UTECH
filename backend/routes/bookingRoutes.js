@@ -1,9 +1,9 @@
-const express = require("express");
-const { sendBookingEmail, generateLink } = require("../controllers/bookingController");
+import express from "express";
+import { sendBookingEmail, generateLink } from "../controllers/bookingController.js";
 
 const router = express.Router();
 
 router.post("/slote", sendBookingEmail);
-router.get('/generate-meet', generateLink)
+router.get("/generate-meet", generateLink);
 
-module.exports = router;
+export default router;

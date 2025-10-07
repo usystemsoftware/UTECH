@@ -1,7 +1,7 @@
-const { sendEmail } = require("../utils/sendEmail");
-const { footerLinks, legalNotices } = require("../config/footerData");
+import { sendEmail } from "../utils/sendEmail.js";
+import { footerLinks, legalNotices } from "../config/footerData.js";
 
-exports.subscribe = async (req, res) => {
+export const subscribe = async (req, res) => {
   const { email } = req.body;
 
   if (!email) {
@@ -22,9 +22,7 @@ exports.subscribe = async (req, res) => {
               .map(
                 (section) => `
                 <td style="vertical-align:top; padding:10px;">
-                  <h4 style="color:#0d6efd; margin-bottom:8px;">${
-                    section.title
-                  }</h4>
+                  <h4 style="color:#0d6efd; margin-bottom:8px;">${section.title}</h4>
                   <ul style="list-style:none; padding:0; margin:0;">
                     ${section.links
                       .map(
@@ -114,9 +112,7 @@ exports.subscribe = async (req, res) => {
       `New subscriber: ${email}`
     );
 
-    res
-      .status(200)
-      .json({ message: "Subscription successful & admin notified!" });
+    res.status(200).json({ message: "Subscription successful & admin notified!" });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Error subscribing", error });

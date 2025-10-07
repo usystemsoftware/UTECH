@@ -80,7 +80,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
     { name: 'Dashboard', icon: LayoutDashboard, tab: 'dashboard' },
     { name: 'User Management', icon: Users, tab: 'users' },
     { name: 'System Settings', icon: Settings, tab: 'settings' },
-    { name: 'SEO Management', icon: BarChart3, tab: 'seo' },
+    { name: 'Advanced Settings', icon: BarChart3, tab: 'Advanced' },
   ];
 
   const navigate = useNavigate();
@@ -139,7 +139,7 @@ const DashboardView = () => {
     { title: "Total Users", value: 120, icon: BarChart3, color: "bg-indigo-500" },
     { title: "New Leads", value: 35, icon: BarChart3, color: "bg-green-500" },
     { title: "Projects", value: 12, icon: BarChart3, color: "bg-yellow-500" },
-    { title: "Revenue", value: "$15k", icon: BarChart3, color: "bg-red-500" },
+    { title: "Revenue", value: "₹15cr", icon: BarChart3, color: "bg-red-500" },
   ];
 
   // Fetch notifications (contact form submissions)
@@ -510,8 +510,7 @@ const SEOView = () => {
         SEO & Hero Editor
       </h1>
 
-      {/* ===== Hero Preview ===== */}
-        
+     
 
       {/* ===== SEO + Hero Form ===== */}
       <div className="max-w-6xl mx-auto w-full">
@@ -636,7 +635,7 @@ const SEOView = () => {
 
 // --- Main App Component ---
 const App = () => {
-  const [activeTab, setActiveTab] = useState('seo'); // Default to SEO view for demonstration
+  const [activeTab, setActiveTab] = useState('dashboard'); // Default to SEO view for demonstration
 
   const renderContent = () => {
     switch (activeTab) {
@@ -646,7 +645,7 @@ const App = () => {
         return <UserManagementView />;
       case 'settings':
         return <SettingsView />;
-      case 'seo':
+      case 'Advanced':
         return <SEOView />;
       default:
         return <DashboardView />;
@@ -674,7 +673,7 @@ const App = () => {
             <option value="dashboard">Dashboard</option>
             <option value="users">User Management</option>
             <option value="settings">System Settings</option>
-            <option value="seo">SEO Management</option>
+            <option value="Advanced">Advanced Setting</option>
           </select>
           <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
         </div>

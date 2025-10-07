@@ -16,7 +16,7 @@ import subscribeRoutes from "./routes/subscribeRoutes.js";
 import contactRoutes from "./routes/contactRoutes.js";
 
 // ✅ Import your new user/admin routes
-import userRoutes from "./routes/userRoutes.js";
+import userRoutes from "./routes/adduserRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
 
 dotenv.config();

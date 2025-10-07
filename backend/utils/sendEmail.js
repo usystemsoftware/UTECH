@@ -1,6 +1,6 @@
-const nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
 
-const transporter = nodemailer.createTransport({
+export const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
   port: Number(process.env.SMTP_PORT),
   secure: process.env.SMTP_SECURE === "true",
@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // Support both plain text and HTML
-const sendEmail = async (to, subject, html, text = "") => {
+export const sendEmail = async (to, subject, html, text = "") => {
   const mailOptions = {
     from: process.env.SMTP_USER,
     to,
@@ -25,5 +25,3 @@ const sendEmail = async (to, subject, html, text = "") => {
 
   await transporter.sendMail(mailOptions);
 };
-
-module.exports = { sendEmail, transporter };

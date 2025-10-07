@@ -1,8 +1,8 @@
-const express = require("express");
-const { subscribe } = require("../controllers/subscribeController");
+import express from "express";
+import { subscribe } from "../controllers/subscribeController.js"; // ✅ Use import + .js
 
 const router = express.Router();
 
 router.post("/subscribe", subscribe);
 
-module.exports = router;
+export default router; // ✅ Use export default, not module.exports

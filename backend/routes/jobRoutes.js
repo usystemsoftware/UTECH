@@ -1,10 +1,10 @@
-const express = require("express");
-const multer = require("multer");
-const { applyForJob } = require("../controllers/jobController");
+import express from "express";
+import multer from "multer";
+import { applyForJob } from "../controllers/jobController.js";
 
 const router = express.Router();
 const upload = multer();
 
 router.post("/apply", upload.single("resume"), applyForJob);
 
-module.exports = router;
+export default router; // ✅ ESM export

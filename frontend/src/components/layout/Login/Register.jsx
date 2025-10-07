@@ -121,7 +121,7 @@ export default function Register() {
             Create Your UTech Account
           </h2>
           <p className="text-sm text-gray-500">
-            Find, list, and manage properties with ease.
+            {/* Find, list, and manage properties with ease. */}
           </p>
         </div>
 

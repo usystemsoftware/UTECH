@@ -1,9 +1,9 @@
-const { transporter } = require("../utils/sendEmail");
+import { transporter } from "../utils/sendEmail.js";
 
-exports.submitContact = async (req, res) => {
+export const submitContact = async (req, res) => {
   const { name, email, phone, company, message, tradeshow, from } = req.body;
 
-  // Basic validation for required fields
+  // Basic validation
   if (!name || !email || !phone || !message || !tradeshow) {
     return res.status(400).json({
       success: false,
@@ -13,7 +13,7 @@ exports.submitContact = async (req, res) => {
   }
 
   try {
-    // 1. Email content for your Admin/Sales Team
+    // 1️⃣ Admin Email
     const adminMailOptions = {
       from: `"U Technology Contact Portal" <${email}>`,
       to: process.env.SALES_EMAIL || "sales@usystem.software",
@@ -36,9 +36,7 @@ exports.submitContact = async (req, res) => {
             </tr>
             <tr>
               <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: 500; color: #555;">Company:</td>
-              <td style="padding: 10px; border-bottom: 1px solid #eee; color: #333;">${
-                company || "N/A"
-              }</td>
+              <td style="padding: 10px; border-bottom: 1px solid #eee; color: #333;">${company || "N/A"}</td>
             </tr>
             <tr>
               <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: 500; color: #555;">Tradeshow:</td>
@@ -46,9 +44,7 @@ exports.submitContact = async (req, res) => {
             </tr>
             <tr>
               <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: 500; color: #555;">Source Page:</td>
-              <td style="padding: 10px; border-bottom: 1px solid #eee; color: #333;">${
-                from || "N/A"
-              }</td>
+              <td style="padding: 10px; border-bottom: 1px solid #eee; color: #333;">${from || "N/A"}</td>
             </tr>
             <tr>
               <td style="padding: 10px; font-weight: 500; color: #555; vertical-align: top;">Message:</td>
@@ -60,72 +56,39 @@ exports.submitContact = async (req, res) => {
       `,
     };
 
-    // 2. Email content for the User (Confirmation)
+    // 2️⃣ User Confirmation Email
     const userMailOptions = {
       from: `"U Technology Team" <${email}>`,
       to: email,
       subject: `We’ve Received Your Inquiry, ${name}!`,
       html: `
-    <div style="sans-serif; background-color: #fff; padding: 10px; max-width:100%;">
-      
-      <p style="color: #34495e; font-size: 16px; line-height: 1.6;">
-        Dear <strong>${name}</strong>,
-      </p>
-
-      <p style="color: #34495e; font-size: 16px; line-height: 1.6;">
-        We’re excited to inform you that we have successfully received your inquiry 
-        regarding your interest in <strong>${from}</strong>.  
-        Your details are now with our team, and one of our specialists will reach out to you shortly 
-        to understand your requirements and provide tailored solutions.
-      </p>
-
-      <p style="color: #34495e; font-size: 16px; line-height: 1.6;">
-        At <strong>U Technology</strong>, we pride ourselves on delivering innovative digital solutions — 
-        from <em>application development</em> and <em>QA testing</em> to <em>digital transformation</em> 
-        and <em>cloud services</em>.  
-        We are confident that our expertise can help accelerate your business growth.
-      </p>
-
-      <p style="color: #34495e; font-size: 16px; line-height: 1.6;">
-        In the meantime, feel free to learn more about our services and success stories by 
-        visiting our website.
-      </p>
-
-      <div style="text-align: center; margin: 30px 0;">
-        <a href="https://usystem.software" style="background-color: #009896; color: #fff; padding: 10px; border-radius: 3px; text-decoration: none; font-weight: 600; font-size: 13px;">
-          Explore Our Website
-        </a>
-      </div>
-
-      <p style="color: #34495e; font-size: 15px; margin-top: 25px;">
-        We appreciate your interest in U Technology and look forward to speaking with you soon.  
-        Thank you once again for reaching out — you’re in good hands!
-      </p>
-
-      <p style="color: #7f8c8d; font-size: 14px; margin-top: 30px;">
-        Best Regards,<br>
-        <strong>U Technology Team</strong>
-      </p>
-
-      <p style="color: #95a5a6; font-size: 12px; margin-top: 20px; text-align: center;">
-        This is an automated confirmation email. Please do not reply.  
-      </p>
-    </div>
-  `,
+        <div style="sans-serif; background-color: #fff; padding: 10px; max-width:100%;">
+          <p style="color: #34495e; font-size: 16px; line-height: 1.6;">
+            Dear <strong>${name}</strong>,
+          </p>
+          <p style="color: #34495e; font-size: 16px; line-height: 1.6;">
+            We’ve received your inquiry regarding your interest in <strong>${from}</strong>.
+          </p>
+          <div style="text-align: center; margin: 30px 0;">
+            <a href="https://usystem.software" style="background-color: #009896; color: #fff; padding: 10px; border-radius: 3px; text-decoration: none; font-weight: 600; font-size: 13px;">
+              Explore Our Website
+            </a>
+          </div>
+        </div>
+      `,
     };
 
-    // Send both emails
     await transporter.sendMail(adminMailOptions);
     await transporter.sendMail(userMailOptions);
 
-    return res.status(200).json({
+    res.status(200).json({
       success: true,
       message:
         "Contact form submitted successfully! We've sent a confirmation to your email and our team will connect with you soon.",
     });
   } catch (error) {
     console.error("Email send error:", error);
-    return res.status(500).json({
+    res.status(500).json({
       success: false,
       message:
         "Something went wrong while submitting your form. Please try again later.",

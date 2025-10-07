@@ -1,12 +1,12 @@
-const User = require("../models/Admin.js");
-const bcrypt = require("bcryptjs");
-const generateToken = require("../utils/generateToken");
-const { OAuth2Client } = require("google-auth-library");
+import User from "../models/Admin.js";
+import bcrypt from "bcryptjs";
+import generateToken from "../utils/generateToken.js";
+import { OAuth2Client } from "google-auth-library";
 
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
 // Manual Registration
-exports.registerUser = async (req, res) => {
+export const registerUser = async (req, res) => {
   const { name, email, password, mobile, role, address, city, company } = req.body;
 
   try {
@@ -33,7 +33,7 @@ exports.registerUser = async (req, res) => {
 };
 
 // Manual Login
-exports.loginUser = async (req, res) => {
+export const loginUser = async (req, res) => {
   const { email, password } = req.body;
   try {
     const user = await User.findOne({ email });
@@ -49,7 +49,7 @@ exports.loginUser = async (req, res) => {
 };
 
 // Google Login
-exports.googleLogin = async (req, res) => {
+export const googleLogin = async (req, res) => {
   const { token } = req.body; // credential from frontend
 
   try {
