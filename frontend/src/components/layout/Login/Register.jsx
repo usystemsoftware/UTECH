@@ -5,6 +5,7 @@ import { IoLockClosedOutline } from "react-icons/io5";
 import spaceswalalogo from "../../../../public/small-logo.png";
 import img2 from "../../../../public/banner/Login.jpg";
 import { GoogleLogin } from "@react-oauth/google";
+import { registerAdmin, loginAdmin } from "../../../../Api/adminApi";
 
 export default function Register() {
   const [form, setForm] = useState({
@@ -12,55 +13,47 @@ export default function Register() {
     email: "",
     mobile: "",
     password: "",
-    role: "Admin",
+    role: "admin",
     address: "",
     city: "",
-    idProof: null, // <-- added field
   });
 
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    const { name, value, files } = e.target;
-    if (name === "idProof") {
-      setForm({ ...form, idProof: files[0] }); // store file object
-    } else {
-      setForm({ ...form, [name]: value });
-    }
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
   };
 
   const handleRoleChange = (role) => setForm({ ...form, role });
 
-  // Manual Registration
+  // Manual Registration + Auto Login
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Prepare form data to send including file
-      const formData = new FormData();
-      Object.keys(form).forEach((key) => {
-        if (form[key] !== null) formData.append(key, form[key]);
+      await registerAdmin(form); // Register user
+
+      // Auto-login after registration
+      const loginData = await loginAdmin({
+        email: form.email,
+        password: form.password,
       });
 
-      const { data } = await registerUser(formData); // Make sure backend accepts multipart/form-data
+      if (loginData?.token) sessionStorage.setItem("token", loginData.token);
 
-      if (data?.token) sessionStorage.setItem("token", data.token);
-
-      alert("Registration successful!");
+      alert("Registration successful! Logged in automatically.");
       navigate("/dashboard");
     } catch (err) {
       console.error(err);
-      alert(
-        err.response?.data?.message ||
-          "Registration failed. Please check your details and try again."
-      );
+      alert(err.message || "Registration failed. Please check your details.");
     }
   };
 
-  // Google Authentication
+  // Google Registration/Login
   const handleGoogleSuccess = async (credentialResponse) => {
     try {
       const { credential } = credentialResponse;
-      const { data } = await loginWithGoogleToken(credential);
+      const data = await loginAdmin({ token: credential, google: true });
 
       if (data?.token) sessionStorage.setItem("token", data.token);
 
@@ -120,9 +113,6 @@ export default function Register() {
           <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900">
             Create Your UTech Account
           </h2>
-          <p className="text-sm text-gray-500">
-            {/* Find, list, and manage properties with ease. */}
-          </p>
         </div>
 
         {/* Role Selection */}
@@ -142,28 +132,53 @@ export default function Register() {
           </div>
         </div>
 
-        {/* Manual Registration Form */}
+        {/* Registration Form */}
         <form onSubmit={handleSubmit} className="space-y-3">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            <input name="name" placeholder="Full Name" className={inputClass} onChange={handleChange} required />
-            <input name="email" placeholder="Email Address" type="email" className={inputClass} onChange={handleChange} required />
-            <input name="mobile" placeholder="Mobile Number" type="tel" className={inputClass} onChange={handleChange} required />
-            <input name="password" placeholder="Password" type="password" className={inputClass} onChange={handleChange} required minLength="8" />
-            <input name="address" placeholder="Street Address" className={inputClass} onChange={handleChange} />
-            <input name="city" placeholder="City / Locality" className={inputClass} onChange={handleChange} />
-
-            {/* ID Proof */}
-            <div className="col-span-1 md:col-span-2">
-              <label className="block text-sm font-medium text-gray-700 mb-1">Upload ID Proof</label>
-              <input
-                type="file"
-                name="idProof"
-                accept=".jpg,.jpeg,.png,.pdf"
-                onChange={handleChange}
-                className={inputClass}
-                required
-              />
-            </div>
+            <input
+              name="name"
+              placeholder="Full Name"
+              className={inputClass}
+              onChange={handleChange}
+              required
+            />
+            <input
+              name="email"
+              placeholder="Email Address"
+              type="email"
+              className={inputClass}
+              onChange={handleChange}
+              required
+            />
+            <input
+              name="mobile"
+              placeholder="Mobile Number"
+              type="tel"
+              className={inputClass}
+              onChange={handleChange}
+              required
+            />
+            <input
+              name="password"
+              placeholder="Password"
+              type="password"
+              className={inputClass}
+              onChange={handleChange}
+              required
+              minLength="8"
+            />
+            <input
+              name="address"
+              placeholder="Street Address"
+              className={inputClass}
+              onChange={handleChange}
+            />
+            <input
+              name="city"
+              placeholder="City / Locality"
+              className={inputClass}
+              onChange={handleChange}
+            />
           </div>
 
           <button
@@ -185,7 +200,11 @@ export default function Register() {
 
         {/* Google Login */}
         <div className="flex justify-center mt-2">
-          <GoogleLogin onSuccess={handleGoogleSuccess} onError={handleGoogleError} useOneTap />
+          <GoogleLogin
+            onSuccess={handleGoogleSuccess}
+            onError={handleGoogleError}
+            useOneTap
+          />
         </div>
 
         {/* Footer */}
@@ -197,10 +216,6 @@ export default function Register() {
           >
             Log in here
           </span>
-        </p>
-
-        <p className="text-xs text-gray-400 text-center mt-1">
-          By registering, you agree to our Terms & Conditions and Privacy Policy.
         </p>
       </div>
     </div>

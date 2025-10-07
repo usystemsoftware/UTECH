@@ -18,6 +18,8 @@ import contactRoutes from "./routes/contactRoutes.js";
 // ✅ Import your new user/admin routes
 import userRoutes from "./routes/adduserRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
+import keywordRoutes from "./routes/keywordRoutes.js"
+import optimizationRoutes from "./routes/optimizationRoutes.js"
 
 dotenv.config();
 const app = express();
@@ -73,6 +75,8 @@ app.use("/contact", contactRoutes);
 // ✅ New routes
 app.use("/api/users", userRoutes); // <-- your add/get/login users
 app.use("/api/admin", adminRoutes); // <-- keep if you want admin-only
+app.use("/api/keywords", keywordRoutes);
+app.use("/api/optimizations", optimizationRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () =>

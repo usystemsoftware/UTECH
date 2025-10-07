@@ -1,5 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import AddUser  from './Adduser';
+import Globalmanagement from './GlobalSeoSettings'
+import Advancemanagement from './Advancemanagement'
 import { LayoutDashboard, Users, Settings, LogOut, Search, Clock, Shield, BarChart3, ChevronDown, CheckCircle, XCircle, Bell } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
 
@@ -76,12 +78,14 @@ const HeroSection = ({ backgroundImage, title, description, buttonText, buttonLi
 // --- Standard Components ---
 
 const Sidebar = ({ activeTab, setActiveTab }) => {
-  const navItems = [
-    { name: 'Dashboard', icon: LayoutDashboard, tab: 'dashboard' },
-    { name: 'User Management', icon: Users, tab: 'users' },
-    { name: 'System Settings', icon: Settings, tab: 'settings' },
-    { name: 'Advanced Settings', icon: BarChart3, tab: 'Advanced' },
-  ];
+ const navItems = [
+  { name: 'Dashboard', icon: LayoutDashboard, tab: 'dashboard' },
+  { name: 'User Management', icon: Users, tab: 'users' },
+  { name: 'Advanced Settings', icon: BarChart3, tab: 'advancemanagement' },
+{ name: 'System Settings', icon: Settings, tab: 'globalmanagement' },
+
+];
+
 
   const navigate = useNavigate();
 
@@ -127,6 +131,7 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
     </div>
   );
 };
+
 
 // --- Dashboard View Component ---
 const DashboardView = () => {
@@ -343,295 +348,6 @@ const UserManagementView = () => {
   );
 }
 
-// --- Settings Component ---
-const SettingsView = () => {
-  const [siteName, setSiteName] = useState('My Awesome Admin Portal');
-  const [allowRegistration, setAllowRegistration] = useState(true);
-  const [notificationsEnabled, setNotificationsEnabled] = useState(false);
-  const [saveStatus, setSaveStatus] = useState(null);
-
-  const handleSave = (e) => {
-    e.preventDefault();
-    setSaveStatus('Saving...');
-    // Simulate API call delay
-    setTimeout(() => {
-      console.log('Settings Saved:', { siteName, allowRegistration, notificationsEnabled });
-      setSaveStatus('Saved!');
-      setTimeout(() => setSaveStatus(null), 3000);
-    }, 1500);
-  };
-
-  return (
-    <div className="p-6 space-y-6">
-      <h1 className="text-3xl font-extrabold text-gray-800">System Settings</h1>
-
-      <div className="bg-white p-6 rounded-xl shadow-lg max-w-4xl mx-auto">
-        <form onSubmit={handleSave} className="space-y-6">
-          {/* Site Name Setting */}
-          <div>
-            <label htmlFor="site-name" className="block text-sm font-medium text-gray-700 mb-1">
-              Site Name
-            </label>
-            <input
-              type="text"
-              id="site-name"
-              value={siteName}
-              onChange={(e) => setSiteName(e.target.value)}
-              className="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2 px-3 focus:ring-indigo-500 focus:border-indigo-500 transition-all"
-              placeholder="Enter site name"
-            />
-            <p className="mt-1 text-xs text-gray-500">This name will appear in the page title and headers.</p>
-          </div>
-
-          <div className="border-t border-gray-200 pt-6 space-y-6">
-            {/* Allow Registration Toggle */}
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm font-medium text-gray-700">Allow New User Registration</p>
-                <p className="text-xs text-gray-500">When disabled, only existing users can log in.</p>
-              </div>
-              <button
-                type="button"
-                onClick={() => setAllowRegistration(!allowRegistration)}
-                className={`relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${
-                  allowRegistration ? 'bg-green-600' : 'bg-gray-200'
-                }`}
-              >
-                <span
-                  aria-hidden="true"
-                  className={`pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200 ${
-                    allowRegistration ? 'translate-x-5' : 'translate-x-0'
-                  }`}
-                />
-              </button>
-            </div>
-
-            {/* Notifications Toggle */}
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm font-medium text-gray-700">Enable Email Notifications</p>
-                <p className="text-xs text-gray-500">Receive alerts for critical system events.</p>
-              </div>
-              <button
-                type="button"
-                onClick={() => setNotificationsEnabled(!notificationsEnabled)}
-                className={`relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${
-                  notificationsEnabled ? 'bg-green-600' : 'bg-gray-200'
-                }`}
-              >
-                <span
-                  aria-hidden="true"
-                  className={`pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200 ${
-                    notificationsEnabled ? 'translate-x-5' : 'translate-x-0'
-                  }`}
-                />
-              </button>
-            </div>
-          </div>
-
-          {/* Submit Button and Status */}
-          <div className="pt-6 border-t border-gray-200 flex items-center justify-between">
-            <button
-              type="submit"
-              className="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors"
-            >
-              {saveStatus === 'Saving...' ? 'Saving...' : 'Save Settings'}
-            </button>
-            {saveStatus === 'Saved!' && (
-              <p className="text-sm text-green-600 font-medium flex items-center">
-                <CheckCircle className="w-4 h-4 mr-1" /> Settings saved successfully!
-              </p>
-            )}
-          </div>
-        </form>
-      </div>
-    </div>
-  );
-};
-
-// --- SEO Management Component (UPDATED) ---
-const SEOView = () => {
-  const [seo, setSeo] = useState({
-    title: "",
-    description: "",
-    image: "", // OG Image URL
-    heroBackground: "", // Hero Image URL
-    buttonText: "Explore Blogs",
-    buttonLink: "https://example.com/hero-link", // Defaulted to match reference
-    overlayOpacity: 0.3,
-    schema:
-      '{"@context": "https://schema.org", "@type": "WebPage", "name": "U Tech | Company Blog"}',
-  });
-
-  const [saveStatus, setSaveStatus] = useState(null);
-
-  // ✅ Load saved data from localStorage
-  useEffect(() => {
-    const savedSeo = localStorage.getItem("seoSettings");
-    if (savedSeo) {
-      setSeo(JSON.parse(savedSeo));
-    }
-  }, []);
-
-  // ✅ Handle input change
-  const handleChange = (e) => {
-    const value =
-      e.target.type === "number" || e.target.type === "range"
-        ? parseFloat(e.target.value)
-        : e.target.value;
-
-    setSeo({ ...seo, [e.target.name]: value });
-  };
-
-  // ✅ Save to localStorage
-  const handleSave = () => {
-    setSaveStatus("Saving...");
-    setTimeout(() => {
-      localStorage.setItem("seoSettings", JSON.stringify(seo));
-      console.log("SEO + Hero settings saved locally:", seo);
-      setSaveStatus("Saved!");
-      setTimeout(() => setSaveStatus(null), 3000);
-    }, 1000);
-  };
-
-  // ✅ Format schema JSON nicely
-  const formattedSchema = useMemo(() => {
-    if (!seo.schema) return "";
-    try {
-      return JSON.stringify(JSON.parse(seo.schema), null, 2);
-    } catch (e) {
-      return seo.schema; // If invalid JSON, just show raw input
-    }
-  }, [seo.schema]);
-
-  return (
-    <div className="p-4 lg:p-6 space-y-6">
-      <h1 className="text-3xl font-extrabold text-gray-800">
-        SEO & Hero Editor
-      </h1>
-
-     
-
-      {/* ===== SEO + Hero Form ===== */}
-      <div className="max-w-6xl mx-auto w-full">
-        <div className="bg-white w-full p-6 shadow-lg rounded-lg space-y-6">
-          <h1 className="text-2xl font-bold text-gray-800 text-center md:text-left">
-            SEO Settings
-          </h1>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Left Column */}
-            <div className="flex flex-col gap-4">
-              <label className="block text-sm font-medium text-gray-700">
-                Title
-              </label>
-              <input
-                type="text"
-                name="title"
-                value={seo.title}
-                onChange={handleChange}
-                placeholder="Enter page title"
-                className="w-full p-3 border rounded"
-              />
-
-              <label className="block text-sm font-medium text-gray-700">
-                Description
-              </label>
-              <textarea
-                name="description"
-                value={seo.description}
-                onChange={handleChange}
-                rows={4}
-                placeholder="Enter meta description"
-                className="w-full p-3 border rounded"
-              />
-
-              <label className="block text-sm font-medium text-gray-700">
-                Hero Background Image URL
-              </label>
-              <input
-                type="text"
-                name="heroBackground"
-                value={seo.heroBackground}
-                onChange={handleChange}
-                placeholder="https://example.com/hero.jpg"
-                className="w-full p-3 border rounded"
-              />
-
-              <label className="block text-sm font-medium text-gray-700">
-                Hero Button Text
-              </label>
-              <input
-                type="text"
-                name="buttonText"
-                value={seo.buttonText}
-                onChange={handleChange}
-                placeholder="Click Me"
-                className="w-full p-3 border rounded"
-              />
-
-              <label className="block text-sm font-medium text-gray-700">
-                Hero Button Link
-              </label>
-              <input
-                type="text"
-                name="buttonLink"
-                value={seo.buttonLink}
-                onChange={handleChange}
-                placeholder="/example-link"
-                className="w-full p-3 border rounded"
-              />
-            </div>
-
-            {/* Right Column */}
-            <div className="flex flex-col gap-4">
-              <label className="block text-sm font-medium text-gray-700">
-                Overlay Opacity (0-1)
-              </label>
-              <input
-                type="number"
-                step="0.1"
-                min="0"
-                max="1"
-                name="overlayOpacity"
-                value={seo.overlayOpacity}
-                onChange={handleChange}
-                className="w-full p-3 border rounded"
-              />
-
-              <label className="block text-sm font-medium text-gray-700">
-                JSON-LD Schema
-              </label>
-              <textarea
-                name="schema"
-                value={seo.schema}
-                onChange={handleChange}
-                placeholder='{"@context": "https://schema.org"}'
-                rows={8}
-                className="w-full p-3 border rounded font-mono"
-              />
-            </div>
-          </div>
-
-          <div className="w-full">
-            <button
-              onClick={handleSave}
-              className="w-full bg-blue-600 text-white text-center py-3 rounded hover:bg-blue-700 transition mt-4"
-            >
-              Save SEO + Hero
-            </button>
-            {saveStatus && (
-              <p className="text-center text-sm text-gray-600 mt-2">
-                {saveStatus}
-              </p>
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 
 // --- Main App Component ---
 const App = () => {
@@ -643,10 +359,10 @@ const App = () => {
         return <DashboardView />;
       case 'users':
         return <UserManagementView />;
-      case 'settings':
-        return <SettingsView />;
-      case 'Advanced':
-        return <SEOView />;
+      case 'advancemanagement':
+        return <Advancemanagement />;
+      case 'globalmanagement':
+        return <Globalmanagement />;
       default:
         return <DashboardView />;
     }
@@ -672,8 +388,9 @@ const App = () => {
           >
             <option value="dashboard">Dashboard</option>
             <option value="users">User Management</option>
-            <option value="settings">System Settings</option>
-            <option value="Advanced">Advanced Setting</option>
+            <option value="advancemanagement">Advanced Settings</option>
+            <option value="globalmanagement">System Settings</option>
+
           </select>
           <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
         </div>
