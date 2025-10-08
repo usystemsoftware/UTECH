@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import Onpagedashbord from "../SEOmanagement/SEODashbord/Onpagedashbord";
 import Key_Word_dashboard from "../SEOmanagement/SEODashbord/Key_Word_dashboard";
+import LocalSEO from "../SEOmanagement/LocalSEO";
+import TechnicalSEO from "../SEOmanagement/TechnicalSEO";
+import OffPageSEOManagement from "../SEOmanagement/OffPageSEOManagement";
+
 import {
   Key,
   FileText,
@@ -37,11 +41,11 @@ const SEOManagementDashboard = () => {
       case "onpage":
         return <Onpagedashbord />;
       case "backlink":
-        return <div className="p-4">🔗 Manage backlinks and off-page SEO here...</div>;
-      case "technical":
-        return <div className="p-4">🧩 Technical SEO audit overview...</div>;
-      case "local":
-        return <div className="p-4">📍 Manage local business listings...</div>;
+          return <OffPageSEOManagement/>;
+        case "technical":
+          return <TechnicalSEO />;
+        case "local":
+          return <LocalSEO />;
       case "analytics":
         return <div className="p-4">📊 Analytics and report generation tools...</div>;
       case "team":

@@ -24,7 +24,7 @@ export default function Login() {
       if (data?.token) sessionStorage.setItem("token", data.token);
 
       alert("Login successful!");
-      navigate("/dashboard");
+      navigate("/admin");
     } catch (err) {
       console.error(err);
       alert(err.message || "Invalid email or password");
@@ -40,7 +40,7 @@ export default function Login() {
       if (data?.token) sessionStorage.setItem("token", data.token);
 
       alert("Google Sign-In Successful!");
-      navigate("/dashboard");
+      navigate("/admin");
     } catch (err) {
       console.error("Google login failed:", err);
       alert("Google login failed. Please try again.");
