@@ -1,4 +1,3 @@
-// src/pages/Login.jsx
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { GoogleLogin } from "@react-oauth/google";
@@ -19,12 +18,15 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const data = await loginAdmin(form);
+      const data = await loginAdmin(form); // API should return { token, user: { domains: [] } }
 
       if (data?.token) sessionStorage.setItem("token", data.token);
 
       alert("Login successful!");
-      navigate("/admin");
+
+      // Redirect to first domain if exists
+      const firstDomain = data?.user?.domains?.[0] || "dashboard";
+      navigate(`/domains/${encodeURIComponent(firstDomain)}`);
     } catch (err) {
       console.error(err);
       alert(err.message || "Invalid email or password");
@@ -40,7 +42,9 @@ export default function Login() {
       if (data?.token) sessionStorage.setItem("token", data.token);
 
       alert("Google Sign-In Successful!");
-      navigate("/admin");
+
+      const firstDomain = data?.user?.domains?.[0] || "dashboard";
+      navigate(`/domains/${encodeURIComponent(firstDomain)}`);
     } catch (err) {
       console.error("Google login failed:", err);
       alert("Google login failed. Please try again.");

@@ -33,6 +33,7 @@ import OffPageSEOManagement from "@/pages/SEOmanagement/OffPageSEOManagement";
 import TechnicalSEO from "@/pages/SEOmanagement/TechnicalSEO";
 import LocalSEO from "./pages/SEOmanagement/LocalSEO";
 import TeamRole from "./pages/SEOmanagement/TeamRole";
+import Editor from "../src/pages/editor/EditerPanel"
 
 // ✅ Route Arrays
 const adminRoutes = [{ path: "/admin", element: <AdminDashboard /> }];
@@ -48,6 +49,7 @@ const OffPageSEORoutes = [{ path: "/OffPageSEOManagement", element: <OffPageSEOM
 const TechnicalSEORoutes = [{ path: "/TechnicalSEO", element: <TechnicalSEO /> }];
 const LocalSEORoutes = [{ path: "/localSEO", element: <LocalSEO /> }];
 const TeamRoleRoutes = [{ path: "/teamrole", element: <TeamRole /> }];
+const EditorRoutes = [{ path: "/editor", element: <Editor /> }];
 
 // ✅ Layout Wrapper Components
 const PublicLayout = ({ children }) => (
@@ -98,7 +100,7 @@ export default function App() {
       ))}
 
       {/* ✅ SEO Management Pages */}
-      {[...KeywordManagementRoutes, ...OnPageOptimizationRoutes, ...OffPageSEORoutes, ...TechnicalSEORoutes, ...LocalSEORoutes, ...TeamRoleRoutes].map(
+      {[...KeywordManagementRoutes, ...OnPageOptimizationRoutes, ...OffPageSEORoutes, ...TechnicalSEORoutes, ...LocalSEORoutes, ...TeamRoleRoutes, ...EditorRoutes].map(
         ({ path, element }) => (
           <Route key={path} path={path} element={<PlainLayout>{element}</PlainLayout>} />
         )

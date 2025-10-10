@@ -45,6 +45,7 @@
     "date-fns": "^4.1.0",
     "dayjs": "^1.11.13",
     "dotted-map": "^2.2.3",
+    "firebase": "^12.4.0",
     "framer-motion": "^12.23.0",
     "fuse.js": "^7.1.0",
     "gsap": "^3.13.0",

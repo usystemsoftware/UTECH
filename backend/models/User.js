@@ -4,12 +4,25 @@ import bcrypt from "bcryptjs";
 const userSchema = new mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
-  role: { type: String, required: true },
+  role: { 
+    type: String, 
+    required: true, 
+    enum: ["admin", "editor", "seo_user"], // Define your roles
+    default: "seo_user"
+  },
   password: { type: String, required: true },
-  domains: [String],
-  features: [String],
+  
+  // Domains/folders assigned to user
+  domains: [
+    {
+      client: { type: String, required: true },
+      platform: { type: String, enum: ["Facebook", "Instagram", "YouTube", "Google Ads"], required: true },
+    }
+  ],
+
   status: { type: String, default: "Active" },
   lastLogin: { type: String, default: "Never" },
+  deadline: { type: Date, required: false }, // Optional deadline
 });
 
 // Hash password before save
