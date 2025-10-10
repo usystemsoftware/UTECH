@@ -150,7 +150,7 @@ const DashboardView = () => {
   // Fetch notifications (contact form submissions)
   const fetchNotifications = async () => {
     try {
-      const res = await axios.get(`${process.env.REACT_APP_API_URL}/contact/all`);
+      const res = await axios.get("http://localhost:5000/api/contact/all");
       if (res.data.success) {
         setNotifications(res.data.data); // Assuming data is an array of submissions
       }

@@ -63,6 +63,7 @@ const ContactPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     const required = ["name", "email", "phone", "message", "tradeshow"];
     const errors = required.filter((f) => !formData[f]);
 
@@ -75,9 +76,9 @@ const ContactPage = () => {
     setError(false);
 
     try {
-      // Send to backend API
+      // POST API call to backend
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL}/contact/submit`,
+        `http://localhost:5000/api/email/send-contact`, // adjust if deployed
         formData
       );
 
@@ -92,13 +93,15 @@ const ContactPage = () => {
           tradeshow: "",
           from: "",
         });
-
-        setTimeout(() => setSuccess(false), 2000);
+        setTimeout(() => setSuccess(false), 3000);
+      } else {
+        setError(true);
+        setTimeout(() => setError(false), 3000);
       }
     } catch (err) {
-      console.error("Contact form error:", err);
+      console.error("❌ Error submitting contact form:", err);
       setError(true);
-      setTimeout(() => setError(false), 5000);
+      setTimeout(() => setError(false), 3000);
     } finally {
       setLoading(false);
     }
@@ -116,7 +119,7 @@ const ContactPage = () => {
       />
 
       <section className="w-full">
-        {/* HERO IMAGE SECTION */}
+        {/* HERO SECTION */}
         <div className="relative h-[600px] overflow-hidden">
           <img
             src="/banner/contact-us.jpg"
@@ -137,7 +140,7 @@ const ContactPage = () => {
           </div>
         </div>
 
-        {/* FORM & LOCATIONS SECTION */}
+        {/* FORM & LOCATIONS */}
         <PageLayout className="grid grid-cols-1 relative z-20 -sm:mt-34 -mt-48 md:mb-32 bg-card md:rounded-2xl rounded-t-2xl shadow-xl md:grid-cols-2 gap-8 py-16">
           {/* FORM */}
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -158,7 +161,7 @@ const ContactPage = () => {
               ))}
             </div>
 
-            {/* Message */}
+            {/* MESSAGE */}
             <div className="grid gap-2">
               <Label className="uppercase">
                 How can we help you? <span className="text-red-500">*</span>
@@ -171,7 +174,7 @@ const ContactPage = () => {
               />
             </div>
 
-            {/* Tradeshow */}
+            {/* TRADESHOW */}
             <div className="grid gap-2">
               <Label className="text-sm mb-1 block">
                 Have you seen us at any tradeshow?{" "}
@@ -193,9 +196,15 @@ const ContactPage = () => {
               </div>
             </div>
 
-            <Button className="px-8 py-4">SUBMIT</Button>
+            <Button
+              type="submit"
+              className="px-8 py-4"
+              disabled={loading}
+            >
+              {loading ? "Sending..." : "SUBMIT"}
+            </Button>
 
-            {/* Legal Notes */}
+            {/* LEGAL NOTES */}
             <TypographyMuted className="text-xs pt-2">
               <span className="text-red-500">*</span> By requesting a consult you
               agree to the terms of U Tech's{" "}

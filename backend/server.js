@@ -20,6 +20,7 @@ import userRoutes from "./routes/adduserRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
 import keywordRoutes from "./routes/keywordRoutes.js"
 import optimizationRoutes from "./routes/optimizationRoutes.js"
+import contactRoutes from "./routes/contactRoutes.js"
 
 dotenv.config();
 const app = express();
