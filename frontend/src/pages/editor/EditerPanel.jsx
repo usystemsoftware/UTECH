@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ImageUploadPanel from "./ImageUploadPanel"; // your existing image upload component
+import ImageEditor from "./ImageEditter";
 
 const SimplePanel = () => {
   const [activePanel, setActivePanel] = useState("dashboard"); // default view
@@ -17,11 +18,7 @@ const SimplePanel = () => {
           </div>
         );
       case "edit":
-        return (
-          <div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
-            <p className="text-gray-700 text-lg">Edit Tools will appear here.</p>
-          </div>
-        );
+        return (<ImageEditor />);
       case "settings":
         return (
           <div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
@@ -34,7 +31,7 @@ const SimplePanel = () => {
   };
 
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen bg-gray-400 to-shadow-black">
       {/* Sidebar */}
       <div className="w-64 bg-white shadow-lg border-r border-gray-200 p-6 flex flex-col">
         <h2 className="text-2xl font-bold text-gray-800 mb-6">⚙️ Sidebar</h2>
@@ -89,7 +86,7 @@ const SimplePanel = () => {
       <div className="flex-1 p-10 overflow-auto">
         <h1 className="text-3xl font-bold text-gray-800 mb-6 capitalize">
           {activePanel === "upload"
-            ? "📤 Upload Image"
+            ? " Upload Image"
             : activePanel === "edit"
             ? "🛠️ Edit Tools"
             : activePanel === "settings"
